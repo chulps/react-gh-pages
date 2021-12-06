@@ -15,6 +15,7 @@ function App() {
       <main>
         <BrowserRouter>
           <Routes>
+            <Route path="/react-gh-pages" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>

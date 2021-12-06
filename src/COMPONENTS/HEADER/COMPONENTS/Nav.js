@@ -8,8 +8,14 @@ function NavContent() {
       <li>
         <a>Projects</a>
       </li>
-      <button class="btn3">Resume</button>
-      <button>Contact</button>
+
+      <li>
+        <button className="btn3">Resume</button>
+      </li>
+
+      <li>
+        <button className="btn2">Contact</button>
+      </li>
     </ul>
   );
 }
