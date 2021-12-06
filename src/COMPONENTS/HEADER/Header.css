@@ -1,0 +1,48 @@
+.nucleotide header {
+  padding: var(--unit0) var(--unit1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: var(--unit3);
+}
+
+#nav-menu {
+  gap: var(--unit1);
+  background: var(--transWhite-75);
+  backdrop-filter: blur(2.5px);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--unit4);
+}
+
+#mobile-nav {
+  display: flex;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #nav-menu {
+    flex-direction: row;
+    height: unset;
+  }
+
+  #mobile-nav {
+    display: none;
+  }
+
+  #desktop-nav {
+    display: flex;
+  }
+}
