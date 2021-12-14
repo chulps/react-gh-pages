@@ -57,7 +57,7 @@ nav ul li:active {
 .sidenav-show .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
   opacity: 1;
   z-index: -1;
   border: none;
