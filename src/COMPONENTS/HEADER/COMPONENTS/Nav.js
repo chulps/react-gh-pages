@@ -26,6 +26,12 @@ class Nav extends React.Component {
   render() {
     return (
       <nav>
+        {/* logo */}
+        <span className="flex flex-center-y">
+          <img className="header-logo" src={NavLogo} />
+          <h5 className="ghost md-flex">Chuck Howard</h5>
+        </span>
+
         {/* button */}
         <button
           id="mobile-nav-button"
@@ -38,12 +44,6 @@ class Nav extends React.Component {
             })
           }
         ></button>
-
-        {/* logo */}
-        <span className="flex flex-center-y">
-          <img className="header-logo" src={NavLogo} />
-          <h5 className="ghost md-flex">Chuck Howard</h5>
-        </span>
 
         {/* desktop */}
         <span className="ghost md-flex">
