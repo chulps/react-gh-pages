@@ -12,7 +12,7 @@ function NavContent() {
 
       <li>
         <a href={Resume} download>
-          <button className="green small">Download Resume</button>
+          <button className="btn3">Download Resume</button>
         </a>
       </li>
     </ul>
