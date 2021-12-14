@@ -30,7 +30,7 @@ class Nav extends React.Component {
         <span className="flex flex-center-y">
           <img className="header-logo" src={NavLogo} />
           <div style={{ lineHeight: 1 }}>
-            <h5 className="ghost md-block">C. Howard</h5>
+            <h5>C. Howard</h5>
             <small>Los Angeles, CA</small>
           </div>
         </span>
