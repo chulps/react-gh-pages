@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.c90eeab1.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.504f56ea.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.504f56ea.chunk.js.map",
+    "main.css": "/react-gh-pages/static/css/main.29b979ad.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.dc702efa.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.dc702efa.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.ccac02ac.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.ccac02ac.js.map",
     "static/js/2.3e803262.chunk.js": "/react-gh-pages/static/js/2.3e803262.chunk.js",
@@ -10,14 +10,15 @@
     "static/js/3.bbf3a75f.chunk.js": "/react-gh-pages/static/js/3.bbf3a75f.chunk.js",
     "static/js/3.bbf3a75f.chunk.js.map": "/react-gh-pages/static/js/3.bbf3a75f.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.c90eeab1.chunk.css.map": "/react-gh-pages/static/css/main.c90eeab1.chunk.css.map",
+    "static/css/main.29b979ad.chunk.css.map": "/react-gh-pages/static/css/main.29b979ad.chunk.css.map",
     "static/js/2.3e803262.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.3e803262.chunk.js.LICENSE.txt",
-    "static/media/LOGO_BLUE.df0e9aec.gif": "/react-gh-pages/static/media/LOGO_BLUE.df0e9aec.gif"
+    "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
+    "static/media/Chuck-Howard-Product-Manager-Resume.b0482b16.pdf": "/react-gh-pages/static/media/Chuck-Howard-Product-Manager-Resume.b0482b16.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.ccac02ac.js",
     "static/js/2.3e803262.chunk.js",
-    "static/css/main.c90eeab1.chunk.css",
-    "static/js/main.504f56ea.chunk.js"
+    "static/css/main.29b979ad.chunk.css",
+    "static/js/main.dc702efa.chunk.js"
   ]
 }
