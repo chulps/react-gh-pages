@@ -12,7 +12,7 @@ function NavContent() {
 
       <li>
         <a href={Resume} download>
-          Download Resume
+          <button className="green small">Download Resume</button>
         </a>
       </li>
     </ul>
@@ -29,7 +29,10 @@ class Nav extends React.Component {
         {/* logo */}
         <span className="flex flex-center-y">
           <img className="header-logo" src={NavLogo} />
-          <h5 className="ghost md-flex">Chuck Howard</h5>
+          <div style={{ lineHeight: 1 }}>
+            <h5 className="ghost md-block">C. Howard</h5>
+            <small>Los Angeles, CA</small>
+          </div>
         </span>
 
         {/* button */}
