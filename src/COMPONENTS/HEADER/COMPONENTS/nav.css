@@ -43,7 +43,7 @@ nav ul li:active {
 .sidenav-hide .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   opacity: 0;
   transition: all 0.3s ease-out;
   position: fixed;
@@ -52,19 +52,17 @@ nav ul li:active {
   z-index: 0;
   border: none;
   overflow-y: scroll;
-  backdrop-filter: blur(2px);
 }
 
 .sidenav-show .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   opacity: 1;
   z-index: -1;
   border: none;
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(2px);
 }
 
 #mobile-nav-button {
@@ -74,4 +72,5 @@ nav ul li:active {
 
 #mobile-nav-links {
   z-index: 1;
+  backdrop-filter: blur(10px);
 }

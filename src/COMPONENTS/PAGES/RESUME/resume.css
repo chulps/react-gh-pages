@@ -1,0 +1,40 @@
+/*.main-resume.css */
+.main-resume {
+  padding: 3rem;
+}
+
+.main-resume * {
+  font-family: var(--fontFamilyRegular);
+}
+
+.printing {
+  display: none;
+  width: 612px;
+  height: 792px;
+  padding: 72px;
+  box-sizing: border-box;
+  font-size: 10px;
+  background: white;
+}
+
+.experience .experience-item {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .main-resume {
+    width: 612px;
+    height: 792px;
+    background: var(--siteBackground);
+    margin: 30px auto;
+    padding: 72px;
+    box-shadow: var(--boxShadowOut);
+    font-size: 11px;
+  }
+
+  .experience .experience-item {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

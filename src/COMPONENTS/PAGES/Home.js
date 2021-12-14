@@ -8,8 +8,10 @@ class Home extends Component {
           <section>
             <div className="flex-center flex-vertical text-center">
               <h2>Chuck is rebuilding his website.</h2>
-              <p className="mb2">Come back later...</p>
-              <button>Contact Chuck</button>
+              <p className="mb2">Contact Chuck on LinkedIn</p>
+              <a href="https://www.linkedin.com/in/chuck-howard/">
+                <button>GO!</button>
+              </a>
             </div>
           </section>
         </section>

@@ -1,20 +1,19 @@
 import React from "react";
 import "./nav.css";
-import NavLogo from "../../../LOGO/LOGO_BLUE.gif";
+import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
+import Resume from "../../../IMG/Chuck-Howard-Product-Manager-Resume.pdf";
 
 function NavContent() {
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
-      <li>
+      {/* <li>
         <a>Projects</a>
-      </li>
+      </li> */}
 
       <li>
-        <button className="btn3">Resume</button>
-      </li>
-
-      <li>
-        <button className="btn2">Contact</button>
+        <a href={Resume} download>
+          Download Resume
+        </a>
       </li>
     </ul>
   );
@@ -36,17 +35,15 @@ class Nav extends React.Component {
           onClick={() =>
             this.setState({
               displaySideNav: !this.state.displaySideNav
-              // menuText: `${
-              //   this.state.displaySideNav === false ? "Close" : "Menu"
-              // }`
             })
           }
-        >
-          {/* {this.state.menuText} */}
-        </button>
+        ></button>
 
         {/* logo */}
-        <img className="header-logo" src={NavLogo} />
+        <span className="flex flex-center-y">
+          <img className="header-logo" src={NavLogo} />
+          <h5 className="ghost md-flex">Chuck Howard</h5>
+        </span>
 
         {/* desktop */}
         <span className="ghost md-flex">
