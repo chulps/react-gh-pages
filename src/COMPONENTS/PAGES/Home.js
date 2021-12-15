@@ -18,19 +18,25 @@ class Home extends Component {
               <p className="mb2">Where to find him...</p>
 
               <div className="display: flex;" style={{ gap: "var(--unit3)" }}>
-                <a href="https://www.linkedin.com/in/chuck-howard/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/chuck-howard/"
+                >
                   <img src={LinkedIn} alt="LinkedIn" />
                 </a>
 
-                <a href="https://codepen.io/chulps">
+                <a target="_blank" href="https://codepen.io/chulps">
                   <img src={Codepen} alt="Codepen" />
                 </a>
 
-                <a href="https://behance.net/chuckhoward">
+                <a target="_blank" href="https://behance.net/chuckhoward">
                   <img src={Behance} alt="Behance" />
                 </a>
 
-                <a href="https://stackoverflow.com/users/2146031/chulps">
+                <a
+                  target="_blank"
+                  href="https://stackoverflow.com/users/2146031/chulps"
+                >
                   <img src={StackOverflow} alt="stackoverflow" />
                 </a>
               </div>
