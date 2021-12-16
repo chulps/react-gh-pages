@@ -17,7 +17,7 @@ class Home extends Component {
               <h2>Chuck is rebuilding his website.</h2>
               <p className="mb2">Where to find him...</p>
 
-              <div className="display: flex;" style={{ gap: "var(--unit3)" }}>
+              <div style={{ gap: "var(--unit3)" }}>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/chuck-howard/"
