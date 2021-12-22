@@ -6,13 +6,17 @@ import Resume from "../../../IMG/Chuck-Howard-Product-Manager-Resume.pdf";
 function NavContent() {
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
-      {/* <li>
-        <a>Projects</a>
-      </li> */}
+      <li className="md-ghost">
+        <img height="100px" src={NavLogo} alt="C-logo" />
+      </li>
+
+      <li>
+        <a>About</a>
+      </li>
 
       <li>
         <a href="https://resume.io/r/eWaJLpC8c">
-          <button className="btn3">Download Resume</button>
+          <button className="green">Download Resume</button>
         </a>
       </li>
     </ul>

@@ -5,7 +5,7 @@ import Nav from "./COMPONENTS/Nav";
 class Header extends Component {
   render() {
     return (
-      <header>
+      <header className="p0 md-px1">
         <Nav />
       </header>
     );
