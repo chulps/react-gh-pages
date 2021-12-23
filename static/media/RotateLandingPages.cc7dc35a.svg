@@ -1,0 +1,218 @@
+<svg id="rotatelandingpages.2d33deda_Image" data-name="rotatelandingpages.2d33deda Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 562.76 379">
+  <defs>
+    <style>
+      .cls-1, .cls-14, .cls-9 {
+        fill: none;
+      }
+
+      .cls-1, .cls-11, .cls-8, .cls-9 {
+        stroke: #2cb8d2;
+      }
+
+      .cls-1, .cls-11, .cls-12, .cls-14, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+        stroke-dasharray: 3 6;
+      }
+
+      .cls-12, .cls-2 {
+        fill: #2cb8d2;
+      }
+
+      .cls-11, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #24537f;
+      }
+
+      .cls-5, .cls-8 {
+        fill: #fd8a66;
+      }
+
+      .cls-6 {
+        fill: #feca40;
+      }
+
+      .cls-7 {
+        fill: #d5f1f6;
+      }
+
+      .cls-14, .cls-8, .cls-9 {
+        stroke-linecap: round;
+      }
+
+      .cls-11, .cls-8, .cls-9 {
+        stroke-width: 2px;
+      }
+
+      .cls-10 {
+        fill: #80d4e4;
+      }
+
+      .cls-12 {
+        stroke: #d5f1f6;
+      }
+
+      .cls-13 {
+        fill: #abe3ed;
+      }
+
+      .cls-14 {
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>ROTATE-LANDING-PAGES</title>
+
+  <!-- dashed line 3 -->
+  <rect id="dashed-line3" class="cls-1" x="315.56" y="244.26" width="154.1" height="85.14">
+    <animate
+      attributeType="XML"
+      attributeName="stroke-dashoffset"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="
+          0.5 0 0.5 1;
+          0.5 0 0.5 1"
+      keyTimes="
+        0;0.5;1"
+      calcMode="spline"
+      begin="0s"
+      values="0;37.219;0"/>
+  </rect>
+  
+  <!-- dashed line 2 -->
+  <rect id="dashed-line2" class="cls-1" x="75.07" y="65.68" width="238.91" height="74.76">
+    <animate
+      attributeType="XML"
+      attributeName="stroke-dashoffset"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="
+          0.5 0 0.5 1;
+          0.5 0 0.5 1"
+      keyTimes="
+        0;0.5;1"
+      calcMode="spline"
+      begin="0s"
+      values="0;37.219;0"/> 
+  </rect>
+  
+  <!-- dashed line 1 -->
+  <rect id="dashed-line1" class="cls-1" x="32.5" y="28.48" width="501.4" height="326.17">
+    <animate
+      attributeType="XML"
+      attributeName="stroke-dashoffset"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="
+          0.5 0 0.5 1;
+          0.5 0 0.5 1"
+      keyTimes="
+        0;0.5;1"
+      calcMode="spline"
+      begin="0s"
+      values="0;37.219;0"/>    
+  </rect>
+  <g>
+    <g>
+      <g>
+        <rect class="cls-2" x="327.25" y="23.51" width="173.29" height="209.23"/>
+        <rect class="cls-3" x="318.25" y="14.51" width="173.29" height="209.23"/>
+        <rect class="cls-4" x="318.25" y="14.51" width="173.29" height="32.43"/>
+        <circle class="cls-5" cx="333.71" cy="31.41" r="6.62"/>
+        <circle class="cls-6" cx="355.64" cy="31.41" r="6.62"/>
+      </g>
+      <g>
+        <rect class="cls-7" x="340.65" y="65.68" width="23.36" height="21.25" rx="10.63" ry="10.63"/>
+        <rect class="cls-7" x="375.69" y="65.68" width="23.36" height="21.25" rx="10.63" ry="10.63"/>
+        <rect class="cls-7" x="410.74" y="65.68" width="23.36" height="21.25" rx="10.63" ry="10.63"/>
+        <rect class="cls-7" x="445.79" y="65.68" width="23.36" height="21.25" rx="10.63" ry="10.63"/>
+      </g>
+      <rect class="cls-8" x="340.65" y="173.75" width="128.5" height="24"/>
+    </g>
+    <g>
+      <circle class="cls-2" cx="404.9" cy="129.47" r="32.28"/>
+      <path class="cls-3" d="M404.9,112a12.2,12.2,0,0,0-12.2,12.2c0,6.73,12.2,22.72,12.2,22.72s12.19-16,12.19-22.72A12.2,12.2,0,0,0,404.9,112Zm0,19.26a7.06,7.06,0,1,1,7.06-7.06A7.06,7.06,0,0,1,404.9,131.27Z"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-2" x="236.92" y="54.7" width="173.29" height="209.23"/>
+      <rect class="cls-3" x="228.92" y="46.7" width="173.29" height="209.23"/>
+      <rect class="cls-2" x="228.92" y="46.7" width="173.29" height="32.43"/>
+      <circle class="cls-5" cx="244.38" cy="63.6" r="6.62"/>
+      <circle class="cls-6" cx="266.3" cy="63.6" r="6.62"/>
+    </g>
+    <g>
+      <rect class="cls-7" x="251.31" y="97.87" width="23.36" height="21.25"/>
+      <rect class="cls-7" x="286.36" y="97.87" width="23.36" height="21.25"/>
+      <rect class="cls-7" x="321.41" y="97.87" width="23.36" height="21.25"/>
+      <rect class="cls-7" x="356.45" y="97.87" width="23.36" height="21.25"/>
+    </g>
+    <line class="cls-9" x1="250.8" y1="132.94" x2="380.33" y2="132.94"/>
+    <line class="cls-9" x1="250.8" y1="142.94" x2="380.33" y2="142.94"/>
+    <line class="cls-9" x1="250.8" y1="152.94" x2="380.33" y2="152.94"/>
+    <rect class="cls-8" x="251.31" y="205.94" width="128.5" height="24"/>
+  </g>
+  <rect class="cls-2" x="157.94" y="105.2" width="173.29" height="209.23"/>
+  <g>
+    <path class="cls-5" d="M149.94,97.41v28.15H323.23V97.41Zm48.48,18H157.75V106h40.67Z"/>
+    <path class="cls-3" d="M149.94,306.63H323.23V155.32H149.94Zm156-22.78a6.63,6.63,0,1,1-6.62,6.63A6.63,6.63,0,0,1,306,283.85Zm-21.92,0a6.63,6.63,0,1,1-6.63,6.63A6.63,6.63,0,0,1,284,283.85Z"/>
+    <path class="cls-10" d="M149.94,155.32H323.23V125.56H149.94Zm86.65-27a11.28,11.28,0,1,1-11.28,11.28A11.28,11.28,0,0,1,236.59,128.35Z"/>
+    <circle class="cls-11" cx="284.04" cy="290.48" r="6.62" transform="translate(-59.14 73.03) rotate(-13.28)"/>
+    <circle class="cls-11" cx="305.96" cy="290.48" r="6.62" transform="translate(-58.55 78.07) rotate(-13.28)"/>
+    <circle class="cls-4" cx="236.59" cy="139.63" r="11.28" transform="translate(-19.31 39.7) rotate(-9.22)"/>
+    <rect class="cls-6" x="153.75" y="106.03" width="54.67" height="9.33" rx="4.67" ry="4.67"/>
+  </g>
+  <rect class="cls-2" x="97.26" y="168.5" width="173.29" height="209.23"/>
+  <rect class="cls-3" x="89.26" y="160.5" width="173.29" height="209.23"/>
+  <rect class="cls-7" x="9.77" y="15.08" width="158.98" height="94.72" rx="10.72" ry="10.72"/>
+  <rect class="cls-12" x="141.34" y="208.17" width="72.18" height="72.18"/>
+  <rect x="89.26" y="160.5" width="173.29" height="32.43"/>
+  <g>
+    <path class="cls-2" d="M102.46,48.28H84.19v-.23L58.35,33.12,32.5,48.05v.23H58.35V77.51H32.5v.38L58.35,92.81,84.19,77.89v-.38h18.18a27.73,27.73,0,0,1,.09-29.23Z"/>
+    <g>
+      <path class="cls-3" d="M126,85.68A22.72,22.72,0,1,1,148.67,63,22.6,22.6,0,0,1,126,85.68Z"/>
+      <path class="cls-4" d="M126,45.25a17.73,17.73,0,1,1-15,8.34,17.73,17.73,0,0,1,15-8.34m0-10A27.72,27.72,0,1,0,153.67,63,27.7,27.7,0,0,0,126,35.25Z"/>
+    </g>
+  </g>
+  <circle class="cls-5" cx="104.72" cy="177.41" r="6.62"/>
+  <circle class="cls-2" cx="126.65" cy="177.41" r="6.62"/>
+  <rect class="cls-7" x="167.47" y="218.52" width="18.94" height="25.73" rx="9.47" ry="9.47"/>
+  <path class="cls-13" d="M149.94,279.85V262.56s.23-12.1,12.34-12.1h3.54l11.12,8.9,11.38-8.9s8-1.6,12.1,4.22,3.31,10.37,3.31,10.37v14.8"/>
+  <rect class="cls-2" x="163.15" y="268.16" width="1" height="11.69"/>
+  <rect class="cls-2" x="189.87" y="268.16" width="1" height="11.69"/>
+  <rect class="cls-2" x="111.34" y="293.67" width="133.67" height="6"/>
+  <rect class="cls-2" x="111.34" y="307.38" width="133.67" height="6"/>
+  <rect class="cls-2" x="111.34" y="321.08" width="133.67" height="6"/>
+  <rect class="cls-2" x="111.34" y="334.79" width="133.67" height="6"/>
+  <rect class="cls-2" x="111.34" y="348.49" width="83.41" height="6"/>
+  <g>
+    <rect class="cls-7" x="313.98" y="276.04" width="239.01" height="90" rx="10.72" ry="10.72"/>
+    <g>
+      <g>
+        <circle class="cls-5" cx="433.49" cy="321.04" r="32.28"/>
+        <g>
+          <circle class="cls-3" cx="425.13" cy="329.4" r="9.68"/>
+          <path class="cls-14" d="M425.13,303a26.39,26.39,0,0,1,26.39,26.39"/>
+          <path class="cls-14" d="M425.13,311.8a17.59,17.59,0,0,1,17.59,17.6"/>
+        </g>
+      </g>
+      <g>
+        <circle class="cls-4" cx="355.66" cy="321.8" r="32.28"/>
+        <polygon class="cls-3" points="370.12 321.8 343.85 306.63 343.85 336.97 370.12 321.8"/>
+      </g>
+      <g>
+        <circle class="cls-2" cx="511.32" cy="320.66" r="32.28"/>
+        <path class="cls-3" d="M511.32,303.2a12.2,12.2,0,0,0-12.2,12.19c0,6.73,12.2,22.73,12.2,22.73s12.19-16,12.19-22.73A12.19,12.19,0,0,0,511.32,303.2Zm0,19.25a7.06,7.06,0,1,1,7.06-7.06A7.06,7.06,0,0,1,511.32,322.45Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
