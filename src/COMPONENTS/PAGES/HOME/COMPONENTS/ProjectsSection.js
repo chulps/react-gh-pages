@@ -36,7 +36,7 @@ class ProjectSection extends Component {
               <img height="60" src={YardenLogo} alt="yarden" />
             </Link>
 
-            <Link to="/clicktool">
+            <Link to="/react-gh-pages/clicktool">
               <ClicktoolLogo />
             </Link>
           </div>

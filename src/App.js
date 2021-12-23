@@ -24,7 +24,7 @@ function App() {
             <Route path="/crigenetics" element={<CRIGenetics />} />
             <Route path="/nucleotide" element={<Nucleotide />} />
             <Route path="/yarden" element={<Yarden />} />
-            <Route path="/clicktool" element={<Clicktool />} />
+            <Route path="/react-gh-pages/clicktool" element={<Clicktool />} />
           </Routes>
         </BrowserRouter>
       </main>
