@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ClicktoolLogo from "../../../../IMG/ClicktoolLogoHorizontal";
+import ClicktoolLogo from "../../CLICKTOOL/CLICKTOOL_COMPONENTS/SVG/ClicktoolLogoHorizontal";
 import YardenLogo from "../../../../IMG/yarden_logo.svg";
 import CRILogo from "../../../../IMG/cri_genetics_logo.svg";
 import NucleotideLogo from "../../../../IMG/nucleotide.svg";

@@ -1,7 +1,6 @@
 import React from "react";
 import "./nav.css";
 import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
-import Resume from "../../../IMG/Chuck-Howard-Product-Manager-Resume.pdf";
 
 function NavContent() {
   return (
@@ -33,9 +32,9 @@ class Nav extends React.Component {
         {/* logo */}
         <span className="flex flex-center-y">
           <img className="header-logo" src={NavLogo} alt="C-logo" />
-          <div style={{ lineHeight: "calc(2/3)" }}>
-            <h5>C.&nbsp;Howard</h5>
-            <small>Los&nbsp;Angeles,&nbsp;CA</small>
+          <div className="flex-center flex-vertical">
+            <h5 style={{ lineHeight: 1 }}>C.&nbsp;Howard</h5>
+            <small style={{ lineHeight: 1 }}>Los&nbsp;Angeles,&nbsp;CA</small>
           </div>
         </span>
 

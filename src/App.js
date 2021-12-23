@@ -1,12 +1,12 @@
-// import "./styles.css";
 import Header from "./COMPONENTS/HEADER/Header.js";
 import Home from "./COMPONENTS/PAGES/HOME/Home.js";
-import About from "./COMPONENTS/PAGES/About.js";
+import About from "./COMPONENTS/PAGES/ABOUT/About.js";
+import Nucleotide from "./COMPONENTS/PAGES/NUCLEOTIDE/Nucleotide.js";
 import CRIGenetics from "./COMPONENTS/PAGES/CRIGENETICS/CRIGenetics.js";
-import Resume from "./COMPONENTS/PAGES/Resume.js";
+import Yarden from "./COMPONENTS/PAGES/YARDEN/Yarden.js";
+import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
 import Footer from "./COMPONENTS/FOOTER/Footer.js";
 
-// import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,9 +20,11 @@ function App() {
           <Routes>
             <Route path="/react-gh-pages" element={<Home />} />
             <Route path="/" element={<Home />} />
-            <Route path="/resume" element={<Resume />} />
             <Route path="/about" element={<About />} />
             <Route path="/crigenetics" element={<CRIGenetics />} />
+            <Route path="/nucleotide" element={<Nucleotide />} />
+            <Route path="/yarden" element={<Yarden />} />
+            <Route path="/clicktool" element={<Clicktool />} />
           </Routes>
         </BrowserRouter>
       </main>
