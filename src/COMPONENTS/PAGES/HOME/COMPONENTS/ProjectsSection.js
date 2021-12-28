@@ -16,11 +16,11 @@ class ProjectSection extends Component {
             My most recent work assuming the role of Product Leader
           </p>
           <div className="one-column md-two-columns gap2">
-            <Link to="/crigenetics">
+            <Link className="disabled" to="/react-gh-pages/crigenetics">
               <img height="60" src={CRILogo} alt="cri-logo" />
             </Link>
 
-            <Link to="/nucleotide">
+            <Link to="/react-gh-pages/nucleotide">
               <div className="flex-center">
                 <img
                   height="50px"
@@ -32,7 +32,7 @@ class ProjectSection extends Component {
               </div>
             </Link>
 
-            <Link to="/yarden">
+            <Link className="disabled" to="/react-gh-pages/yarden">
               <img height="60" src={YardenLogo} alt="yarden" />
             </Link>
 

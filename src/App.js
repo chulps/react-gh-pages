@@ -20,10 +20,13 @@ function App() {
           <Routes>
             <Route path="/react-gh-pages" element={<Home />} />
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/crigenetics" element={<CRIGenetics />} />
-            <Route path="/nucleotide" element={<Nucleotide />} />
-            <Route path="/yarden" element={<Yarden />} />
+            <Route path="/react-gh-pages/about" element={<About />} />
+            <Route
+              path="//react-gh-pages/crigenetics"
+              element={<CRIGenetics />}
+            />
+            <Route path="/react-gh-pages/nucleotide" element={<Nucleotide />} />
+            <Route path="/react-gh-pages/yarden" element={<Yarden />} />
             <Route path="/react-gh-pages/clicktool" element={<Clicktool />} />
           </Routes>
         </BrowserRouter>
