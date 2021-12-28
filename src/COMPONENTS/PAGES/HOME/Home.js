@@ -13,9 +13,7 @@ class Home extends Component {
               style={{ textTransform: "none" }}
             >
               <h1 style={{ textTransform: "none" }}>Chuck Howard</h1>
-              <p className="mb2">
-                Product Design | Front End Development | Product Manager
-              </p>
+              <p className="mb2">Designer | Developer | Product Leader</p>
             </div>
             <SocialIcons />
           </section>

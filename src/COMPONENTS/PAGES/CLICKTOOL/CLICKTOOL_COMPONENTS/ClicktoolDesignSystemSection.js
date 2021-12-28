@@ -16,9 +16,9 @@ class ClicktoolDesignSystemSection extends React.Component {
     return (
       <section className="design-system pt3">
         <div className="one-column lg-two-columns gap3">
-          <div className="">
-            <h5>Creating a Design System</h5>
-            <p className="">
+          <div>
+            <h4>Creating a Design System</h4>
+            <p>
               This was essential to establish consistency in the design of the
               app across a team of designers and developers. To achieve this we
               used Zeplin to as our source of truth for the design of the app.
@@ -27,6 +27,10 @@ class ClicktoolDesignSystemSection extends React.Component {
               to create a library of React components using Storybook to
               document them.
             </p>
+            <small>
+              You can see an early version of the Clicktool UI Kit{" "}
+              <a href="https://codepen.io/chulps/pen/QYpKKp">here</a>
+            </small>
           </div>
 
           <div className="p1 sm-p2  md-p3 flex-center flex-vertical mt10">
@@ -35,7 +39,7 @@ class ClicktoolDesignSystemSection extends React.Component {
           </div>
         </div>
 
-        <div className="">
+        <div>
           <div className="logo mb3">
             <div className="one-column xl-three-columns gap1 mt1">
               <div className="p1 md-p3 flex-center flex-vertical">

@@ -16,6 +16,7 @@ class ProjectSection extends Component {
           <div className="one-column md-two-columns gap2">
             <Link className="disabled" to="/react-gh-pages/crigenetics/">
               <img height="60" src={CRILogo} alt="cri-logo" />
+              <small>Not ready yet...</small>
             </Link>
 
             <Link to="/react-gh-pages/nucleotide/">
@@ -32,6 +33,7 @@ class ProjectSection extends Component {
 
             <Link className="disabled" to="/react-gh-pages/yarden/">
               <img height="60" src={YardenLogo} alt="yarden" />
+              <small>Not ready yet...</small>
             </Link>
 
             <Link to="/react-gh-pages/clicktool/">
