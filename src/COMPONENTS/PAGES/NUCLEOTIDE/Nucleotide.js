@@ -5,12 +5,24 @@ class Nucleotide extends Component {
   render() {
     return (
       <div id="nucleotide">
-        <section className="hero flex-center flex-vertical">
+        <section
+          className="hero flex-center flex-vertical"
+          style={{ gap: "var(--unit2)" }}
+        >
           <img height="50px" src={NucleotideLogo} />
-          <small>🛠 This page coming soon...</small>
-          <a href="http://nucleotide.crigenetics.com/ui/dev/index.html">
-            Visit Nucleotide Documentation
-          </a>
+          <div className="md-three-fourths lg-half xl-third">
+            <h4>🛠 I'm still working on this page...</h4>
+            <p>
+              Nucleotide is a Web Design Framework I created for the team at CRI
+              Genetics.
+            </p>
+          </div>
+          <div className="flex">
+            <a href="http://nucleotide.crigenetics.com/ui/dev/index.html">
+              Documentation
+            </a>
+            {"  "}| <a href="https://codepen.io/chulps/pen/VwzGajp">Codepen</a>
+          </div>
         </section>
       </div>
     );
