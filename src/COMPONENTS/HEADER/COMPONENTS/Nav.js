@@ -10,12 +10,12 @@ function NavContent() {
       </li>
 
       <li>
-        <a>About</a>
+        <a href="/react-gh-pages/about">About</a>
       </li>
 
       <li>
         <a href="https://resume.io/r/eWaJLpC8c">
-          <button className="green">Download Resume</button>
+          <button className="green">Resume</button>
         </a>
       </li>
     </ul>
@@ -30,13 +30,16 @@ class Nav extends React.Component {
     return (
       <nav>
         {/* logo */}
-        <span className="flex flex-center-y">
+        <a href="/react-gh-pages/" className="flex flex-center-y">
           <img className="header-logo" src={NavLogo} alt="C-logo" />
-          <div className="flex-center flex-vertical">
+          <div
+            className="flex-vertical"
+            style={{ color: "var(--transBlueC-75" }}
+          >
             <h5 style={{ lineHeight: 1 }}>C.&nbsp;Howard</h5>
             <small style={{ lineHeight: 1 }}>Los&nbsp;Angeles,&nbsp;CA</small>
           </div>
-        </span>
+        </a>
 
         {/* button */}
         <button

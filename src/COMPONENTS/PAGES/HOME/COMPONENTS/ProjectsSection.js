@@ -12,9 +12,7 @@ class ProjectSection extends Component {
       <section class="hero flex-center bg-blue4">
         <section className="projects-section">
           <h2>Projects:</h2>
-          <p className="md-half lg-third mb3">
-            My most recent work assuming the role of Product Leader
-          </p>
+          <p className="md-half lg-third mb3">My most recent projects:</p>
           <div className="one-column md-two-columns gap2">
             <Link className="disabled" to="/react-gh-pages/crigenetics">
               <img height="60" src={CRILogo} alt="cri-logo" />

@@ -37,28 +37,28 @@ class ClicktoolSVGSection extends React.Component {
           </div>
 
           <div>
-            <div className="rounded shadow-in p1 md-p3 flex-center flex-vertical mb1">
+            <div className="flex-space-between p1 md-p3 flex-center flex-vertical mb1">
               <ClicktoolCity />
-              <label className="mt3">clicktool_city.svg</label>
+              <label className="mt2">clicktool_city.svg</label>
             </div>
           </div>
         </div>
         <div className="one-column md-two-columns gap1">
-          <div className="rounded shadow-in p1 md-p3 flex-center flex-vertical flex">
+          <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
             <NonRedirectTracking />
-            <label className="mt3">clicktool_city.svg</label>
+            <label className="mt2">ab_testing.svg</label>
           </div>
           <div className="p1 md-p3 flex-center flex-vertical">
             <img src={MagnifyingGlass} alt="" />
-            <label className="mt3">magnifying_glass.svg</label>
+            <label className="mt2">magnifying_glass.svg</label>
           </div>
-          <div className="rounded shadow-in p1 md-p3 flex-center flex-vertical">
+          <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
             <img src={OnePlace} alt="" />
-            <label className="mt3">one-place.svg</label>
+            <label className="mt2">one-place.svg</label>
           </div>
-          <div className="rounded shadow-in p1 md-p3 flex-center flex-vertical">
+          <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
             <img src={RotateLanders} alt="" />
-            <label className="mt3">clicktool_city.svg</label>
+            <label className="mt2">variants.svg</label>
           </div>
         </div>
       </section>
