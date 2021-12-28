@@ -1,6 +1,7 @@
 import React from "react";
 import "./nav.css";
 import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
+import { Link } from "react-router-dom";
 
 function NavContent() {
   return (
@@ -10,7 +11,7 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="/react-gh-pages/about">About</a>
+        <Link to="/react-gh-pages/about">About</Link>
       </li>
 
       <li>
@@ -30,16 +31,13 @@ class Nav extends React.Component {
     return (
       <nav>
         {/* logo */}
-        <a href="/react-gh-pages/" className="flex flex-center-y">
+        <Link to="/react-gh-pages/" className="flex flex-center-y">
           <img className="header-logo" src={NavLogo} alt="C-logo" />
-          <div
-            className="flex-vertical"
-            style={{ color: "var(--transBlueC-75" }}
-          >
+          <div className="flex-vertical">
             <h5 style={{ lineHeight: 1 }}>C.&nbsp;Howard</h5>
             <small style={{ lineHeight: 1 }}>Los&nbsp;Angeles,&nbsp;CA</small>
           </div>
-        </a>
+        </Link>
 
         {/* button */}
         <button

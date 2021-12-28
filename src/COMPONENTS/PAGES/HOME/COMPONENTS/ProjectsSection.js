@@ -14,11 +14,11 @@ class ProjectSection extends Component {
           <h2>Projects:</h2>
           <p className="md-half lg-third mb3">My most recent projects:</p>
           <div className="one-column md-two-columns gap2">
-            <Link className="disabled" to="/react-gh-pages/crigenetics">
+            <Link className="disabled" to="/react-gh-pages/crigenetics/">
               <img height="60" src={CRILogo} alt="cri-logo" />
             </Link>
 
-            <Link to="/react-gh-pages/nucleotide">
+            <Link to="/react-gh-pages/nucleotide/">
               <div className="flex-center">
                 <img
                   height="50px"
@@ -30,11 +30,11 @@ class ProjectSection extends Component {
               </div>
             </Link>
 
-            <Link className="disabled" to="/react-gh-pages/yarden">
+            <Link className="disabled" to="/react-gh-pages/yarden/">
               <img height="60" src={YardenLogo} alt="yarden" />
             </Link>
 
-            <Link to="/react-gh-pages/clicktool">
+            <Link to="/react-gh-pages/clicktool/">
               <ClicktoolLogo />
             </Link>
           </div>
