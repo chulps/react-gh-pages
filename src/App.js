@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div id="chuck" className="App nucleotide">
-      <BrowserRouter>
+      <BrowserRouter forceRefresh={true}>
         <Header />
 
         {/* site content renders here */}
