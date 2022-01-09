@@ -53,7 +53,7 @@ class Home extends Component {
               </svg>
               <h6
                 className="absolute text-center"
-                style={{ transform: "translate(0 , -220%)" }}
+                style={{ transform: "translate(0 , -260%)" }}
               >
                 Product
                 <br />
@@ -61,15 +61,19 @@ class Home extends Component {
               </h6>
               <h6
                 className="absolute text-right"
-                style={{ transform: "translate(180% , 220%)" }}
+                style={{ transform: "translate(260% , 220%)" }}
               >
-                Design Leadership
+                UI/UX
+                <br />
+                Design
               </h6>
               <h6
                 className="absolute"
-                style={{ transform: "translate(-160% , 220%)" }}
+                style={{ transform: "translate(-120% , 220%)" }}
               >
-                Technical
+                Web
+                <br />
+                Development
               </h6>
               <h5
                 className="absolute text-center"
