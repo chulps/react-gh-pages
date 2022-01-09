@@ -57,23 +57,19 @@ class Home extends Component {
               >
                 Product
                 <br />
-                Visionary
+                Vision
               </h6>
               <h6
                 className="absolute text-right"
                 style={{ transform: "translate(180% , 220%)" }}
               >
-                UI/UX
-                <br />
-                Designer
+                Design Leadership
               </h6>
               <h6
                 className="absolute"
                 style={{ transform: "translate(-160% , 220%)" }}
               >
-                Front-end
-                <br />
-                Developer
+                Technical
               </h6>
               <h5
                 className="absolute text-center"
