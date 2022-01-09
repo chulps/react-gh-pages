@@ -10,7 +10,7 @@ class Home extends Component {
         <section className="hero flex-center">
           <section>
             <div className="flex-vertical" style={{ textTransform: "none" }}>
-              <h1 style={{ textTransform: "none" }}>
+              <h1 style={{ textTransform: "none", lineHeight: 1 }}>
                 Chuck
                 <br />
                 Howard
@@ -20,7 +20,7 @@ class Home extends Component {
             <SocialIcons />
           </section>
         </section>
-        <section className="hero bg-blue4 flex-center">
+        <section className="hero bg-transBlueC-05 flex-center">
           <section className="py4 one-column lg-two-columns gap2 md-gap3">
             <div className="flex-center sm-px3 md-px4 lg-px2 xl-px3">
               <svg

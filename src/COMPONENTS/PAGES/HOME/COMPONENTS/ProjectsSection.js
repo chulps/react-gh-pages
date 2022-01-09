@@ -9,7 +9,7 @@ import "./ProjectsSection.css";
 class ProjectSection extends Component {
   render() {
     return (
-      <section class="hero flex-center bg-blue3">
+      <section class="hero flex-center bg-transBlueC-10">
         <section className="projects-section py3">
           <h3>Projects:</h3>
           <p className="md-half lg-third mb3">My most recent projects:</p>
