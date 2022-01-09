@@ -7,7 +7,7 @@ import StackOverflow from "../IMG/SOCIAL/svg/stack-overflow-01.svg";
 class SocialIcons extends Component {
   render() {
     return (
-      <div className="flex-center" style={{ gap: "var(--unit3)" }}>
+      <div className="flex" style={{ gap: "var(--unit2)" }}>
         <a target="_blank" href="https://www.linkedin.com/in/chuck-howard/">
           <img src={LinkedIn} alt="LinkedIn" />
         </a>

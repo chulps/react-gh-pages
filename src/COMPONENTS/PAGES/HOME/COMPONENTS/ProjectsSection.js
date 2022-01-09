@@ -9,30 +9,30 @@ import "./ProjectsSection.css";
 class ProjectSection extends Component {
   render() {
     return (
-      <section class="hero flex-center bg-blue4">
-        <section className="projects-section">
-          <h2>Projects:</h2>
+      <section class="hero flex-center bg-blue3">
+        <section className="projects-section py3">
+          <h3>Projects:</h3>
           <p className="md-half lg-third mb3">My most recent projects:</p>
-          <div className="one-column md-two-columns gap2">
+          <div className="one-column md-two-columns gap3">
             <Link className="disabled" to="/react-gh-pages/crigenetics/">
-              <img height="60" src={CRILogo} alt="cri-logo" />
+              <img width="100%" src={CRILogo} alt="cri-logo" />
               <small>Not ready yet...</small>
             </Link>
 
             <Link to="/react-gh-pages/nucleotide/">
-              <div className="flex-center">
+              <div className="flex-center flex-vertical xs-flex-horizontal">
                 <img
-                  height="50px"
+                  height={50}
                   className="mr1"
                   src={NucleotideLogo}
                   alt="nucleotide logo"
                 />
-                <h3>Nucleotide</h3>
+                <h4>Nucleotide</h4>
               </div>
             </Link>
 
             <Link className="disabled" to="/react-gh-pages/yarden/">
-              <img height="60" src={YardenLogo} alt="yarden" />
+              <img src={YardenLogo} alt="yarden" />
               <small>Not ready yet...</small>
             </Link>
 
