@@ -15,7 +15,10 @@ class Home extends Component {
                 <br />
                 Howard
               </h1>
-              <p className="mb2">Design Technologist</p>
+              <p>Design Technologist</p>
+              <small className="mb2" style={{ lineHeight: 1 }}>
+                Los&nbsp;Angeles,&nbsp;CA
+              </small>
             </div>
             <SocialIcons />
           </section>
@@ -88,8 +91,8 @@ class Home extends Component {
                 <i>dəˈzīn tekˈnäləjəst</i>
               </p>
               <p>
-                A product visionary who can use design and front-end development
-                skills to lead the vision of a product.
+                A software engineer that is focused on the user's experience
+                with the product.
               </p>
               <hr className="my2" />
               <label>from indeed:</label>

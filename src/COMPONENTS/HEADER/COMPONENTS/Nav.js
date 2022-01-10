@@ -33,13 +33,6 @@ class Nav extends React.Component {
         {/* logo */}
         <Link to="/react-gh-pages/" className="flex flex-center-y">
           <img className="header-logo" src={NavLogo} alt="C-logo" />
-          <div
-            className="flex-vertical"
-            style={{ color: "var(--transBlueC-75)" }}
-          >
-            <h5 style={{ lineHeight: 1 }}>C.&nbsp;Howard</h5>
-            <small style={{ lineHeight: 1 }}>Los&nbsp;Angeles,&nbsp;CA</small>
-          </div>
         </Link>
 
         {/* button */}
