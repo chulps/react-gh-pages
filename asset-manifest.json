@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.8124c9b7.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.ea884af1.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.ea884af1.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.ed1893cf.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.ed1893cf.js.map",
+    "main.css": "/react-gh-pages/static/css/main.e955e7ff.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.86ac86ee.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.86ac86ee.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.efdf0942.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.efdf0942.js.map",
     "static/js/2.a468fefc.chunk.js": "/react-gh-pages/static/js/2.a468fefc.chunk.js",
     "static/js/2.a468fefc.chunk.js.map": "/react-gh-pages/static/js/2.a468fefc.chunk.js.map",
-    "static/js/3.b0d0b172.chunk.js": "/react-gh-pages/static/js/3.b0d0b172.chunk.js",
-    "static/js/3.b0d0b172.chunk.js.map": "/react-gh-pages/static/js/3.b0d0b172.chunk.js.map",
+    "static/js/3.c3b3b3a7.chunk.js": "/react-gh-pages/static/js/3.c3b3b3a7.chunk.js",
+    "static/js/3.c3b3b3a7.chunk.js.map": "/react-gh-pages/static/js/3.c3b3b3a7.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.8124c9b7.chunk.css.map": "/react-gh-pages/static/css/main.8124c9b7.chunk.css.map",
+    "static/css/main.e955e7ff.chunk.css.map": "/react-gh-pages/static/css/main.e955e7ff.chunk.css.map",
     "static/js/2.a468fefc.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.a468fefc.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -30,9 +30,9 @@
     "static/media/yarden_logo.f594f3c5.svg": "/react-gh-pages/static/media/yarden_logo.f594f3c5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ed1893cf.js",
+    "static/js/runtime-main.efdf0942.js",
     "static/js/2.a468fefc.chunk.js",
-    "static/css/main.8124c9b7.chunk.css",
-    "static/js/main.ea884af1.chunk.js"
+    "static/css/main.e955e7ff.chunk.css",
+    "static/js/main.86ac86ee.chunk.js"
   ]
 }
