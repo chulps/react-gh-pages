@@ -38,7 +38,6 @@ class Home extends Component {
                   cy="100"
                   r="100"
                   fill="var(--green0)"
-                  stroke="white"
                   opacity="0.25"
                 />
                 <circle
@@ -46,7 +45,6 @@ class Home extends Component {
                   cy="175.06"
                   r="100"
                   fill="var(--red0)"
-                  stroke="white"
                   opacity="0.25"
                 />
                 <circle
@@ -54,7 +52,6 @@ class Home extends Component {
                   cy="175.06"
                   r="100"
                   fill="var(--blue0)"
-                  stroke="white"
                   opacity="0.25"
                 />
               </svg>
