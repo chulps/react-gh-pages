@@ -38,7 +38,7 @@ class Home extends Component {
                   r="100"
                   fill="var(--green0)"
                   stroke="white"
-                  opacity="0.1"
+                  opacity="0.25"
                 />
                 <circle
                   cx="100"
@@ -46,7 +46,7 @@ class Home extends Component {
                   r="100"
                   fill="var(--red0)"
                   stroke="white"
-                  opacity="0.1"
+                  opacity="0.25"
                 />
                 <circle
                   cx="186.6"
@@ -54,7 +54,7 @@ class Home extends Component {
                   r="100"
                   fill="var(--blue0)"
                   stroke="white"
-                  opacity="0.1"
+                  opacity="0.25"
                 />
               </svg>
               <h6
@@ -85,7 +85,7 @@ class Home extends Component {
                 className="absolute text-right"
                 style={{ transform: "translate(-160% , -110%)", lineHeight: 1 }}
               >
-                <small style={{ lineHeight: 1 }}>
+                <small className="bold" style={{ lineHeight: 1 }}>
                   Product
                   <br />
                   Roadmapping
@@ -95,14 +95,14 @@ class Home extends Component {
                 className="absolute"
                 style={{ transform: "translate(160% , -110%)", lineHeight: 1 }}
               >
-                <small style={{ lineHeight: 1 }}>
+                <small className="bold" style={{ lineHeight: 1 }}>
                   Concept
                   <br />
                   Development
                 </small>
               </small>
               <small
-                className="absolute text-center"
+                className="absolute text-center bold"
                 style={{ transform: "translate(0 , 400%)", lineHeight: 1 }}
               >
                 <small style={{ lineHeight: 1 }}>
@@ -156,7 +156,8 @@ class Home extends Component {
               <h5>Product Intelligence Tools:</h5>
               <small>
                 Use data to inform decisions. In order to collect that data I
-                use these tools.
+                use these tools. Later I analyse the data to inform my design
+                decisions.
               </small>
               <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
                 <small>Google Analytics</small>
@@ -169,8 +170,9 @@ class Home extends Component {
             <div>
               <h5>Design Tools:</h5>
               <small>
-                Use tools like Hotjar, Crazy Egg, and Google Analytics to
-                collect data about how the product is used.
+                Creating assets, editing photos, converting files, SVGs,
+                prototypes, branding, animation, etc... it all happens with
+                these tools.
               </small>
               <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
                 <small>Photoshop</small>
