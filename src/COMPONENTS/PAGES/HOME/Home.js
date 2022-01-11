@@ -130,7 +130,7 @@ class Home extends Component {
               </p>
               <hr className="my2" />
               <label>from indeed:</label>
-              <br />
+              <h5>What is a Design Technologist?</h5>
               <small>
                 "In a sentence, design technologists are designers with
                 front-end development skills. They tackle front-end programming,
@@ -153,39 +153,43 @@ class Home extends Component {
 
           <section className="one-column lg-three-columns gap3 pb4">
             <div>
-              <h6>Product Intelligence Tools:</h6>
-              <small className="three-columns py0 px1">
+              <h5>Product Intelligence Tools:</h5>
+              <small>
+                Use data to inform decisions. In order to collect that data I
+                use these tools.
+              </small>
+              <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
                 <small>Google Analytics</small>
                 <small>Google Optimize</small>
                 <small>Hotjar</small>
                 <small>Crazy Egg</small>
                 <small>Hubspot</small>
               </small>
-              <small>
-                Planning, designing, and building split tests using Google
-                Optimize to split traffic and send custom events to Google
-                Analytics.
-              </small>
             </div>
             <div>
-              <h6>Design Tools:</h6>
-              <small className="three-columns py0 px1">
-                <small>Photoshop</small>
-                <small>Illustrator</small>
-                <small>Indesign</small>
-                <small>XD</small>
-                <small>Figma</small>
-                <small>Balsamiq</small>
-                <small>Miro</small>
-              </small>
+              <h5>Design Tools:</h5>
               <small>
                 Use tools like Hotjar, Crazy Egg, and Google Analytics to
                 collect data about how the product is used.
               </small>
+              <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
+                <small>Photoshop</small>
+                <small>Illustrator</small>
+                <small>Indesign</small>
+                <small>XD</small>
+                <small>After Effects</small>
+                <small>Figma</small>
+                <small>Balsamiq</small>
+                <small>Miro</small>
+              </small>
             </div>
             <div>
-              <h6>Development Tools:</h6>
-              <small className="three-columns py0 px1">
+              <h5>Development Tools:</h5>
+              <small>
+                In order to build prototypes at the highest fidelity, it's
+                important to know how to code a little...
+              </small>
+              <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
                 <small>HTML</small>
                 <small>CSS</small>
                 <small>Javascript</small>
@@ -201,7 +205,6 @@ class Home extends Component {
                 <small>Docker</small>
                 <small>PHP</small>
               </small>
-              <small>something something</small>
             </div>
           </section>
         </section>
