@@ -160,7 +160,7 @@ class Home extends Component {
                 use these tools that measure how real users use the product in
                 real scenarios.
               </small>
-              <small className="product-tools p1">
+              <small className="product-tools py1">
                 <small>Google Analytics</small>
                 <small>Google Optimize</small>
                 <small>Hotjar</small>
@@ -175,7 +175,7 @@ class Home extends Component {
                 prototypes, branding, animation, etc... it all happens with
                 these tools.
               </small>
-              <small className="design-tools p1">
+              <small className="design-tools py1">
                 <small>Photoshop</small>
                 <small>Illustrator</small>
                 <small>Indesign</small>
@@ -192,7 +192,7 @@ class Home extends Component {
                 Use these tools to create design systems and reusable components
                 so that I can quickly build prototypes at the highest fidelity.
               </small>
-              <small className="development-tools p1">
+              <small className="development-tools py1">
                 <small>HTML</small>
                 <small>CSS</small>
                 <small>Javascript</small>
