@@ -23,7 +23,7 @@ class Home extends Component {
             <SocialIcons />
           </section>
         </section>
-        <section className="hero bg-transBlueC-05 flex-center">
+        <section className="hero bg-transBlueC-05">
           <section className="py4 one-column lg-two-columns gap2 md-gap3">
             <div className="flex-center sm-px3 md-px4 lg-px2 xl-px3">
               <svg
@@ -36,21 +36,24 @@ class Home extends Component {
                   cx="143.3"
                   cy="100"
                   r="100"
-                  fill="#00394d"
+                  fill="var(--green0)"
+                  stroke="white"
                   opacity="0.1"
                 />
                 <circle
                   cx="100"
                   cy="175.06"
                   r="100"
-                  fill="#00394d"
+                  fill="var(--red0)"
+                  stroke="white"
                   opacity="0.1"
                 />
                 <circle
                   cx="186.6"
                   cy="175.06"
                   r="100"
-                  fill="#00394d"
+                  fill="var(--blue0)"
+                  stroke="white"
                   opacity="0.1"
                 />
               </svg>
@@ -60,7 +63,7 @@ class Home extends Component {
               >
                 Product
                 <br />
-                Vision
+                Intelligence
               </h6>
               <h6
                 className="absolute text-right"
@@ -74,10 +77,40 @@ class Home extends Component {
                 className="absolute"
                 style={{ transform: "translate(-120% , 220%)" }}
               >
-                Web
+                Front-end
                 <br />
                 Development
               </h6>
+              <small
+                className="absolute text-right"
+                style={{ transform: "translate(-160% , -110%)", lineHeight: 1 }}
+              >
+                <small style={{ lineHeight: 1 }}>
+                  Product
+                  <br />
+                  Roadmapping
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(160% , -110%)", lineHeight: 1 }}
+              >
+                <small style={{ lineHeight: 1 }}>
+                  Concept
+                  <br />
+                  Development
+                </small>
+              </small>
+              <small
+                className="absolute text-center"
+                style={{ transform: "translate(0 , 400%)", lineHeight: 1 }}
+              >
+                <small style={{ lineHeight: 1 }}>
+                  Design
+                  <br />
+                  Feasability
+                </small>
+              </small>
               <h5
                 className="absolute text-center"
                 style={{ transform: "translate(0 , 20%)" }}
@@ -86,9 +119,10 @@ class Home extends Component {
               </h5>
             </div>
             <div>
-              <h3>"design technologist?"</h3>
+              <h3>Design</h3>
+              <h3>Technologist?</h3>
               <p className="h4">
-                <i>dəˈzīn tekˈnäləjəst</i>
+                <i>/dəˈzīn tekˈnäləjəst/</i>
               </p>
               <p>
                 A software engineer that is focused on the user's experience
@@ -103,7 +137,9 @@ class Home extends Component {
                 design, and UX all at the same time. They care about the
                 integrity of a product’s code and the quality of its look and
                 feel. Through testing and research, they make sure everything
-                works together."{" "}
+                works together."
+                <br />
+                <br />
                 <a
                   className="h6"
                   href="https://indeed.design/article/what-is-a-design-technologist"
@@ -112,6 +148,60 @@ class Home extends Component {
                   See article from Indeed...
                 </a>
               </small>
+            </div>
+          </section>
+
+          <section className="one-column lg-three-columns gap3 pb4">
+            <div>
+              <h6>Product Intelligence Tools:</h6>
+              <small className="three-columns py0 px1">
+                <small>Google Analytics</small>
+                <small>Google Optimize</small>
+                <small>Hotjar</small>
+                <small>Crazy Egg</small>
+                <small>Hubspot</small>
+              </small>
+              <small>
+                Planning, designing, and building split tests using Google
+                Optimize to split traffic and send custom events to Google
+                Analytics.
+              </small>
+            </div>
+            <div>
+              <h6>Design Tools:</h6>
+              <small className="three-columns py0 px1">
+                <small>Photoshop</small>
+                <small>Illustrator</small>
+                <small>Indesign</small>
+                <small>XD</small>
+                <small>Figma</small>
+                <small>Balsamiq</small>
+                <small>Miro</small>
+              </small>
+              <small>
+                Use tools like Hotjar, Crazy Egg, and Google Analytics to
+                collect data about how the product is used.
+              </small>
+            </div>
+            <div>
+              <h6>Development Tools:</h6>
+              <small className="three-columns py0 px1">
+                <small>HTML</small>
+                <small>CSS</small>
+                <small>Javascript</small>
+                <small>Sass</small>
+                <small>React</small>
+                <small>Sourcetree</small>
+                <small>Bitbucket</small>
+                <small>Git/Github</small>
+                <small>Angular</small>
+                <small>Vue</small>
+                <small>HUBL</small>
+                <small>Liquid</small>
+                <small>Docker</small>
+                <small>PHP</small>
+              </small>
+              <small>something something</small>
             </div>
           </section>
         </section>
