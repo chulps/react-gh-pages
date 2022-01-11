@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SocialIcons from "../../SocialIcons";
 import ProjectsSection from "./COMPONENTS/ProjectsSection";
 import Logo from "../../../LOGO/LOGO_WHITE.gif";
+import "./Home.css";
 
 class Home extends Component {
   render() {
@@ -25,7 +26,7 @@ class Home extends Component {
         </section>
         <section className="hero bg-transBlueC-05">
           <section className="py4 one-column lg-two-columns gap2 md-gap3">
-            <div className="flex-center sm-px3 md-px4 lg-px2 xl-px3">
+            <div className="flex-center sm-px3 md-px4 lg-px1 xl-px3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
@@ -130,7 +131,7 @@ class Home extends Component {
               </p>
               <hr className="my2" />
               <label>from indeed:</label>
-              <h5>What is a Design Technologist?</h5>
+              <h5>"What is a Design Technologist?"</h5>
               <small>
                 "In a sentence, design technologists are designers with
                 front-end development skills. They tackle front-end programming,
@@ -156,10 +157,10 @@ class Home extends Component {
               <h5>Product Intelligence Tools:</h5>
               <small>
                 Use data to inform decisions. In order to collect that data I
-                use these tools. Later I analyse the data to inform my design
-                decisions.
+                use these tools that measure how real users use the product in
+                real scenarios.
               </small>
-              <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
+              <small className="product-tools p1">
                 <small>Google Analytics</small>
                 <small>Google Optimize</small>
                 <small>Hotjar</small>
@@ -174,7 +175,7 @@ class Home extends Component {
                 prototypes, branding, animation, etc... it all happens with
                 these tools.
               </small>
-              <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
+              <small className="design-tools p1">
                 <small>Photoshop</small>
                 <small>Illustrator</small>
                 <small>Indesign</small>
@@ -188,13 +189,14 @@ class Home extends Component {
             <div>
               <h5>Development Tools:</h5>
               <small>
-                In order to build prototypes at the highest fidelity, it's
-                important to know how to code a little...
+                Use these tools to create design systems and reusable components
+                so that I can quickly build prototypes at the highest fidelity.
               </small>
-              <small className="two-columns xs-three-columns sm-five-columns md-six-columns lg-two-columns xl-three-columns gap1 p1">
+              <small className="development-tools p1">
                 <small>HTML</small>
                 <small>CSS</small>
                 <small>Javascript</small>
+                <small>SVG</small>
                 <small>Sass</small>
                 <small>React</small>
                 <small>Sourcetree</small>
@@ -204,7 +206,6 @@ class Home extends Component {
                 <small>Vue</small>
                 <small>HUBL</small>
                 <small>Liquid</small>
-                <small>Docker</small>
                 <small>PHP</small>
               </small>
             </div>

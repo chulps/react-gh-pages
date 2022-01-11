@@ -13,7 +13,7 @@ class ProjectSection extends Component {
         <section className="projects-section py3">
           <h3>Projects:</h3>
           <p className="md-half lg-third mb3">My most recent projects:</p>
-          <div className="one-column md-two-columns lg-four-columns gap2">
+          <div className="one-column sm-two-columns lg-four-columns gap2">
             <Link className="disabled" to="/react-gh-pages/crigenetics/">
               <img width="100%" src={CRILogo} alt="cri-logo" />
               <small>Not ready yet...</small>
