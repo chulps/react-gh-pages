@@ -141,13 +141,15 @@ class Home extends Component {
                 works together."
                 <br />
                 <br />
-                <a
-                  className="h6"
-                  href="https://indeed.design/article/what-is-a-design-technologist"
-                  target="_blank"
-                >
-                  See article from Indeed...
-                </a>
+                <div className="flex-end">
+                  <a
+                    className="h6"
+                    href="https://indeed.design/article/what-is-a-design-technologist"
+                    target="_blank"
+                  >
+                    See article from Indeed...
+                  </a>
+                </div>
               </small>
             </div>
           </section>
