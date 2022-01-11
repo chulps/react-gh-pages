@@ -81,22 +81,22 @@ class Home extends Component {
               </h6>
               <small
                 className="absolute text-right"
-                style={{ transform: "translate(-160% , -110%)", lineHeight: 1 }}
+                style={{ transform: "translate(-220% , -110%)", lineHeight: 1 }}
               >
                 <small className="bold" style={{ lineHeight: 1 }}>
                   Product
                   <br />
-                  Roadmapping
+                  Roadmap
                 </small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(160% , -110%)", lineHeight: 1 }}
+                style={{ transform: "translate(240% , -110%)", lineHeight: 1 }}
               >
                 <small className="bold" style={{ lineHeight: 1 }}>
-                  Concept
+                  Product
                   <br />
-                  Development
+                  Vision
                 </small>
               </small>
               <small
@@ -104,7 +104,7 @@ class Home extends Component {
                 style={{ transform: "translate(0 , 400%)", lineHeight: 1 }}
               >
                 <small style={{ lineHeight: 1 }}>
-                  Design
+                  Product
                   <br />
                   Feasability
                 </small>
@@ -164,7 +164,6 @@ class Home extends Component {
                 <small>Google Optimize</small>
                 <small>Hotjar</small>
                 <small>Crazy Egg</small>
-                <small>Hubspot</small>
               </small>
             </div>
             <div>
