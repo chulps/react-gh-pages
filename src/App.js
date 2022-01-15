@@ -6,6 +6,7 @@ import CRIGenetics from "./COMPONENTS/PAGES/CRIGENETICS/CRIGenetics.js";
 import Yarden from "./COMPONENTS/PAGES/YARDEN/Yarden.js";
 import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
 import Footer from "./COMPONENTS/FOOTER/Footer.js";
+import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -31,6 +32,7 @@ function App() {
             />
             <Route path="/react-gh-pages/yarden/" element={<Yarden />} />
             <Route path="/react-gh-pages/clicktool/" element={<Clicktool />} />
+            <Route path="/react-gh-pages/covid/" element={<Covid />} />
           </Routes>
         </main>
 

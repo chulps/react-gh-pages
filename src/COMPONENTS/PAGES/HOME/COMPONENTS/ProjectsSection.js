@@ -39,6 +39,10 @@ class ProjectSection extends Component {
             <Link to="/react-gh-pages/clicktool/">
               <ClicktoolLogo />
             </Link>
+
+            <Link to="/react-gh-pages/covid/">
+              <h6 className="text-red0">Covid Tracker</h6>
+            </Link>
           </div>
         </section>
       </section>

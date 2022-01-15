@@ -9,13 +9,18 @@ class Nucleotide extends Component {
           className="hero flex-center flex-vertical"
           style={{ gap: "var(--unit2)" }}
         >
+          <div>
+            <label>Project:</label>
+            <h1>Nucleotide</h1>
+            <p>
+              Nucleotide is a development framework built for the developers at
+              CRI Genetics. It consists of three parts: A responsive design
+              framework built
+            </p>
+          </div>
           <img height="50px" src={NucleotideLogo} />
           <div className="md-three-fourths lg-half xl-third">
             <h4>🛠 I'm still working on this page...</h4>
-            <p>
-              Nucleotide is a Web Design Framework I created for the team at CRI
-              Genetics.
-            </p>
           </div>
           <div className="flex">
             <a href="http://nucleotide.crigenetics.com/ui/dev/index.html">
