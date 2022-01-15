@@ -27,7 +27,7 @@ class Covid extends Component {
         <section className="py4">
           <div className="lg-half">
             <label>🦠 Project:</label>
-            <h1>Covid-19 Dashboard</h1>
+            <h1 className="text-red0">Covid-19 Dashboard</h1>
 
             <p>
               This API stopped collecting daily data in early 2021, however the
