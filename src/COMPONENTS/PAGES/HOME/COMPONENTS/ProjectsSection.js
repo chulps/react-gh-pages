@@ -41,7 +41,7 @@ class ProjectSection extends Component {
             </Link>
 
             <Link to="/react-gh-pages/covid/">
-              <h6 className="text-red0">Covid Tracker</h6>
+              <h4 className="text-red0">🦠 COVID-19 Dashboard</h4>
             </Link>
           </div>
         </section>

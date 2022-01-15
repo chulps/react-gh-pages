@@ -142,6 +142,7 @@ const Chart = () => {
         <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-100} />
         <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-150} />
         <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-200} />
+        <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-250} />
         )}
       </svg>
       <small
@@ -197,7 +198,7 @@ const Chart = () => {
           textAlign: "right"
         }}
       >
-        <data>{shortenString(dailyData[dailyData.length - 1].date)}</data>
+        <data>{dailyData[dailyData.length - 1].date}</data>
       </small>
     </React.Fragment>
   ) : null;
