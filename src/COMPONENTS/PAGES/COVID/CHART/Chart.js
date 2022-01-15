@@ -61,17 +61,17 @@ const Chart = () => {
         overflow="visible"
       >
         <defs>
-          <circle id="dot" cx="0" cy="0" r="1" stroke="transparent" />
-          <line id="bg-line" stroke="var(--transBlueC-10)" />
+          <circle id="dot" cx="0" cy="0" r="1.5" stroke="transparent" />
+          <line id="y-line" x1="0" y1="0" x2="0" y2="100%" />
+          <line id="x-line" x1="0" y1="100%" x2="100%" y2="100%" />
         </defs>
-        <rect width="100%" height="100%" fill="var(--transBlueC-05)" />
         <line
           id="y-axis"
           x1="0"
           y1="0"
           x2="0"
           y2="100%"
-          stroke="var(--transBlueC-10)"
+          stroke="var(--transBlueC-75)"
         />
         <line
           id="x-axis"
@@ -79,7 +79,7 @@ const Chart = () => {
           y1="100%"
           x2="100%"
           y2="100%"
-          stroke="var(--transBlueC-10)"
+          stroke="var(--transBlueC-75)"
         />
         <line
           id="x-axis-max"
@@ -87,7 +87,7 @@ const Chart = () => {
           y1="100%"
           x2="100%"
           y2="calc(100% + 0.4rem)"
-          stroke="var(--transBlueC-10)"
+          stroke="var(--transBlueC-75)"
         />
         <line
           id="x-axis-zero"
@@ -95,7 +95,7 @@ const Chart = () => {
           y1="100%"
           x2="0"
           y2="calc(100% + 0.4rem)"
-          stroke="var(--transBlueC-10)"
+          stroke="var(--transBlueC-75)"
         />
         <line
           id="y-axis-zero"
@@ -103,7 +103,7 @@ const Chart = () => {
           y1="100%"
           x2="-0.4rem"
           y2="100%"
-          stroke="var(--transBlueC-10)"
+          stroke="var(--transBlueC-75)"
         />
         <line
           id="y-axis-max"
@@ -111,18 +111,8 @@ const Chart = () => {
           y1="0"
           x2="-0.4rem"
           y2="0"
-          stroke="var(--transBlueC-10)"
+          stroke="var(--transBlueC-75)"
         />
-        <polyline
-          strokeWidth="2"
-          fill="transparent"
-          stroke=""
-          points="
-        0, 10
-        10, 20
-        20, 45"
-        />
-
         {dailyData.map((day, index) => (
           <React.Fragment>
             <use
@@ -137,8 +127,22 @@ const Chart = () => {
               y={(-256 / maxConfirmed) * day.deaths + 256}
               fill="var(--red0)"
             />
+
+            {index % 28 ? null : (
+              <use
+                href="#y-line"
+                stroke="var(--transBlueC-05)"
+                x={dataDay * index}
+                y={0}
+              />
+            )}
           </React.Fragment>
         ))}
+        <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-50} />
+        <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-100} />
+        <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-150} />
+        <use href="#x-line" stroke="var(--transBlueC-05)" x={0} y={-200} />
+        )}
       </svg>
       <small
         className=" flex-vertical "
@@ -201,9 +205,10 @@ const Chart = () => {
   return (
     <div
       id="line-chart-container"
-      className="relative mt3 half sm-two-thirds md-three-fourths xl-whole m-auto"
+      className="relative half sm-two-thirds md-three-fourths lg-four-fifths xl-whole m-auto"
       style={{
         boxShadow: "inset 0 6px 12px var(--transBlueC-10)",
+        background: "white",
         overflow: "visible",
         height: 256,
         border: "1px solid var(--transBlueC-10)",
@@ -212,13 +217,6 @@ const Chart = () => {
       }}
     >
       {lineChart}
-      <div>
-        <div className="mt2">
-          <small className="text-green0">Infected</small>
-          <br />
-          <small className="text-red0">Dead</small>
-        </div>
-      </div>
     </div>
   );
 };

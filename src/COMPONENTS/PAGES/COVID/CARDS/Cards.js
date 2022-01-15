@@ -32,8 +32,8 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   };
 
   return (
-    <div className="md-two-columns gap3">
-      <div className="flex-center">
+    <div className="flex-wrap sm-two-columns gap3">
+      <div className="flex-center-x">
         <div className="flex-vertical">
           <label>all time infected:</label>
           <data className="bold h3">{shortenString(confirmed.value)}</data>
@@ -49,7 +49,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           <small>number of active cases</small>
         </div>
       </div> */}
-      <div className="flex-center">
+      <div className="flex-center-x">
         <div className="flex-vertical">
           <label>all time dead:</label>
           <data className="bold h3">{shortenString(deaths.value)}</data>
