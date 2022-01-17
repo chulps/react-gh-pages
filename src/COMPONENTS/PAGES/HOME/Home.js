@@ -38,16 +38,19 @@ const Home = () => {
                 Los&nbsp;Angeles,&nbsp;CA
               </small>
             </div>
-            <label>contact me:</label>
-            <SocialIcons />
+            <div>
+              <label>contact me:</label>
+              <SocialIcons />
+            </div>
           </div>
-          <div className="flex-end">
+          <div className="flex-vertical flex-end relative">
             <img
+              className="ghost sm-flex"
               src={Chuck}
               alt="chuck"
               style={{
                 objectFit: "cover",
-                transform: `translateY(${100 - scrollY / 4}px)`,
+                transform: `translateY(${-scrollY / 4}px)`,
                 filter: `blur(${scrollY / 32}px)`,
                 position: "fixed"
               }}
