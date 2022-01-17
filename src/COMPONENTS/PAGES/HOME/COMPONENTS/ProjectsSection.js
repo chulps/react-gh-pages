@@ -9,8 +9,11 @@ import "./ProjectsSection.css";
 class ProjectSection extends Component {
   render() {
     return (
-      <section class="hero flex-center bg-transBlueC-10">
-        <section className="projects-section py3">
+      <section
+        class="hero flex-center bg-default"
+        style={{ minHeight: "unset" }}
+      >
+        <section className="projects-section pt3 pb4">
           <h3>Projects:</h3>
           <p className="md-half lg-third mb3">My most recent projects:</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">

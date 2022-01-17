@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Cards from "./CARDS/Cards";
 import Chart from "./CHART/Chart";
-import CountryPicker from "./COUNTRY_PICKER/Country_Picker";
-import Map from "./MAP/Map";
 
 import { fetchData } from "../../../COVID-API";
 
