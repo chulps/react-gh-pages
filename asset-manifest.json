@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.fa6270df.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.4f565999.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.4f565999.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.4354a784.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.4354a784.js.map",
+    "main.css": "/react-gh-pages/static/css/main.3f9042f9.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.1d305798.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.1d305798.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.ecce4d2e.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.ecce4d2e.js.map",
     "static/js/2.2f6982cd.chunk.js": "/react-gh-pages/static/js/2.2f6982cd.chunk.js",
     "static/js/2.2f6982cd.chunk.js.map": "/react-gh-pages/static/js/2.2f6982cd.chunk.js.map",
-    "static/js/3.e6144eaf.chunk.js": "/react-gh-pages/static/js/3.e6144eaf.chunk.js",
-    "static/js/3.e6144eaf.chunk.js.map": "/react-gh-pages/static/js/3.e6144eaf.chunk.js.map",
+    "static/js/3.5d174247.chunk.js": "/react-gh-pages/static/js/3.5d174247.chunk.js",
+    "static/js/3.5d174247.chunk.js.map": "/react-gh-pages/static/js/3.5d174247.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.fa6270df.chunk.css.map": "/react-gh-pages/static/css/main.fa6270df.chunk.css.map",
+    "static/css/main.3f9042f9.chunk.css.map": "/react-gh-pages/static/css/main.3f9042f9.chunk.css.map",
     "static/js/2.2f6982cd.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.2f6982cd.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -18,6 +18,7 @@
     "static/media/ONE_PLACE.798cf443.svg": "/react-gh-pages/static/media/ONE_PLACE.798cf443.svg",
     "static/media/RotateLandingPages.cc7dc35a.svg": "/react-gh-pages/static/media/RotateLandingPages.cc7dc35a.svg",
     "static/media/behance-01.7757bf02.svg": "/react-gh-pages/static/media/behance-01.7757bf02.svg",
+    "static/media/chuck.3cff1495.png": "/react-gh-pages/static/media/chuck.3cff1495.png",
     "static/media/clicktool_dashboard.bb05c823.mp4": "/react-gh-pages/static/media/clicktool_dashboard.bb05c823.mp4",
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
     "static/media/cri_genetics_logo.b719b6ed.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed.svg",
@@ -31,9 +32,9 @@
     "static/media/yarden_logo.f594f3c5.svg": "/react-gh-pages/static/media/yarden_logo.f594f3c5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4354a784.js",
+    "static/js/runtime-main.ecce4d2e.js",
     "static/js/2.2f6982cd.chunk.js",
-    "static/css/main.fa6270df.chunk.css",
-    "static/js/main.4f565999.chunk.js"
+    "static/css/main.3f9042f9.chunk.css",
+    "static/js/main.1d305798.chunk.js"
   ]
 }
