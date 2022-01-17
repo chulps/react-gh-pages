@@ -45,14 +45,16 @@ const Home = () => {
           </div>
           <div className="flex-vertical flex-end relative">
             <img
-              className="ghost sm-flex"
+              className="ghost lg-flex"
               src={Chuck}
               alt="chuck"
               style={{
                 objectFit: "cover",
                 transform: `translateY(${-scrollY / 4}px)`,
                 filter: `blur(${scrollY / 32}px)`,
-                position: "fixed"
+                position: "fixed",
+                alignSelf: "end",
+                maxHeight: "90%"
               }}
             />
           </div>
