@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.3f9042f9.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.ab987a4e.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.ab987a4e.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.4fdd7740.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.4fdd7740.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.ecce4d2e.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.ecce4d2e.js.map",
     "static/js/2.2f6982cd.chunk.js": "/react-gh-pages/static/js/2.2f6982cd.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/ONE_PLACE.798cf443.svg": "/react-gh-pages/static/media/ONE_PLACE.798cf443.svg",
     "static/media/RotateLandingPages.cc7dc35a.svg": "/react-gh-pages/static/media/RotateLandingPages.cc7dc35a.svg",
     "static/media/behance-01.7757bf02.svg": "/react-gh-pages/static/media/behance-01.7757bf02.svg",
-    "static/media/chuck.3cff1495.png": "/react-gh-pages/static/media/chuck.3cff1495.png",
+    "static/media/chuck_blue.d55df030.png": "/react-gh-pages/static/media/chuck_blue.d55df030.png",
     "static/media/clicktool_dashboard.bb05c823.mp4": "/react-gh-pages/static/media/clicktool_dashboard.bb05c823.mp4",
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
     "static/media/cri_genetics_logo.b719b6ed.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed.svg",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.ecce4d2e.js",
     "static/js/2.2f6982cd.chunk.js",
     "static/css/main.3f9042f9.chunk.css",
-    "static/js/main.ab987a4e.chunk.js"
+    "static/js/main.4fdd7740.chunk.js"
   ]
 }
