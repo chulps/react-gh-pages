@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import SocialIcons from "../../SocialIcons";
 import ProjectsSection from "./COMPONENTS/ProjectsSection";
 import Logo from "../../../LOGO/LOGO_WHITE.gif";
-import Chuck from "../../../IMG/USERS/chuck.png";
+import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
               style={{
                 objectFit: "cover",
                 transform: `translateY(${-scrollY / 4}px)`,
-                filter: `blur(${scrollY / 32}px)`,
+                filter: `blur(${scrollY / 32}px) opacity(0.9)`,
                 position: "fixed",
                 alignSelf: "end",
                 maxHeight: "90%"

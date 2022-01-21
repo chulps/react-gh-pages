@@ -10,10 +10,11 @@ class Covid extends Component {
   };
 
   async componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     const fetchedData = await fetchData();
-
     this.setState({ data: fetchedData });
   }
+
   render() {
     const { data } = this.state;
     {
