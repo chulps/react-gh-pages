@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <footer id="footer" className="bg-blueC flex-center flex-vertical p2">
         <img className="header-logo" src={NavLogo} alt="C-logo" />
-        ©Chuck Howard 2022
+        © Chuck Howard 2022
       </footer>
     );
   }
