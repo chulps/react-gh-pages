@@ -149,7 +149,7 @@ const Home = () => {
               className="absolute text-center"
               style={{ transform: "translate(0 , 20%)" }}
             >
-              <img src={Logo} height={80} />
+              <img src={Logo} height={80} alt="Logo"/>
             </h5>
           </div>
           <div>
@@ -176,6 +176,7 @@ const Home = () => {
               <div className="flex-end">
                 <a
                   className="h6"
+                  rel="noreferrer"
                   href="https://indeed.design/article/what-is-a-design-technologist"
                   target="_blank"
                 >

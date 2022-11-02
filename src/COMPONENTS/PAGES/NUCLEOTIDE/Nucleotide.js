@@ -25,12 +25,13 @@ class Nucleotide extends Component {
               className="flex-center flex-vertical"
               style={{ gap: "var(--unit2)" }}
             >
-              <img height="50px" src={NucleotideLogo} />
+              <img height="50px" src={NucleotideLogo} alt="Nucleotide Logo"/>
               <div>
                 <h4>🛠 I'm still working on this page...</h4>
               </div>
               <div className="flex">
-                <a href="http://nucleotide.crigenetics.com/ui/dev/index.html">
+                <a
+                  href="http://nucleotide.crigenetics.com/ui/dev/index.html">
                   Documentation
                 </a>
                 {"  "}|{" "}

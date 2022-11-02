@@ -9,7 +9,7 @@ const shortenString = function(value) {
     var shortValue = "";
     for (var precision = 5; precision >= 1; precision--) {
       shortValue = parseFloat(
-        (suffixNum != 0
+        (suffixNum !== 0
           ? value / Math.pow(1000, suffixNum)
           : value
         ).toPrecision(precision)
@@ -19,7 +19,7 @@ const shortenString = function(value) {
         break;
       }
     }
-    if (shortValue % 1 != 10) shortValue = shortValue.toFixed(2);
+    if (shortValue % 1 !== 10) shortValue = shortValue.toFixed(2);
     newValue = shortValue + suffixes[suffixNum];
   }
   return newValue;
@@ -49,7 +49,7 @@ const Chart = () => {
     deathsArr.push(`${day.deaths}`);
   }
 
-  const maxDeaths = Math.max(...deathsArr);
+  // const maxDeaths = Math.max(...deathsArr);
   const maxConfirmed = Math.max(...confirmedArr);
 
   const lineChart = dailyData.length ? (

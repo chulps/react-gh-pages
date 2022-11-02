@@ -1,6 +1,5 @@
 // ClicktoolSVGSection.js
 import React from "react";
-import Hat from "./myHat.png";
 import NonRedirectTracking from "../CLICKTOOL_COMPONENTS/SVG/NonRedirectTracking.js";
 import ClicktoolCity from "./SVG/ClicktoolCity";
 import MagnifyingGlass from "../CLICKTOOL_COMPONENTS/SVG/magnifying_glass_animation.svg";

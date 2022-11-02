@@ -12,7 +12,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
       var shortValue = "";
       for (var precision = 5; precision >= 1; precision--) {
         shortValue = parseFloat(
-          (suffixNum != 0
+          (suffixNum !== 0
             ? value / Math.pow(1000, suffixNum)
             : value
           ).toPrecision(precision)
@@ -25,7 +25,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           break;
         }
       }
-      if (shortValue % 1 != 10) shortValue = shortValue.toFixed(2);
+      if (shortValue % 1 !== 10) shortValue = shortValue.toFixed(2);
       newValue = shortValue + suffixes[suffixNum];
     }
     return newValue;
@@ -36,7 +36,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
       <div className="flex-center-x">
         <div className="flex-vertical">
           <label>all time infected:</label>
-          <data className="bold h3">{shortenString(confirmed.value)}</data>
+          <data className="bold h3 text-green0">{shortenString(confirmed.value)}</data>
           <data>{new Date(lastUpdate).toDateString()}</data>
           <small>Last Update</small>
         </div>
@@ -52,7 +52,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
       <div className="flex-center-x">
         <div className="flex-vertical">
           <label>all time dead:</label>
-          <data className="bold h3">{shortenString(deaths.value)}</data>
+          <data className="bold h3 text-red0">{shortenString(deaths.value)}</data>
           <data>{new Date(lastUpdate).toDateString()}</data>
           <small>Last Update</small>
         </div>

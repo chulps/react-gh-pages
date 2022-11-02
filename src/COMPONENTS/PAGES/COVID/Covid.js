@@ -17,17 +17,17 @@ class Covid extends Component {
 
   render() {
     const { data } = this.state;
-    {
-      console.log(data);
-    }
+    // {
+    //   console.log(data);
+    // }
 
     return (
       <section className="hero" id="covid">
         <section className="py4">
           <div className="lg-two-columns gap3 mb3 lg-mb4">
             <div>
-              <label>🦠 Project:</label>
-              <h1 className="text-red0">Covid-19 Dashboard</h1>
+              <label>Project:</label>
+              <h1>🦠 Covid-19<br/>Dashboard</h1>
 
               <p>
                 This chart is built with React, SVG, Nucleotide, and this cool

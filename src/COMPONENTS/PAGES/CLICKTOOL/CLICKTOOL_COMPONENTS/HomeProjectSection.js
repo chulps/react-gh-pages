@@ -17,7 +17,7 @@ class HomeProjectsSection extends React.Component {
           </div>
         </div>
         <div className="laptop-project-container flex-center whole md-two-thirds relative">
-          <img className="whole absolute" src={Laptop} />
+          <img className="whole absolute" src={Laptop} alt="Laptop Demo"/>
           <div className="relative laptop-project-video-container">
             <video
               className="laptop-project-video"
