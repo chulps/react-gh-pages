@@ -1,3 +1,8 @@
+import React, { Component } from "react";
+
+class YardenLogo extends Component {
+  render() {
+    return (
 <svg class="yarden_horizontal_lockup_bg" width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 241.85">
   <g>
     <path d="M787.68,116c-5.67,0-10.08,1.47-13.65,5a19.19,19.19,0,0,0-5,10.09h38a22.56,22.56,0,0,0-5.46-10.09C797.14,116.65,791.05,116,787.68,116Z" fill="none"/>
@@ -17,3 +22,8 @@
     <polygon points="995.92 73.05 992.5 73.05 985.77 88.48 979.33 73.05 975.91 73.05 971.39 97.33 976.2 97.33 978.67 82.37 984.9 97.33 986.5 97.33 993.01 82.37 995.2 97.33 1000 97.33 995.92 73.05"/>
   </g>
 </svg>
+    );
+  }
+}
+
+export default YardenLogo;

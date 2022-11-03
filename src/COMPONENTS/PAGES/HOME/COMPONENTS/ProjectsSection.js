@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ClicktoolLogo from "../../CLICKTOOL/CLICKTOOL_COMPONENTS/SVG/ClicktoolLogoHorizontal";
-import YardenLogo from "../../../../IMG/yarden_logo.svg";
+import YardenLogo from "../../../../IMG/YardenLogo.js";
 import CRILogo from "../../../../IMG/cri_genetics_logo.svg";
 import NucleotideLogo from "../../../../IMG/nucleotide.svg";
 import "./ProjectsSection.css";
@@ -34,9 +34,8 @@ class ProjectSection extends Component {
               </div>
             </Link>
 
-            <Link className="disabled" to="/react-gh-pages/yarden/">
-              <img src={YardenLogo} alt="yarden" />
-              <small>Not ready yet...</small>
+            <Link to="/react-gh-pages/yarden/">
+              <YardenLogo />
             </Link>
 
             <Link to="/react-gh-pages/clicktool/">
