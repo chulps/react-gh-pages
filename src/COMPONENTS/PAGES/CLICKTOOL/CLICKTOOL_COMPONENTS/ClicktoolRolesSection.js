@@ -28,7 +28,7 @@ class ClicktoolRolesSection extends React.Component {
             </p>
             <div className="one-column md-two-columns gap2">
               <div>
-                <h6>Product Designer:</h6>
+                <h5>Product Designer:</h5>
                 <small>
                   Understand business objectives and architect solutions based
                   on direction from the CEO and user research
@@ -36,7 +36,7 @@ class ClicktoolRolesSection extends React.Component {
               </div>
 
               <div>
-                <h6>Creative Director</h6>
+                <h5>Creative Director</h5>
                 <small>
                   Lead the creation of this app from top to bottom;
                   collaborating with other designers, developers, and
@@ -45,7 +45,7 @@ class ClicktoolRolesSection extends React.Component {
               </div>
 
               <div>
-                <h6>Lead UI/UX Designer:</h6>
+                <h5>Lead UI/UX Designer:</h5>
                 <small>
                   Create wireframes, prototypes, color schemes, brand guidelines
                   & design systems.
@@ -53,7 +53,7 @@ class ClicktoolRolesSection extends React.Component {
               </div>
 
               <div>
-                <h6>Frontend Developer</h6>
+                <h5>Frontend Developer</h5>
                 <small>
                   Create a customized responsive CSS framework and work closely
                   with other developers to achieve the right look and

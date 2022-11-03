@@ -26,19 +26,19 @@ class ClicktoolTopSection extends React.Component {
             <div className="one-column md-two-columns gap2 lg-gap-none">
               <div>
                 <label>Title:</label>
-                <h6>Creative Director</h6>
+                <h5>Creative Director</h5>
               </div>
               <div>
                 <label>City:</label>
-                <h6>Los Angeles, CA</h6>
+                <h5>Los Angeles, CA</h5>
               </div>
               <div>
-                <label>Time:</label>
-                <h6>2018 - 2020</h6>
+                <label>When:</label>
+                <h5>2018 - 2020</h5>
               </div>
               <div>
                 <label>Country:</label>
-                <h6>🇺🇸 - USA</h6>
+                <h5>🇺🇸 USA</h5>
               </div>
             </div>
           </div>

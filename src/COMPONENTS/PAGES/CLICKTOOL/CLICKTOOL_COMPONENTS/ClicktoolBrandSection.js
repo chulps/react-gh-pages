@@ -8,7 +8,7 @@ class ClicktoolBrandSection extends React.Component {
       <section className="relative brand pt3">
         <div className="lg-two-columns gap2 lg-gap3">
           <div>
-            <h5>Establishing the Brand:</h5>
+            <h4>Establishing the Brand:</h4>
 
             <p>
               This was my first task when I started working here. There were a
