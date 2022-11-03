@@ -8,18 +8,18 @@ class Yarden extends Component {
       <div id="yarden">
         
         {/* yarden top section */}
-        <section className="mt3 md-two-columns gap4">
+        <section className="mt3 md-two-columns gap3">
           <div>
             <label>Project:</label>
             <h1>Yarden&trade;</h1>
             <p>
-              A gardening company supported by tech. This tech makes use of
+              Yarden is a gardening company supported by tech. This tech makes use of
               customer facing and internal products that allow the company to
               run on a very lean business model with a small team and steady
               growth.
             </p>
             <p>
-              Development on this app and our products and services is ongoing.
+              Design and development on these products and services is ongoing.
             </p>
           </div>
           <div className="two-columns">
@@ -44,14 +44,16 @@ class Yarden extends Component {
 
         {/* logo geometry section */}
         <section className="my4">
-          <YardenLogoGeometry />
+          
         </section>
 
         {/* responsibilities section */}
-        <section>
+        <section className="lg-two-columns gap3">
 
           {/* responsibilities image */}
-          
+          <div>
+            <YardenLogoGeometry />
+          </div>
           {/* responsibilities copy */}
           <div>
             <label>Responsibilities:</label>
@@ -62,12 +64,12 @@ class Yarden extends Component {
             </p>
 
             <br />
-            <div className="two-columns gap2">
+            <div className="sm-two-columns gap2">
               <div>
                 <h5>Branding:</h5>
                 <small>
                   Lead the brand of the company and the design of all branded
-                  materials.
+                  materials. This includes print and web assets.
                 </small>
               </div>
 
@@ -82,9 +84,8 @@ class Yarden extends Component {
               <div>
                 <h5>Design System</h5>
                 <small>
-                  Taking cues from our branding, create a token system of
-                  colors, fonts, spacing, and scaling so that the experience our
-                  digital is in sync with our brand.{" "}
+                  Establish a design token system of
+                  colors, fonts, spacing, and scaling for a consistent experience across all products. This system is used to build a constantly evolving component library.
                 </small>
               </div>
 
