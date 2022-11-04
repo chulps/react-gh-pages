@@ -230,12 +230,12 @@ const Home = () => {
               <small>React</small>
               <small>Sourcetree</small>
               <small>Bitbucket</small>
-              <small>Git/Github</small>
+              <small>Github</small>
+              <small>Gitlab</small>
               <small>Angular</small>
               <small>Vue</small>
               <small>HUBL</small>
               <small>Liquid</small>
-              <small>PHP</small>
             </small>
           </div>
         </section>
