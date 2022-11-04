@@ -1,6 +1,5 @@
 import Header from "./COMPONENTS/HEADER/Header.js";
 import Home from "./COMPONENTS/PAGES/HOME/Home.js";
-import About from "./COMPONENTS/PAGES/ABOUT/About.js";
 import Nucleotide from "./COMPONENTS/PAGES/NUCLEOTIDE/Nucleotide.js";
 import CRIGenetics from "./COMPONENTS/PAGES/CRIGENETICS/CRIGenetics.js";
 import Yarden from "./COMPONENTS/PAGES/YARDEN/Yarden.js";
@@ -21,7 +20,6 @@ function App() {
           <Routes>
             <Route path="/react-gh-pages" element={<Home />} />
             <Route path="/" element={<Home />} />
-            <Route path="/react-gh-pages/about/" element={<About />} />
             <Route
               path="/react-gh-pages/crigenetics/"
               element={<CRIGenetics />}
