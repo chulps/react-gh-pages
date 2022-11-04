@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div id="home">
-      <section className="hero flex-end">
+      <section className="hero flex-end" style={{minHeight: 'calc(100vh - 64.19px)'}}>
         <section className="two-columns">
           <div className="flex-center-x flex-vertical">
             <div className="flex-vertical" style={{ textTransform: "none" }}>
@@ -39,7 +39,7 @@ const Home = () => {
               </small>
             </div>
             <div>
-              <label>contact me:</label>
+              <label>find me:</label>
               <SocialIcons />
             </div>
           </div>

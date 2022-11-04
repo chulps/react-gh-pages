@@ -4,21 +4,22 @@ import NucleotideLogo from "../../../IMG/nucleotide.svg";
 class Nucleotide extends Component {
   render() {
     return (
-      <section
+      <div
         id="nucleotide"
-        className="hero flex-center"
-        style={{ gap: "var(--unit2)" }}
       >
         <section className="py3 h100">
-          {" "}
           <div className="one-column md-two-columns">
             <div>
               <label>Project:</label>
               <h1>Nucleotide</h1>
               <p>
-                Nucleotide is a development framework built for the developers
-                at CRI Genetics. It consists of three parts: A responsive design
-                framework built
+                Nucleotide is a design system built for the developers
+                at CRI Genetics. It consists of three parts:
+                <ol>
+                  <li>A token based design system that can be used with simple classnames and ordinary html elements</li>
+                  <li>An API</li>
+                  <li>A React component library</li>
+                </ol>
               </p>
             </div>
             <div
@@ -40,7 +41,11 @@ class Nucleotide extends Component {
             </div>
           </div>
         </section>
+      <section>
+
       </section>
+          
+      </div>
     );
   }
 }

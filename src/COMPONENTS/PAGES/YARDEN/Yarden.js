@@ -8,10 +8,14 @@ class Yarden extends Component {
       <div id="yarden">
         
         {/* yarden top section */}
-        <section className="mt3 md-two-columns gap3">
+        <section className="mt3">
+          <label>Project:</label>
+          <h1>Yarden&trade;</h1>
+        </section>
+                    
+        <section className="md-two-columns gap3">
           <div>
-            <label>Project:</label>
-            <h1>Yarden&trade;</h1>
+
             <p>
               Yarden is a gardening company supported by tech. This tech makes use of
               customer facing and internal products that allow the company to
@@ -22,7 +26,7 @@ class Yarden extends Component {
               Design and development on these products and services is ongoing.
             </p>
           </div>
-          <div className="two-columns">
+          <div className="two-columns gap2">
             <div>
               <label>Title:</label>
               <h5>Creative Director</h5>
