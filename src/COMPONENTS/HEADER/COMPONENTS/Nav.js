@@ -11,10 +11,6 @@ function NavContent() {
       </li>
 
       <li>
-        <Link to="/react-gh-pages/about">About</Link>
-      </li>
-
-      <li>
         <a href="https://resume.io/r/gEFMf2bm4">
           <button className="green">Resumé</button>
         </a>

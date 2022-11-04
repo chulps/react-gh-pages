@@ -24,7 +24,10 @@ const Home = () => {
 
   return (
     <div id="home">
-      <section className="hero flex-end" style={{minHeight: 'calc(100vh - 64.19px)'}}>
+      <section
+        className="hero flex-end"
+        style={{ minHeight: "calc(100vh - .19px)" }}
+      >
         <section className="two-columns">
           <div className="flex-center-x flex-vertical">
             <div className="flex-vertical" style={{ textTransform: "none" }}>
@@ -54,7 +57,7 @@ const Home = () => {
                 filter: `blur(${scrollY / 32}px) opacity(0.9)`,
                 position: "fixed",
                 alignSelf: "end",
-                maxHeight: "90%"
+                maxHeight: "90%",
               }}
             />
           </div>
@@ -93,15 +96,15 @@ const Home = () => {
             </svg>
             <h6
               className="absolute text-center"
-              style={{ transform: "translate(0 , -360%)" }}
+              style={{ transform: "translate(0 , -600%)" }}
             >
               Product
               <br />
-              Intelligence
+              Leadership
             </h6>
             <h6
               className="absolute text-right"
-              style={{ transform: "translate(260% , 220%)" }}
+              style={{ transform: "translate(320% , 360%)" }}
             >
               UI/UX
               <br />
@@ -109,7 +112,7 @@ const Home = () => {
             </h6>
             <h6
               className="absolute"
-              style={{ transform: "translate(-120% , 220%)" }}
+              style={{ transform: "translate(-180% , 360%)" }}
             >
               Front-end
               <br />
@@ -117,7 +120,7 @@ const Home = () => {
             </h6>
             <small
               className="absolute text-right"
-              style={{ transform: "translate(-220% , -110%)", lineHeight: 1 }}
+              style={{ transform: "translate(-280% , -140%)", lineHeight: 1 }}
             >
               <small className="bold" style={{ lineHeight: 1 }}>
                 Product
@@ -127,17 +130,15 @@ const Home = () => {
             </small>
             <small
               className="absolute"
-              style={{ transform: "translate(240% , -110%)", lineHeight: 1 }}
+              style={{ transform: "translate(210% , -290%)", lineHeight: 1 }}
             >
               <small className="bold" style={{ lineHeight: 1 }}>
-                Product
-                <br />
-                Vision
+                Prototyping
               </small>
             </small>
             <small
               className="absolute text-center bold"
-              style={{ transform: "translate(0 , 400%)", lineHeight: 1 }}
+              style={{ transform: "translate(0 , 550%)", lineHeight: 1 }}
             >
               <small style={{ lineHeight: 1 }}>
                 Product
@@ -149,41 +150,35 @@ const Home = () => {
               className="absolute text-center"
               style={{ transform: "translate(0 , 20%)" }}
             >
-              <img src={Logo} height={80} alt="Logo"/>
+              <img src={Logo} height={80} alt="Logo" />
             </h5>
           </div>
           <div>
             <h3>Design</h3>
             <h3>Technologist?</h3>
-            <p className="h4">
+            <p className="h4 mb2">
               <i>/dəˈzīn tekˈnäləjəst/</i>
             </p>
-            <p>
-              A developer that is focused on the user's experience with the
-              product.
-            </p>
-            <hr className="my2" />
-            <label>from indeed:</label>
-            <h5>"What is a Design Technologist?"</h5>
-            <small>
+
+            <label>from an article on indeed:</label>
+            <h4 className="mb1">What is a Design Technologist?</h4>
+            <p style={{maxWidth: '50ch'}}>
               "In a sentence, design technologists are designers with front-end
               development skills. They tackle front-end programming, design, and
               UX all at the same time. They care about the integrity of a
               product’s code and the quality of its look and feel. Through
               testing and research, they make sure everything works together."
+              &nbsp;
+              <a
+                rel="noreferrer"
+                href="https://indeed.design/article/what-is-a-design-technologist"
+                target="_blank"
+              >
+                See article...
+              </a>
               <br />
               <br />
-              <div className="flex-end">
-                <a
-                  className="h6"
-                  rel="noreferrer"
-                  href="https://indeed.design/article/what-is-a-design-technologist"
-                  target="_blank"
-                >
-                  See article from Indeed...
-                </a>
-              </div>
-            </small>
+            </p>
           </div>
         </section>
 
