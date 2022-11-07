@@ -18,9 +18,9 @@ import "./Yarden.css";
 import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
 class Yarden extends Component {
-  // componentDidMount() {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   render() {
     return (
