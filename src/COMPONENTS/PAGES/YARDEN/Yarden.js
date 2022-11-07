@@ -391,10 +391,13 @@ class Yarden extends Component {
         </section>
 
         {/* mobile app section */}
-        <section className="hero lg-two-columns my4">
+        <section className="lg-two-columns my4">
           <div>
             <label>Challenge #3:</label>
             <h2>Launch the mobile app</h2>
+            <p className="py1">
+              It took us about a 6 months to build and launch the Yarden Mobile app. In summer 2022 it was deployed the the App Store. We are currently building new features and seeking investors.
+            </p>
             <div className="flex p3">
               <div>
                 <img
@@ -420,7 +423,7 @@ class Yarden extends Component {
             </div>
           </div>
 
-          <div className="two-thirds sm-half md-third lg-two-thirds m-auto">
+          <div className="two-thirds sm-half md-third lg-two-thirds m-auto flex-center flex-vertical">
             <YardenLogo />
 
             <p>Download Yarden on the App Store</p>
