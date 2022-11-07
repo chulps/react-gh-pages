@@ -392,31 +392,35 @@ class Yarden extends Component {
 
         {/* mobile app section */}
         <section className="hero lg-two-columns my4">
-          <div className="flex p3">
-            <div>
-              <img
-                width={"100%"}
-                style={{
-                  filter: "drop-shadow(0 6px 12px var(--transBlueC-10))",
-                }}
-                src={changeDateScreen}
-                alt="change date screen"
-              />
-            </div>
-            <div>
-              {" "}
-              <img
-                width={"100%"}
-                style={{
-                  filter: "drop-shadow(0 6px 12px var(--transBlueC-10))",
-                }}
-                src={plantSelectionScreen}
-                alt="plant selection screen"
-              />
+          <div>
+            <label>Challenge #3:</label>
+            <h2>Launch the mobile app</h2>
+            <div className="flex p3">
+              <div>
+                <img
+                  width={"100%"}
+                  style={{
+                    filter: "drop-shadow(0 6px 12px var(--transBlueC-10))",
+                  }}
+                  src={changeDateScreen}
+                  alt="change date screen"
+                />
+              </div>
+              <div>
+                {" "}
+                <img
+                  width={"100%"}
+                  style={{
+                    filter: "drop-shadow(0 6px 12px var(--transBlueC-10))",
+                  }}
+                  src={plantSelectionScreen}
+                  alt="plant selection screen"
+                />
+              </div>
             </div>
           </div>
 
-          <div className="two-thirds sm-half md-third lg-two-thirds flex-center flex-vertical m-auto">
+          <div className="two-thirds sm-half md-third lg-two-thirds m-auto">
             <YardenLogo />
 
             <p>Download Yarden on the App Store</p>
