@@ -200,7 +200,7 @@ class Yarden extends Component {
             <div>
               <div style={{ position: "sticky", top: "var(--unit4)" }}>
                 <label>My proposal:</label>
-                <h3>Yarden's New Logo System</h3>
+                <h2>Yarden's New Logo System</h2>
 
                 <p className="m-none my2">
                   Before I could start on this project I had to figure out what
