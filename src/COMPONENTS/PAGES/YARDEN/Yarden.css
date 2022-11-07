@@ -1,0 +1,4 @@
+#yarden .color-cells-container > div {
+  border-radius: var(--unit2);
+  box-shadow: 0 6px 12px var(--transBlueC-10);
+}
