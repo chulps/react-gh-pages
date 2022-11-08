@@ -47,7 +47,10 @@ class Foundry extends Component {
         {/* responsibilities section */}
         <section className="mb4 lg-two-columns gap4">
           {/*  */}
-          <div className="flex-center" style={{background: '#89E1A2'}}>
+          <div
+            className="flex-center shadowDown"
+            style={{ background: "#89E1A2", borderRadius: "var(--unit2)" }}
+          >
             <div className="half pt3 lg-pt-none">
               <FoundryLogoBlack />
             </div>
@@ -78,15 +81,17 @@ class Foundry extends Component {
                 <h5>Front-end Development:</h5>
                 <small>
                   Build prototypes at super high fidelity, and contribute to
-                  production code for matters regarding design related issues like
-                  responsive layouts and animations. Make sure everything is on brand.
+                  production code for matters regarding design related issues
+                  like responsive layouts and animations. Make sure everything
+                  is on brand.
                 </small>
               </div>
 
               <div>
                 <h5>Design System:</h5>
                 <small>
-                  We started a super robust token based design system called "Metal" 🤘.
+                  We started a super robust token based design system called
+                  "Metal" 🤘.
                 </small>
               </div>
 
@@ -94,7 +99,7 @@ class Foundry extends Component {
                 <h5>UI/UX Design:</h5>
                 <small>
                   Use data to inform design decisions and utilize our design
-                  system to design and build quickly and at high fidelity
+                  system to update and improve quickly and at high fidelity
                 </small>
               </div>
             </div>
@@ -111,22 +116,63 @@ class Foundry extends Component {
                   <h2 className="mb1">How did I get here?</h2>
                 </div>
                 <p>
-                  After leaving CRI Genetics I found a job at a small Web3 agency called <a href="https://www.upstateinteractive.io/">Upstate Interactive</a>. While working there I was part of the team that was building the web app for Foundry's staking services, also known as "The Staking Portal".
+                  After leaving CRI Genetics I found a job at a small Web3
+                  agency called{" "}
+                  <a href="https://www.upstateinteractive.io/">
+                    Upstate Interactive
+                  </a>
+                  . While working there I was part of the team that was building
+                  the web app for Foundry's staking services, also known as "The
+                  Staking Portal".
                 </p>
                 <p>
-                  Two months after starting work on this project, Upstate Interactive was acquired by our client, Foundry!
+                  Two months after starting work on this project, Upstate
+                  Interactive was acquired by our client, Foundry!
                 </p>
-                <p>
-                  In October 2022, I was laid off.
-                </p>
+                <p>In October 2022, I was laid off due to organizational restructuring.</p>
               </div>
             </div>
 
-            <div className="flex-center flex-vertical shadowDown" style={{background: 'linear-gradient(#ec008c,#7732fc)', borderRadius: 'var(--unit2)'}}>
+            <div
+              className="flex-center flex-vertical shadowDown"
+              style={{
+                background: "linear-gradient(#ec008c,#7732fc)",
+                borderRadius: "var(--unit2)",
+              }}
+            >
               <div className="mt0">
                 <UpstateLogo />
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="my4">
+          <label>Things i worked on</label>
+          <p></p>
+
+          <div className="three-columns gap4">
+            <div>
+              <h4>Foundry USA Pool</h4>
+              <p>The #1 Bitcoin Mining Pool in the world. </p>
+            </div>
+
+            <div>
+              <h4>Foundry Staking Portal Web App</h4>
+            </div>
+
+            <div>Foundry Academy</div>
+
+            <div>
+              Foundry Digital Homepage
+              <a href="https://foundrydigital.com/">See the website</a>
+            </div>
+
+            <div>
+              FoundryX
+            </div>
+
+            <div>DCG Design Gang</div>
           </div>
         </section>
       </div>

@@ -11,7 +11,7 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="https://resume.io/r/gEFMf2bm4">
+        <a target="_blank" rel="noreferrer" href="https://resume.io/r/gEFMf2bm4">
           <button className="green">Resumé</button>
         </a>
       </li>
