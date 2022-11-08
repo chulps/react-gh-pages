@@ -238,7 +238,10 @@ class Foundry extends Component {
                 <a>Foundry Staking Site</a>
               </p>
               <p>
-                <a>A design I proposed</a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://codepen.io/chulps/pen/OJzYZrB/dfd86ade1f90b53b5a08b07da262e0b4">A design I proposed</a>
               </p>
               <p></p>
             </div>
@@ -251,7 +254,10 @@ class Foundry extends Component {
                 deploy their updates to github.
               </p>
               <p>
-                <a href="https://foundryacademy.com/">Foundry Academy Site</a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://foundryacademy.com/">Foundry Academy Site</a>
               </p>
             </div>
 
