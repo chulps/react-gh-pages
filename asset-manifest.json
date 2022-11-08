@@ -1,27 +1,25 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.ead10818.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.38078705.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.38078705.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.8a71af87.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.8a71af87.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.8a115237.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.8a115237.js.map",
-    "static/js/2.69efc8c5.chunk.js": "/react-gh-pages/static/js/2.69efc8c5.chunk.js",
-    "static/js/2.69efc8c5.chunk.js.map": "/react-gh-pages/static/js/2.69efc8c5.chunk.js.map",
+    "static/js/2.b7ec23e0.chunk.js": "/react-gh-pages/static/js/2.b7ec23e0.chunk.js",
+    "static/js/2.b7ec23e0.chunk.js.map": "/react-gh-pages/static/js/2.b7ec23e0.chunk.js.map",
     "static/js/3.65f5a567.chunk.js": "/react-gh-pages/static/js/3.65f5a567.chunk.js",
     "static/js/3.65f5a567.chunk.js.map": "/react-gh-pages/static/js/3.65f5a567.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
     "static/css/main.ead10818.chunk.css.map": "/react-gh-pages/static/css/main.ead10818.chunk.css.map",
-    "static/js/2.69efc8c5.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.69efc8c5.chunk.js.LICENSE.txt",
+    "static/js/2.b7ec23e0.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.b7ec23e0.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
     "static/media/LOGO_WHITE.2b7c24d5.gif": "/react-gh-pages/static/media/LOGO_WHITE.2b7c24d5.gif",
     "static/media/ONE_PLACE.798cf443.svg": "/react-gh-pages/static/media/ONE_PLACE.798cf443.svg",
     "static/media/RotateLandingPages.cc7dc35a.svg": "/react-gh-pages/static/media/RotateLandingPages.cc7dc35a.svg",
-    "static/media/Yarden_Yard_Sign.4928ba81.jpeg": "/react-gh-pages/static/media/Yarden_Yard_Sign.4928ba81.jpeg",
     "static/media/behance-01.7757bf02.svg": "/react-gh-pages/static/media/behance-01.7757bf02.svg",
     "static/media/change_date.a84fe829.png": "/react-gh-pages/static/media/change_date.a84fe829.png",
     "static/media/chuck_blue.d55df030.png": "/react-gh-pages/static/media/chuck_blue.d55df030.png",
-    "static/media/chuckandisaac.f6495bae.jpg": "/react-gh-pages/static/media/chuckandisaac.f6495bae.jpg",
     "static/media/clicktool_dashboard.bb05c823.mp4": "/react-gh-pages/static/media/clicktool_dashboard.bb05c823.mp4",
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
     "static/media/cri_genetics_logo.b719b6ed.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed.svg",
@@ -35,14 +33,12 @@
     "static/media/plant_selection.b5afdf0f.png": "/react-gh-pages/static/media/plant_selection.b5afdf0f.png",
     "static/media/stack-overflow-01.58423e3d.svg": "/react-gh-pages/static/media/stack-overflow-01.58423e3d.svg",
     "static/media/theinvite.a4082b43.jpeg": "/react-gh-pages/static/media/theinvite.a4082b43.jpeg",
-    "static/media/yarden_shirt.ac37daa8.png": "/react-gh-pages/static/media/yarden_shirt.ac37daa8.png",
-    "static/media/yarden_truck.9578acc2.png": "/react-gh-pages/static/media/yarden_truck.9578acc2.png",
     "static/media/yarden_website_screenshot.99110d68.png": "/react-gh-pages/static/media/yarden_website_screenshot.99110d68.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8a115237.js",
-    "static/js/2.69efc8c5.chunk.js",
+    "static/js/2.b7ec23e0.chunk.js",
     "static/css/main.ead10818.chunk.css",
-    "static/js/main.38078705.chunk.js"
+    "static/js/main.8a71af87.chunk.js"
   ]
 }
