@@ -142,13 +142,6 @@ class Foundry extends Component {
                 </small>
               </div>
 
-              <div>
-                <h5>UI/UX Design:</h5>
-                <small>
-                  Use data to inform design decisions and utilize our design
-                  system to update and improve quickly and at high fidelity
-                </small>
-              </div>
             </div>
           </div>
         </section>
