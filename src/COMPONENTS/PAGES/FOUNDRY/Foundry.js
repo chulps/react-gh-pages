@@ -155,7 +155,7 @@ class Foundry extends Component {
 
         {/* story section */}
         <section>
-          <div className="sm-two-columns gap2 lg-gap4">
+          <div className="md-two-columns gap2 lg-gap4">
             <div>
               <div style={{ position: "sticky", top: "var(--unit4)" }}>
                 <div>
@@ -194,7 +194,7 @@ class Foundry extends Component {
                 borderRadius: "var(--unit2)",
               }}
             >
-              <div className="mt0">
+              <div className="p3">
                 <UpstateLogo />
               </div>
             </div>
@@ -205,7 +205,7 @@ class Foundry extends Component {
           <label>Things i worked on</label>
           <h2></h2>
 
-          <div className="three-columns gap4">
+          <div className="md-two-columns gap3 lg-three-columns">
             <div>
               <h4>Foundry USA Pool</h4>
               <p className="mt1">
@@ -314,7 +314,7 @@ class Foundry extends Component {
                 of Foundry's overarching goals for the year which was to
                 "Increase collaboration between Foundry and other DCG
                 subsidiaries." This was my effort to bring designers, product
-                owners, and other creatives together.
+                owners, and other creatives together from all DCG subsidiaries.
               </p>
             </div>
           </div>

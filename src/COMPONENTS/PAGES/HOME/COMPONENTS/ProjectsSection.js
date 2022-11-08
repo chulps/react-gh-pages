@@ -25,7 +25,6 @@ class ProjectSection extends Component {
 
             <Link to="/react-gh-pages/foundry/">
               <FoundryLogo />
-              <small>Not ready yet...</small>
             </Link>
 
             <Link className="disabled" to="/react-gh-pages/crigenetics/">
