@@ -170,9 +170,9 @@ const Home = () => {
               testing and research, they make sure everything works together."
               &nbsp;
               <a
+                target="_blank"
                 rel="noreferrer"
                 href="https://indeed.design/article/what-is-a-design-technologist"
-                target="_blank"
               >
                 See article...
               </a>
