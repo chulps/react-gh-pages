@@ -6,17 +6,19 @@ import YardenLogoType from "./YardenLogotype";
 import plantSelectionScreen from "./plant_selection.png";
 import changeDateScreen from "./change_date.png";
 import oldLogo from "./old_yarden_logo.jpg";
-import chuckAndIsaac from "./chuckandisaac.jpg";
 import theInvite from "./theinvite.jpeg";
 import YardenVerticalLockup from "./YardenVerticalLockup";
 import YardenHorizontalLockup from "./YardenHorizontalLockup";
-import YardenHorizontalWhite from "./YardenHorizontalWhite";
-import yardenTruck from "./yarden_truck.png";
-import yardenShirt from "./yarden_shirt.png";
-import yardenYardSign from "./Yarden_Yard_Sign.jpeg";
 import "./Yarden.css";
 import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
+
+// import YardenHorizontalWhite from "./YardenHorizontalWhite";
+// import yardenTruck from "./yarden_truck.png";
+// import yardenShirt from "./yarden_shirt.png";
+// import yardenYardSign from "./Yarden_Yard_Sign.jpeg";
+// import chuckAndIsaac from "./chuckandisaac.jpg";
+
 class Yarden extends Component {
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "smooth" });

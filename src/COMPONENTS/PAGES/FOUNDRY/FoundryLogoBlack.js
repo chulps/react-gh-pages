@@ -1,10 +1,10 @@
 import React from "react";
 
-function FoundryLogo () {
+function FoundryLogoBlack () {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="#89E1A2"
+      fill="black"
       viewBox="0 0 420 70"
     >
       <defs>
@@ -78,4 +78,4 @@ function FoundryLogo () {
   );
 }
 
-export default FoundryLogo ;
+export default FoundryLogoBlack ;

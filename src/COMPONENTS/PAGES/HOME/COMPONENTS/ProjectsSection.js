@@ -23,7 +23,7 @@ class ProjectSection extends Component {
               <YardenLogo />
             </Link>
 
-            <Link className="disabled" to="/react-gh-pages/covid/">
+            <Link to="/react-gh-pages/foundry/">
               <FoundryLogo />
               <small>Not ready yet...</small>
             </Link>
