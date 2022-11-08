@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ClicktoolLogo from "../../CLICKTOOL/CLICKTOOL_COMPONENTS/SVG/ClicktoolLogoHorizontal";
-import YardenLogo from "../../../../IMG/YardenLogo.js";
-import CRILogo from "../../../../IMG/cri_genetics_logo.svg";
-import NucleotideLogo from "../../../../IMG/nucleotide.svg";
-import FoundryLogo from "../../FOUNDRY/FoundryLogo.js";
+import ClicktoolLogo from "./PAGES/CLICKTOOL/CLICKTOOL_COMPONENTS/SVG/ClicktoolLogoHorizontal";
+import YardenLogo from "./PAGES/YARDEN/YardenHorizontalLockup";
+import CRILogo from "../IMG/cri_genetics_logo.svg";
+import NucleotideLogo from "../IMG/nucleotide.svg";
+import FoundryLogo from "./PAGES/FOUNDRY/FoundryLogo";
 import "./ProjectsSection.css";
 
 class ProjectSection extends Component {
   render() {
     return (
       <section
+        id="projects"
         class="hero flex-center bg-default"
         style={{ minHeight: "unset" }}
       >

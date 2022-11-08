@@ -10,11 +10,18 @@ function NavContent() {
         <img height="100px" src={NavLogo} alt="C-logo" />
       </li>
 
+      
+      <li>
+        <a href="#projects">
+          Projects
+        </a>
+      </li>
       <li>
         <a target="_blank" rel="noreferrer" href="https://resume.io/r/gEFMf2bm4">
           <button className="green">Resumé</button>
         </a>
       </li>
+
     </ul>
   );
 }

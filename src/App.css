@@ -3,6 +3,10 @@
   background: var(--siteBackground);
 }
 
+.App * {
+  scroll-behavior: smooth;
+}
+
 .App-logo {
   height: 200px;
   pointer-events: none;

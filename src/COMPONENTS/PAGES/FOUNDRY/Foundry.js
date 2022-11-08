@@ -4,9 +4,10 @@ import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
 
 class Foundry extends Component {
-  // componentDidMount() {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }
+
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   render() {
     return (
@@ -65,7 +66,7 @@ class Foundry extends Component {
                 rel="noreferrer"
                 href="https://www.hqdigital.com/"
               >
-                HQ Digital
+                HQ Digital.
               </a>
             </p>
           </div>

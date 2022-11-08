@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import SocialIcons from "../../SocialIcons";
-import ProjectsSection from "./COMPONENTS/ProjectsSection";
 import Logo from "../../../LOGO/LOGO_WHITE.gif";
 import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
@@ -240,7 +239,6 @@ const Home = () => {
           </div>
         </section>
       </section>
-      <ProjectsSection />
     </div>
   );
 };

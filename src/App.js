@@ -9,6 +9,7 @@ import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProjectSection from "./COMPONENTS/ProjectsSection.js";
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
             <Route path="/react-gh-pages/covid/" element={<Covid />} />
           </Routes>
         </main>
+
+        <ProjectSection />
 
         <Footer />
       </BrowserRouter>

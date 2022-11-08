@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import NucleotideLogo from "../../../IMG/nucleotide.svg";
 
 class Nucleotide extends Component {
+
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  
   render() {
     return (
       <div
