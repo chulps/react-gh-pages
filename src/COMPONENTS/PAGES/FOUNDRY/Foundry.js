@@ -109,7 +109,7 @@ class Foundry extends Component {
           <div>
             <label>Responsibilities:</label>
             <h2 className="mb1">What do I do here?</h2>
-            <p>At Foundry I worked on many teams</p>
+            <p>At Foundry I worked on two teams and 6 projects total. Every day was a challenge and I learned a lot, and met some cool people.</p>
 
             <br />
             <div

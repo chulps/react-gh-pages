@@ -5,6 +5,7 @@ import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
 
 const Home = () => {
+
   const [scrollY, setScrollY] = useState(0);
 
   function logit() {
@@ -20,6 +21,7 @@ const Home = () => {
       window.removeEventListener("scroll", logit);
     };
   });
+  
 
   return (
     <div id="home">
