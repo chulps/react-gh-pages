@@ -15,7 +15,10 @@ class ProjectSection extends Component {
         class="hero flex-center bg-default"
         style={{ minHeight: "unset" }}
       >
-        <section className="projects-section pt3 pb4">
+
+        <section className="projects-section pb3 pb4">
+                            <hr className="my3" />
+
           <h3>Projects:</h3>
           <p className="md-half lg-third mb3">My most recent projects:</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
