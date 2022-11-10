@@ -100,8 +100,6 @@ const Home = () => {
               style={{ transform: "translate(0 , -600%)" }}
             >
               Product
-              <br />
-              Leadership
             </h6>
             <h6
               className="absolute text-right"
