@@ -20,7 +20,7 @@ class ProjectSection extends Component {
                             <hr className="my3" />
 
           <h3>My work:</h3>
-          <p className="md-half lg-third mb3">My work since 2018.</p>
+          <p className="md-half lg-third mb3">My projects since 2018.</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
 
             <Link to="/react-gh-pages/yarden/">

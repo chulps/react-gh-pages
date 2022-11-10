@@ -97,7 +97,7 @@ const Home = () => {
             </svg>
             <h6
               className="absolute text-center"
-              style={{ transform: "translate(0 , -600%)" }}
+              style={{ transform: "translate(0 , -1200%)" }}
             >
               Product
             </h6>
