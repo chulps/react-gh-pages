@@ -37,7 +37,7 @@ const Home = () => {
                 <br />
                 Howard
               </h1>
-              <p>Design Technologist</p>
+              <p>Product Designer, Design Technologist</p>
               <small className="mb3" style={{ lineHeight: 1 }}>
                 Los&nbsp;Angeles,&nbsp;CA
               </small>
