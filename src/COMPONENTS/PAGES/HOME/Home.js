@@ -174,7 +174,7 @@ const Home = () => {
           <div>
             <h5>Product Discovery Tools:</h5>
             <small>
-              Use data to inform decisions. In order to collect that data I use
+              Use data to inform design decisions. In order to collect that data I use
               these tools that measure how real users use the product in real
               scenarios.
             </small>

@@ -10,25 +10,32 @@ function NavContent() {
         <img height="100px" src={NavLogo} alt="C-logo" />
       </li>
 
-      
       <li>
-        <a href="#projects">
-          Projects
-        </a>
+        <a href="#projects">Projects</a>
       </li>
+
       <li>
-        <a target="_blank" rel="noreferrer" href="https://resume.io/r/gEFMf2bm4">
-          <button className="green">Resumé</button>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://resume.io/r/gEFMf2bm4"
+        >
+          Resumé
         </a>
       </li>
 
+      <li>
+        <a href="https://calendly.com/interview-chuck-howard/30min" target="_blank" rel="noreferrer" >
+          <button className="green">Schedule Interview</button>
+        </a>
+      </li>
     </ul>
   );
 }
 class Nav extends React.Component {
   state = {
     displaySideNav: false,
-    menuText: "menu"
+    menuText: "menu",
   };
   render() {
     return (
@@ -46,7 +53,7 @@ class Nav extends React.Component {
           }
           onClick={() =>
             this.setState({
-              displaySideNav: !this.state.displaySideNav
+              displaySideNav: !this.state.displaySideNav,
             })
           }
         ></button>

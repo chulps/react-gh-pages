@@ -31,7 +31,7 @@ class Covid extends Component {
 
               <p>
                 This chart is built with React, SVG, Nucleotide, and this cool
-                little API <a href="https://covid19.mathdro.id/api">here.</a>
+                little API <a href="https://covid19.mathdro.id/api">here.</a> The point of this project is just to practice connecting to an API and demonstrate my ability to visualize data using what I know.
               </p>
             </div>
 
