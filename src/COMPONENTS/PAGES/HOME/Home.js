@@ -12,6 +12,7 @@ const Home = () => {
   }
 
   useEffect(() => {
+    
     function watchScroll() {
       window.addEventListener("scroll", logit);
     }
