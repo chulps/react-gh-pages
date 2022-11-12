@@ -129,7 +129,7 @@ const Home = () => {
             </small>
             <small
               className="absolute"
-              style={{ transform: "translate(210% , -150%)", lineHeight: 1 }}
+              style={{ transform: "translate(190% , -150%)", lineHeight: 1 }}
             >
               <small className="bold" style={{ lineHeight: 1 }}>
                 Prototyping &
