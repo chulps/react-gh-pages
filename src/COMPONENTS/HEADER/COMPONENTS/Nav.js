@@ -7,7 +7,7 @@ function NavContent() {
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
       <li className="md-ghost">
-        <img height="100px" src={NavLogo} alt="C-logo" />
+        <img style={{ filter: "hue-rotate(150deg)" }} height="100px" src={NavLogo} alt="C-logo" />
       </li>
 
       <li>
