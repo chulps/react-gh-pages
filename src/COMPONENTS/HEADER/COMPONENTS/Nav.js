@@ -42,7 +42,7 @@ class Nav extends React.Component {
       <nav>
         {/* logo */}
         <Link to="/react-gh-pages/" className="flex flex-center-y">
-          <img className="header-logo" src={NavLogo} alt="C-logo" />
+          <img style={{ filter: "hue-rotate(150deg)" }} className="header-logo" src={NavLogo} alt="C-logo" />
         </Link>
 
         {/* button */}
