@@ -35,7 +35,6 @@ function NavContent() {
 class Nav extends React.Component {
   state = {
     displaySideNav: false,
-    menuText: "menu",
   };
   render() {
     return (
