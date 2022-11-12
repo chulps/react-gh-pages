@@ -19,7 +19,7 @@ class ClicktoolVisitSection extends React.Component {
         </div>
 
       </section>
-      <section>
+      <section className="flex-center flex-vertical">
           <p>
             This app is no longer in production but here you can visit an old prototype.
             

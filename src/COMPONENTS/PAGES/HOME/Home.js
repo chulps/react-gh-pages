@@ -5,7 +5,6 @@ import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
 
 const Home = () => {
-
   const [scrollY, setScrollY] = useState(0);
 
   function logit() {
@@ -21,7 +20,6 @@ const Home = () => {
       window.removeEventListener("scroll", logit);
     };
   });
-  
 
   return (
     <div id="home">
@@ -37,7 +35,7 @@ const Home = () => {
                 <br />
                 Howard
               </h1>
-              <p>Product Designer, Design Technologist</p>
+              <p>Product Designer</p>
               <small className="mb3" style={{ lineHeight: 1 }}>
                 Los&nbsp;Angeles,&nbsp;CA
               </small>
@@ -65,7 +63,7 @@ const Home = () => {
         </section>
       </section>
       <section className="hero bg-default">
-        <section className="py4 one-column lg-two-columns gap2 md-gap3">
+        <section className="py4 one-column lg-two-columns gap3 md-gap4">
           <div className="flex-center sm-px3 md-px4 lg-px1 xl-px3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,9 +95,11 @@ const Home = () => {
             </svg>
             <h6
               className="absolute text-center"
-              style={{ transform: "translate(0 , -1200%)" }}
+              style={{ transform: "translate(0 , -600%)" }}
             >
               Product
+              <br />
+              Discovery
             </h6>
             <h6
               className="absolute text-right"
@@ -129,10 +129,12 @@ const Home = () => {
             </small>
             <small
               className="absolute"
-              style={{ transform: "translate(210% , -290%)", lineHeight: 1 }}
+              style={{ transform: "translate(210% , -150%)", lineHeight: 1 }}
             >
               <small className="bold" style={{ lineHeight: 1 }}>
-                Prototyping
+                Prototyping &
+                <br />
+                Wireframing
               </small>
             </small>
             <small
@@ -140,7 +142,7 @@ const Home = () => {
               style={{ transform: "translate(0 , 550%)", lineHeight: 1 }}
             >
               <small style={{ lineHeight: 1 }}>
-                Product
+                Design
                 <br />
                 Feasability
               </small>
@@ -153,37 +155,23 @@ const Home = () => {
             </h5>
           </div>
           <div>
-            <h3>Design</h3>
-            <h3>Technologist?</h3>
-            <p className="h4 mb2">
-              <i>/dəˈzīn tekˈnäləjəst/</i>
+            <label>Summary:</label>
+            <h3 className="mb2">About me:</h3>
+            <p>Based in Los Angeles, I came here as an artist and designer in 2017. In 2018 I started coding and began my new career in tech, blending my skills and learning to make digital products.</p>
+            <p>
+              The road to where I am today was not a direct path. In my journey I've had interesting titles, and practiced different disciplines, but I always play the same role; <b>I am the one who designs the thing we sell.</b>
             </p>
-
-            <label>from an article on indeed:</label>
-            <h4 className="mb1">What is a Design Technologist?</h4>
-            <p style={{maxWidth: '50ch'}}>
-              "In a sentence, design technologists are designers with front-end
-              development skills. They tackle front-end programming, design, and
-              UX all at the same time. They care about the integrity of a
-              product’s code and the quality of its look and feel. Through
-              testing and research, they make sure everything works together."
-              &nbsp;
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://indeed.design/article/what-is-a-design-technologist"
-              >
-                See article...
-              </a>
-              <br />
-              <br />
+            <p className="disciplines">
+              <small style={{ background: 'rgba(0, 143, 195, 0.25)' }}>UI/UX Design</small>
+              <small style={{background: 'rgba(255, 96, 96, 0.25)'}}>Front-end Development</small>
+              <small style={{background: 'rgba(0, 206, 89, 0.25)'}}>Product Discovery</small>
             </p>
           </div>
         </section>
 
         <section className="one-column lg-three-columns gap3 pb4">
           <div>
-            <h5>Product Intelligence Tools:</h5>
+            <h5>Product Discovery Tools:</h5>
             <small>
               Use data to inform decisions. In order to collect that data I use
               these tools that measure how real users use the product in real
@@ -194,6 +182,8 @@ const Home = () => {
               <small>Google Optimize</small>
               <small>Hotjar</small>
               <small>Crazy Egg</small>
+              <small>Jira</small>
+              <small>Confluence</small>
             </small>
           </div>
           <div>
