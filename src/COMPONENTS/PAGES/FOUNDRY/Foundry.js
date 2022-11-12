@@ -16,7 +16,7 @@ class Foundry extends Component {
         <section className="my3 lg-two-columns gap3 lg-gap4" id="Foundry">
           <div>
             <label>Projects:</label>
-            <h1>Foundry Digital</h1>
+            <h1>Foundry</h1>
             <p className="my1">
               Foundry Digital is a Bitcoing Mining and Staking Company and
               subsidiary of a larger corporation called&nbsp;

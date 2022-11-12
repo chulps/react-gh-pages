@@ -159,7 +159,7 @@ const Home = () => {
             <h3 className="mb2">About me:</h3>
             <p>Based in Los Angeles, I came here as an artist and designer in 2017. In 2018 I started coding and began my new career in tech, blending my old skills with more recent ones, and learning to make digital products.</p>
             <p>
-              The road to where I am today was not a direct path. In my journey I've had interesting titles, and practiced different disciplines, but I always play the same role; <b>I am the one who designs the thing we sell.</b>
+              The road to where I am today was not a direct path. In my journey I've had interesting titles and practiced different disciplines, but I always play the same role; <b>I am the one who designs the thing we sell.</b>
             </p>
             <p>In doing this, I practice these core disciplines:</p>
             <p className="disciplines">
