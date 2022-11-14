@@ -25,7 +25,7 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="https://calendly.com/interview-chuck-howard/30min" target="_blank" rel="noreferrer" >
+        <a href="https://calendly.com/interview-chuck-howard/30-minutes" target="_blank" rel="noreferrer" >
           <button className="green">Schedule Interview</button>
         </a>
       </li>
