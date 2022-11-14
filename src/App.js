@@ -9,7 +9,7 @@ import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProjectSection from "./COMPONENTS/ProjectsSection.js";
+import ProjectSection from "./COMPONENTS/PROJECTS/ProjectsSection.js";
 
 function App() {
   return (

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ClicktoolLogo from "./PAGES/CLICKTOOL/CLICKTOOL_COMPONENTS/SVG/ClicktoolLogoHorizontal";
-import YardenLogo from "./PAGES/YARDEN/YardenHorizontalLockup";
-import CRILogo from "../IMG/cri_genetics_logo.svg";
-import NucleotideLogo from "../IMG/nucleotide.svg";
-import FoundryLogo from "./PAGES/FOUNDRY/FoundryLogo";
+import ClicktoolLogo from "../PAGES/CLICKTOOL/CLICKTOOL_COMPONENTS/SVG/ClicktoolLogoHorizontal";
+import YardenLogo from "../PAGES/YARDEN/YardenHorizontalLockup";
+import CRILogo from "../../IMG/cri_genetics_logo.svg";
+import NucleotideLogo from "../../IMG/nucleotide.svg";
+import FoundryLogo from "../PAGES/FOUNDRY/FoundryLogo";
 import "./ProjectsSection.css";
 
 class ProjectSection extends Component {
@@ -31,9 +31,8 @@ class ProjectSection extends Component {
               <FoundryLogo />
             </Link>
 
-            <Link className="disabled" to="/react-gh-pages/crigenetics/">
+            <Link to="/react-gh-pages/crigenetics/">
               <img width="100%" src={CRILogo} alt="cri-logo" />
-              <small>Not ready yet...</small>
             </Link>
 
             <Link to="/react-gh-pages/nucleotide/">
