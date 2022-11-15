@@ -174,8 +174,7 @@ class Foundry extends Component {
                   Interactive was acquired by our client, Foundry!
                 </p>
                 <p>
-                  In October 2022, I was laid off due to organizational
-                  restructuring.
+                  In October 2022, I was laid off.
                 </p>
               </div>
             </div>

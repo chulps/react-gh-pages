@@ -46,7 +46,7 @@ class Yarden extends Component {
           <div className="two-columns gap2">
             <div>
               <label>Title:</label>
-              <h5>Creative Director</h5>
+              <h5>Product Design Lead</h5>
             </div>
             <div>
               <label>City:</label>
