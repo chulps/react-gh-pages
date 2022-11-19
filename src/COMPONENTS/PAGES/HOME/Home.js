@@ -3,6 +3,9 @@ import SocialIcons from "../../SocialIcons";
 import Logo from "../../../LOGO/LOGO_WHITE.gif";
 import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -38,7 +41,7 @@ const Home = () => {
               </h1>
               <p>Product Designer</p>
               <small className="mb3" style={{ lineHeight: 1 }}>
-                Los&nbsp;Angeles,&nbsp;CA
+                <span className="mr0"><FontAwesomeIcon icon={solid('map-pin')} /></span>Los&nbsp;Angeles,&nbsp;CA
               </small>
             </div>
             <div>

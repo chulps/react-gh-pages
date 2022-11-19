@@ -2,6 +2,9 @@ import React from "react";
 import "./nav.css";
 import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+
 
 function NavContent() {
   return (
@@ -11,7 +14,7 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#projects"><span className="mr0"><FontAwesomeIcon icon={solid('pen-nib')} /></span>Projects</a>
       </li>
 
       <li>
@@ -20,13 +23,14 @@ function NavContent() {
           rel="noreferrer"
           href="https://resume.io/r/gEFMf2bm4"
         >
-          Resumé
+          <span className="mr0"><FontAwesomeIcon icon={solid('file')} /></span>Resumé
         </a>
       </li>
 
       <li>
         <a href="https://calendly.com/interview-chuck-howard/30-minutes" target="_blank" rel="noreferrer" >
-          <button className="green">Schedule Interview</button>
+          <button className="green">
+            <FontAwesomeIcon icon={solid('calendar')} />&nbsp;&nbsp;Schedule Interview</button>
         </a>
       </li>
     </ul>
