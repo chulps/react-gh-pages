@@ -14,7 +14,7 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="#projects"><span className="mr0"><FontAwesomeIcon icon={solid('pen-nib')} /></span>Projects</a>
+        <a href="#projects">Projects</a>
       </li>
 
       <li>
@@ -23,7 +23,7 @@ function NavContent() {
           rel="noreferrer"
           href="https://resume.io/r/gEFMf2bm4"
         >
-          <span className="mr0"><FontAwesomeIcon icon={solid('file')} /></span>Resumé
+          Resumé
         </a>
       </li>
 
