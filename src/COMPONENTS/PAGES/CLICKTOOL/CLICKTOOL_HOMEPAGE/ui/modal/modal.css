@@ -1,0 +1,388 @@
+.modal-container {
+    position: relative;
+    z-index: 10000000000;
+}
+
+.ui-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--cyan0);
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ui-modal {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid var(--cyan0);
+    background-color: white;
+    position: fixed;
+    z-index: 102;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ui-modal-header {
+    height: 50px;
+    border-bottom: 1px solid var(--cyan4);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ui-modal-content {
+    position: fixed;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ui-modal-list {
+    box-shadow: 0 3px 6px 0 var(--cyanTrans);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    height: calc(100vh - 120px);
+}
+
+/* box-shadow: 0 3px 6px 0 rgba(44, 184, 210, 0.36); */
+
+.ui-modal-content div {
+    /* line-height: var(--lineHeightDefault); */
+    /* color: var(--navy0); */
+}
+
+.ui-modal-scroll-area {
+    position: relative;
+}
+
+.ui-modal-controls, .ui-modal-controls-custom {
+    background-color: var(--cyan4);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: var(--boxShadowUp);
+    z-index: 1;
+    margin-left: 0;
+}
+
+.ui-modal-controls-custom {
+    margin-left: -15px;
+}
+
+.ui-modal-controls-new-col-preset {
+    background-color: var(--cyan4);
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: var(--boxShadowUp);
+}
+
+.ui-modal-cancel {
+    float: left;
+    line-height: 30px;
+}
+
+.ui-modal-scroll-area {
+    padding-bottom: 60px;
+}
+
+
+/* cancel button */
+.ui-modal-agency .ui-modal-cancel, .ui-modal-masterclass .ui-modal-cancel {
+    color: var(--grey5);
+}
+.ui-modal-agency .ui-modal-cancel:hover, .ui-modal-masterclass .ui-modal-cancel:hover {
+    color: var(--grey6);
+}
+
+/* close icon */
+.ui-modal-close {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.ui-modal-close:hover path {
+    fill: var(--navy1) !important;
+}
+
+.ui-modal-agency .ui-modal-close path {
+    fill: var(--cyanB) !important
+}
+.ui-modal-agency .ui-modal-close:hover path {
+    fill: var(--navy1) !important;
+}
+
+.ui-modal-masterclass .ui-modal-close path {
+    fill: var(--grey5) !important;
+}
+
+.ui-modal-masterclass .ui-modal-close:hover path {
+    fill: var(--grey7) !important;
+}
+
+.ui-modal-masterclass .ui-modal-close:active path {
+    fill: var(--white) !important;
+}
+
+
+
+
+
+
+/* agency */
+.ui-modal-overlay.ui-modal-agency {
+    background-color: var(--black);
+}
+
+.ui-modal.ui-modal-agency {
+    background-color: var(--cyanD);
+    outline: 1px solid var(--cyan0);
+}
+
+.ui-modal-agency .ui-modal-header {
+    color: var(--white);
+    font-family: var(--fontFamilyAgencyDefault);
+    font-weight: unset;
+    border-bottom: 1px solid var(--cyanB);
+    box-shadow: 0 3px 6px 0 var(--blackTrans);
+}
+
+.ui-modal-agency .ui-modal-header h3 {
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    top: 2px;
+    font-weight: 400;
+}
+
+.ui-modal-agency .ui-modal-list div, .ui-modal-agency .ui-modal-content div {
+    background-color: var(--cyanD);
+    color: var(--white);
+}
+
+.ui-modal-agency .ui-modal-content .ui-dropdown-option {
+    background-color: black;
+    color: var(--navy2);
+}
+
+.ui-modal-agency .ui-modal-content .ui-dropdown-option:hover {
+    background-color: var(--cyanC);
+}
+
+.ui-modal-agency .ui-dropdown-option {
+    border-bottom: 1px solid var(--grey3);
+}
+
+.ui-modal-agency .ui-modal-controls {
+    background-color: var(--cyanD);
+}
+
+.ui-modal-agency button.secondary {
+    color: var(--grey5);
+    outline: none;
+    box-shadow: unset;
+}
+
+
+
+
+
+/* masterclass */
+.ui-modal-overlay.ui-modal-masterclass {
+    background-color: var(--black);
+}
+
+.ui-modal-masterclass .ui-modal-header {
+    color: var(--white);
+    border-bottom: 1px solid var(--grey5);
+    box-shadow: 0 3px 6px 0 var(--blackTrans);
+}
+
+
+.ui-modal.ui-modal-masterclass .bar {
+    background-color: var(--gold0);
+}
+
+.ui-modal.ui-modal-masterclass {
+    outline: 1px solid var(--gold0);
+    background-color: var(--grey2);
+    height: 100%;
+    width: 100%;
+}
+.ui-modal-masterclass .ui-modal-content {
+    background-color: var(--grey2);
+    color: var(--white);
+}
+.ui-modal-masterclass .ui-modal-controls {
+    background-color: var(--grey1);
+}
+
+.ui-modal-masterclass label {
+    color: var(--grey2);
+}
+
+/* responsiveness */
+
+@media (min-width: 992px) {
+    .ui-modal-mobile {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+
+
+/* modal inputs agency */
+.ui-modal-agency input {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.ui-modal-agency input::placeholder {
+    color: var(--grey3);
+}
+
+.ui-modal-agency label {
+    color: var(--cyan0);
+    font-family: var(--fontFamilyAgencyDefault);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 0;
+}
+
+/* modal inputs masterclass */
+.ui-modal-masterclass input {
+    background-color: var(--black);
+    outline: solid 1px var(--grey5);
+    color: var(--white);
+}
+
+.ui-modal-masterclass input::placeholder {
+    color: var(--grey3);
+}
+
+.ui-modal-masterclass input:focus {
+    outline: 3px solid var(--grey5);
+}
+
+.ui-modal-masterclass label {
+    color: var(--grey5);
+}
+
+/* buttons at the bottom of the modal on mobile */
+.ui-modal-buttons {
+
+}
+
+
+
+
+
+/* REPSPONSIVENESS */
+
+@media (min-width: 768px) {
+    .ui-modal {
+        width: 320px;
+        /* height: 570px; */
+        height: unset;
+        min-height: 180px;
+        left: calc(50% - 160px);
+        transform: translate(0, -20%);
+        outline: 1px solid var(--cyan0);
+        position: absolute;
+        z-index: 102;
+        top: 25%;
+    }
+
+    .ui-modal-content {
+        width: 320px;
+        position: unset;
+        height: unset;
+    }
+
+    .ui-modal-list {
+        /* height: unset; */
+        min-height: 60px;
+        height: unset;
+    }
+
+    .ui-modal-controls {
+        position: absolute;
+        /* margin-left: -15px; */
+    }
+
+
+
+
+    /* AGENCY PROPOSAL MODAL */
+    .agency-proposal {
+        min-height: 280px;
+    }
+
+    .agency-proposal-3 {
+        height: 400px;
+    }
+
+    .agency-proposal-3 .ui-modal-controls {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+
+    .ui-modal-agency.ui-modal {
+        width: 640px;
+        left: calc(50% - 320px);
+        /* top: calc(50% - 225px); */
+
+        min-height: fit-content;
+        height: unset;
+    }
+
+    .ui-modal-agency .ui-modal-content {
+        width: 640px;
+        height: fit-content;
+    }
+
+    @media (max-height: 500px) {
+        .agency-proposal {
+            min-height: 280px;
+        }
+
+        .ui-modal-agency {
+            overflow: hidden scroll;
+            max-height: calc(100vh - 5px);
+            top: 0 !important;
+        }
+    }
+
+
+
+}

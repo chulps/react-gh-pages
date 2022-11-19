@@ -1,0 +1,493 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 379 263.95">
+  <defs>
+    <style>
+      .cls-1, .cls-11, .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-5 {
+        stroke: var(--cyan0);
+      }
+
+      .cls-1, .cls-11, .cls-12, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-11, .cls-12 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #80d4e4;
+      }
+
+      .cls-4 {
+        fill: #feca40;
+      }
+
+      .cls-5 {
+        stroke-width: 3px;
+        stroke-dasharray: 3 6;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #d5f1f6;
+      }
+
+      .cls-8 {
+        fill: #fd8a66;
+      }
+
+      .cls-9 {
+        fill: var(--cyan0);
+      }
+
+      .cls-10 {
+        fill: #24537f;
+      }
+
+      .cls-11 {
+        stroke: #24537f;
+      }
+
+      .cls-12 {
+        stroke: #36b0c9;
+      }
+
+      .cls-13 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-14 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="182" cy="84.23" r="17.93"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <polygon class="cls-2" points="163.33 177.46 173.83 210.12 212.33 210.12 212.33 177.46 163.33 177.46"/>
+    </clipPath>
+  </defs>
+  <title>NON-REDIRECT-TRACKING</title>
+  <g>
+    <rect class="cls-3" x="287.43" y="137.77" width="46.32" height="43.62" rx="5.56" ry="5.56"/>
+    <rect id="screen1" class="cls-4" x="295.07" y="144.97" width="31.03" height="29.22" rx="2.46" ry="2.46"/>
+  </g>
+
+  <!-- dashed line 1 -->
+  <path id="line1" class="cls-5" d="M112.92,206H85.55a7,7,0,0,0-7,7v14.21a7,7,0,0,1-7,7H50.92">
+    <animate
+      attributeType="XML"
+      attributeName="stroke-dashoffset"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="
+          0.5 0 0.5 1;
+          0.5 0 0.5 1"
+      keyTimes="
+        0;0.5;1"
+      calcMode="spline"
+      begin="0s"
+      values="0;37.219;0"/>
+  </path>
+
+  <!-- dashed line 2 -->
+  <path id="line2" class="cls-5" d="M328.92,57.32V83.67a6.51,6.51,0,0,0,6.52,6.51h20a6.51,6.51,0,0,1,6.51,6.51V116a6.5,6.5,0,0,1-6.51,6.51H215.61A6.51,6.51,0,0,1,209.1,116V90.74a6.51,6.51,0,0,0-6.51-6.51H157.83a6.51,6.51,0,0,0-6.51,6.51v16.72a6.51,6.51,0,0,1-6.51,6.51H104.16a6.51,6.51,0,0,0-4.93,2.27L68.71,151.65a6.51,6.51,0,0,1-4.93,2.27H15.06a6.52,6.52,0,0,1-6.51-6.52V103.49A6.51,6.51,0,0,1,15.06,97H33.48A6.51,6.51,0,0,0,40,90.47V50.24">
+    <animate
+      attributeType="XML"
+      attributeName="stroke-dashoffset"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="
+          0.5 0 0.5 1;
+          0.5 0 0.5 1"
+      keyTimes="
+        0;0.5;1"
+      calcMode="spline"
+      begin="0s"
+      values="0;37.219;0"/>
+  </path>
+
+  <!-- giant gear -->
+  <g id="Gear">
+    <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 98.45 131.97"
+          to="360 98.45 131.97"
+          dur="4s"
+          repeatCount="indefinite" />
+    <path class="cls-3" d="M148,125.51h-4.61a4.13,4.13,0,0,1-4-3.16,42,42,0,0,0-5.4-12.49,4.09,4.09,0,0,1,.5-5.13l3.46-3.46a4.09,4.09,0,0,0,0-5.79l-3.16-3.16a4.1,4.1,0,0,0-5.8,0L125.39,96a4.12,4.12,0,0,1-5.08.56,42.26,42.26,0,0,0-12.28-5,4.13,4.13,0,0,1-3.25-4V82.28a4.09,4.09,0,0,0-4.09-4.1H96.21a4.09,4.09,0,0,0-4.09,4.1V87.5a4.13,4.13,0,0,1-3.25,4,42.26,42.26,0,0,0-12.28,5A4.12,4.12,0,0,1,71.51,96l-3.63-3.63a4.1,4.1,0,0,0-5.8,0l-3.16,3.16a4.09,4.09,0,0,0,0,5.79l3.46,3.46a4.09,4.09,0,0,1,.5,5.13,42,42,0,0,0-5.4,12.49,4.13,4.13,0,0,1-4,3.16H48.88a4.11,4.11,0,0,0-4.1,4.1v4.47a4.1,4.1,0,0,0,4.1,4.1h4.23a4.14,4.14,0,0,1,4,3.31,41.81,41.81,0,0,0,5.17,13,4.14,4.14,0,0,1-.57,5.08l-2.81,2.81a4.09,4.09,0,0,0,0,5.79l3.16,3.17a4.1,4.1,0,0,0,5.8,0l2.61-2.62a4.14,4.14,0,0,1,5.17-.51A42,42,0,0,0,89,173.86a4.07,4.07,0,0,1,3.12,4v3.58a4.09,4.09,0,0,0,4.09,4.09h4.48a4.09,4.09,0,0,0,4.09-4.09v-3.58a4.07,4.07,0,0,1,3.12-4,42,42,0,0,0,13.34-5.61,4.14,4.14,0,0,1,5.17.51l2.61,2.62a4.1,4.1,0,0,0,5.8,0l3.16-3.17a4.09,4.09,0,0,0,0-5.79l-2.81-2.81a4.14,4.14,0,0,1-.57-5.08,41.81,41.81,0,0,0,5.17-13,4.14,4.14,0,0,1,4-3.31H148a4.1,4.1,0,0,0,4.1-4.1v-4.47A4.11,4.11,0,0,0,148,125.51Zm-49.57,35a27.83,27.83,0,1,1,27.83-27.83A27.83,27.83,0,0,1,98.45,160.5Z"/>
+    <circle class="cls-6" cx="98.45" cy="132.67" r="27.83" transform="translate(-64.98 108.47) rotate(-45)"/>
+  </g>
+
+  <!-- tablet -->
+  <g id="tablet">
+    <rect class="cls-7" x="233.47" y="69" width="82.7" height="96.18" rx="3.03" ry="3.03"/>
+    <rect class="cls-6" x="240.4" y="75.73" width="68.83" height="82.71" rx="1.41" ry="1.41"/>
+    <rect class="cls-8" x="247.77" y="88.48" width="11.33" height="10.2"/>
+    <rect class="cls-9" x="265.05" y="88.48" width="36.77" height="10.2"/>
+    <rect class="cls-4" x="247.77" y="105.48" width="11.33" height="10.2"/>
+    <rect class="cls-3" x="265.05" y="105.48" width="36.77" height="10.2"/>
+    <rect class="cls-10" x="247.77" y="122.47" width="11.33" height="10.2"/>
+    <rect class="cls-7" x="265.05" y="122.47" width="36.77" height="10.2"/>
+  </g>
+  <path class="cls-7" d="M112.66,137.41H261.27a8.19,8.19,0,0,1,8.19,8.19V246.32a0,0,0,0,1,0,0h-165a0,0,0,0,1,0,0V145.61A8.19,8.19,0,0,1,112.66,137.41Z"/>
+  <rect class="cls-3" x="114.67" y="147.51" width="144.6" height="90.33"/>
+  <path class="cls-3" d="M91.26,246.32H282.68a2.8,2.8,0,0,1,2.08,4.68l-4,4.47a10.48,10.48,0,0,1-7.77,3.46H102.32a10.49,10.49,0,0,1-6.77-2.49l-6.11-5.18A2.8,2.8,0,0,1,91.26,246.32Z"/>
+  <g>
+    <rect class="cls-7" x="7.34" y="198.83" width="46.32" height="43.62" rx="5.56" ry="5.56"/>
+    <rect id="screen2" class="cls-9" x="14.98" y="206.03" width="31.03" height="29.22" rx="2.46" ry="2.46"/>
+  </g>
+  <path class="cls-3" d="M355.12,16.67H312.64a6.8,6.8,0,0,0-6.8,6.81v27a6.79,6.79,0,0,0,6.8,6.8H343l8.44,12.61V57.32h3.68a6.79,6.79,0,0,0,6.8-6.8v-27A6.8,6.8,0,0,0,355.12,16.67Z"/>
+  <path class="cls-9" d="M15.34,16.85H51.5a5.79,5.79,0,0,1,5.79,5.79v23a5.79,5.79,0,0,1-5.79,5.79H25.66L18.47,62.18V51.45H15.34a5.79,5.79,0,0,1-5.79-5.79v-23A5.79,5.79,0,0,1,15.34,16.85Z"/>
+  
+  <!-- blinking yellow dots group 2 -->
+  <g id="boop">
+    <g>
+      <circle class="cls-6" cx="32.83" cy="179.98" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.3s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M32.83,178.23A1.75,1.75,0,1,1,31.09,180a1.75,1.75,0,0,1,1.74-1.75m0-2A3.75,3.75,0,1,0,36.58,180a3.75,3.75,0,0,0-3.75-3.75Z"/>
+    </g>
+
+    <g>
+      <path class="cls-6" d="M93.3,18.42A2.75,2.75,0,1,1,96,15.67,2.75,2.75,0,0,1,93.3,18.42Z">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.4s"
+          repeatCount="indefinite"/>
+      </path>
+      <path class="cls-4" d="M93.3,13.93a1.75,1.75,0,1,1-1.74,1.74,1.74,1.74,0,0,1,1.74-1.74m0-2A3.75,3.75,0,1,0,97,15.67a3.73,3.73,0,0,0-3.74-3.74Z"/>
+    </g>
+
+    <g>
+      <circle class="cls-6" cx="148.66" cy="71.75" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.4s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M148.66,70a1.75,1.75,0,1,1-1.75,1.75A1.74,1.74,0,0,1,148.66,70m0-2a3.75,3.75,0,1,0,3.74,3.75A3.75,3.75,0,0,0,148.66,68Z"/>
+    </g>
+
+    <g>
+      <path class="cls-6" d="M259.18,18.42a2.75,2.75,0,1,1,2.74-2.75A2.75,2.75,0,0,1,259.18,18.42Z">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.4s"
+          repeatCount="indefinite"/>
+      </path>
+      <path class="cls-4" d="M259.18,13.93a1.75,1.75,0,1,1-1.75,1.74,1.74,1.74,0,0,1,1.75-1.74m0-2a3.75,3.75,0,1,0,3.74,3.74,3.74,3.74,0,0,0-3.74-3.74Z"/>
+    </g>
+
+    <g>
+      <circle class="cls-6" cx="38.25" cy="255.18" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.4s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M38.25,253.44a1.75,1.75,0,1,1-1.74,1.74,1.74,1.74,0,0,1,1.74-1.74m0-2A3.75,3.75,0,1,0,42,255.18a3.73,3.73,0,0,0-3.74-3.74Z"/>
+    </g>
+
+    <g>
+      <circle class="cls-6" cx="292.71" cy="203.64" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.4s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M292.71,201.89a1.75,1.75,0,1,1-1.75,1.75,1.75,1.75,0,0,1,1.75-1.75m0-2a3.75,3.75,0,1,0,3.74,3.75,3.75,3.75,0,0,0-3.74-3.75Z"/>
+    </g>
+
+    <g>
+      <circle class="cls-6" cx="367.92" cy="137.41" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#24537f;var(--cyan0);#24537f"
+          dur="0.4s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M367.92,135.67a1.75,1.75,0,1,1-1.75,1.74,1.74,1.74,0,0,1,1.75-1.74m0-2a3.75,3.75,0,1,0,3.74,3.74,3.75,3.75,0,0,0-3.74-3.74Z"/>
+    </g>
+  </g>
+
+  <!-- blinking yellow dots group 1 -->
+  <g id="beep">
+    <g>
+      <circle class="cls-6" cx="11.08" cy="179.98" r="2.74">
+        <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;#fd8a66;#24537f"
+        dur="0.5s"
+        repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M11.08,178.23A1.75,1.75,0,1,1,9.34,180a1.75,1.75,0,0,1,1.74-1.75m0-2A3.75,3.75,0,1,0,14.83,180a3.75,3.75,0,0,0-3.75-3.75Z"/>
+    </g>
+    <g>
+      <circle class="cls-6" cx="126.91" cy="71.75" r="2.74">
+        <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="white;#fd8a66;white"
+        dur="1s"
+        repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M126.91,70a1.75,1.75,0,1,1-1.75,1.75A1.74,1.74,0,0,1,126.91,70m0-2a3.75,3.75,0,1,0,3.74,3.75A3.75,3.75,0,0,0,126.91,68Z"/>
+    </g>
+    <g>
+      <path class="cls-6" d="M280.93,18.42a2.75,2.75,0,1,1,2.74-2.75A2.75,2.75,0,0,1,280.93,18.42Z">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="#fd8a66;var(--cyan0);#fd8a66"
+          dur="0.2s"
+          repeatCount="indefinite"/>
+      </path>
+      <path class="cls-4" d="M280.93,13.93a1.75,1.75,0,1,1-1.75,1.74,1.74,1.74,0,0,1,1.75-1.74m0-2a3.75,3.75,0,1,0,3.74,3.74,3.74,3.74,0,0,0-3.74-3.74Z"/>
+    </g>
+    <g>
+      <circle class="cls-6" cx="60" cy="255.18" r="2.74">
+        <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="var(--cyan0);#feca40;#24537f"
+        dur="0.3s"
+        repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M60,253.44a1.75,1.75,0,1,1-1.74,1.74A1.74,1.74,0,0,1,60,253.44m0-2a3.75,3.75,0,1,0,3.74,3.74A3.73,3.73,0,0,0,60,251.44Z"/>
+    </g>
+    <g>
+      <circle class="cls-6" cx="292.71" cy="225.39" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="var(--cyan0);#feca40;#24537f"
+          dur="0.2s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M292.71,223.64a1.75,1.75,0,1,1-1.75,1.75,1.75,1.75,0,0,1,1.75-1.75m0-2a3.75,3.75,0,1,0,3.74,3.75,3.75,3.75,0,0,0-3.74-3.75Z"/>
+    </g>
+    <g>
+      <circle class="cls-6" cx="367.92" cy="159.16" r="2.74">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="var(--cyan0);#feca40;#24537f"
+          dur="0.3s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path class="cls-4" d="M367.92,157.42a1.75,1.75,0,1,1-1.75,1.74,1.74,1.74,0,0,1,1.75-1.74m0-2a3.75,3.75,0,1,0,3.74,3.74,3.75,3.75,0,0,0-3.74-3.74Z"/>
+    </g>
+  </g>
+
+  <!-- calculator -->
+    <!-- caclulator body -->
+    <rect class="cls-7" x="313.42" y="196.85" width="50.76" height="58.5" rx="4.79" ry="4.79"/>
+    <!-- calculator line -->
+    <line class="cls-11" x1="364.17" y1="217.18" x2="313.42" y2="217.18"/>
+    <!-- calculator screen -->
+    <rect class="cls-9" x="318.75" y="202.51" width="40" height="11.17"/>
+    
+    <!-- calculator buttons... -->
+    <rect id="calc-btn1" class="cls-10" x="318.75" y="220.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.3s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn2" class="cls-10" x="329.75" y="220.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.2s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn3" class="cls-10" x="340.75" y="220.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.1s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn4" class="cls-10" x="351.75" y="220.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn5" class="cls-10" x="318.75" y="231.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.9s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn6" class="cls-10" x="329.75" y="231.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.8s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn7" class="cls-10" x="340.75" y="231.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.7s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn8" class="cls-10" x="318.75" y="242.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.6s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn9" class="cls-10" x="329.75" y="242.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect id="calc-btn10" class="cls-10" x="340.75" y="242.64" width="7.35" height="7.35" rx="2.15" ry="2.15">
+      <animate
+        attributeType="XML"
+        attributeName="fill"
+        values="#24537f;var(--cyan0);#24537f"
+        dur="1.4s"
+        repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- red calculator button -->
+    <rect id="calc-btnCoral" class="cls-8" x="351.75" y="231.64" width="7.35" height="18.35" rx="2.15" ry="2.15"/>
+
+  
+  <!-- top left message bo -->
+  <g id="msg-dots">
+    <path class="cls-7" d="M76.37,30.6H40.21a5.79,5.79,0,0,0-5.79,5.79v23a5.79,5.79,0,0,0,5.79,5.79H66.05l7.19,10.73V65.2h3.13a5.79,5.79,0,0,0,5.79-5.79v-23A5.79,5.79,0,0,0,76.37,30.6Z"/>
+    <g id="dots">
+      <circle id="dot3" class="cls-8" cx="47.78" cy="47.35" r="3.61">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="
+            var(--cyan0);
+            #feca40;
+            #feca40;
+            #fd8a66;
+            #fd8a66;
+            var(--cyan0);
+            var(--cyan0);"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </circle>
+      <circle id="dot2" class="cls-4" cx="57.78" cy="47.35" r="3.61">
+        <animate
+          attributeType="XML"
+          attributeName="fill"
+          values="
+            #fd8a66;
+            var(--cyan0);
+            var(--cyan0);
+            #feca40;
+            #feca40;
+            #fd8a66;
+            #fd8a66;"
+          dur="1s"
+          repeatCount="indefinite"/>      
+      </circle>
+      <circle id="dot1" class="cls-9" cx="67.78" cy="47.35" r="3.61">
+          <animate
+            attributeType="XML"
+            attributeName="fill"
+            values="
+              #feca40;
+              #fd8a66;
+              #fd8a66;
+              var(--cyan0);
+              var(--cyan0);
+              #feca40;
+              #feca40;"
+            dur="1s"
+            repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  <circle id="wrench-bg" class="cls-12" cx="182" cy="84.23" r="17.93"/>
+  <g>
+    <g class="cls-13">
+      <path id="wrench" class="cls-9" d="M189.32,85.67A9.37,9.37,0,0,0,177.6,74l5.86,5.86-6.2,6.2-5.86-5.86a9.36,9.36,0,0,0,11.72,11.72l18.7,18.71,6.2-6.21Z"/>
+    </g>
+    <circle class="cls-1" cx="182" cy="84.23" r="17.93"/>
+  </g>
+  <g id="a2b">
+    <path id="B" class="cls-10" d="M234.53,178.51a9.94,9.94,0,0,1,1.79,6,8.69,8.69,0,0,1-1.8,5.74,9.31,9.31,0,0,1-3,2.23,8.71,8.71,0,0,1,4.51,3.44,10.33,10.33,0,0,1,1.52,5.71,11.39,11.39,0,0,1-1.74,6.22,10.73,10.73,0,0,1-7.17,5,27.19,27.19,0,0,1-5.51.53H205.58v-39h18.84Q231.56,174.47,234.53,178.51Zm-21.17,2.62v8.6h9.47a7.79,7.79,0,0,0,4.13-1,3.68,3.68,0,0,0,1.58-3.42,3.5,3.5,0,0,0-2.09-3.6,14.58,14.58,0,0,0-4.61-.61Zm0,15.05v10.4h9.46a9.18,9.18,0,0,0,4-.69q2.56-1.26,2.57-4.86a4.18,4.18,0,0,0-2.49-4.18,9.72,9.72,0,0,0-3.89-.67Z"/>
+    <g class="cls-14">
+      <polygon id="arrow" class="cls-8" points="211.13 194.1 184.86 178.93 184.86 187.92 167.34 187.92 167.34 200.28 184.86 200.28 184.86 209.27 211.13 194.1">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="
+            0 0;
+            -7 0;
+            0 0;"
+          keySplines="
+            0.5 0 0.5 1;
+            0.5 0 0.5 1"
+          keyTimes="
+            0;0.5;1"
+          calcMode="spline"
+          begin="0s"
+          dur="2s"
+          repeatCount="indefinite"
+        />
+      </polygon>
+    </g>
+    <path id="A" class="cls-6" d="M155.36,174.36h9.22l13.8,39h-8.84l-2.57-8H152.6l-2.64,8h-8.53Zm-.54,24.26h10l-4.93-15.35Z"/>
+  </g>
+</svg>

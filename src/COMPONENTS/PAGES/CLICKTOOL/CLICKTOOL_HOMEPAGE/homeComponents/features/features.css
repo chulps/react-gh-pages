@@ -1,0 +1,475 @@
+/* features.css */
+/* home-svg-line1rm */
+/* line1 represents the lines in group 1 */
+/* rm represents right mobile */
+/* the default is web (no m) */
+
+.home-features {
+    width: 1013px;
+    max-width: 100vw;
+    margin: auto;
+}
+
+.home-features div {
+    position: relative;
+}
+
+.home-features h2 {
+    color: var(--navy0);
+    max-width: 480px;
+    margin: 0 auto 10px;
+}
+
+span[id^='home-svg-circle'] {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+svg[id^='home-svg-line'] {
+    position: absolute;
+    z-index: -10;
+}
+
+.home-features > div {
+    position: relative;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template: 'l r';
+    margin: 100px 0px;
+    /* justify-content: space-around; */
+}
+
+.home-features > div:nth-child(odd) > div:nth-child(even) {
+    margin: 50px;
+}
+
+.home-features > div:nth-child(even) > div:nth-child(even) {
+    grid-area: l;
+    margin: 50px;
+}
+
+.home-features > div:nth-child(even) > div:nth-child(odd) {
+    grid-area: r;
+}
+
+/* 1 - magnifying glass section */
+#home-features-magnifyingglass {
+    max-height: 308px;
+}
+#home-svg-magnifyingglass {
+    width: 434px;
+    height: 347px;
+    position: relative;
+    left: calc(50% - 434px * 0.5);
+    top: calc(50% - 347px * 0.5);
+}
+
+#home-svg-hexagon {
+    position: absolute;
+    width: 320px;
+    height: 276px;
+    left: calc(50% - 320px * 0.5);
+    top: calc(50% - 276px * 0.5);
+}
+
+#home-svg-line1l {
+    height: 2000px;
+    bottom: 50%;
+    right: calc(50% + 130px);
+}
+
+#home-svg-line1r {
+    width: 1600px;
+    bottom: calc(50% + 110px);
+    left: calc(50% + 67px);
+}
+
+#home-svg-circle1u {
+    top: calc(50% - 122px);
+    left: calc(50% + 56px);
+
+}
+
+#home-svg-circle1l {
+    top: calc(50% - 10px);
+    left: calc(50% - 142px);
+}
+
+#home-svg-circle1d {
+    top: calc(50% + 102px);
+    left: calc(50% + 56px);
+}
+
+
+
+
+/* 2 - one place */
+#home-features-oneplace {
+    max-height: 228px;
+}
+
+#home-svg-oneplace {
+    position: absolute;
+    width: 420px;
+    height: 162px;
+    top: calc(50% - 162px * 0.5);
+    left: calc(50% - 420px * 0.5);
+}
+
+#home-svg-hexagon2 {
+    position: relative;
+    width: 258px;
+    height: 298px;
+    top: calc(50% - 298px * 0.5);
+    left: calc(50% - 258px * 0.5);
+}
+
+#home-svg-line2l {
+    width: 336px;
+    right: calc(50% + 102px);
+    bottom: calc(50% + 60px);
+}
+
+#home-svg-line-2r {
+    width: 1200px;
+    bottom: calc(50% + 63px);
+    left: calc(50% + 105px);
+}
+
+#home-svg-circle2l {
+    top: calc(50% - 73px);
+    left: calc(50% - 115px);
+}
+
+#home-svg-circle2r {
+    top: calc(50% - 73px);
+    left: calc(50% + 94px);
+}
+
+#home-svg-circle2d {
+    top: calc(50% + 109px);
+    left: calc(50% - 9px);
+}
+
+
+
+/* 3 - non-redirect tracking */
+#home-features-nonredirect {
+    height: 298px;
+}
+
+#home-svg-nonredirect {
+    position: absolute;
+    width: 280px;
+    height: 195px;
+    top: calc(50% - 195px * 0.5);
+    left: calc(50% - 280px * 0.5);
+}
+
+#home-svg-square {
+    position: relative;
+    width: 268px;
+    height: 268px;
+    left: calc(50% - 268px * 0.5);
+    top: calc(50% - 268px * 0.5);
+}
+
+#home-svg-line3r {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+    width: 446px;
+    top: calc(50% - 338px);
+    left: calc(50% + 64px);
+}
+
+#home-svg-line3l {
+    width: 900px;
+    top: calc(50% - 776px);
+    left: calc(50% - 1033px);
+}
+
+#home-svg-circle3l {
+    top: calc(50% - 75px);
+    left: calc(50% - 139px);
+}
+
+#home-svg-circle3u {
+    top: calc(50% - 141px);
+    left: calc(50% + 48px);
+}
+
+#home-svg-circle3r {
+    top: calc(50% + 45px);
+    left: calc(50% + 119px);
+}
+
+
+/* 4 - ROTATE LANDING PAGES SECTION */
+#home-features-rotate {
+    height: 328px;
+    margin: 10px 50px;
+}
+
+#home-svg-rotatepages {
+    position: absolute;
+    width: 280px;
+    top: calc(50% - 100px);
+    left: calc(50% - 240px * 0.5);
+}
+
+#home-svg-triangle {
+    position: relative;
+    width: 287px;
+    height: 318px;
+    top: calc(50% - 160px);
+    left: calc(50% - 287px * 0.5);
+}
+
+#home-svg-line4l {
+    height: 480px;
+    top: calc(50% - 454px);
+    left: calc(50% - 320px);
+    -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg);
+}
+
+#home-svg-line4r {
+    width: 1000px;
+    top: calc(50% - 1143px);
+    left: calc(50% + 122px);
+}
+
+#home-svg-circle4l {
+    top: calc(50% - 15px);
+    left: calc(50% - 130px);
+}
+
+#home-svg-circle4u {
+    top: calc(50% - 152px);
+    left: calc(50% + 110px);
+}
+
+#home-svg-circle4d {
+    top: calc(50% + 125px);
+    left: calc(50% + 110px);
+}
+
+
+
+/* 5 - TRACK PHONE CALLS SECTION */ 
+#home-features-track {
+    height: 318px;
+}
+
+#home-svg-pentagon {
+    position: relative;
+    width: 278px;
+    height: 264px;
+    top: 78px;
+    left: calc(50% - 278px * 0.5);
+}
+
+#home-svg-line5r {
+    height: 300px;
+    top: calc(50% - 341px);
+    left: calc(50% + 122px);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+}
+
+#home-svg-line5l {
+    width: 1000px;
+    top: calc(50% - 1030px);
+    left: calc(50% - 1036px);
+}
+
+#home-svg-line5d {
+    top: calc(50% - 18px);
+    left: calc(50% - 94px);
+    -webkit-transform: rotate(-11deg);
+            transform: rotate(-11deg);
+    width: 430px;
+}
+
+#home-svg-circle5u {
+    top: calc(50% - 37px);
+    left: calc(50% + 113px);
+}
+
+#home-svg-circle5l {
+    top: calc(50% - 37px);
+    left: calc(50% - 132px);
+}
+
+#home-svg-circle5d {
+    top: calc(50% + 108px);
+    left: calc(50% + 67px);
+}
+
+.home-features-call-tracking {
+    min-height: 420px;
+    position: relative;
+}
+
+
+@media (max-width: 1013px) {
+    .home-features {
+        width: 768px;
+        margin: auto;
+        /* overflow: hidden; */
+    }
+
+    #home-svg-line2l {
+        -webkit-transform: rotate(20deg);
+                transform: rotate(20deg);
+        right: calc(50% + 40px);
+        bottom: calc(50% + 80px);
+        width: 300px;
+    }
+
+    #home-svg-line3r {
+        width: 375px;
+        -webkit-transform: rotate(-8deg);
+                transform: rotate(-8deg);
+        top: calc(50% - 323px);
+        left: calc(50% + 32px);
+    }
+
+    #home-svg-line4l {
+        height: 430px;
+        top: calc(50% - 424px);
+        left: calc(50% - 250px);
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    #home-svg-line5r {
+        height: 260px;
+        top: calc(50% - 318px);
+        left: calc(50% + 97px);
+        -webkit-transform: rotate(-9deg);
+                transform: rotate(-9deg);
+    }
+
+    #home-svg-line5d {
+        top: calc(50% - 15px);
+        left: calc(50% - 99px);
+        transform: rotate(0deg);
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .home-features {
+        max-width: 100vw;
+    }
+    
+    .home-features > div {
+        display: unset;
+    }    
+
+    #home-features-magnifyingglass {
+        height: 195px;
+        /* margin: 0 50px 80px; */
+    }
+
+    #home-svg-line2l {
+        width: 385px;
+        -webkit-transform: rotate(74deg);
+                transform: rotate(74deg);
+        right: calc(50% - 171px);
+        bottom: calc(50% + 134px);
+    }
+
+    #home-features-oneplace {
+        height: 153px;
+    }
+
+    #home-svg-line3r {
+        -webkit-transform: rotate(-76deg);
+                transform: rotate(-76deg);
+        width: 275px;
+        left: calc(50% - 108px);
+        top: calc(50% - 345px);
+    }
+    #home-svg-line3r path {
+        stroke-dasharray: 10 10;
+        stroke-width: 2;
+    }
+
+    #home-svg-line4l {
+        height: 660px;
+        -webkit-transform: rotate(38deg);
+                transform: rotate(38deg);
+        top: calc(50% - 653px);
+        left: calc(50% - 90px);
+    }
+
+    #home-svg-line5l {
+        -webkit-transform: rotate(65deg);
+                transform: rotate(65deg);
+        width: 409px;
+        top: calc(50% - 535px);
+        left: calc(50% - 207px);
+    }
+
+    #home-svg-line5l path {
+        stroke-dasharray: 10 10;
+        stroke-width: 2;
+    }
+
+    #home-svg-line5d {
+        height: 610px;
+        -webkit-transform: rotate(38deg) scale(1.3);
+                transform: rotate(38deg) scale(1.3);
+        top: calc(50% + 61px);
+        left: calc(50% - 172px);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .home-features > div {
+        margin: 10px;
+    }
+
+    #home-features-magnifyingglass {
+        margin: -20px 10px 80px;
+    }
+
+    #home-features-oneplace {
+        margin: 50px 10px;
+    }
+
+    #home-features-nonredirect {
+        margin: 0 10px 70px;
+    }
+
+    #home-features-rotate {
+        margin: 0 10px 10px;
+    }
+    #home-svg-line5d {
+        top: calc(50% + 72px);
+        left: calc(50% - 162px);
+    }
+}
+
+@media (max-width: 350px) {
+    #home-features-rotate {
+        margin: 0 10px 70px;
+    }
+
+    #home-svg-line5l {
+        transform: rotate(66deg);
+        width: 410px;
+        top: calc(50% - 523px);
+        left: calc(50% - 209px);
+    }
+
+    #home-features-track {
+        margin: 50px 10px;
+    }
+}

@@ -1,0 +1,54 @@
+.showLoading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--whiteTrans);
+    opacity: 1;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    -webkit-transition: opacity 0.5s; /* Safari prior 6.1 */
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.showContainedLoading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: var(--whiteTrans);
+    opacity: 1;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    -webkit-transition: opacity 0.5s; /* Safari prior 6.1 */
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.hideLoading {
+    background-color: var(--whiteTrans);
+    opacity: 0;
+    position: fixed;
+}
+
+.loadingContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingContainedContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

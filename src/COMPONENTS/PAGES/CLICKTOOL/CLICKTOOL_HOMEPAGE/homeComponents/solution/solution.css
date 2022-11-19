@@ -1,0 +1,48 @@
+.home-solution {
+    margin: auto;
+    text-align: center;
+}
+
+.home-solution svg {
+    max-width: 90px;
+    min-width: 40px;
+    height: 40px;
+}
+
+.home-solution-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.home-solution-row div {
+    margin: 15px;
+}
+
+.home-solution-row p {
+    margin: 0;
+    max-width: 130px;
+    line-height: var(--lineHeightDefault);
+    text-align: center;
+}
+
+
+.home-solution-video {
+    margin-top: 100px;
+}
+
+#home-video-player {
+    border: 1px solid var(--cyan0);
+    height: 360px;
+    max-width: 50%;
+    width: 100%;
+}
+
+
+@media (max-width: 960px) {
+    #home-video-player {
+        max-width: 80%;
+    }
+}

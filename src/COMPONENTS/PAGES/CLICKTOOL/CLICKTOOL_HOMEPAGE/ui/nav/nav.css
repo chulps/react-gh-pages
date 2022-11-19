@@ -1,0 +1,355 @@
+/* nav.css */
+
+nav {
+    height: var(--navHeight);
+    width: 100%;
+    box-shadow: 0 3px 6px var(--blackTrans);
+    z-index: 12;
+    position: relative;
+}
+
+nav .mobile-menu-button {
+    padding: var(--paddingDefault);
+    right: 10px;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+    color: var(--navy0);
+}
+
+nav .mobile-menu-overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: var(--whiteTrans);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+nav .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    padding: var(--paddingDefault);
+}
+
+nav .desktop-menu-left {
+    margin-left: 150px;
+    align-items: center;
+}
+
+nav .desktop-menu-right {
+    /* display: flex; */
+    align-items: center;
+    color: var(--navy0);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+nav .desktop-menu-right > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .desktop-menu-left a {
+    margin-right: 30px;
+    line-height: 40px;
+}
+
+nav .desktop-menu-right button {
+    margin-left: 10px;
+}
+
+nav .desktop-menu-right a {
+    margin: 0 15px;
+    line-height: 40px;
+}
+
+nav .desktop-menu-right .navbar-button {
+    margin: unset;
+}
+
+nav .logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.mobileLogo > .logo {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbarShow {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    -webkit-transition: all 0.1s ease-out; /* Safari */
+    transition: all 0.1s ease-out;
+}
+
+.navbarShrink {
+    top: 0;
+    position: fixed;
+    background-color: white;
+    transform: translateY(-50px);
+    -webkit-transition: all 0.5s ease-out; /* Safari */
+    transition: all 0.5s ease-out;
+}
+
+.bar {
+    height: 10px;
+    background: var(--cyan0);
+}
+
+.navigationSelector {
+    width: 60px;
+    top: 47px;
+    left: 149px;
+    border-bottom: 3px solid var(--navy0);
+    position: absolute;
+    will-change: transform;
+}
+
+.navigationSelectorAdjustment {
+    left: 178px;
+}
+
+.navigationSelectorAdjustmentLevel2 {
+    left: 207px;
+}
+
+.navBarModal {
+    display: none;
+}
+
+nav .desktop-menu .home {
+    display: none;
+}
+
+nav .desktop-menu .pricing {
+    -webkit-transform: translateX(0); /* WebKit */
+    -moz-transform: translateX(0); /* Mozilla */
+    -o-transform: translateX(0); /* Opera */
+    -ms-transform: translateX(0); /* Internet Explorer */
+    transform: translateX(0); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .academy {
+    -webkit-transform: translateX(73px); /* WebKit */
+    -moz-transform: translateX(73px); /* Mozilla */
+    -o-transform: translateX(73px); /* Opera */
+    -ms-transform: translateX(73px); /* Internet Explorer */
+    transform: translateX(73px); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .agency {
+    -webkit-transform: translateX(148px); /* WebKit */
+    -moz-transform: translateX(148px); /* Mozilla */
+    -o-transform: translateX(148px); /* Opera */
+    -ms-transform: translateX(148px); /* Internet Explorer */
+    transform: translateX(148px); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .tracker  {
+    -webkit-transform: translateX(1px); /* WebKit */
+    -moz-transform: translateX(1px); /* Mozilla */
+    -o-transform: translateX(1px); /* Opera */
+    -ms-transform: translateX(1px); /* Internet Explorer */
+    transform: translateX(1px); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .onboard  {
+    -webkit-transform: translateX(0px); /* WebKit */
+    -moz-transform: translateX(0px); /* Mozilla */
+    -o-transform: translateX(0px); /* Opera */
+    -ms-transform: translateX(0px); /* Internet Explorer */
+    transform: translateX(0px); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .academy-auth  {
+    -webkit-transform: translateX(74px); /* WebKit */
+    -moz-transform: translateX(74px); /* Mozilla */
+    -o-transform: translateX(74px); /* Opera */
+    -ms-transform: translateX(74px); /* Internet Explorer */
+    transform: translateX(74px); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .help  {
+    -webkit-transform: translateX(141.5px); /* WebKit */
+    -moz-transform: translateX(141.5px); /* Mozilla */
+    -o-transform: translateX(141.5px); /* Opera */
+    -ms-transform: translateX(141.5px); /* Internet Explorer */
+    transform: translateX(141.5px); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .updates  {
+    -webkit-transform: translateX(calc(100vw - 465px)); /* WebKit */
+    -moz-transform: translateX(calc(100vw - 465px)); /* Mozilla */
+    -o-transform: translateX(calc(100vw - 465px)); /* Opera */
+    -ms-transform: translateX(calc(100vw - 465px)); /* Internet Explorer */
+    transform: translateX(calc(100vw - 465px)); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .feedback  {
+    -webkit-transform: translateX(calc(100vw - 373px)); /* WebKit */
+    -moz-transform: translateX(calc(100vw - 373px)); /* Mozilla */
+    -o-transform: translateX(calc(100vw - 373px)); /* Opera */
+    -ms-transform: translateX(calc(100vw - 373px)); /* Internet Explorer */
+    transform: translateX(calc(100vw - 373px)); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+nav .desktop-menu .settings  {
+    -webkit-transform: translateX(calc(100vw - 294px)); /* WebKit */
+    -moz-transform: translateX(calc(100vw - 294px)); /* Mozilla */
+    -o-transform: translateX(calc(100vw - 294px)); /* Opera */
+    -ms-transform: translateX(calc(100vw - 294px)); /* Internet Explorer */
+    transform: translateX(calc(100vw - 294px)); /* Responsible Adult */
+
+    -webkit-transition: transform 0.3s ease; /* WebKit */
+    -moz-transition: transform 0.3s ease; /* Mozilla */
+    -o-transition: transform 0.3s ease; /* Opera */
+    -ms-transition: transform 0.3s ease; /* Internet Explorer */
+    transition: transform 0.3s ease; /* Responsible Adult */
+}
+
+.mobileNav {
+    background: var(--cyanTrans);
+    width: 100vw;
+}
+
+.mobileNav .mobile-nav-links {
+    width: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.mobile-nav-links .navbar-button button {
+    width: 100%;
+}
+
+.mobileNav .mobile-nav-links > a {
+    pointer-events: all;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fontSizeH3);
+}
+
+.mobileNav .mobile-nav-links > button {
+    pointer-events: all;
+}
+
+.mobileNav .mobile-nav-links > a + a{
+    border-top: var(--outlineDefault);
+    border-color: var(--cyan3);
+}
+
+.mobileNav-hide {
+    position: fixed;
+    left: 0;
+    top: 100vh;
+    color: var(--navy0);
+    transition: all 0.3s;
+    transform: translate(0, 0);
+    will-change: transform;
+    opacity: 0;
+}
+
+.mobileNav-show {
+    position: fixed;
+    left: 0;
+    top: 100vh;
+    color: var(--navy0);
+    transition: all 0.3s;
+    transform: translate(0, -100vh);
+    will-change: transform;
+    opacity: 1;
+}
+
+.mobileNav-hide .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    position: fixed;
+    border: none;
+    transition: all 1s ease;
+}
+
+.mobileNav-show .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+    position: fixed;
+    border: none;
+    transition: all 1s ease;
+}

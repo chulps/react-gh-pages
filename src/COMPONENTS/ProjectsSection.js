@@ -12,7 +12,7 @@ class ProjectSection extends Component {
     return (
       <section
         id="projects"
-        class="hero flex-center bg-default"
+        className="hero flex-center bg-default"
         style={{ minHeight: "unset" }}
       >
 

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import FoundryLogo from "./FoundryLogo";
 import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
 

@@ -8,6 +8,9 @@ import ClicktoolDesignSystemSection from "./CLICKTOOL_COMPONENTS/ClicktoolDesign
 import ClicktoolTeamSection from "./CLICKTOOL_COMPONENTS/ClicktoolTeamSection.js";
 import ClicktoolVisitSection from "./CLICKTOOL_COMPONENTS/ClicktoolVisitSection.js";
 
+import { Link } from "react-router-dom";
+
+
 // import Laptop from "./CLICKTOOL_COMPONENTS/HomeProjectSection";
 import ClicktoolSVGSection from "./CLICKTOOL_COMPONENTS/ClicktoolSVGSection";
 
@@ -39,6 +42,12 @@ class Clicktool extends React.Component {
 
         {/* team section */}
         <ClicktoolTeamSection />
+
+        {/* <section>
+          hello
+            <Link to="/clicktool/clicktool_homepage/">Clicktool Homepage</Link>
+        </section> */}
+
 
 
       </div>

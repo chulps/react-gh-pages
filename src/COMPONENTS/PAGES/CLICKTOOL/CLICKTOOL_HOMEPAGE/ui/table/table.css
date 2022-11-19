@@ -1,0 +1,189 @@
+/* table.css */
+
+/* ------------------------------------------------- */
+/* ---------------- react-table styles ------------- */
+/* ------------------------------------------------- */
+
+.ReactTable,
+table {
+    white-space: nowrap;
+    outline: 1px solid var(--cyan0);
+    outline-offset: -1px;
+    width: 100%;
+    background-color: var(--white);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    max-width: 100%;
+    line-height: var(--lineHeightDefault);
+    border-collapse: collapse;
+  }
+
+  /* .rt-td[style*="flex: 100 0 auto;width: 100px;"],
+  td[style*="flex: 100 0 auto;width: 100px;"]{
+    flex: unset;
+    width: unset;
+  } */
+
+  .rt-td,
+  td {
+    border-right: 1px solid var(--cyan0);
+    border-top: 1px solid var(--cyan0);
+    color: var(--navy0);
+    font-weight: bold;
+    line-height: var(--lineHeightDefault);
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .rt-td+.rt-td,
+  td + td {
+    color: var(--grey3);
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fontFamilyData);
+  }
+
+  .rt-tr,
+  tr {
+    background-color: var(--white);
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    will-change: background-color;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .rt-tr:nth-child(even),
+  tr:nth-child(even) {
+    background-color: var(--cyan5);
+  }
+
+  .rt-tr:hover,
+  tr:hover{
+    background-color: var(--cyan4);
+    cursor: default;
+    -webkit-transition: none;
+    transition: none;
+    will-change: background-color;
+  }
+
+  .rt-tr+.rt-tr,
+  tr+tr  {
+    min-height: 50px;
+  }
+
+  .rt-th,
+  th {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--white);
+    padding: var(--paddingDefault);
+    font-family: var(--fontFamilyLabel);
+    font-size: var(--fontSizeLabel);
+    letter-spacing: var(--letterSpacingLabel);
+    min-width: 50px;
+    margin-right: 1px;
+  }
+
+  .rt-tr-group {
+    min-height: 50px;
+  }
+
+  /* .rt-tr-group:last-of-type {
+    border-bottom: 1px solid var(--cyan0);
+  } */
+
+  .rt-tr-group:nth-child(odd) div {
+  background: var(--cyan5);
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  }
+
+  .rt-tr-group:hover div {
+  background: var(--cyan3);
+  -webkit-transition: none;
+  transition: none;
+  /* outline: 3px solid var(--cyan0); */
+  }
+
+  .rt-tr-group .popover-body {
+    background: var(--cyan5);
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    }
+
+  /* might not need this but i can't get the loading="false" prop to work in the component */
+  .-loading {
+    display: none !important;
+  }
+
+  .rt-tfoot,
+  tfoot {
+    /* margin-top: -1px; */
+    background: transparent;
+    width: 100%;
+    font-size: var(--fontSizeH3) !important;
+    height: 50px;
+    z-index: 2;
+    box-shadow: 3px 0 6px var(--blackTrans);
+    position: relative;
+    left: 3px;
+}
+
+.rt-tfoot .rt-tr,
+tfoot tr {
+  height: 50px;
+  outline: 3px solid var(--cyan0);
+  outline-offset: -3px;
+  z-index: 2;
+  left: -3px;
+  position: relative;
+  background: transparent;
+}
+
+  .rt-body,
+  tbody {
+    position: relative;
+    left: 0;
+  }
+
+  .rt-tfoot .rt-tr .rt-td,
+  tfoot tr td {
+    border: none;
+    border-left: 1px solid var(--white);
+    outline: none;
+    background: transparent;
+  }
+
+.rt-resizable-header-content {
+  font-size: var(--fontSizeLabel);
+  font-family: var(--fontFamilyLabel);
+}
+
+.rt-noData {
+  display: none;
+}
+
+
+td .success-message,
+td .error-message,
+td .neutral-message {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+

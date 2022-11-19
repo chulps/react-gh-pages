@@ -1,0 +1,65 @@
+/* footer.css */
+
+footer {
+    background: var(--cyan0);
+    color: var(--white);
+    position: relative;
+    top: 100%;
+    width: 100vw;
+    min-height: 390px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+footer label {
+    color: var(--white);
+    padding: 0;
+}
+
+footer input,
+footer input:focus {
+    outline: none;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    flex-grow: 1;
+}
+
+.footerConnect .ui-input {
+    flex-grow: 1;
+}
+
+.footerLinks a {
+    color: var(--white);
+}
+
+.footerContainer {
+    /* max-width: 600px; */
+    grid-gap: 40px;
+}
+
+.footerSectionOne,
+.footerSectionTwo {
+    width: 280px;
+    height: 190px;
+}
+
+.footerSocialIcons {
+    margin-top: 40px;
+}
+
+.footerReachContent {
+    border-right: 1px solid var(--cyan1);
+}
+
+.footerLinks {
+    padding-left: 20px;
+}
+
+.footerReachContent,
+.footerLinkContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}

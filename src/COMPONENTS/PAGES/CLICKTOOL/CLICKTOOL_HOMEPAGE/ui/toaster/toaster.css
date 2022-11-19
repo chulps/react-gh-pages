@@ -1,0 +1,11 @@
+.toaster {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 102;
+    bottom: 0;
+}
+
+.toaster2 {
+    bottom: 50px;
+}
