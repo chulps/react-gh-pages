@@ -45,6 +45,13 @@ function App() {
 
         <ProjectSection />
 
+        <section id="faq">
+          <hr className="mb3" />
+          <h2>Frequently Asked Questions</h2>
+          
+          <label>Eligibility</label>
+      </section>
+
           <Footer />
       </BrowserRouter>
     </div>

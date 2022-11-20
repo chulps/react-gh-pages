@@ -72,16 +72,15 @@ class Nav extends React.Component {
             />
 
             <div
-              className="flex-vertical ml1"
+              className="flex-vertical"
               style={{ color: "var(--transBlueC-25)" }}
             >
               <label>Status:</label>
               <small
-                className="px1"
+                className="status px1"
                 style={{
                   borderRadius: "var(--unit1)",
                   color: "var(--transBlueC-75)",
-                  background: "var(--transBlueC-10)",
                 }}
               >
                 <span style={{color: 'var(--green0)'}}><FontAwesomeIcon icon={solid("user-tie")} /></span>
