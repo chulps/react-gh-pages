@@ -3,11 +3,9 @@ import SocialIcons from "../../SocialIcons";
 import Logo from "../../../LOGO/LOGO_WHITE.gif";
 import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-import Hollywood from './Hollywood_Sign.jpg'
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
+import CCBG from "./cross-campus-bg.jpg";
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -16,7 +14,6 @@ const Home = () => {
   }
 
   useEffect(() => {
-    
     function watchScroll() {
       window.addEventListener("scroll", logit);
     }
@@ -31,36 +28,27 @@ const Home = () => {
       <section
         className="hero flex-end"
         style={{
-          minHeight: "calc(100vh - .19px)",
-          
+          minHeight: "calc(100vh - 63.19px)",
         }}
       >
-        {/* <img style={{objectFit: 'cover', width: '50%', top: '50%', transform: 'translate(50%, -50%)', opacity: '0.1', transform: `translateY(${scrollY / 1.25}px)`, filter: `blur(${scrollY / 16}px) opacity(0.9)`, }} className="absolute" src={Hollywood} /> */}
-        
-        <section className="two-columns">
-          <div className="flex-center-x flex-vertical">
-            <div className="flex-vertical" style={{ textTransform: "none" }}>
-              <h1 style={{ textTransform: "none", lineHeight: 1 }}>
-                Chuck
-                <br />
-                Howard
-              </h1>
-              <p>Product Designer</p>
-              <div className="mb3">
-                <small className="mb3" style={{ lineHeight: 1 }}>
-                  <span className="mr0 text-red0"><FontAwesomeIcon icon={solid('map-pin')} /></span>Los&nbsp;Angeles,&nbsp;CA
-                </small>
-              </div>
-              
-            </div>
-            <div>
-              <label>find me:</label>
-              <SocialIcons />
-            </div>
-          </div>
-          <div className="flex-vertical flex-end relative">
+        <section className="flex md-two-columns">
+          <div className="absolute md-relative md-order1 whole h100 flex-vertical flex-end relative">
             <img
-              className="ghost lg-flex"
+              className="ghost md-block half"
+              style={{
+                objectFit: "cover",
+                transform: `translateY(${-scrollY / 8}px)`,
+                filter: `blur(${scrollY / 16}px) opacity(0.9)`,
+                position: "fixed",
+                overflow: 'hidden',
+                boxShadow: 'inset 6px 0 6px red'
+              }}
+              src={CCBG}
+              width="100%"
+              height="auto"
+            />
+            <img
+              className="ml3 md-ml-none"
               src={Chuck}
               alt="chuck"
               style={{
@@ -69,9 +57,36 @@ const Home = () => {
                 filter: `blur(${scrollY / 32}px) opacity(0.9)`,
                 position: "fixed",
                 alignSelf: "end",
-                maxHeight: "90%",
+                maxHeight: "80%",
+                height: "90%",
+                width: "auto",
               }}
             />
+          </div>
+          <div className="flex-vertical flex-start md-flex-center-x py2 lg-ml3">
+            <div
+              className="content-box flex-vertical"
+              style={{ textTransform: "none" }}
+            >
+              <h1 style={{ textTransform: "none", lineHeight: 1 }}>
+                Chuck
+                <br />
+                Howard
+              </h1>
+              <p>Product Designer</p>
+              <div className="mb3">
+                <small className="mb3" style={{ lineHeight: 1 }}>
+                  <span className="mr0 text-red0">
+                    <FontAwesomeIcon icon={solid("map-pin")} />
+                  </span>
+                  Los&nbsp;Angeles,&nbsp;CA
+                </small>
+              </div>
+            </div>
+            <div>
+              <label>find me:</label>
+              <SocialIcons />
+            </div>
           </div>
         </section>
       </section>
@@ -170,15 +185,29 @@ const Home = () => {
           <div>
             <label>Summary:</label>
             <h3 className="mb2">About me:</h3>
-            <p>Based in Los Angeles, I came here as an artist and designer in 2017. In 2018 I started coding and began my new career in tech, blending my old skills with more recent ones, and learning to make digital products.</p>
             <p>
-              The road to where I am today was not a direct path. In my journey I've had interesting titles and practiced different disciplines, but I always play the same role; <b>I am the one who designs the thing we sell!</b>
+              Based in Los Angeles, I came here as an artist and designer in
+              2017. In 2018 I started coding and began my new career in tech,
+              blending my old skills with more recent ones, and learning to make
+              digital products.
+            </p>
+            <p>
+              The road to where I am today was not a direct path. In my journey
+              I've had interesting titles and practiced different disciplines,
+              but I always play the same role;{" "}
+              <b>I am the one who designs the thing we sell!</b>
             </p>
             <p>In doing this, I practice these core disciplines:</p>
             <p className="disciplines">
-              <small style={{background: 'rgba(0, 143, 195, 0.25)' }}>UI/UX Design</small>
-              <small style={{background: 'rgba(255, 96, 96, 0.25)'}}>Front-end Development</small>
-              <small style={{background: 'rgba(0, 206, 89, 0.25)'}}>Product Discovery</small>
+              <small style={{ background: "rgba(0, 143, 195, 0.25)" }}>
+                UI/UX Design
+              </small>
+              <small style={{ background: "rgba(255, 96, 96, 0.25)" }}>
+                Front-end Development
+              </small>
+              <small style={{ background: "rgba(0, 206, 89, 0.25)" }}>
+                Product Discovery
+              </small>
             </p>
           </div>
         </section>
@@ -187,9 +216,9 @@ const Home = () => {
           <div>
             <h5>Product Discovery Tools:</h5>
             <small>
-              Use data to inform design decisions. In order to collect that data I use
-              these tools that measure how real users use the product in real
-              scenarios.
+              Use data to inform design decisions. In order to collect that data
+              I use these tools that measure how real users use the product in
+              real scenarios.
             </small>
             <small className="product-tools py1">
               <small>Google Analytics</small>
@@ -243,7 +272,6 @@ const Home = () => {
           </div>
         </section>
       </section>
-
     </div>
   );
 };

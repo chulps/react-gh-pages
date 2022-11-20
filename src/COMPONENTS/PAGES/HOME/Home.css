@@ -32,3 +32,13 @@
 .development-tools small {
   background: rgba(255, 96, 96, 0.25);
 }
+
+.content-box {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .content-box {
+    flex-grow: unset;
+  }
+}
