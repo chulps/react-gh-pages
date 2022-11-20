@@ -2,15 +2,19 @@ import React from "react";
 import "./nav.css";
 import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 function NavContent() {
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
       <li className="md-ghost">
-        <img style={{ filter: "hue-rotate(150deg)" }} height="100px" src={NavLogo} alt="C-logo" />
+        <img
+          style={{ filter: "hue-rotate(150deg) saturate(0.1)" }}
+          height="100px"
+          src={NavLogo}
+          alt="C-logo"
+        />
       </li>
 
       <li>
@@ -28,9 +32,15 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="https://calendly.com/interview-chuck-howard/30-minutes" target="_blank" rel="noreferrer" >
-          <button className="green">
-            <FontAwesomeIcon icon={solid('calendar')} />&nbsp;&nbsp;Schedule Interview</button>
+        <a
+          href="https://calendly.com/interview-chuck-howard/30-minutes"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="bg-greenA">
+            <FontAwesomeIcon icon={solid("calendar")} />
+            &nbsp;&nbsp;Schedule Interview
+          </button>
         </a>
       </li>
     </ul>
@@ -42,17 +52,53 @@ class Nav extends React.Component {
   };
   render() {
     return (
-      <nav>
+      <nav className="floating-nav">
         {/* logo */}
-        <Link to="/react-gh-pages/" className="flex flex-center-y">
-          <img style={{ filter: "hue-rotate(150deg)" }} className="header-logo" src={NavLogo} alt="C-logo" />
-        </Link>
+
+        <div
+          
+          style={{
+            background: "var(--transWhite-75)",
+            borderRadius: "var(--unit3)",
+            gap: "var(--unit2)",
+          }}
+        >
+          <Link to="/react-gh-pages/" className="flex flex-center-y">
+            <img
+              style={{ filter: "hue-rotate(150deg)" }}
+              className="header-logo"
+              src={NavLogo}
+              alt="C-logo"
+            />
+
+            <div
+              className="flex-vertical"
+              style={{ color: "var(--transBlueC-25)" }}
+            >
+              <label>Status:</label>
+              <small
+                className="px1"
+                style={{
+                  borderRadius: "var(--unit1)",
+                  color: "var(--transWhite-75)",
+                  background: "var(--transBlueC-75)",
+                }}
+              >
+                <span style={{color: 'var(--red1)'}}><FontAwesomeIcon icon={solid("user-tie")} /></span>
+                &nbsp; Interviewing now
+              </small>
+            </div>
+          </Link>
+        </div>
 
         {/* button */}
         <button
           id="mobile-nav-button"
+          style={{ background: 'var(--blue0)', color: 'white'}}
           className={
-            this.state.displaySideNav ? "close md-ghost" : "hamburger md-ghost"
+            this.state.displaySideNav
+              ? "close md-ghost"
+              : "hamburger md-ghost"
           }
           onClick={() =>
             this.setState({
@@ -62,7 +108,7 @@ class Nav extends React.Component {
         ></button>
 
         {/* desktop */}
-        <span className="ghost md-flex">
+        <span className="ghost md-flex" style={{background: "var(--transWhite-75)", borderRadius: 'var(--unit3) 0 0 var(--unit3)'}} >
           <NavContent />
         </span>
 
