@@ -30,7 +30,10 @@ const Home = () => {
     <div id="home">
       <section
         className="hero flex-end"
-        style={{ minHeight: "calc(100vh - .19px)" }}
+        style={{
+          minHeight: "calc(100vh - .19px)",
+          
+        }}
       >
         {/* <img style={{objectFit: 'cover', width: '50%', top: '50%', transform: 'translate(50%, -50%)', opacity: '0.1', transform: `translateY(${scrollY / 1.25}px)`, filter: `blur(${scrollY / 16}px) opacity(0.9)`, }} className="absolute" src={Hollywood} /> */}
         

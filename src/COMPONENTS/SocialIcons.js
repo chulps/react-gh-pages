@@ -4,11 +4,12 @@ import Codepen from "../IMG/SOCIAL/svg/codepen-01.svg";
 import Behance from "../IMG/SOCIAL/svg/behance-01.svg";
 import StackOverflow from "../IMG/SOCIAL/svg/stack-overflow-01.svg";
 import Github from "../IMG/SOCIAL/svg/github-01.svg";
+import "./SocialIcons.css";
 
 class SocialIcons extends Component {
   render() {
     return (
-      <div className="flex text-white" style={{ gap: "var(--unit2)" }}>
+      <div className="social-icons flex text-white" style={{ gap: "var(--unit2)" }}>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chuck-howard/">
           <img src={LinkedIn} alt="LinkedIn" />
         </a>
