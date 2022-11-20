@@ -10,7 +10,7 @@ function NavContent() {
     <ul className="flex-center flex-vertical md-flex-horizontal">
       <li className="md-ghost">
         <img
-          style={{ filter: "saturate(0.1)" }}
+          style={{ filter: "saturate(0.1) hue-rotate(150deg)" }}
           height="100px"
           src={NavLogo}
           alt="C-logo"
@@ -68,6 +68,7 @@ class Nav extends React.Component {
               className="header-logo"
               src={NavLogo}
               alt="C-logo"
+              style={{filter: 'hue-rotate(150deg)'}}
             />
 
             <div
