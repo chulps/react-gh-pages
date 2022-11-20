@@ -17,7 +17,7 @@ class ProjectSection extends Component {
       >
 
         <section className="projects-section pb3 pb4">
-                            <hr className="my3" />
+                            <hr className="mb3" />
 
           <h3>My work:</h3>
           <p className="md-half lg-third mb3">My projects since 2018.</p>
