@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.da67bc67.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.aed0797d.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.aed0797d.chunk.js.map",
+    "main.css": "/react-gh-pages/static/css/main.2723feec.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.089c1aed.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.089c1aed.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.316991f2.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.316991f2.js.map",
     "static/js/2.9b965af9.chunk.js": "/react-gh-pages/static/js/2.9b965af9.chunk.js",
@@ -10,11 +10,10 @@
     "static/js/3.9951ca70.chunk.js": "/react-gh-pages/static/js/3.9951ca70.chunk.js",
     "static/js/3.9951ca70.chunk.js.map": "/react-gh-pages/static/js/3.9951ca70.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.da67bc67.chunk.css.map": "/react-gh-pages/static/css/main.da67bc67.chunk.css.map",
+    "static/css/main.2723feec.chunk.css.map": "/react-gh-pages/static/css/main.2723feec.chunk.css.map",
     "static/js/2.9b965af9.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.9b965af9.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
-    "static/media/Hollywood_Sign.f4bc41f0.jpg": "/react-gh-pages/static/media/Hollywood_Sign.f4bc41f0.jpg",
     "static/media/LOGO_WHITE.2b7c24d5.gif": "/react-gh-pages/static/media/LOGO_WHITE.2b7c24d5.gif",
     "static/media/ONE_PLACE.798cf443.svg": "/react-gh-pages/static/media/ONE_PLACE.798cf443.svg",
     "static/media/RotateLandingPages.cc7dc35a.svg": "/react-gh-pages/static/media/RotateLandingPages.cc7dc35a.svg",
@@ -24,6 +23,7 @@
     "static/media/clicktool_dashboard.bb05c823.mp4": "/react-gh-pages/static/media/clicktool_dashboard.bb05c823.mp4",
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
     "static/media/cri_genetics_logo.b719b6ed.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed.svg",
+    "static/media/cross-campus-bg.87d3f5d2.jpg": "/react-gh-pages/static/media/cross-campus-bg.87d3f5d2.jpg",
     "static/media/github-01.af5ce63c.svg": "/react-gh-pages/static/media/github-01.af5ce63c.svg",
     "static/media/laptop.78d644ab.png": "/react-gh-pages/static/media/laptop.78d644ab.png",
     "static/media/linkedin-01.190ef8e0.svg": "/react-gh-pages/static/media/linkedin-01.190ef8e0.svg",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.316991f2.js",
     "static/js/2.9b965af9.chunk.js",
-    "static/css/main.da67bc67.chunk.css",
-    "static/js/main.aed0797d.chunk.js"
+    "static/css/main.2723feec.chunk.css",
+    "static/js/main.089c1aed.chunk.js"
   ]
 }
