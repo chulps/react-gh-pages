@@ -47,8 +47,6 @@ const Home = () => {
                 <small className="mb3" style={{ lineHeight: 1 }}>
                   <span className="mr0"><FontAwesomeIcon icon={solid('map-pin')} /></span>Los&nbsp;Angeles,&nbsp;CA
                 </small>
-                <br />
-                <small>🇺🇸 US Citizen</small>
               </div>
               
             </div>
