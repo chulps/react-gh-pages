@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2723feec.chunk.css",
+    "main.css": "/react-gh-pages/static/css/main.c85d6501.chunk.css",
     "main.js": "/react-gh-pages/static/js/main.089c1aed.chunk.js",
     "main.js.map": "/react-gh-pages/static/js/main.089c1aed.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.316991f2.js",
@@ -10,7 +10,7 @@
     "static/js/3.9951ca70.chunk.js": "/react-gh-pages/static/js/3.9951ca70.chunk.js",
     "static/js/3.9951ca70.chunk.js.map": "/react-gh-pages/static/js/3.9951ca70.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.2723feec.chunk.css.map": "/react-gh-pages/static/css/main.2723feec.chunk.css.map",
+    "static/css/main.c85d6501.chunk.css.map": "/react-gh-pages/static/css/main.c85d6501.chunk.css.map",
     "static/js/2.9b965af9.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.9b965af9.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.316991f2.js",
     "static/js/2.9b965af9.chunk.js",
-    "static/css/main.2723feec.chunk.css",
+    "static/css/main.c85d6501.chunk.css",
     "static/js/main.089c1aed.chunk.js"
   ]
 }
