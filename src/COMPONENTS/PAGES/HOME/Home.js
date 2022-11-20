@@ -40,15 +40,20 @@ const Home = () => {
                 transform: `translateY(${-scrollY / 8}px)`,
                 filter: `blur(${scrollY / 16}px) opacity(0.9)`,
                 position: "fixed",
+                bottom: 0,
+                height: '100vh',
+                right: 0,
                 overflow: 'hidden',
-                boxShadow: 'inset 6px 0 6px red'
+                boxShadow: 'inset 6px 0 6px red',
+                alignSelf: 'center',
+                justifySelf: 'center'
               }}
               src={CCBG}
               width="100%"
               height="auto"
             />
             <img
-              className="ml3 md-ml-none"
+              className="ml3 lg-ml-none"
               src={Chuck}
               alt="chuck"
               style={{
@@ -84,7 +89,7 @@ const Home = () => {
               </div>
             </div>
             <div>
-              <label>find me:</label>
+              <label>Links:</label>
               <SocialIcons />
             </div>
           </div>
