@@ -10,7 +10,7 @@ function NavContent() {
     <ul className="flex-center flex-vertical md-flex-horizontal">
       <li className="md-ghost">
         <img
-          style={{ filter: "hue-rotate(150deg) saturate(0.1)" }}
+          style={{ filter: "saturate(0.1)" }}
           height="100px"
           src={NavLogo}
           alt="C-logo"
@@ -37,7 +37,7 @@ function NavContent() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="bg-greenA">
+          <button className="green">
             <FontAwesomeIcon icon={solid("calendar")} />
             &nbsp;&nbsp;Schedule Interview
           </button>
@@ -65,7 +65,6 @@ class Nav extends React.Component {
         >
           <Link to="/react-gh-pages/" className="flex flex-center-y">
             <img
-              style={{ filter: "hue-rotate(150deg)" }}
               className="header-logo"
               src={NavLogo}
               alt="C-logo"
@@ -80,11 +79,11 @@ class Nav extends React.Component {
                 className="px1"
                 style={{
                   borderRadius: "var(--unit1)",
-                  color: "var(--transWhite-75)",
-                  background: "var(--transBlueC-75)",
+                  color: "var(--transBlueC-75)",
+                  background: "var(--transBlueC-10)",
                 }}
               >
-                <span style={{color: 'var(--red1)'}}><FontAwesomeIcon icon={solid("user-tie")} /></span>
+                <span style={{color: 'var(--red0)'}}><FontAwesomeIcon icon={solid("user-tie")} /></span>
                 &nbsp; Interviewing now
               </small>
             </div>

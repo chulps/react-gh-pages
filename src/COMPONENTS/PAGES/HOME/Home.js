@@ -5,6 +5,7 @@ import Chuck from "../../../IMG/USERS/chuck_blue.png";
 import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import Hollywood from './Hollywood_Sign.jpg'
 
 
 const Home = () => {
@@ -31,6 +32,8 @@ const Home = () => {
         className="hero flex-end"
         style={{ minHeight: "calc(100vh - .19px)" }}
       >
+        {/* <img style={{objectFit: 'cover', width: '50%', top: '50%', transform: 'translate(50%, -50%)', opacity: '0.1', transform: `translateY(${scrollY / 1.25}px)`, filter: `blur(${scrollY / 16}px) opacity(0.9)`, }} className="absolute" src={Hollywood} /> */}
+        
         <section className="two-columns">
           <div className="flex-center-x flex-vertical">
             <div className="flex-vertical" style={{ textTransform: "none" }}>
@@ -40,9 +43,14 @@ const Home = () => {
                 Howard
               </h1>
               <p>Product Designer</p>
-              <small className="mb3" style={{ lineHeight: 1 }}>
-                <span className="mr0"><FontAwesomeIcon icon={solid('map-pin')} /></span>Los&nbsp;Angeles,&nbsp;CA
-              </small>
+              <div className="mb3">
+                <small className="mb3" style={{ lineHeight: 1 }}>
+                  <span className="mr0"><FontAwesomeIcon icon={solid('map-pin')} /></span>Los&nbsp;Angeles,&nbsp;CA
+                </small>
+                <br />
+                <small>🇺🇸 US Citizen</small>
+              </div>
+              
             </div>
             <div>
               <label>find me:</label>

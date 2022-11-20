@@ -34,6 +34,7 @@ class ClicktoolRolesSection extends React.Component {
                   on direction from the CEO and user research
                 </small>
               </div>
+                
 
               <div>
                 <h5>Creative Director</h5>

@@ -8,7 +8,7 @@ import Github from "../IMG/SOCIAL/svg/github-01.svg";
 class SocialIcons extends Component {
   render() {
     return (
-      <div className="flex" style={{ gap: "var(--unit2)" }}>
+      <div className="flex text-white" style={{ gap: "var(--unit2)" }}>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chuck-howard/">
           <img src={LinkedIn} alt="LinkedIn" />
         </a>
