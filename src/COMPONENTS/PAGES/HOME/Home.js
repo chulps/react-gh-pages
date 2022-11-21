@@ -31,8 +31,8 @@ const Home = () => {
           minHeight: "calc(100vh - 63.19px)",
         }}
       >
-        <section className="flex md-two-columns">
-          <div className="absolute md-relative md-order1 whole h100 flex-vertical flex-end relative">
+        <section className="content-col flex md-two-columns">
+          <div className="absolute md-relative md-order1 whole h100 flex-vertical flex-end relative bg-white">
             <img
               className="ghost md-block half"
               style={{
@@ -41,12 +41,12 @@ const Home = () => {
                 filter: `blur(${scrollY / 16}px) opacity(0.9)`,
                 position: "fixed",
                 bottom: 0,
-                height: '100vh',
+                height: "100vh",
                 right: 0,
-                overflow: 'hidden',
-                boxShadow: 'inset 6px 0 6px red',
-                alignSelf: 'center',
-                justifySelf: 'center'
+                overflow: "hidden",
+                boxShadow: "inset 6px 0 6px red",
+                alignSelf: "center",
+                justifySelf: "center",
               }}
               src={CCBG}
               width="100%"
@@ -68,10 +68,15 @@ const Home = () => {
               }}
             />
           </div>
-          <div className="flex-vertical flex-start md-flex-center-x py2 lg-ml3">
+          <div
+
+            className="flex-vertical flex-start md-flex-center-x py2 lg-ml3"
+          >
             <div
               className="content-box flex-vertical"
-              style={{ textTransform: "none" }}
+              style={{
+                textTransform: "none",
+              }}
             >
               <h1 style={{ textTransform: "none", lineHeight: 1 }}>
                 Chuck

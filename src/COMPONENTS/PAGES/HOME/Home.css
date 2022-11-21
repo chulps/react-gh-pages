@@ -35,6 +35,20 @@
 
 .content-box {
   flex-grow: 1;
+  position: relative;
+}
+
+.content-col {
+    fill: white;
+}
+
+.content-col::before {
+  content: "";
+  position: absolute;
+  background: var(--siteBackground);
+  height: 100%;
+  width: 50vw;
+  right: 50%;
 }
 
 @media screen and (min-width: 768px) {

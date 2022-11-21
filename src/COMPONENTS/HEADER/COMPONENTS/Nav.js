@@ -56,48 +56,47 @@ class Nav extends React.Component {
         {/* logo */}
 
         <div
-          
           style={{
             background: "var(--transWhite-75)",
             borderRadius: "var(--unit3)",
-            gap: "var(--unit2)",
+            gap: "var(--unit0)",
           }}
+          className="flex-center-y"
         >
           <Link to="/react-gh-pages/" className="flex flex-center-y">
             <img
               className="header-logo"
               src={NavLogo}
               alt="C-logo"
-              style={{filter: 'hue-rotate(150deg)'}}
+              style={{ filter: "hue-rotate(150deg)" }}
             />
-
-            <div
-              className="flex-vertical"
-              style={{ color: "var(--transBlueC-25)" }}
-            >
-              <label>Status:</label>
-              <small
-                className="status px1"
-                style={{
-                  borderRadius: "var(--unit1)",
-                  color: "var(--transBlueC-75)",
-                }}
-              >
-                <span style={{color: 'var(--green0)'}}><FontAwesomeIcon icon={solid("user-tie")} /></span>
-                &nbsp;&nbsp;Interviewing&nbsp;now
-              </small>
-            </div>
           </Link>
+          <div
+            className="flex-vertical"
+            style={{ color: "var(--transBlueC-25)" }}
+          >
+            <label>Status:</label>
+            <small
+              className="status px1"
+              style={{
+                borderRadius: "var(--unit1)",
+                color: "var(--transBlueC-75)",
+              }}
+            >
+              <span style={{ color: "var(--green0)" }}>
+                <FontAwesomeIcon icon={solid("user-tie")} />
+              </span>
+              &nbsp;&nbsp;Interviewing&nbsp;now
+            </small>
+          </div>
         </div>
 
         {/* button */}
         <button
           id="mobile-nav-button"
-          style={{ background: 'var(--blue0)', color: 'white'}}
+          style={{ background: "var(--blue0)", color: "white" }}
           className={
-            this.state.displaySideNav
-              ? "close md-ghost"
-              : "hamburger md-ghost"
+            this.state.displaySideNav ? "close md-ghost" : "hamburger md-ghost"
           }
           onClick={() =>
             this.setState({
@@ -107,7 +106,13 @@ class Nav extends React.Component {
         ></button>
 
         {/* desktop */}
-        <span className="ghost md-flex" style={{background: "var(--transWhite-75)", borderRadius: 'var(--unit3) 0 0 var(--unit3)'}} >
+        <span
+          className="ghost md-flex"
+          style={{
+            background: "var(--transWhite-75)",
+            borderRadius: "var(--unit3) 0 0 var(--unit3)",
+          }}
+        >
           <NavContent />
         </span>
 
