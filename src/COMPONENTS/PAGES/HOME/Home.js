@@ -44,7 +44,6 @@ const Home = () => {
                 height: "100vh",
                 right: 0,
                 overflow: "hidden",
-                boxShadow: "inset 6px 0 6px red",
                 alignSelf: "center",
                 justifySelf: "center",
               }}
