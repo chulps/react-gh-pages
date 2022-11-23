@@ -38,14 +38,16 @@ const Home = () => {
               style={{
                 objectFit: "cover",
                 transform: `translateY(${-scrollY / 8}px)`,
-                filter: `blur(${scrollY / 16}px) opacity(0.9)`,
+                filter: `blur(${scrollY / 32}px) opacity(0.9)`,
                 position: "fixed",
                 bottom: 0,
-                height: "100vh",
+                height: "100%",
                 right: 0,
                 overflow: "hidden",
                 alignSelf: "center",
                 justifySelf: "center",
+                transition: "width 0.5s ease",
+                willChange: "width"
               }}
               src={CCBG}
               width="100%"
@@ -57,7 +59,7 @@ const Home = () => {
               alt="chuck"
               style={{
                 transform: `translateY(${-scrollY / 4}px)`,
-                filter: `blur(${scrollY / 32}px) opacity(0.9)`,
+                filter: `blur(${scrollY / 64}px) opacity(0.9)`,
               }}
             />
           </div>
