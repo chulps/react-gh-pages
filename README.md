@@ -12,8 +12,6 @@
 
 # 7 push new code to master branch
 
-# 8 npm run predeploy
-
-# 9 npm run deploy
+# 8 npm run launch
 
 Code pushed to the master branch will build and deploy from the "react-gh-pages" branch.
