@@ -34,7 +34,7 @@ const Home = () => {
         <section className="content-col flex md-two-columns">
           <div className="absolute md-relative md-order1 whole h100 flex-vertical flex-end relative bg-white">
             <img
-              className="ghost md-block half"
+              className="whole md-half"
               style={{
                 objectFit: "cover",
                 transform: `translateY(${-scrollY / 8}px)`,
@@ -69,7 +69,7 @@ const Home = () => {
           </div>
           <div
 
-            className="flex-vertical flex-start md-flex-center-x py2 lg-ml3"
+            className="flex-vertical flex-start md-flex-center-x pt2 pb3 lg-ml3"
           >
             <div
               className="content-box flex-vertical"
