@@ -54,7 +54,9 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="green flex-vertical flex-center">
+          <button
+            className="green flex-vertical flex-center"
+            style={{ borderRadius: 'var(--unit3)' }}>
           <FontAwesomeIcon icon={solid("calendar")} />
           <small>Interview</small>
           </button>

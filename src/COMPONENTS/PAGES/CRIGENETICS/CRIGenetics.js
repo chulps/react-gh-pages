@@ -3,7 +3,11 @@ import CRIGeneticsLogo from "../../../IMG/cri_genetics_logo.svg";
 import {Helmet} from "react-helmet";
 
 class CRIGenetics extends Component {
+    componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   render() {
+    
     return (
       <div id="crigenetics">
         <Helmet>

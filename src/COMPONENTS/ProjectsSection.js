@@ -31,9 +31,8 @@ class ProjectSection extends Component {
               <FoundryLogo />
             </Link>
 
-            <Link className="disabled" to="/crigenetics/">
+            <Link to="/crigenetics/">
               <img width="100%" src={CRILogo} alt="cri-logo" />
-              <small>Not ready yet...</small>
             </Link>
 
             <Link to="/nucleotide/">
