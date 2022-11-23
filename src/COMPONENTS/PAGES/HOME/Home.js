@@ -6,6 +6,8 @@ import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import CCBG from "./cross-campus-bg.jpg";
+
+
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
 

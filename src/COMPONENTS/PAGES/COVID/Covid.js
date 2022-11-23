@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Cards from "./CARDS/Cards";
 import Chart from "./CHART/Chart";
+import {Helmet} from "react-helmet";
 
 import { fetchData } from "../../../COVID-API";
 
@@ -17,12 +18,12 @@ class Covid extends Component {
 
   render() {
     const { data } = this.state;
-    // {
-    //   console.log(data);
-    // }
 
     return (
       <section className="hero" id="covid">
+        <Helmet>
+          <title>🦠 Covid-19 Dashboard</title>
+        </Helmet>
         <section className="py4">
           <div className="lg-two-columns gap3 mb3 lg-mb4">
             <div>

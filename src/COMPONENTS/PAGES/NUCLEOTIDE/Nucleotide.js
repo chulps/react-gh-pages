@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import NucleotideLogo from "../../../IMG/nucleotide.svg";
+import {Helmet} from "react-helmet";
+
 
 class Nucleotide extends Component {
 
@@ -12,6 +14,9 @@ class Nucleotide extends Component {
       <div
         id="nucleotide"
       >
+        <Helmet>
+          <title>Nucleotide</title>
+        </Helmet>
         <section className="py3 h100">
           <div className="one-column md-two-columns">
             <div>

@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import CRIGeneticsLogo from "../../../IMG/cri_genetics_logo.svg";
+import {Helmet} from "react-helmet";
 
 class CRIGenetics extends Component {
   render() {
     return (
       <div id="crigenetics">
+        <Helmet>
+          <title>CRI Genetics</title>
+        </Helmet>
         {/* yarden top section */}
         <section className="mt3">
           <label>Project:</label>

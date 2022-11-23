@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
+import {Helmet} from "react-helmet";
 
 class Foundry extends Component {
 
@@ -11,6 +12,9 @@ class Foundry extends Component {
   render() {
     return (
       <div id="foundry" className="pb3">
+        <Helmet>
+          <title>Foundry</title>
+        </Helmet>
         {/* top section */}
         <section className="my3 lg-two-columns gap3 lg-gap4" id="Foundry">
           <div>

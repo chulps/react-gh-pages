@@ -7,6 +7,7 @@ import ClicktoolBrandSection from "./CLICKTOOL_COMPONENTS/ClicktoolBrandSection.
 import ClicktoolDesignSystemSection from "./CLICKTOOL_COMPONENTS/ClicktoolDesignSystemSection.js";
 import ClicktoolTeamSection from "./CLICKTOOL_COMPONENTS/ClicktoolTeamSection.js";
 import ClicktoolVisitSection from "./CLICKTOOL_COMPONENTS/ClicktoolVisitSection.js";
+import {Helmet} from "react-helmet";
 
 import { Link } from "react-router-dom";
 
@@ -22,6 +23,9 @@ class Clicktool extends React.Component {
   render() {
     return (
       <div className="clicktool">
+        <Helmet>
+          <title>Clicktool</title>
+        </Helmet>
         {/* top section */}
         <ClicktoolTopSection />
 

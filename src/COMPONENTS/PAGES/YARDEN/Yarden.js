@@ -12,6 +12,8 @@ import YardenHorizontalLockup from "./YardenHorizontalLockup";
 import "./Yarden.css";
 import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
+import {Helmet} from "react-helmet";
+
 
 // import YardenHorizontalWhite from "./YardenHorizontalWhite";
 // import yardenTruck from "./yarden_truck.png";
@@ -27,6 +29,9 @@ class Yarden extends Component {
   render() {
     return (
       <div id="yarden">
+        <Helmet>
+          <title>Yarden</title>
+        </Helmet>
         {/* yarden top section */}
         <section className="mt3">
           <label>Project:</label>
