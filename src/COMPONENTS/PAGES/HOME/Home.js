@@ -61,7 +61,7 @@ const Home = () => {
               alt="chuck"
               style={{
                 transform: `translateY(${-scrollY / 4}px)`,
-                filter: `blur(${scrollY / 64}px) opacity(0.9)`,
+                filter: `blur(${scrollY / 64}px) `,
               }}
             />
           </div>
