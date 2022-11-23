@@ -56,7 +56,7 @@ const Home = () => {
               height="auto"
             />
             <img
-              className="chuck-img ml3 lg-ml-none"
+              className="chuck-img ml4 lg-ml-none"
               src={Chuck}
               alt="chuck"
               style={{
