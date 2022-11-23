@@ -229,7 +229,7 @@ class Yarden extends Component {
                     iPhone home screen.
                   </small>
                   <small>
-                    4. Need to be able to use the letter "Y" somehow
+                    4. Use the letter "Y" somehow
                   </small>
                   <small>5. We are gonna trademark this... 😅</small>
                 </div>

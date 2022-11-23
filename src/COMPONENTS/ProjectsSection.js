@@ -23,20 +23,20 @@ class ProjectSection extends Component {
           <p className="md-half lg-third mb3">My projects since 2018.</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
 
-            <Link to="/react-gh-pages/yarden/">
+            <Link to="/yarden/">
               <YardenLogo />
             </Link>
 
-            <Link to="/react-gh-pages/foundry/">
+            <Link to="/foundry/">
               <FoundryLogo />
             </Link>
 
-            <Link className="disabled" to="/react-gh-pages/crigenetics/">
+            <Link className="disabled" to="/crigenetics/">
               <img width="100%" src={CRILogo} alt="cri-logo" />
               <small>Not ready yet...</small>
             </Link>
 
-            <Link to="/react-gh-pages/nucleotide/">
+            <Link to="/nucleotide/">
               <div className="flex-center flex-vertical xs-flex-horizontal">
                 <img
                   height={50}
@@ -48,11 +48,11 @@ class ProjectSection extends Component {
               </div>
             </Link>
 
-            <Link to="/react-gh-pages/covid/">
+            <Link to="/covid/">
               <h4 className="text-red0">🦠 COVID-19 Dashboard</h4>
             </Link>
 
-            <Link to="/react-gh-pages/clicktool/">
+            <Link to="/clicktool/">
               <ClicktoolLogo />
             </Link>
 

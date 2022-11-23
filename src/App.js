@@ -8,45 +8,44 @@ import Footer from "./COMPONENTS/FOOTER/Footer.js";
 import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
 
 function App() {
   return (
     <div id="chuck" className="App nucleotide">
-      <BrowserRouter forceRefresh={true}>
+      <HashRouter forceRefresh={true}>
       
         <Header />
 
         {/* site content renders here */}
         <main>
           <Routes>
-            <Route path="/react-gh-pages" element={<Home />} />
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route
-              path="/react-gh-pages/crigenetics/"
+              path="/crigenetics/"
               element={<CRIGenetics />}
             />
             <Route
-              path="/react-gh-pages/foundry/"
+              path="/foundry/"
               element={<Foundry />}
             />
             <Route
-              path="/react-gh-pages/nucleotide/"
+              path="/nucleotide/"
               element={<Nucleotide />}
             />
 
             
-            <Route path="/react-gh-pages/yarden/" element={<Yarden />} />
-            <Route path="/react-gh-pages/clicktool/" element={<Clicktool />} />
-            <Route path="/react-gh-pages/covid/" element={<Covid />} />
+            <Route path="/yarden/" element={<Yarden />} />
+            <Route path="/clicktool/" element={<Clicktool />} />
+            <Route path="/covid/" element={<Covid />} />
           </Routes>
         </main>
 
         <ProjectSection />
 
           <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

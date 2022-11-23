@@ -63,7 +63,7 @@ class Nav extends React.Component {
           }}
           className="flex-center-y"
         >
-          <Link to="/react-gh-pages/" className="flex flex-center-y">
+          <Link to="/" className="flex flex-center-y">
             <img
               className="header-logo"
               src={NavLogo}
