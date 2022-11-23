@@ -94,7 +94,6 @@ class Nav extends React.Component {
         {/* button */}
         <button
           id="mobile-nav-button"
-          style={{ background: "var(--blue0)", color: "white" }}
           className={
             this.state.displaySideNav ? "close md-ghost" : "hamburger md-ghost"
           }

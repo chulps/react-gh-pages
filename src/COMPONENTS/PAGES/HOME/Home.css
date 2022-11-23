@@ -52,7 +52,6 @@
 }
 
 .chuck-img {
-  object-fit: cover;
   position: fixed;
   align-self: end;
   height: 42rem;

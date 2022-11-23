@@ -27,6 +27,7 @@ const Home = () => {
 
   return (
     <div id="home">
+      
       <section
         className="hero flex-end"
         style={{
