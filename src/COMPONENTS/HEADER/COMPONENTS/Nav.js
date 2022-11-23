@@ -73,7 +73,7 @@ class Nav extends React.Component {
           </Link>
           <div
             className="flex-vertical"
-            style={{ color: "var(--transBlueC-25)" }}
+            style={{ color: "var(--transBlueC-50)" }}
           >
             <label>Status:</label>
             <small
