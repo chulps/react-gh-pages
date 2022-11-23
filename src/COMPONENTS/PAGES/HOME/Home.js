@@ -69,7 +69,7 @@ const Home = () => {
           </div>
           <div
 
-            className="flex-vertical flex-start md-flex-center-x pt2 pb4 lg-ml3"
+            className="flex-vertical flex-start md-flex-center-x pt2 pb4 md-pb-none lg-ml3"
           >
             <div
               className="content-box flex-vertical"
