@@ -39,7 +39,7 @@
 }
 
 .content-col {
-    fill: white;
+  fill: white;
 }
 
 .content-col::before {
@@ -51,8 +51,25 @@
   right: 50%;
 }
 
+.chuck-img {
+  object-fit: cover;
+  position: fixed;
+  align-self: end;
+  height: 42rem;
+  width: auto;
+}
+
 @media screen and (min-width: 768px) {
   .content-box {
     flex-grow: unset;
+  }
+
+  .chuck-img {
+    object-fit: cover;
+    position: fixed;
+    align-self: end;
+    max-height: 80%;
+    height: 90%;
+    width: auto;
   }
 }

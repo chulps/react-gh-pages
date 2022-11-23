@@ -52,25 +52,16 @@ const Home = () => {
               height="auto"
             />
             <img
-              className="ml3 lg-ml-none"
+              className="chuck-img ml3 lg-ml-none"
               src={Chuck}
               alt="chuck"
               style={{
-                objectFit: "cover",
                 transform: `translateY(${-scrollY / 4}px)`,
                 filter: `blur(${scrollY / 32}px) opacity(0.9)`,
-                position: "fixed",
-                alignSelf: "end",
-                maxHeight: "80%",
-                height: "90%",
-                width: "auto",
               }}
             />
           </div>
-          <div
-
-            className="flex-vertical flex-start md-flex-center-x pt2 pb4 md-pb-none lg-ml3"
-          >
+          <div className="flex-vertical flex-start md-flex-center-x pt2 pb4 md-pb-none lg-ml3">
             <div
               className="content-box flex-vertical"
               style={{
