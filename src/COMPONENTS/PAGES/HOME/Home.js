@@ -66,7 +66,7 @@ const Home = () => {
               }}
             />
           </div>
-          <div className="flex-vertical flex-start md-flex-center-x pt2 mb2 lg-ml3">
+          <div className="flex-vertical flex-start md-flex-center-x py2 lg-ml3">
             <div
               className="content-box flex-vertical"
               style={{
@@ -217,7 +217,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="one-column lg-three-columns gap3 pb4">
+        <section className="one-column lg-three-columns gap3 pb3">
           <div>
             <h5>Product Discovery Tools:</h5>
             <small>

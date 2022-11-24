@@ -27,7 +27,7 @@ class CRIGenetics extends Component {
             <p>I was the only designer in the company.</p>
           </div>
 
-          <div className="two-columns gap2">
+          <div className="md-two-columns gap2">
             <div>
               <label>Titles:</label>
               <p className="bold">

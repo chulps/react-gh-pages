@@ -1,27 +1,17 @@
-.App {
-  text-align: center;
-  background: var(--siteBackground);
+.feedback {
+  display: unset;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  
+  
 }
 
-.App * {
-  scroll-behavior: smooth;
+.feedback a button {
+  background: var(--transWhite-50) !important;
+  backdrop-filter: blur(3px);
+  transform: rotate(-90deg) translateY(32px);
+  border-radius: var(--unit1) var(--unit1) 0 0!important;
 }
 
-.App-logo {
-  height: 200px;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
