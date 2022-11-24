@@ -44,7 +44,7 @@ const Home = () => {
                 filter: `blur(${scrollY / 64}px) opacity(0.9)`,
                 position: "fixed",
                 bottom: 0,
-                height: "100%",
+                height: "100vh",
                 right: 0,
                 overflow: "hidden",
                 alignSelf: "center",

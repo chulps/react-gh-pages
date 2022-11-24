@@ -54,6 +54,7 @@ function App() {
           </button>
         </a>
 
+        <Footer />
 
         <div className="feedback disabled">
           <a>
@@ -63,7 +64,6 @@ function App() {
             </button>
           </a>
         </div>
-        <Footer />
       </HashRouter>
     </div>
   );
