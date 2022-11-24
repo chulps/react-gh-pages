@@ -6,6 +6,8 @@ import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import CCBG from "./cross-campus-bg.jpg";
+import {Helmet} from "react-helmet";
+
 
 
 const Home = () => {
@@ -27,7 +29,9 @@ const Home = () => {
 
   return (
     <div id="home">
-      
+      <Helmet>
+        <title>Chuck Howard</title>
+      </Helmet>
       <section
         className="hero flex-end"
         style={{
