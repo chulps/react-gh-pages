@@ -31,7 +31,6 @@ function App() {
             <Route path="/yarden/" element={<Yarden />} />
             <Route path="/clicktool/" element={<Clicktool />} />
             <Route path="/covid/" element={<Covid />} />
-            <Route path="/feedback/" element={<Feedback />} />
           </Routes>
         </main>
 
