@@ -59,7 +59,7 @@ function App() {
         <Footer />
 
         <div className="feedback">
-          <a href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024" >
+          <a href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024" rel="noreferrer" target="_blank">
             <button className="btn3 small">
               <FontAwesomeIcon icon={solid("comments")} />
               &nbsp;Feedback
