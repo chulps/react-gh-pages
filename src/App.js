@@ -55,10 +55,10 @@ function App() {
           rel="noreferrer"
         >
           <button
-            className="green flex-vertical flex-center "
-            style={{ borderRadius: 'var(--unit1) var(--unit1) var(--unit3' }}>
+            className="green flex-vertical flex-center h4"
+            style={{ borderRadius: 'var(--unit3) var(--unit3) var(--unit3) var(--unit1' }}>
           <FontAwesomeIcon icon={solid("calendar")} />
-          <small>Lets talk!</small>
+          <small>Interview</small>
           </button>
         </a>
 
