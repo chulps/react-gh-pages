@@ -7,6 +7,7 @@ import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
 import Footer from "./COMPONENTS/FOOTER/Footer.js";
 import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
+import Feedback from "./COMPONENTS/PAGES/FEEDBACK/Feedback";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import "./App.css";
@@ -27,10 +28,10 @@ function App() {
             <Route path="/crigenetics/" element={<CRIGenetics />} />
             <Route path="/foundry/" element={<Foundry />} />
             <Route path="/nucleotide/" element={<Nucleotide />} />
-
             <Route path="/yarden/" element={<Yarden />} />
             <Route path="/clicktool/" element={<Clicktool />} />
             <Route path="/covid/" element={<Covid />} />
+            <Route path="/feedback/" element={<Feedback />} />
           </Routes>
         </main>
 
@@ -47,6 +48,7 @@ function App() {
             style={{
               borderRadius:
                 "var(--unit3) var(--unit3) var(--unit3) var(--unit1",
+              fontWeight: "normal",
             }}
           >
             <FontAwesomeIcon icon={solid("calendar")} />
@@ -56,8 +58,8 @@ function App() {
 
         <Footer />
 
-        <div className="feedback disabled">
-          <a>
+        <div className="feedback">
+          <a href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024" >
             <button className="btn3 small">
               <FontAwesomeIcon icon={solid("comments")} />
               &nbsp;Feedback

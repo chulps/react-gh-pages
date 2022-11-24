@@ -83,10 +83,10 @@ class Nav extends React.Component {
                 color: "var(--transBlueC-75)",
               }}
             >
-              <span style={{ color: "var(--green0)" }}>
+              <span style={{ color: "var(--green0)" }} className="mr0">
                 <FontAwesomeIcon icon={solid("user-tie")} />
               </span>
-              &nbsp;&nbsp;Interviewing&nbsp;now
+              Interviewing&nbsp;now
             </small>
           </div>
         </div>

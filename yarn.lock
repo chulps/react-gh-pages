@@ -8230,7 +8230,7 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
-"react-dom@*", "react-dom@^17.0.2", "react-dom@>=16.8":
+"react-dom@*", "react-dom@^16.5.0 || ^17.0.1 || ^18.1.0", "react-dom@^17.0.2", "react-dom@>=16.8":
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
   dependencies:
@@ -8354,7 +8354,7 @@
   "resolved" "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.2.tgz"
   "version" "2.1.2"
 
-"react@*", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@>= 16", "react@>=16.3", "react@>=16.3.0", "react@>=16.8", "react@17.0.2":
+"react@*", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.5.0 || ^17.0.1 || ^18.1.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@>= 16", "react@>=16.3", "react@>=16.3.0", "react@>=16.8", "react@17.0.2":
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
   dependencies:
@@ -9515,6 +9515,20 @@
   dependencies:
     "has-flag" "^4.0.0"
     "supports-color" "^7.0.0"
+
+"survey-core@*":
+  "integrity" "sha512-cfefSmoHtZ12DzjlVchDer8tNYxYN3LWXZxnBMKc1QH1Gqi3huZP5EPEWysNAZMnoU6h5+ZsV9E9bhhVgqOSVQ=="
+  "resolved" "https://registry.npmjs.org/survey-core/-/survey-core-1.9.60.tgz"
+  "version" "1.9.60"
+
+"survey-react-ui@^1.9.60":
+  "integrity" "sha512-nP+Rq5z64ORfOOvLWqsgEBZj2lWll31oOeF8VH/a5WMKCWqVA6scE1wtWh6x7rHF/4RMfCB4J6cHRU9zBwJHeg=="
+  "resolved" "https://registry.npmjs.org/survey-react-ui/-/survey-react-ui-1.9.60.tgz"
+  "version" "1.9.60"
+  dependencies:
+    "react" "^16.5.0 || ^17.0.1 || ^18.1.0"
+    "react-dom" "^16.5.0 || ^17.0.1 || ^18.1.0"
+    "survey-core" "*"
 
 "svg-parser@^2.0.2":
   "resolved" "https://registry.npmjs.org/svg-parser/-/svg-parser-2.0.4.tgz"
