@@ -67,7 +67,7 @@
     object-fit: cover;
     position: fixed;
     align-self: end;
-    max-height: 85%;
+    max-height: 80%;
     height: 90%;
     width: auto;
   }
