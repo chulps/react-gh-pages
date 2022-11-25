@@ -53,9 +53,10 @@
 
 .chuck-img {
   position: fixed;
-bottom: 0;  height: 75%;
+  bottom: 0;  height: 75%;
   width: auto;
   right: 0;
+  min-height: 400px;
 }
 
 @media screen and (min-width: 280px) and (min-height: 653px) {
@@ -75,14 +76,12 @@ bottom: 0;  height: 75%;
 @media screen and (min-width: 390px) and (min-height: 844px) {
   .chuck-img {
     height: 80%;
-    min-height:400px;
     right: -15%;
   }
 }
 
 @media screen and (min-width: 414px) and (min-height: 896px) {
   .chuck-img {
-    height: 80%;
     right: -10%;
   }
 }
@@ -94,9 +93,29 @@ bottom: 0;  height: 75%;
 
   .chuck-img {
     right: unset;
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .chuck-img {
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+  .chuck-img {
     left: 60%;
   }
 }
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .chuck-img {
+    left: 40%;
+  }
+}
+
+
 
 @media screen and (min-width: 1280px) and (min-height: 800px) {
   .content-box {
@@ -104,10 +123,7 @@ bottom: 0;  height: 75%;
   }
 
   .chuck-img {
-    right: unset;
     height: 80%;
-    /* max-height: 800px; */
-    justify-self: center;
   }
 }
 
