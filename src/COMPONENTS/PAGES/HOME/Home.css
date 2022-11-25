@@ -66,6 +66,13 @@
   }
 }
 
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .chuck-img {
+    height: 75%;
+    right: -5%;
+  }
+}
+
 @media screen and (min-width: 414px) and (min-height: 896px) {
   .chuck-img {
     height: 80%;
@@ -98,7 +105,8 @@
   .chuck-img {
     right: unset;
     height: 80%;
-    max-height: 800px;
+    /* max-height: 800px; */
+    justify-self: center;
   }
 }
 
