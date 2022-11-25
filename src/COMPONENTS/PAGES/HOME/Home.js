@@ -39,7 +39,7 @@ const Home = () => {
         }}
       >
         <section className="content-col flex md-two-columns">
-          <div className="absolute md-relative md-order1 whole h100 flex-vertical flex-end relative bg-white">
+          <div className="absolute md-relative md-order1 whole h100 flex-vertical relative bg-white">
             <img
               className="whole md-half"
               style={{
