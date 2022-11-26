@@ -6,9 +6,7 @@ import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import CCBG from "./cross-campus-bg.jpg";
-import {Helmet} from "react-helmet";
-
-
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -54,7 +52,7 @@ const Home = () => {
                 alignSelf: "center",
                 justifySelf: "center",
                 transition: "width 0.5s ease",
-                willChange: "width"
+                willChange: "width",
               }}
               src={CCBG}
               width="100%"
@@ -101,7 +99,7 @@ const Home = () => {
       </section>
       <section className="hero bg-default">
         <section className="py4 one-column lg-two-columns gap3 md-gap4">
-                    <div>
+          <div>
             <label>Summary:</label>
             <h3 className="mb2">About me:</h3>
             <p>
@@ -119,17 +117,20 @@ const Home = () => {
             <p>In doing this, I practice these core disciplines:</p>
             <p className="disciplines">
               <small style={{ background: "rgba(0, 143, 195, 0.25)" }}>
-                UI/UX Design
+                <FontAwesomeIcon icon={solid("pen-nib")} />
+                &nbsp;UI/UX Design
               </small>
               <small style={{ background: "rgba(255, 96, 96, 0.25)" }}>
-                Front-end Development
+                <FontAwesomeIcon icon={solid("laptop")} />
+                &nbsp;Front-end Development
               </small>
               <small style={{ background: "rgba(0, 206, 89, 0.25)" }}>
-                Product Discovery
+                <FontAwesomeIcon icon={solid("search")} />
+                &nbsp;Product Discovery
               </small>
             </p>
           </div>
-          
+
           <div className="skills-diagram flex-center sm-px3 md-px4 lg-px1 xl-px3 text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -159,69 +160,76 @@ const Home = () => {
                 opacity="0.25"
               />
             </svg>
-            <h6
+            <small
               className="absolute"
-              style={{ transform: "translate(0 , -300%)" }}
+              style={{ transform: "translate(0 , -420%)" }}
             >
-              Product
-              <br />
-              Discovery
-            </h6>
-            <h6
+              <FontAwesomeIcon icon={solid("search")} />
+
+              <div>
+                Product
+                <br />
+                Discovery
+              </div>
+            </small>
+            <small
               className="absolute"
-              style={{ transform: "translate(320% , 280%)" }}
+              style={{ transform: "translate(420% , 280%)" }}
             >
+              <FontAwesomeIcon icon={solid("pen-nib")} />
               UI/UX
               <br />
               Design
-            </h6>
-            <h6
+            </small>
+            <small
               className="absolute"
-              style={{ transform: "translate(-300% , 280%)" }}
+              style={{ transform: "translate(-420% , 280%)" }}
             >
+              <FontAwesomeIcon icon={solid("laptop")} />
               Front-end
               <br />
               Development
+            </small>
+            <h6
+              className="absolute"
+              style={{ transform: "translate(-280% , -80%)", lineHeight: 1 }}
+            >
+              <FontAwesomeIcon icon={solid("map")} />
+              Product
+              <br />
+              Roadmap
             </h6>
-            <small
+            <h6
               className="absolute"
-              style={{ transform: "translate(-240% , -80%)", lineHeight: 1 }}
+              style={{ transform: "translate(300% , -80%)", lineHeight: 1 }}
             >
-              <small style={{ lineHeight: 1 }}>
-                Product
-                <br />
-                Roadmap
-              </small>
-            </small>
-            <small
-              className="absolute"
-              style={{ transform: "translate(240% , -70%)", lineHeight: 1 }}
-            >
-              <small style={{ lineHeight: 1 }}>
-                Prototyping&nbsp;&
-                <br />
-                Wireframing
-              </small>
-            </small>
-            <small
+              <FontAwesomeIcon icon={solid("lightbulb")} />
+              Prototyping&nbsp;&
+              <br />
+              Wireframing
+            </h6>
+            <h6
               className="absolute"
               style={{ transform: "translate(0 , 360%)", lineHeight: 1 }}
             >
-              <small style={{ lineHeight: 1 }}>
-                Design
-                <br />
-                Feasability
-              </small>
-            </small>
+              <FontAwesomeIcon icon={solid("handshake")} />
+              Design
+              <br />
+              Feasability
+            </h6>
             <h5
               className="absolute"
               style={{ transform: "translate(0 , 20%)" }}
             >
-              <img src={Logo} height={80} alt="Logo" />
-              
+              <img
+                src={Logo}
+                style={{ filter: "drop-shadow(0 0 3px white)" }}
+                height={80}
+                alt="Logo"
+              />
+              <h4 className="text-white" style={{filter: "drop-shadow(0 0 3px white)"}}>Chuck</h4>
             </h5>
           </div>
-
         </section>
 
         <section className="one-column lg-three-columns gap3 pb3">

@@ -9,11 +9,45 @@
 
 .skills-diagram h6,
 .skills-diagram small {
-  height: 9%;
-  width: 9%;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   transform-origin: center;
+  line-height: 1;
+}
+
+.skills-diagram h6 svg,
+.skills-diagram small svg {
+  font-size: var(--H5);
+  margin-bottom: var(--unit0);
+}
+
+@media screen and (min-width: 576px) {
+  .skills-diagram h6,
+    .skills-diagram small {
+      height: 50px;
+      width: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .skills-diagram h6,
+      .skills-diagram small {
+        height: 30px;
+        width: 30px;
+      }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .skills-diagram h6,
+  .skills-diagram small {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .product-tools small,
