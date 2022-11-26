@@ -33,12 +33,21 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 786px) {
     .skills-diagram h6,
       .skills-diagram small {
-        height: 30px;
-        width: 30px;
+        height:60px;
+        width:60px;
       }
+}
+
+@media screen and (min-width: 992px) {
+
+  .skills-diagram h6,
+  .skills-diagram small {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {

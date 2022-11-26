@@ -162,7 +162,7 @@ const Home = () => {
             </svg>
             <small
               className="absolute"
-              style={{ transform: "translate(0 , -420%)" }}
+              style={{ transform: "translate(0 , -320%)" }}
             >
               <FontAwesomeIcon icon={solid("search")} />
 
@@ -174,7 +174,7 @@ const Home = () => {
             </small>
             <small
               className="absolute"
-              style={{ transform: "translate(420% , 280%)" }}
+              style={{ transform: "translate(320% , 220%)" }}
             >
               <FontAwesomeIcon icon={solid("pen-nib")} />
               UI/UX
@@ -183,7 +183,7 @@ const Home = () => {
             </small>
             <small
               className="absolute"
-              style={{ transform: "translate(-420% , 280%)" }}
+              style={{ transform: "translate(-320% , 220%)" }}
             >
               <FontAwesomeIcon icon={solid("laptop")} />
               Front-end
@@ -192,7 +192,7 @@ const Home = () => {
             </small>
             <h6
               className="absolute"
-              style={{ transform: "translate(-280% , -80%)", lineHeight: 1 }}
+              style={{ transform: "translate(-220% , -80%)", lineHeight: 1 }}
             >
               <FontAwesomeIcon icon={solid("map")} />
               Product
@@ -201,7 +201,7 @@ const Home = () => {
             </h6>
             <h6
               className="absolute"
-              style={{ transform: "translate(300% , -80%)", lineHeight: 1 }}
+              style={{ transform: "translate(220% , -80%)", lineHeight: 1 }}
             >
               <FontAwesomeIcon icon={solid("lightbulb")} />
               Prototyping&nbsp;&
@@ -210,7 +210,7 @@ const Home = () => {
             </h6>
             <h6
               className="absolute"
-              style={{ transform: "translate(0 , 360%)", lineHeight: 1 }}
+              style={{ transform: "translate(0 , 300%)", lineHeight: 1 }}
             >
               <FontAwesomeIcon icon={solid("handshake")} />
               Design

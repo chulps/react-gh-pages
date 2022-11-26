@@ -95,14 +95,14 @@ class Nav extends React.Component {
         <button
           id="mobile-nav-button"
           className={
-            this.state.displaySideNav ? "close md-ghost" : "md-ghost h4 py0 px1"
+            this.state.displaySideNav ? "close md-ghost" : "btn3 md-ghost h4 py0 px1"
           }
           onClick={() =>
             this.setState({
               displaySideNav: !this.state.displaySideNav,
             })
           }
-        ><FontAwesomeIcon icon={solid("burger")} /></button>
+        >{this.state.displaySideNav ? "" : <FontAwesomeIcon icon={solid("burger")} />  }</button>
 
         {/* desktop */}
         <span
