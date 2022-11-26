@@ -101,7 +101,36 @@ const Home = () => {
       </section>
       <section className="hero bg-default">
         <section className="py4 one-column lg-two-columns gap3 md-gap4">
-          <div className="flex-center sm-px3 md-px4 lg-px1 xl-px3">
+                    <div>
+            <label>Summary:</label>
+            <h3 className="mb2">About me:</h3>
+            <p>
+              Based in Los Angeles, I came here as an artist and designer in
+              2017. In 2018 I started coding and began my new career in tech,
+              blending my old skills with more recent ones, and learning to make
+              digital products.
+            </p>
+            <p>
+              The road to where I am today was not a direct path. In my journey
+              I've had interesting titles and practiced different disciplines,
+              but I always play the same role;{" "}
+              <b>I am the one who designs the thing we sell!</b>
+            </p>
+            <p>In doing this, I practice these core disciplines:</p>
+            <p className="disciplines">
+              <small style={{ background: "rgba(0, 143, 195, 0.25)" }}>
+                UI/UX Design
+              </small>
+              <small style={{ background: "rgba(255, 96, 96, 0.25)" }}>
+                Front-end Development
+              </small>
+              <small style={{ background: "rgba(0, 206, 89, 0.25)" }}>
+                Product Discovery
+              </small>
+            </p>
+          </div>
+          
+          <div className="skills-diagram flex-center sm-px3 md-px4 lg-px1 xl-px3 text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -131,16 +160,16 @@ const Home = () => {
               />
             </svg>
             <h6
-              className="absolute text-center"
-              style={{ transform: "translate(0 , -600%)" }}
+              className="absolute"
+              style={{ transform: "translate(0 , -300%)" }}
             >
               Product
               <br />
               Discovery
             </h6>
             <h6
-              className="absolute text-right"
-              style={{ transform: "translate(320% , 360%)" }}
+              className="absolute"
+              style={{ transform: "translate(320% , 280%)" }}
             >
               UI/UX
               <br />
@@ -148,17 +177,17 @@ const Home = () => {
             </h6>
             <h6
               className="absolute"
-              style={{ transform: "translate(-180% , 360%)" }}
+              style={{ transform: "translate(-300% , 280%)" }}
             >
               Front-end
               <br />
               Development
             </h6>
             <small
-              className="absolute text-right"
-              style={{ transform: "translate(-280% , -140%)", lineHeight: 1 }}
+              className="absolute"
+              style={{ transform: "translate(-240% , -80%)", lineHeight: 1 }}
             >
-              <small className="bold" style={{ lineHeight: 1 }}>
+              <small style={{ lineHeight: 1 }}>
                 Product
                 <br />
                 Roadmap
@@ -166,17 +195,17 @@ const Home = () => {
             </small>
             <small
               className="absolute"
-              style={{ transform: "translate(190% , -150%)", lineHeight: 1 }}
+              style={{ transform: "translate(240% , -70%)", lineHeight: 1 }}
             >
-              <small className="bold" style={{ lineHeight: 1 }}>
-                Prototyping &
+              <small style={{ lineHeight: 1 }}>
+                Prototyping&nbsp;&
                 <br />
                 Wireframing
               </small>
             </small>
             <small
-              className="absolute text-center bold"
-              style={{ transform: "translate(0 , 550%)", lineHeight: 1 }}
+              className="absolute"
+              style={{ transform: "translate(0 , 360%)", lineHeight: 1 }}
             >
               <small style={{ lineHeight: 1 }}>
                 Design
@@ -185,40 +214,14 @@ const Home = () => {
               </small>
             </small>
             <h5
-              className="absolute text-center"
+              className="absolute"
               style={{ transform: "translate(0 , 20%)" }}
             >
               <img src={Logo} height={80} alt="Logo" />
+              
             </h5>
           </div>
-          <div>
-            <label>Summary:</label>
-            <h3 className="mb2">About me:</h3>
-            <p>
-              Based in Los Angeles, I came here as an artist and designer in
-              2017. In 2018 I started coding and began my new career in tech,
-              blending my old skills with more recent ones, and learning to make
-              digital products.
-            </p>
-            <p>
-              The road to where I am today was not a direct path. In my journey
-              I've had interesting titles and practiced different disciplines,
-              but I always play the same role;{" "}
-              <b>I am the one who designs the thing we sell!</b>
-            </p>
-            <p>In doing this, I practice these core disciplines:</p>
-            <p className="disciplines">
-              <small style={{ background: "rgba(0, 143, 195, 0.25)" }}>
-                UI/UX Design
-              </small>
-              <small style={{ background: "rgba(255, 96, 96, 0.25)" }}>
-                Front-end Development
-              </small>
-              <small style={{ background: "rgba(0, 206, 89, 0.25)" }}>
-                Product Discovery
-              </small>
-            </p>
-          </div>
+
         </section>
 
         <section className="one-column lg-three-columns gap3 pb3">

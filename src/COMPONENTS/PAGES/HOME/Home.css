@@ -7,6 +7,15 @@
   gap: var(--unit1);
 }
 
+.skills-diagram h6,
+.skills-diagram small {
+  height: 9%;
+  width: 9%;
+  display: flex;
+  justify-content: center;
+  transform-origin: center;
+}
+
 .product-tools small,
 .design-tools small,
 .development-tools small {
