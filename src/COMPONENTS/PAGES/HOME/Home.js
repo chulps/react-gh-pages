@@ -231,7 +231,7 @@ const Home = () => {
               >
                 <img
                   src={Logo}
-                  style={{ filter: "drop-shadow(0 0 3px white)" }}
+                  className="diagram-c-logo"
                   height={80}
                   alt="Logo"
                 />

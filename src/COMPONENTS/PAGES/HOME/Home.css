@@ -43,6 +43,37 @@
   line-height: 1;
 }
 
+.diagram-c-logo {
+  /* filter: drop-shadow(0 0 6px rgba(255,255,255,1)); */
+  animation: pulse 0.9s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));
+  }
+                    12.5% {
+                      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+                    }
+
+        25% {
+          filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+        }
+        33% { filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));}
+
+  50% {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 1));
+  }
+
+    75% {
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+    }
+  
+  100% {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+  }
+}
+
 .skills-diagram h6 svg,
 .skills-diagram small svg {
   font-size: var(--H5);
