@@ -10,7 +10,7 @@ function YardenAppStoreQRCode() {
       fill="var(--transBlueC-75"
       overflow="visible"
     >
-      <rect width="100%" height="100%" stroke="#00ff00" fill="none" strokeDasharray={10, 50} strokeDashoffset={25} strokeWidth={2} />
+      <rect width="100%" height="100%" stroke="#00ff00" fill="none" strokeDasharray="10 50" strokeDashoffset={25} strokeWidth={2} />
 
       <svg
         xmlns="http://www.w3.org/2000/svg"

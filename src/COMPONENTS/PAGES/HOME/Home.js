@@ -98,165 +98,177 @@ const Home = () => {
         </section>
       </section>
       <section className="hero bg-default">
-        <section className="py4 one-column lg-two-columns gap3 md-gap4">
+        <section className="py4 one-column lg-two-columns gap3 lg-gap4">
           <div>
-            <label>Summary:</label>
-            <h3 className="mb2">About me:</h3>
+            <label>About Me:</label>
+            <h3 className="mb1">3 Core Functions with crossfunctional benefits.</h3>
             <p>
-              Based in Los Angeles, I came here as an artist and designer in
-              2017. In 2018 I started coding and began my new career in tech,
-              blending my old skills with more recent ones, and learning to make
-              digital products.
+              I'm a <i>Product Designer</i> with experience in <i>Frontend Development</i> and <i>Product Discovery. </i> These three skills combined make me a highly productive member of a product or engineering team because of the way these skills overlap.
             </p>
-            <p>
-              The road to where I am today was not a direct path. In my journey
-              I've had interesting titles and practiced different disciplines,
-              but I always play the same role;{" "}
-              <b>I am the one who designs the thing we sell!</b>
-            </p>
-            <p>In doing this, I practice these core disciplines:</p>
+
             <p className="disciplines">
-              <small style={{ background: "rgba(0, 143, 195, 0.25)" }}>
-                <FontAwesomeIcon icon={solid("pen-nib")} />
-                &nbsp;UI/UX Design
-              </small>
-              <small style={{ background: "rgba(255, 96, 96, 0.25)" }}>
-                <FontAwesomeIcon icon={solid("laptop")} />
-                &nbsp;Front-end Development
-              </small>
-              <small style={{ background: "rgba(0, 206, 89, 0.25)" }}>
-                <FontAwesomeIcon icon={solid("search")} />
-                &nbsp;Product Discovery
-              </small>
+              <div className="flex-center flex-vertical">
+                <h6 style={{ background: "rgba(0, 143, 195, 0.30)" }}>
+                  <FontAwesomeIcon icon={solid("pen-nib")} />
+                  UI/UX
+                  <br />
+                  Design
+                </h6>
+              </div>
+
+              <div className="flex-center">
+                <h6 style={{ background: "rgba(255, 96, 96, 0.30)" }}>
+                  <FontAwesomeIcon icon={solid("wrench")} />
+                  Front-end Development
+                </h6>
+              </div>
+
+              <div className="flex-center">
+                <h6 style={{ background: "rgba(0, 206, 89, 0.30)" }}>
+                  <FontAwesomeIcon icon={solid("search")} />
+                  Product Discovery
+                </h6>
+              </div>
             </p>
           </div>
 
-          <div className="skills-diagram flex-center sm-px3 md-px4 lg-px1 xl-px3 text-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100%"
-              height="100%"
-              viewBox="0 0 286.6 275.06"
-            >
-              <circle
-                cx="143.3"
-                cy="100"
-                r="100"
-                fill="var(--green0)"
-                opacity="0.25"
-              />
-              <circle
-                cx="100"
-                cy="175.06"
-                r="100"
-                fill="var(--red0)"
-                opacity="0.25"
-              />
-              <circle
-                cx="186.6"
-                cy="175.06"
-                r="100"
-                fill="var(--blue0)"
-                opacity="0.25"
-              />
-            </svg>
-            <small
-              className="absolute"
-              style={{ transform: "translate(0 , -320%)" }}
-            >
-              <FontAwesomeIcon icon={solid("search")} />
+          <div className="cross-functionality">
+            <div className="skills-diagram flex-center xs-px3 sm-px4 lg-px1 xl-px4 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 286.6 275.06"
+              >
+                <circle
+                  cx="143.3"
+                  cy="100"
+                  r="100"
+                  fill="var(--green0)"
+                  opacity="0.30"
+                />
+                <circle
+                  cx="100"
+                  cy="175.06"
+                  r="100"
+                  fill="var(--red0)"
+                  opacity="0.30"
+                />
+                <circle
+                  cx="186.6"
+                  cy="175.06"
+                  r="100"
+                  fill="var(--blue0)"
+                  opacity="0.30"
+                />
+              </svg>
+              <small
+                className="absolute"
+                style={{ transform: "translate(0 , -320%)" }}
+              >
+                <FontAwesomeIcon icon={solid("search")} />
 
-              <div>
+                <div>
+                  Product
+                  <br />
+                  Discovery
+                </div>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(320% , 220%)" }}
+              >
+                <FontAwesomeIcon icon={solid("pen-nib")} />
+                UI/UX
+                <br />
+                Design
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-320% , 220%)" }}
+              >
+                <FontAwesomeIcon icon={solid("wrench")} />
+                Front-end
+                <br />
+                Development
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-240% , -80%)", lineHeight: 1 }}
+              >
+                <FontAwesomeIcon icon={solid("map")} />
                 Product
                 <br />
-                Discovery
+                Roadmap
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(240% , -80%)", lineHeight: 1 }}
+              >
+                <FontAwesomeIcon icon={solid("lightbulb")} />
+                Prototypes&nbsp;&
+                <br />
+                Testing
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(0 , 320%)", lineHeight: 1 }}
+              >
+                <FontAwesomeIcon icon={solid("handshake")} />
+                Engineering
+                <br />
+                Feasability
+              </small>
+              <div
+                className="absolute"
+                style={{ transform: "translate(0 , 20%)" }}
+              >
+                <img
+                  src={Logo}
+                  style={{ filter: "drop-shadow(0 0 3px white)" }}
+                  height={80}
+                  alt="Logo"
+                />
+                <p
+                  className="text-white h6"
+                  style={{
+                    filter: "drop-shadow(0 0 3px white)",
+                    lineHeight: 1,
+                    marginTop: "-0.5em",
+                  }}
+                >
+                  Chuck
+                </p>
               </div>
-            </small>
-            <small
-              className="absolute"
-              style={{ transform: "translate(320% , 220%)" }}
-            >
-              <FontAwesomeIcon icon={solid("pen-nib")} />
-              UI/UX
-              <br />
-              Design
-            </small>
-            <small
-              className="absolute"
-              style={{ transform: "translate(-320% , 220%)" }}
-            >
-              <FontAwesomeIcon icon={solid("laptop")} />
-              Front-end
-              <br />
-              Development
-            </small>
-            <h6
-              className="absolute"
-              style={{ transform: "translate(-220% , -80%)", lineHeight: 1 }}
-            >
-              <FontAwesomeIcon icon={solid("map")} />
-              Product
-              <br />
-              Roadmap
-            </h6>
-            <h6
-              className="absolute"
-              style={{ transform: "translate(220% , -80%)", lineHeight: 1 }}
-            >
-              <FontAwesomeIcon icon={solid("lightbulb")} />
-              Prototyping&nbsp;&
-              <br />
-              Wireframing
-            </h6>
-            <h6
-              className="absolute"
-              style={{ transform: "translate(0 , 300%)", lineHeight: 1 }}
-            >
-              <FontAwesomeIcon icon={solid("handshake")} />
-              Design
-              <br />
-              Feasability
-            </h6>
-            <h5
-              className="absolute"
-              style={{ transform: "translate(0 , 20%)" }}
-            >
-              <img
-                src={Logo}
-                style={{ filter: "drop-shadow(0 0 3px white)" }}
-                height={80}
-                alt="Logo"
-              />
-              <h4 className="text-white" style={{filter: "drop-shadow(0 0 3px white)"}}>Chuck</h4>
-            </h5>
+            </div>
           </div>
         </section>
 
         <section className="one-column lg-three-columns gap3 pb3">
           <div>
-            <h5>Product Discovery Tools:</h5>
-            <small>
+            <h4>Product Discovery Tools:</h4>
+            <p>
               Use data to inform design decisions. In order to collect that data
               I use these tools that measure how real users use the product in
               real scenarios.
-            </small>
-            <small className="product-tools py1">
+            </p>
+            <div className="product-tools py1">
               <small>Google Analytics</small>
               <small>Google Optimize</small>
               <small>Hotjar</small>
               <small>Crazy Egg</small>
               <small>Jira</small>
               <small>Confluence</small>
-            </small>
+            </div>
           </div>
           <div>
-            <h5>Design Tools:</h5>
-            <small>
+            <h4>Design Tools:</h4>
+            <p>
               Creating assets, editing photos, converting files, SVGs,
               prototypes, branding, animation, etc... it all happens with these
               tools.
-            </small>
-            <small className="design-tools py1">
+            </p>
+            <div className="design-tools py1">
               <small>Photoshop</small>
               <small>Illustrator</small>
               <small>Indesign</small>
@@ -265,15 +277,15 @@ const Home = () => {
               <small>Figma</small>
               <small>Balsamiq</small>
               <small>Miro</small>
-            </small>
+            </div>
           </div>
           <div>
-            <h5>Development Tools:</h5>
-            <small>
+            <h4>Development Tools:</h4>
+            <p>
               Use these tools to create design systems and reusable components
               so that I can quickly build prototypes at the highest fidelity.
-            </small>
-            <small className="development-tools py1">
+            </p>
+            <div className="development-tools py1">
               <small>HTML</small>
               <small>CSS</small>
               <small>Javascript</small>
@@ -288,7 +300,7 @@ const Home = () => {
               <small>Vue</small>
               <small>HUBL</small>
               <small>Liquid</small>
-            </small>
+            </div>
           </div>
         </section>
       </section>

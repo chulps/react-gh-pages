@@ -1,16 +1,40 @@
+.disciplines {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.disciplines h6 {
+  height: calc(var(--unit4));
+  width: calc(var(--unit4));
+  border-radius: var(--unit4) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+  padding: var(--unit2);
+}
+
+.disciplines svg {
+  margin-bottom: var(--unit0);
+  font-size: var(--H4);
+}
+
 .product-tools,
 .design-tools,
-.development-tools,
-.disciplines {
+.development-tools {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--unit1);
+  gap: var(--unit0);
+  flex-direction: row;
 }
 
 .skills-diagram h6,
 .skills-diagram small {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,16 +52,25 @@
 @media screen and (min-width: 576px) {
   .skills-diagram h6,
     .skills-diagram small {
-      height: 50px;
-      width: 50px;
+      height: 35px;
+      width: 35px;
     }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 678px) {
+
+  .skills-diagram h6,
+  .skills-diagram small {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
     .skills-diagram h6,
       .skills-diagram small {
-        height:60px;
-        width:60px;
+        height:50px;
+        width:50px;
       }
 }
 
@@ -54,8 +87,8 @@
 
   .skills-diagram h6,
   .skills-diagram small {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
   }
 }
 
@@ -67,22 +100,21 @@
 }
 
 .disciplines small {
-  background: var(--transBlueC-10);
   padding: var(--unit0) var(--unit1);
   border-radius: var(--unit2);
   font-weight: bold;
 }
 
 .product-tools small {
-  background: rgba(0, 206, 89, 0.25);
+  background: rgba(0, 206, 89, 0.30);
 }
 
 .design-tools small {
-  background: rgba(0, 143, 195, 0.25);
+  background: rgba(0, 143, 195, 0.30);
 }
 
 .development-tools small {
-  background: rgba(255, 96, 96, 0.25);
+  background: rgba(255, 96, 96, 0.30);
 }
 
 .content-box {
