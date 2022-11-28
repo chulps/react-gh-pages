@@ -101,21 +101,18 @@ const Home = () => {
         <section className="py4 one-column lg-two-columns gap3 lg-gap4">
           <div>
             <label>About Me:</label>
-            <h3 className="mb1">3 Core Functions with crossfunctional benefits.</h3>
+            <h3 className="mb1">
+              3 Core Functions with crossfunctional benefits.
+            </h3>
             <p>
-              I'm a <i>Product Designer</i> with experience in <i>Frontend Development</i> and <i>Product Discovery. </i> These three skills combined make me a highly productive member of a product or engineering team because of the way these skills overlap.
+              I'm a <i>Product Designer</i> with experience in{" "}
+              <i>Frontend Development</i> and <i>Product Discovery. </i> These
+              three skills combined make me a highly productive member of a
+              product or engineering team because of the way these skills
+              overlap.
             </p>
 
             <p className="disciplines">
-              <div className="flex-center flex-vertical">
-                <h6 style={{ background: "rgba(0, 143, 195, 0.30)" }}>
-                  <FontAwesomeIcon icon={solid("pen-nib")} />
-                  UI/UX
-                  <br />
-                  Design
-                </h6>
-              </div>
-
               <div className="flex-center">
                 <h6 style={{ background: "rgba(255, 96, 96, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("wrench")} />
@@ -127,6 +124,15 @@ const Home = () => {
                 <h6 style={{ background: "rgba(0, 206, 89, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("search")} />
                   Product Discovery
+                </h6>
+              </div>
+
+              <div className="flex-center flex-vertical">
+                <h6 style={{ background: "rgba(0, 143, 195, 0.30)" }}>
+                  <FontAwesomeIcon icon={solid("pen-nib")} />
+                  UI/UX
+                  <br />
+                  Design
                 </h6>
               </div>
             </p>
@@ -246,40 +252,6 @@ const Home = () => {
 
         <section className="one-column lg-three-columns gap3 pb3">
           <div>
-            <h4>Product Discovery Tools:</h4>
-            <p>
-              Use data to inform design decisions. In order to collect that data
-              I use these tools that measure how real users use the product in
-              real scenarios.
-            </p>
-            <div className="product-tools py1">
-              <small>Google Analytics</small>
-              <small>Google Optimize</small>
-              <small>Hotjar</small>
-              <small>Crazy Egg</small>
-              <small>Jira</small>
-              <small>Confluence</small>
-            </div>
-          </div>
-          <div>
-            <h4>Design Tools:</h4>
-            <p>
-              Creating assets, editing photos, converting files, SVGs,
-              prototypes, branding, animation, etc... it all happens with these
-              tools.
-            </p>
-            <div className="design-tools py1">
-              <small>Photoshop</small>
-              <small>Illustrator</small>
-              <small>Indesign</small>
-              <small>XD</small>
-              <small>After Effects</small>
-              <small>Figma</small>
-              <small>Balsamiq</small>
-              <small>Miro</small>
-            </div>
-          </div>
-          <div>
             <h4>Development Tools:</h4>
             <p>
               Use these tools to create design systems and reusable components
@@ -300,6 +272,42 @@ const Home = () => {
               <small>Vue</small>
               <small>HUBL</small>
               <small>Liquid</small>
+            </div>
+          </div>
+
+          <div>
+            <h4>Product Discovery Tools:</h4>
+            <p>
+              Use data to inform design decisions. In order to collect that data
+              I use these tools that measure how real users use the product in
+              real scenarios.
+            </p>
+            <div className="product-tools py1">
+              <small>Google Analytics</small>
+              <small>Google Optimize</small>
+              <small>Hotjar</small>
+              <small>Crazy Egg</small>
+              <small>Jira</small>
+              <small>Confluence</small>
+            </div>
+          </div>
+
+          <div>
+            <h4>Design Tools:</h4>
+            <p>
+              Creating assets, editing photos, converting files, SVGs,
+              prototypes, branding, animation, etc... it all happens with these
+              tools.
+            </p>
+            <div className="design-tools py1">
+              <small>Photoshop</small>
+              <small>Illustrator</small>
+              <small>Indesign</small>
+              <small>XD</small>
+              <small>After Effects</small>
+              <small>Figma</small>
+              <small>Balsamiq</small>
+              <small>Miro</small>
             </div>
           </div>
         </section>
