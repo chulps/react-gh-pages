@@ -54,6 +54,7 @@ const Home = () => {
                 transition: "width 0.5s ease",
                 willChange: "width",
               }}
+              alt="Hero Background"
               src={CCBG}
               width="100%"
               height="auto"
@@ -112,7 +113,7 @@ const Home = () => {
               overlap.
             </p>
 
-            <p className="disciplines">
+            <div className="disciplines">
               <div className="flex-center">
                 <h6 style={{ background: "rgba(255, 96, 96, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("wrench")} />
@@ -135,11 +136,11 @@ const Home = () => {
                   Design
                 </h6>
               </div>
-            </p>
+            </div>
           </div>
 
           <div className="cross-functionality">
-            <div className="skills-diagram flex-center xs-px3 sm-px4 lg-px1 xl-px4 text-center">
+            <div className="skills-diagram flex-center xs-px3 sm-px4 lg-px3 xl-px4 text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"

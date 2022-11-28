@@ -9,7 +9,6 @@ import ClicktoolTeamSection from "./CLICKTOOL_COMPONENTS/ClicktoolTeamSection.js
 import ClicktoolVisitSection from "./CLICKTOOL_COMPONENTS/ClicktoolVisitSection.js";
 import {Helmet} from "react-helmet";
 
-import { Link } from "react-router-dom";
 
 
 // import Laptop from "./CLICKTOOL_COMPONENTS/HomeProjectSection";

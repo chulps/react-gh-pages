@@ -198,7 +198,6 @@ class Foundry extends Component {
 
         <section className="my4">
           <label>Things i worked on</label>
-          <h2></h2>
 
           <div className="md-two-columns gap3 lg-three-columns">
             <div>
