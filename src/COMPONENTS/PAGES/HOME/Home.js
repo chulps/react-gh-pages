@@ -98,7 +98,7 @@ const Home = () => {
         </section>
       </section>
       <section className="hero bg-default">
-        <section className="py4 one-column lg-two-columns gap3 lg-gap4">
+        <section className="py4 one-column lg-two-columns gap3">
           <div>
             <label>About Me:</label>
             <h3 className="mb1">
