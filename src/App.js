@@ -10,11 +10,41 @@ import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import "./App.css";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
 
+import ReactGA from "react-ga4";
+const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
+ReactGA.initialize(TRACKING_ID);
+console.log(TRACKING_ID);
+
 function App() {
+  //creating IP state
+  const [ip, setIP] = useState("");
+
+  //creating function to load ip address from the API
+  const getData = async () => {
+    const res = await axios.get("https://geolocation-db.com/json/");
+    console.log(res.data);
+    setIP(res.data.IPv4);
+  };
+
+  useEffect(() => {
+    //passing getData method to the lifecycle method
+    getData();
+  }, []);
+
+  console.log(ip);
+
+  ReactGA.event({
+    category: "user info",
+    action: "visit",
+    label: ip, 
+    nonInteraction: true, // optional, true/false
+  });
+
   return (
     <div id="chuck" className="App nucleotide">
       <HashRouter forceRefresh={true}>
@@ -57,7 +87,11 @@ function App() {
         <Footer />
 
         <div className="feedback">
-          <a href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024" rel="noreferrer" target="_blank">
+          <a
+            href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024"
+            rel="noreferrer"
+            target="_blank"
+          >
             <button className="btn3 small">
               <FontAwesomeIcon icon={solid("comments")} />
               &nbsp;Feedback
