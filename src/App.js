@@ -44,7 +44,7 @@ function App() {
   ReactGA.event({
     category: "user_info",
     action: "Visitor_IP",
-    label: ip + " " + IPCountry, 
+    label: `${ip}_${IPCountry}`, 
     nonInteraction: true, // optional, true/false
   });
 
