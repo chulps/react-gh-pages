@@ -28,10 +28,9 @@ function App() {
   //creating function to load ip address from the API
   const getData = async () => {
     const res = await axios.get("https://geolocation-db.com/json/");
-    console.log(res.data);
+    // console.log(res.data);
     setIP(res.data.IPv4);
     setIPCountry(res.data.country_name);
-    console.log(IPCountry);
   };
 
   useEffect(() => {
@@ -39,7 +38,6 @@ function App() {
     getData();
   }, []);
 
-  console.log(ip + " " + IPCountry );
 
   ReactGA.event({
     category: "user_info",

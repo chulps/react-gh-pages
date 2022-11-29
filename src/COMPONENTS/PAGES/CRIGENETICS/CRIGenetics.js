@@ -222,44 +222,6 @@ class CRIGenetics extends Component {
         <hr className="my3" />
         <p className="text-center">More about CRI Genetics coming later...</p>
 
-        <div class="accordion">
-          <div
-            onClick="app.handleAccordionClick(this)"
-            class="flex-center flex-vertical"
-          >
-            <div class="whole py1 px2 text-blue flex-space-between">
-              <h5>Accordion</h5>
-              <span>&#9660;</span>
-            </div>
-
-            {/* accordion */}
-            <div class="accordion-contents whole">
-              <p>
-                CRI Genetics has a unique approach to genealogical testing. We
-                are an advanced team led by a professional molecular geneticist
-                who has been studying DNA for over 35 years with the help of
-                Nobel Prize winning scientists. At CRI Genetics, we have the
-                education, tools, and skills to provide you the most accurate
-                estimation of your BioGeographical Ancestry.
-              </p>
-              <p>
-                We combine Genetics with Anthropology to trace the migrations of
-                the human race. When we test your DNA against the samples from
-                around the globe, we can figure out where you fit in the rich
-                history of our species.
-              </p>
-              <p>
-                Our tests examine 642,824 specific markers across your entire
-                genome. These markers are hand-picked based on the latest
-                breakthroughs and advancements in genetic science. These markers
-                are specially chosen for their relevance to tracing ancestry, so
-                that we can provide you with the most statistically likely
-                estimation of your heritage.
-              </p>
-            </div>
-
-          </div>
-        </div>
       </div>
     );
   }
