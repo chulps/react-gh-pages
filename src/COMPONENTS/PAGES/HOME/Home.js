@@ -102,15 +102,12 @@ const Home = () => {
         <section className="py4 one-column lg-two-columns gap3">
           <div>
             <label>About Me:</label>
-            <h3 className="mb1">
-              3 Core Functions with crossfunctional benefits.
-            </h3>
+            <h3 className="mb1">3x Impact</h3>
             <p>
               I'm a <i>Product Designer</i> with experience in{" "}
-              <i>Frontend Development</i> and <i>Product Discovery. </i> These
-              three skills combined make me a highly productive member of a
-              product or engineering team because of the way these skills
-              overlap.
+              <i>Frontend Development</i> and <i>Product Discovery</i> who's
+              able to carry a product from the point of discovery, through the
+              design phase, and on to deployment.
             </p>
 
             <div className="disciplines">
@@ -137,6 +134,13 @@ const Home = () => {
                 </h6>
               </div>
             </div>
+
+            <p className="mt2">
+              I'm actively searching for full-time role on a remote team in
+              emerging technology with a small or medium sized company where I
+              can collaborate with awesome people, combine my skills and make an
+              impact.
+            </p>
           </div>
 
           <div className="cross-functionality">
@@ -253,7 +257,7 @@ const Home = () => {
 
         <section className="one-column lg-three-columns gap3 pb3">
           <div>
-            <h4>Development Tools:</h4>
+            <h4 className="mb0">Development Tools:</h4>
             <p>
               Use these tools to create design systems and reusable components
               so that I can quickly build prototypes at the highest fidelity.
@@ -277,7 +281,7 @@ const Home = () => {
           </div>
 
           <div>
-            <h4>Product Discovery Tools:</h4>
+            <h4 className="mb0">Product Discovery Tools:</h4>
             <p>
               Use data to inform design decisions. In order to collect that data
               I use these tools that measure how real users use the product in
@@ -294,7 +298,7 @@ const Home = () => {
           </div>
 
           <div>
-            <h4>Design Tools:</h4>
+            <h4 className="mb0">Design Tools:</h4>
             <p>
               Creating assets, editing photos, converting files, SVGs,
               prototypes, branding, animation, etc... it all happens with these

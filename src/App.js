@@ -22,17 +22,12 @@ ReactGA.initialize(TRACKING_ID);
 function App() {
   //creating IP state
   const [ip, setIP] = useState("");
-  const [IPCountry, setIPCountry] = useState("");
-  const [IPCity, setIPCity] = useState("");
-
 
   //creating function to load ip address from the API
   const getData = async () => {
     const res = await axios.get("https://geolocation-db.com/json/");
     console.log(res.data);
     setIP(res.data.IPv4);
-    setIPCountry(res.data.country_name);
-    setIPCity(res.data.city)
   };
 
   useEffect(() => {
@@ -40,14 +35,9 @@ function App() {
     getData();
   }, []);
 
-  console.log(`${ip}_${IPCity}_${IPCountry}`)
-
-
   ReactGA.event({
-    category: "user_info",
-    action: "Visitor_IP",
-    label: `${ip + IPCountry}`, 
-    nonInteraction: true, // optional, true/false
+    category: "visitor_ip",
+    action: `${ip}`,
   });
 
   return (
