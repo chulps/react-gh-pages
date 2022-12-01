@@ -117,14 +117,14 @@ const Home = () => {
                   Front-end Development
                 </h6>
               </div>
-
++
               <div className="flex-center">
                 <h6 style={{ background: "rgba(0, 206, 89, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("search")} />
                   Product Discovery
                 </h6>
               </div>
-
++
               <div className="flex-center flex-vertical">
                 <h6 style={{ background: "rgba(0, 143, 195, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("pen-nib")} />
@@ -144,13 +144,13 @@ const Home = () => {
           </div>
 
           <div className="cross-functionality flex-center-x">
-            <div className="skills-diagram flex-center xs-px3 sm-px4 lg-px3 xl-px4 text-center">
+            <div className="skills-diagram flex-center whole xs-px3 sm-px4 lg-px3 xl-px4 text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
                 height="100%"
                 viewBox="0 0 286.6 275.06"
-                style={{maxWidth: ''}}
+                style={{maxWidth: '512px'}}
               >
                 <circle
                   cx="143.3"
@@ -254,6 +254,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          
         </section>
 
         <section className="one-column lg-three-columns gap3 pb3">
