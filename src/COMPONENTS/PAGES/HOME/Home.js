@@ -271,6 +271,7 @@ const Home = () => {
               <small>SVG</small>
               <small>Sass</small>
               <small>React</small>
+              <small>React Native</small>
               <small>Sourcetree</small>
               <small>Bitbucket</small>
               <small>Github</small>
