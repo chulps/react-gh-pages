@@ -105,9 +105,9 @@ const Home = () => {
             <h3 className="mb1">3x Impact</h3>
             <p>
               I'm a <i>Product Designer</i> with experience in{" "}
-              <i>Frontend Development</i> and <i>Product Discovery</i> who's
-              able to carry a product from the point of discovery, through the
-              design phase, and on to deployment.
+              <i>Frontend Development</i> and <i>Product Discovery</i> who can
+              lead a product from the point of discovery, through the design
+              phase, and on to deployment.
             </p>
 
             <div className="disciplines">
@@ -117,14 +117,14 @@ const Home = () => {
                   Front-end Development
                 </h6>
               </div>
-+
+              +
               <div className="flex-center">
                 <h6 style={{ background: "rgba(0, 206, 89, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("search")} />
                   Product Discovery
                 </h6>
               </div>
-+
+              +
               <div className="flex-center flex-vertical">
                 <h6 style={{ background: "rgba(0, 143, 195, 0.30)" }}>
                   <FontAwesomeIcon icon={solid("pen-nib")} />
@@ -150,7 +150,7 @@ const Home = () => {
                 width="100%"
                 height="100%"
                 viewBox="0 0 286.6 275.06"
-                style={{maxWidth: '512px'}}
+                style={{ maxWidth: "512px" }}
               >
                 <circle
                   cx="143.3"
@@ -254,7 +254,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
         </section>
 
         <section className="one-column lg-three-columns gap3 pb3">

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CRIGeneticsLogo from "../../../IMG/cri_genetics_logo.svg";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import Meowbert from "./Meowbert";
+import MeowbertCS from "./Meowbert_CS";
 
 
 class CRIGenetics extends Component {
@@ -137,11 +139,7 @@ class CRIGenetics extends Component {
               <p>
                 In the first quarter of 2020 COVID was getting spicy. I was
                 working at <a href="/clicktool">Clicktool</a> and the company
-                pivoted from building a marketing analytics product to building
-                a politically motivated e-commerce store... which sold
-                politically motivated products which I also designed. Ya, I was
-                designing products but... not the kind I wanted anything to do
-                with.
+                pivoted from building a subscription based marketing analytics product to building a Shopify ecommerce site...
               </p>
               <p>
                 Zip Recruiter has this feature, "1-Click-Apply" which I
@@ -207,13 +205,15 @@ class CRIGenetics extends Component {
             <div style={{ position: "sticky", top: "var(--unit4)" }}>
               <label>re: "draw a cat"</label>
               <h3>This is Meowbert Einstein</h3>
-              <p></p>
+
               <p>
                 He only knows two things:
                 <br />
                 1. Science
+                <Meowbert />
                 <br />
                 2. Customer Service
+                <MeowbertCS />
               </p>
             </div>
           </div>
