@@ -119,7 +119,7 @@
 .product-tools small,
 .design-tools small,
 .development-tools small {
-  padding: var(--unit0) var(--unit1);
+  padding: 0 var(--unit1);
   border-radius: var(--unit2);
 }
 

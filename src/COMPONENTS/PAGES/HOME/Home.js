@@ -143,13 +143,14 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="cross-functionality">
+          <div className="cross-functionality flex-center-x">
             <div className="skills-diagram flex-center xs-px3 sm-px4 lg-px3 xl-px4 text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
                 height="100%"
                 viewBox="0 0 286.6 275.06"
+                style={{maxWidth: ''}}
               >
                 <circle
                   cx="143.3"
