@@ -99,7 +99,7 @@ const Home = () => {
         </section>
       </section>
       <section className="hero bg-default">
-        <section className="py4 one-column lg-two-columns gap3">
+        <section className="py4 one-column lg-two-columns gap3 xl-gap4">
           <div>
             <label>About Me:</label>
             <h3 className="mb1">3x Impact</h3>
@@ -144,7 +144,7 @@ const Home = () => {
           </div>
 
           <div className="cross-functionality flex-center-x">
-            <div className="skills-diagram flex-center whole xs-px3 sm-px4 lg-px3 xl-px4 text-center">
+            <div className="skills-diagram flex-center whole xs-px3 sm-px4 lg-px2 xl-px3 text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
