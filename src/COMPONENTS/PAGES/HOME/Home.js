@@ -411,12 +411,20 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-280% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{ transform: "translate(-300% , 350%)", color: 'hsl(359, 60%, 70%)' }}
               >
                 <small>
                   Component
                   <br />
                   Libraries
+                </small>
+              </small>
+                            <small
+                className="absolute"
+                style={{ transform: "translate(-180% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+              >
+                <small>
+                  React
                 </small>
               </small>
                             <small

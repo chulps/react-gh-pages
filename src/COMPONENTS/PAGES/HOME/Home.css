@@ -46,8 +46,8 @@
 }
 
 .diagram-c-logo {
-  /* filter: drop-shadow(0 0 6px rgba(255,255,255,1)); */
-  animation: pulse 0.9s infinite;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,1));
+  /* animation: pulse 0.9s infinite; */
 }
 
 @keyframes pulse {
