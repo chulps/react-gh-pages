@@ -411,7 +411,7 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-300% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{ transform: "translate(-400% , 350%)", color: 'hsl(359, 60%, 70%)' }}
               >
                 <small>
                   Component
@@ -421,7 +421,7 @@ const Home = () => {
               </small>
                             <small
                 className="absolute"
-                style={{ transform: "translate(-180% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{ transform: "translate(-240% , 350%)", color: 'hsl(359, 60%, 70%)' }}
               >
                 <small>
                   React
