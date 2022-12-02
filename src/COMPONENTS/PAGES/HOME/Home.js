@@ -104,7 +104,7 @@ const Home = () => {
             <label>About Me:</label>
             <h3 className="mb1">3x Impact</h3>
             <p>
-              I'm a <i>Product Designer</i> with experience in
+              I'm a <i>Product Designer</i> with experience in{" "}
               <i>Frontend Development</i> and <i>Product Discovery</i> who can
               lead a product from the point of discovery, through the design
               phase, and on to deployment.
