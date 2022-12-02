@@ -104,7 +104,7 @@ const Home = () => {
             <label>About Me:</label>
             <h3 className="mb1">3x Impact</h3>
             <p>
-              I'm a <i>Product Designer</i> with experience in{" "}
+              I'm a <i>Product Designer</i> with experience in
               <i>Frontend Development</i> and <i>Product Discovery</i> who can
               lead a product from the point of discovery, through the design
               phase, and on to deployment.
@@ -188,12 +188,134 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
+                style={{ transform: "translate(0 , -450%)", color: 'hsl(140, 50%, 60%)' }}
+              >
+                <small>
+                  A/B
+                  <br />
+                  Testing
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-150% , -380%)", color: 'hsl(140, 50%, 60%)' }}
+              >
+                <small>
+                  User
+                  <br />
+                  Validation
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-220% , -300%)", color: 'hsl(140, 50%, 60%)' }}
+              >
+                <small>
+                  Business
+                  <br />
+                  Valuation
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(150% , -380%)", color: 'hsl(140, 50%, 60%)' }}
+              >
+                <small>Surveys</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(200% , -300%)", color: 'hsl(140, 50%, 60%)' }}
+              >
+                <small>Heatmaps</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-160% , -180%)",  color: 'hsl(32, 55%, 55%)' }}
+              >
+                <small>
+                  Backlog
+                  <br />
+                  Prioritization
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-260% , 40%)",  color: 'hsl(32, 55%, 55%)' }}
+              >
+                <small>
+                  Writing
+                  <br />
+                  Scopes
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-340% , -160%)", color: 'hsl(32, 55%, 55%)' }}
+              >
+                <small>
+                  Agile
+                  <br />
+                  Methodology
+                </small>
+              </small>
+              <small
+                className="absolute"
                 style={{ transform: "translate(320% , 220%)" }}
               >
                 <FontAwesomeIcon icon={solid("pen-nib")} />
                 UI/UX
                 <br />
                 Design
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(240% , 360%)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>Illustration</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(200% , 460%)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>
+                  Color
+                  <br />
+                  Theory
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(340% , 430%)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>Typography</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(420% , 340%)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>
+                  Information
+                  <br />
+                  Architecture
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(430% , 100%)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>Animation</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(460% , 200%)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>Branding</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(450% , 0)", color: 'hsl(201, 50%, 60%)' }}
+              >
+                <small>UX&nbsp;Writing</small>
               </small>
               <small
                 className="absolute"
@@ -218,18 +340,119 @@ const Home = () => {
                 style={{ transform: "translate(240% , -80%)", lineHeight: 1 }}
               >
                 <FontAwesomeIcon icon={solid("lightbulb")} />
-                Prototypes&nbsp;&
+                Design
                 <br />
-                Testing
+                Thinking
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(0 , 320%)", lineHeight: 1 }}
+                style={{ transform: "translate(270% , 40%)", color: 'hsl(174, 60%, 42%)' }}
+              >
+                <small>
+                  Design
+                  <br />
+                  Iteration
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(320% , -150%)", color: 'hsl(174, 60%, 42%)' }}
+              >
+                <small>
+                  Prototypes&nbsp;&
+                  <br />
+                  Testing
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(140% , -180%)", color: 'hsl(174, 60%, 42%)' }}
+              >
+                <small>
+                  Usability
+                  <br />
+                  Heuristics
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(0 , 330%)", lineHeight: 1 }}
               >
                 <FontAwesomeIcon icon={solid("handshake")} />
                 Engineering
                 <br />
                 Feasability
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(120% , 280%)", color: 'hsl(248, 25%, 65%)' }}
+              >
+                <small>
+                  Design
+                  <br />
+                  System
+                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-120% , 280%)", color: 'hsl(248, 25%, 65%)' }}
+              >
+                <small>
+                  Design
+                  <br />
+                  Ops
+                </small>
+              </small>
+                            <small
+                className="absolute"
+                style={{ transform: "translate(0 , 440%)", color: 'hsl(248, 25%, 65%)' }}
+              >
+                <small>Documentation</small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-280% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+              >
+                <small>
+                  Component
+                  <br />
+                  Libraries
+                </small>
+              </small>
+                            <small
+                className="absolute"
+                style={{ transform: "translate(-220% , 440%)", color: 'hsl(359, 60%, 70%)' }}
+              >
+                <small>
+                  Analytics
+                  <br />
+Implementation                </small>
+              </small>
+              <small
+                className="absolute"
+                style={{ transform: "translate(-400% , 80%)", color: 'hsl(359, 60%, 70%)' }}
+              >
+                <small>
+                  QA
+                  <br />
+                  Testing
+                </small>
+              </small>
+                            <small
+                className="absolute"
+                style={{ transform: "translate(-420% , 0%)", color: 'hsl(359, 60%, 70%)' }}
+              >
+                <small>
+                  Deployment
+                </small>
+              </small>
+                            <small
+                className="absolute"
+                style={{ transform: "translate(-440% , 160%)", color: 'hsl(359, 60%, 70%)' }}
+              >
+                <small>
+                  Accessibility
+                </small>
               </small>
               <div
                 className="absolute"

@@ -85,6 +85,10 @@
   margin-bottom: var(--unit0);
 }
 
+.skills-diagram small small {
+  mix-blend-mode: multiply;
+}
+
 @media screen and (min-width: 678px) {
   .skills-diagram h6,
   .skills-diagram small {

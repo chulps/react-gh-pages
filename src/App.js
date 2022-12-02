@@ -22,6 +22,7 @@ ReactGA.initialize(TRACKING_ID);
 function App() {
   //creating IP state
   const [ip, setIP] = useState("");
+  const [scrollY, setScrollY] = useState(0);
 
   //creating function to load ip address from the API
   const getData = async () => {
