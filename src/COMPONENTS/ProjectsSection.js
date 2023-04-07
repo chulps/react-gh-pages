@@ -5,6 +5,7 @@ import YardenLogo from "./PAGES/YARDEN/YardenHorizontalLockup";
 import CRILogo from "../IMG/cri_genetics_logo.svg";
 import NucleotideLogo from "../IMG/nucleotide.svg";
 import FoundryLogo from "./PAGES/FOUNDRY/FoundryLogo";
+import XPRIZELogo from "../IMG/xprizelogo.png"
 import "./ProjectsSection.css";
 
 class ProjectSection extends Component {
@@ -23,6 +24,11 @@ class ProjectSection extends Component {
           <p className="md-half lg-third mb3">My projects since 2018.</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
 
+            <Link to="/xprize/" className="disabled">
+              <img width="100%" height="auto" src={XPRIZELogo} alt="xprize logo" />
+              <small>Not ready yet...</small>
+            </Link>
+
             <Link to="/yarden/">
               <YardenLogo />
             </Link>
@@ -33,7 +39,6 @@ class ProjectSection extends Component {
 
             <Link to="/crigenetics/">
               <img width="100%" src={CRILogo} alt="cri-logo" />
-              <small>Not ready yet...</small>
             </Link>
 
             <Link to="/nucleotide/">
