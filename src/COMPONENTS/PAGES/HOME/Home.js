@@ -30,6 +30,8 @@ const Home = () => {
       <Helmet>
         <title>Chuck Howard</title>
       </Helmet>
+
+      {/* hero section */}
       <section
         className="hero flex-end"
         style={{
@@ -98,7 +100,11 @@ const Home = () => {
           </div>
         </section>
       </section>
+
+      {/* diagram section */}
       <section className="hero bg-default">
+        
+        {/* about section */}
         <section className="py4 one-column lg-two-columns gap3 xl-gap4">
           <div>
             <label>About Me:</label>
@@ -486,7 +492,8 @@ Implementation                </small>
             </div>
           </div>
         </section>
-
+        
+        {/* tools section */}
         <section className="one-column lg-three-columns gap3 pb3">
           <div>
             <h4 className="mb0">Development Tools:</h4>
@@ -549,6 +556,7 @@ Implementation                </small>
             </div>
           </div>
         </section>
+        
       </section>
     </div>
   );

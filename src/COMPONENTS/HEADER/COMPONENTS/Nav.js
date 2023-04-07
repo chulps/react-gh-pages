@@ -33,7 +33,7 @@ function NavContent() {
 
       <li>
         <a
-          href="https://calendly.com/interview-chuck-howard/30-minutes"
+          href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
           target="_blank"
           rel="noreferrer"
         >
