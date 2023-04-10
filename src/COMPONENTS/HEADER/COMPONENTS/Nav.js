@@ -25,7 +25,7 @@ function NavContent() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://resume.io/r/gEFMf2bm4"
+          href="https://resume.io/r/vI5CNBhG2"
         >
           Resumé
         </a>
