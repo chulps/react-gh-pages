@@ -250,7 +250,7 @@ class Foundry extends Component {
                   rel="noreferrer"
                   href="https://codepen.io/chulps/live/OJzYZrB/dfd86ade1f90b53b5a08b07da262e0b4"
                 >
-                  A design I proposed
+                  A dashboard design I proposed
                 </a>
               </p>
               <p></p>
