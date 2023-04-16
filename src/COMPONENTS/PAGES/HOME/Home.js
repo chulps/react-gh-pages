@@ -103,7 +103,6 @@ const Home = () => {
 
       {/* diagram section */}
       <section className="hero bg-default">
-        
         {/* about section */}
         <section className="py4 one-column lg-two-columns gap3 xl-gap4">
           <div>
@@ -194,7 +193,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(0 , -450%)", color: 'hsl(140, 50%, 60%)' }}
+                style={{
+                  transform: "translate(0 , -450%)",
+                  color: "hsl(140, 50%, 60%)",
+                }}
               >
                 <small>
                   A/B
@@ -204,7 +206,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-150% , -380%)", color: 'hsl(140, 50%, 60%)' }}
+                style={{
+                  transform: "translate(-150% , -380%)",
+                  color: "hsl(140, 50%, 60%)",
+                }}
               >
                 <small>
                   User
@@ -214,7 +219,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-220% , -300%)", color: 'hsl(140, 50%, 60%)' }}
+                style={{
+                  transform: "translate(-220% , -300%)",
+                  color: "hsl(140, 50%, 60%)",
+                }}
               >
                 <small>
                   Business
@@ -224,19 +232,28 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(150% , -380%)", color: 'hsl(140, 50%, 60%)' }}
+                style={{
+                  transform: "translate(150% , -380%)",
+                  color: "hsl(140, 50%, 60%)",
+                }}
               >
                 <small>Surveys</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(200% , -300%)", color: 'hsl(140, 50%, 60%)' }}
+                style={{
+                  transform: "translate(200% , -300%)",
+                  color: "hsl(140, 50%, 60%)",
+                }}
               >
                 <small>Heatmaps</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-160% , -180%)",  color: 'hsl(32, 55%, 55%)' }}
+                style={{
+                  transform: "translate(-160% , -180%)",
+                  color: "hsl(32, 55%, 55%)",
+                }}
               >
                 <small>
                   Backlog
@@ -246,7 +263,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-260% , 40%)",  color: 'hsl(32, 55%, 55%)' }}
+                style={{
+                  transform: "translate(-260% , 40%)",
+                  color: "hsl(32, 55%, 55%)",
+                }}
               >
                 <small>
                   Writing
@@ -256,7 +276,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-340% , -160%)", color: 'hsl(32, 55%, 55%)' }}
+                style={{
+                  transform: "translate(-340% , -160%)",
+                  color: "hsl(32, 55%, 55%)",
+                }}
               >
                 <small>
                   Agile
@@ -275,13 +298,19 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(240% , 360%)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(240% , 360%)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>Illustration</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(200% , 460%)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(200% , 460%)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>
                   Color
@@ -291,13 +320,19 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(340% , 430%)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(340% , 430%)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>Typography</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(420% , 340%)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(420% , 340%)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>
                   Information
@@ -307,19 +342,28 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(430% , 100%)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(430% , 100%)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>Animation</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(460% , 200%)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(460% , 200%)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>Branding</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(450% , 0)", color: 'hsl(201, 50%, 60%)' }}
+                style={{
+                  transform: "translate(450% , 0)",
+                  color: "hsl(201, 50%, 60%)",
+                }}
               >
                 <small>UX&nbsp;Writing</small>
               </small>
@@ -352,7 +396,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(270% , 40%)", color: 'hsl(174, 60%, 42%)' }}
+                style={{
+                  transform: "translate(270% , 40%)",
+                  color: "hsl(174, 60%, 42%)",
+                }}
               >
                 <small>
                   Design
@@ -362,7 +409,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(320% , -150%)", color: 'hsl(174, 60%, 42%)' }}
+                style={{
+                  transform: "translate(320% , -150%)",
+                  color: "hsl(174, 60%, 42%)",
+                }}
               >
                 <small>
                   Prototypes&nbsp;&
@@ -372,7 +422,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(140% , -180%)", color: 'hsl(174, 60%, 42%)' }}
+                style={{
+                  transform: "translate(140% , -180%)",
+                  color: "hsl(174, 60%, 42%)",
+                }}
               >
                 <small>
                   Usability
@@ -391,7 +444,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(120% , 280%)", color: 'hsl(248, 25%, 65%)' }}
+                style={{
+                  transform: "translate(120% , 280%)",
+                  color: "hsl(248, 25%, 65%)",
+                }}
               >
                 <small>
                   Design
@@ -401,7 +457,10 @@ const Home = () => {
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-120% , 280%)", color: 'hsl(248, 25%, 65%)' }}
+                style={{
+                  transform: "translate(-120% , 280%)",
+                  color: "hsl(248, 25%, 65%)",
+                }}
               >
                 <small>
                   Design
@@ -409,15 +468,21 @@ const Home = () => {
                   Ops
                 </small>
               </small>
-                            <small
+              <small
                 className="absolute"
-                style={{ transform: "translate(0 , 440%)", color: 'hsl(248, 25%, 65%)' }}
+                style={{
+                  transform: "translate(0 , 440%)",
+                  color: "hsl(248, 25%, 65%)",
+                }}
               >
                 <small>Documentation</small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-400% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{
+                  transform: "translate(-400% , 350%)",
+                  color: "hsl(359, 60%, 70%)",
+                }}
               >
                 <small>
                   Component
@@ -425,26 +490,34 @@ const Home = () => {
                   Libraries
                 </small>
               </small>
-                            <small
+              <small
                 className="absolute"
-                style={{ transform: "translate(-240% , 350%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{
+                  transform: "translate(-240% , 350%)",
+                  color: "hsl(359, 60%, 70%)",
+                }}
               >
-                <small>
-                  React
-                </small>
+                <small>React</small>
               </small>
-                            <small
+              <small
                 className="absolute"
-                style={{ transform: "translate(-220% , 440%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{
+                  transform: "translate(-220% , 440%)",
+                  color: "hsl(359, 60%, 70%)",
+                }}
               >
                 <small>
                   Analytics
                   <br />
-Implementation                </small>
+                  Implementation{" "}
+                </small>
               </small>
               <small
                 className="absolute"
-                style={{ transform: "translate(-400% , 80%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{
+                  transform: "translate(-400% , 80%)",
+                  color: "hsl(359, 60%, 70%)",
+                }}
               >
                 <small>
                   QA
@@ -452,21 +525,23 @@ Implementation                </small>
                   Testing
                 </small>
               </small>
-                            <small
+              <small
                 className="absolute"
-                style={{ transform: "translate(-420% , 0%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{
+                  transform: "translate(-420% , 0%)",
+                  color: "hsl(359, 60%, 70%)",
+                }}
               >
-                <small>
-                  Deployment
-                </small>
+                <small>Git</small>
               </small>
-                            <small
+              <small
                 className="absolute"
-                style={{ transform: "translate(-440% , 160%)", color: 'hsl(359, 60%, 70%)' }}
+                style={{
+                  transform: "translate(-440% , 160%)",
+                  color: "hsl(359, 60%, 70%)",
+                }}
               >
-                <small>
-                  Accessibility
-                </small>
+                <small>Accessibility</small>
               </small>
               <div
                 className="absolute"
@@ -492,7 +567,7 @@ Implementation                </small>
             </div>
           </div>
         </section>
-        
+
         {/* tools section */}
         <section className="one-column lg-three-columns gap3 pb3">
           <div>
@@ -556,7 +631,6 @@ Implementation                </small>
             </div>
           </div>
         </section>
-        
       </section>
     </div>
   );

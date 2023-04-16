@@ -248,7 +248,7 @@ class Foundry extends Component {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://codepen.io/chulps/pen/OJzYZrB/dfd86ade1f90b53b5a08b07da262e0b4"
+                  href="https://codepen.io/chulps/live/OJzYZrB/dfd86ade1f90b53b5a08b07da262e0b4"
                 >
                   A design I proposed
                 </a>
