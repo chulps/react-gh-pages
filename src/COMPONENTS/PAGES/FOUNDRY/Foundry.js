@@ -3,18 +3,19 @@ import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
 import {Helmet} from "react-helmet";
 
-class Foundry extends Component {
+const Foundry = () => {
 
-  componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
 
-  render() {
-    return (
-      <div id="foundry" className="pb3">
-        <Helmet>
-          <title>Foundry</title>
-        </Helmet>
+return (
+<div id="foundry" className="pb3">
+  <Helmet>
+    <title>Foundry - Bitcoin Mining, Staking and Digital Currency Solutions</title>
+    <meta name="description" content="Foundry Digital is a Bitcoin Mining and Staking Company, subsidiary of the Digital Currency Group (DCG). Learn about Chuck's projects while working there."
+        />
+  </Helmet>
         {/* top section */}
         <section className="my3 lg-two-columns gap3 lg-gap4" id="Foundry">
           <div>
