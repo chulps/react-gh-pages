@@ -3,19 +3,20 @@ import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
 import {Helmet} from "react-helmet";
 
-const Foundry = () => {
+class Foundry extends Component {
 
-useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}, []);
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
-return (
-<div id="foundry" className="pb3">
-  <Helmet>
-    <title>Foundry - Bitcoin Mining, Staking and Digital Currency Solutions</title>
-    <meta name="description" content="Foundry Digital is a Bitcoin Mining and Staking Company, subsidiary of the Digital Currency Group (DCG). Learn about Chuck's projects while working there."
+  render() {
+    return (
+      <div id="foundry" className="pb3">
+        <Helmet>
+          <title>Foundry - Bitcoin Mining, Staking and Digital Currency Solutions</title>
+          <meta name="description" content="Foundry Digital is a Bitcoin Mining and Staking Company, subsidiary of the Digital Currency Group (DCG). Learn about Chuck's projects while working there."
         />
-  </Helmet>
+        </Helmet>
         {/* top section */}
         <section className="my3 lg-two-columns gap3 lg-gap4" id="Foundry">
           <div>
@@ -251,7 +252,7 @@ return (
                   rel="noreferrer"
                   href="https://codepen.io/chulps/live/OJzYZrB/dfd86ade1f90b53b5a08b07da262e0b4"
                 >
-                  A dashboard design I proposed
+                  A dashboard redesign I proposed
                 </a>
               </p>
               <p></p>
