@@ -19,8 +19,7 @@
   }
 }
 
-#skills li, 
-#resume #experience li {
+#resume li {
   list-style: initial;
 }
 

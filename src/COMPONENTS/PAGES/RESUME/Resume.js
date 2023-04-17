@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
-import Download from './Chuck-Howard-ATS-Resume.docx';
+import Download from "./Chuck-Howard-ATS-Resume.docx";
 
 class Resume extends Component {
   componentDidMount() {
@@ -17,7 +17,9 @@ class Resume extends Component {
           <meta name="description" content="Chuck Howard's Resumé" />
         </Helmet>
         <section className="mt1 flex-end relative md-absolute">
-          <a href={Download} download><button>Download</button></a>
+          <a href={Download} download>
+            <button>Download</button>
+          </a>
         </section>
         <section className="py2">
           <label>Resumé</label>
@@ -41,6 +43,7 @@ class Resume extends Component {
           </div>
           <hr className="my3" />
           <label>Skills</label>
+          <h3>Tools & Techniques</h3>
           <ul id="skills">
             <li>A/B Testing</li>
             <li>Adobe Illustrator</li>
@@ -172,9 +175,7 @@ class Resume extends Component {
           </div>
 
           <div>
-            <h4>
-              (Promoted) Product Design Lead 
-            </h4>
+            <h4>(Promoted) Product Design Lead</h4>
             <p>CRI Genetics, El Segundo</p>
             <small>(August 2021 – December 2021)</small>
             <ul>
@@ -197,15 +198,9 @@ class Resume extends Component {
           </div>
 
           <div>
-            <h4>
-              Senior Front-end Developer
-            </h4>
-            <p>
-              CRI Genetics, Los Angeles 
-            </p>
-            <small>
-              (April 2020 – August 2021)
-            </small>
+            <h4>Senior Front-end Developer</h4>
+            <p>CRI Genetics, Los Angeles</p>
+            <small>(April 2020 – August 2021)</small>
             <ul>
               <li>Design and build UI</li>
               <li>Create and maintain the design system "Nucleotide"</li>
@@ -218,9 +213,7 @@ class Resume extends Component {
           </div>
 
           <div>
-            <h4>
-              Creative Director
-            </h4>
+            <h4>Creative Director</h4>
             <p>Clicktool, Los Angeles</p>
             <small>(August 2018 – April 2020)</small>
             <ul>
@@ -243,12 +236,8 @@ class Resume extends Component {
           </div>
 
           <div>
-            <h4>
-              Art Director/Designer
-            </h4>
-            <p>
-              Sullivan Branding, Memphis
-            </p>
+            <h4>Art Director/Designer</h4>
+            <p>Sullivan Branding, Memphis</p>
             <small>(April 2015 – March 2017)</small>
             <ul>
               <li>
@@ -263,6 +252,45 @@ class Resume extends Component {
                 Support Senior staff with their projects on an as-needed basis
               </li>
             </ul>
+          </div>
+        </section>
+        <section>
+          <hr className="my2" />
+          <div>
+            <label>Education</label>
+            <h3>Formal Studies</h3>
+            <li>
+              University of Memphis, Memphis - BFA Graphic Design
+            </li>
+            <li>
+              UCLA Extension's Full-Stack Web Development Bootcamp
+            </li>
+          <hr className="my2" />
+
+            <label className="mt2">Courses</label>
+            <h3>Self Studies</h3>
+            <div className="mb2">
+              {" "}
+              <ul className="mb2">
+                <li>
+                  MAP Management Training, Map Consulting/Management Services
+                  (March 2021 – March 2021)
+                </li>
+                <li>Fullstack Web Development Angela Yu</li>
+                <li>Angular</li>
+                <li>Modern React with Redux</li>
+              </ul>
+            </div>
+          <hr className="my2" />
+
+            <div className="mb2">
+              <label>Hobbies</label>
+              <h3>Fun Stuff</h3>
+              <ul>
+                <li>Travel</li>
+                <li>Artificial Intelligence</li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
