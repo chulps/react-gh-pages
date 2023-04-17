@@ -3,6 +3,7 @@ import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
 import Download from "./Chuck-Howard-ATS-Resume.docx";
+import ReactGA from "react-ga4";
 
 class Resume extends Component {
   componentDidMount() {
@@ -10,6 +11,17 @@ class Resume extends Component {
   }
 
   render() {
+
+    const sendDownloadToGA = (event) => {
+      event.preventDefault();
+      ReactGA.event({
+        category: 'Click',
+        action: 'download',
+        label: 'resume'
+      })
+      console.log('download function fired')
+    };
+      
     return (
       <div id="resume">
         <Helmet>
@@ -18,7 +30,7 @@ class Resume extends Component {
         </Helmet>
         <section className="mt1 flex-end relative md-absolute">
           <a id="download-button" href={Download} download>
-            <button>Download</button>
+            <button onClick={sendDownloadToGA}>Download</button>
           </a>
         </section>
         <section className="py2">
