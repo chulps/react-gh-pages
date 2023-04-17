@@ -8,44 +8,49 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- i
 class NavContent extends React.Component {
   render() {
     const { onLinkClick } = this.props;
-  return (
-    <ul className="flex-center flex-vertical md-flex-horizontal">
-      <li className="md-ghost">
-        <img
-          style={{ filter: "hue-rotate(150deg)" }}
-          height="100px"
-          src={NavLogo}
-          alt="C-logo"
-        />
-      </li>
+    return (
+      <ul className="flex-center flex-vertical md-flex-horizontal">
+        <li className="md-ghost">
+          <img
+            style={{ filter: "hue-rotate(150deg)" }}
+            height="100px"
+            src={NavLogo}
+            alt="C-logo"
+          />
+        </li>
 
-<li>
-        <NavLink to="/projects/" activeClassName="active" onClick={onLinkClick}>
-          Projects
-        </NavLink>
-      </li>
+        <li>
+          <NavLink
+            to="/projects/"
+            activeClassName="active"
+            onClick={onLinkClick}
+          >
+            Projects
+          </NavLink>
+        </li>
 
-      <li>
-        <NavLink to="/resume/" activeClassName="active" onClick={onLinkClick}>
-          Resumé
-        </NavLink>
-      </li>
+        <li>
+          <NavLink to="/resume/" activeClassName="active" onClick={onLinkClick}>
+            Resumé
+          </NavLink>
+        </li>
 
-      <li>
-        <a
-          href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="green">
-            <FontAwesomeIcon icon={solid("calendar")} />
-            &nbsp;&nbsp;Schedule Interview
-          </button>
-        </a>
-      </li>
-    </ul>
-  );
-  }}
+        <li>
+          <a
+            href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="green">
+              <FontAwesomeIcon icon={solid("calendar")} />
+              &nbsp;&nbsp;Schedule Interview
+            </button>
+          </a>
+        </li>
+      </ul>
+    );
+  }
+}
 class Nav extends React.Component {
   state = {
     displaySideNav: false,
@@ -67,7 +72,11 @@ class Nav extends React.Component {
           }}
           className="flex-center-y"
         >
-          <NavLink to="/" className="flex flex-center-y" activeClassName="active">
+          <NavLink
+            to="/"
+            className="flex flex-center-y"
+            activeClassName="active"
+          >
             <img
               className="header-logo"
               src={NavLogo}
@@ -99,7 +108,9 @@ class Nav extends React.Component {
         <button
           id="mobile-nav-button"
           className={
-            this.state.displaySideNav ? "close md-ghost" : "btn3 md-ghost h4 py0 px1"
+            this.state.displaySideNav
+              ? "close md-ghost"
+              : "btn3 md-ghost h4 py0 px1"
           }
           onClick={() =>
             this.setState({
@@ -107,7 +118,11 @@ class Nav extends React.Component {
             })
           }
         >
-          {this.state.displaySideNav ? "" : <FontAwesomeIcon icon={solid("burger")} />}
+          {this.state.displaySideNav ? (
+            ""
+          ) : (
+            <FontAwesomeIcon icon={solid("burger")} />
+          )}
         </button>
 
         {/* desktop */}
@@ -140,4 +155,3 @@ class Nav extends React.Component {
 }
 
 export default Nav;
-
