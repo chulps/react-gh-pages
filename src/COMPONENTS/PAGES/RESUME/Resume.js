@@ -4,6 +4,9 @@ import { Helmet } from "react-helmet";
 import "./resume.css";
 import Download from "./Chuck-Howard-ATS-Resume.docx";
 import ReactGA from "react-ga4";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
+
 
 class Resume extends Component {
   componentDidMount() {
@@ -30,7 +33,7 @@ class Resume extends Component {
         </Helmet>
         <section className="mt1 flex-end relative md-absolute">
           <a id="download-button" href={Download} download>
-            <button>Download</button>
+            <button><FontAwesomeIcon icon={solid("download")} />&nbsp;Download</button>
           </a>
         </section>
         <section className="py2">
