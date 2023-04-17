@@ -8,6 +8,7 @@ import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
 import Footer from "./COMPONENTS/FOOTER/Footer.js";
 import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
+import Resume from "./COMPONENTS/PAGES/RESUME/Resume.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import "./App.css";
@@ -58,6 +59,7 @@ function App() {
             <Route path="/yarden/" element={<Yarden />} />
             <Route path="/clicktool/" element={<Clicktool />} />
             <Route path="/covid/" element={<Covid />} />
+            <Route path="/resume/" element={<Resume />} />
           </Routes>
         </main>
 

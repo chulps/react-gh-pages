@@ -20,15 +20,12 @@ function NavContent() {
       <li>
         <a href="#projects">Projects</a>
       </li>
-
       <li>
-        <a
+        <Link to="/resume/"
           target="_blank"
-          rel="noreferrer"
-          href="https://resume.io/r/vI5CNBhG2"
-        >
-          Resumé
-        </a>
+          rel="noreferrer">
+              Resumé
+        </Link>
       </li>
 
       <li>

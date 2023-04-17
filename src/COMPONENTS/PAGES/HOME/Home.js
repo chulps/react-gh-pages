@@ -107,7 +107,7 @@ const Home = () => {
         <section className="py4 one-column lg-two-columns gap3 xl-gap4">
           <div>
             <label>About Me:</label>
-            <h3 className="mb1">3x Impact</h3>
+            <h3 className="mb1">High Level Summary</h3>
             <p>
               I'm a <i>Product Designer</i> with experience in{" "}
               <i>Frontend Development</i> and <i>Product Discovery</i> who can

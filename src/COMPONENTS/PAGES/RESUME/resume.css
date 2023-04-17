@@ -1,0 +1,33 @@
+#resume h5 {
+  margin-top: var(--unit2);
+}
+
+#resume #skills { 
+  column-count: 1;
+  column-gap: var(--unit3);
+}
+
+@media screen and (min-width: 786px) {
+  #resume #skills {
+      column-count: 2;
+    }
+}
+
+@media screen and (min-width: 992px) {
+  #resume #skills {
+    column-count: 3;
+  }
+}
+
+#skills li, 
+#resume #experience li {
+  list-style: initial;
+}
+
+#experience div {
+  margin-bottom: var(--unit3);
+}
+
+#experience ul {
+  margin-top: var(--unit1);
+}
