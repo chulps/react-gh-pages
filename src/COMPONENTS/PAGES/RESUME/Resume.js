@@ -20,7 +20,7 @@ class Resume extends Component {
           <title>Chuck Howard's Resumé</title>
           <meta name="description" content="Chuck Howard's Resumé" />
         </Helmet>
-        <section className="mt2 flex-end relative md-absolute">
+        <section className="mt2 mx-auto flex-end relative md-absolute">
           <a id="download-button" href={Download} download>
             <button><FontAwesomeIcon icon={solid("download")} />&nbsp;Download</button>
           </a>

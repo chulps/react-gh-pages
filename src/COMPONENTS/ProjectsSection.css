@@ -1,5 +1,5 @@
 .projects-section {
-  min-height: calc(100vh - 63.99px);
+  min-height: calc(100vh - 63.99px - 125.38px);
 }
 
 .projects-section > div > a {
