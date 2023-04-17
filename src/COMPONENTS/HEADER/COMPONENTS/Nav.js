@@ -5,8 +5,9 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
-function NavContent() {
-  
+class NavContent extends React.Component {
+  render() {
+    const { onLinkClick } = this.props;
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
       <li className="md-ghost">
@@ -18,12 +19,15 @@ function NavContent() {
         />
       </li>
 
-      <li>
-        <NavLink to="/projects/" activeClassName="active">Projects</NavLink>
+<li>
+        <NavLink to="/projects/" activeClassName="active" onClick={onLinkClick}>
+          Projects
+        </NavLink>
       </li>
+
       <li>
-        <NavLink to="/resume/" activeClassName="active">
-              Resumé
+        <NavLink to="/resume/" activeClassName="active" onClick={onLinkClick}>
+          Resumé
         </NavLink>
       </li>
 
@@ -41,17 +45,20 @@ function NavContent() {
       </li>
     </ul>
   );
-}
+  }}
 class Nav extends React.Component {
   state = {
     displaySideNav: false,
+  };
+
+  handleLinkClick = () => {
+    this.setState({ displaySideNav: false });
   };
 
   render() {
     return (
       <nav className="floating-nav">
         {/* logo */}
-
         <div
           style={{
             background: "var(--transWhite-75)",
@@ -99,7 +106,9 @@ class Nav extends React.Component {
               displaySideNav: !this.state.displaySideNav,
             })
           }
-        >{this.state.displaySideNav ? "" : <FontAwesomeIcon icon={solid("burger")} />  }</button>
+        >
+          {this.state.displaySideNav ? "" : <FontAwesomeIcon icon={solid("burger")} />}
+        </button>
 
         {/* desktop */}
         <span
@@ -109,7 +118,7 @@ class Nav extends React.Component {
             borderRadius: "var(--unit3) 0 0 var(--unit3)",
           }}
         >
-          <NavContent />
+          <NavContent onLinkClick={this.handleLinkClick} />
         </span>
 
         {/* mobile */}
@@ -122,7 +131,7 @@ class Nav extends React.Component {
           }
         >
           <div className="overlay">
-            <NavContent />
+            <NavContent onLinkClick={this.handleLinkClick} />
           </div>
         </div>
       </nav>
@@ -131,3 +140,4 @@ class Nav extends React.Component {
 }
 
 export default Nav;
+
