@@ -80,3 +80,21 @@ nav .status {
   background: var(--transBlueC-05);
   white-space: nowrap;
 }
+
+nav .active::after {
+  width: 100%;
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background: var(--primary);
+  border-radius: 2px;
+  display: none;
+}
+
+@media screen and (min-width: 786px) {
+  nav .active::after {
+    display: block;
+  }
+}

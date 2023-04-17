@@ -1,11 +1,12 @@
 import React from "react";
 import "./nav.css";
 import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 function NavContent() {
+  
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
       <li className="md-ghost">
@@ -18,14 +19,12 @@ function NavContent() {
       </li>
 
       <li>
-        <a href="#projects">Projects</a>
+        <NavLink to="/projects/" activeClassName="active">Projects</NavLink>
       </li>
       <li>
-        <Link to="/resume/"
-          target="_blank"
-          rel="noreferrer">
+        <NavLink to="/resume/" activeClassName="active">
               Resumé
-        </Link>
+        </NavLink>
       </li>
 
       <li>
@@ -47,6 +46,7 @@ class Nav extends React.Component {
   state = {
     displaySideNav: false,
   };
+
   render() {
     return (
       <nav className="floating-nav">
@@ -60,14 +60,14 @@ class Nav extends React.Component {
           }}
           className="flex-center-y"
         >
-          <Link to="/" className="flex flex-center-y">
+          <NavLink to="/" className="flex flex-center-y" activeClassName="active">
             <img
               className="header-logo"
               src={NavLogo}
               alt="C-logo"
               style={{ filter: "hue-rotate(150deg)" }}
             />
-          </Link>
+          </NavLink>
           <div
             className="flex-vertical"
             style={{ color: "var(--transBlueC-50)" }}

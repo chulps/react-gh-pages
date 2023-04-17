@@ -1,3 +1,7 @@
+.projects-section {
+  min-height: calc(100vh - 63.99px);
+}
+
 .projects-section > div > a {
   display: flex;
   flex-direction: column;

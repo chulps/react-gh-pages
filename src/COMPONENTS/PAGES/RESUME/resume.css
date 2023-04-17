@@ -30,3 +30,7 @@
 #experience ul {
   margin-top: var(--unit1);
 }
+
+#download-button {
+  z-index: 1;
+}

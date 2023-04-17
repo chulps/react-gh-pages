@@ -17,7 +17,7 @@ class Resume extends Component {
           <meta name="description" content="Chuck Howard's Resumé" />
         </Helmet>
         <section className="mt1 flex-end relative md-absolute">
-          <a href={Download} download>
+          <a id="download-button" href={Download} download>
             <button>Download</button>
           </a>
         </section>
