@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
-import Download from "./Chuck-Howard-Product-Designer-ATS-Resume.docx";
+import Download from "./Chuck-Howard-ATS-Resume.docx";
 import ReactGA from "react-ga4";
 
 class Resume extends Component {
@@ -30,7 +30,7 @@ class Resume extends Component {
         </Helmet>
         <section className="mt1 flex-end relative md-absolute">
           <a id="download-button" href={Download} download>
-            <button onClick={sendDownloadToGA}>Download</button>
+            <button>Download</button>
           </a>
         </section>
         <section className="py2">
