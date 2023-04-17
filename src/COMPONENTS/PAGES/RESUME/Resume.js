@@ -3,7 +3,6 @@ import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
 import Download from "./Chuck-Howard-ATS-Resume.pdf";
-import ReactGA from "react-ga4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
@@ -21,7 +20,7 @@ class Resume extends Component {
           <title>Chuck Howard's Resumé</title>
           <meta name="description" content="Chuck Howard's Resumé" />
         </Helmet>
-        <section className="mt1 flex-end relative md-absolute">
+        <section className="mt2 flex-end relative md-absolute">
           <a id="download-button" href={Download} download>
             <button><FontAwesomeIcon icon={solid("download")} />&nbsp;Download</button>
           </a>
