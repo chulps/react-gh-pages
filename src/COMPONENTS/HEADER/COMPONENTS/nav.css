@@ -84,7 +84,7 @@ nav .status {
 nav .active::after {
   width: 100%;
   content: "";
-  height: 4px;
+  height: 5px;
   position: absolute;
   top: calc(100% + 5px);
   left: 0;
