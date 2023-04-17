@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
-import Download from "./Chuck-Howard-ATS-Resume.docx";
+import Download from "./Chuck-Howard-ATS-Resume.pdf";
 import ReactGA from "react-ga4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
@@ -14,16 +14,6 @@ class Resume extends Component {
   }
 
   render() {
-
-    const sendDownloadToGA = (event) => {
-      event.preventDefault();
-      ReactGA.event({
-        category: 'Click',
-        action: 'download',
-        label: 'resume'
-      })
-      console.log('download function fired')
-    };
       
     return (
       <div id="resume">
