@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2dd70159.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.b0f87a96.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.b0f87a96.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.0112d7e3.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.0112d7e3.js.map",
-    "static/js/2.a3a36ed6.chunk.js": "/react-gh-pages/static/js/2.a3a36ed6.chunk.js",
-    "static/js/2.a3a36ed6.chunk.js.map": "/react-gh-pages/static/js/2.a3a36ed6.chunk.js.map",
-    "static/js/3.f452f2be.chunk.js": "/react-gh-pages/static/js/3.f452f2be.chunk.js",
-    "static/js/3.f452f2be.chunk.js.map": "/react-gh-pages/static/js/3.f452f2be.chunk.js.map",
+    "main.css": "/react-gh-pages/static/css/main.fbd53ee9.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.b6782a5a.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.b6782a5a.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.2b348784.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.2b348784.js.map",
+    "static/js/2.5ac0f7b8.chunk.js": "/react-gh-pages/static/js/2.5ac0f7b8.chunk.js",
+    "static/js/2.5ac0f7b8.chunk.js.map": "/react-gh-pages/static/js/2.5ac0f7b8.chunk.js.map",
+    "static/js/3.f3c0cbec.chunk.js": "/react-gh-pages/static/js/3.f3c0cbec.chunk.js",
+    "static/js/3.f3c0cbec.chunk.js.map": "/react-gh-pages/static/js/3.f3c0cbec.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.2dd70159.chunk.css.map": "/react-gh-pages/static/css/main.2dd70159.chunk.css.map",
-    "static/js/2.a3a36ed6.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.a3a36ed6.chunk.js.LICENSE.txt",
+    "static/css/main.fbd53ee9.chunk.css.map": "/react-gh-pages/static/css/main.fbd53ee9.chunk.css.map",
+    "static/js/2.5ac0f7b8.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.5ac0f7b8.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/Chuck-Howard-ATS-Resume.247bbd9d.pdf": "/react-gh-pages/static/media/Chuck-Howard-ATS-Resume.247bbd9d.pdf",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -26,6 +26,12 @@
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
     "static/media/cri_genetics_logo.b719b6ed.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed.svg",
     "static/media/cross-campus-bg.87d3f5d2.jpg": "/react-gh-pages/static/media/cross-campus-bg.87d3f5d2.jpg",
+    "static/media/designgang.d95f355b.png": "/react-gh-pages/static/media/designgang.d95f355b.png",
+    "static/media/foundryacademy.8d3ebc86.png": "/react-gh-pages/static/media/foundryacademy.8d3ebc86.png",
+    "static/media/foundrydigital.8380ad7d.png": "/react-gh-pages/static/media/foundrydigital.8380ad7d.png",
+    "static/media/foundrypool.fe16bbda.png": "/react-gh-pages/static/media/foundrypool.fe16bbda.png",
+    "static/media/foundrystaking.d11c41e8.png": "/react-gh-pages/static/media/foundrystaking.d11c41e8.png",
+    "static/media/foundryx.953ed22b.png": "/react-gh-pages/static/media/foundryx.953ed22b.png",
     "static/media/github-01.af5ce63c.svg": "/react-gh-pages/static/media/github-01.af5ce63c.svg",
     "static/media/laptop.78d644ab.png": "/react-gh-pages/static/media/laptop.78d644ab.png",
     "static/media/linkedin-01.190ef8e0.svg": "/react-gh-pages/static/media/linkedin-01.190ef8e0.svg",
@@ -39,9 +45,9 @@
     "static/media/yarden_website_screenshot.99110d68.png": "/react-gh-pages/static/media/yarden_website_screenshot.99110d68.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0112d7e3.js",
-    "static/js/2.a3a36ed6.chunk.js",
-    "static/css/main.2dd70159.chunk.css",
-    "static/js/main.b0f87a96.chunk.js"
+    "static/js/runtime-main.2b348784.js",
+    "static/js/2.5ac0f7b8.chunk.js",
+    "static/css/main.fbd53ee9.chunk.css",
+    "static/js/main.b6782a5a.chunk.js"
   ]
 }
