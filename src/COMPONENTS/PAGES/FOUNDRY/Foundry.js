@@ -1,27 +1,92 @@
 import React, { Component } from "react";
 import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import "./Foundry.css";
+import FoundryStaking from "./IMG/foundrystaking.png";
+import FoundryPool from "./IMG/foundrypool.png";
+import FoundryX from "./IMG/foundryx.png";
+import FoundryDigital from "./IMG/foundrydigital.png";
+import FoundryAcademy from "./IMG/foundryacademy.png";
+import DesignGang from "./IMG/designgang.png";
 
 class Foundry extends Component {
-
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   render() {
+    const subsidiaries = [
+      { name: "Genesis", href: "https://genesistrading.com/" },
+      { name: "Grayscale", href: "https://grayscale.com/" },
+      { name: "Coindesk", href: "https://www.coindesk.com/" },
+      { name: "Luno", href: "https://www.luno.com/" },
+      { name: "Tradeblock", href: "https://tradeblock.com/" },
+      { name: "HQ Digital", href: "https://www.hqdigital.com/" },
+    ];
+
+    const projects = [
+      {
+        title: "Foundry USA Pool",
+        description:
+          "The #1 Bitcoin Mining Pool in the world. In this web app, industrial scale Bitcoin miners come here to monitor their mining operations in a data-rich environment with lots of tables and data visualizations.",
+        src: `${FoundryPool}`,
+        href: 'https://foundryusapool.com'
+      },
+      {
+        title: "Foundry Staking Portal",
+        description:
+          "Foundry's staking platform is where users can stake their coins and gain interest on their crypto over a period of time. I worked on this during my time at Upstate Interactive as well.",
+        src: `${FoundryStaking}`,
+        href: 'https://foundrystaking.com/'
+      },
+      {
+        title: "Foundry Academy",
+        description:
+          "A student portal for people who want to learn about mining Bitcoin. I would take requests from the marketing team and deploy their updates to github.",
+        src: `${FoundryAcademy}`,
+        href: 'https://foundryacademy.com'
+      },
+      {
+        title: "Foundry Digital Homepage",
+        description:
+          "The homepage for all of Foundry's products and services. Similar to the Academy website, tasks would come from the marketing team, and I would implement them and deploy the updates to github.",
+        src: `${FoundryDigital}`,
+        href: 'https://www.foundrydigital.com'
+      },
+      {
+        title: "FoundryX",
+        description:
+          "The sales wing of Foundry's operation. This site is used as a sales tool for Foundry to buy and sell ASIC Miners in bulk quantities.",
+        src: `${FoundryX}`,
+        href: 'https://www.foundryx.com'
+      },
+      {
+        title: "DCG Design Gang",
+        description:
+          "This was one of my OKR's while working here. I made this objective in alignment with one of Foundry's overarching goals for the year which was to 'Increase collaboration between Foundry and other DCG subsidiaries.' This was my effort to bring designers, product owners, and other creatives together from all DCG subsidiaries.",
+        src: `${DesignGang}`,
+      },
+    ];
+
     return (
       <div id="foundry" className="pb3">
         <Helmet>
-          <title>Foundry - Bitcoin Mining, Staking and Digital Currency Solutions</title>
-          <meta name="description" content="Foundry Digital is a Bitcoin Mining and Staking Company, subsidiary of the Digital Currency Group (DCG). Learn about Chuck's projects while working there."
-        />
+          <title>
+            Foundry - Bitcoin Mining, Staking and Digital Currency Solutions
+          </title>
+          <meta
+            name="description"
+            content="Foundry Digital is a Bitcoin Mining and Staking Company, subsidiary of the Digital Currency Group (DCG). Learn about Chuck's projects while working there."
+          />
         </Helmet>
         {/* top section */}
-        <section className="my3 lg-two-columns gap3 lg-gap4" id="Foundry">
+        <section className="mt3">
+          <label>Projects:</label>
+          <h1>Foundry</h1>
+        </section>
+        <section className="mb3 lg-two-columns gap3 lg-gap4" id="Foundry">
           <div>
-            <label>Projects:</label>
-            <h1>Foundry</h1>
             <p className="my1">
               Foundry Digital is a Bitcoing Mining and Staking Company and
               subsidiary of a larger corporation called&nbsp;
@@ -34,45 +99,15 @@ class Foundry extends Component {
             </p>
             <p>
               Other companies in the DCG portfolio include:{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://genesistrading.com/"
-              >
-                Genesis
-              </a>
-              ,{" "}
-              <a target="_blank" rel="noreferrer" href="https://grayscale.com/">
-                Grayscale
-              </a>
-              ,{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.coindesk.com/"
-              >
-                Coindesk
-              </a>
-              ,{" "}
-              <a target="_blank" rel="noreferrer" href="https://www.luno.com/">
-                Luno
-              </a>
-              ,{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://tradeblock.com/"
-              >
-                Tradeblock
-              </a>
-              , and
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.hqdigital.com/"
-              >
-                HQ Digital.
-              </a>
+              {subsidiaries.map((link, index) => (
+                <React.Fragment key={index}>
+                  {index > 0 &&
+                    (index < subsidiaries.length - 1 ? ", " : ", and ")}
+                  <a target="_blank" rel="noreferrer" href={link.href}>
+                    {link.name}
+                  </a>
+                </React.Fragment>
+              ))}
             </p>
           </div>
 
@@ -81,7 +116,7 @@ class Foundry extends Component {
             <div className="two-columns gap3">
               <div>
                 <label>Title:</label>
-                <h5>Front-end Design Implimentation Engineer</h5>
+                <h5>UI Engineer</h5>
               </div>
               <div>
                 <label>City:</label>
@@ -114,7 +149,10 @@ class Foundry extends Component {
           <div>
             <label>Responsibilities:</label>
             <h2 className="mb1">What do I do here?</h2>
-            <p>At Foundry I worked on two teams and 6 projects total. Every day was a challenge and I learned a lot, and met some cool people.</p>
+            <p>
+              At Foundry I worked on two teams and 6 projects total. Every day
+              was a challenge and I learned a lot, and met some cool people.
+            </p>
 
             <br />
             <div
@@ -178,9 +216,7 @@ class Foundry extends Component {
                   Two months after starting work on this project, Upstate
                   Interactive was acquired by our client, Foundry!
                 </p>
-                <p>
-                  In October 2022, I was laid off.
-                </p>
+                <p>In October 2022, I was laid off.</p>
               </div>
             </div>
 
@@ -200,137 +236,26 @@ class Foundry extends Component {
 
         <section className="my4">
           <label>Things i worked on</label>
-
+          <h3>I was a UI Engineer</h3>
+          <p className="mb2">At Foundry, I got to design a little bit, however, design was not the focus of my job. I was partnered with three different teams working on 5 different projects and working on one solo project. Design decisions were handed down from someone above me. Brand standards were strict and at the time there was no design system.</p>
           <div className="md-two-columns gap3 lg-three-columns">
-            <div>
-              <h4>Foundry USA Pool</h4>
-              <p className="mt1">
-                The #1 Bitcoin Mining Pool in the world. In this web app,
-                industrial scale Bitcoin miners come here to monitor their
-                mining operations in a data-rich environment with lots of tables
-                and data visualizations.
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://foundryusapool.com/"
-                >
-                  Foundry USA Pool Site
+            {projects.map((project) => (
+              <div className="project-link">
+                <a href={project.href}>
+                  <img
+                    className="mb0"
+                    src={project.src}
+                    alt={project.title}
+                    width="100%"
+                    style={{ aspectRatio: "16 / 9" }}
+                  />
                 </a>
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://xd.adobe.com/view/37ad15a6-5a87-4afb-a70b-2584229c195d-62fe/"
-                >
-                  One of my prototypes...
-                </a>
-              </p>
-            </div>
-
-            <div>
-              <h4>Foundry Staking Portal</h4>
-              <p className="mt1">
-                Foundry's staking platform is where users can stake their coins
-                and gain interest on their crypto over a period of time. I
-                worked on this during my time at Upstate Interactive as well.
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://foundrystaking.com/"
-                >
-                  Foundry Staking Site
-                </a>
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://codepen.io/chulps/live/OJzYZrB/dfd86ade1f90b53b5a08b07da262e0b4"
-                >
-                  A dashboard redesign I proposed
-                </a>
-              </p>
-              <p></p>
-            </div>
-
-            <div>
-              <h4>Foundry Academy</h4>
-              <p className="mt1">
-                A student portal for people who want to learn about mining
-                Bitcoin. I would take requests from the marketing team and
-                deploy their updates to github.
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://foundryacademy.com/"
-                >
-                  Foundry Academy Site
-                </a>
-              </p>
-            </div>
-
-            <div>
-              <h4>Foundry Digital Homepage</h4>
-              <p className="mt1">
-                The homepage for all of Foundry's products and services. Similar
-                to the Academy website, tasks would come from the marketing
-                team, and I would implement them and deploy the updates to
-                github.
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://foundrydigital.com/"
-                >
-                  See the website
-                </a>
-              </p>
-            </div>
-
-            <div>
-              <h4>FoundryX</h4>
-              <p classsName="mt1">
-                The sales wing of Foundry's operation. This site is used as a
-                sales tool for Foundry to buy and sell ASIC Miners in bulk
-                quantities.
-              </p>
-              <p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://foundryx.com/"
-                >
-                  FoundryX Site...
-                </a>
-              </p>
-            </div>
-
-            <div>
-              <h4>DCG Design Gang</h4>
-              <p className="mt1">
-                This was one of my&nbsp;
-                <a
-                  target="_black"
-                  rel="noreferrer"
-                  href="https://www.whatmatters.com/faqs/okr-meaning-definition-example#:~:text=OKRs%20stand%20for%20%E2%80%9CObjectives%20and,encourage%20engagement%20around%20measurable%20goals."
-                >
-                  OKR's
-                </a>{" "}
-                while working here. I made this objective in alignment with one
-                of Foundry's overarching goals for the year which was to
-                "Increase collaboration between Foundry and other DCG
-                subsidiaries." This was my effort to bring designers, product
-                owners, and other creatives together from all DCG subsidiaries.
-              </p>
-            </div>
+                <div className="px0">
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
