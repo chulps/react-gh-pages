@@ -83,7 +83,7 @@ const Home = () => {
                 <br />
                 Howard
               </h1>
-              <p>Product Designer</p>
+              <p>Product Designer & Frontend Developer</p>
               <div className="mb3">
                 <small className="mb3" style={{ lineHeight: 1 }}>
                   <span className="mr0 text-red0">
