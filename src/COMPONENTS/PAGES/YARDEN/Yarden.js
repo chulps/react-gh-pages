@@ -5,6 +5,7 @@ import YardenLogoGeometry from "./YardenLogoGeometry";
 import YardenLogoType from "./YardenLogotype";
 import plantSelectionScreen from "./plant_selection.png";
 import changeDateScreen from "./change_date.png";
+import GardenMap from "./gardenmap.png";
 import oldLogo from "./old_yarden_logo.jpg";
 import theInvite from "./theinvite.jpeg";
 import YardenVerticalLockup from "./YardenVerticalLockup";
@@ -222,18 +223,23 @@ class Yarden extends Component {
                 <div className="two-columns sm-three-columns md-two-columns gap2">
                   <small>
                     1. Make a reference to the imagery and colors from the
-                    original Yarden logo
+                    original Yarden logo. We have to keep the pitchfork and the
+                    color green.
                   </small>
                   <small>
                     2. Printed signage is a big part of our marketing so the
-                    branding needs to be readable from a distance.
+                    branding needs to be bold, bright, and readable from a
+                    distance.
                   </small>
                   <small>
                     3. It has to work as an app icon for the app store and the
-                    iPhone home screen.
+                    iPhone home screen. The mark has to fit well occupy the
+                    space of a square or circle very well.
                   </small>
                   <small>4. Use the letter "Y" somehow</small>
-                  <small>5. We are gonna trademark this... 😅</small>
+                  <small>
+                    5. We are gonna trademark this... so it needs to be simple, solid, and timeless. 😅
+                  </small>
                 </div>
               </div>
             </div>
@@ -319,7 +325,10 @@ class Yarden extends Component {
                 <h2>Green</h2>
                 <p>
                   Say what you wanna say about this color. But one thing you can
-                  say is, <i>"I can see it."</i>
+                  say is, <i>"I can see it."</i> Even though we're a tech
+                  company, physical signage is a big part of our advertising, so
+                  this is a color that when used in small amounts can still be
+                  effective.
                 </p>
               </div>
 
@@ -401,8 +410,10 @@ class Yarden extends Component {
             <h2>Launch the mobile app</h2>
             <p className="py1">
               It took us about a 6 months to build and launch the Yarden Mobile
-              app. In summer 2022 it was deployed the the App Store. We are
-              currently building new features and seeking investors.
+              app. In summer 2022 it was deployed the the App Store. There is a
+              business facing side for our gardeners and administration, and a
+              customers' side. We are currently building new features and
+              seeking investors.
             </p>
             <div className="flex p3">
               <div>
@@ -455,14 +466,52 @@ class Yarden extends Component {
           <div className="gap3 lg-two-columns lg-gap4 mb4">
             <div>
               <p>
-                When we first released the app, customers only find the app
-                useful every 90 days or so, when it was time to harvest or time
-                for a crop rotation. The feedback we were getting is that
-                customers want to see data about what's growing in their garden,
-                and they want to know where things are planted.
+                When we first released the app, we were really proud, this is my
+                first ever mobile app. The excitement of finally having an app
+                on the app store quickly wears off after we see how it's being
+                used.
               </p>
+              <p>
+                It was time to empathize with our customers and our gardeners to
+                figure out how to improve the product.
+              </p>
+              <div className="md-two-columns gap3 mt3">
+                <div>
+                  <h5>Customer Boredom</h5>
+                  <small>
+                    After downloading the app and setting up an appointment,
+                    customers didn't really find the app useful.
+                  </small>
+                </div>
+                <div>
+                  <h5>Mental Connection</h5>
+                  <small>
+                    After garden beds are installed, users are left with an app
+                    that doesn't do much and a box full of dirt on the ground.
+                    We need an abstract way to connect the two things in some way.
+                  </small>
+                </div>
+                <div>
+                  <h5>Gardening Tools</h5>
+                  <small>
+                    Gardener's need a way to share information about what's
+                    growing in user's gardens without having to put together a
+                    big presentation.
+                  </small>
+                </div>
+                <div>
+                  <h5>Project Management</h5>
+                  <small>
+                    Gardeners also need a way to plan the layout of a garden,
+                    and know where everything will go before they plant it.
+                  </small>
+                </div>
+              </div>
             </div>
-            <div>something</div>
+            <div className="flex-center flex-vertical">
+              <img src={GardenMap} alt="Garden Map" width="60%" />
+              <small>This is the gardener's view...</small>
+            </div>
           </div>
         </section>
       </div>
