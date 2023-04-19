@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.fbd53ee9.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.86b54422.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.86b54422.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.391cf27b.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.391cf27b.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.2b348784.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.2b348784.js.map",
     "static/js/2.5ac0f7b8.chunk.js": "/react-gh-pages/static/js/2.5ac0f7b8.chunk.js",
@@ -32,6 +32,7 @@
     "static/media/foundrypool.fe16bbda.png": "/react-gh-pages/static/media/foundrypool.fe16bbda.png",
     "static/media/foundrystaking.d11c41e8.png": "/react-gh-pages/static/media/foundrystaking.d11c41e8.png",
     "static/media/foundryx.953ed22b.png": "/react-gh-pages/static/media/foundryx.953ed22b.png",
+    "static/media/gardenmap.99e16237.png": "/react-gh-pages/static/media/gardenmap.99e16237.png",
     "static/media/github-01.af5ce63c.svg": "/react-gh-pages/static/media/github-01.af5ce63c.svg",
     "static/media/laptop.78d644ab.png": "/react-gh-pages/static/media/laptop.78d644ab.png",
     "static/media/linkedin-01.190ef8e0.svg": "/react-gh-pages/static/media/linkedin-01.190ef8e0.svg",
@@ -48,6 +49,6 @@
     "static/js/runtime-main.2b348784.js",
     "static/js/2.5ac0f7b8.chunk.js",
     "static/css/main.fbd53ee9.chunk.css",
-    "static/js/main.86b54422.chunk.js"
+    "static/js/main.391cf27b.chunk.js"
   ]
 }
