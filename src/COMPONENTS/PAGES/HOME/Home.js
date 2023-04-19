@@ -106,7 +106,7 @@ const Home = () => {
         {/* about section */}
         <section className="py4 one-column lg-two-columns gap3 xl-gap4">
           <div>
-            <label>About Me:</label>
+            <label>About Me</label>
             <h3 className="mb1">High Level Summary</h3>
             <p>
               I'm a <i>Product Designer</i> with experience in{" "}
@@ -596,7 +596,7 @@ const Home = () => {
           </div>
 
           <div>
-            <h4 className="mb0">Product Discovery Tools:</h4>
+            <h4 className="mb0">Product Tools:</h4>
             <p>
               Use data to inform design decisions. In order to collect that data
               I use these tools that measure how real users use the product in

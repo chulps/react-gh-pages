@@ -12,8 +12,7 @@ import YardenHorizontalLockup from "./YardenHorizontalLockup";
 import "./Yarden.css";
 import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
-import {Helmet} from "react-helmet";
-
+import { Helmet } from "react-helmet";
 
 // import YardenHorizontalWhite from "./YardenHorizontalWhite";
 // import yardenTruck from "./yarden_truck.png";
@@ -22,9 +21,9 @@ import {Helmet} from "react-helmet";
 // import chuckAndIsaac from "./chuckandisaac.jpg";
 
 class Yarden extends Component {
-  componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  // componentDidMount() {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }
 
   render() {
     return (
@@ -207,9 +206,9 @@ class Yarden extends Component {
             <div>
               <div style={{ position: "sticky", top: "var(--unit4)" }}>
                 <label>My proposal:</label>
-                <h2>Yarden's New Logo System</h2>
+                <h3>Yarden's New Logo System</h3>
 
-                <p className="m-none my2">
+                <p className="m-none my1">
                   Before I could start on this project I had to figure out what
                   my limitations are. There must be a trace of the old brand but
                   it has to be re-thought to fit the needs of a new brand.
@@ -233,9 +232,7 @@ class Yarden extends Component {
                     3. It has to work as an app icon for the app store and the
                     iPhone home screen.
                   </small>
-                  <small>
-                    4. Use the letter "Y" somehow
-                  </small>
+                  <small>4. Use the letter "Y" somehow</small>
                   <small>5. We are gonna trademark this... 😅</small>
                 </div>
               </div>
@@ -285,7 +282,7 @@ class Yarden extends Component {
             <div>
               <div style={{ position: "sticky", top: "var(--unit4)" }}>
                 <label>Color Palette</label>
-                <h2>Yarden's new color system</h2>
+                <h3>Yarden's new color system</h3>
                 <p className="my1">
                   At this time the color system is more of a suggestion than a
                   strict rule. Designers are free to use any color, illustration
@@ -433,17 +430,39 @@ class Yarden extends Component {
           </div>
 
           <div className="flex-center flex-vertical">
-            <div>
-              <YardenLogo />
-            </div>
-
-            <p>Download Yarden on the App Store</p>
             <div className="width4 my3">
               <YardenAppStoreQRCode />
             </div>
-            <a href="https://apps.apple.com/gb/developer/yarden-garden-inc/id1626672981">
-              <button>Go to App Store</button>
-            </a>
+            <div>
+              <YardenLogo />
+            </div>
+            <p>
+              Download Yarden on the{" "}
+              <a href="https://apps.apple.com/gb/developer/yarden-garden-inc/id1626672981">
+                App Store
+              </a>
+            </p>
+          </div>
+        </section>
+
+        {/* garden map section */}
+        <section>
+          <div>
+            <label>Challenge #4</label>
+            <h3>The "Garden Map"</h3>
+          </div>
+
+          <div className="gap3 lg-two-columns lg-gap4 mb4">
+            <div>
+              <p>
+                When we first released the app, customers only find the app
+                useful every 90 days or so, when it was time to harvest or time
+                for a crop rotation. The feedback we were getting is that
+                customers want to see data about what's growing in their garden,
+                and they want to know where things are planted.
+              </p>
+            </div>
+            <div>something</div>
           </div>
         </section>
       </div>

@@ -38,7 +38,7 @@ class Foundry extends Component {
         description:
           "Foundry's staking platform is where users can stake their coins and gain interest on their crypto over a period of time. I worked on this during my time at Upstate Interactive as well.",
         src: `${FoundryStaking}`,
-        href: 'https://foundrystaking.com/'
+        href: 'https://foundrystaking.com/',
       },
       {
         title: "Foundry Academy",
@@ -64,7 +64,7 @@ class Foundry extends Component {
       {
         title: "DCG Design Gang",
         description:
-          "This was one of my OKR's while working here. I made this objective in alignment with one of Foundry's overarching goals for the year which was to 'Increase collaboration between Foundry and other DCG subsidiaries.' This was my effort to bring designers, product owners, and other creatives together from all DCG subsidiaries.",
+          "One of the annual company goals at Foundry was to 'increase collaboration between Foundry and other DCG subsidiaries'. Community building is not my strength, this is the only organization outside of c-suite executives that included members across all DCG subsidiaries.",
         src: `${DesignGang}`,
       },
     ];

@@ -24,24 +24,24 @@ class ProjectSection extends Component {
           <p className="md-half lg-third mb3">My projects since 2018.</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
 
-            <Link to="/xprize/" className="disabled">
+            <Link to="/projects/xprize/" className="disabled">
               <img width="100%" height="auto" src={XPRIZELogo} alt="xprize logo" />
               <small>Not ready yet...</small>
             </Link>
 
-            <Link to="/yarden/">
+            <Link to="/projects/yarden/">
               <YardenLogo />
             </Link>
 
-            <Link to="/foundry/">
+            <Link to="/projects/foundry/">
               <FoundryLogo />
             </Link>
 
-            <Link to="/crigenetics/">
+            <Link to="/projects/crigenetics/">
               <img width="100%" src={CRILogo} alt="cri-logo" />
             </Link>
 
-            <Link to="/nucleotide/">
+            <Link to="/projects/nucleotide/">
               <div className="flex-center flex-vertical xs-flex-horizontal">
                 <img
                   height={50}
@@ -53,11 +53,11 @@ class ProjectSection extends Component {
               </div>
             </Link>
 
-            <Link to="/covid/">
+            <Link to="/projects/covid/">
               <h4 className="text-red0">🦠 COVID-19 Dashboard</h4>
             </Link>
 
-            <Link to="/clicktool/">
+            <Link to="/projects/clicktool/">
               <ClicktoolLogo />
             </Link>
 

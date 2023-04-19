@@ -50,13 +50,13 @@ function App() {
         <main>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/xprize/" element={<Xprize />} />
-            <Route path="/crigenetics/" element={<CRIGenetics />} />
-            <Route path="/foundry/" element={<Foundry />} />
-            <Route path="/nucleotide/" element={<Nucleotide />} />
-            <Route path="/yarden/" element={<Yarden />} />
-            <Route path="/clicktool/" element={<Clicktool />} />
-            <Route path="/covid/" element={<Covid />} />
+            <Route path="/projects/xprize/" element={<Xprize />} />
+            <Route path="/projects/crigenetics/" element={<CRIGenetics />} />
+            <Route path="/projects/foundry/" element={<Foundry />} />
+            <Route path="/projects/nucleotide/" element={<Nucleotide />} />
+            <Route path="/projects/yarden/" element={<Yarden />} />
+            <Route path="/projects/clicktool/" element={<Clicktool />} />
+            <Route path="/projects/covid/" element={<Covid />} />
             <Route path="/resume/" element={<Resume />} />
           </Routes>
         </main>
