@@ -33,7 +33,7 @@ class Covid extends Component {
 
             <Cards data={data} />
           </div>
-          <h4 className="mb1">Daily data Jan. 22, 2020 - feb. 3, 2021</h4>
+          <h4 className="mb1">Covid-19 Data</h4>
           <Chart />
           <div className="mt3 flex-vertical">
             <label>legend:</label>
