@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CRIGeneticsLogo from "../../../IMG/cri_genetics_logo.svg";
 import { Helmet } from "react-helmet";
-import Meowbert from "./Meowbert";
+// import Meowbert from "./Meowbert";
 import MeowbertCS from "./Meowbert_CS";
 
 class CRIGenetics extends Component {

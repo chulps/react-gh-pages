@@ -18,6 +18,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
 
 import ReactGA from "react-ga4";
+import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
 const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -58,6 +59,7 @@ function App() {
             <Route path="/projects/clicktool/" element={<Clicktool />} />
             <Route path="/projects/covid/" element={<Covid />} />
             <Route path="/resume/" element={<Resume />} />
+            <Route path="/design-process" element={<DesignProcess/>} />
           </Routes>
         </main>
 
@@ -78,7 +80,7 @@ function App() {
             }}
           >
             <FontAwesomeIcon icon={solid("calendar")} />
-            <small>Interview</small>
+            <small>Let's Talk!</small>
           </button>
         </a>
 

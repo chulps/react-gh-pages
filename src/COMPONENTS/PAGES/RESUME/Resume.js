@@ -57,6 +57,7 @@ class Resume extends Component {
             <li>Chat GPT and other AI tools</li>
             <li>Data Visualization</li>
             <li>Design Systems</li>
+            <li>Design Thinking</li>
             <li>Frontend Development</li>
             <li>GitHub/Bitbucket</li>
             <li>Google Analytics</li>

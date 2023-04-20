@@ -629,6 +629,7 @@ const Home = () => {
               <small>Balsamiq</small>
               <small>Miro</small>
             </div>
+            <a href="/design-process/">Design Process</a>
           </div>
         </section>
       </section>

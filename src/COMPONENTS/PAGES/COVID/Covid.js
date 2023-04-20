@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import Cards from "./CARDS/Cards";
 import Chart from "./CHART/Chart";
 import {Helmet} from "react-helmet";
-
-import { fetchData } from "../../../COVID-API";
-
 class Covid extends Component {
   state = {
     data: {}
@@ -12,8 +9,6 @@ class Covid extends Component {
 
   async componentDidMount() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    const fetchedData = await fetchData();
-    this.setState({ data: fetchedData });
   }
 
   render() {
@@ -38,7 +33,6 @@ class Covid extends Component {
 
             <Cards data={data} />
           </div>
-          {/* <CountryPicker data={data} /> */}
           <h4 className="mb1">Daily data Jan. 22, 2020 - feb. 3, 2021</h4>
           <Chart />
           <div className="mt3 flex-vertical">

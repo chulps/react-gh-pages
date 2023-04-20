@@ -1,0 +1,136 @@
+
+.table-wrapper {
+  box-shadow:inset 0 0 12px var(--transBlueC-10);
+  max-height: calc(100vh - var(--unit6));
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.nucleotide table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+    border-radius: var(--unit2);
+
+}
+
+.nucleotide table thead {
+  z-index: 1;
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 6px 12px var(--transBlueC-10);
+  cursor: pointer;
+}
+
+.nucleotide table tbody tr {
+  border-top: 1px solid var(--transBlueC-10);
+}
+
+.nucleotide table tbody tr:nth-child(even) {
+  background: var(--white);
+}
+
+.nucleotide table tbody tr td {
+  padding: var(--unit1);
+  background-color: transparent;
+}
+
+.nucleotide table thead th {
+  padding: var(--unit1);
+}
+
+/* --------- */
+/* The container */
+.nucleotide label.radio-container {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  gap: var(--unit0);
+  align-items: center;
+}
+
+/* Hide the browser's default radio button */
+.nucleotide label.radio-container input {
+  cursor: pointer;
+  height: var(--unit2);
+  width: var(--unit2);
+  border-radius: 50%;
+  background: red !important;
+  box-shadow: none;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.nucleotide label.radio-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.nucleotide label.radio-container input:checked~.checkmark {
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.nucleotide label.radio-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.nucleotide label.radio-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.covid-filters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: var(--unit1) var(--unit3);
+}
+
+.covid-search {
+  display: flex;
+  flex-grow: 1;
+}
+
+.clear-search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius:0px;
+  position: absolute;
+  right: 0;
+}
+
+.search-button {
+  box-shadow: none !important;
+  position: absolute;
+  right: 0;
+  padding: var(--unit1) !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
