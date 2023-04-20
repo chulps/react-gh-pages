@@ -110,7 +110,7 @@ class Nav extends React.Component {
           className={
             this.state.displaySideNav
               ? "close md-ghost"
-              : "btn3 md-ghost h4 py0 px1"
+              : "md-ghost h4 py0 px1"
           }
           onClick={() =>
             this.setState({
