@@ -218,7 +218,7 @@ const Chart = () => {
 
   function formatNumberWithCommas(number) {
     if (number === null) {
-      return "🤔";
+      return "🤔 Not sure";
     }
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
@@ -275,12 +275,12 @@ const Chart = () => {
         </tbody>
         <thead>
           <tr>
-            <th onClick={() => onHeaderClick("country")}>Country</th>
-            <th onClick={() => onHeaderClick("tests.total")}>Total Tests</th>
-            <th onClick={() => onHeaderClick("cases.total")}>Total Cases</th>
-            <th onClick={() => onHeaderClick("deaths.total")}>Total Deaths</th>
+            <th onClick={() => onHeaderClick("country")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Country</th>
+            <th onClick={() => onHeaderClick("tests.total")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Tests</th>
+            <th onClick={() => onHeaderClick("cases.total")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Cases</th>
+            <th onClick={() => onHeaderClick("deaths.total")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Deaths</th>
             <th onClick={() => onHeaderClick("cases.recovered")}>
-              Total Recovered
+              <FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Recovered
             </th>
           </tr>
         </thead>
