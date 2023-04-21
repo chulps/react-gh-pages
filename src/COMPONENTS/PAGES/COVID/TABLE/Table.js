@@ -4,6 +4,8 @@ import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { fetchCovidStats } from '../api'; // Add this line
+import { findBestMatch } from 'string-similarity';
+
 
 // api lives here
 // https://rapidapi.com/api-sports/api/covid-193/
@@ -23,7 +25,7 @@ const Table = () => {
     "Brunei ": "BN",
     "Cabo-Verde": "CV",
     "CAR": "CF",
-    "Channel-Islands": "JE", // Note: This includes both Jersey and Guernsey
+    "Channel-Islands": "JE",
     "Curaçao": "CW",
     "Czechia": "CZ",
     "Carribean-Netherlands": "BQ",
@@ -128,44 +130,55 @@ useEffect(() => {
 
   // handle the radio buttons in the control panel
   const filterData = (data) => {
-    let filteredData = data;
+  let filteredData = data;
 
-    if (visibilityFilter === "countries") {
-      filteredData = filteredData.filter(
-        (item) =>
-          ![
-            "Asia",
-            "Europe",
-            "North-America",
-            "South-America",
-            "Oceania",
-            "Africa",
-            "All",
-          ].includes(item.country)
-      );
-    } else if (visibilityFilter === "continents") {
-      filteredData = filteredData.filter((item) =>
-        [
+  if (visibilityFilter === "countries") {
+    filteredData = filteredData.filter(
+      (item) =>
+        ![
           "Asia",
           "Europe",
           "North-America",
           "South-America",
           "Oceania",
           "Africa",
+          "All",
         ].includes(item.country)
-      );
-    } else if (visibilityFilter === "world") {
-      filteredData = filteredData.filter((item) => item.country === "All");
-    }
+    );
+  } else if (visibilityFilter === "continents") {
+    filteredData = filteredData.filter((item) =>
+      [
+        "Asia",
+        "Europe",
+        "North-America",
+        "South-America",
+        "Oceania",
+        "Africa",
+      ].includes(item.country)
+    );
+  } else if (visibilityFilter === "world") {
+    filteredData = filteredData.filter((item) => item.country === "All");
+  }
 
-    if (searchTerm) {
-      filteredData = filteredData.filter((item) =>
-        item.country.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+  if (searchTerm) {
+    const results = findBestMatch(searchTerm.toLowerCase(), data.map((item) => item.country.toLowerCase()));
+    const bestMatch = results.bestMatch.target;
+    const bestMatchIndex = data.findIndex((item) => item.country.toLowerCase() === bestMatch);
+    const bestMatchData = data[bestMatchIndex];
+    const levenshteinDistance = results.bestMatch.distance;
+    
+    filteredData = filteredData.filter((item) => {
+      if (item.country.toLowerCase() === bestMatch) {
+        return true;
+      }
+      const distance = findBestMatch(item.country.toLowerCase(), [bestMatch]).bestMatch.distance;
+      return distance <= levenshteinDistance;
+    });
+  }
 
-    return filteredData;
-  };
+  return filteredData;
+};
+
 
   const sortedData = () => {
     if (!stats) {

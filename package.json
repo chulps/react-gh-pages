@@ -25,6 +25,7 @@
     "react-scripts": "4.0.3",
     "react-simple-maps": "^3.0.0",
     "sass": "^1.56.0",
+    "string-similarity": "^4.0.4",
     "survey-react-ui": "^1.9.60",
     "web-vitals": "^1.0.1"
   },

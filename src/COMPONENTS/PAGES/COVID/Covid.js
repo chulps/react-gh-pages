@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Cards from "./CARDS/Cards";
 import Table from "./TABLE/Table";
 import { Helmet } from "react-helmet";
 class Covid extends Component {
@@ -19,8 +18,8 @@ class Covid extends Component {
         <Helmet>
           <title>🦠 Covid-19 Dashboard</title>
         </Helmet>
-        <section className="py4">
-          <div className="lg-two-columns gap3 mb3 lg-mb4">
+        <section className="py3">
+          <div className="lg-two-columns gap3 mb3">
             <div>
               <label>Project:</label>
               <h1>
@@ -30,7 +29,7 @@ class Covid extends Component {
               </h1>
 
               <p>
-                This dashboard is built with React, Nucleotide, and this cool little
+                This dashboard is built with React, <a href="/projects/nucleotide/">Nucleotide</a>, and this cool little
                 API{" "}
                 <a href="https://rapidapi.com/api-sports/api/covid-193/">
                   here.
