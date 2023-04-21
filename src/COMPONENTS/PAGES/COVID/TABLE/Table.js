@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
-import ISO31661Alpha2 from "iso-3166-1-alpha-2";
+
 import "./Table.css";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { fetchCovidStats } from "../api"; // Add this line
 import { findBestMatch } from "string-similarity";
-import countryNameToCode from "./countryNameToCode";
 import CustomAutocomplete from "./CustomAutoComplete";
-
+import { getFlagEmoji } from "./getFlagEmoji";
 // api lives here
 // https://rapidapi.com/api-sports/api/covid-193/
 
@@ -35,6 +34,7 @@ const Table = () => {
 
     setSuggestions(filteredSuggestions);
   };
+
   useEffect(() => {
     const fetchData = async () => {
       const { data, error } = await fetchCovidStats(); // Change this line
@@ -162,93 +162,74 @@ const Table = () => {
     return textArea.value;
   }
 
-  const getFlagEmoji = (countryName) => {
-    const mappedCountryCode = countryNameToCode[countryName];
-    const countryCode = mappedCountryCode
-      ? mappedCountryCode
-      : ISO31661Alpha2.getCode(countryName);
+  const MemoizedTableRow = React.memo(
+  ({ item }) => (
+    <tr key={item.country}>
+      <td data-label="Country" className="flex-center-y">
+        <h3>{getFlagEmoji(item.country)}</h3>&nbsp;&nbsp;
+        {decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
+      </td>
+      <td data-label="Total Tests">
+        <data>{formatNumberWithCommas(item.tests.total)}</data>
+      </td>
+      <td data-label="Total Cases">
+        <data>{formatNumberWithCommas(item.cases.total)}</data>
+      </td>
+      <td data-label="Total Deaths">
+        <data>{formatNumberWithCommas(item.deaths.total)}</data>
+      </td>
+      <td data-label="Total Recovered">
+        <data>{formatNumberWithCommas(item.cases.recovered)}</data>
+      </td>
+    </tr>
+  ),
+  (prevProps, nextProps) => prevProps.item.country === nextProps.item.country
+);
 
-    if (!countryCode) {
-        switch (countryName) {
-    case "North-America":
-    case "South-America":
-      return <FontAwesomeIcon icon={solid("earth-americas")} />;
-    case "Europe":
-      return <FontAwesomeIcon icon={solid("earth-europe")} />;
-    case "Africa":
-      return <FontAwesomeIcon icon={solid("earth-africa")} />;
-    case "Asia":
-      return <FontAwesomeIcon icon={solid("earth-asia")} />;
-    case "Oceania":
-            return <FontAwesomeIcon icon={solid("earth-oceania")} />;
-    case "All":
-      return "🌎";
-    default:
-      return null;
-  }
-    }
-    const codePoints = countryCode
-      .toUpperCase()
-      .replace(/./g, (char) =>
-        String.fromCodePoint(char.charCodeAt(0) + 127397)
-      );
-    return codePoints;
-  };
+const MemoizedTableHeader = React.memo(
+  () => (
+    <tr>
+      <th onClick={() => onHeaderClick("country")}>
+        <FontAwesomeIcon icon={solid("sort")} />
+        &nbsp;Country
+      </th>
+      <th onClick={() => onHeaderClick("tests.total")}>
+        <FontAwesomeIcon icon={solid("sort")} />
+        &nbsp;Total Tests
+      </th>
+      <th onClick={() => onHeaderClick("cases.total")}>
+        <FontAwesomeIcon icon={solid("sort")} />
+        &nbsp;Total Cases
+      </th>
+      <th onClick={() => onHeaderClick("deaths.total")}>
+        <FontAwesomeIcon icon={solid("sort")} />
+        &nbsp;Total Deaths
+      </th>
+      <th onClick={() => onHeaderClick("cases.recovered")}>
+        <FontAwesomeIcon icon={solid("sort")} />
+        &nbsp;Total Recovered
+      </th>
+    </tr>
+  ),
+  () => true
+);
 
-  const renderTable = () => {
-    const data = filterData(sortedData());
+const renderTable = () => {
+  const data = filterData(sortedData());
 
-    return (
-      <table>
-        <tbody>
-          {data.map((item) => (
-            <tr key={item.country}>
-              <td data-label="Country" className="flex-center-y">
-                <h3>{getFlagEmoji(item.country)}</h3>&nbsp;&nbsp;
-                {decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
-              </td>
-              <td data-label="Total Tests">
-                <data>{formatNumberWithCommas(item.tests.total)}</data>
-              </td>
-              <td data-label="Total Cases">
-                <data>{formatNumberWithCommas(item.cases.total)}</data>
-              </td>
-              <td data-label="Total Deaths">
-                <data>{formatNumberWithCommas(item.deaths.total)}</data>
-              </td>
-              <td data-label="Total Recovered">
-                <data>{formatNumberWithCommas(item.cases.recovered)}</data>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-        <thead>
-          <tr>
-            <th onClick={() => onHeaderClick("country")}>
-              <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;Country
-            </th>
-            <th onClick={() => onHeaderClick("tests.total")}>
-              <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;Total Tests
-            </th>
-            <th onClick={() => onHeaderClick("cases.total")}>
-              <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;Total Cases
-            </th>
-            <th onClick={() => onHeaderClick("deaths.total")}>
-              <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;Total Deaths
-            </th>
-            <th onClick={() => onHeaderClick("cases.recovered")}>
-              <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;Total Recovered
-            </th>
-          </tr>
-        </thead>
-      </table>
-    );
-  };
+  return (
+    <table>
+      <thead>
+        <MemoizedTableHeader />
+      </thead>
+      <tbody>
+        {data.map((item) => (
+          <MemoizedTableRow key={item.country} item={item} />
+        ))}
+      </tbody>
+    </table>
+  );
+};
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -346,4 +327,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default React.memo(Table);
