@@ -302,7 +302,7 @@ useEffect(() => {
 
   return (
     <div>
-      <div className="control-panel covid-controls">
+      <div className="control-panel covid-controls" style={{zIndex: 2}}>
         <div className="covid-filters">
           <div>
             <label className="radio-container">
