@@ -3,40 +3,49 @@ import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { fetchCovidStats } from '../api'; // Add this line
-import { findBestMatch } from 'string-similarity';
+import { fetchCovidStats } from "../api"; // Add this line
+import { findBestMatch } from "string-similarity";
 import countryNameToCode from "./countryNameToCode";
-
+import CustomAutocomplete from "./CustomAutoComplete";
 
 // api lives here
 // https://rapidapi.com/api-sports/api/covid-193/
 
 const Table = () => {
-
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
   const [sortConfig, setSortConfig] = useState({
     key: null,
     direction: "normal",
   });
-
   const [visibilityFilter, setVisibilityFilter] = useState("all");
-
   const [searchTerm, setSearchTerm] = useState("");
   const [showClearButton, setShowClearButton] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
+  const handleSuggestions = (input) => {
+    if (input === "") {
+      setSuggestions([]);
+      return;
+    }
 
-useEffect(() => {
-  const fetchData = async () => {
-    const { data, error } = await fetchCovidStats(); // Change this line
-    setStats(data);
-    setError(error);
+    const regex = new RegExp(`^${input}`, "i");
+    const filteredSuggestions = stats
+      .map((item) => item.country)
+      .filter((country) => regex.test(country));
+
+    setSuggestions(filteredSuggestions);
   };
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data, error } = await fetchCovidStats(); // Change this line
+      setStats(data);
+      setError(error);
+    };
 
-  fetchData();
-}, []);
+    fetchData();
+  }, []);
 
-
-  // 
+  //
   const getNestedValue = (obj, path) => {
     return path
       .split(".")
@@ -49,53 +58,56 @@ useEffect(() => {
 
   // handle the radio buttons in the control panel
   const filterData = (data) => {
-  let filteredData = data;
+    let filteredData = data;
 
-  if (visibilityFilter === "countries") {
-    filteredData = filteredData.filter(
-      (item) =>
-        ![
+    if (visibilityFilter === "countries") {
+      filteredData = filteredData.filter(
+        (item) =>
+          ![
+            "Asia",
+            "Europe",
+            "North-America",
+            "South-America",
+            "Oceania",
+            "Africa",
+            "All",
+          ].includes(item.country)
+      );
+    } else if (visibilityFilter === "continents") {
+      filteredData = filteredData.filter((item) =>
+        [
           "Asia",
           "Europe",
           "North-America",
           "South-America",
           "Oceania",
           "Africa",
-          "All",
         ].includes(item.country)
-    );
-  } else if (visibilityFilter === "continents") {
-    filteredData = filteredData.filter((item) =>
-      [
-        "Asia",
-        "Europe",
-        "North-America",
-        "South-America",
-        "Oceania",
-        "Africa",
-      ].includes(item.country)
-    );
-  } else if (visibilityFilter === "world") {
-    filteredData = filteredData.filter((item) => item.country === "All");
-  }
+      );
+    } else if (visibilityFilter === "world") {
+      filteredData = filteredData.filter((item) => item.country === "All");
+    }
 
-  if (searchTerm) {
-    const results = findBestMatch(searchTerm.toLowerCase(), data.map((item) => item.country.toLowerCase()));
-    const bestMatch = results.bestMatch.target;
-    const levenshteinDistance = results.bestMatch.distance;
-    
-    filteredData = filteredData.filter((item) => {
-      if (item.country.toLowerCase() === bestMatch) {
-        return true;
-      }
-      const distance = findBestMatch(item.country.toLowerCase(), [bestMatch]).bestMatch.distance;
-      return distance <= levenshteinDistance;
-    });
-  }
+    if (searchTerm) {
+      const results = findBestMatch(
+        searchTerm.toLowerCase(),
+        data.map((item) => item.country.toLowerCase())
+      );
+      const bestMatch = results.bestMatch.target;
+      const levenshteinDistance = results.bestMatch.distance;
 
-  return filteredData;
-};
+      filteredData = filteredData.filter((item) => {
+        if (item.country.toLowerCase() === bestMatch) {
+          return true;
+        }
+        const distance = findBestMatch(item.country.toLowerCase(), [bestMatch])
+          .bestMatch.distance;
+        return distance <= levenshteinDistance;
+      });
+    }
 
+    return filteredData;
+  };
 
   const sortedData = () => {
     if (!stats) {
@@ -176,7 +188,8 @@ useEffect(() => {
           {data.map((item) => (
             <tr key={item.country}>
               <td data-label="Country" className="flex-center-y">
-                <h3>{getFlagEmoji(item.country)}</h3>&nbsp;&nbsp;{decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
+                <h3>{getFlagEmoji(item.country)}</h3>&nbsp;&nbsp;
+                {decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
               </td>
               <td data-label="Total Tests">
                 <data>{formatNumberWithCommas(item.tests.total)}</data>
@@ -231,7 +244,7 @@ useEffect(() => {
 
   return (
     <div>
-      <div className="control-panel covid-controls" style={{zIndex: 2}}>
+      <div className="control-panel covid-controls" style={{ zIndex: 2 }}>
         <div className="covid-filters">
           <div>
             <label className="radio-container">
@@ -285,28 +298,30 @@ useEffect(() => {
           </div>
         </div>
         <div className="covid-search">
-          <input
-            type="text"
-            placeholder="Search"
-            value={searchTerm}
-            className="whole"
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              setShowClearButton(e.target.value !== "");
-            }}
-          />
-          {showClearButton && (
-            <button
-              className="btn3 search-button px1"
-              onClick={() => {
-                setSearchTerm("");
-                setShowClearButton(false);
+          <div className="autocomplete-container whole">
+            <CustomAutocomplete
+              options={suggestions}
+              value={searchTerm}
+              onChange={(newValue) => {
+                setSearchTerm(newValue);
+                handleSuggestions(newValue);
+                setShowClearButton(newValue !== "");
               }}
-              fill="white"
-            >
-              <FontAwesomeIcon icon={solid("xmark")} />
-            </button>
-          )}
+            />
+            {showClearButton && (
+              <button
+                className="btn3 search-button px1"
+                onClick={() => {
+                  setSearchTerm("");
+                  setShowClearButton(false);
+                }}
+                fill="white"
+              >
+                <FontAwesomeIcon icon={solid("xmark")} />
+              </button>
+            )}
+          </div>
+
           <span className="checkmark"></span>
         </div>
       </div>
