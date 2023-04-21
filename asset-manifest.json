@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.b575b7c7.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.c071709c.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.c071709c.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.e534892b.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.e534892b.js.map",
-    "static/js/2.8f25607b.chunk.js": "/react-gh-pages/static/js/2.8f25607b.chunk.js",
-    "static/js/2.8f25607b.chunk.js.map": "/react-gh-pages/static/js/2.8f25607b.chunk.js.map",
-    "static/js/3.cf581959.chunk.js": "/react-gh-pages/static/js/3.cf581959.chunk.js",
-    "static/js/3.cf581959.chunk.js.map": "/react-gh-pages/static/js/3.cf581959.chunk.js.map",
+    "main.css": "/react-gh-pages/static/css/main.a0de1518.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.4edcc9b6.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.4edcc9b6.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.228396d5.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.228396d5.js.map",
+    "static/js/2.4452d38e.chunk.js": "/react-gh-pages/static/js/2.4452d38e.chunk.js",
+    "static/js/2.4452d38e.chunk.js.map": "/react-gh-pages/static/js/2.4452d38e.chunk.js.map",
+    "static/js/3.bb28036f.chunk.js": "/react-gh-pages/static/js/3.bb28036f.chunk.js",
+    "static/js/3.bb28036f.chunk.js.map": "/react-gh-pages/static/js/3.bb28036f.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.b575b7c7.chunk.css.map": "/react-gh-pages/static/css/main.b575b7c7.chunk.css.map",
-    "static/js/2.8f25607b.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.8f25607b.chunk.js.LICENSE.txt",
+    "static/css/main.a0de1518.chunk.css.map": "/react-gh-pages/static/css/main.a0de1518.chunk.css.map",
+    "static/js/2.4452d38e.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.4452d38e.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/Chuck-Howard-ATS-Resume.247bbd9d.pdf": "/react-gh-pages/static/media/Chuck-Howard-ATS-Resume.247bbd9d.pdf",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -26,7 +26,6 @@
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
     "static/media/cri_genetics_logo.b719b6ed.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed.svg",
     "static/media/cross-campus-bg.87d3f5d2.jpg": "/react-gh-pages/static/media/cross-campus-bg.87d3f5d2.jpg",
-    "static/media/design-process.c4daccd2.svg": "/react-gh-pages/static/media/design-process.c4daccd2.svg",
     "static/media/designgang.d95f355b.png": "/react-gh-pages/static/media/designgang.d95f355b.png",
     "static/media/foundryacademy.8d3ebc86.png": "/react-gh-pages/static/media/foundryacademy.8d3ebc86.png",
     "static/media/foundrydigital.8380ad7d.png": "/react-gh-pages/static/media/foundrydigital.8380ad7d.png",
@@ -47,9 +46,9 @@
     "static/media/yarden_website_screenshot.99110d68.png": "/react-gh-pages/static/media/yarden_website_screenshot.99110d68.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e534892b.js",
-    "static/js/2.8f25607b.chunk.js",
-    "static/css/main.b575b7c7.chunk.css",
-    "static/js/main.c071709c.chunk.js"
+    "static/js/runtime-main.228396d5.js",
+    "static/js/2.4452d38e.chunk.js",
+    "static/css/main.a0de1518.chunk.css",
+    "static/js/main.4edcc9b6.chunk.js"
   ]
 }
