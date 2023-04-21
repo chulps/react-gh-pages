@@ -3,49 +3,119 @@ import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { fetchCovidStats } from "../api"; // Add this line
-import { findBestMatch } from "string-similarity";
-import countryNameToCode from "./countryNameToCode";
-import CustomAutocomplete from "./CustomAutoComplete";
+import { fetchCovidStats } from '../api'; // Add this line
 
 // api lives here
 // https://rapidapi.com/api-sports/api/covid-193/
 
 const Table = () => {
+  const countryNameToCode = {
+    "USA": "US",
+    "UK": "GB",
+    "S-Korea": "KR",
+    "N-Korea": "KP",
+    "UAE": "AE",
+    "Algeria": "DZ",
+    "St-Barth": "BL",
+    "St-Vincent-Grenadines": "VC",
+    "British-Virgin-Islands": "VG",
+    "Bolivia": "BO",
+    "Brunei ": "BN",
+    "Cabo-Verde": "CV",
+    "CAR": "CF",
+    "Channel-Islands": "JE", // Note: This includes both Jersey and Guernsey
+    "Curaçao": "CW",
+    "Czechia": "CZ",
+    "Carribean-Netherlands": "BQ",
+    "DRC": "CD",
+    "Antigua-and-Barbuda": "AG",
+    "Dominican-Republic": "DO",
+    "Iran": "IR",
+    "Equatorial-Guinea": "GQ",
+    "Burkina-Faso": "BF",
+    "Brunei": "BN",
+    "Bosnia-and-Herzegovina": "BA",
+    "Eswatini": "SZ",
+    "Cook-Islands": "CK",
+    "Cayman-Islands": "KY",
+    "El-Salvador": "SV",
+    "Faeroe-Islands": "FO",
+    "Costa-Rica": "CR",
+    "French-Guiana": "GF",
+    "French-Polynesia": "PF",
+    "Falkland-Islands": "FK",
+    "Gibraltar": "GI",
+    "Hong-Kong": "HK",
+    "Macao": "MO",
+    "DPRK": "KP",
+    "New-Zealand": "NZ",
+    "Ivory-Coast": "CI",
+    "Isle-of-Man": "IM",
+    "Montserrat": "MS",
+    "Diamond-Princess": "JP",
+    "Myanmar": "MM",
+    "New-Caledonia": "NC",
+    "Palestine": "PS",
+    "Papua-New-Guinea": "PG",
+    "North-Macedonia": "MK",
+    "R&eacute;union": "RE",
+    "Saint-Martin": "MF",
+    "Russia": "RU",
+    "Saudi-Arabia": "SA",
+    "Sierra-Leone": "SL",
+    "South-Africa": "ZA",
+    "Micronesia": "FM",
+    "Marshall-Islands": "MH",
+    "Laos": "LA",
+    "MS-Zaandam": "NL",
+    "Moldova": "MD",
+    "Sri-Lanka": "LK",
+    "South-Sudan": "SS",
+    "San-Marino": "SM",
+    "Saint-Kitts-and-Nevis": "KN",
+    "Saint-Lucia": "LC",
+    "Saint-Helena": "SH",
+    "Sao-Tome-and-Principe": "ST",
+    "St-Martin": "MF",
+    "Saint-Pierre-Miquelon": "PM",
+    "Sint-Maarten": "SX",
+    "Syria": "SY",
+    "Solomon-Islands": "SB",
+    "Taiwan": "TW",
+    "Tanzania": "TZ",
+    "Turks-and-Caicos": "TC",
+    "Vietnam": "VN",
+    "Trinidad-and-Tobago": "TT",
+    "Wallis-and-Futuna": "WF",
+    "Venezuela": "VE",
+    "Vatican-City": "VA",
+    "Western-Sahara": "ME",
+  };
+
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
   const [sortConfig, setSortConfig] = useState({
     key: null,
     direction: "normal",
   });
+
   const [visibilityFilter, setVisibilityFilter] = useState("all");
+
   const [searchTerm, setSearchTerm] = useState("");
   const [showClearButton, setShowClearButton] = useState(false);
-  const [suggestions, setSuggestions] = useState([]);
-  const handleSuggestions = (input) => {
-    if (input === "") {
-      setSuggestions([]);
-      return;
-    }
 
-    const regex = new RegExp(`^${input}`, "i");
-    const filteredSuggestions = stats
-      .map((item) => item.country)
-      .filter((country) => regex.test(country));
-
-    setSuggestions(filteredSuggestions);
+useEffect(() => {
+  const fetchData = async () => {
+    const { data, error } = await fetchCovidStats(); // Change this line
+    setStats(data);
+    setError(error);
   };
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data, error } = await fetchCovidStats(); // Change this line
-      setStats(data);
-      setError(error);
-    };
 
-    fetchData();
-  }, []);
+  fetchData();
+}, []);
 
-  //
+
+  // 
   const getNestedValue = (obj, path) => {
     return path
       .split(".")
@@ -89,21 +159,9 @@ const Table = () => {
     }
 
     if (searchTerm) {
-      const results = findBestMatch(
-        searchTerm.toLowerCase(),
-        data.map((item) => item.country.toLowerCase())
+      filteredData = filteredData.filter((item) =>
+        item.country.toLowerCase().includes(searchTerm.toLowerCase())
       );
-      const bestMatch = results.bestMatch.target;
-      const levenshteinDistance = results.bestMatch.distance;
-
-      filteredData = filteredData.filter((item) => {
-        if (item.country.toLowerCase() === bestMatch) {
-          return true;
-        }
-        const distance = findBestMatch(item.country.toLowerCase(), [bestMatch])
-          .bestMatch.distance;
-        return distance <= levenshteinDistance;
-      });
     }
 
     return filteredData;
@@ -169,23 +227,7 @@ const Table = () => {
       : ISO31661Alpha2.getCode(countryName);
 
     if (!countryCode) {
-        switch (countryName) {
-    case "North-America":
-    case "South-America":
-      return <FontAwesomeIcon icon={solid("earth-americas")} />;
-    case "Europe":
-      return <FontAwesomeIcon icon={solid("earth-europe")} />;
-    case "Africa":
-      return <FontAwesomeIcon icon={solid("earth-africa")} />;
-    case "Asia":
-      return <FontAwesomeIcon icon={solid("earth-asia")} />;
-    case "Oceania":
-            return <FontAwesomeIcon icon={solid("earth-oceania")} />;
-    case "All":
-      return "🌎";
-    default:
-      return null;
-  }
+      return "";
     }
     const codePoints = countryCode
       .toUpperCase()
@@ -203,8 +245,8 @@ const Table = () => {
         <tbody>
           {data.map((item) => (
             <tr key={item.country}>
-              <td data-label="Country" className="flex-center-y">
-                <h3>{getFlagEmoji(item.country)}</h3>&nbsp;&nbsp;
+              <td data-label="Country">
+                {getFlagEmoji(item.country)}{" "}
                 {decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
               </td>
               <td data-label="Total Tests">
@@ -260,7 +302,7 @@ const Table = () => {
 
   return (
     <div>
-      <div className="control-panel covid-controls" style={{ zIndex: 2 }}>
+      <div className="control-panel covid-controls">
         <div className="covid-filters">
           <div>
             <label className="radio-container">
@@ -282,7 +324,7 @@ const Table = () => {
                 checked={visibilityFilter === "countries"}
                 onChange={(e) => setVisibilityFilter(e.target.value)}
               />
-              <span className="checkmark"></span>
+              <span class="checkmark"></span>
               Countries
             </label>
           </div>
@@ -295,7 +337,7 @@ const Table = () => {
                 checked={visibilityFilter === "continents"}
                 onChange={(e) => setVisibilityFilter(e.target.value)}
               />
-              <span className="checkmark"></span>
+              <span class="checkmark"></span>
               Continents
             </label>
           </div>
@@ -308,36 +350,34 @@ const Table = () => {
                 checked={visibilityFilter === "world"}
                 onChange={(e) => setVisibilityFilter(e.target.value)}
               />
-              <span className="checkmark"></span>
+              <span class="checkmark"></span>
               World
             </label>
           </div>
         </div>
         <div className="covid-search">
-          <div className="autocomplete-container whole">
-            <CustomAutocomplete
-              options={suggestions}
-              value={searchTerm}
-              onChange={(newValue) => {
-                setSearchTerm(newValue);
-                handleSuggestions(newValue);
-                setShowClearButton(newValue !== "");
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchTerm}
+            className="whole"
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              setShowClearButton(e.target.value !== "");
+            }}
+          />
+          {showClearButton && (
+            <button
+              className="btn3 search-button px1"
+              onClick={() => {
+                setSearchTerm("");
+                setShowClearButton(false);
               }}
-            />
-            {showClearButton && (
-              <button
-                className="btn3 search-button px1"
-                onClick={() => {
-                  setSearchTerm("");
-                  setShowClearButton(false);
-                }}
-                fill="white"
-              >
-                <FontAwesomeIcon icon={solid("xmark")} />
-              </button>
-            )}
-          </div>
-
+              fill="white"
+            >
+              <FontAwesomeIcon icon={solid("xmark")} />
+            </button>
+          )}
           <span className="checkmark"></span>
         </div>
       </div>
