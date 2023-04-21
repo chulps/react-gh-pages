@@ -43,7 +43,6 @@ class Covid extends Component {
           </div>
           <h4 className="mb1">Covid-19 Data</h4>
           <Table />
-          <hr className="my4" />
         </section>
       </section>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Process from './design-process.svg'
+import Process from './design-process'
 
 class DesignProcess extends Component {
   componentDidMount() {
@@ -26,7 +26,7 @@ class DesignProcess extends Component {
         </section>
         <section className="mb3" id="Foundry">
           <p className="mb3">Something</p>
-          <img src={Process} alt="process" width="100%"/>
+          <Process />
         </section>
       </div>
     );

@@ -105,7 +105,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  gap: var(--unit1) var(--unit3);
+  gap: var(--unit1) var(--unit2);
 }
 
 .covid-search {
