@@ -1,38 +1,41 @@
 import React, { useState, useEffect } from "react";
 import ISO31661Alpha2 from "iso-3166-1-alpha-2";
-import "./Chart.css";
-import axios from "axios";
+import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { fetchCovidStats } from '../api'; // Add this line
 
-const Chart = () => {
+// api lives here
+// https://rapidapi.com/api-sports/api/covid-193/
+
+const Table = () => {
   const countryNameToCode = {
-    USA: "US",
-    UK: "GB",
+    "USA": "US",
+    "UK": "GB",
     "S-Korea": "KR",
     "N-Korea": "KP",
-    UAE: "AE",
-    Algeria: "DZ",
+    "UAE": "AE",
+    "Algeria": "DZ",
     "St-Barth": "BL",
     "St-Vincent-Grenadines": "VC",
     "British-Virgin-Islands": "VG",
-    Bolivia: "BO",
+    "Bolivia": "BO",
     "Brunei ": "BN",
     "Cabo-Verde": "CV",
-    CAR: "CF",
+    "CAR": "CF",
     "Channel-Islands": "JE", // Note: This includes both Jersey and Guernsey
-    Curaçao: "CW",
-    Czechia: "CZ",
+    "Curaçao": "CW",
+    "Czechia": "CZ",
     "Carribean-Netherlands": "BQ",
-    DRC: "CD",
+    "DRC": "CD",
     "Antigua-and-Barbuda": "AG",
     "Dominican-Republic": "DO",
-    Iran: "IR",
+    "Iran": "IR",
     "Equatorial-Guinea": "GQ",
     "Burkina-Faso": "BF",
-    Brunei: "BN",
+    "Brunei": "BN",
     "Bosnia-and-Herzegovina": "BA",
-    Eswatini: "SZ",
+    "Eswatini": "SZ",
     "Cook-Islands": "CK",
     "Cayman-Islands": "KY",
     "El-Salvador": "SV",
@@ -41,31 +44,31 @@ const Chart = () => {
     "French-Guiana": "GF",
     "French-Polynesia": "PF",
     "Falkland-Islands": "FK",
-    Gibraltar: "GI",
+    "Gibraltar": "GI",
     "Hong-Kong": "HK",
-    Macao: "MO",
-    DPRK: "KP",
+    "Macao": "MO",
+    "DPRK": "KP",
     "New-Zealand": "NZ",
     "Ivory-Coast": "CI",
     "Isle-of-Man": "IM",
-    Montserrat: "MS",
+    "Montserrat": "MS",
     "Diamond-Princess": "JP",
-    Myanmar: "MM",
+    "Myanmar": "MM",
     "New-Caledonia": "NC",
-    Palestine: "PS",
+    "Palestine": "PS",
     "Papua-New-Guinea": "PG",
     "North-Macedonia": "MK",
     "R&eacute;union": "RE",
     "Saint-Martin": "MF",
-    Russia: "RU",
+    "Russia": "RU",
     "Saudi-Arabia": "SA",
     "Sierra-Leone": "SL",
     "South-Africa": "ZA",
-    Micronesia: "FM",
+    "Micronesia": "FM",
     "Marshall-Islands": "MH",
-    Laos: "LA",
+    "Laos": "LA",
     "MS-Zaandam": "NL",
-    Moldova: "MD",
+    "Moldova": "MD",
     "Sri-Lanka": "LK",
     "South-Sudan": "SS",
     "San-Marino": "SM",
@@ -76,18 +79,17 @@ const Chart = () => {
     "St-Martin": "MF",
     "Saint-Pierre-Miquelon": "PM",
     "Sint-Maarten": "SX",
-    Syria: "SY",
+    "Syria": "SY",
     "Solomon-Islands": "SB",
-    Taiwan: "TW",
-    Tanzania: "TZ",
+    "Taiwan": "TW",
+    "Tanzania": "TZ",
     "Turks-and-Caicos": "TC",
-    Vietnam: "VN",
+    "Vietnam": "VN",
     "Trinidad-and-Tobago": "TT",
     "Wallis-and-Futuna": "WF",
-    Venezuela: "VE",
+    "Venezuela": "VE",
     "Vatican-City": "VA",
     "Western-Sahara": "ME",
-    // Add more mappings here as needed
   };
 
   const [stats, setStats] = useState(null);
@@ -102,31 +104,18 @@ const Chart = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [showClearButton, setShowClearButton] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const options = {
-          method: "GET",
-          url: "https://covid-193.p.rapidapi.com/statistics",
-          headers: {
-            "X-RapidAPI-Key":
-              "9f5d0c8553msh7e4cfdabfc5e0f9p112f57jsnde15b5674f41",
-            "X-RapidAPI-Host": "covid-193.p.rapidapi.com",
-          },
-        };
+useEffect(() => {
+  const fetchData = async () => {
+    const { data, error } = await fetchCovidStats(); // Change this line
+    setStats(data);
+    setError(error);
+  };
 
-        const response = await axios.request(options);
-        setStats(response.data.response);
-        setError(null);
-      } catch (err) {
-        setError(err.message);
-        setStats(null);
-      }
-    };
+  fetchData();
+}, []);
 
-    fetchData();
-  }, []);
 
+  // 
   const getNestedValue = (obj, path) => {
     return path
       .split(".")
@@ -137,6 +126,7 @@ const Chart = () => {
       );
   };
 
+  // handle the radio buttons in the control panel
   const filterData = (data) => {
     let filteredData = data;
 
@@ -202,6 +192,7 @@ const Chart = () => {
     return data;
   };
 
+  // sort the table on click
   const onHeaderClick = (key) => {
     let direction = "ascending";
     if (sortConfig.key === key && sortConfig.direction === "ascending") {
@@ -218,7 +209,7 @@ const Chart = () => {
 
   function formatNumberWithCommas(number) {
     if (number === null) {
-      return "🤔 Not sure";
+      return "🤷‍♂️";
     }
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
@@ -275,12 +266,25 @@ const Chart = () => {
         </tbody>
         <thead>
           <tr>
-            <th onClick={() => onHeaderClick("country")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Country</th>
-            <th onClick={() => onHeaderClick("tests.total")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Tests</th>
-            <th onClick={() => onHeaderClick("cases.total")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Cases</th>
-            <th onClick={() => onHeaderClick("deaths.total")}><FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Deaths</th>
+            <th onClick={() => onHeaderClick("country")}>
+              <FontAwesomeIcon icon={solid("sort")} />
+              &nbsp;Country
+            </th>
+            <th onClick={() => onHeaderClick("tests.total")}>
+              <FontAwesomeIcon icon={solid("sort")} />
+              &nbsp;Total Tests
+            </th>
+            <th onClick={() => onHeaderClick("cases.total")}>
+              <FontAwesomeIcon icon={solid("sort")} />
+              &nbsp;Total Cases
+            </th>
+            <th onClick={() => onHeaderClick("deaths.total")}>
+              <FontAwesomeIcon icon={solid("sort")} />
+              &nbsp;Total Deaths
+            </th>
             <th onClick={() => onHeaderClick("cases.recovered")}>
-              <FontAwesomeIcon icon={solid("sort")} />&nbsp;Total Recovered
+              <FontAwesomeIcon icon={solid("sort")} />
+              &nbsp;Total Recovered
             </th>
           </tr>
         </thead>
@@ -306,10 +310,7 @@ const Chart = () => {
                 type="radio"
                 value="all"
                 checked={visibilityFilter === "all"}
-                onChange={(e) => {
-                  setSearchTerm(e.target.value);
-                  setShowClearButton(e.target.value !== "");
-                }}
+                onChange={(e) => setVisibilityFilter(e.target.value)}
               />
               All
             </label>
@@ -385,4 +386,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default Table;

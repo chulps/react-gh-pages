@@ -41,14 +41,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           <small>Last Update</small>
         </div>
       </div>
-      {/* <div>
-        <div className="flex-vertical">
-          <label>recovered:</label>
-          <data className="bold h3">{recovered.value}</data>
-          <data>{new Date(lastUpdate).toDateString()}</data>
-          <small>number of active cases</small>
-        </div>
-      </div> */}
       <div className="flex-center-x">
         <div className="flex-vertical">
           <label>all time dead:</label>

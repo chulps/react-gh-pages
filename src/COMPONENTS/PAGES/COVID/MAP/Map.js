@@ -1,7 +1,7 @@
 import React from "react";
 import "./Map.css";
-const SVGMap = props => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 200 1000 550" {...props}>
+const Map = props => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 200 1000 1000" {...props}>
     <defs>
       <circle id="b" r={0.5} />
       <path
@@ -8253,16 +8253,5 @@ const SVGMap = props => (
   </svg>
 );
 
-const Map = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-  if (!confirmed) {
-    return "loading...";
-  }
-
-  return (
-    <div className="map" style={{touchAction: 'pinch-zoom'}}>
-      <SVGMap />
-    </div>
-  );
-};
 
 export default Map;
