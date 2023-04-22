@@ -5,10 +5,13 @@ const CustomAutocomplete = ({ options, value, onChange }) => {
   const [inputValue, setInputValue] = useState(value);
   const [filteredOptions, setFilteredOptions] = useState([]);
 
+  useEffect(() => {
+    setInputValue(value);
+  }, [value]);
+
   const handleChange = (event) => {
     const input = event.target.value;
     setInputValue(input);
-    onChange(input);
 
     if (input === "") {
       setFilteredOptions([]);
@@ -18,7 +21,12 @@ const CustomAutocomplete = ({ options, value, onChange }) => {
     const regex = new RegExp(`^${input}`, "i");
     const filtered = options.filter((option) => regex.test(option));
     setFilteredOptions(filtered);
+    onChange(input); // Add this line back
   };
+
+  useEffect(() => {
+    onChange(inputValue);
+  }, [inputValue, onChange]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
