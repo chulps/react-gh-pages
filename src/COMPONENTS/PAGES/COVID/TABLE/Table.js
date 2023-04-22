@@ -236,6 +236,7 @@ const Table = () => {
   return (
     <div>
       <div className="control-panel covid-controls">
+        <h3 className="mr3">Covid Data</h3>
         <div className="covid-filters">
           <div>
             <label className="radio-container">
