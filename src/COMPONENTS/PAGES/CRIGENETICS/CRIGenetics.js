@@ -85,7 +85,10 @@ class CRIGenetics extends Component {
               <div>
                 <h5>Design System</h5>
                 <small>
-                  <a href="/#/nucleotide" className="h6">Nucleotide</a>, A robust, token based library used to create a branded CSS
+                  <a href="/#/nucleotide" className="h6">
+                    Nucleotide
+                  </a>
+                  , A robust, token based library used to create a branded CSS
                   framework and React Component Library, in concert with an API
                   for use by the developers at CRI Genetics.
                 </small>
@@ -161,23 +164,51 @@ class CRIGenetics extends Component {
           </div>
         </section>
 
-        <section>
-          <label>🛠️ Under construction:</label>
-          <h2>
-            I'm still working on this page...
-          </h2>
+        <section className="my3">
+          <label>A big project</label>
+          <h2>Meowbert Einstein</h2>
         </section>
         <section className="md-two-columns gap3 md-gap4 mt1">
           <MeowbertCS />
 
-          <div className="flex-center flex-vertical p3">
-            <p className="mb2">Click here to view a demo page of the site thats still active</p>
-            <a href="https://demo.crigenetics.com/dash" target="_blank"><button className="green">View Demo</button></a>
+          <div className="flex-center flex-vertical p2">
+            <p>
+              I don't get to do many illustration projects these days however...
+              I was asked to make this for the 404 page.
+            </p>
+            <p className="mb2">
+              The REAL big project that I had while working here was redesigning
+              and constantly improving the dashboard for the customer portal.
+            </p>
+            <a
+              href="https://demo.crigenetics.com/dash"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="green">View Demo</button>
+            </a>
           </div>
-
         </section>
-        <hr className="mt3 mb3" />
-        <p className="text-center mb3">More about CRI Genetics coming later...</p>
+        <section>
+          <hr className="mt3 mb3" />
+<h3>Me and Mindmeister</h3>
+          <p className="mb3" style={{maxWidth: '55ch'}}>
+            I was really busy when I worked here. At any time I was juggling
+            three or four projects: designing the app, managing the product
+            pipeline with the devs, doing some of the frontend development
+            myself, maintaining a design system, and designing A/B tests all at
+            once. This is a link to a mind map that I was maintaining while
+            working there. I used it to track all of my projects. Feel free to
+            click around.
+          </p>
+          <a href="https://mm.tt/map/1757019897?t=8UhzyiaH4m">
+            <button>Mindmeister</button>
+          </a>
+        </section>
+        <hr className="my3" />
+        <p className="text-center mb3">
+          More about CRI Genetics coming later...
+        </p>
       </div>
     );
   }

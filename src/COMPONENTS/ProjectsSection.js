@@ -20,8 +20,8 @@ class ProjectSection extends Component {
         <section className="projects-section pb3 pb4">
                             <hr className="mb3" />
 
-          <h3>My work:</h3>
-          <p className="md-half lg-third mb3">My projects since 2018.</p>
+          <h2>My work:</h2>
+          <p className="mb3" style={{maxWidth: '45ch'}}>This is my portfolio showcasing some of my best work in the last few years. Here you'll see a mix of branding, product design, and frontend development.</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
 
             <Link to="/projects/xprize/" className="disabled">

@@ -11,7 +11,6 @@ class Covid extends Component {
   }
 
   render() {
-    const { data } = this.state;
 
     return (
       <section className="hero" id="covid">

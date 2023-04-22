@@ -11,11 +11,8 @@ const fetchCovidStats = async () => {
         'X-RapidAPI-Host': 'covid-193.p.rapidapi.com',
       },
     };
-
     const response = await axios.request(options);
-    console.log(response.data)
     return { data: response.data.response, error: null };
-    
   } catch (err) {
     return { data: null, error: err.message };
   }

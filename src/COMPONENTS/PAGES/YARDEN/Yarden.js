@@ -238,7 +238,8 @@ class Yarden extends Component {
                   </small>
                   <small>4. Use the letter "Y" somehow</small>
                   <small>
-                    5. We are gonna trademark this... so it needs to be simple, solid, and timeless. 😅
+                    5. We are gonna trademark this... so it needs to be simple,
+                    solid, and timeless. 😅
                   </small>
                 </div>
               </div>
@@ -374,14 +375,16 @@ class Yarden extends Component {
                 <small>
                   In marketing A/B testing is crucial. This is a skill I picked
                   up while working at CRI Genetics. I use Google Optimize to
-                  split traffic.
+                  split traffic, and Google Analytics to collect and analyze
+                  data.
                 </small>
               </div>
 
               <div>
                 <h5>User Analytics</h5>
                 <small>
-                  We use our internal data from Strype, Google Analytics,
+                  We use our internal data from Strype, Google Analytics, and
+                  Hotjar.
                 </small>
               </div>
 
@@ -396,7 +399,8 @@ class Yarden extends Component {
               <div>
                 <h5>Component Library</h5>
                 <small>
-                  Maintain React Component Libraries for the website and webapp.
+                  Maintain React Component Libraries for the website, web app,
+                  and React Native for the mobile app..
                 </small>
               </div>
             </div>
@@ -488,7 +492,8 @@ class Yarden extends Component {
                   <small>
                     After garden beds are installed, users are left with an app
                     that doesn't do much and a box full of dirt on the ground.
-                    We need an abstract way to connect the two things in some way.
+                    We need an abstract way to connect the two things in some
+                    way.
                   </small>
                 </div>
                 <div>

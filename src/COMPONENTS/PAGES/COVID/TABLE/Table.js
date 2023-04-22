@@ -258,7 +258,7 @@ const Table = () => {
                 checked={visibilityFilter === "countries"}
                 onChange={(e) => setVisibilityFilter(e.target.value)}
               />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
               Countries
             </label>
           </div>
@@ -271,7 +271,7 @@ const Table = () => {
                 checked={visibilityFilter === "continents"}
                 onChange={(e) => setVisibilityFilter(e.target.value)}
               />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
               Continents
             </label>
           </div>
@@ -284,7 +284,7 @@ const Table = () => {
                 checked={visibilityFilter === "world"}
                 onChange={(e) => setVisibilityFilter(e.target.value)}
               />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
               World
             </label>
           </div>
