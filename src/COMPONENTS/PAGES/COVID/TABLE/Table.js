@@ -276,11 +276,11 @@ const Table = () => {
             </tr>
           ))}
         </tbody>
-        <thead>
+        <thead visibilityFilter={visibilityFilter}>
           <tr>
             <th onClick={() => onHeaderClick("country")}>
               <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;Country
+              &nbsp;{visibilityFilter === "continents" ? "Continent" : "Country"}
             </th>
             <th onClick={() => onHeaderClick("tests.total")}>
               <FontAwesomeIcon icon={solid("sort")} />
