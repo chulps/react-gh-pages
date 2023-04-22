@@ -3,40 +3,39 @@ import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { fetchCovidStats } from '../api';
-import { countryNameToCode } from './countryNameToCode'
+import { fetchCovidStats } from "../api";
 
 // api lives here
 // https://rapidapi.com/api-sports/api/covid-193/
 
 const Table = () => {
   const countryNameToCode = {
-    "USA": "US",
-    "UK": "GB",
+    USA: "US",
+    UK: "GB",
     "S-Korea": "KR",
     "N-Korea": "KP",
-    "UAE": "AE",
-    "Algeria": "DZ",
+    UAE: "AE",
+    Algeria: "DZ",
     "St-Barth": "BL",
     "St-Vincent-Grenadines": "VC",
     "British-Virgin-Islands": "VG",
-    "Bolivia": "BO",
+    Bolivia: "BO",
     "Brunei ": "BN",
     "Cabo-Verde": "CV",
-    "CAR": "CF",
+    CAR: "CF",
     "Channel-Islands": "JE", // Note: This includes both Jersey and Guernsey
-    "Curaçao": "CW",
-    "Czechia": "CZ",
+    Curaçao: "CW",
+    Czechia: "CZ",
     "Carribean-Netherlands": "BQ",
-    "DRC": "CD",
+    DRC: "CD",
     "Antigua-and-Barbuda": "AG",
     "Dominican-Republic": "DO",
-    "Iran": "IR",
+    Iran: "IR",
     "Equatorial-Guinea": "GQ",
     "Burkina-Faso": "BF",
-    "Brunei": "BN",
+    Brunei: "BN",
     "Bosnia-and-Herzegovina": "BA",
-    "Eswatini": "SZ",
+    Eswatini: "SZ",
     "Cook-Islands": "CK",
     "Cayman-Islands": "KY",
     "El-Salvador": "SV",
@@ -45,31 +44,31 @@ const Table = () => {
     "French-Guiana": "GF",
     "French-Polynesia": "PF",
     "Falkland-Islands": "FK",
-    "Gibraltar": "GI",
+    Gibraltar: "GI",
     "Hong-Kong": "HK",
-    "Macao": "MO",
-    "DPRK": "KP",
+    Macao: "MO",
+    DPRK: "KP",
     "New-Zealand": "NZ",
     "Ivory-Coast": "CI",
     "Isle-of-Man": "IM",
-    "Montserrat": "MS",
+    Montserrat: "MS",
     "Diamond-Princess": "JP",
-    "Myanmar": "MM",
+    Myanmar: "MM",
     "New-Caledonia": "NC",
-    "Palestine": "PS",
+    Palestine: "PS",
     "Papua-New-Guinea": "PG",
     "North-Macedonia": "MK",
     "R&eacute;union": "RE",
     "Saint-Martin": "MF",
-    "Russia": "RU",
+    Russia: "RU",
     "Saudi-Arabia": "SA",
     "Sierra-Leone": "SL",
     "South-Africa": "ZA",
-    "Micronesia": "FM",
+    Micronesia: "FM",
     "Marshall-Islands": "MH",
-    "Laos": "LA",
+    Laos: "LA",
     "MS-Zaandam": "NL",
-    "Moldova": "MD",
+    Moldova: "MD",
     "Sri-Lanka": "LK",
     "South-Sudan": "SS",
     "San-Marino": "SM",
@@ -80,15 +79,15 @@ const Table = () => {
     "St-Martin": "MF",
     "Saint-Pierre-Miquelon": "PM",
     "Sint-Maarten": "SX",
-    "Syria": "SY",
+    Syria: "SY",
     "Solomon-Islands": "SB",
-    "Taiwan": "TW",
-    "Tanzania": "TZ",
+    Taiwan: "TW",
+    Tanzania: "TZ",
     "Turks-and-Caicos": "TC",
-    "Vietnam": "VN",
+    Vietnam: "VN",
     "Trinidad-and-Tobago": "TT",
     "Wallis-and-Futuna": "WF",
-    "Venezuela": "VE",
+    Venezuela: "VE",
     "Vatican-City": "VA",
     "Western-Sahara": "ME",
   };
@@ -105,18 +104,17 @@ const Table = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [showClearButton, setShowClearButton] = useState(false);
 
-useEffect(() => {
-  const fetchData = async () => {
-    const { data, error } = await fetchCovidStats(); // Change this line
-    setStats(data);
-    setError(error);
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data, error } = await fetchCovidStats(); // Change this line
+      setStats(data);
+      setError(error);
+    };
 
-  fetchData();
-}, []);
+    fetchData();
+  }, []);
 
-
-  // 
+  //
   const getNestedValue = (obj, path) => {
     return path
       .split(".")
@@ -228,14 +226,28 @@ useEffect(() => {
       : ISO31661Alpha2.getCode(countryName);
 
     if (!countryCode) {
-      return "";
+      switch (countryName) {
+        case "North-America":
+        case "South-America":
+          return <h3><FontAwesomeIcon icon={solid("earth-americas")} /></h3>;
+        case "Europe":
+          return <h3><FontAwesomeIcon icon={solid("earth-europe")} /></h3>;
+        case "Africa":
+          return <h3><FontAwesomeIcon icon={solid("earth-africa")} /></h3>;
+        case "Asia":
+          return <h3><FontAwesomeIcon icon={solid("earth-asia")} /></h3>;
+        case "Oceania":
+          return <h3><FontAwesomeIcon icon={solid("earth-oceania")} /></h3>;
+        default:
+          return <h3>""</h3>;
+      }
     }
     const codePoints = countryCode
       .toUpperCase()
       .replace(/./g, (char) =>
         String.fromCodePoint(char.charCodeAt(0) + 127397)
       );
-    return codePoints;
+    return <h3 className="inline">{codePoints}</h3>;
   };
 
   const renderTable = () => {
@@ -246,8 +258,8 @@ useEffect(() => {
         <tbody>
           {data.map((item) => (
             <tr key={item.country}>
-              <td data-label="Country">
-                {getFlagEmoji(item.country)}&nbsp;{decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
+              <td data-label="Country" className="flex-center-y">
+                {getFlagEmoji(item.country)}&nbsp;&nbsp;{decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
               </td>
               <td data-label="Total Tests">
                 <data>{formatNumberWithCommas(item.tests.total)}</data>
