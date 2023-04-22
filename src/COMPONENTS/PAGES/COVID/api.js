@@ -1,5 +1,6 @@
 import axios from 'axios';
-
+ const date = new Date();
+ console.log(date);
 const fetchCovidStats = async () => {
   try {
     const options = {
@@ -12,7 +13,9 @@ const fetchCovidStats = async () => {
     };
 
     const response = await axios.request(options);
+    console.log(response.data)
     return { data: response.data.response, error: null };
+    
   } catch (err) {
     return { data: null, error: err.message };
   }

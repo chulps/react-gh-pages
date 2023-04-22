@@ -9,12 +9,13 @@
     "St-Vincent-Grenadines": "VC",
     "British-Virgin-Islands": "VG",
     "Bolivia": "BO",
-    "Brunei ": "BN",
+    "Brunei": "BN",
     "Cabo-Verde": "CV",
     "CAR": "CF",
+    "Caribbean-Netherlands": "BQ",
     "Channel-Islands": "JE",
     "Vanuatu": "VU",
-    "Curaçao": "CW",
+    "Cura&ccedil;ao": "CW",
     "Czechia": "CZ",
     "Carribean-Netherlands": "BQ",
     "DRC": "CD",
@@ -23,7 +24,6 @@
     "Iran": "IR",
     "Equatorial-Guinea": "GQ",
     "Burkina-Faso": "BF",
-    "Brunei": "BN",
     "Bosnia-and-Herzegovina": "BA",
     "Eswatini": "SZ",
     "Cook-Islands": "CK",
@@ -82,4 +82,4 @@
     "Western-Sahara": "ME",
   };
 
-export default countryNameToCode;
+export { countryNameToCode };
