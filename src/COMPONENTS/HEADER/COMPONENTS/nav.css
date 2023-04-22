@@ -93,7 +93,7 @@ nav .active::after {
   display: none;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 7px) {
   nav .active::after {
     display: block;
   }

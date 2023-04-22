@@ -207,7 +207,7 @@ const MemoizedTableHeader = React.memo(
       </th>
       <th onClick={() => onHeaderClick("cases.recovered")}>
         <FontAwesomeIcon icon={solid("sort")} />
-        &nbsp;Total&nbsp;Recovered
+        &nbsp;TotalRecovered
       </th>
     </tr>
   ),

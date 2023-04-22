@@ -38,6 +38,7 @@
 
 .nucleotide table thead th {
   padding: var(--unit1);
+  white-space: nowrap;
 }
 
 /* --------- */

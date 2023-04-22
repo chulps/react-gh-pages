@@ -196,7 +196,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
   .content-box {
     flex-grow: unset;
   }
