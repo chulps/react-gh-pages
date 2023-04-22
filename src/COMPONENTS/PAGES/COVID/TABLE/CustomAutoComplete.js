@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./CustomAutoComplete.css";
 
 const CustomAutocomplete = ({ options, value, onChange }) => {
+  const [inputValue, setInputValue] = useState(value);
   const [filteredOptions, setFilteredOptions] = useState([]);
 
   const handleChange = (event) => {
     const input = event.target.value;
+    setInputValue(input);
+    onChange(input);
 
     if (input === "") {
       setFilteredOptions([]);
@@ -15,10 +18,9 @@ const CustomAutocomplete = ({ options, value, onChange }) => {
     const regex = new RegExp(`^${input}`, "i");
     const filtered = options.filter((option) => regex.test(option));
     setFilteredOptions(filtered);
-    onChange(input);
   };
 
-    useEffect(() => {
+  useEffect(() => {
     const handleClickOutside = (event) => {
       if (event.target.closest(".custom-autocomplete") === null) {
         setFilteredOptions([]);
@@ -37,7 +39,7 @@ const CustomAutocomplete = ({ options, value, onChange }) => {
       <input
         width="100%"
         type="text"
-        value={value}
+        value={inputValue}
         onChange={handleChange}
         placeholder="Search"
       />
