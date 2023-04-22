@@ -76,11 +76,13 @@ const Table = () => {
       filteredData = filteredData.filter((item) => item.country === "All");
     }
 
-    if (searchTerm) {
-      filteredData = filteredData.filter((item) =>
-        item.country.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+  if (searchTerm) {
+    filteredData = filteredData.filter((item) =>
+      formatCountryName(item.country)
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase())
+    );
+  }
 
     return filteredData;
   };
@@ -171,6 +173,23 @@ const Table = () => {
     return <h3 className="inline">{codePoints}</h3>;
   };
 
+  const formatCountryName = (countryName) => {
+  const countryNameMapping = {
+    "S Korea": "South Korea",
+    "DPRK": "North Korea",
+    "CAR": "Central African Republic",
+    "USA": "United States of America",
+    "Diamond-Princess": "Diamond Princess (🚢)",
+    "St-Barth": "Saint Barth",
+    "St-Vincent-Grenadines": "Saint Vincent and the Grenadines",
+    "MS-Zaandam": "MS Zaandam (🚢)"
+    // Add more mappings if needed
+  };
+
+  return countryNameMapping[countryName] || countryName;
+};
+
+
   const renderTable = () => {
     const data = filterData(sortedData());
 
@@ -180,7 +199,8 @@ const Table = () => {
           {data.map((item) => (
             <tr key={item.country}>
               <td data-label="Country" className="flex-center-y">
-                {getFlagEmoji(item.country)}&nbsp;&nbsp;{decodeHtmlEntities(item.country.replace(/-/g, "&nbsp;"))}
+                {getFlagEmoji(item.country)}&nbsp;&nbsp;{decodeHtmlEntities(formatCountryName(item.country).replace(/-/g, "&nbsp;"))}
+
               </td>
               <td data-label="Total Tests">
                 <data>{formatNumberWithCommas(item.tests.total)}</data>
