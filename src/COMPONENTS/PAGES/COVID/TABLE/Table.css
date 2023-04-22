@@ -41,8 +41,6 @@
   white-space: nowrap;
 }
 
-/* --------- */
-/* The container */
 .nucleotide label.radio-container {
   cursor: pointer;
   -webkit-user-select: none;
@@ -54,13 +52,13 @@
   align-items: center;
 }
 
-/* Hide the browser's default radio button */
 .nucleotide label.radio-container input {
   cursor: pointer;
   height: var(--unit2);
   width: var(--unit2);
   border-radius: 50%;
   box-shadow: none;
+    outline: none !important;
 }
 
 /* Create a custom radio button */
@@ -71,13 +69,13 @@
   border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
-.nucleotide label.radio-container:hover input~.checkmark {
-  background-color: #ccc;
-}
-
 /* When the radio button is checked, add a blue background */
 .nucleotide label.radio-container input:checked~.checkmark {
+    background-color: var(--green0);
+      height: 16px;
+      width: 16px;
+      top: 4.5px;
+      left: 5px;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
