@@ -191,23 +191,23 @@ const MemoizedTableHeader = React.memo(
     <tr>
       <th onClick={() => onHeaderClick("country")}>
         <FontAwesomeIcon icon={solid("sort")} />
-        &nbsp;Country
+        &nbsp;{visibilityFilter === "continents" ? "Continent" : "Country"}
       </th>
       <th onClick={() => onHeaderClick("tests.total")}>
         <FontAwesomeIcon icon={solid("sort")} />
-        &nbsp;Total Tests
+        &nbsp;Total&nbsp;Tests
       </th>
       <th onClick={() => onHeaderClick("cases.total")}>
         <FontAwesomeIcon icon={solid("sort")} />
-        &nbsp;Total Cases
+        &nbsp;Total&nbsp;Cases
       </th>
       <th onClick={() => onHeaderClick("deaths.total")}>
         <FontAwesomeIcon icon={solid("sort")} />
-        &nbsp;Total Deaths
+        &nbsp;Total&nbsp;Deaths
       </th>
       <th onClick={() => onHeaderClick("cases.recovered")}>
         <FontAwesomeIcon icon={solid("sort")} />
-        &nbsp;Total Recovered
+        &nbsp;Total&nbsp;Recovered
       </th>
     </tr>
   ),
@@ -220,7 +220,7 @@ const renderTable = () => {
   return (
     <table>
       <thead>
-        <MemoizedTableHeader />
+        <MemoizedTableHeader visibilityFilter={visibilityFilter} />
       </thead>
       <tbody>
         {data.map((item) => (
@@ -242,6 +242,7 @@ const renderTable = () => {
   return (
     <div>
       <div className="control-panel covid-controls" style={{ zIndex: 2 }}>
+        <h4 className="mb1 md-mb-none mr3">Covid-19 Data</h4>
         <div className="covid-filters">
           <div>
             <label className="radio-container">

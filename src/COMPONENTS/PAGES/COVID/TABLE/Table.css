@@ -59,7 +59,6 @@
   height: var(--unit2);
   width: var(--unit2);
   border-radius: 50%;
-  background: red !important;
   box-shadow: none;
 }
 
@@ -99,6 +98,10 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
+}
+
+.covid-controls {
+  align-items: center;
 }
 
 .covid-filters {
