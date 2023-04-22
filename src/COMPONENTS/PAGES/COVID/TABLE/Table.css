@@ -16,7 +16,7 @@
 
 .nucleotide table thead {
   z-index: 1;
-  background: white;
+  background: var(--siteBackground);
   position: sticky;
   top: 0;
   box-shadow: 0 6px 12px var(--transBlueC-10);
@@ -39,6 +39,7 @@
 .nucleotide table thead th {
   padding: var(--unit1);
   white-space: nowrap;
+    border-bottom: 1px solid var(--transBlueC-10);
 }
 
 .nucleotide label.radio-container {
@@ -97,6 +98,13 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
+}
+
+.nucleotide .control-panel {
+  background: transparent !important;
+  box-shadow: none;
+  padding: 0 0 var(--unit1) 0;
+  border-bottom: 1px solid var(--transBlueC-10);
 }
 
 .covid-controls {

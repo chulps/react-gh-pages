@@ -4,7 +4,9 @@ import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { fetchCovidStats } from "../api";
-import { countryNameToCode} from "./countryNameToCode"
+import { countryNameToCode } from "./countryNameToCode"
+import "./Loader.css";
+
 // api lives here
 // https://rapidapi.com/api-sports/api/covid-193/
 
@@ -22,6 +24,9 @@ const Table = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
   const [showClearButton, setShowClearButton] = useState(false);
+  const Loader = () => {
+    return <div className="loader"></div>;
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -194,7 +199,7 @@ const Table = () => {
     const data = filterData(sortedData());
 
     return (
-      <table>
+      <table id="covid-table">
         <tbody>
           {data.map((item) => (
             <tr key={item.country}>
@@ -249,9 +254,14 @@ const Table = () => {
     return <div>Error: {error}</div>;
   }
 
-  if (!stats) {
-    return <div>Loading...</div>;
-  }
+if (!stats) {
+  return (
+    <div className="my4 flex-center flex-vertical">
+      <Loader />
+      <small>Loading...</small>
+    </div>
+  );
+}
 
   return (
     <div>
@@ -312,7 +322,7 @@ const Table = () => {
         <div className="covid-search">
           <input
             type="text"
-            placeholder="Search"
+            placeholder="🔍 Search"
             value={searchTerm}
             className="whole"
             onChange={(e) => {

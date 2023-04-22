@@ -48,7 +48,7 @@ function App() {
         <Header />
 
         {/* site content renders here */}
-        <main>
+        <main style={{background: 'var(--siteBackground)'}}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/projects/xprize/" element={<Xprize />} />

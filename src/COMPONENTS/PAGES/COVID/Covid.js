@@ -13,7 +13,7 @@ class Covid extends Component {
   render() {
 
     return (
-      <section className="hero" id="covid">
+      <section id="covid">
         <Helmet>
           <title>🦠 Covid-19 Dashboard</title>
         </Helmet>
