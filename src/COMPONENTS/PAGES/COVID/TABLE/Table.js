@@ -319,7 +319,7 @@ if (!stats) {
             </label>
           </div>
         </div>
-        <div className="covid-search">
+        <div className="covid-search pb-none">
           <input
             type="text"
             placeholder="🔍 Search"

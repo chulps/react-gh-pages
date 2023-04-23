@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -25,7 +29,7 @@ const Chatbot = () => {
         {
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer YOUR_API_KEY`,
+            Authorization: `Bearer ${process.env.REACT_APP_CHAT_GPT_API_KEY}`,
           },
         },
       );
