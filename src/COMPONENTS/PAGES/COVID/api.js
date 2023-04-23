@@ -1,13 +1,20 @@
 import axios from 'axios';
- const date = new Date();
- console.log(date);
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+console.log(process.env)
+
+const date = new Date();
+console.log(date);
+
 const fetchCovidStats = async () => {
   try {
     const options = {
       method: 'GET',
       url: 'https://covid-193.p.rapidapi.com/statistics',
       headers: {
-        'X-RapidAPI-Key': '9f5d0c8553msh7e4cfdabfc5e0f9p112f57jsnde15b5674f41',
+        'X-RapidAPI-Key': process.env.COVID_API_KEY,
         'X-RapidAPI-Host': 'covid-193.p.rapidapi.com',
       },
     };
