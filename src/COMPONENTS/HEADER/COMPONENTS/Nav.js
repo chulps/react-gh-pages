@@ -43,7 +43,7 @@ class NavContent extends React.Component {
           >
             <button className="green">
               <FontAwesomeIcon icon={solid("calendar")} />
-              &nbsp;&nbsp;Schedule Interview
+              &nbsp;&nbsp;<i>Let's&nbsp;talk!</i>
             </button>
           </a>
         </li>
