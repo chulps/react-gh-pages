@@ -592,6 +592,7 @@ const Home = () => {
               <small>Vue</small>
               <small>HUBL</small>
               <small>Liquid</small>
+              <small>ChatGPT</small>
             </div>
           </div>
 
@@ -628,6 +629,9 @@ const Home = () => {
               <small>Figma</small>
               <small>Balsamiq</small>
               <small>Miro</small>
+              <small>Midjourney</small>
+              <small>Uizard</small>
+              <small>Zeplin</small>
             </div>
             <a href="/design-process/">Design Process</a>
           </div>

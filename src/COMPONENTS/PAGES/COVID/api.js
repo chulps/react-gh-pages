@@ -3,9 +3,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const date = new Date();
-console.log(date);
-
 const fetchCovidStats = async () => {
   try {
     const options = {

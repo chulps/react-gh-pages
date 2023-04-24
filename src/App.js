@@ -16,6 +16,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
+import Chuckbot from "./COMPONENTS/Chuckbot.js";
 
 import ReactGA from "react-ga4";
 import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
@@ -83,7 +84,7 @@ function App() {
             <small>Let's Talk!</small>
           </button>
         </a>
-
+        <Chuckbot />
         <Footer />
 
         <div className="feedback">
@@ -98,6 +99,7 @@ function App() {
             </button>
           </a>
         </div>
+        
       </HashRouter>
     </div>
   );

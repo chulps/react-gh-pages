@@ -72,11 +72,11 @@
 
 /* When the radio button is checked, add a blue background */
 .nucleotide label.radio-container input:checked~.checkmark {
-    background-color: var(--green0);
+    /* background-color: var(--green0);
       height: 16px;
       width: 16px;
       top: 4.5px;
-      left: 5px;
+      left: 5px; */
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
