@@ -14,47 +14,60 @@ Github: https://github.com/chulps/
 Stackoverflow: https://stackoverflow.com/users/2146031/chulps
 Website: https://chulps.github.io/react-gh-pages/
 
-Skills
+Skills:
+A/B Testing - Since 2020
+Adobe Illustrator - Since 2008
+Adobe Indesign - Since 2008
+Adobe Photoshop - Since 2008
+Adobe XD - Since 2018
+Atomic Design - Since 2018
+C#/.NET/Azure - Since 2023
+Chat GPT and other AI tools - Since 2022
+Data Visualization - Since 2018
+Design Systems - Since 2018
+Design Thinking - Since 2018
+Figma - Since 2018
+Frontend Development - Since 2018
+GitHub/Bitbucket - Since 2018
+Google Analytics - Since 2020
+Google Optimize - Since 2020
+Graphic Design - Since 2008
+HTML/HTML5 - Since 2011
+Jira - Since 2018
+JavaScript/Typescript - Since 2018
+Product Management - Since 2018
+Product Roadmapping - Since 2018
+Prototyping - Since 2018
+React/React Native/Angular/Svelte - Since 2018
+Sketch - Since 2018
+UI/UX Design - Since 2018
+Usability / Heuristics - Since 2022
+Web Design - Since 2011
+Wireframing - Since 2018
 
-A/B Testing
-Adobe Illustrator
-Adobe Indesign
-Adobe Photoshop
-C#/.NET/Azure
-Chat GPT and other AI tools
-Data Visualization
-Design Systems
-Frontend Development
-GitHub/Bitbucket
-Google Analytics
-Google Optimize
-Graphic Design
-HTML/HTML5
-CSS/CSS3/
-JavaScript/Typescript
-Product Management
-Product Roadmapping
-Prototyping
-React/React Native/Angular/Svelte
-UI/UX Design
-Usability / Heuristics
-Web Design
-Wireframing
+
+Methodology:
+Scrum - Since 2018
+Agile - Since 2018
+Lean - Since 2018
+Kanban - Since 2018
+Waterfall - Since 2018
 
 
-Work Experience
-UX Designer/Frontend Developer, XPRIZE Foundation, Los Angeles (January 2023 – Present)
+
+Work Experience:
+UX Designer/Frontend Developer, XPRIZE Foundation Los Angeles (January 2023 – Present)
 Developed and executed a comprehensive UX/UI design overhaul for the company website resulting in a 45% increase in user engagement and a 30% decrease in bounce rate.
 Implemented responsive designs using Angular, .Net, C#, and Azure, resulting in 98% mobile compatibility across all company applications.
 Spearheaded the development and maintenance of XPDS (XPRIZE Design System), which facilitated efficient design implementation across all company products, resulting in a 20% reduction in design implementation time.
 
-Product Design Lead (Co-Founder), Yarden, San Francisco (Remote) (March 2021 – Present)
+Product Design Lead (Co-Founder), Yarden San Francisco (Remote) (March 2021 – Present)
 Leveraged user research to inform design decisions and create a seamless mobile app experience, resulting in a successful launch on the App Store with 5 stars.
 Developed and implemented a cohesive brand strategy across all marketing channels, increasing brand recognition by 30% and driving growth opportunities.
 Directed a comprehensive user research study that resulted in a 20% increase in customer satisfaction and a 15% decrease in user churn rates.
 Launched mobile app on the App Store with 5 stars. Here is the link to download it https://apps.apple.com/gb/app/yarden/id1626672979
 
-(Acquisition) UI Engineer, Foundry Digital, Rochester, NY (Remote) (April 2022 – October 2022)
+(Acquisition) UI Engineer, Foundry Digital Rochester, NY (Remote) (April 2022 – October 2022)
 Spearheaded the development and implementation of Foundry's comprehensive design system "Metal", resulting in a 70% reduction in design inconsistencies across all products and services.
 Collaborated with engineering teams to build, test, and iterate on high-fidelity prototypes for Foundry's Staking Portal, resulting in a 50% increase in user engagement within the first month after launch.
 Founded DCG Design Guild, a cross-company initiative to foster collaboration and knowledge sharing among designers at Digital Currency Group’s subsidiary companies. Led bi-weekly heuristic studies to identify best practices and emerging trends in UX design.
@@ -94,14 +107,63 @@ UCLA Extension's Full-Stack Web Development Bootcamp
 
 Courses
 MAP Management Training, Map Consulting/Management Services (March 2021 – March 2021)
-Fullstack Web Development Angela Yu
-Angular
-Modern React with Redux
+Fullstack Web Development - By Angela Yu (Udemy)
+Angular - By Maximilian Schwarzmüller (Udemy)
+Modern React with Redux - By Stephen Grider (Udemy)
 
 
 Hobbies
 Travel
 Artificial Intelligence
+
+
+Pushups
+79 is my record
+
+
+How many hair does Chuck have?
+None. I am bald. 👨‍🦲
+
+
+Howfriends does Chuck have?
+More than 5, less than 10.
+
+
+What is Chuck's favorite color?
+Black
+
+
+What is Chuck's favorite food?
+Sushi
+
+
+What is Chuck's favorite drink?
+Speyburn
+
+
+What is Chuck's favorite movie?
+Chappie
+
+
+What languages does Chuck speak?
+English - Fluent
+Japanese - 少し
+Spanish - Poco
+Vietnamese - một chút
+Thai - นิดหน่อย
+
+
+Speed
+⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️
+
+
+Social Media
+Chuck doesn't use any social media besides LinkedIn
+
+
+Favorite Artists
+Franz Klein
+Jeremy Guedes
 `
 
 export default resume;

@@ -15,3 +15,29 @@
 .feebback a button:hover {
   transform-origin: bottom;
 }
+
+.chatbot-toggle {
+  position: fixed;
+  bottom: var(--unit1);
+  right: var(--unit1);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Make sure the button stays on top of other elements */
+}
+
+.chatbot-open-toggle {
+  position: fixed;
+  top: calc(63.99px + var(--unit2));
+  right: var(--unit2);
+  z-index: 1;
+}

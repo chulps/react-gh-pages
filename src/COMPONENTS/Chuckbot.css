@@ -1,0 +1,110 @@
+/* Chuckbot.css */
+
+#chuckbot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(204, 233, 243, 0.75);
+  border-radius: var(--unit1);
+  overflow: hidden;
+  height: calc(100vh - 63.99px - var(--unit2));
+  width: calc(100% - var(--unit2));
+  box-shadow: 0 12px 24px var(--transBlueC-25);
+  z-index: 1;
+  margin: var(--unit1);
+}
+
+@media screen and (min-width: 768px) {
+  #chuckbot {
+    max-width: var(--unit6);
+    right:0;
+    margin-left: auto;
+  }
+}
+  
+
+#chuckbot #chuckbot-header {
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--unit1);
+  background-color: var(--transWhite-50);
+  backdrop-filter: blur(3px);
+  border-radius: var(--unit1) var(--unit1) 0 0;
+  background: transparent;
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--transWhite-50);
+}
+
+.typing-indicator {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 6rem 1rem;
+  padding: var(--unit3);
+  position: relative;
+}
+
+.typing-indicator span {
+  height: 5px;
+  width: 5px;
+  background-color: var(--transBlueC-50);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  opacity: 0;
+  animation: typing 1.2s infinite;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+  height: calc(100vh - 63.99px - var(--unit3) - 148px);
+}
+
+.message-container {
+  margin-bottom: var(--unit0);
+}
+
+.chat-send-button {
+  position: absolute;
+  margin-right: var(--unit1);
+}
+
+.chat-input-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 100%;
+  width: 100%;
+}
