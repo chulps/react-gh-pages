@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import resume from "./resume.js";
 import Logo from "../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
+import TextareaAutosize from "react-textarea-autosize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./Chuckbot.css";
@@ -257,13 +258,16 @@ const linkTextMap = {
         </div>
       </div>
       <div className="chat-input-container">
-        <input
-          type="text"
+<TextareaAutosize
+  minRows={1}
+  maxRows={3}
           onKeyDown={handleInput}
-          placeholder="What's up?"
-          ref={inputRef}
-          className="chat-input whole"
-        />
+          
+  placeholder="Ask anything!"
+  ref={inputRef}
+  className="chat-input whole"
+/>
+
         <button className="chat-send-button small" onClick={handleButtonClick}>
           <FontAwesomeIcon icon={solid("paper-plane")} />
         </button>

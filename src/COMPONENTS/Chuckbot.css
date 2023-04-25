@@ -98,14 +98,19 @@
 
 .chat-send-button {
   position: absolute;
-  margin-right: var(--unit1);
+  margin: 0 var(--unit1) var(--unit0) 0;
+  border-radius: var(--unit1);
 }
 
 .chat-input-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   position: sticky;
   top: 100%;
   width: 100%;
+}
+
+textarea.chat-input {
+  padding-right: var(--unit3);
 }
