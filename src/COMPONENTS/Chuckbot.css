@@ -89,7 +89,7 @@
   flex-direction: column;
   width: 100%;
   overflow: auto;
-  height:100%;
+  height:calc(100% - 191px);
 }
 
 .message-container {
