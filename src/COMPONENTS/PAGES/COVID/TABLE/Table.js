@@ -20,7 +20,7 @@ const Table = () => {
     direction: "normal",
   });
 
-  const [visibilityFilter, setVisibilityFilter] = useState("all");
+  const [visibilityfilter, setvisibilityfilter] = useState("all");
 
   const [searchTerm, setSearchTerm] = useState("");
   const [showClearButton, setShowClearButton] = useState(false);
@@ -53,7 +53,7 @@ const Table = () => {
   const filterData = (data) => {
     let filteredData = data;
 
-    if (visibilityFilter === "countries") {
+    if (visibilityfilter === "countries") {
       filteredData = filteredData.filter(
         (item) =>
           ![
@@ -66,7 +66,7 @@ const Table = () => {
             "All",
           ].includes(item.country)
       );
-    } else if (visibilityFilter === "continents") {
+    } else if (visibilityfilter === "continents") {
       filteredData = filteredData.filter((item) =>
         [
           "Asia",
@@ -77,7 +77,7 @@ const Table = () => {
           "Africa",
         ].includes(item.country)
       );
-    } else if (visibilityFilter === "world") {
+    } else if (visibilityfilter === "world") {
       filteredData = filteredData.filter((item) => item.country === "All");
     }
 
@@ -222,11 +222,11 @@ const Table = () => {
             </tr>
           ))}
         </tbody>
-        <thead visibilityFilter={visibilityFilter}>
+        <thead visibilityfilter={visibilityfilter}>
           <tr>
             <th onClick={() => onHeaderClick("country")}>
               <FontAwesomeIcon icon={solid("sort")} />
-              &nbsp;{visibilityFilter === "continents" ? "Continent" : "Country"}
+              &nbsp;{visibilityfilter === "continents" ? "Continent" : "Country"}
             </th>
             <th onClick={() => onHeaderClick("tests.total")}>
               <FontAwesomeIcon icon={solid("sort")} />
@@ -273,8 +273,8 @@ if (!stats) {
               <input
                 type="radio"
                 value="all"
-                checked={visibilityFilter === "all"}
-                onChange={(e) => setVisibilityFilter(e.target.value)}
+                checked={visibilityfilter === "all"}
+                onChange={(e) => setvisibilityfilter(e.target.value)}
               />
               All
             </label>
@@ -285,8 +285,8 @@ if (!stats) {
               <input
                 type="radio"
                 value="countries"
-                checked={visibilityFilter === "countries"}
-                onChange={(e) => setVisibilityFilter(e.target.value)}
+                checked={visibilityfilter === "countries"}
+                onChange={(e) => setvisibilityfilter(e.target.value)}
               />
               <span className="checkmark"></span>
               Countries
@@ -298,8 +298,8 @@ if (!stats) {
               <input
                 type="radio"
                 value="continents"
-                checked={visibilityFilter === "continents"}
-                onChange={(e) => setVisibilityFilter(e.target.value)}
+                checked={visibilityfilter === "continents"}
+                onChange={(e) => setvisibilityfilter(e.target.value)}
               />
               <span className="checkmark"></span>
               Continents
@@ -311,15 +311,15 @@ if (!stats) {
               <input
                 type="radio"
                 value="world"
-                checked={visibilityFilter === "world"}
-                onChange={(e) => setVisibilityFilter(e.target.value)}
+                checked={visibilityfilter === "world"}
+                onChange={(e) => setvisibilityfilter(e.target.value)}
               />
               <span className="checkmark"></span>
               World
             </label>
           </div>
         </div>
-        <div className="covid-search">
+        <div className="covid-search pb-none">
           <input
             type="text"
             placeholder="🔍 Search"

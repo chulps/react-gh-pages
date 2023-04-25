@@ -13,11 +13,10 @@ class Covid extends Component {
   render() {
 
     return (
-      <section id="covid">
+      <section id="covid" className="py3">
         <Helmet>
           <title>🦠 Covid-19 Dashboard</title>
-        </Helmet>
-        <section className="py3">
+        </Helmet>   
           <div className="lg-two-columns gap3 mb3">
             <div>
               <label>Project:</label>
@@ -41,7 +40,7 @@ class Covid extends Component {
 
           </div>
           <Table />
-        </section>
+        
       </section>
     );
   }

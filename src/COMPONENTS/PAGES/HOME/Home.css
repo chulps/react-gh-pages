@@ -6,6 +6,8 @@
   margin-top: var(--unit2);
 }
 
+
+
 .disciplines h6 {
   height: calc(var(--unit4));
   width: calc(var(--unit4));
@@ -196,7 +198,7 @@
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .content-box {
     flex-grow: unset;
   }

@@ -10,19 +10,25 @@ import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
 import Resume from "./COMPONENTS/PAGES/RESUME/Resume.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
-
+import Chuckbot from "./COMPONENTS/Chuckbot.js";
 import ReactGA from "react-ga4";
 import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
 const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
 ReactGA.initialize(TRACKING_ID);
 
-function App() {
+const App = () => {
+  const [chatbotVisible, setChatbotVisible] = useState(false);
+
+  const toggleChatbot = () => {
+    setChatbotVisible(!chatbotVisible);
+  };
+
   //creating IP state
   const [ip, setIP] = useState("");
 
@@ -48,7 +54,7 @@ function App() {
         <Header />
 
         {/* site content renders here */}
-        <main style={{background: 'var(--siteBackground)'}}>
+        <main style={{ background: "var(--siteBackground)" }}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/projects/xprize/" element={<Xprize />} />
@@ -59,7 +65,7 @@ function App() {
             <Route path="/projects/clicktool/" element={<Clicktool />} />
             <Route path="/projects/covid/" element={<Covid />} />
             <Route path="/resume/" element={<Resume />} />
-            <Route path="/design-process" element={<DesignProcess/>} />
+            <Route path="/design-process" element={<DesignProcess />} />
           </Routes>
         </main>
 
@@ -71,7 +77,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          <button
+          {/* <button
             className="green flex-vertical flex-center pb0"
             style={{
               borderRadius:
@@ -80,10 +86,9 @@ function App() {
             }}
           >
             <FontAwesomeIcon icon={solid("calendar")} />
-            <small>Let's Talk!</small>
-          </button>
+            <small>Availability</small>
+          </button> */}
         </a>
-
         <Footer />
 
         <div className="feedback">
@@ -99,8 +104,17 @@ function App() {
           </a>
         </div>
       </HashRouter>
+              {chatbotVisible && <Chuckbot />}
+
+        <button className={`${chatbotVisible ? 'chatbot-open-toggle btn3 small' : 'chatbot-toggle cta'}`} onClick={toggleChatbot}>
+          {chatbotVisible ? (
+            <FontAwesomeIcon icon={solid("xmark")} />
+          ) : (
+            <FontAwesomeIcon icon={solid("robot")} />
+        )}
+        </button>
     </div>
   );
-}
+};
 
 export default App;
