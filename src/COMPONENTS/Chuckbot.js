@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./Chuckbot.css";
 
+const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+
 const Chuckbot = () => {
   const [history, setHistory] = useState([]);
   const [typing, setTyping] = useState(false);
@@ -132,13 +134,22 @@ const Chuckbot = () => {
     inputRef.current.value = "";
   };
 
-  const formatMessage = (text) => {
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
+const formatMessage = (text) => {
+  const urlRegex = /(https?:\/\/[^\s]+(?:(?<![.,?!\-:;])|$))/g;
+const linkTextMap = {
+  "https://calendly.com/interview-chuck-howard/45-minute-meeting": "schedule a meeting with Chuck",
+  "https://www.linkedin.com/in/chuck-howard/": "visit Chuck's LinkedIn",
+  "https://www.behance.net/chuckhoward": "view Chuck's Behance portfolio",
+  "https://www.github.com/chulps": "check out Chuck's Github",
+  "https://stackoverflow.com/users/2146031/chulps": "explore Chuck's Stackoverflow profile",
+  // Add more links and their corresponding descriptions here
+};
   return text.split(urlRegex).map((part, i) => {
     if (part.match(urlRegex)) {
+      const linkText = linkTextMap[part] || part;
       return (
         <a key={i} href={part} target="_blank" rel="noopener noreferrer">
-          {part}
+          {linkText}
         </a>
       );
     } else {
@@ -148,16 +159,17 @@ const Chuckbot = () => {
 };
 
 
+
   return (
     <div id="chuckbot">
       <div id="chuckbot-header">
         <img src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
-        <h4>Chuckbot</h4>
+        <h5>Chuckbot</h5>
         <small>Say something</small>
       </div>
       <div className="history-container" ref={historyContainerRef}>
         <div
-          style={{ display: "flex", flexDirection: "column", width: "100%" }}
+          style={{ display: "flex", flexDirection: "column", width: "100%", position: "relative" }}
         >
           <div
             className="message-container"
@@ -188,7 +200,7 @@ const Chuckbot = () => {
                 width: "100%",
               }}
             >
-              &nbsp; "🤖 Chuckbot"&nbsp;{new Date().toLocaleTimeString()};
+              &nbsp;🤖 Chuckbot&nbsp;at&nbsp;{time};
             </small>
           </div>
 
@@ -230,7 +242,7 @@ const Chuckbot = () => {
               >
                 &nbsp;
                 {message.sender === "user" ? "😎 You" : "🤖 Chuckbot"}&nbsp;
-                {new Date().toLocaleTimeString()};
+                {time};
               </small>
             </div>
           ))}

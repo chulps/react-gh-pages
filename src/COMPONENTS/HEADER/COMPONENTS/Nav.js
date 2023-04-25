@@ -107,11 +107,10 @@ class Nav extends React.Component {
         {/* button */}
         <button
           id="mobile-nav-button"
-          className={
-            this.state.displaySideNav
+          className={`${this.state.displaySideNav
               ? "close md-ghost"
               : "md-ghost h4 py0 px1"
-          }
+            } green`}
           onClick={() =>
             this.setState({
               displaySideNav: !this.state.displaySideNav,

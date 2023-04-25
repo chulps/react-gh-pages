@@ -46,7 +46,7 @@ class SocialIcons extends Component {
     return (
       <div
         className="social-icons flex"
-        style={{ gap: "var(--unit2)" }}
+        style={{ gap: "calc(var(--unit1) + var(--unit0)" }}
       >
         {socialLinks.map((link) => (
           <a target="_blank" rel="noreferrer" href={link.href}>

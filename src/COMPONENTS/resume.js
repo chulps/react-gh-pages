@@ -129,8 +129,8 @@ Howfriends does Chuck have?
 More than 5, less than 10.
 
 
-What is Chuck's favorite color?
-Black
+What is Chuck's favorite color(s)?
+Black and Chrome
 
 
 What is Chuck's favorite food?
@@ -155,6 +155,42 @@ Thai - นิดหน่อย
 
 Speed
 ⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️
+
+
+Security Clearance
+None
+
+
+Willing to relocate?
+Remote only
+
+
+U.S. Work Authorization
+Yes
+
+
+Need sponsorship to work in the US?
+No
+
+
+Military Veteran?
+No
+
+
+Handicap?
+No
+
+
+Race/Ethnicity?
+White
+
+
+Pronouns
+He/Him
+
+
+Sex
+male
 
 
 Social Media
