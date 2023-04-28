@@ -138,7 +138,7 @@ Sushi
 
 
 What is Chuck's favorite drink?
-Speyburn
+Scotch
 
 
 What is Chuck's favorite movie?
@@ -146,7 +146,7 @@ Chappie
 
 
 What languages does Chuck speak?
-English - Fluent
+English - Fluent, Native speaker
 Japanese - 少し
 Spanish - Poco
 Vietnamese - một chút
@@ -202,4 +202,4 @@ Franz Klein
 Jeremy Guedes
 `
 
-export default resume;
+module.exports = resume;

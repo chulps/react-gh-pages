@@ -22,7 +22,7 @@ class NavContent extends React.Component {
         <li>
           <NavLink
             to="/projects/"
-            activeClassName="active"
+            activeclassname="active"
             onClick={onLinkClick}
           >
             Projects
@@ -30,7 +30,7 @@ class NavContent extends React.Component {
         </li>
 
         <li>
-          <NavLink to="/resume/" activeClassName="active" onClick={onLinkClick}>
+          <NavLink to="/resume/" activeclassname="active" onClick={onLinkClick}>
             Resumé
           </NavLink>
         </li>
@@ -42,8 +42,7 @@ class NavContent extends React.Component {
             rel="noreferrer"
           >
             <button className="green">
-              <FontAwesomeIcon icon={solid("calendar")} />
-              &nbsp;&nbsp;<i>Availability</i>
+              <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;<i>Let's talk!</i>
             </button>
           </a>
         </li>
@@ -107,10 +106,9 @@ class Nav extends React.Component {
         {/* button */}
         <button
           id="mobile-nav-button"
-          className={`${this.state.displaySideNav
-              ? "close md-ghost"
-              : "md-ghost h4 py0 px1"
-            } green`}
+          className={`${
+            this.state.displaySideNav ? "close md-ghost" : "md-ghost h4 py0 px1"
+          } green`}
           onClick={() =>
             this.setState({
               displaySideNav: !this.state.displaySideNav,

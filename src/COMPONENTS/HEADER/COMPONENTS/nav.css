@@ -86,10 +86,10 @@ nav .active::after {
   content: "";
   height: 5px;
   position: absolute;
-  top: calc(100% + 4.25px);
+  top: calc(100% + 5.5px);
   left: 0;
   background: var(--primary);
-  border-radius: 2px;
+  border-radius: 2.5px;
   display: none;
 }
 

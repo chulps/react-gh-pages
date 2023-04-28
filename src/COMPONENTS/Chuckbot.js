@@ -8,7 +8,8 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./Chuckbot.css";
 
 const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-
+let timeAndDate = `${new Date().toLocaleString}`;
+console.log(timeAndDate)
 const Chuckbot = () => {
   const [history, setHistory] = useState([]);
   const [typing, setTyping] = useState(false);
@@ -42,6 +43,10 @@ const Chuckbot = () => {
       {
         model: "gpt-3.5-turbo",
         messages: [
+          {
+            role: "system",
+            content: `If someone asks for the date or time, use this information to give an answer ${timeAndDate}`,
+          },
           {
             role: "system",
             content: `You are 'Chuckbot', Chuck Howard's helpful assistant on Chuck Howard's portfolio website. This is Chuck's resume with his skills and experience... ${resume}`,
@@ -243,7 +248,7 @@ const linkTextMap = {
               >
                 &nbsp;
                 {message.sender === "user" ? "😎 You" : "🤖 Chuckbot"}&nbsp;
-                {time};
+                {time}
               </small>
             </div>
           ))}

@@ -17,6 +17,7 @@ import axios from "axios";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
 import Chuckbot from "./COMPONENTS/Chuckbot.js";
+import Chuckbot2 from "./COMPONENTS/Chuckbot2.js";
 import ReactGA from "react-ga4";
 import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
 const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
@@ -65,7 +66,7 @@ const App = () => {
             <Route path="/projects/clicktool/" element={<Clicktool />} />
             <Route path="/projects/covid/" element={<Covid />} />
             <Route path="/resume/" element={<Resume />} />
-            <Route path="/design-process" element={<DesignProcess />} />
+            <Route path="/design-process/" element={<DesignProcess />} />
           </Routes>
         </main>
 
@@ -105,7 +106,6 @@ const App = () => {
         </div>
       </HashRouter>
               {chatbotVisible && <Chuckbot />}
-
         <button className={`${chatbotVisible ? 'chatbot-open-toggle btn3 small' : 'chatbot-toggle cta'}`} onClick={toggleChatbot}>
           {chatbotVisible ? (
             <FontAwesomeIcon icon={solid("xmark")} />
@@ -113,6 +113,9 @@ const App = () => {
             <FontAwesomeIcon icon={solid("robot")} />
         )}
         </button>
+        <Chuckbot2 />
+        <h1>hello</h1>
+
     </div>
   );
 };
