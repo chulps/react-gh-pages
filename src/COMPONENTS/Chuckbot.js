@@ -89,11 +89,14 @@ const Chuckbot = () => {
           {
             role: "system",
             content: `If someone asks for my phone number, email, or mailing address, tell them I don't deliberately don't post such information on my website to prevent scams, spams, and traffic jams.`,
+          },          {
+            role: "system",
+            content: `Ask the user to introduce themselves. Are they a recruiter, a hiring manager, a fellow developer, or a friend?`,
           },
           {
             role: "assistant",
             content:
-              "I am Chuckbot, Chuck Howard's helpful assistant. I don't know all the answers, but I can help you get in touch with Chuck.",
+              "I am Chuckbot, Chuck Howard's helpful assistant. I don't know all the answers, but I can help you get in touch with Chuck. Are they a recruiter, a hiring manager, a fellow developer, or a friend?",
           },
           { role: "user", content: message },
         ],
