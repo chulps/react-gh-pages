@@ -1,4 +1,4 @@
-name: Deploy React App to GitHub Pages
+name: pages-build-deployment
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
         REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
         REACT_APP_COVID_API_KEY: ${{ secrets.REACT_APP_COVID_API_KEY }}
 
-    - name: Deploy to GitHub Pages
+    - name: pages-build-deployment
       run: |
         git config --global user.name "chulps"
         git config --global user.email "chuckoward@gmail.com"
