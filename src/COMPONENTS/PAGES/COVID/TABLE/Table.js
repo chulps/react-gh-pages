@@ -183,6 +183,7 @@ const Table = () => {
     "S Korea": "South Korea",
     "DPRK": "North Korea",
     "CAR": "Central African Republic",
+    "DRC": "Democratic Republic of the Congo",
     "USA": "United States of America",
     "Diamond-Princess": "Diamond Princess (🚢)",
     "St-Barth": "Saint Barth",
