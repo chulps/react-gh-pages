@@ -63,7 +63,7 @@ class Yarden extends Component {
             </div>
             <div>
               <label>Country:</label>
-              <h5>🇺🇸 USA</h5>
+              <h5><span role="img" aria-label="USA">🇺🇸</span>&nbsp;USA</h5>
             </div>
           </div>
         </section>
@@ -239,7 +239,7 @@ class Yarden extends Component {
                   <small>4. Use the letter "Y" somehow</small>
                   <small>
                     5. We are gonna trademark this... so it needs to be simple,
-                    solid, and timeless. 😅
+                    solid, and timeless. <span role="img" aria-label="nervous laughter">😅</span>
                   </small>
                 </div>
               </div>

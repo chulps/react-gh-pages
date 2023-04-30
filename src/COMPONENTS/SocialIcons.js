@@ -49,7 +49,7 @@ class SocialIcons extends Component {
         style={{ gap: "calc(var(--unit1) + var(--unit0)" }}
       >
         {socialLinks.map((link) => (
-          <a target="_blank" rel="noreferrer" href={link.href}>
+          <a target="_blank" rel="noopener noreferrer" href={link.href}>
             <img src={link.imgSrc} alt={link.alt} />
             <small>{link.text}</small>
           </a>

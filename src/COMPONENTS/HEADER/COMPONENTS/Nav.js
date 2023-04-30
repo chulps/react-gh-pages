@@ -39,7 +39,7 @@ class NavContent extends React.Component {
           <a
             href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <button className="green">
               <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;<i>Let's talk!</i>
@@ -93,7 +93,7 @@ class Nav extends React.Component {
               style={{
                 borderRadius: "var(--unit1)",
                 color: "var(--transBlueC-75)",
-                background: "var(--green4)",
+                background: "var(--transBlueC-10)",
               }}
             >
               <span style={{ color: "var(--green0)" }} className="mr0">
@@ -108,8 +108,8 @@ class Nav extends React.Component {
         <button
           id="mobile-nav-button"
           className={`${
-            this.state.displaySideNav ? "close md-ghost" : "md-ghost h4 py0 px1"
-          } green`}
+            this.state.displaySideNav ? "close md-ghost btn3" : "md-ghost green"
+          } py0 px1 h4`}
           onClick={() =>
             this.setState({
               displaySideNav: !this.state.displaySideNav,

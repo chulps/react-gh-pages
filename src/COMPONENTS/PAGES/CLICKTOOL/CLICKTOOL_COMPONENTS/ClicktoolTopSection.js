@@ -38,7 +38,7 @@ class ClicktoolTopSection extends React.Component {
               </div>
               <div>
                 <label>Country:</label>
-                <h5>🇺🇸 USA</h5>
+                <h5><span role="img" aria-label="USA">🇺🇸</span> USA</h5>
               </div>
             </div>
           </div>

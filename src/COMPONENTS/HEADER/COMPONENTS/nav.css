@@ -23,7 +23,7 @@ nav ul li:active {
   top: 0;
   color: white;
   transition: all 0.3s;
-  transform: translate(-100vw, 0);
+  transform: translate(100vw, -100vh);
   will-change: transform;
   opacity: 0;
 }
@@ -66,7 +66,7 @@ nav ul li:active {
 }
 
 #mobile-nav-button {
-  transition: 1s;
+  transition: 0.4s ease-in-out;
   z-index: 2;
 }
 
@@ -93,7 +93,7 @@ nav .active::after {
   display: none;
 }
 
-@media screen and (min-width: 7px) {
+@media screen and (min-width: 768px) {
   nav .active::after {
     display: block;
   }

@@ -12,7 +12,7 @@ import Resume from "./COMPONENTS/PAGES/RESUME/Resume.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./App.css";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
@@ -54,7 +54,7 @@ const App = () => {
         <Header />
 
         {/* site content renders here */}
-        <main style={{ background: "var(--siteBackground)" }}>
+        <main style={{ background: "var(--siteBackground)", position: 'relative' }}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/projects/xprize/" element={<Xprize />} />
@@ -70,31 +70,12 @@ const App = () => {
         </main>
 
         <ProjectSection />
-        <a
-          className="md-ghost fixed"
-          style={{ bottom: "var(--unit1)", right: "var(--unit1)" }}
-          href="https://calendly.com/interview-chuck-howard/30-minutes"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {/* <button
-            className="green flex-vertical flex-center pb0"
-            style={{
-              borderRadius:
-                "var(--unit3) var(--unit3) var(--unit3) var(--unit1",
-              fontWeight: "normal",
-            }}
-          >
-            <FontAwesomeIcon icon={solid("calendar")} />
-            <small>Availability</small>
-          </button> */}
-        </a>
         <Footer />
 
         <div className="feedback">
           <a
             href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <button className="btn3 small">
@@ -104,15 +85,21 @@ const App = () => {
           </a>
         </div>
       </HashRouter>
-              {chatbotVisible && <Chuckbot />}
-
-        <button className={`${chatbotVisible ? 'chatbot-open-toggle btn3 small' : 'chatbot-toggle cta'}`} onClick={toggleChatbot}>
-          {chatbotVisible ? (
-            <FontAwesomeIcon icon={solid("xmark")} />
-          ) : (
-            <FontAwesomeIcon icon={solid("robot")} />
+      <Chuckbot style={{transform: `scale(${chatbotVisible ? 1 : 0})`}} />
+      <button
+        className={`${
+          chatbotVisible
+            ? "chatbot-open-toggle btn3 small red py1"
+            : "chatbot-toggle cta p1"
+        } flex-vertical flex-center`}
+        onClick={toggleChatbot}
+      >
+        {chatbotVisible ? (
+          <FontAwesomeIcon className="h4 p-none" icon={solid("xmark")} />
+        ) : (
+          <FontAwesomeIcon className="h4 p-none" style={{marginBottom: '0.25em'}} icon={solid("robot")} />
         )}
-        </button>
+      </button>
     </div>
   );
 };
