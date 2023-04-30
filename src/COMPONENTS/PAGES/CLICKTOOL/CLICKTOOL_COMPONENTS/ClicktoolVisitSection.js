@@ -25,7 +25,7 @@ class ClicktoolVisitSection extends React.Component {
             
           </p>
           <p>
-            <a href="https://xd.adobe.com/view/c0a28198-8833-42eb-4e46-4843cd6c3d12-b693/screen/66fcfcec-ada9-4acf-b0ba-89e1d1bb5a40" target="_blank" rel="noreferrer"><button>Let's go!</button></a>
+            <a href="https://xd.adobe.com/view/c0a28198-8833-42eb-4e46-4843cd6c3d12-b693/screen/66fcfcec-ada9-4acf-b0ba-89e1d1bb5a40" target="_blank" rel="noopener noreferrer"><button>Let's go!</button></a>
           </p>
         </section>
         </>

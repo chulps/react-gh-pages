@@ -1,0 +1,35 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.15.0
+
+    - name: Install dependencies and build
+      run: |
+        npm ci
+        npm run build
+      env:
+        REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+        REACT_APP_COVID_API_KEY: ${{ secrets.REACT_APP_COVID_API_KEY }}
+
+    - name: Deploy to GitHub Pages
+      run: |
+        git config --global user.name "chulps"
+        git config --global user.email "chuckoward@gmail.com"
+        npm run deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

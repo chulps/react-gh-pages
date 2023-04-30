@@ -90,7 +90,7 @@ class Foundry extends Component {
             <p className="my1">
               Foundry Digital is a Bitcoing Mining and Staking Company and
               subsidiary of a larger corporation called&nbsp;
-              <a target="_blank" rel="noreferrer" href="https://dcg.co/">
+              <a target="_blank" rel="noopener noreferrer" href="https://dcg.co/">
                 "Digital Currency Group" (DCG)
               </a>
               . They provide end-to-end services for industrial scale Bitcoin
@@ -103,7 +103,7 @@ class Foundry extends Component {
                 <React.Fragment key={index}>
                   {index > 0 &&
                     (index < subsidiaries.length - 1 ? ", " : ", and ")}
-                  <a target="_blank" rel="noreferrer" href={link.href}>
+                  <a target="_blank" rel="noopener noreferrer" href={link.href}>
                     {link.name}
                   </a>
                 </React.Fragment>
@@ -128,7 +128,7 @@ class Foundry extends Component {
               </div>
               <div>
                 <label>Country:</label>
-                <h5>🇺🇸 USA</h5>
+                <h5><span role="img" aria-label="USA">🇺🇸</span>&nbsp;USA</h5>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ class Foundry extends Component {
                 <h5>Design System:</h5>
                 <small>
                   We started a super robust token based design system called
-                  "Metal" 🤘.
+                  "Metal"&nbsp;<span role="img" aria-label="metal">🤘</span>.
                 </small>
               </div>
             </div>
@@ -203,7 +203,7 @@ class Foundry extends Component {
                   agency called&nbsp;
                   <a
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     href="https://www.upstateinteractive.io/"
                   >
                     Upstate Interactive

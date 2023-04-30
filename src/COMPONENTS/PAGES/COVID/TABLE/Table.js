@@ -165,7 +165,7 @@ const Table = () => {
         case "Oceania":
           return <h3><FontAwesomeIcon icon={solid("earth-oceania")} /></h3>;
         case "All":
-          return <h3>🌎</h3>;
+          return <h3><span role="img" aria-label="earth">🌎</span></h3>;
         default:
           return <h3>""</h3>;
       }

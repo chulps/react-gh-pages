@@ -52,7 +52,7 @@ class CRIGenetics extends Component {
             </div>
             <div>
               <label>Country:</label>
-              <p className="bold">🇺🇸 USA</p>
+              <p className="bold"><span role="img" aria-label="USA">🇺🇸</span>&nbsp;USA</p>
             </div>
           </div>
         </section>
@@ -182,7 +182,7 @@ class CRIGenetics extends Component {
             </p>
             <a
               href="https://demo.crigenetics.com/dash"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <button className="green">View Demo</button>
