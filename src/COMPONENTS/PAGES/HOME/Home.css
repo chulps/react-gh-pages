@@ -167,7 +167,6 @@
   width: auto;
   right: 0;
   min-height: 400px;
-  transition: all 0.2s ease-out;
   will-change: all;
 }
 
