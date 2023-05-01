@@ -1,20 +1,11 @@
-import axios from 'axios';
-import dotenv from 'dotenv';
+// covid api call
 
-dotenv.config();
+import axios from 'axios';
 
 const fetchCovidStats = async () => {
   try {
-    const options = {
-      method: 'GET',
-      url: 'https://covid-193.p.rapidapi.com/statistics',
-      headers: {
-        'X-RapidAPI-Key': process.env.REACT_APP_COVID_API_KEY,
-        'X-RapidAPI-Host': 'covid-193.p.rapidapi.com',
-      },
-    };
-    const response = await axios.request(options);
-    return { data: response.data.response, error: null };
+    const response = await axios.get('https://limitless-lake-38337.herokuapp.com/api/covid-stats');
+    return { data: response.data, error: null };
   } catch (err) {
     return { data: null, error: err.message };
   }

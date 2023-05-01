@@ -30,7 +30,7 @@ const Table = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data, error } = await fetchCovidStats(); // Change this line
+      const { data, error } = await fetchCovidStats();
       setStats(data);
       setError(error);
     };
