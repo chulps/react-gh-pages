@@ -121,7 +121,7 @@ const App = () => {
       >
         {unreadMessagesCount}
       </small>
-      <small style={{lineHeight: 1}}><small style={{lineHeight: 1}}>ChuckGPT</small></small>
+      {chatbotVisible ? '' : <small style={{lineHeight: 1}}><small style={{lineHeight: 1}}>ChuckGPT</small></small> }
       </button>
 
     </div>
