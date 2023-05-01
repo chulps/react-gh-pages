@@ -8,11 +8,6 @@ import "./ChuckGPT.css";
 import ReactGA4 from "react-ga4";
 import ChuckGPTTraining from "./ChuckGPTTraining.js";
 
-const time = new Date().toLocaleTimeString([], {
-  hour: "2-digit",
-  minute: "2-digit",
-});
-
 const ChuckGPT = (props) => {
   const [history, setHistory] = useState([]);
   const [typing, setTyping] = useState(false);
