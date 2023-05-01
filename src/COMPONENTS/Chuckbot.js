@@ -5,6 +5,7 @@ import TextareaAutosize from "react-textarea-autosize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./Chuckbot.css";
+import ReactGA4 from "react-ga4";
 import ChuckbotTraining from "./ChuckbotTraining.js";
 
 const time = new Date().toLocaleTimeString([], {
@@ -63,6 +64,25 @@ const Chuckbot = (props) => {
         },
       ]);
       setTyping(false);
+
+      // Send GA4 event with message content and user location data
+      const ipAddress = await axios
+        .get("https://api.ipify.org?format=json")
+        .then((res) => res.data.ip);
+      const locationResponse = await axios.get(
+        `https://geolocation-db.com/json/${ipAddress}`
+      );
+      const location = locationResponse.data;
+      ReactGA4.event({
+        category: "Chuckbot Message",
+        action: `Message from: ${ipAddress}`,
+        label: message, // optional
+        location: `${location.city}, ${location.country_name}`,
+      });
+
+      if (typeof props.onNewMessage === "function") {
+        props.onNewMessage();
+      }
     } catch (error) {
       console.error("Error calling backend:", error.message);
       setTyping(false);

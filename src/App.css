@@ -42,3 +42,41 @@
   right: var(--unit2);
   z-index: 1;
 }
+
+.unread-badge {
+  position: absolute;
+  top: -0.7em;
+  left: -0.7em;
+  height: calc(var(--unit1) + var(--unit0));
+  background-color: var(--red0);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  transform-origin: bottom center;
+  animation: newMessageAnimation 0.4s ease-in-out;
+}
+
+@keyframes newMessageAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -24,9 +24,15 @@ ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   const [chatbotVisible, setChatbotVisible] = useState(false);
+  const [unreadMessagesCount, setUnreadMessagesCount] = useState(1);
+
+  const incrementUnreadMessagesCount = () => {
+    setUnreadMessagesCount((prevCount) => prevCount + 1);
+  };
 
   const toggleChatbot = () => {
     setChatbotVisible(!chatbotVisible);
+    setUnreadMessagesCount(0);
   };
 
   //creating IP state
@@ -54,7 +60,9 @@ const App = () => {
         <Header />
 
         {/* site content renders here */}
-        <main style={{ background: "var(--siteBackground)", position: 'relative' }}>
+        <main
+          style={{ background: "var(--siteBackground)", position: "relative" }}
+        >
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/projects/xprize/" element={<Xprize />} />
@@ -85,7 +93,10 @@ const App = () => {
           </a>
         </div>
       </HashRouter>
-      <Chuckbot style={{transform: `scale(${chatbotVisible ? 1 : 0})`}} />
+      <Chuckbot
+        style={{ transform: `scale(${chatbotVisible ? 1 : 0})` }}
+        onNewMessage={incrementUnreadMessagesCount}
+      />
       <button
         className={`${
           chatbotVisible
@@ -97,9 +108,21 @@ const App = () => {
         {chatbotVisible ? (
           <FontAwesomeIcon className="h4 p-none" icon={solid("xmark")} />
         ) : (
-          <FontAwesomeIcon className="h4 p-none" style={{marginBottom: '0.25em'}} icon={solid("robot")} />
+          <FontAwesomeIcon
+            className="h4 p-none"
+            style={{ marginBottom: "0.25em" }}
+            icon={solid("robot")}
+          />
         )}
+              <small
+        className={`unread-badge ${
+          chatbotVisible || unreadMessagesCount === 0 ? "hidden" : ""
+        }`}
+      >
+        {unreadMessagesCount}
+      </small>
       </button>
+
     </div>
   );
 };
