@@ -1,13 +1,12 @@
 import resume from "./resume.js";
-const time = new Date().toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-});
 
 const ChuckbotTraining = [
     {
       role: "system",
-      content: `This current time is ${time}`,
+      content: `This current time is ${new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      })}`,
     },
     {
       role: "system",

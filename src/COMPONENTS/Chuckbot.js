@@ -136,7 +136,10 @@ const Chuckbot = (props) => {
             <span role="img" aria-label="Chuckbot">
               🤖
             </span>
-            &nbsp;&nbsp;Chuckbot&nbsp;at&nbsp;{time}
+            &nbsp;&nbsp;Chuckbot&nbsp;at&nbsp;{new Date().toLocaleTimeString([], {
+  hour: "2-digit",
+  minute: "2-digit",
+})}
           </small>
         </div>
 
@@ -173,7 +176,10 @@ const Chuckbot = (props) => {
             >
               &nbsp;
               {message.sender === "user" ? "😎 You" : "🤖 Chuckbot"}&nbsp;
-              {time}
+              {new Date().toLocaleTimeString([], {
+  hour: "2-digit",
+  minute: "2-digit",
+})}
             </small>
           </div>
         ))}
