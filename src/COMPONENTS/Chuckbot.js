@@ -42,7 +42,7 @@ const Chuckbot = (props) => {
   
     try {
       const response = await axios.post(
-        'https://limitless-lake-38337.herokuapp.com/', // Replace with your backend server's URL
+        'https://limitless-lake-38337.herokuapp.com/api/openai', // Replace with your backend server's URL
         {
           model: 'gpt-3.5-turbo',
           messages: [...ChuckbotTraining, { role: 'user', content: message }],
