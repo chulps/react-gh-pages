@@ -18,7 +18,6 @@ const Chuckbot = (props) => {
   const inputRef = useRef(null);
   const historyContainerRef = useRef(null);
 
-
   useEffect(() => {
     if (typing) {
       const timer = setTimeout(() => setTyping(false), 5000);
@@ -34,18 +33,19 @@ const Chuckbot = (props) => {
   }, [history, typing]);
 
   const sendMessage = async (message) => {
+    const timestamp = new Date();
     setTyping(true);
     setHistory((prevHistory) => [
       ...prevHistory,
-      { text: message, sender: "user" },
+      { text: message, sender: "user", timestamp },
     ]);
-  
+
     try {
       const response = await axios.post(
-        'https://limitless-lake-38337.herokuapp.com/api/openai', // Update the URL here
+        "https://limitless-lake-38337.herokuapp.com/api/openai",
         {
-          model: 'gpt-3.5-turbo',
-          messages: [...ChuckbotTraining, { role: 'user', content: message }],
+          model: "gpt-3.5-turbo",
+          messages: [...ChuckbotTraining, { role: "user", content: message }],
           temperature: 0.7,
           max_tokens: 80,
           top_p: 1,
@@ -53,22 +53,21 @@ const Chuckbot = (props) => {
           presence_penalty: 0,
         }
       );
-      
-  
+
       setHistory((prevHistory) => [
         ...prevHistory,
         {
           text: `${response.data.choices[0].message.content}`,
           sender: "Chuckbot",
+          timestamp,
         },
       ]);
       setTyping(false);
     } catch (error) {
-      console.error('Error calling backend:', error.message);
+      console.error("Error calling backend:", error.message);
       setTyping(false);
     }
   };
-  
 
   const handleInput = (e) => {
     if (e.key === "Enter") {
@@ -136,10 +135,11 @@ const Chuckbot = (props) => {
             <span role="img" aria-label="Chuckbot">
               🤖
             </span>
-            &nbsp;&nbsp;Chuckbot&nbsp;at&nbsp;{new Date().toLocaleTimeString([], {
-  hour: "2-digit",
-  minute: "2-digit",
-})}
+            &nbsp;&nbsp;Chuckbot&nbsp;at&nbsp;
+            {new Date().toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
           </small>
         </div>
 
@@ -175,11 +175,12 @@ const Chuckbot = (props) => {
               }}
             >
               &nbsp;
-              {message.sender === "user" ? "😎 You" : "🤖 Chuckbot"}&nbsp;
-              {new Date().toLocaleTimeString([], {
-  hour: "2-digit",
-  minute: "2-digit",
-})}
+              {message.sender === "user" ? "😎 You" : "🤖 Chuckbot"}
+              &nbsp;at&nbsp;
+              {message.timestamp.toLocaleTimeString([], {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
             </small>
           </div>
         ))}
