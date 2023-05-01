@@ -4,16 +4,16 @@ import Logo from "../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
 import TextareaAutosize from "react-textarea-autosize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import "./Chuckbot.css";
+import "./ChuckGPT.css";
 import ReactGA4 from "react-ga4";
-import ChuckbotTraining from "./ChuckbotTraining.js";
+import ChuckGPTTraining from "./ChuckGPTTraining.js";
 
 const time = new Date().toLocaleTimeString([], {
   hour: "2-digit",
   minute: "2-digit",
 });
 
-const Chuckbot = (props) => {
+const ChuckGPT = (props) => {
   const [history, setHistory] = useState([]);
   const [typing, setTyping] = useState(false);
   const inputRef = useRef(null);
@@ -46,7 +46,7 @@ const Chuckbot = (props) => {
         "https://limitless-lake-38337.herokuapp.com/api/openai",
         {
           model: "gpt-3.5-turbo",
-          messages: [...ChuckbotTraining, { role: "user", content: message }],
+          messages: [...ChuckGPTTraining, { role: "user", content: message }],
           temperature: 0.7,
           max_tokens: 80,
           top_p: 1,
@@ -59,7 +59,7 @@ const Chuckbot = (props) => {
         ...prevHistory,
         {
           text: `${response.data.choices[0].message.content}`,
-          sender: "Chuckbot",
+          sender: "ChuckGPT",
           timestamp,
         },
       ]);
@@ -74,7 +74,7 @@ const Chuckbot = (props) => {
       );
       const location = locationResponse.data;
       ReactGA4.event({
-        category: "Chuckbot Message",
+        category: "ChuckGPT Message",
         action: `Message from: ${ipAddress}`,
         label: message, // optional
         location: `${location.city}, ${location.country_name}`,
@@ -130,8 +130,8 @@ const Chuckbot = (props) => {
   };
 
   return (
-    <div id="chuckbot" className={props.className} style={props.style}>
-      <div id="chuckbot-header">
+    <div id="ChuckGPT" className={props.className} style={props.style}>
+      <div id="ChuckGPT-header">
         <img src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
         <div
           className="mt0"
@@ -141,21 +141,21 @@ const Chuckbot = (props) => {
             flexDirection: "column",
           }}
         >
-          <h5>&lt;Chuckbot /&gt;</h5>
+          <h5>&lt;ChuckGPT /&gt;</h5>
           <small>Chuck's AI Assistant</small>
         </div>
       </div>
       <div className="history-container" ref={historyContainerRef}>
         <div className="message-container">
           <div className="message">
-            Hey I'm Chuckbot, Chuck's AI assistant. Let me know if you have any
+            Hey I'm ChuckGPT, Chuck's AI assistant. Let me know if you have any
             questions about Chuck's background or availability.
           </div>
           <small className="message-timestamp">
-            <span role="img" aria-label="Chuckbot">
+            <span role="img" aria-label="ChuckGPT">
               🤖
             </span>
-            &nbsp;&nbsp;Chuckbot&nbsp;at&nbsp;
+            &nbsp;&nbsp;ChuckGPT&nbsp;at&nbsp;
             {new Date().toLocaleTimeString([], {
               hour: "2-digit",
               minute: "2-digit",
@@ -195,7 +195,7 @@ const Chuckbot = (props) => {
               }}
             >
               &nbsp;
-              {message.sender === "user" ? "😎 You" : "🤖 Chuckbot"}
+              {message.sender === "user" ? "😎 You" : "🤖 ChuckGPT"}
               &nbsp;at&nbsp;
               {message.timestamp.toLocaleTimeString([], {
                 hour: "2-digit",
@@ -227,7 +227,7 @@ const Chuckbot = (props) => {
               </p>
             </div>
             <small className="message-timestamp">
-              <span role="img" aria-label="Chuckbot">
+              <span role="img" aria-label="ChuckGPT">
                 🤖
               </span>
               Typing...
@@ -239,4 +239,4 @@ const Chuckbot = (props) => {
   );
 };
 
-export default Chuckbot;
+export default ChuckGPT;

@@ -16,7 +16,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectSection from "./COMPONENTS/ProjectsSection.js";
-import Chuckbot from "./COMPONENTS/Chuckbot.js";
+import ChuckGPT from "./COMPONENTS/ChuckGPT.js";
 import ReactGA from "react-ga4";
 import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
 const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
@@ -93,7 +93,7 @@ const App = () => {
           </a>
         </div>
       </HashRouter>
-      <Chuckbot
+      <ChuckGPT
         style={{ transform: `scale(${chatbotVisible ? 1 : 0})` }}
         onNewMessage={incrementUnreadMessagesCount}
       />

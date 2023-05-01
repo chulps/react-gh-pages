@@ -1,6 +1,6 @@
-/* Chuckbot.css */
+/* ChuckGPT.css */
 
-#chuckbot {
+#ChuckGPT {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #chuckbot {
+  #ChuckGPT {
     max-width: var(--unit6);
     right:0;
     margin-left: auto;
@@ -28,7 +28,7 @@
 }
 
 @media (hover: none) {
-  #chuckbot {
+  #ChuckGPT {
     max-width: var(--unit6);
     right:0;
     margin-left: auto;
@@ -37,7 +37,7 @@
 }
   
 
-#chuckbot #chuckbot-header {
+#ChuckGPT #ChuckGPT-header {
   display: flex;
   align-items: center;
   padding: var(--unit1);
