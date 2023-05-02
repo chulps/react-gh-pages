@@ -61,18 +61,11 @@ const ChuckGPT = (props) => {
       setTyping(false);
 
       // Send GA4 event with message content and user location data
-      const ipAddress = await axios
-        .get("https://api.ipify.org?format=json")
-        .then((res) => res.data.ip);
-      const locationResponse = await axios.get(
-        `https://geolocation-db.com/json/${ipAddress}`
-      );
-      const location = locationResponse.data;
+
       ReactGA4.event({
-        category: "ChuckGPT Message",
-        action: `Message from: ${ipAddress}`,
-        label: message, // optional
-        location: `${location.city}, ${location.country_name}`,
+        category: 'ChuckGPT',
+        action: '🤖 Message',
+        label: `${message}`, // optional
       });
 
       if (typeof props.onNewMessage === "function") {
