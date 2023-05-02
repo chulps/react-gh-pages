@@ -208,6 +208,9 @@ const Table = () => {
 
               </td>
               <td data-label="Total Tests">
+                <data>{formatNumberWithCommas(item.population)}</data>
+              </td>
+              <td data-label="Total Tests">
                 <data>{formatNumberWithCommas(item.tests.total)}</data>
               </td>
               <td data-label="Total Cases">
@@ -227,6 +230,10 @@ const Table = () => {
             <th onClick={() => onHeaderClick("country")}>
               <FontAwesomeIcon icon={solid("sort")} />
               &nbsp;{visibilityfilter === "continents" ? "Continent" : "Country"}
+            </th>
+            <th onClick={() => onHeaderClick("population")}>
+              <FontAwesomeIcon icon={solid("sort")} />
+              &nbsp;Population
             </th>
             <th onClick={() => onHeaderClick("tests.total")}>
               <FontAwesomeIcon icon={solid("sort")} />
