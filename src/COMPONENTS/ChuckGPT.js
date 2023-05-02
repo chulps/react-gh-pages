@@ -82,8 +82,7 @@ const ChuckGPT = (props) => {
 
       ReactGA4.event({
         category: 'ChuckGPT',
-        action: '🤖 Message',
-        label: `${message}`, // optional
+        action: `Messsage: ${message}`,
       });
 
       if (typeof props.onNewMessage === "function") {

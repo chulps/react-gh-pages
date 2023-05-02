@@ -8,6 +8,25 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- i
 import CCBG from "./cross-campus-bg.jpg";
 import { Helmet } from "react-helmet";
 
+const developmentTools = [
+  { tool: "Angular" },
+  { tool: "Bitbucket" },
+  { tool: "CSS" },
+  { tool: "ChatGPT" },
+  { tool: "Github" },
+  { tool: "Gitlab" },
+  { tool: "HTML" },
+  { tool: "HUBL" },
+  { tool: "Javascript" },
+  { tool: "Liquid" },
+  { tool: "React" },
+  { tool: "React Native" },
+  { tool: "Sass" },
+  { tool: "Sourcetree" },
+  { tool: "SVG" },
+  { tool: "Vue" },
+];
+
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -577,22 +596,11 @@ const Home = () => {
               so that I can quickly build prototypes at the highest fidelity.
             </p>
             <div className="development-tools py1">
-              <small>HTML</small>
-              <small>CSS</small>
-              <small>Javascript</small>
-              <small>SVG</small>
-              <small>Sass</small>
-              <small>React</small>
-              <small>React Native</small>
-              <small>Sourcetree</small>
-              <small>Bitbucket</small>
-              <small>Github</small>
-              <small>Gitlab</small>
-              <small>Angular</small>
-              <small>Vue</small>
-              <small>HUBL</small>
-              <small>Liquid</small>
-              <small>ChatGPT</small>
+              {developmentTools
+                .sort((a, b) => a.tool.localeCompare(b.tool))
+                .map((tool) => (
+                  <small key={tool.tool}>{tool.tool}</small>
+                ))}
             </div>
           </div>
 

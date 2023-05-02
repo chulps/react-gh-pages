@@ -42,7 +42,7 @@ class NavContent extends React.Component {
             rel="noopener noreferrer"
           >
             <button className="green">
-              <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;<i>Let's talk!</i>
+            <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;Book a call!
             </button>
           </a>
         </li>
