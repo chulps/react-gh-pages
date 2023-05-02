@@ -9,7 +9,7 @@ const fetchCovidStats = async () => {
       method: 'GET',
       url: 'https://covid-193.p.rapidapi.com/statistics',
       headers: {
-        'X-RapidAPI-Key': process.env.REACT_APP_COVID_API_KEY,
+        'X-RapidAPI-Key': '9f5d0c8553msh7e4cfdabfc5e0f9p112f57jsnde15b5674f41',
         'X-RapidAPI-Host': 'covid-193.p.rapidapi.com',
       },
     };
