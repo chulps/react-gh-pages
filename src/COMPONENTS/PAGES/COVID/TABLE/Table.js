@@ -1,3 +1,5 @@
+// Table.js
+
 import React, { useState, useEffect } from "react";
 import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import "./Table.css";
@@ -7,11 +9,7 @@ import { fetchCovidStats } from "../api";
 import { countryNameToCode } from "./countryNameToCode"
 import "./Loader.css";
 
-// api lives here
-// https://rapidapi.com/api-sports/api/covid-193/
-
 const Table = () => {
-
 
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
@@ -30,8 +28,9 @@ const Table = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data, error } = await fetchCovidStats(); // Change this line
+      const { data, error } = await fetchCovidStats();
       setStats(data);
+      console.log(data)
       setError(error);
     };
 
@@ -97,7 +96,7 @@ const Table = () => {
       return [];
     }
 
-    let data = [...stats];
+    let data = Array.isArray(stats) ? [...stats] : [];
 
     if (sortConfig.key) {
       data.sort((a, b) => {
