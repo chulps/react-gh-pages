@@ -9,8 +9,8 @@ class NavContent extends React.Component {
   render() {
     const { onLinkClick } = this.props;
     return (
-      <ul className="flex-center flex-vertical md-flex-horizontal">
-        <li className="md-ghost">
+      <ul className="flex-center flex-vertical sm-flex-horizontal">
+        <li className="sm-ghost">
           <img
             style={{ filter: "hue-rotate(150deg)" }}
             height="100px"
@@ -108,7 +108,7 @@ class Nav extends React.Component {
         <button
           id="mobile-nav-button"
           className={`${
-            this.state.displaySideNav ? "close md-ghost btn3" : "md-ghost green"
+            this.state.displaySideNav ? "close sm-ghost btn3" : "sm-ghost green"
           } py0 px1 h4`}
           onClick={() =>
             this.setState({
@@ -125,7 +125,7 @@ class Nav extends React.Component {
 
         {/* desktop */}
         <span
-          className="ghost md-flex"
+          className="ghost sm-flex"
           style={{
             background: "var(--transWhite-75)",
             borderRadius: "var(--unit3) 0 0 var(--unit3)",

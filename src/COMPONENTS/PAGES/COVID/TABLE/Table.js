@@ -30,7 +30,6 @@ const Table = () => {
     const fetchData = async () => {
       const { data, error } = await fetchCovidStats();
       setStats(data);
-      console.log(data)
       setError(error);
     };
 

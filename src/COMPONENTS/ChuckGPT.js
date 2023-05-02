@@ -8,6 +8,14 @@ import "./ChuckGPT.css";
 import ReactGA4 from "react-ga4";
 import ChuckGPTTraining from "./ChuckGPTTraining.js";
 
+
+
+// make an api call to the covid-19 api and return the data as a variable
+
+
+
+
+
 const ChuckGPT = (props) => {
   const [history, setHistory] = useState([]);
   const [typing, setTyping] = useState(false);
@@ -27,6 +35,16 @@ const ChuckGPT = (props) => {
         historyContainerRef.current.scrollHeight;
     }
   }, [history, typing]);
+
+  // write a function that gets data from the covid-19 api and returns the data as a variable
+  const covidData = async () => {
+    const response = await fetch('https://limitless-lake-38337.herokuapp.com/api/covid');
+    const data = await response.json();
+    return data;
+  }
+
+  console.log("covidData: " + covidData());
+  
 
   const sendMessage = async (message) => {
     const timestamp = new Date();

@@ -101,7 +101,7 @@ const App = () => {
         className={`${
           chatbotVisible
             ? "chatbot-open-toggle btn3 small red py1"
-            : "chatbot-toggle cta p1"
+            : "chatbot-toggle cta p1 br3"
         } flex-vertical flex-center`}
         onClick={toggleChatbot}
       >
