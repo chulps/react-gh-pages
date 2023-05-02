@@ -20,12 +20,7 @@
   position: fixed;
   bottom: var(--unit1);
   right: var(--unit1);
-  background-color: #007bff;
-  color: white;
-  border: none;
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  font-size: 1rem;
   cursor: pointer;
   z-index: 1000;
   flex-direction: column;
@@ -33,6 +28,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in-out;
+  border-bottom-left-radius: var(--unit1) !important;
   /* Make sure the button stays on top of other elements */
 }
 
@@ -45,8 +41,8 @@
 
 .unread-badge {
   position: absolute;
-  top: -0.7em;
-  left: -0.7em;
+  top: 0;
+  left: 0;
   height: calc(var(--unit1) + var(--unit0));
   background-color: var(--red0);
   color: white;
