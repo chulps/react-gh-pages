@@ -633,7 +633,7 @@ const Home = () => {
               <small>Uizard</small>
               <small>Zeplin</small>
             </div>
-            <a href="/design-process/">Design Process</a>
+            {/* <a href="/design-process/">Design Process</a> */}
           </div>
         </section>
       </section>

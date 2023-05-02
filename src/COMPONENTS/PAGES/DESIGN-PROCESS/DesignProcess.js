@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Process from './design-process'
+import Process from './DesignProcessSvg'
 
 class DesignProcess extends Component {
   componentDidMount() {

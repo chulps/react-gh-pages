@@ -1,5 +1,5 @@
 import * as React from "react"
-const SvgComponent = (props) => (
+const DesignProcessSvg = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -153,4 +153,4 @@ const SvgComponent = (props) => (
     </text>
   </svg>
 )
-export default SvgComponent
+export default DesignProcessSvg
