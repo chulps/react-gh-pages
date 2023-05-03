@@ -7,25 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import CCBG from "./cross-campus-bg.jpg";
 import { Helmet } from "react-helmet";
-
-const developmentTools = [
-  { tool: "Angular" },
-  { tool: "Bitbucket" },
-  { tool: "CSS" },
-  { tool: "ChatGPT" },
-  { tool: "Github" },
-  { tool: "Gitlab" },
-  { tool: "HTML" },
-  { tool: "HUBL" },
-  { tool: "Javascript" },
-  { tool: "Liquid" },
-  { tool: "React" },
-  { tool: "React Native" },
-  { tool: "Sass" },
-  { tool: "Sourcetree" },
-  { tool: "SVG" },
-  { tool: "Vue" },
-];
+import { developmentTools, designTools, productTools } from "./tools";
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -605,19 +587,16 @@ const Home = () => {
           </div>
 
           <div>
-            <h4 className="mb0">Product Tools:</h4>
+            <h4 className="mb0">Discovery Tools:</h4>
             <p>
-              Use data to inform design decisions. In order to collect that data
-              I use these tools that measure how real users use the product in
-              real scenarios.
+              It's important to use data to inform design decisions. These are the tools I use to collect data and analyze it.
             </p>
             <div className="product-tools py1">
-              <small>Google Analytics</small>
-              <small>Google Optimize</small>
-              <small>Hotjar</small>
-              <small>Crazy Egg</small>
-              <small>Jira</small>
-              <small>Confluence</small>
+              {productTools
+                .sort((a, b) => a.tool.localeCompare(b.tool))
+                .map((tool) => (
+                  <small key={tool.tool}>{tool.tool}</small>
+                ))}
             </div>
           </div>
 
@@ -629,17 +608,11 @@ const Home = () => {
               tools.
             </p>
             <div className="design-tools py1">
-              <small>Photoshop</small>
-              <small>Illustrator</small>
-              <small>Indesign</small>
-              <small>XD</small>
-              <small>After Effects</small>
-              <small>Figma</small>
-              <small>Balsamiq</small>
-              <small>Miro</small>
-              <small>Midjourney</small>
-              <small>Uizard</small>
-              <small>Zeplin</small>
+              {designTools
+                .sort((a, b) => a.tool.localeCompare(b.tool))
+                .map((tool) => (
+                  <small key={tool.tool}>{tool.tool}</small>
+                ))}
             </div>
             {/* <a href="/design-process/">Design Process</a> */}
           </div>
