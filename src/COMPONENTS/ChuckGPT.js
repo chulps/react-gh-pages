@@ -36,16 +36,6 @@ const ChuckGPT = (props) => {
     }
   }, [history, typing]);
 
-  // write a function that gets data from the covid-19 api and returns the data as a variable
-  const covidData = async () => {
-    const response = await fetch('https://limitless-lake-38337.herokuapp.com/api/covid');
-    const data = await response.json();
-    return data;
-  }
-
-  console.log("covidData: " + covidData());
-  
-
   const sendMessage = async (message) => {
     const timestamp = new Date();
     setTyping(true);
@@ -61,7 +51,7 @@ const ChuckGPT = (props) => {
           model: "gpt-3.5-turbo",
           messages: [...ChuckGPTTraining, { role: "user", content: message }],
           temperature: 0.7,
-          max_tokens: 80,
+          max_tokens: 180,
           top_p: 1,
           frequency_penalty: 0,
           presence_penalty: 0,
