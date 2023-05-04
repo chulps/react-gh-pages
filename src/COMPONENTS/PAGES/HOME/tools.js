@@ -1,5 +1,6 @@
 export const developmentTools = [
     { tool: "Angular" },
+    { tool: "APIs" },
     { tool: "Bitbucket" },
     { tool: "CSS" },
     { tool: "ChatGPT" },
@@ -9,6 +10,9 @@ export const developmentTools = [
     { tool: "HUBL" },
     { tool: "Javascript" },
     { tool: "Liquid" },
+    { tool: "Next.js" },
+    { tool: "Node.js" },
+    { tool: "NPM" },
     { tool: "React" },
     { tool: "React Native" },
     { tool: "Sass" },
@@ -24,6 +28,16 @@ export const developmentTools = [
     { tool: "Crazy Egg" },
     { tool: "Jira" },
     { tool: "Confluence" },
+    { tool: "Slack" },
+    { tool: "Trello" },
+    { tool: "Asana" },
+    { tool: "Notion" },
+    { tool: "Miro" },
+    { tool: "Agile" },
+    { tool: "Scrum" },
+    { tool: "Kanban" },
+    { tool: "Lean" },
+    { tool: "Design Thinking" },
   ];
 
   export const designTools = [
@@ -37,5 +51,15 @@ export const developmentTools = [
     { tool: "Miro" },
     { tool: "Midjourney" },
     { tool: "Uizard" },
+    { tool: "Invision" },
+    { tool: "Sketch" },
+    { tool: "Framer" },
+    { tool: "ProtoPie" },
+    { tool: "Proto.io" },    
     { tool: "Zeplin" },
+    { tool: "Atomic Design" },
+    { tool: "Material Design" },
+    { tool: "Bootstrap" },
+    
+
   ];

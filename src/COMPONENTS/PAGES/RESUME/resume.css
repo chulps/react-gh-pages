@@ -2,20 +2,23 @@
   margin-top: var(--unit2);
 }
 
-#resume #skills { 
+#resume #skills,
+#resume #tools { 
   column-count: 1;
   column-gap: var(--unit3);
 }
 
 @media screen and (min-width: 768px) {
-  #resume #skills {
+  #resume #skills,
+  #resume #tools {
       column-count: 2;
     }
 }
 
 @media screen and (min-width: 992px) {
-  #resume #skills {
-    column-count: 3;
+  #resume #skills,
+  #resume #tools {
+    column-count: 4;
   }
 }
 

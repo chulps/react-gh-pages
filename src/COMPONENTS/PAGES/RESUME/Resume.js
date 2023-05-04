@@ -2,27 +2,35 @@ import React, { Component } from "react";
 import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
+import { designTools, developmentTools, productTools } from "../HOME/tools.js";
 import Download from "./Chuck-Howard-ATS-Resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
-
+const tools = [...designTools, ...developmentTools, ...productTools];
 class Resume extends Component {
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   render() {
-      
     return (
       <div id="resume">
+        {console.log(tools)}
+
         <Helmet>
           <title>Chuck Howard's Resumé</title>
           <meta name="description" content="Chuck Howard's Resumé" />
         </Helmet>
-        <section className="mt1 mx-auto flex-end relative md-absolute" style={{ top: 0, left: '50%', transform: 'translate(-50%)'}}>
+        <section
+          className="mt1 mx-auto flex-end relative md-absolute"
+          style={{ top: 0, left: "50%", transform: "translate(-50%)" }}
+        >
           <a id="download-button" href={Download} download>
-            <button><FontAwesomeIcon icon={solid("download")} />&nbsp;Download</button>
+            <button>
+              <FontAwesomeIcon icon={solid("download")} />
+              &nbsp;Download
+            </button>
           </a>
         </section>
         <section className="py1">
@@ -47,7 +55,7 @@ class Resume extends Component {
           </div>
           <hr className="my3" />
           <label>Skills</label>
-          <h3>Tools & Techniques</h3>
+          <h3>Methods & techniques</h3>
           <ul id="skills">
             <li>A/B Testing</li>
             <li>Adobe Illustrator</li>
@@ -74,6 +82,16 @@ class Resume extends Component {
             <li>Usability / Heuristics</li>
             <li>Web Design</li>
             <li>Wireframing</li>
+          </ul>
+          <hr className="my3" />
+          <label>Tools</label>
+          <h3>Tools & Technology</h3>
+          <ul id="tools">
+            {tools
+              .sort((a, b) => a.tool.localeCompare(b.tool))
+              .map((tool) => (
+                <li key={tool.tool}>{tool.tool}</li>
+              ))}
           </ul>
         </section>
 
@@ -264,13 +282,9 @@ class Resume extends Component {
           <div>
             <label>Education</label>
             <h3>Formal Studies</h3>
-            <li>
-              University of Memphis, Memphis - BFA Graphic Design
-            </li>
-            <li>
-              UCLA Extension's Full-Stack Web Development Bootcamp
-            </li>
-          <hr className="my2" />
+            <li>University of Memphis, Memphis - BFA Graphic Design</li>
+            <li>UCLA Extension's Full-Stack Web Development Bootcamp</li>
+            <hr className="my2" />
 
             <label className="mt2">Courses</label>
             <h3>Self Studies</h3>
@@ -286,7 +300,7 @@ class Resume extends Component {
                 <li>Modern React with Redux</li>
               </ul>
             </div>
-          <hr className="my2" />
+            <hr className="my2" />
 
             <div className="mb2">
               <label>Hobbies</label>
