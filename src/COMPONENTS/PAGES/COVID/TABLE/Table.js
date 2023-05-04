@@ -202,9 +202,9 @@ const Table = () => {
         <tbody>
           {data.map((item) => (
             <tr key={item.country}>
-              <td data-label="Country" className="flex-center-y">
-                {getFlagEmoji(item.country)}&nbsp;&nbsp;{decodeHtmlEntities(formatCountryName(item.country).replace(/-/g, "&nbsp;"))}
-
+              <td data-label="Flag">{getFlagEmoji(item.country)}</td>
+              <td data-label="Country">
+                {decodeHtmlEntities(formatCountryName(item.country).replace(/-/g, "&nbsp;"))}
               </td>
               <td data-label="Total Tests">
                 <data>{formatNumberWithCommas(item.population)}</data>
@@ -226,6 +226,9 @@ const Table = () => {
         </tbody>
         <thead visibilityfilter={visibilityfilter}>
           <tr>
+            <th className="text-center" onClick={() => onHeaderClick("flag")}>
+              <FontAwesomeIcon icon={solid("flag")} />
+            </th>
             <th onClick={() => onHeaderClick("country")}>
               <FontAwesomeIcon icon={solid("sort")} />
               &nbsp;{visibilityfilter === "continents" ? "Continent" : "Country"}
@@ -272,7 +275,7 @@ if (!stats) {
   return (
     <div>
       <div className="control-panel covid-controls">
-        <h3 className="mr3">Covid Data</h3>
+        <h3>Covid Data</h3>
         <div className="covid-filters">
           <div>
             <label className="radio-container">
