@@ -17,7 +17,7 @@ class Covid extends Component {
         <Helmet>
           <title>🦠 Covid-19 Dashboard</title>
         </Helmet>   
-          <div className="lg-two-columns gap3 mb3">
+          <div className="mb3" style={{maxWidth: '45ch'}}>
             <div>
               <label>Project:</label>
               <h1>

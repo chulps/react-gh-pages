@@ -28,12 +28,23 @@
 }
 
 .nucleotide table tbody tr:nth-child(odd) {
-  background: rgba(204, 233, 243, 0.25);
+  background: #ECF6FB;
 }
 
 .nucleotide table tbody tr td {
   padding: var(--unit1);
   background-color: transparent;
+}
+
+.nucleotide table tbody td:first-of-type,
+.nucleotide table thead th:first-of-type {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.nucleotide table thead th:first-of-type {
+  background: var(--siteBackground);
 }
 
 .nucleotide table thead th {
@@ -109,6 +120,8 @@
 
 .covid-controls {
   align-items: center;
+  justify-content: flex-end;
+  gap: 0 var(--unit3);
 }
 
 .covid-filters {
@@ -116,6 +129,7 @@
   flex-wrap: wrap;
   flex-grow: 1;
   gap: var(--unit1) var(--unit2);
+  justify-content: space-between;
 }
 
 .covid-search {
