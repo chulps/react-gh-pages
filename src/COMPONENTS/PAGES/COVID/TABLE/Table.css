@@ -4,6 +4,7 @@
   max-height: calc(100vh - var(--unit6));
   overflow-y: scroll;
   overflow-x: auto;
+  width: 100%;
 }
 
 .nucleotide table {

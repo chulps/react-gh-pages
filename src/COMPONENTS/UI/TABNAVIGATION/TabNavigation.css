@@ -1,0 +1,50 @@
+/* TabNavigation.css */
+.tab-navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--transBlueC-10);
+  }
+  
+  .tab-navigation li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: var(--unit1) var(--unit2);
+    color: var(--transBlueC-50);
+    font-size: var(--H6);
+  }
+
+  @media screen and (min-width: 480px) {
+    .tab-navigation li {
+      flex-direction: row;
+      font-size: var(--H5);
+    }
+  }
+
+  .tab-navigation li:hover {
+    color: var(--transBlueC-75);
+  }
+
+  .tab-navigation li.active {
+    color: var(--primary);
+  }
+  
+  .tab-navigation li.active::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary);
+    content: "";
+    top: calc(100% - 1.5px);
+    border-radius: 2px;
+    left: 0;
+  }
+  
