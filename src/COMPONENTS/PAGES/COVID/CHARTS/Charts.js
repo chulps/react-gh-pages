@@ -1,8 +1,6 @@
 // Charts.js
 import React from "react";
 import "./Charts.css";
-import { fetchCovidStats } from "../api";
-
 
 
 const Charts = () => {

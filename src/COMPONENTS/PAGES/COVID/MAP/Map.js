@@ -1,24 +1,45 @@
-import React, { useEffect, useState } from "react";
-import "./Map.css";
-import { fetchCovidStats } from "../api";
+import React from "react";
+import { scaleLinear } from "d3-scale";
+import { ComposableMap, Geographies, Geography, Sphere, Graticule } from "react-simple-maps";
 
-const Map = () => {
-    const [stats, setStats] = useState(null);
-    const [error, setError] = useState(null);
-    useEffect(() => {
-        const fetchData = async () => {
-          const { data, error } = await fetchCovidStats();
-          setStats(data);
-          setError(error);
-        };
-    
-        fetchData();
-      }, []);
+const geoUrl = process.env.PUBLIC_URL + "/features.json";
+
+const colorScale = scaleLinear()
+  .domain([500, 1500000000])
+  .range(["#ff6060", "#ffdfdf"]);
+const Map = ({ covidStats }) => {
 
   return (
-    <div style={{height: "50vh"}} id="map" className="Map">
-map
-    </div>
+    <ComposableMap
+      projectionConfig={{
+        rotate: [-10, 0, 0],
+        scale: 147
+      }}
+      style={{
+        width: "100%",
+        height: "auto"
+      }}
+    >
+      <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
+      <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
+      {covidStats && (
+        <Geographies geography={geoUrl}>
+          {({ geographies }) =>
+            geographies.map((geo, index) => {
+              const d = covidStats[index].population;
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  fill={d ? colorScale(d) : "#F5F4F6"}
+                />
+              );
+            })
+          }
+        </Geographies>
+      )}
+    </ComposableMap>
+    // <div>Map</div>
   );
 };
 

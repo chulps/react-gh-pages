@@ -1,33 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// import React from "react";
 import Table from "./TABLE/Table";
 import Map from "./MAP/Map";
-import Charts from "./CHARTS/Charts";
+// import Charts from "./CHARTS/Charts";
 import { Helmet } from "react-helmet";
 import TabNavigation from "../../UI/TABNAVIGATION/TabNavigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { fetchCovidStats } from "./api";
 
 const Covid = () => {
   const [activeTab, setActiveTab] = useState(1);
+
+  const [covidStats, setCovidStats] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data, error } = await fetchCovidStats();
+      setCovidStats(data);
+      setError(error);
+    };
+
+    fetchData();
+  }, []);
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   const tabs = [
     {
       id: 1,
       icon: <FontAwesomeIcon icon={solid("table")} />,
       title: "Table",
-      content: <Table />,
+      content: <Table covidStats={covidStats} />,
     },
     {
       id: 2,
       icon: <FontAwesomeIcon icon={solid("map")} />,
       title: "Map",
-      content: <Map />,
+      content: <Map covidStats={covidStats} />,
+      // content: "Map",
     },
     {
       id: 3,
       icon: <FontAwesomeIcon icon={solid("chart-simple")} />,
       title: "Charts",
-      content: <Charts />,
+      content: "<Charts />",
+      // content: <Charts />,
     },
   ];
 
@@ -73,6 +94,7 @@ const Covid = () => {
           ))}
         </div>
       </div>
+      {/* <Table /> */}
     </section>
   );
 };

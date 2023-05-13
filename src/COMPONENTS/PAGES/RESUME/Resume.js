@@ -16,7 +16,6 @@ class Resume extends Component {
   render() {
     return (
       <div id="resume">
-        {console.log(tools)}
 
         <Helmet>
           <title>Chuck Howard's Resumé</title>
