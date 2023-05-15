@@ -33,7 +33,7 @@ class Yarden extends Component {
           <title>Yarden</title>
         </Helmet>
         {/* yarden top section */}
-        <section className="mt3">
+        <section className="pt3">
           <label>Project:</label>
           <h1>Yarden&trade;</h1>
         </section>

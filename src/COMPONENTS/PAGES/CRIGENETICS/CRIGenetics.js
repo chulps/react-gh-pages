@@ -16,7 +16,7 @@ class CRIGenetics extends Component {
           <title>CRI Genetics</title>
         </Helmet>
         {/* yarden top section */}
-        <section className="mt3">
+        <section className="pt3">
           <label>Project:</label>
           <h1>CRI Genetics</h1>
         </section>
