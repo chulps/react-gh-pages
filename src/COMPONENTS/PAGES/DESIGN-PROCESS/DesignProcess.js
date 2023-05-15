@@ -24,7 +24,7 @@ class DesignProcess extends Component {
           <label>Design Process</label>
           <h1>Design Thinking</h1>
         </section>
-        <section className="mb3" id="Foundry">
+        <section className="mb3" id="process">
           <p className="mb3">Something</p>
           <Process />
         </section>

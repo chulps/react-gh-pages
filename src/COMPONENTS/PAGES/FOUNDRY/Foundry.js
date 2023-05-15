@@ -81,7 +81,7 @@ class Foundry extends Component {
           />
         </Helmet>
         {/* top section */}
-        <section className="mt3">
+        <section className="pt3">
           <label>Projects:</label>
           <h1>Foundry</h1>
         </section>
