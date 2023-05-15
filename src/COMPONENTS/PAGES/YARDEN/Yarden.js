@@ -39,7 +39,7 @@ class Yarden extends Component {
         </section>
 
         {/* intro section */}
-        <section className="md-two-columns gap2 md-gap3 lg-gap4 mb4">
+        <section className="md-two-columns gap2 md-gap3 lg-gap4 pb4">
           <div>
             <p>
               Yarden is a gardening company supported by tech. It makes use of
