@@ -42,7 +42,7 @@ class NavContent extends React.Component {
             rel="noopener noreferrer"
           >
             <button className="green">
-            <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;Book a call!
+            <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;Schedule&nbsp;Interview
             </button>
           </a>
         </li>
@@ -90,14 +90,9 @@ class Nav extends React.Component {
             <label>Status:</label>
             <small
               className="status px1"
-              style={{
-                borderRadius: "var(--unit1)",
-                color: "var(--transBlueC-75)",
-                background: "var(--transBlueC-10)",
-              }}
             >
               <span style={{ color: "var(--green0)" }} className="mr0">
-                <FontAwesomeIcon icon={solid("user-tie")} />
+                <FontAwesomeIcon className="hiring-icon" icon={solid("user-tie")} />
               </span>
               Interviewing&nbsp;now
             </small>

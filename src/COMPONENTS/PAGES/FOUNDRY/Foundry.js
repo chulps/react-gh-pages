@@ -138,10 +138,10 @@ class Foundry extends Component {
         <section className="mb4 lg-two-columns gap4">
           {/*  */}
           <div
-            className="flex-center shadowDown"
+            className="flex-center shadowDown p3"
             style={{ background: "#89E1A2", borderRadius: "var(--unit2)" }}
           >
-            <div className="half pt3 lg-pt-none">
+            <div className="half">
               <FoundryLogoBlack />
             </div>
           </div>
