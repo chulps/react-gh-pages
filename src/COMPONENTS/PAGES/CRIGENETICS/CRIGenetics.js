@@ -22,7 +22,7 @@ class CRIGenetics extends Component {
         </section>
 
         {/* intro section */}
-        <section className="md-two-columns gap2 md-gap3 lg-gap4 mb4">
+        <section className="md-two-columns gap2 md-gap3 lg-gap4 pb4">
           <div>
             <p>
               CRI Genetics is a company similar to Ancestry.com or 23andME. I

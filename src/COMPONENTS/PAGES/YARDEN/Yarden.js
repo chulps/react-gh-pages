@@ -467,7 +467,7 @@ class Yarden extends Component {
             <h3>The "Garden Map"</h3>
           </div>
 
-          <div className="gap3 lg-two-columns lg-gap4 mb4">
+          <div className="gap3 lg-two-columns lg-gap4 pb4">
             <div>
               <p>
                 When we first released the app, we were really proud, this is my
