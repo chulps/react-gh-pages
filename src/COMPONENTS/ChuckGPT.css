@@ -8,7 +8,7 @@
   background: rgba(204, 233, 243, 0.75);
   border-radius: var(--unit1);
   overflow: hidden;
-  height: calc(100% - 63.99px - var(--unit2));
+  height: calc(100% - 61.38px - var(--unit2));
   width: calc(100% - var(--unit2));
   box-shadow: 0 12px 24px var(--transBlueC-25);
   z-index: 1;

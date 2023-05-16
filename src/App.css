@@ -34,7 +34,7 @@
 
 .chatbot-open-toggle {
   position: fixed;
-  top: calc(63.99px + var(--unit2));
+  top: calc(61.38px + var(--unit2));
   right: var(--unit2);
   z-index: 1;
 }
