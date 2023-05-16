@@ -4,6 +4,7 @@ import { filterData, sortedData } from "./dataProcessing";
 import TableBody from "./TableBody";
 import TableHeader from "./TableHeader";
 import ControlPanel from "./ControlPanel";
+import Loader from "../../../UI/LOADER/Loader";
 
 const Table = ({ covidStats }) => {
   const [showClearButton, setShowClearButton] = useState(false);
@@ -19,15 +20,15 @@ const Table = ({ covidStats }) => {
 
   const setTable = (key, direction) => {
     const updatedSortConfig = {
-      key: key || 'population',
-      direction: direction || 'normal',
+      key: key || "population",
+      direction: direction || "normal",
     };
 
     setSortConfig(updatedSortConfig);
     const filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
     const sorted = sortedData(filteredStats, updatedSortConfig);
     setSortedStats(sorted);
-  }
+  };
 
   const onHeaderClick = (key) => {
     const direction =
@@ -40,17 +41,19 @@ const Table = ({ covidStats }) => {
     setTable(key, direction);
   };
 
-  useEffect(() => {
-    if (covidStats) {
-      setTable();
-    }
-  }, 
-  // eslint-disable-next-line
-  [visibilityfilter])
+  useEffect(
+    () => {
+      if (covidStats) {
+        setTable();
+      }
+    },
+    // eslint-disable-next-line
+    [visibilityfilter]
+  );
 
   if (sortedStats || covidStats) {
     return (
-      <div>
+      <>
         <ControlPanel
           visibilityfilter={visibilityfilter}
           setvisibilityfilter={setvisibilityfilter}
@@ -59,19 +62,22 @@ const Table = ({ covidStats }) => {
           showClearButton={showClearButton}
           setShowClearButton={setShowClearButton}
         />
-        <table id="covid-table">
-          <TableBody
-            data={sortedStats || covidStats}
-            visibilityfilter={visibilityfilter} />
-          <TableHeader
-            onHeaderClick={onHeaderClick}
-            visibilityfilter={visibilityfilter}
-          />
-        </table>
-      </div>
+        <div className="table-wrapper">
+          <table id="covid-table">
+            <TableBody
+              data={sortedStats || covidStats}
+              visibilityfilter={visibilityfilter}
+            />
+            <TableHeader
+              onHeaderClick={onHeaderClick}
+              visibilityfilter={visibilityfilter}
+            />
+          </table>
+        </div>
+      </>
     );
   } else {
-    return <></>;
+    return <div className="whole flex-center p3"><Loader /></div>;
   }
 };
 
