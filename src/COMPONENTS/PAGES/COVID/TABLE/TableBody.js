@@ -6,30 +6,33 @@ import {
   formatNumberWithCommas,
 } from "./helperFunctions";
 
-
 const TableBody = ({ data, visibilityfilter }) => {
   const uniqueKey = visibilityfilter === "continents" ? "continent" : "country";
-  const columns = [
-    { label: "Flag", content: item => getFlagEmoji(item.country) },
-    { 
-      label: "Country/territory", 
-      content: item => decodeHtmlEntities(formatCountryName(item[uniqueKey]).replace(/-/g, "&nbsp;"))
-    },
-    { label: "Population", content: item => formatNumberWithCommas(item.population) },
-    { label: "Total Tests", content: item => formatNumberWithCommas(item.tests) },
-    { label: "Total Cases", content: item => formatNumberWithCommas(item.cases) },
-    { label: "Total Deaths", content: item => formatNumberWithCommas(item.deaths) },
-    { label: "Total Recovered", content: item => formatNumberWithCommas(item.recovered) }
-  ];
-  
   return (
     <tbody>
-      {console.log("data from tableBody", data)}
-      {data.map(item => (
-        <tr key={item[uniqueKey]}>
-          {columns.map(col => (
-            <td data-label={col.label}>{col.content(item)}</td>
-          ))}
+      {data.map((item, index) => (
+        <tr key={index}>
+          <td data-label="Flag">{getFlagEmoji(item.country)}</td>
+          <td data-label="Country/territory">
+            {decodeHtmlEntities(
+              formatCountryName(item[uniqueKey]).replace(/-/g, "&nbsp;")
+            )}
+          </td>
+          <td data-label="Population">
+            <data>{formatNumberWithCommas(item.population)}</data>
+          </td>
+          <td data-label="Total Tests">
+            <data>{formatNumberWithCommas(item.tests)}</data>
+          </td>
+          <td data-label="Total Cases">
+            <data>{formatNumberWithCommas(item.cases)}</data>
+          </td>
+          <td data-label="Total Deaths">
+            <data>{formatNumberWithCommas(item.deaths)}</data>
+          </td>
+          <td data-label="Total Recovered">
+            <data>{formatNumberWithCommas(item.recovered)}</data>
+          </td>
         </tr>
       ))}
     </tbody>
