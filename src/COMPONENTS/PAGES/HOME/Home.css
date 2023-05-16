@@ -4,6 +4,13 @@
   align-items: center;
   width: 100%;
   margin-top: var(--unit2);
+  flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {
+  .disciplines {
+    flex-direction: row;
+  }
 }
 
 
@@ -235,3 +242,4 @@
     height: 80%;
   }
 }
+

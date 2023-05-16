@@ -45,7 +45,7 @@ class SocialIcons extends Component {
 
     return (
       <div
-        className="social-icons flex"
+        className="social-icons flex animate-up-wrapper"
         style={{ gap: "calc(var(--unit1) + var(--unit0)" }}
       >
         {socialLinks.map((link) => (
