@@ -35,7 +35,6 @@
     "react-scripts": "4.0.3",
     "react-simple-maps": "^3.0.0",
     "react-textarea-autosize": "^8.4.1",
-    "sass": "^1.56.0",
     "string-similarity": "^4.0.4",
     "survey-react-ui": "^1.9.60",
     "web-vitals": "^1.0.1"
@@ -72,6 +71,7 @@
     "@babel/eslint-parser": "^7.21.3",
     "eslint": "^7.32.0",
     "eslint-plugin-jest": "^24.7.0",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "sass": "^1.62.1"
   }
 }
