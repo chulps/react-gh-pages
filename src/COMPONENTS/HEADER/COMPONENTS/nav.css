@@ -113,11 +113,11 @@ nav .active::after {
   }
   20% {
     color: var(--green1);
-    filter: drop-shadow(0 0 3px var(--green1));
+    filter: drop-shadow(0 0 6px var(--green1));
   }
   60% {
     color: var(--green1);
-    filter: drop-shadow(0 0 3px var(--green1));
+    filter: drop-shadow(0 0 6px var(--green1));
   }
   100% {
     color: var(--greenA);
