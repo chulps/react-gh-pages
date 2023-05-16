@@ -9,7 +9,7 @@
 .nucleotide h4,
 .nucleotide h5,
 .nucleotide h6 {
-  font-family: "rustea", serif;
+  font-family: "rustea", helvetica, arial, sans-serif;
 }
 
 .feedback {
