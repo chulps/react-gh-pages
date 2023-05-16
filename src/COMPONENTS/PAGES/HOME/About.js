@@ -23,27 +23,27 @@ const About = () => {
         </p>
 
         <div className="disciplines" >
-          <div className="flex-center">
-            <h6 style={{ background: "rgba(255, 96, 96, 0.30)" }}>
+          <div>
+            <small style={{ background: "rgba(255, 96, 96, 0.30)" }}>
               <FontAwesomeIcon icon={solid("wrench")} />
               Front-end Development
-            </h6>
+            </small>
           </div>
           +
-          <div className="flex-center">
-            <h6 style={{ background: "rgba(0, 206, 89, 0.30)" }}>
+          <div>
+            <small style={{ background: "rgba(0, 206, 89, 0.30)" }}>
               <FontAwesomeIcon icon={solid("search")} />
               Product Discovery
-            </h6>
+            </small>
           </div>
           +
-          <div className="flex-center">
-            <h6 style={{ background: "rgba(0, 143, 195, 0.30)" }}>
+          <div>
+            <small style={{ background: "rgba(0, 143, 195, 0.30)" }}>
               <FontAwesomeIcon icon={solid("pen-nib")} />
               UI/UX
               <br />
               Design
-            </h6>
+            </small>
           </div>
         </div>
 
