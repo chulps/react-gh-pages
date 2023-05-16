@@ -4,10 +4,10 @@ import axios from 'axios';
 //   try {
 //     const options = {
 //       method: 'GET',
-//       url: 'https://covid-193.p.rapidapi.com/statistics',
+//       url: 'https://Covid&#8210;193.p.rapidapi.com/statistics',
 //       headers: {
 //         'X-RapidAPI-Key': '9f5d0c8553msh7e4cfdabfc5e0f9p112f57jsnde15b5674f41',
-//         'X-RapidAPI-Host': 'covid-193.p.rapidapi.com',
+//         'X-RapidAPI-Host': 'Covid&#8210;193.p.rapidapi.com',
 //       },
 //     };
 //     const response = await axios.request(options);

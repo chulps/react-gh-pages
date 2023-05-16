@@ -10,7 +10,7 @@ import ChuckGPTTraining from "./ChuckGPTTraining.js";
 
 
 
-// make an api call to the covid-19 api and return the data as a variable
+// make an api call to the Covid&#8210;19 api and return the data as a variable
 
 
 
