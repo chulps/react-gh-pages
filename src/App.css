@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "voire-medium";
-  src: url("voire-medium.otf");
+  font-family: "rustea";
+  src: url("Rustea.otf");
 }
 
 .nucleotide h1,
@@ -9,7 +9,7 @@
 .nucleotide h4,
 .nucleotide h5,
 .nucleotide h6 {
-  font-family: "voire-medium", serif;
+  font-family: "rustea", serif;
 }
 
 .feedback {
