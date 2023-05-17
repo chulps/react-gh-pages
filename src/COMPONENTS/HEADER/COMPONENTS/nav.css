@@ -21,7 +21,7 @@ nav ul li:active {
   position: fixed;
   left: 0;
   top: 0;
-  color: white;
+  color: var(--white);
   transition: all 0.3s;
   transform: translate(100vw, -100vh);
   will-change: transform;

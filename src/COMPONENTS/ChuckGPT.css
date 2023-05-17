@@ -44,7 +44,7 @@
   background-color: var(--transWhite-50);
   backdrop-filter: blur(3px);
   border-radius: var(--unit1) var(--unit1) 0 0;
-  background: white;
+  background: var(--white);
   box-shadow: 0 6px 12px var(--transBlueC-10);
   border-bottom: 1px solid var(--transWhite-50);
   z-index: 1;

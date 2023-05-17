@@ -17,7 +17,7 @@
 
 .projects-section > div > a:hover {
   transform: scale(1.01);
-  background: white;
+  background: var(--white);
   color: var(--transBlueC-75);
   text-decoration: none;
 }

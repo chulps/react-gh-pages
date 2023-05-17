@@ -59,7 +59,7 @@
   left: 0;
   height: calc(var(--unit1) + var(--unit0));
   background-color: var(--red0);
-  color: white;
+  color: var(--white);
   font-weight: bold;
   border-radius: 50%;
   display: flex;
@@ -89,4 +89,14 @@
 
 .hidden {
   visibility: hidden;
+}
+
+.nucleotide select {
+  padding: var(--unit1);
+    border: none;
+    box-shadow: inset 0 6px 12px var(--transBlueC-10);
+    border-bottom: 1px solid var(--primary);
+    font-size: var(--h5);
+    color: var(--transBlueC-75);
+    background-position: right 0.5rem center;
 }
