@@ -5,7 +5,7 @@ import {
   decodeHtmlEntities,
   formatCountryName,
   formatNumberWithCommas,
-} from "./helperFunctions";
+} from "../helperFunctions";
 
 const TableBody = ({ data, visibilityfilter }) => {
   const uniqueKey = visibilityfilter === "continents" ? "continent" : "country";
@@ -13,7 +13,7 @@ const TableBody = ({ data, visibilityfilter }) => {
     <tbody>
       {data.map((item, index) => (
         <tr key={index}>
-          <td data-label="Flag">{getFlagEmoji(item.country)}</td>
+          <td data-label="Flag"><h3>{getFlagEmoji(item.country)}</h3></td>
           <td data-label="Country/territory">
             {decodeHtmlEntities(
               formatCountryName(item[uniqueKey]).replace(/-/g, "&nbsp;")
@@ -27,6 +27,9 @@ const TableBody = ({ data, visibilityfilter }) => {
           </td>
           <td data-label="Total Cases">
             <data>{formatNumberWithCommas(item.cases)}</data>
+          </td>
+          <td data-label="Active Cases">
+            <data>{formatNumberWithCommas(item.active)}</data>
           </td>
           <td data-label="Total Deaths">
             <data>{formatNumberWithCommas(item.deaths)}</data>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Table.css";
 import { filterData, sortedData } from "./dataProcessing";
 import TableBody from "./TableBody";
@@ -18,17 +18,27 @@ const Table = ({ covidStats }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortedStats, setSortedStats] = useState(null);
 
-  const setTable = (key, direction) => {
-    const updatedSortConfig = {
-      key: key || "population",
-      direction: direction || "normal",
-    };
-
-    setSortConfig(updatedSortConfig);
-    const filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
-    const sorted = sortedData(filteredStats, updatedSortConfig);
-    setSortedStats(sorted);
-  };
+  const setTable = useCallback(
+    (key, direction) => {
+      const updatedSortConfig = {
+        key: key || "population",
+        direction: direction || "normal",
+      };
+  
+      setSortConfig(updatedSortConfig);
+      const filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
+      const sorted = sortedData(filteredStats, updatedSortConfig);
+      setSortedStats(sorted);
+    },
+    [covidStats, visibilityfilter, searchTerm]
+  );
+  
+  useEffect(() => {
+    if (covidStats) {
+      setTable();
+    }
+  }, [visibilityfilter, covidStats, searchTerm, setTable]);
+  
 
   const onHeaderClick = (key) => {
     const direction =
@@ -41,15 +51,14 @@ const Table = ({ covidStats }) => {
     setTable(key, direction);
   };
 
-  useEffect(
-    () => {
-      if (covidStats) {
-        setTable();
-      }
-    },
-    // eslint-disable-next-line
-    [visibilityfilter]
-  );
+  // useEffect(
+  //   () => {
+  //     if (covidStats) {
+  //       setTable();
+  //     }
+  //   },
+  //   [visibilityfilter, covidStats, searchTerm]
+  // );
 
   if (sortedStats || covidStats) {
     return (

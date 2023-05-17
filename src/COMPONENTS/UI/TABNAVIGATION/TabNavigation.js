@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './TabNavigation.css';
 
 
-const TabNavigation = ({ tabs, initialActiveTab, onTabChange }) => {
+const TabNavigation = ({ tabs, initialActiveTab, onTabChange, }) => {
   const [activeTab, setActiveTab] = useState(initialActiveTab);
 
   const handleTabClick = (tabId) => {
@@ -18,7 +18,7 @@ const TabNavigation = ({ tabs, initialActiveTab, onTabChange }) => {
       {tabs.map((tab) => (
         <li
           key={tab.id}
-          className={tab.id === activeTab ? 'active' : ''}
+          className={tab.id === activeTab ? 'active' : tab.className}
           onClick={() => handleTabClick(tab.id)}
         >
           {tab.icon && <span className="tab-icon">{tab.icon}</span>}&nbsp;

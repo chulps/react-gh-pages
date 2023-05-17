@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import React from "react";
 import Table from "./TABLE/Table";
 import Map from "./MAP/Map";
 // import Charts from "./CHARTS/Charts";
@@ -8,18 +7,21 @@ import TabNavigation from "../../UI/TABNAVIGATION/TabNavigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { fetchCovidStats } from "./api";
+import Loader from "../../UI/LOADER/Loader";
 
 const Covid = () => {
   const [activeTab, setActiveTab] = useState(1);
-
+  const [isLoading, setIsLoading] = useState(true);
   const [covidStats, setCovidStats] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       const { data, error } = await fetchCovidStats();
       setCovidStats(data);
       setError(error);
+      setIsLoading(false);
     };
 
     fetchData();
@@ -35,20 +37,21 @@ const Covid = () => {
       icon: <FontAwesomeIcon icon={solid("table")} />,
       title: "Table",
       content: <Table covidStats={covidStats} />,
+      className: "",
     },
     {
       id: 2,
       icon: <FontAwesomeIcon icon={solid("map")} />,
       title: "Map",
       content: <Map covidStats={covidStats} />,
-      // content: "Map",
+      className: "",
     },
     {
       id: 3,
       icon: <FontAwesomeIcon icon={solid("chart-simple")} />,
       title: "Charts",
       content: "<Charts />",
-      // content: <Charts />,
+      className: "disabled",
     },
   ];
 
@@ -56,6 +59,9 @@ const Covid = () => {
     setActiveTab(tabId);
   };
 
+  if (isLoading) {
+    return <Loader />;
+  } else {
   return (
     <section id="covid" className="py3">
       <Helmet>
@@ -88,15 +94,18 @@ const Covid = () => {
         />
         <div>
           {tabs.map((tab) => (
-            <div key={tab.id} hidden={tab.id !== activeTab}>
+            <div
+              key={tab.id}
+              hidden={tab.id !== activeTab}
+              className={tab.className}
+            >
               {tab.content}
             </div>
           ))}
         </div>
       </div>
-      {/* <Table /> */}
     </section>
-  );
+  )};
 };
 
 export default Covid;

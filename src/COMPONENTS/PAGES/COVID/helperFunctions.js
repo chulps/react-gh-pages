@@ -1,7 +1,7 @@
 import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { countryNameToCode } from "./countryNameToCode";
+import { countryNameToCode } from "./TABLE/countryNameToCode";
 
 export const getNestedValue = (obj, path) => {
     return path
@@ -13,12 +13,13 @@ export const getNestedValue = (obj, path) => {
       );
   };
 
-export function formatNumberWithCommas(number) {
-    if (number === null) {
+  export function formatNumberWithCommas(number) {
+    if (number === null || number === undefined) {
       return "🤷‍♂️";
     }
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
+  
 
 export function decodeHtmlEntities(text) {
     const textArea = document.createElement("textarea");
@@ -82,7 +83,7 @@ export const getFlagEmoji = (countryName) => {
       .replace(/./g, (char) =>
         String.fromCodePoint(char.charCodeAt(0) + 127397)
       );
-    return <h3 className="inline">{codePoints}</h3>;
+    return <span className="inline">{codePoints}</span>;
   };
 
 export const formatCountryName = (countryName) => {

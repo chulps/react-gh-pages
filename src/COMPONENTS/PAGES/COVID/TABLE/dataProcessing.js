@@ -1,4 +1,4 @@
-import { formatCountryName } from "./helperFunctions";
+import { formatCountryName } from "../helperFunctions";
 
 const continents = [
   "Asia",
@@ -25,16 +25,18 @@ export const getAggregatedData = (data) => {
           deaths: accumulator.deaths + current.deaths,
           recovered: accumulator.recovered + current.recovered,
           population: accumulator.population + current.population,
+          active: accumulator.active + current.active,
           tests: accumulator.tests + current.tests,
         };
       },
-      { population: 0, cases: 0, deaths: 0, recovered: 0, tests: 0 }
+      { population: 0, cases: 0, deaths: 0, recovered: 0, tests: 0, active: 0 }
     );
 
     return {
       country: continent,
       cases: aggregatedValues.cases,
       deaths: aggregatedValues.deaths,
+      active: aggregatedValues.active,
       recovered: aggregatedValues.recovered,
       population: aggregatedValues.population,
       continent: continent,

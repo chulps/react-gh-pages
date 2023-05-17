@@ -29,6 +29,10 @@ const TableHeader = ({ onHeaderClick, visibilityfilter }) => {
           <FontAwesomeIcon icon={solid("sort")} />
           &nbsp;Total Cases
         </th>
+        <th onClick={() => onHeaderClick("active")}>
+          <FontAwesomeIcon icon={solid("sort")} />
+          &nbsp;Active Cases
+        </th>
         <th onClick={() => onHeaderClick("deaths")}>
           <FontAwesomeIcon icon={solid("sort")} />
           &nbsp;Total Deaths

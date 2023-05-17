@@ -251,7 +251,7 @@ function NonRedirectTracking(props) {
           <animate
             attributeType="XML"
             attributeName="fill"
-            values="white;#fd8a66;white"
+            values="var(--white);#fd8a66;white"
             dur="1s"
             repeatCount="indefinite"
           />

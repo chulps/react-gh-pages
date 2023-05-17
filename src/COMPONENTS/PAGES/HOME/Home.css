@@ -148,7 +148,7 @@
 }
 
 .content-col {
-  fill: white;
+  fill: var(--white);
 }
 
 .content-col::before {
