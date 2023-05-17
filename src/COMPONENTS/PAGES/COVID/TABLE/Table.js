@@ -1,3 +1,5 @@
+// Table.js
+
 import React, { useState, useEffect, useCallback } from "react";
 import "./Table.css";
 import { filterData, sortedData } from "./dataProcessing";
@@ -26,12 +28,19 @@ const Table = ({ covidStats }) => {
       };
   
       setSortConfig(updatedSortConfig);
-      const filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
+  
+      let filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
+  
+      // Remove "World" from filteredStats if the current filter is not "world"
+      if (visibilityfilter !== "world") {
+        filteredStats = filteredStats.filter((item) => item.country !== "All");
+      }
+  
       const sorted = sortedData(filteredStats, updatedSortConfig);
       setSortedStats(sorted);
     },
     [covidStats, visibilityfilter, searchTerm]
-  );
+  );  
   
   useEffect(() => {
     if (covidStats) {
@@ -50,15 +59,6 @@ const Table = ({ covidStats }) => {
 
     setTable(key, direction);
   };
-
-  // useEffect(
-  //   () => {
-  //     if (covidStats) {
-  //       setTable();
-  //     }
-  //   },
-  //   [visibilityfilter, covidStats, searchTerm]
-  // );
 
   if (sortedStats || covidStats) {
     return (

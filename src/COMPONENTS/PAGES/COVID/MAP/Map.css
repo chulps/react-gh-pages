@@ -46,7 +46,7 @@
   right: var(--unit1);
   display: flex;
   flex-direction: column;
-  gap: var(--unit1);
+  gap: var(--unit0);
 }
 
 .zoom-controls button {
@@ -62,12 +62,13 @@
 
 .map-legend {
   position: absolute;
-  top: var(--unit1);
+  bottom: var(--unit1);
   left: var(--unit1);
   display: flex;
   flex-direction: column;
-  width: var(--unit5);
-  background: var(--siteBackground);
+  width: calc(var(--unit3) + var(--unit4));
+  background: var(--transWhite-75);
+  backdrop-filter: blur(3px);
   border-radius: var(--unit1);
   padding: var(--unit1);
   -webkit-backdrop-filter: blur(3px);

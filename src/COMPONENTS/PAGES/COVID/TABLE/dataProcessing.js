@@ -1,4 +1,6 @@
-import { formatCountryName } from "../helperFunctions";
+// dataProcessing.js
+
+import { formatCountryName, aggregateWorldData } from "../helperFunctions";
 
 const continents = [
   "Asia",
@@ -10,13 +12,9 @@ const continents = [
 ];
 
 export const getAggregatedData = (data) => {
-
   // Aggregate values for each continent
   const aggregatedData = continents.map((continent) => {
-    const countryData = data.filter(
-      (item) =>
-        item.continent === continent
-    );
+    const countryData = data.filter((item) => item.continent === continent);
 
     const aggregatedValues = countryData.reduce(
       (accumulator, current) => {
@@ -62,65 +60,54 @@ export const getAggregatedData = (data) => {
   return aggregatedData;
 };
 
-
-
 export const filterData = (data, visibilityfilter, searchTerm) => {
-  let filteredData = data;
+  let filteredData = [...data];
 
   if (visibilityfilter === "countries/territories") {
-    filteredData = filteredData.filter(
-      (item) =>
-        ![
-          "Asia",
-          "Europe",
-          "North America",
-          "South America",
-          "Australia-Oceania",
-          "Africa",
-          "All",
-        ].includes(item.country)
-    );
-  } else if (visibilityfilter === "continents") {
-
-    filteredData = getAggregatedData(filteredData);
-  } else if (visibilityfilter === "world") {
-    filteredData = filteredData.filter((item) => item.country === "All");
-  }
-
-  if (searchTerm) {
-    filteredData = filteredData.filter((item) =>
-      formatCountryName(item.country)
+    filteredData = filteredData.filter((item) => {
+      const countryName = formatCountryName(item.country)
         .toLowerCase()
-        .includes(searchTerm.toLowerCase())
-    );
+        .replace(/-/g, " ");
+
+      return countryName.includes(searchTerm.toLowerCase());
+    });
+  } else if (visibilityfilter === "continents") {
+    filteredData = getAggregatedData(filteredData);
+    filteredData = filteredData.filter((item) => {
+      const continentName = item.continent.toLowerCase();
+
+      return continentName.includes(searchTerm.toLowerCase());
+    });
   }
 
   return filteredData;
 };
 
 
+
+
 export const sortedData = (data, sortConfig) => {
   const { key, direction } = sortConfig;
   if (!key) return data;
 
-    // Add logic to check if sorting Continents
-    if (key === 'continent') {
-      // Sort based on continent name
-      const sortedData = [...data].sort((a, b) => {
-        let aContinent = a.continent;
-        let bContinent = b.continent;
-  
-        if (direction === 'ascending') {
-          if (aContinent < bContinent) return -1;
-          if (aContinent > bContinent) return 1;
-        } else {
-          if (aContinent > bContinent) return -1;
-          if (aContinent < bContinent) return 1;
-        }
-        return 0;
-      });
-      return sortedData;
-    }
+  // Add logic to check if sorting Continents
+  if (key === "continent") {
+    // Sort based on continent name
+    const sortedData = [...data].sort((a, b) => {
+      let aContinent = a.continent;
+      let bContinent = b.continent;
+
+      if (direction === "ascending") {
+        if (aContinent < bContinent) return -1;
+        if (aContinent > bContinent) return 1;
+      } else {
+        if (aContinent > bContinent) return -1;
+        if (aContinent < bContinent) return 1;
+      }
+      return 0;
+    });
+    return sortedData;
+  }
 
   const sortedData = [...data].sort((a, b) => {
     let aKey = a[key];
@@ -144,8 +131,3 @@ export const sortedData = (data, sortConfig) => {
 
   return sortedData;
 };
-
-
-
-
-
