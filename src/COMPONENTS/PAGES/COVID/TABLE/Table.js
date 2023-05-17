@@ -28,12 +28,19 @@ const Table = ({ covidStats }) => {
       };
   
       setSortConfig(updatedSortConfig);
-      const filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
+  
+      let filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
+  
+      // Remove "World" from filteredStats if the current filter is not "world"
+      if (visibilityfilter !== "world") {
+        filteredStats = filteredStats.filter((item) => item.country !== "All");
+      }
+  
       const sorted = sortedData(filteredStats, updatedSortConfig);
       setSortedStats(sorted);
     },
     [covidStats, visibilityfilter, searchTerm]
-  );
+  );  
   
   useEffect(() => {
     if (covidStats) {

@@ -61,43 +61,29 @@ export const getAggregatedData = (data) => {
 };
 
 export const filterData = (data, visibilityfilter, searchTerm) => {
-  let filteredData = data;
+  let filteredData = [...data];
 
   if (visibilityfilter === "countries/territories") {
-    filteredData = filteredData.filter(
-      (item) =>
-        ![
-          "Asia",
-          "Europe",
-          "North America",
-          "South America",
-          "Australia-Oceania",
-          "Africa",
-          "All",
-        ].includes(item.country)
-    );
+    filteredData = filteredData.filter((item) => {
+      const countryName = formatCountryName(item.country)
+        .toLowerCase()
+        .replace(/-/g, " ");
+
+      return countryName.includes(searchTerm.toLowerCase());
+    });
   } else if (visibilityfilter === "continents") {
     filteredData = getAggregatedData(filteredData);
-  } else if (visibilityfilter === "world") {
-    const aggregatedWorldData = aggregateWorldData(data);
-    filteredData = [
-      {
-        country: "All",
-        ...aggregatedWorldData,
-      },
-    ];
-  }
+    filteredData = filteredData.filter((item) => {
+      const continentName = item.continent.toLowerCase();
 
-  if (searchTerm) {
-    filteredData = filteredData.filter((item) =>
-      formatCountryName(item.country)
-        .toLowerCase()
-        .includes(searchTerm.toLowerCase())
-    );
+      return continentName.includes(searchTerm.toLowerCase());
+    });
   }
 
   return filteredData;
 };
+
+
 
 
 export const sortedData = (data, sortConfig) => {

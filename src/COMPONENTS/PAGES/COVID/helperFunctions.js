@@ -3,7 +3,7 @@
 import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { countryNameToCode } from "./TABLE/countryNameToCode";
+import { countryNameToCode } from "./countryNameToCode";
 
 export const getNestedValue = (obj, path) => {
     return path
