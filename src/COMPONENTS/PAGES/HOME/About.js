@@ -1,5 +1,5 @@
 // create a react component called About.js
-import React, {useRef} from "react";   // <-- import react  
+import React from "react";   // <-- import react  
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // <-- import FontAwesomeIcon
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import Logo from "../../../LOGO/CHULPS_LOGO_ANIMATION_WHITE_NO_BG_imgur.gif"; // <-- import Logo
