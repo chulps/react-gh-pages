@@ -106,7 +106,7 @@
 }
 
 .clicktool section {
-  min-height: calc(100vh - var(--navHeight));
+  min-height: calc(100vh - 61.38px);
   /* margin: 0 var(--navHeight); */
 }
 

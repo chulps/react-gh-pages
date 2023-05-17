@@ -1,15 +1,29 @@
+@font-face {
+  font-family: "rustea";
+  src: url("Rustea.otf");
+}
+
+.nucleotide h1,
+.nucleotide h2,
+.nucleotide h3,
+.nucleotide h4,
+.nucleotide h5,
+.nucleotide h6 {
+  font-family: "rustea", helvetica, arial, sans-serif;
+}
+
 .feedback {
   display: unset;
   position: fixed;
   top: 50%;
   right: 0;
-    transform: rotate(-90deg) translateY(38px);
+  transform: rotate(-90deg) translateY(38px);
 }
 
 .feedback a button {
   background: var(--transWhite-50) !important;
   backdrop-filter: blur(3px);
-  border-radius: var(--unit1) var(--unit1) 0 0!important;
+  border-radius: var(--unit1) var(--unit1) 0 0 !important;
 }
 
 .feebback a button:hover {
@@ -34,7 +48,7 @@
 
 .chatbot-open-toggle {
   position: fixed;
-  top: calc(63.99px + var(--unit2));
+  top: calc(61.38px + var(--unit2));
   right: var(--unit2);
   z-index: 1;
 }

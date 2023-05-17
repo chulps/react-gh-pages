@@ -33,13 +33,13 @@ class Yarden extends Component {
           <title>Yarden</title>
         </Helmet>
         {/* yarden top section */}
-        <section className="mt3">
+        <section className="pt3">
           <label>Project:</label>
           <h1>Yarden&trade;</h1>
         </section>
 
         {/* intro section */}
-        <section className="md-two-columns gap2 md-gap3 lg-gap4 mb4">
+        <section className="md-two-columns gap2 md-gap3 lg-gap4 pb4">
           <div>
             <p>
               Yarden is a gardening company supported by tech. It makes use of
@@ -467,7 +467,7 @@ class Yarden extends Component {
             <h3>The "Garden Map"</h3>
           </div>
 
-          <div className="gap3 lg-two-columns lg-gap4 mb4">
+          <div className="gap3 lg-two-columns lg-gap4 pb4">
             <div>
               <p>
                 When we first released the app, we were really proud, this is my

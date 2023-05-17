@@ -4,11 +4,18 @@
   align-items: center;
   width: 100%;
   margin-top: var(--unit2);
+  flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {
+  .disciplines {
+    flex-direction: row;
+  }
 }
 
 
 
-.disciplines h6 {
+.disciplines small {
   height: calc(var(--unit4));
   width: calc(var(--unit4));
   border-radius: var(--unit4) !important;
@@ -19,6 +26,7 @@
   text-align: center;
   font-weight: normal;
   padding: var(--unit2);
+  line-height: 1;
 }
 
 .disciplines svg {
@@ -235,3 +243,4 @@
     height: 80%;
   }
 }
+

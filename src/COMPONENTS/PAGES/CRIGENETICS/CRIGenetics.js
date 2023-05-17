@@ -16,13 +16,13 @@ class CRIGenetics extends Component {
           <title>CRI Genetics</title>
         </Helmet>
         {/* yarden top section */}
-        <section className="mt3">
+        <section className="pt3">
           <label>Project:</label>
           <h1>CRI Genetics</h1>
         </section>
 
         {/* intro section */}
-        <section className="md-two-columns gap2 md-gap3 lg-gap4 mb4">
+        <section className="md-two-columns gap2 md-gap3 lg-gap4 pb4">
           <div>
             <p>
               CRI Genetics is a company similar to Ancestry.com or 23andME. I

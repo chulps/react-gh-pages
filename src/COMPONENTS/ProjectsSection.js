@@ -54,7 +54,7 @@ class ProjectSection extends Component {
             </Link>
 
             <Link to="/projects/covid/">
-              <h4 className="text-red0">🦠 COVID-19 Dashboard</h4>
+              <h4 className="text-red0">🦠 COVID&#8210;19 Dashboard</h4>
             </Link>
 
             <Link to="/projects/clicktool/">

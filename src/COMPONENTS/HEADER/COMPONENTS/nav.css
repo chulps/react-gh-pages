@@ -77,8 +77,10 @@ nav ul li:active {
 
 nav .status {
   box-shadow: inset 0 3px 6px var(--transBlueC-10);
-  background: var(--transBlueC-05);
   white-space: nowrap;
+  border-radius: var(--unit1);
+  color: var(--transBlueC-75);
+  background: var(--transBlueC-10);
 }
 
 nav .active::after {
@@ -86,7 +88,7 @@ nav .active::after {
   content: "";
   height: 5px;
   position: absolute;
-  top: calc(100% + 4.25px);
+  top: calc(100% + 5px);
   left: 0;
   background: var(--primary);
   border-radius: 2px;
@@ -96,5 +98,29 @@ nav .active::after {
 @media screen and (min-width: 768px) {
   nav .active::after {
     display: block;
+  }
+}
+
+.hiring-icon {
+  animation: blink .5s infinite;
+  background: var(--transBlueC-90);
+}
+
+@keyframes blink {
+  0% {
+    color: var(--greenA);
+    filter: none;
+  }
+  20% {
+    color: var(--green1);
+    filter: drop-shadow(0 0 6px var(--green1));
+  }
+  60% {
+    color: var(--green1);
+    filter: drop-shadow(0 0 6px var(--green1));
+  }
+  100% {
+    color: var(--greenA);
+    filter: none;
   }
 }

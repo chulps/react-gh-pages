@@ -140,7 +140,7 @@ Responsibilities:
     • Create and maintain the design system "Nucleotide"
     • Collaborate with team members to push products from concept to launch
     • Plan and set up A/B tests
-Note: Chuck started this role jus as COVID-19 was starting to spread in the US. He was able to work remotely for the majority of his time at CRI Genetics.
+Note: Chuck started this role jus as Covid&#8210;19 was starting to spread in the US. He was able to work remotely for the majority of his time at CRI Genetics.
 
 Title: Creative Director
 Company: Clicktool

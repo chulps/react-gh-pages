@@ -1,0 +1,88 @@
+$anim-speed: 1000ms;
+
+.animate-up-wrapper {
+  & > * {
+    animation: animate-up $anim-speed ease;
+    animation-fill-mode: forwards;
+    // animation-delay: 1000ms;
+    opacity: 0;
+    @for $i from 1 through 21 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * calc( $anim-speed/5 );
+      }
+    }
+  }
+
+  @keyframes animate-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.animate-left-wrapper {
+  & > * {
+    animation: animate-left $anim-speed ease-in-out;
+    animation-fill-mode: forwards;
+    // animation-delay: 1000ms;
+    opacity: 0;
+    @for $i from 1 through 21 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * calc( $anim-speed/5 );
+      }
+    }
+  }
+
+  @keyframes animate-left {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+.animate-right-wrapper {
+    & > * {
+      animation: animate-right $anim-speed ease-in-out;
+      animation-fill-mode: forwards;
+      // animation-delay: 1000ms;
+      opacity: 0;
+      @for $i from 1 through 21 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * calc( $anim-speed/5 );
+        }
+      }
+    }
+  
+    @keyframes animate-right {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      20% {
+        opacity: 1;
+        transform: translateX(20%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+  }
