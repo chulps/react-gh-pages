@@ -11,7 +11,7 @@ const DetailPanel = ({ country, worldData }) => {
     const { population, tests, cases, active, deaths, recovered } = worldData;
 
     return (
-      <div className="detail-panel p3 lg-pr-none">
+      <div className="detail-panel lg-pl3">
         <div className="country-hero">
           <h1>🌎</h1>
           <h4>World</h4>
@@ -48,7 +48,7 @@ const DetailPanel = ({ country, worldData }) => {
   }
 
   return (
-    <div className="detail-panel p3 lg-pr-none">
+    <div className="detail-panel p3 lg-pl3">
       <div className="country-hero">
         <h1>{getFlagEmoji(country.country)}</h1>
         <h4>{formatCountryName(country.country)}</h4>

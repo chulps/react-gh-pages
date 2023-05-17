@@ -37,7 +37,7 @@ const Map = ({ covidStats }) => {
   const handleReset = () => {
     setSelectedCountry(null);
   };
-  
+
   // Preprocess the data to assign ranks to each country for each statistic
   const statsWithRanks = useMemo(() => {
     const sortedStats = [...covidStats].sort(
@@ -81,6 +81,7 @@ const Map = ({ covidStats }) => {
           <div className="control-panel">
             <h3>Covid Map</h3>
             <select onChange={handleChange} value={selectedMetric}>
+              &
               <option value="population">Population</option>
               <option value="tests">Total Tests</option>
               <option value="cases">Total Cases</option>
@@ -165,14 +166,15 @@ const Map = ({ covidStats }) => {
                 )}
               </ZoomableGroup>
             </ComposableMap>
-            <div className="map-legend">
+            <div className="map-legend-container">
               <label>Legend</label>
-              <div className="labels">
-                <small>Least</small>
-                <small>Most</small>
+              <div className="map-legend">
+                <div className="labels">
+                  <small>Least</small>
+                  <small>Most</small>
+                </div>
+                <div className="gradient"></div>
               </div>
-
-              <div className="gradient"></div>
             </div>
             <div className="zoom-controls">
               {/* reset details panel to initial state */}
