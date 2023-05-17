@@ -1,4 +1,6 @@
-import { formatCountryName } from "../helperFunctions";
+// dataProcessing.js
+
+import { formatCountryName, aggregateWorldData } from "../helperFunctions";
 
 const continents = [
   "Asia",
@@ -10,13 +12,9 @@ const continents = [
 ];
 
 export const getAggregatedData = (data) => {
-
   // Aggregate values for each continent
   const aggregatedData = continents.map((continent) => {
-    const countryData = data.filter(
-      (item) =>
-        item.continent === continent
-    );
+    const countryData = data.filter((item) => item.continent === continent);
 
     const aggregatedValues = countryData.reduce(
       (accumulator, current) => {
@@ -62,8 +60,6 @@ export const getAggregatedData = (data) => {
   return aggregatedData;
 };
 
-
-
 export const filterData = (data, visibilityfilter, searchTerm) => {
   let filteredData = data;
 
@@ -81,10 +77,15 @@ export const filterData = (data, visibilityfilter, searchTerm) => {
         ].includes(item.country)
     );
   } else if (visibilityfilter === "continents") {
-
     filteredData = getAggregatedData(filteredData);
   } else if (visibilityfilter === "world") {
-    filteredData = filteredData.filter((item) => item.country === "All");
+    const aggregatedWorldData = aggregateWorldData(data);
+    filteredData = [
+      {
+        country: "All",
+        ...aggregatedWorldData,
+      },
+    ];
   }
 
   if (searchTerm) {
@@ -103,24 +104,24 @@ export const sortedData = (data, sortConfig) => {
   const { key, direction } = sortConfig;
   if (!key) return data;
 
-    // Add logic to check if sorting Continents
-    if (key === 'continent') {
-      // Sort based on continent name
-      const sortedData = [...data].sort((a, b) => {
-        let aContinent = a.continent;
-        let bContinent = b.continent;
-  
-        if (direction === 'ascending') {
-          if (aContinent < bContinent) return -1;
-          if (aContinent > bContinent) return 1;
-        } else {
-          if (aContinent > bContinent) return -1;
-          if (aContinent < bContinent) return 1;
-        }
-        return 0;
-      });
-      return sortedData;
-    }
+  // Add logic to check if sorting Continents
+  if (key === "continent") {
+    // Sort based on continent name
+    const sortedData = [...data].sort((a, b) => {
+      let aContinent = a.continent;
+      let bContinent = b.continent;
+
+      if (direction === "ascending") {
+        if (aContinent < bContinent) return -1;
+        if (aContinent > bContinent) return 1;
+      } else {
+        if (aContinent > bContinent) return -1;
+        if (aContinent < bContinent) return 1;
+      }
+      return 0;
+    });
+    return sortedData;
+  }
 
   const sortedData = [...data].sort((a, b) => {
     let aKey = a[key];
@@ -144,8 +145,3 @@ export const sortedData = (data, sortConfig) => {
 
   return sortedData;
 };
-
-
-
-
-

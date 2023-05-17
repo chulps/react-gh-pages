@@ -15,6 +15,10 @@ const Covid = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       const { data, error } = await fetchCovidStats();
@@ -58,19 +62,19 @@ const Covid = () => {
   };
 
   if (isLoading) {
-    return <Loader />;
+    return <section className="hero flex-center"><Loader /></section>;
   } else {
     return (
       <section id="covid" className="py3">
         <Helmet>
           <title>🦠 Covid-19 Dashboard</title>
         </Helmet>
-        <div className="mb3" style={{ maxWidth: "45ch" }}>
+        <div className="mb2">
           <div>
             <label>Project:</label>
+            <div className="md-two-columns whole">
             <h1>
               🦠 Covid-19
-              <br />
               Dashboard
             </h1>
             <p>
@@ -81,6 +85,8 @@ const Covid = () => {
               The point of this project is just to practice connecting to an API
               and demonstrate my ability to visualize data using what I know.
             </p>
+            </div>
+
           </div>
         </div>
         <div>

@@ -1,3 +1,5 @@
+// Table.js
+
 import React, { useState, useEffect, useCallback } from "react";
 import "./Table.css";
 import { filterData, sortedData } from "./dataProcessing";
@@ -50,15 +52,6 @@ const Table = ({ covidStats }) => {
 
     setTable(key, direction);
   };
-
-  // useEffect(
-  //   () => {
-  //     if (covidStats) {
-  //       setTable();
-  //     }
-  //   },
-  //   [visibilityfilter, covidStats, searchTerm]
-  // );
 
   if (sortedStats || covidStats) {
     return (

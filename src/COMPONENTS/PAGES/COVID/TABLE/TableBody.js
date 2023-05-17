@@ -1,3 +1,5 @@
+// TableBody.js
+
 import React from "react";
 import "./Table.css";
 import {
@@ -8,7 +10,7 @@ import {
 } from "../helperFunctions";
 
 const TableBody = ({ data, visibilityfilter }) => {
-  const uniqueKey = visibilityfilter === "continents" ? "continent" : "country";
+  const uniqueKey = visibilityfilter === "world" ? "country" : (visibilityfilter === "continents" ? "continent" : "country");
   return (
     <tbody>
       {data.map((item, index) => (
@@ -44,3 +46,4 @@ const TableBody = ({ data, visibilityfilter }) => {
 };
 
 export default TableBody;
+

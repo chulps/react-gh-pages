@@ -1,3 +1,5 @@
+// helperFunctions.js
+
 import ISO31661Alpha2 from "iso-3166-1-alpha-2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
@@ -90,9 +92,9 @@ export const formatCountryName = (countryName) => {
     const countryNameMapping = {
       "S. Korea": "South Korea",
       "N. Korea": "North Korea",
-      CAR: "Central African Republic",
-      DRC: "Democratic Republic of the Congo",
-      USA: "United States of America",
+      "CAR": "Central African Republic",
+      "DRC": "Democratic Republic of the Congo",
+      "USA": "United States of America",
       "Diamond Princess": "Diamond Princess (🚢)",
       "St. Barth": "Saint Barth",
       "St-Vincent-Grenadines": "Saint Vincent and the Grenadines",
@@ -101,4 +103,20 @@ export const formatCountryName = (countryName) => {
     };
 
     return countryNameMapping[countryName] || countryName;
+  };
+  
+  export const aggregateWorldData = (data) => {
+    return data.reduce(
+      (accumulator, current) => {
+        return {
+          cases: accumulator.cases + current.cases,
+          deaths: accumulator.deaths + current.deaths,
+          recovered: accumulator.recovered + current.recovered,
+          population: accumulator.population + current.population,
+          active: accumulator.active + current.active,
+          tests: accumulator.tests + current.tests,
+        };
+      },
+      { population: 0, cases: 0, deaths: 0, recovered: 0, tests: 0, active: 0 }
+    );
   };
