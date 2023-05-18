@@ -520,7 +520,6 @@ const About = () => {
               <small key={tool.tool}>{tool.tool}</small>
             ))}
         </div>
-        {/* <a href="/design-process/">Design Process</a> */}
       </div>
     </section>
   </section>
@@ -528,5 +527,5 @@ const About = () => {
     
 }
 
-export default About;                     // <-- export the About component
+export default About;
 

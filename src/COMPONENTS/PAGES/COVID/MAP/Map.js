@@ -1,4 +1,6 @@
-import React, { useState, useMemo } from "react";
+// Map.js
+
+import React, { useState, useMemo, useEffect } from "react";
 import { scaleLinear } from "d3-scale";
 import {
   ComposableMap,
@@ -15,9 +17,17 @@ import {
   getFlagEmoji,
   aggregateWorldData,
 } from "../helperFunctions";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import DetailPanel from "./DetailPanel";
+import {
+  handleChange,
+  handleZoomIn,
+  handleZoomOut,
+  handleMoveEnd,
+  handleReset,
+  handleResetMap,
+} from "./eventHandlers";
+import MapLegend from "./MapLegend";
+import ZoomControls from "./ZoomControls";
 
 const geoUrl = process.env.PUBLIC_URL + "/features.json";
 
@@ -33,12 +43,9 @@ const Map = ({ covidStats }) => {
   const [tooltipContent, setTooltipContent] = useState("");
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [selectedCountry, setSelectedCountry] = useState(null);
+  const isCountrySelected = !!selectedCountry; // Convert selectedCountry to a boolean value
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
-  const handleReset = () => {
-    setSelectedCountry(null);
-  };
-
-  // Preprocess the data to assign ranks to each country for each statistic
   const statsWithRanks = useMemo(() => {
     const sortedStats = [...covidStats].sort(
       (a, b) => b[selectedMetric] - a[selectedMetric]
@@ -52,23 +59,61 @@ const Map = ({ covidStats }) => {
     });
   }, [covidStats, selectedMetric]);
 
-  const handleChange = (e) => {
-    setSelectedMetric(e.target.value);
+  // Toggle fullscreen mode
+  const handleToggleFullscreen = () => {
+    if (document.fullscreenEnabled) {
+      if (isFullscreen) {
+        document.exitFullscreen();
+      } else {
+        document.documentElement.requestFullscreen();
+      }
+      setIsFullscreen(!isFullscreen);
+    }
   };
 
-  const handleZoomIn = () => {
-    if (position.zoom >= 8) return;
-    setPosition((pos) => ({ ...pos, zoom: pos.zoom * 2 }));
+  // Event listener for fullscreen change
+  const handleFullscreenChange = () => {
+    setIsFullscreen(document.fullscreenElement !== null);
   };
 
-  const handleZoomOut = () => {
-    if (position.zoom <= 1) return;
-    setPosition((pos) => ({ ...pos, zoom: pos.zoom / 2 }));
+  // Attach fullscreen change listener on component mount
+  useEffect(() => {
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
+
+  // get the height and width of the window
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+
+  // update the height and width of the window
+  const updateWindowDimensions = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
   };
 
-  const handleMoveEnd = (position) => {
-    setPosition(position);
-  };
+  // attach event listener to update window dimensions on resize
+  useEffect(() => {
+    window.addEventListener("resize", updateWindowDimensions);
+    return () => {
+      window.removeEventListener("resize", updateWindowDimensions);
+    };
+  }, []);
+
+  // console log the height and width of the window
+  useEffect(() => {
+    console.log(`window width: ${windowWidth}, window height: ${windowHeight}`);
+  }, [windowWidth, windowHeight]);
+
+  // update the width and height props in the ComposableMap component when it is in fullscreen mode
+  useEffect(() => {
+    if (isFullscreen) {
+      setPosition((pos) => ({ ...pos, zoom: 1 }));
+    }
+  }, [isFullscreen]);
+
 
   if (!covidStats) {
     return <Loader />;
@@ -80,8 +125,10 @@ const Map = ({ covidStats }) => {
         <div>
           <div className="control-panel">
             <h3>Covid Map</h3>
-            <select onChange={handleChange} value={selectedMetric}>
-              &
+            <select
+              onChange={(e) => handleChange(e, setSelectedMetric)}
+              value={selectedMetric}
+            >
               <option value="population">Population</option>
               <option value="tests">Total Tests</option>
               <option value="cases">Total Cases</option>
@@ -90,18 +137,35 @@ const Map = ({ covidStats }) => {
               <option value="recovered">Total Recovered</option>
             </select>
           </div>
-          <div id="map-container">
-            {" "}
+          <div
+            id="map-container"
+            style={
+              isFullscreen
+                ? {
+                    position: "fixed",
+                    width: "100vw",
+                    height: "100vh",
+                    top: 0,
+                    left: 0,
+                    zIndex: 1,
+                  }
+                : {}
+            }
+          >
             <ComposableMap
               projectionConfig={{
                 rotate: [-10, 0, 0],
                 scale: 150,
                 center: [10, 10],
               }}
-              width={800}
-              height={400}
+              width={isFullscreen ? windowWidth / 2 : 800}
+              height={isFullscreen ? windowHeight / 2 + 63.39 / 2: 400}
             >
-              <ZoomableGroup zoom={position.zoom} onMoveEnd={handleMoveEnd}>
+              <ZoomableGroup
+                zoom={position.zoom}
+                onMoveEnd={() => handleMoveEnd(position, setPosition)}
+                center={[15, 10]}
+              >
                 {statsWithRanks && (
                   <Geographies geography={geoUrl}>
                     {({ geographies }) =>
@@ -117,11 +181,8 @@ const Map = ({ covidStats }) => {
                             fill={rank ? colorScale(rank) : "#F5F4F6"}
                             strokeWidth={0.25}
                             stroke="white"
-                            onClick={() => {
-                              setSelectedCountry(d);
-                            }}
+                            onClick={() => setSelectedCountry(d)}
                             onMouseEnter={(e) => {
-                              // Show the tooltip when the mouse enters the element
                               setTooltipContent(
                                 d ? (
                                   <div className="tooltip-content">
@@ -145,14 +206,12 @@ const Map = ({ covidStats }) => {
                               });
                             }}
                             onMouseMove={(e) => {
-                              // Update the position of the tooltip as the mouse moves
                               setTooltipPosition({
                                 x: e.clientX,
                                 y: e.clientY,
                               });
                             }}
                             onMouseLeave={() => {
-                              // Hide the tooltip when the mouse leaves the element
                               setTooltipContent("");
                             }}
                             onMouseDown={() => {
@@ -166,41 +225,24 @@ const Map = ({ covidStats }) => {
                 )}
               </ZoomableGroup>
             </ComposableMap>
-            <div className="map-legend-container">
-              <label>Legend</label>
-              <div className="map-legend">
-                <div className="labels">
-                  <small>Least</small>
-                  <small>Most</small>
-                </div>
-                <div className="gradient"></div>
-              </div>
-            </div>
-            <div className="zoom-controls">
-              {/* reset details panel to initial state */}
-              <button className="btn3" onClick={handleReset}>
-                <h4>
-                  <FontAwesomeIcon icon={solid("earth")} />
-                </h4>
-              </button>
-              <button className="btn3" onClick={handleZoomIn}>
-                <h4>
-                  <FontAwesomeIcon icon={solid("plus")} />
-                </h4>
-              </button>
-              <button className="btn3" onClick={handleZoomOut}>
-                <h4>
-                  <FontAwesomeIcon icon={solid("minus")} />
-                </h4>
-              </button>
-            </div>
+            <MapLegend isFullscreen={isFullscreen}/>
+            <ZoomControls
+              handleReset={() => handleReset(setSelectedCountry)}
+              handleZoomIn={() => handleZoomIn(position, setPosition)}
+              handleZoomOut={() => handleZoomOut(position, setPosition)}
+              handleResetMap={() => handleResetMap(setPosition)}
+              isCountrySelected={isCountrySelected}
+              handleToggleFullscreen={handleToggleFullscreen}
+              isFullscreen={isFullscreen}
+              style={{marginBottom: isFullscreen ? "var(--unit4)" : 0}}
+            />
           </div>
         </div>
 
         {tooltipContent && (
           <Tooltip content={tooltipContent} position={tooltipPosition} />
         )}
-        <DetailPanel country={selectedCountry} worldData={worldData} />
+        <DetailPanel isFullscreen={isFullscreen} country={selectedCountry} worldData={worldData} />
       </div>
     </div>
   );

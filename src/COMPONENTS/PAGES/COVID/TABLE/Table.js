@@ -31,7 +31,6 @@ const Table = ({ covidStats }) => {
   
       let filteredStats = filterData(covidStats, visibilityfilter, searchTerm);
   
-      // Remove "World" from filteredStats if the current filter is not "world"
       if (visibilityfilter !== "world") {
         filteredStats = filteredStats.filter((item) => item.country !== "All");
       }
@@ -48,7 +47,6 @@ const Table = ({ covidStats }) => {
     }
   }, [visibilityfilter, covidStats, searchTerm, setTable]);
   
-
   const onHeaderClick = (key) => {
     const direction =
       sortConfig.key === key
