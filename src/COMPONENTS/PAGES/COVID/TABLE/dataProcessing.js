@@ -1,6 +1,6 @@
 // dataProcessing.js
 
-import { formatCountryName, aggregateWorldData } from "../helperFunctions";
+import { formatCountryName } from "../helperFunctions";
 
 const continents = [
   "Asia",

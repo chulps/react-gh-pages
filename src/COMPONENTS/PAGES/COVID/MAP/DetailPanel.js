@@ -6,78 +6,49 @@ import {
 } from "../helperFunctions";
 import "../../../../animate-in.scss";
 
-const DetailPanel = ({ country, worldData }) => {
-  if (!country) {
-    const { population, tests, cases, active, deaths, recovered } = worldData;
+const DetailPanel = ({ country, worldData, isFullscreen }) => {
+  const data = country || worldData;
 
-    return (
-      <div className="detail-panel lg-pl3">
-        <div className="country-hero">
-          <h1>🌎</h1>
-          <h4>World</h4>
-        </div>
-
-        <div className="country-details animate-up-wrapper pt2">
-          <div>
-            <label>Population: </label>
-            <data>{formatNumberWithCommas(population)}</data>
-          </div>
-          <div>
-            <label>Total Tests: </label>
-            <data>{formatNumberWithCommas(tests)}</data>
-          </div>
-          <div>
-            <label>Total Cases: </label>
-            <data>{formatNumberWithCommas(cases)}</data>
-          </div>
-          <div>
-            <label>Active Cases: </label>
-            <data>{formatNumberWithCommas(active)}</data>
-          </div>
-          <div>
-            <label>Total Deaths: </label>
-            <data>{formatNumberWithCommas(deaths)}</data>
-          </div>
-          <div>
-            <label>Total Recovered: </label>
-            <data>{formatNumberWithCommas(recovered)}</data>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  const detailItems = [
+    {
+      label: "Population:",
+      dataField: "population",
+    },
+    {
+      label: "Total Tests:",
+      dataField: "tests",
+    },
+    {
+      label: "Total Cases:",
+      dataField: "cases",
+    },
+    {
+      label: "Active Cases:",
+      dataField: "active",
+    },
+    {
+      label: "Total Deaths:",
+      dataField: "deaths",
+    },
+    {
+      label: "Total Recovered:",
+      dataField: "recovered",
+    },
+  ];
 
   return (
-    <div className="detail-panel p3 lg-pl3">
+    <div className={`detail-panel ${isFullscreen ? "isFullscreen" : ""} animate-up-wrapper`}>
       <div className="country-hero">
-        <h1>{getFlagEmoji(country.country)}</h1>
-        <h4>{formatCountryName(country.country)}</h4>
+        <h1>{country ? getFlagEmoji(country.country) : "🌎"}</h1>
+        <h4>{country ? formatCountryName(country.country) : "World"}</h4>
       </div>
-      <div className="country-details animate-up-wrapper pt2">
-        <div>
-          <label>Population: </label>
-          <data>{formatNumberWithCommas(country.population)}</data>
-        </div>
-        <div>
-          <label>Total Tests: </label>
-          <data>{formatNumberWithCommas(country.tests)}</data>
-        </div>
-        <div>
-          <label>Total Cases: </label>
-          <data>{formatNumberWithCommas(country.cases)}</data>
-        </div>
-        <div>
-          <label>Active Cases: </label>
-          <data>{formatNumberWithCommas(country.active)}</data>
-        </div>
-        <div>
-          <label>Total Deaths: </label>
-          <data>{formatNumberWithCommas(country.deaths)}</data>
-        </div>
-        <div>
-          <label>Total Recovered: </label>
-          <data>{formatNumberWithCommas(country.recovered)}</data>
-        </div>
+      <div className="country-details animate-up-wrapper">
+        {detailItems.map((item) => (
+          <div key={item.dataField}>
+            <small>{item.label}</small>
+            <data>{formatNumberWithCommas(data[item.dataField])}</data>
+          </div>
+        ))}
       </div>
     </div>
   );
