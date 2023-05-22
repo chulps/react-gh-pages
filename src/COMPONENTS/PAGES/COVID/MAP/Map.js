@@ -125,17 +125,6 @@ const Map = ({ covidStats }) => {
         <div>
           <div className="control-panel">
             <h3>Covid Map</h3>
-            <select
-              onChange={(e) => handleChange(e, setSelectedMetric)}
-              value={selectedMetric}
-            >
-              <option value="population">Population</option>
-              <option value="tests">Total Tests</option>
-              <option value="cases">Total Cases</option>
-              <option value="active">Active Cases</option>
-              <option value="deaths">Total Deaths</option>
-              <option value="recovered">Total Recovered</option>
-            </select>
           </div>
           <div
             id="map-container"
@@ -155,16 +144,16 @@ const Map = ({ covidStats }) => {
             <ComposableMap
               projectionConfig={{
                 rotate: [-10, 0, 0],
-                scale: 150,
+                scale: 180,
                 center: [10, 10],
               }}
               width={isFullscreen ? windowWidth / 2 : 800}
-              height={isFullscreen ? windowHeight / 2 + 63.39 / 2: 400}
+              height={isFullscreen ? windowHeight / 2 + 63.39 / 2: 500}
             >
               <ZoomableGroup
                 zoom={position.zoom}
                 onMoveEnd={() => handleMoveEnd(position, setPosition)}
-                center={[15, 10]}
+                center={[10, 10]}
               >
                 {statsWithRanks && (
                   <Geographies geography={geoUrl}>
@@ -236,6 +225,19 @@ const Map = ({ covidStats }) => {
               isFullscreen={isFullscreen}
               style={{marginBottom: isFullscreen ? "var(--unit4)" : 0}}
             />
+            <select
+              className={`map-filter ${isFullscreen ? "isFullscreen" : ""}`}
+              onChange={(e) => handleChange(e, setSelectedMetric)}
+              value={selectedMetric}
+            >
+              <label>filter</label>
+              <option value="population">Population</option>
+              <option value="tests">Total Tests</option>
+              <option value="cases">Total Cases</option>
+              <option value="active">Active Cases</option>
+              <option value="deaths">Total Deaths</option>
+              <option value="recovered">Total Recovered</option>
+            </select>
           </div>
         </div>
 

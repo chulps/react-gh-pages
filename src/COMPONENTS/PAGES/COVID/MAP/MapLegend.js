@@ -7,7 +7,6 @@ const MapLegend = ({isFullscreen}) => {
 
   return (
     <div className="map-legend-container">
-    <label>Legend</label>
     <div className="map-legend">
       <div className="labels">
         <small>Least</small>

@@ -70,6 +70,10 @@
   }
 }
 
+.zoom-controls.isFullscreen button {
+  padding: calc(var(--unit1) + var(--unit0));
+}
+
 .map-legend-container {
   position: absolute;
   bottom: var(--unit1);
@@ -152,8 +156,8 @@
 .detail-panel.isFullscreen {
   position: fixed;
   z-index: 1;
-  top: calc(63.39px + var(--unit2));
-  margin-left: var(--unit2);
+  top: calc(63.39px + var(--unit1));
+  margin-left: var(--unit1);
   width: fit-content;
   left: 0;
   display: flex;
@@ -167,6 +171,7 @@
 
 .detail-panel.isFullscreen .country-details {
   padding: var(--unit1) 0 0 0;
+  gap: var(--unit1);
 }
 
 .detail-panel.isFullscreen .country-hero {
@@ -179,4 +184,29 @@
 
 .zoom-controls.isFullscreen button {
   padding: calc(var(--unit1) + var(--unit0));
+}
+
+.nucleotide .map-filter {
+  background: var(--transWhite-75) !important;
+  box-shadow: 0 6px 12px var(--transBlueC-10);
+  padding: var(--unit0) var(--unit2) var(--unit0) var(--unit1);
+  position: absolute;
+  backdrop-filter: blur(3px) !important;
+  top: var(--unit1);
+  left: var(--unit1);
+  border-radius: var(--unit0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5' stroke='dodgerblue' stroke-width='3px' fill='none' /></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 99% !important;
+  background-position-y: 5px !important;
+  font-size: var(--h6) !important;
+  
+}
+
+.nucleotide .map-filter.isFullscreen {
+  left: unset;
+  right: var(--unit1);
 }
