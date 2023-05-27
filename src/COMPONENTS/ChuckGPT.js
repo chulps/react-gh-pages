@@ -1,3 +1,4 @@
+//ChuckGPT.js
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import Logo from "../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
@@ -7,14 +8,6 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./ChuckGPT.css";
 import ReactGA4 from "react-ga4";
 import ChuckGPTTraining from "./ChuckGPTTraining.js";
-
-
-
-// make an api call to the Covid&#8210;19 api and return the data as a variable
-
-
-
-
 
 const ChuckGPT = (props) => {
   const [history, setHistory] = useState([]);
@@ -69,10 +62,9 @@ const ChuckGPT = (props) => {
       setTyping(false);
 
       // Send GA4 event with message content and user location data
-
       ReactGA4.event({
-        category: 'ChuckGPT',
-        action: `Messsage: ${message}`,
+        category: "ChuckGPT",
+        action: `Message: ${message}`,
       });
 
       if (typeof props.onNewMessage === "function") {
@@ -98,32 +90,6 @@ const ChuckGPT = (props) => {
     inputRef.current.value = "";
   };
 
-  const formatMessage = (text) => {
-    const urlRegex = /(https?:\/\/[^\s]+(?:(?<![.,?!\-:;])|$))/g;
-    const linkTextMap = {
-      "https://calendly.com/interview-chuck-howard/45-minute-meeting":
-        "schedule a meeting with Chuck",
-      "https://www.linkedin.com/in/chuck-howard/": "visit Chuck's LinkedIn",
-      "https://www.behance.net/chuckhoward": "view Chuck's Behance portfolio",
-      "https://www.github.com/chulps": "check out Chuck's Github",
-      "https://stackoverflow.com/users/2146031/chulps":
-        "explore Chuck's Stackoverflow profile",
-      // Add more links and their corresponding descriptions here
-    };
-    return text.split(urlRegex).map((part, i) => {
-      if (part.match(urlRegex)) {
-        const linkText = linkTextMap[part] || part;
-        return (
-          <a key={i} href={part} target="_blank" rel="noopener noreferrer">
-            {linkText}
-          </a>
-        );
-      } else {
-        return part;
-      }
-    });
-  };
-
   return (
     <div id="ChuckGPT" className={props.className} style={props.style}>
       <div id="ChuckGPT-header">
@@ -143,8 +109,7 @@ const ChuckGPT = (props) => {
       <div className="history-container" ref={historyContainerRef}>
         <div className="message-container">
           <div className="message">
-            Hey I'm ChuckGPT, Chuck's AI assistant. Let me know if you have any
-            questions about Chuck's background or availability.
+            Hey, I'm ChuckGPT, Chuck's AI assistant. Ask me anything about Chuck's background or availability.
           </div>
           <small className="message-timestamp">
             <span role="img" aria-label="ChuckGPT">
@@ -180,7 +145,7 @@ const ChuckGPT = (props) => {
                 color: message.sender === "user" ? "white" : "inherit",
               }}
             >
-              {formatMessage(message.text)}
+              {message.text}
             </div>
             <small
               className="message-timestamp"

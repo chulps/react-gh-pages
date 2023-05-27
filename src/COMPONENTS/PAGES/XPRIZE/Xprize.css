@@ -1,0 +1,29 @@
+/* Xprize.css */
+
+#xprize {
+    margin-bottom: var(--unit3);
+}
+.xprize-projects {
+    grid-gap: var(--unit3);
+    display: grid;
+}
+
+.xprize-projects .project {
+    position: relative;
+}
+
+.xprize-projects .project img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--unit2);
+}
+
+.xprize-projects .project img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.01);
+}
+
+.xprize-projects .project h5 {
+    margin-top: var(--unit0);
+}

@@ -24,9 +24,8 @@ class ProjectSection extends Component {
           <p className="mb3" style={{maxWidth: '45ch'}}>This is my portfolio showcasing some of my best work in the last few years. Here you'll see a mix of branding, product design, and frontend development.</p>
           <div className="one-column sm-two-columns lg-four-columns gap2">
 
-            <Link to="/projects/xprize/" className="disabled">
+            <Link to="/projects/xprize/">
               <img width="100%" height="auto" src={XPRIZELogo} alt="xprize logo" />
-              <small>Not ready yet...</small>
             </Link>
 
             <Link to="/projects/yarden/">
