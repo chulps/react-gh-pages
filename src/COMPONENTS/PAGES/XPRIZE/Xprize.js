@@ -32,15 +32,15 @@ class Xprize extends Component {
               <div className="sm-two-columns gap2">
                 <div>
                   <label>Title:</label>
-                  <h5>UI Engineer</h5>
+                  <h5>UI/UX Engineer</h5>
                 </div>
                 <div>
                   <label>City:</label>
-                  <h5>Rochester, NY (Remote)</h5>
+                  <h5>Los Angeles, CA (Remote)</h5>
                 </div>
                 <div>
                   <label>When:</label>
-                  <h5>2022</h5>
+                  <h5>2023</h5>
                 </div>
                 <div>
                   <label>Country:</label>
