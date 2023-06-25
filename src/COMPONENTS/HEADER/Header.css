@@ -16,6 +16,7 @@
   height: 48.59px;
   left: -2px;
   top: -1px;
+  mix-blend-mode: difference;
 }
 
 #mobile-nav {

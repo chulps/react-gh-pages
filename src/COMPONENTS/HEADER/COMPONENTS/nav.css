@@ -79,6 +79,9 @@ nav ul li:active {
 nav .status {
   white-space: nowrap;
   color: var(--transBlueC-75);
+  backdrop-filter: blur(10px) brightness(0.9);
+  padding: 0 var(--unit0);
+  border-radius: var(--unit1);
 }
 
 nav.active {
@@ -103,7 +106,7 @@ nav .active::after {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   nav .active::after {
     display: block;
   }
@@ -135,10 +138,11 @@ nav .active::after {
 
 .nav-left {
   gap: var(--unit1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(1.1);
   padding: var(--unit0) var(--unit0) var(--unit0) var(--unit1);
-  border: 1px solid var(--transBlueC-25);
+  border: 1px solid var(--transBlueC-10);
   border-radius: 0 var(--unit3) var(--unit3) 0;
+  /* box-shadow: 0 6px 12px var(--transBlueC-10); */
 }
 
 .nav-left a:hover {

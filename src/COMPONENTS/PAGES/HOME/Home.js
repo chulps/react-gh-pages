@@ -36,7 +36,7 @@ const Home = () => {
       <section
         className="hero flex-end"
         style={{
-          minHeight: "calc(100vh - 95px)",
+          minHeight: "calc(100vh - 88px)",
         }}
       >
         <section className="content-col flex md-two-columns">
