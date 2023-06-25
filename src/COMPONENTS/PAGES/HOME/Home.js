@@ -36,7 +36,7 @@ const Home = () => {
       <section
         className="hero flex-end"
         style={{
-          minHeight: "calc(100vh - 61.38px)",
+          minHeight: "calc(100vh - 95px)",
         }}
       >
         <section className="content-col flex md-two-columns">
@@ -72,7 +72,7 @@ const Home = () => {
               }}
             />
           </div>
-          <div className="flex-vertical flex-start md-flex-center-x py2 lg-ml3 animate-up-wrapper">
+          <div className="flex-vertical flex-start md-flex-center-x lg-ml3 animate-up-wrapper">
             <div
               className="content-box flex-vertical animate-up-wrapper"
               style={{
@@ -94,7 +94,7 @@ const Home = () => {
                 </small>
               </div>
             </div>
-            <div>
+            <div id="hero-social-icons">
               <label>Links:</label>
               <SocialIcons />
             </div>

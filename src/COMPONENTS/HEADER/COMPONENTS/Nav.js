@@ -1,6 +1,7 @@
 import React from "react";
 import "./nav.css";
 import NavLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
+import RotatingText from "./RotatingText";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
@@ -9,7 +10,8 @@ class NavContent extends React.Component {
   render() {
     const { onLinkClick } = this.props;
     return (
-      <ul className="flex-center flex-vertical sm-flex-horizontal">
+      <ul className="flex-center flex-vertical sm-flex-horizontal desktop-nav-links">
+
         <li className="sm-ghost">
           <img
             style={{ filter: "hue-rotate(150deg)" }}
@@ -34,18 +36,6 @@ class NavContent extends React.Component {
             Resumé
           </NavLink>
         </li>
-
-        <li>
-          <a
-            href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="green">
-            <FontAwesomeIcon icon={solid("calendar")} />&nbsp;&nbsp;Schedule&nbsp;Interview
-            </button>
-          </a>
-        </li>
       </ul>
     );
   }
@@ -64,70 +54,33 @@ class Nav extends React.Component {
       <nav className="floating-nav">
         {/* logo */}
         <div
-          style={{
-            background: "var(--transWhite-75)",
-            borderRadius: "var(--unit3)",
-            gap: "var(--unit0)",
-          }}
-          className="flex-center-y"
+          className="flex-center-y nav-left"
         >
           <NavLink
             to="/"
             className="flex flex-center-y"
             activeClassName="active"
           >
-            <img
-              className="header-logo"
-              src={NavLogo}
-              alt="C-logo"
-              style={{ filter: "hue-rotate(150deg)" }}
-            />
-          </NavLink>
-          <div
-            className="flex-vertical"
-            style={{ color: "var(--transBlueC-50)" }}
-          >
-            <label>Status:</label>
-            <small
-              className="status px1"
+            <span
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
             >
-              <span style={{ color: "var(--green0)" }} className="mr0">
-                <FontAwesomeIcon className="hiring-icon" icon={solid("user-tie")} />
-              </span>
-              Interviewing&nbsp;now
-            </small>
-          </div>
+              <RotatingText fill="var(--transBlueC-75)" />
+              <img
+                className="header-logo"
+                src={NavLogo}
+                alt="C-logo"
+                style={{ filter: "hue-rotate(150deg)" }}
+              />
+            </span>
+          </NavLink>
+                  {/* desktop */}
+          <span className="ghost sm-flex">
+            <NavContent onLinkClick={this.handleLinkClick} />
+          </span>
         </div>
-
-        {/* button */}
-        <button
-          id="mobile-nav-button"
-          className={`${
-            this.state.displaySideNav ? "close sm-ghost btn3" : "sm-ghost green"
-          } py0 px1 h4`}
-          onClick={() =>
-            this.setState({
-              displaySideNav: !this.state.displaySideNav,
-            })
-          }
-        >
-          {this.state.displaySideNav ? (
-            ""
-          ) : (
-            <FontAwesomeIcon icon={solid("burger")} />
-          )}
-        </button>
-
-        {/* desktop */}
-        <span
-          className="ghost sm-flex"
-          style={{
-            background: "var(--transWhite-75)",
-            borderRadius: "var(--unit3) 0 0 var(--unit3)",
-          }}
-        >
-          <NavContent onLinkClick={this.handleLinkClick} />
-        </span>
 
         {/* mobile */}
         <div
@@ -141,6 +94,61 @@ class Nav extends React.Component {
           <div className="overlay">
             <NavContent onLinkClick={this.handleLinkClick} />
           </div>
+        </div>
+        
+        {/* status */}
+        <div className="nav-right flex" style={{alignItems: 'center', gap: 'var(--unit1)'}}>
+          <div
+              className="status-wrapper flex-vertical"
+              style={{ color: "var(--transBlueC-50)" }}
+            >
+              <label style={{textAlign: 'right'}}>Status</label>
+              <small className="status">
+                <span style={{ color: "var(--green0)" }} className="mr0">
+                  <FontAwesomeIcon
+                    className="hiring-icon"
+                    icon={solid("user-tie")}
+                  />
+                </span>
+                <span
+                  style={{
+                    borderTop: "1px solid var(--transBlueC-25)",
+                    width: "var(--unit4)",
+                  }}
+                ></span>
+                <span>Interviewing&nbsp;now</span>
+              </small>
+            </div>
+                    {/* button */}
+          {/* rumplestilskin */}
+          <button
+          id="mobile-nav-button"
+          className={`${
+            this.state.displaySideNav ? "close sm-ghost btn3" : "sm-ghost green"
+          } py0 px1 h4`}
+          onClick={() =>
+            this.setState({
+              displaySideNav: !this.state.displaySideNav,
+            })
+          }
+        >
+          {this.state.displaySideNav ? (
+            ""
+          ) : (
+            <FontAwesomeIcon icon={solid("calendar")} />
+          )}
+        </button>
+            <a
+            className="green ghost sm-flex"
+              href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="green">
+                <FontAwesomeIcon icon={solid("calendar")} />
+                &nbsp;&nbsp;Let's Talk
+              </button>
+            </a>
         </div>
       </nav>
     );
