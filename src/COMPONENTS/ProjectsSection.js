@@ -7,6 +7,7 @@ import NucleotideLogo from "../IMG/nucleotide.svg";
 import FoundryLogo from "./PAGES/FOUNDRY/FoundryLogo";
 import XPRIZELogo from "../IMG/xprizelogo.png"
 import "./ProjectsSection.css";
+import "../animate-in.scss"
 
 class ProjectSection extends Component {
   render() {
@@ -22,7 +23,7 @@ class ProjectSection extends Component {
 
           <h2>My work:</h2>
           <p className="mb3" style={{maxWidth: '45ch'}}>This is my portfolio showcasing some of my best work in the last few years. Here you'll see a mix of branding, product design, and frontend development.</p>
-          <div className="one-column sm-two-columns lg-four-columns gap2">
+          <div className="one-column sm-two-columns lg-four-columns gap2 animate-up-wrapper">
 
             <Link to="/projects/xprize/">
               <img width="100%" height="auto" src={XPRIZELogo} alt="xprize logo" />

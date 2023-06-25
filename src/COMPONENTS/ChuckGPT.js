@@ -34,7 +34,7 @@ const ChuckGPT = (props) => {
     setTyping(true);
     setHistory((prevHistory) => [
       ...prevHistory,
-      { text: message, sender: "user", timestamp },
+      { content: message, role: "user", timestamp },
     ]);
 
     try {
@@ -54,8 +54,8 @@ const ChuckGPT = (props) => {
       setHistory((prevHistory) => [
         ...prevHistory,
         {
-          text: `${response.data.choices[0].message.content}`,
-          sender: "ChuckGPT",
+          content: `${response.data.choices[0].message.content}`,
+          role: "ChuckGPT",
           timestamp,
         },
       ]);
@@ -122,14 +122,14 @@ const ChuckGPT = (props) => {
             })}
           </small>
         </div>
-
+            {console.log(history)}
         {history.map((message, index) => (
           <div
             key={index}
             className="message-container"
             style={{
               margin:
-                message.sender === "user"
+                message.role === "user"
                   ? "0 0 var(--unit1) auto"
                   : "0 auto var(--unit1) 0",
             }}
@@ -139,23 +139,23 @@ const ChuckGPT = (props) => {
               style={{
                 wordWrap: "break-word",
                 background:
-                  message.sender === "user"
+                  message.role === "user"
                     ? "var(--blue1)"
                     : "var(--siteBackground)",
-                color: message.sender === "user" ? "white" : "inherit",
+                color: message.role === "user" ? "white" : "inherit",
               }}
             >
-              {message.text}
+              {message.content}
             </div>
             <small
               className="message-timestamp"
               style={{
                 justifyContent:
-                  message.sender === "user" ? "flex-end" : "flex-start",
+                  message.role === "user" ? "flex-end" : "flex-start",
               }}
             >
               &nbsp;
-              {message.sender === "user" ? "😎 You" : "🤖 ChuckGPT"}
+              {message.role === "user" ? "😎 You" : "🤖 ChuckGPT"}
               &nbsp;at&nbsp;
               {message.timestamp.toLocaleTimeString([], {
                 hour: "2-digit",

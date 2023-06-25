@@ -14,6 +14,8 @@ import "./Yarden.css";
 import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
 import { Helmet } from "react-helmet";
+import redesign2 from "./redesign2.png";
+import chatbot from "./chatbot.png";
 
 // import YardenHorizontalWhite from "./YardenHorizontalWhite";
 // import yardenTruck from "./yarden_truck.png";
@@ -63,7 +65,12 @@ class Yarden extends Component {
             </div>
             <div>
               <label>Country:</label>
-              <h5><span role="img" aria-label="USA">🇺🇸</span>&nbsp;USA</h5>
+              <h5>
+                <span role="img" aria-label="USA">
+                  🇺🇸
+                </span>
+                &nbsp;USA
+              </h5>
             </div>
           </div>
         </section>
@@ -239,7 +246,10 @@ class Yarden extends Component {
                   <small>4. Use the letter "Y" somehow</small>
                   <small>
                     5. We are gonna trademark this... so it needs to be simple,
-                    solid, and timeless. <span role="img" aria-label="nervous laughter">😅</span>
+                    solid, and timeless.{" "}
+                    <span role="img" aria-label="nervous laughter">
+                      😅
+                    </span>
                   </small>
                 </div>
               </div>
@@ -359,7 +369,7 @@ class Yarden extends Component {
             />
           </div>
           <div>
-            <label>Challenge #2:</label>
+            <label>Challenge #2.0:</label>
             <h2>Redesign the website</h2>
             <p className="pt1 pb2">
               There was a need to update the marketing website as we updated the
@@ -404,6 +414,83 @@ class Yarden extends Component {
                 </small>
               </div>
             </div>
+          </div>
+          <div>
+            <label>Challenge #2.1:</label>
+            <h2>Redesign the website again!</h2>
+            <p className="pt1 pb2">
+              In 2023 we decided that our product is in a good place and we want
+              to focus more on our marketing. After trying different advertising
+              platforms driving traffic to our site, we had to be honest with
+              ourselves about a few things...
+              <a href="www.yardengarden.com">Visit the NEW Yarden website</a>.
+            </p>
+
+            <div className="two-columns gap2">
+              <div>
+                <h5>Site not converting</h5>
+                <small>
+                  The site just wasn't converting no matter how much traffic we
+                  drove to it.
+                </small>
+              </div>
+
+              <div>
+                <h5>Site is not useful...</h5>
+                <small>
+                  We studied our users and found that our site design wasn't
+                  helpful at all. Lots of users were simply lost.
+                </small>
+              </div>
+
+              <div>
+                <h5>Site is boring</h5>
+                <small>
+                  Our site was not keeping our users engaged. We needed to make
+                  it more fun and interactive.
+                </small>
+              </div>
+
+              <div>
+                <h5>Not enough info</h5>
+                <small>
+                  When we looked at our competitors, we realized that we were
+                  not giving our users enough information to make a decision.
+                </small>
+              </div>
+
+              <div>
+                <h5>How about some AI?</h5>
+                <small>
+                  Make use of the the OpenAI API to act as a virtual assistant
+                  to help answer user's questions.
+                </small>
+              </div>
+
+              <div>
+                <h5>No images of the product.</h5>
+                <small>
+                  Use the AI text-to-image tool, Midjourney, to generate high
+                  quality images of our garden beds.
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <div className="gap3">
+            <img
+              className="whole shadowDown"
+              src={redesign2}
+              alt="website screenshot"
+              style={{ borderRadius: "var(--unit1)" }}
+            />
+
+            <img
+              className="whole shadowDown"
+              src={chatbot}
+              alt="website screenshot"
+              style={{ borderRadius: "var(--unit1)", maxWidth: "calc(var(--unit4) + var(--unit5))", margin: '0 auto' }}
+            />
           </div>
         </section>
 
