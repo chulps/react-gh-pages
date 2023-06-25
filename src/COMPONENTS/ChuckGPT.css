@@ -4,7 +4,8 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   background: rgba(204, 233, 243, 0.75);
   border-radius: var(--unit1);
   overflow: hidden;
@@ -42,7 +43,8 @@
   align-items: center;
   padding: var(--unit1);
   background-color: var(--transWhite-50);
-  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   border-radius: var(--unit1) var(--unit1) 0 0;
   background: var(--white);
   box-shadow: 0 6px 12px var(--transBlueC-10);
@@ -98,19 +100,40 @@
   display: inline-block;
   margin: 0 2px;
   opacity: 0;
-  animation: typing 1.2s infinite;
+  -webkit-animation: typing 1.2s infinite;
+          animation: typing 1.2s infinite;
 }
 
 .typing-indicator span:nth-child(1) {
-  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .typing-indicator span:nth-child(2) {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .typing-indicator span:nth-child(3) {
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
 }
 
 @keyframes typing {
@@ -145,10 +168,28 @@
 
 .message-container {
   margin-bottom: var(--unit1);
-  animation: sent 0.2s ease-in-out;
+  -webkit-animation: sent 0.2s ease-in-out;
+          animation: sent 0.2s ease-in-out;
   transform-origin: bottom;
   flex-shrink: 1;
   max-width: 30ch;
+}
+
+@-webkit-keyframes sent {
+
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
 }
 
 @keyframes sent {
@@ -178,6 +219,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  position: -webkit-sticky;
   position: sticky;
   top: 100%;
   width: 100%;

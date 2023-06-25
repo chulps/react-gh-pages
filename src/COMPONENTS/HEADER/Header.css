@@ -7,11 +7,6 @@
   padding: var(--unit0) var(--unit1) var(--unit1) 0;
 }
 
-/* @media screen and (min-width: 768px) {
-  .nucleotide header {
-    padding: var(--unit0) var(--unit1) var(--unit1) 0;
-  }
-} */
 .header-logo {
   height: 48.59px;
   left: -2px;

@@ -73,13 +73,15 @@ nav ul li:active {
 
 #mobile-nav-links {
   z-index: 1;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 nav .status {
   white-space: nowrap;
   color: var(--transBlueC-75);
-  backdrop-filter: blur(10px) brightness(0.9);
+  -webkit-backdrop-filter: blur(10px) brightness(0.9);
+          backdrop-filter: blur(10px) brightness(0.9);
   padding: 0 var(--unit0);
   border-radius: var(--unit1);
 }
@@ -113,32 +115,61 @@ nav .active::after {
 }
 
 .hiring-icon {
-  animation: blink .5s infinite;
+  -webkit-animation: blink .5s infinite;
+          animation: blink .5s infinite;
   background: var(--transBlueC-90);
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: var(--greenA);
+    -webkit-filter: none;
+            filter: none;
+  }
+  20% {
+    color: var(--green1);
+    -webkit-filter: drop-shadow(0 0 6px var(--green1));
+            filter: drop-shadow(0 0 6px var(--green1));
+  }
+  60% {
+    color: var(--green1);
+    -webkit-filter: drop-shadow(0 0 6px var(--green1));
+            filter: drop-shadow(0 0 6px var(--green1));
+  }
+  100% {
+    color: var(--greenA);
+    -webkit-filter: none;
+            filter: none;
+  }
 }
 
 @keyframes blink {
   0% {
     color: var(--greenA);
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
   20% {
     color: var(--green1);
-    filter: drop-shadow(0 0 6px var(--green1));
+    -webkit-filter: drop-shadow(0 0 6px var(--green1));
+            filter: drop-shadow(0 0 6px var(--green1));
   }
   60% {
     color: var(--green1);
-    filter: drop-shadow(0 0 6px var(--green1));
+    -webkit-filter: drop-shadow(0 0 6px var(--green1));
+            filter: drop-shadow(0 0 6px var(--green1));
   }
   100% {
     color: var(--greenA);
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 
 .nav-left {
   gap: var(--unit1);
-  backdrop-filter: blur(10px) brightness(1.1);
+  -webkit-backdrop-filter: blur(10px) brightness(1.1);
+          backdrop-filter: blur(10px) brightness(1.1);
   padding: var(--unit0) var(--unit0) var(--unit0) var(--unit1);
   border: 1px solid var(--transBlueC-10);
   border-radius: 0 var(--unit3) var(--unit3) 0;

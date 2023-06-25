@@ -17,7 +17,8 @@
 
 .feedback a button {
   background: var(--transWhite-50) !important;
-  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   border-radius: var(--unit1) var(--unit1) 0 0 !important;
 }
 
@@ -62,7 +63,25 @@
   align-items: center;
   aspect-ratio: 1/1;
   transform-origin: bottom center;
-  animation: newMessageAnimation 0.4s ease-in-out;
+  -webkit-animation: newMessageAnimation 0.4s ease-in-out;
+          animation: newMessageAnimation 0.4s ease-in-out;
+}
+
+@-webkit-keyframes newMessageAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 @keyframes newMessageAnimation {

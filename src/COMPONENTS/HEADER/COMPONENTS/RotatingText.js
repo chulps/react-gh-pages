@@ -2,7 +2,17 @@ import React from "react";
 
 const RotatingText = (props) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} viewBox="0 0 100 100">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3rem"
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+      }}
+      viewBox="0 0 100 100"
+    >
       <g fill={props.fill}>
         <animateTransform
           attributeName="transform"
