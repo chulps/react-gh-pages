@@ -36,6 +36,19 @@ class NavContent extends React.Component {
             Resumé
           </NavLink>
         </li>
+        <li className="flex sm-ghost">
+        <a
+            
+              href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="green">
+                <FontAwesomeIcon icon={solid("calendar")} />
+                &nbsp;&nbsp;Let's Talk
+              </button>
+            </a>
+        </li>
       </ul>
     );
   }
@@ -94,6 +107,7 @@ class Nav extends React.Component {
           <div className="overlay">
             <NavContent onLinkClick={this.handleLinkClick} />
           </div>
+
         </div>
         
         {/* status */}
