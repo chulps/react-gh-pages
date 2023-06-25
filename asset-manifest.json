@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.f61bc2f5.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.71c29dd2.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.71c29dd2.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.aa879ca0.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.aa879ca0.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.2dbcf5b6.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.2dbcf5b6.js.map",
-    "static/js/2.42531445.chunk.js": "/react-gh-pages/static/js/2.42531445.chunk.js",
-    "static/js/2.42531445.chunk.js.map": "/react-gh-pages/static/js/2.42531445.chunk.js.map",
+    "static/js/2.5fff8080.chunk.js": "/react-gh-pages/static/js/2.5fff8080.chunk.js",
+    "static/js/2.5fff8080.chunk.js.map": "/react-gh-pages/static/js/2.5fff8080.chunk.js.map",
     "static/js/3.63aaddd5.chunk.js": "/react-gh-pages/static/js/3.63aaddd5.chunk.js",
     "static/js/3.63aaddd5.chunk.js.map": "/react-gh-pages/static/js/3.63aaddd5.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
     "static/css/main.f61bc2f5.chunk.css.map": "/react-gh-pages/static/css/main.f61bc2f5.chunk.css.map",
-    "static/js/2.42531445.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.42531445.chunk.js.LICENSE.txt",
+    "static/js/2.5fff8080.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.5fff8080.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/Chuck-Howard-ATS-Resume.247bbd9d.pdf": "/react-gh-pages/static/media/Chuck-Howard-ATS-Resume.247bbd9d.pdf",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -21,6 +21,7 @@
     "static/media/behance-01.e5ca904c.svg": "/react-gh-pages/static/media/behance-01.e5ca904c.svg",
     "static/media/calendly.73150c86.svg": "/react-gh-pages/static/media/calendly.73150c86.svg",
     "static/media/change_date.a84fe829.png": "/react-gh-pages/static/media/change_date.a84fe829.png",
+    "static/media/chatbot.1a25cc13.png": "/react-gh-pages/static/media/chatbot.1a25cc13.png",
     "static/media/chuck_blue.d55df030.png": "/react-gh-pages/static/media/chuck_blue.d55df030.png",
     "static/media/clicktool_dashboard.bb05c823.mp4": "/react-gh-pages/static/media/clicktool_dashboard.bb05c823.mp4",
     "static/media/codepen-01.b6c821c7.svg": "/react-gh-pages/static/media/codepen-01.b6c821c7.svg",
@@ -42,6 +43,7 @@
     "static/media/old_yarden_logo.088d9c3a.jpg": "/react-gh-pages/static/media/old_yarden_logo.088d9c3a.jpg",
     "static/media/plant_selection.b5afdf0f.png": "/react-gh-pages/static/media/plant_selection.b5afdf0f.png",
     "static/media/pop.0ea0b830.png": "/react-gh-pages/static/media/pop.0ea0b830.png",
+    "static/media/redesign2.acc057d5.png": "/react-gh-pages/static/media/redesign2.acc057d5.png",
     "static/media/stack-overflow-01.58423e3d.svg": "/react-gh-pages/static/media/stack-overflow-01.58423e3d.svg",
     "static/media/theinvite.a4082b43.jpeg": "/react-gh-pages/static/media/theinvite.a4082b43.jpeg",
     "static/media/xpds.cd45724c.png": "/react-gh-pages/static/media/xpds.cd45724c.png",
@@ -50,8 +52,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2dbcf5b6.js",
-    "static/js/2.42531445.chunk.js",
+    "static/js/2.5fff8080.chunk.js",
     "static/css/main.f61bc2f5.chunk.css",
-    "static/js/main.71c29dd2.chunk.js"
+    "static/js/main.aa879ca0.chunk.js"
   ]
 }
