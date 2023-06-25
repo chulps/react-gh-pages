@@ -63,12 +63,12 @@ class ProjectSection extends Component {
                 <FoundryLogo />
               </Link>
               <div className="project-tags">
-                <small>Frontend Development</small>
-                <small>Design System</small>
-                <small>Web Design</small>
-                <small>UI Design</small>
                 <small>UX Design</small>
+                <small>UI Design</small>
+                <small>Web Design</small>
+                <small>Design System</small>
                 <small>Community Building</small>
+                <small>Frontend Development</small>
               </div>
             </div>
 
@@ -77,13 +77,13 @@ class ProjectSection extends Component {
                 <img width="100%" src={CRILogo} alt="cri-logo" />
               </Link>
               <div className="project-tags">
-                <small>Frontend Development</small>
-                <small>Web Design</small>
                 <small>UI Design</small>
                 <small>UX Design</small>
+                <small>Web Design</small>
+                <small>A/B Testing</small>
                 <small>Design System</small>
                 <small>Product Management</small>
-                <small>A/B Testing</small>
+                <small>Frontend Development</small>
               </div>
             </div>
 
@@ -100,10 +100,10 @@ class ProjectSection extends Component {
                 </div>
               </Link>
               <div className="project-tags">
-                <small>Design System</small>
                 <small>Branding</small>
-                <small>Product Design</small>
                 <small>Documentation</small>
+                <small>Design System</small>
+                <small>Product Design</small>
               </div>
             </div>
 
@@ -112,11 +112,11 @@ class ProjectSection extends Component {
                 <h4 className="text-red0">🦠 COVID&#8210;19 Dashboard</h4>
               </Link>
               <div className="project-tags">
-                <small>Frontend Development</small>
-                <small>Web Design</small>
+                <small>Rest API</small>
                 <small>UI Design</small>
                 <small>UX Design</small>
-                <small>Rest API</small>
+                <small>Web Design</small>
+                <small>Frontend Development</small>
               </div>
             </div>
 
@@ -125,13 +125,13 @@ class ProjectSection extends Component {
                 <ClicktoolLogo />
               </Link>
               <div className="project-tags">
-                <small>Frontend Development</small>
-                <small>Web Design</small>
+                <small>Branding</small>
                 <small>UI Design</small>
                 <small>UX Design</small>
+                <small>Web Design</small>
                 <small>Product Design</small>
                 <small>Product Management</small>
-                <small>Branding</small>
+                <small>Frontend Development</small>
               </div>
             </div>
           </div>
