@@ -21,17 +21,6 @@ class Resume extends Component {
           <title>Chuck Howard's Resumé</title>
           <meta name="description" content="Chuck Howard's Resumé" />
         </Helmet>
-        <section
-          className="mt1 mx-auto flex-end relative md-absolute"
-          style={{ top: 0, left: "50%", transform: "translate(-50%)" }}
-        >
-          <a id="download-button" href={Download} download>
-            <button>
-              <FontAwesomeIcon icon={solid("download")} />
-              &nbsp;Download
-            </button>
-          </a>
-        </section>
         <section className="py1">
           <label>Resumé</label>
           <div className="mb2 flex-space-between">
@@ -310,6 +299,17 @@ class Resume extends Component {
               </ul>
             </div>
           </div>
+        </section>
+        <section
+          className="mt1 mx-auto flex-end relative md-absolute"
+          style={{ top: 0, left: "50%", transform: "translate(-50%)" }}
+        >
+          <a id="download-button" href={Download} download>
+            <button>
+              <FontAwesomeIcon icon={solid("download")} />
+              &nbsp;Download
+            </button>
+          </a>
         </section>
       </div>
     );

@@ -46,7 +46,6 @@ const Home = () => {
               style={{
                 objectFit: "cover",
                 transform: `translateY(${-scrollY / 8}px)`,
-                filter: `blur(${scrollY / 64}px) opacity(0.9) brightness(${100 - scrollY}%)})`,
                 position: "fixed",
                 bottom: 0,
                 height: "100vh",
@@ -68,7 +67,6 @@ const Home = () => {
               alt="chuck"
               style={{
                 transform: `translateY(${-scrollY / 4}px)`,
-                filter: `blur(${scrollY / 128}px) `,
               }}
             />
           </div>

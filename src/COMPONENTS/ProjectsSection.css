@@ -2,7 +2,7 @@
   min-height: calc(100vh - 61.38px - 125.38px);
 }
 
-.projects-section > div > a {
+.projects-section > div a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,11 +13,25 @@
   border-radius: var(--unit1);
   box-shadow: 0 3px 6px var(--transBlueC-10);
   transform: scale(1);
+  margin-bottom: var(--unit0);
+  aspect-ratio: 7/3;
 }
 
-.projects-section > div > a:hover {
+.projects-section > div a:hover {
   transform: scale(1.01);
   background: var(--white);
   color: var(--transBlueC-75);
   text-decoration: none;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--unit0) var(--unit1);
+}
+
+.project-tags small {
+  background: var(--transBlueC-10);
+  padding-inline: var(--unit1);
+  border-radius: var(--unit1);
 }

@@ -16,8 +16,8 @@ const About = () => {
         <label>About Me</label>
         <h2 className="mb1">High Level Summary</h2>
         <p>
-          I'm a <i>Product Designer</i> with experience in{" "}
-          <i>Frontend Development</i> and <i>Product Discovery</i> who can
+          I'm a <i>Product Designer</i> and {" "}
+          <i>Frontend Developer</i> with <i>Product Management</i> skills who can
           lead a product from the point of discovery, through the design
           phase, and on to deployment.
         </p>
