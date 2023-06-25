@@ -68,6 +68,7 @@ nav ul li:active {
 #mobile-nav-button {
   transition: 0.4s ease-in-out;
   z-index: 2;
+  aspect-ratio: 1/1;
 }
 
 #mobile-nav-links {
@@ -76,19 +77,26 @@ nav ul li:active {
 }
 
 nav .status {
-  box-shadow: inset 0 3px 6px var(--transBlueC-10);
   white-space: nowrap;
-  border-radius: var(--unit1);
   color: var(--transBlueC-75);
-  background: var(--transBlueC-10);
+}
+
+nav.active {
+  position: relative;
+  background: yellow;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 nav .active::after {
   width: 100%;
+  height: 100%;
   content: "";
   height: 5px;
   position: absolute;
-  top: calc(100% + 5px);
+  top: calc(100% + 4px);
   left: 0;
   background: var(--primary);
   border-radius: 2px;
@@ -122,5 +130,37 @@ nav .active::after {
   100% {
     color: var(--greenA);
     filter: none;
+  }
+}
+
+.nav-left {
+  gap: var(--unit1);
+  backdrop-filter: blur(10px);
+  padding: var(--unit0) var(--unit0) var(--unit0) var(--unit1);
+  border: 1px solid var(--transBlueC-25);
+  border-radius: 0 var(--unit3) var(--unit3) 0;
+}
+
+.nav-left a:hover {
+  background: transparent;
+}
+
+.desktop-nav-links {
+  gap: var(--unit1);
+}
+
+@media screen and (min-width: 576px) {
+  .nav-left {
+    padding-right: var(--unit2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-left {
+    gap: var(--unit2);
+  }
+
+  .desktop-nav-links {
+    gap: var(--unit2);
   }
 }

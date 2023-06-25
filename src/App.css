@@ -3,14 +3,9 @@
   src: url("Rustea.otf");
 }
 
-/* .nucleotide h1,
-.nucleotide h2,
-.nucleotide h3,
-.nucleotide h4,
-.nucleotide h5,
-.nucleotide h6 {
-  font-family: "rustea", helvetica, arial, sans-serif;
-} */
+.nucleotide label  {
+  color: var(--transBlueC-50);
+}
 
 .feedback {
   display: unset;

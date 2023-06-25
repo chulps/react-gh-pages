@@ -511,7 +511,7 @@ class Yarden extends Component {
                 <img
                   width={"100%"}
                   style={{
-                    filter: "drop-shadow(0 6px 12px var(--transBlueC-10))",
+                    filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
                   }}
                   src={changeDateScreen}
                   alt="change date screen"
@@ -522,7 +522,7 @@ class Yarden extends Component {
                 <img
                   width={"100%"}
                   style={{
-                    filter: "drop-shadow(0 6px 12px var(--transBlueC-10))",
+                    filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
                   }}
                   src={plantSelectionScreen}
                   alt="plant selection screen"

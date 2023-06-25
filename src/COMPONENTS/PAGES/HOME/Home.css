@@ -244,3 +244,6 @@
   }
 }
 
+#hero-social-icons {
+  padding-bottom: var(--unit2);
+}

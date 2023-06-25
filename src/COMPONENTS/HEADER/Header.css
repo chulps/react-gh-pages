@@ -2,10 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: transparent;
+  box-shadow: none;
+  padding: var(--unit0) var(--unit1) var(--unit1) 0;
 }
 
+/* @media screen and (min-width: 768px) {
+  .nucleotide header {
+    padding: var(--unit0) var(--unit1) var(--unit1) 0;
+  }
+} */
 .header-logo {
   height: 48.59px;
+  left: -2px;
+  top: -1px;
 }
 
 #mobile-nav {
@@ -24,4 +34,8 @@
   #desktop-nav {
     display: flex;
   }
+}
+
+.site-header {
+  border-top: var(--unit0) solid var(--blueA);
 }
