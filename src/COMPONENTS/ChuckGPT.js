@@ -41,7 +41,7 @@ const ChuckGPT = (props) => {
       const response = await axios.post(
         "https://limitless-lake-38337.herokuapp.com/api/openai",
         {
-          model: "gpt-3.5-turbo",
+          model: "gpt-4",
           messages: [...ChuckGPTTraining, { role: "user", content: message }],
           temperature: 0.7,
           max_tokens: 180,
