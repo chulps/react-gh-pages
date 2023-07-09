@@ -168,11 +168,14 @@ nav .active::after {
 
 .nav-left {
   gap: var(--unit1);
-  -webkit-backdrop-filter: blur(10px) brightness(1.1);
-          backdrop-filter: blur(10px) brightness(1.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: var(--unit0) var(--unit0) var(--unit0) var(--unit1);
-  border: 1px solid var(--transBlueC-25);
+  border-bottom: 1px solid var(--transBlueC-10);
+  border-top: 1px solid var(--transWhite-50);
   border-radius: 0 var(--unit3) var(--unit3) 0;
+  background-color: var(--transWhite-50);
+  box-shadow: 0 0 12px var(--transBlueC-10);
 }
 
 .nav-left a:hover {
