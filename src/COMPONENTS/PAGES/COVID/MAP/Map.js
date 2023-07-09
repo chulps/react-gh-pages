@@ -104,7 +104,6 @@ const Map = ({ covidStats }) => {
 
   // console log the height and width of the window
   useEffect(() => {
-    console.log(`window width: ${windowWidth}, window height: ${windowHeight}`);
   }, [windowWidth, windowHeight]);
 
   // update the width and height props in the ComposableMap component when it is in fullscreen mode

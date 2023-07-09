@@ -85,7 +85,7 @@ const resume = `{
         "location": "Rochester, NY (Remote)",
         "timeline": "April 2022 – October 2022",
         "responsibilities": [
-          "Development and implementation of design system \"Metal\"",
+          "Development and implementation of design system 'Metal'",
           "Collaboration with engineering teams on high-fidelity prototypes",
           "Initiated DCG Design Guild for collaboration among designers"
         ]
@@ -119,7 +119,7 @@ const resume = `{
         "timeline": "March 2020 – August 2021",
         "responsibilities": [
           "Design and build UI",
-          "Create and maintain design system \"Nucleotide\"",
+          "Create and maintain design system 'Nucleotide'",
           "Collaborate with team members to push products to launch",
           "Plan and set up A/B tests"
         ]

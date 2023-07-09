@@ -14,7 +14,6 @@ class NavContent extends React.Component {
 
         <li className="sm-ghost">
           <img
-            style={{ filter: "hue-rotate(150deg)" }}
             height="100px"
             src={NavLogo}
             alt="C-logo"
@@ -85,7 +84,6 @@ class Nav extends React.Component {
                 className="header-logo"
                 src={NavLogo}
                 alt="C-logo"
-                style={{ filter: "hue-rotate(150deg)" }}
               />
             </span>
           </NavLink>
