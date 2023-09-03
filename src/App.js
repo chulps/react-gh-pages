@@ -80,7 +80,7 @@ const App = () => {
         <ProjectSection />
         <Footer />
 
-        <div className="feedback">
+        {/* <div className="feedback">
           <a
             href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024"
             rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const App = () => {
               &nbsp;Feedback
             </button>
           </a>
-        </div>
+        </div> */}
       </HashRouter>
       <ChuckGPT
         style={{ transform: `scale(${chatbotVisible ? 1 : 0})` }}
