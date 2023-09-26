@@ -3,7 +3,7 @@ import Links from "../../../COMPONENTS/SocialIcons.js";
 import { Helmet } from "react-helmet";
 import "./resume.css";
 import { designTools, developmentTools, productTools } from "../HOME/tools.js";
-import Download from "./Chuck-Howard-ATS-Resume.pdf";
+import Download from "./Chuck_Howard_Resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
