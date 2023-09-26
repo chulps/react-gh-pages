@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.3c06867a.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.77e4e36b.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.77e4e36b.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.c30f8a2e.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.c30f8a2e.js.map",
-    "static/js/2.ef4b78bc.chunk.js": "/react-gh-pages/static/js/2.ef4b78bc.chunk.js",
-    "static/js/2.ef4b78bc.chunk.js.map": "/react-gh-pages/static/js/2.ef4b78bc.chunk.js.map",
-    "static/js/3.82ac7faf.chunk.js": "/react-gh-pages/static/js/3.82ac7faf.chunk.js",
-    "static/js/3.82ac7faf.chunk.js.map": "/react-gh-pages/static/js/3.82ac7faf.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.8e5adca3.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.8e5adca3.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.84b0070b.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.84b0070b.js.map",
+    "static/js/2.a5b41507.chunk.js": "/react-gh-pages/static/js/2.a5b41507.chunk.js",
+    "static/js/2.a5b41507.chunk.js.map": "/react-gh-pages/static/js/2.a5b41507.chunk.js.map",
+    "static/js/3.f4734ed2.chunk.js": "/react-gh-pages/static/js/3.f4734ed2.chunk.js",
+    "static/js/3.f4734ed2.chunk.js.map": "/react-gh-pages/static/js/3.f4734ed2.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
     "static/css/main.3c06867a.chunk.css.map": "/react-gh-pages/static/css/main.3c06867a.chunk.css.map",
-    "static/js/2.ef4b78bc.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.ef4b78bc.chunk.js.LICENSE.txt",
+    "static/js/2.a5b41507.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.a5b41507.chunk.js.LICENSE.txt",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/Chuck-Howard-ATS-Resume.f4b34d5a.pdf": "/react-gh-pages/static/media/Chuck-Howard-ATS-Resume.f4b34d5a.pdf",
     "static/media/DESIGN_BIBLE.1f187b0d.png": "/react-gh-pages/static/media/DESIGN_BIBLE.1f187b0d.png",
@@ -51,9 +51,9 @@
     "static/media/yarden_website_screenshot.99110d68.png": "/react-gh-pages/static/media/yarden_website_screenshot.99110d68.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c30f8a2e.js",
-    "static/js/2.ef4b78bc.chunk.js",
+    "static/js/runtime-main.84b0070b.js",
+    "static/js/2.a5b41507.chunk.js",
     "static/css/main.3c06867a.chunk.css",
-    "static/js/main.77e4e36b.chunk.js"
+    "static/js/main.8e5adca3.chunk.js"
   ]
 }
