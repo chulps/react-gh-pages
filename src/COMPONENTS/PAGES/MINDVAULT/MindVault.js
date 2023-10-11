@@ -49,7 +49,7 @@ class MindVault extends React.Component {
             </div>
           </div>
         </section>
-        <section>
+        <section className="mb3">
           <div className="md-two-columns gap3">
             <div className="flex-center">
               <svg
