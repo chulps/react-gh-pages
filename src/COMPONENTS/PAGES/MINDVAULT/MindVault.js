@@ -265,9 +265,10 @@ class MindVault extends React.Component {
 
               <h3>MindVault Web App</h3>
               <p>
-                This is the design system I made following strict brand
-                standards. I took the brand standards and translated it into
-                usable code.
+                One of the main features of this app is the dynamic
+                'Checklist', where tasks like "Chips" can be ticked off and
+                "Milk" effortlessly removed. Overall, MindVault blends simplicity with efficiency
+                for seamless note-taking.
               </p>
             </div>
           </div>
