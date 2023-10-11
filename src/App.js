@@ -5,6 +5,7 @@ import CRIGenetics from "./COMPONENTS/PAGES/CRIGENETICS/CRIGenetics.js";
 import Yarden from "./COMPONENTS/PAGES/YARDEN/Yarden.js";
 import Xprize from "./COMPONENTS/PAGES/XPRIZE/Xprize.js";
 import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
+import MindVault from "./COMPONENTS/PAGES/MINDVAULT/MindVault.js";
 import Footer from "./COMPONENTS/FOOTER/Footer.js";
 import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
@@ -65,6 +66,7 @@ const App = () => {
         >
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route path="/projects/mindvault/" element={<MindVault />} />
             <Route path="/projects/xprize/" element={<Xprize />} />
             <Route path="/projects/crigenetics/" element={<CRIGenetics />} />
             <Route path="/projects/foundry/" element={<Foundry />} />
