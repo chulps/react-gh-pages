@@ -1,0 +1,6 @@
+.project img,
+.project svg {
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    padding: var(--unit3);
+}

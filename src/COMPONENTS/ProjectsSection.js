@@ -26,7 +26,7 @@ class ProjectSection extends Component {
             years. Here you'll see a mix of branding, product design, and
             frontend development.
           </p>
-          <div className="one-column sm-two-columns lg-four-columns gap2 animate-up-wrapper">
+          <div className="one-column sm-two-columns lg-three-columns xl-four-columns gap2 animate-up-wrapper">
             <div>
               <Link to="/projects/mindvault/">
               <svg class="block-mark" style={{height: '100%', width: 'auto'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594 594"><path fill="blue" d="m457.08,4.53c-106.72-6.04-213.44-6.04-320.16,0C69.72,8.79,8.79,69.72,4.53,136.92c-6.04,106.72-6.04,213.44,0,320.16,4.26,67.2,65.19,128.14,132.39,132.39,106.72,6.04,213.44,6.04,320.16,0,67.2-4.26,128.14-65.19,132.39-132.39,6.04-106.72,6.04-213.44,0-320.16-4.26-67.2-65.19-128.14-132.39-132.39Z"></path><path fill="white" d="m162,162v54h-54v-54h54Zm0,108h54v-54h-54v54Zm-54,162h54v-162h-54v162ZM378,162c-39.99,0-65.14,14.82-81,33.46-15.86-18.65-41.01-33.46-81-33.46v54c54,0,54,54,54,54v162h54v-162s0-54,54-54,54,54,54,54v162h54v-162s0-108-108-108Z"></path></svg>
