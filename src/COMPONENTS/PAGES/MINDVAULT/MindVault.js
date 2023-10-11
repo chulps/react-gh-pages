@@ -5,6 +5,9 @@ import website from "./mindvault_website.png";
 import webapp from "./webapp.png";
 
 class MindVault extends React.Component {
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   render() {
     return (
       <div id="mindvault">

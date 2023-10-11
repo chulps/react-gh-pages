@@ -24,9 +24,9 @@ import chatbot from "./chatbot.png";
 // import chuckAndIsaac from "./chuckandisaac.jpg";
 
 class Yarden extends Component {
-  // componentDidMount() {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   render() {
     return (
