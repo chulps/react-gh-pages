@@ -241,10 +241,15 @@ class MindVault extends React.Component {
               </div>
               <h3>The Brand</h3>
               <p>
-                This mockup displays our adaptive interface, perfect for any
-                device. From intuitive checklists to streamlined organization,
-                dive into a user-centric experience. Ready to transform your
-                note-taking? Click "Try It" or join our waitlist today.
+                At first glance, the MindVault logo may seem simple, but its
+                meaning runs deep. The bold blue square encapsulates the
+                reliability and trustworthiness of the platform, ensuring users
+                that their notes and ideas are safely stored. The white "m"
+                symbol, a fusion of the traditional letter 'm' and a key,
+                represents the core essence of MindVault: a gateway to unlocking
+                one's thoughts and creativity. Together, the components of the logo
+                embody the mission of MindVault — to serve as a sanctuary for
+                ideas, waiting to be unlocked and explored.
               </p>
             </div>
 
@@ -268,10 +273,10 @@ class MindVault extends React.Component {
 
               <h3>MindVault Web App</h3>
               <p>
-                One of the main features of this app is the dynamic
-                'Checklist', where tasks like "Chips" can be ticked off and
-                "Milk" effortlessly removed. Overall, MindVault blends simplicity with efficiency
-                for seamless note-taking.
+                One of the main features of this app is the dynamic 'Checklist',
+                where tasks like "Chips" can be ticked off and "Milk"
+                effortlessly removed. Overall, MindVault blends simplicity with
+                efficiency for seamless note-taking.
               </p>
             </div>
           </div>
