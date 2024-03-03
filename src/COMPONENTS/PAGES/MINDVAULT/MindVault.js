@@ -73,7 +73,7 @@ class MindVault extends React.Component {
                   fill="white"
                   d="m162,162v54h-54v-54h54Zm0,108h54v-54h-54v54Zm-54,162h54v-162h-54v162ZM378,162c-39.99,0-65.14,14.82-81,33.46-15.86-18.65-41.01-33.46-81-33.46v54c54,0,54,54,54,54v162h54v-162s0-54,54-54,54,54,54,54v162h54v-162s0-108-108-108Z"
                 ></path>
-              </svg>{" "}
+              </svg>
             </div>
             <div>
               <h2>Projects at Mindvault</h2>

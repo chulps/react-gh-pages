@@ -121,7 +121,7 @@ class ProjectSection extends Component {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <Link to="/projects/covid/">
                 <h4 className="text-red0">🦠 COVID&#8210;19 Dashboard</h4>
               </Link>
@@ -132,7 +132,7 @@ class ProjectSection extends Component {
                 <small>Web Design</small>
                 <small>Frontend Development</small>
               </div>
-            </div>
+            </div> */}
 
             <div>
               <Link to="/projects/clicktool/">
