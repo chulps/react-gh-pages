@@ -29,7 +29,12 @@ const resume = `{
       "HTML/HTML5",
       "Jira",
       "JavaScript/Typescript",
+      "Midjourney",
+      "Mobile App Design",
+      "Mobile App Development",
+      "Product Design",
       "Product Management",
+      "Prototyping",
       "React/React Native",
       "Sketch",
       "UI/UX Design",
@@ -47,14 +52,16 @@ const resume = `{
     "workExperience": [
         {
             "title": "UI/UX Engineer",
-            "company": "M9000",
+            "company": "MindVault",
             "location": "Los Angeles (Remote)",
-            "timeline": "May 2023 – Present",
+            "timeline": "May 2023 – September 2023",
+            "employmentType": "contract",
             "responsibilities": [
               "Lead the rebranding of the company",
               "Own the design and development of the company website",
               "Lead the design and development of the company's design system",
               "Lead the design and frontend development of the company's products",
+              "Write the company prospectus"
             ]
           },
       {
@@ -62,6 +69,7 @@ const resume = `{
         "company": "XPRIZE Foundation",
         "location": "Los Angeles (Remote)",
         "timeline": "January 2023 – May 2023",
+        "employmentType": "contract",
         "responsibilities": [
           "UX/UI design overhaul resulting in increased user engagement and decreased bounce rate",
           "Implementation of responsive designs for mobile compatibility",
@@ -69,10 +77,11 @@ const resume = `{
         ]
       },
       {
-        "title": "Product Design Lead (Co-Founder)",
+        "title": "Senior Product Designer",
         "company": "Yarden",
         "location": "San Francisco (Remote)",
         "timeline": "March 2021 – Present",
+        "employmentType": "full-time",
         "responsibilities": [
           "User research-informed design decisions for a seamless mobile app experience",
           "Implementation of a cohesive brand strategy across marketing channels",
@@ -84,6 +93,7 @@ const resume = `{
         "company": "Foundry Digital",
         "location": "Rochester, NY (Remote)",
         "timeline": "April 2022 – October 2022",
+        "employmentType": "full-time",
         "responsibilities": [
           "Development and implementation of design system 'Metal'",
           "Collaboration with engineering teams on high-fidelity prototypes",
@@ -95,22 +105,26 @@ const resume = `{
         "company": "Upstate Interactive",
         "location": "Syracuse, NY (Remote)",
         "timeline": "February 2022 – April 2022",
+        "employmentType": "full-time",
         "responsibilities": [
           "Design and development of web application solutions",
           "Mentoring a team of developers on design technology",
           "Building high-fidelity prototypes for product validation"
         ]
+        "notes": "Company was acquired by Foundry Digital shortly after Chuck's arrival"
       },
       {
         "title": "Product Design Lead",
         "company": "CRI Genetics",
         "location": "El Segundo, CA",
         "timeline": "August 2021 – December 2021",
+        "employmentType": "full-time",
         "responsibilities": [
           "Research and analysis of market trends and user behavior",
           "Product design process from ideation to launch",
           "Planning and conducting A/B tests for new features"
         ]
+        "notes": "Chuck was promoted to this role"
       },
       {
         "title": "Senior Front-end Developer",
@@ -120,7 +134,7 @@ const resume = `{
         "responsibilities": [
           "Design and build UI",
           "Create and maintain design system 'Nucleotide'",
-          "Collaborate with team members to push products to launch",
+          "Collaborate with copywriters, scientists, engineers, marketing professionals, and stakeholders to push products to launch",
           "Plan and set up A/B tests"
         ]
       }
@@ -137,7 +151,8 @@ const resume = `{
     ],
     "hobbies": [
       "Travel",
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "Cooking",
     ],
     "pushups": "79",
     "hair": "bald",
@@ -146,8 +161,8 @@ const resume = `{
       "Black",
       "Chrome"
     ],
-    "favoriteFood": "Sushi",
-    "favoriteDrink": "Speyburn",
+    "favoriteFood": "Sushi, Yakiniku, Thai, Vietnamese, Mexican, Italian",
+    "favoriteDrink": "Caol Ila 12",
     "favoriteMovie": "Chappie",
     "languages": [
       {
