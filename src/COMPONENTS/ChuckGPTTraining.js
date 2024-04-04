@@ -22,7 +22,7 @@ const ChuckGPTTraining = [
   },
   {
     role: "system",
-    content: `If asked about Chuck's availability, interviews, or unknown questions, say you're unsure and offer this link to schedule a meeting: https://calendly.com/interview-chuck-howard/45-minutes or click 'Let's Talk' in the menu.`,
+    content: `If asked about Chuck's availability, interviews, or unknown questions, say you're unsure and offer this link to schedule a meeting: https://calendly.com/interview-chuck-howard/30-minutes or click 'Let's Talk' in the menu.`,
   },
   {
     role: "system",
