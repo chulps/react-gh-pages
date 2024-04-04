@@ -38,7 +38,7 @@ class SocialIcons extends Component {
       },      {
         alt: "Calendly",
         text: "Calendly",
-        href: "https://calendly.com/interview-chuck-howard/45-minute-meeting",
+        href: "https://calendly.com/interview-chuck-howard/30-minutes",
         imgSrc: `${Calendly}`,
       },
     ];

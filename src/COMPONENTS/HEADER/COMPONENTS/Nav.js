@@ -38,7 +38,7 @@ class NavContent extends React.Component {
         <li className="flex sm-ghost">
         <a
             
-              href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
+              href="https://calendly.com/interview-chuck-howard/30-minutes"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -152,7 +152,7 @@ class Nav extends React.Component {
         </button>
             <a
             className="green ghost sm-flex"
-              href="https://calendly.com/interview-chuck-howard/45-minute-meeting"
+              href="https://calendly.com/interview-chuck-howard/30-minutes"
               target="_blank"
               rel="noopener noreferrer"
             >

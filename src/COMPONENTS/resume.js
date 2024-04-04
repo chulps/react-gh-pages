@@ -2,11 +2,11 @@ const resume = `{
     "name": "Charles M. Howard",
     "title": "Product Designer / Frontend Developer",
     "contactInformation": {
-      "calendly": "https://calendly.com/interview-chuck-howard/45-minute-meeting"
+      "calendly": "https://calendly.com/interview-chuck-howard/30-minutes"
     },
     "links": {
       "behance": "https://www.behance.net/chuckhoward",
-      "calendly": "https://calendly.com/interview-chuck-howard/45-minute-meeting",
+      "calendly": "https://calendly.com/interview-chuck-howard/30-minutes",
       "codepen": "https://codepen.io/chulps",
       "github": "https://github.com/chulps/",
       "stackoverflow": "https://stackoverflow.com/users/2146031/chulps",
