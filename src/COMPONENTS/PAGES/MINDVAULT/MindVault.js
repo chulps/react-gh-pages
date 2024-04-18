@@ -56,7 +56,7 @@ class MindVault extends React.Component {
           <div className="md-two-columns gap3">
             <div className="flex-center">
               <svg
-                class="block-mark"
+                className="block-mark"
                 style={{
                   height: "auto",
                   width: "50%",

@@ -1,14 +1,13 @@
-//ChuckGPT.js
+//PromptAssistant.js
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import Logo from "../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
 import TextareaAutosize from "react-textarea-autosize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import "./ChuckGPT.css";
-import ChuckGPTTraining from "./ChuckGPTTraining.js";
+import "./prompt-assistant1.css";
 
-const ChuckGPT = (props) => {
+const PromptAssistant1 = (props) => {
   const [history, setHistory] = useState([]);
   const [typing, setTyping] = useState(false);
   const inputRef = useRef(null);
@@ -28,6 +27,45 @@ const ChuckGPT = (props) => {
     }
   }, [history, typing]);
 
+  const PromptAssistant1Training = [
+    {
+      role: "system",
+      content: `
+        You a custom gpt that's been trained to help users create prompts for an image generator that . 
+        You are a feature of a software aimed at creating product images for items sold via e-commerce. 
+        Users upload images of their products. The software then uses another AI to remove the background of the uploaded image. 
+        Then the user has to create a prompt instructing the background generator of what kind of scene to create for the final product image.
+        The problem is that a lot of people are not good at writing prompts, so instead, the GPT must prompt the user.
+        For this specific use case, where the goal is to assist users in creating detailed and effective prompts for background generation in product images, a Dynamic Prompting framework combined with Instruction Following would be ideal. 
+        Dynamic Prompting allows the AI to adapt its questions based on user responses, thereby refining the user's input iteratively. Instruction Following ensures that the prompts are clear and direct, helping users understand exactly what information is needed.
+        
+        Example Conversation Between a Human and a Custom GPT Trained for Prompt Creation
+            AI: Welcome to the background generator! To get started, could you please upload the image of your product?
+            User: *Uploads an image of a handcrafted ceramic mug.*
+            AI: Beautiful product! Let's create a perfect scene for it. What is the primary use of this mug? Is it for coffee, tea, or something else?
+            User: It's mainly used for coffee.
+            AI: Great choice! Do you have a specific setting in mind where you'd typically enjoy coffee? For example, a cozy breakfast nook, a modern kitchen, or perhaps an outdoor setting?
+            User: I like the idea of a cozy indoor setting.
+            AI: Sounds lovely. To make it feel cozy, we could add elements like a wooden table, a warm blanket, or a book. Which of these—or any other items—do you think should be included in the scene?
+            User: Include a wooden table and a book. Maybe add some warm morning sunlight coming through a window.
+            AI: That will create a warm and inviting atmosphere. Should we also include other elements like a breakfast plate or decorative plants to enhance the scene?
+            User: Yes, add a plate of croissants and a small potted plant.
+            AI: Perfect! Here’s the prompt for your background based on our discussion: "Create an indoor morning scene with a wooden table illuminated by warm sunlight from a window. On the table, place a ceramic coffee mug, a book opened to a middle page, a plate of fresh croissants, and a small green potted plant to add a touch of nature."
+            AI: Does this sound good to you, or is there anything else you’d like to add or change?
+            User: That sounds perfect!
+            AI: Excellent! Let me know if i can help with anything else.
+
+            This approach not only guides the user through the process of crafting a detailed prompt but also educates them on how to think about scenes and elements that enhance the attractiveness and contextuality of their product images.
+`,
+    },
+    {
+      role: "assistant",
+      content:
+        "I'm ImagineCreate's promp writing assistant. I'm here to help you create detailed and effective prompts for background generation in product images. Please let me know when you've uploaded an image and we'll get started!",
+
+    },
+  ];
+
   const sendMessage = async (message) => {
     const timestamp = new Date();
     setTyping(true);
@@ -38,7 +76,7 @@ const ChuckGPT = (props) => {
   
     // Format history for the API call
     const formattedHistory = history.map(item => ({
-      role: item.role === "ChuckGPT" ? "assistant" : "user",
+      role: item.role === "prompt-assistant1" ? "assistant" : "user",
       content: item.content
     }));
   
@@ -47,9 +85,9 @@ const ChuckGPT = (props) => {
         "https://limitless-lake-38337.herokuapp.com/api/openai",
         {
           model: "gpt-4",
-          messages: [...ChuckGPTTraining, ...formattedHistory, { role: "user", content: message }],
+          messages: [...PromptAssistant1Training, ...formattedHistory, { role: "user", content: message }],
           temperature: 0.7,
-          max_tokens: 180,
+          max_tokens: 300,
           top_p: 1,
           frequency_penalty: 0,
           presence_penalty: 0,
@@ -60,7 +98,7 @@ const ChuckGPT = (props) => {
         ...prevHistory,
         {
           content: `${response.data.choices[0].message.content}`,
-          role: "ChuckGPT",
+          role: "prompt-assistant1",
           timestamp,
         },
       ]);
@@ -90,8 +128,8 @@ const ChuckGPT = (props) => {
   };
 
   return (
-    <div id="ChuckGPT" className={props.className} style={props.style}>
-      <div id="ChuckGPT-header">
+    <div id="prompt-assistant1" className={props.className} >
+      <div id="prompt-assistant1-header">
         <img src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
         <div
           className="mt0"
@@ -101,27 +139,27 @@ const ChuckGPT = (props) => {
             flexDirection: "column",
           }}
         >
-          <h5>&lt;ChuckGPT /&gt;</h5>
+          <h5>&lt;prompt-assistant /&gt;</h5>
           <small>Chuck's AI Assistant</small>
         </div>
       </div>
       <div className="history-container" ref={historyContainerRef}>
         <div className="message-container">
           <div className="message">
-            Hey, I'm ChuckGPT, Chuck's AI assistant. Ask me anything about Chuck's background or availability.
+            Hey, I'm prompt-assistant, Chuck's AI assistant. Ask me anything about
+            Chuck's background or availability.
           </div>
           <small className="message-timestamp">
-            <span role="img" aria-label="ChuckGPT">
+            <span role="img" aria-label="prompt-assistant1">
               🤖
             </span>
-            &nbsp;&nbsp;ChuckGPT&nbsp;at&nbsp;
+            &nbsp;&nbsp;prompt-assistant&nbsp;at&nbsp;
             {new Date().toLocaleTimeString([], {
               hour: "2-digit",
               minute: "2-digit",
             })}
           </small>
         </div>
-        {console.log(history)}
         {history.map((message, index) => (
           <div
             key={index}
@@ -154,7 +192,7 @@ const ChuckGPT = (props) => {
               }}
             >
               &nbsp;
-              {message.role === "user" ? "😎 You" : "🤖 ChuckGPT"}
+              {message.role === "user" ? "😎 You" : "🤖 prompt-assistant1"}
               &nbsp;at&nbsp;
               {message.timestamp.toLocaleTimeString([], {
                 hour: "2-digit",
@@ -186,7 +224,7 @@ const ChuckGPT = (props) => {
               </p>
             </div>
             <small className="message-timestamp">
-              <span role="img" aria-label="ChuckGPT">
+              <span role="img" aria-label="prompt-assistant1">
                 🤖
               </span>
               Typing...
@@ -198,4 +236,4 @@ const ChuckGPT = (props) => {
   );
 };
 
-export default ChuckGPT;
+export default PromptAssistant1;

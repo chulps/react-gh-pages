@@ -65,7 +65,7 @@ const resume = `{
             ]
           },
       {
-        "title": "UX Designer/Frontend Developer",
+        "title": "Frontend Developer",
         "company": "XPRIZE Foundation",
         "location": "Los Angeles (Remote)",
         "timeline": "January 2023 – May 2023",
@@ -77,7 +77,7 @@ const resume = `{
         ]
       },
       {
-        "title": "Senior Product Designer",
+        "title": "Product Design Lead",
         "company": "Yarden",
         "location": "San Francisco (Remote)",
         "timeline": "March 2021 – Present",
@@ -93,7 +93,7 @@ const resume = `{
         "company": "Foundry Digital",
         "location": "Rochester, NY (Remote)",
         "timeline": "April 2022 – October 2022",
-        "employmentType": "full-time",
+        "employmentType": "contract",
         "responsibilities": [
           "Development and implementation of design system 'Metal'",
           "Collaboration with engineering teams on high-fidelity prototypes",
@@ -101,11 +101,11 @@ const resume = `{
         ]
       },
       {
-        "title": "Senior Design Technologist",
+        "title": "Frontend Developer",
         "company": "Upstate Interactive",
         "location": "Syracuse, NY (Remote)",
         "timeline": "February 2022 – April 2022",
-        "employmentType": "full-time",
+        "employmentType": "contract",
         "responsibilities": [
           "Design and development of web application solutions",
           "Mentoring a team of developers on design technology",
@@ -131,6 +131,7 @@ const resume = `{
         "company": "CRI Genetics",
         "location": "El Segundo, CA",
         "timeline": "March 2020 – August 2021",
+        "employmentType": "full-time",
         "responsibilities": [
           "Design and build UI",
           "Create and maintain design system 'Nucleotide'",
