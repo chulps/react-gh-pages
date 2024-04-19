@@ -121,7 +121,6 @@ const ChuckGPT = (props) => {
             })}
           </small>
         </div>
-        {console.log(history)}
         {history.map((message, index) => (
           <div
             key={index}

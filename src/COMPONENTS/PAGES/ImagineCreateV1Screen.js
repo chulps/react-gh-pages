@@ -9,7 +9,6 @@ function ImagineCreateV1Screen() {
   const [chatbotVisible, setChatbotVisible] = useState(false);
 
   const toggleChatbot = () => {
-    console.log("Toggle Chatbot:", !chatbotVisible); // Check the current intended state
     setChatbotVisible(!chatbotVisible);
   };
 

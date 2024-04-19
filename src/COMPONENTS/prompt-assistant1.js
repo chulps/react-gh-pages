@@ -1,4 +1,4 @@
-//PromptAssistant.js
+//PromptAssistant1.js
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import Logo from "../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
@@ -93,7 +93,6 @@ const PromptAssistant1 = (props) => {
           presence_penalty: 0,
         }
       );
-console.log(message)
       setHistory((prevHistory) => [
         ...prevHistory,
         {
