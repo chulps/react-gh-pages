@@ -50,6 +50,8 @@ const PromptAssistant1 = (props) => {
             User: Include a wooden table and a book. Maybe add some warm morning sunlight coming through a window.
             AI: That will create a warm and inviting atmosphere. Should we also include other elements like a breakfast plate or decorative plants to enhance the scene?
             User: Yes, add a plate of croissants and a small potted plant.
+            AI: Should this image have any particular artistic style, such as abstract, photorealistic, Rembrandt, or anime?
+            User: Abstract is perfect!
             AI: Perfect! Here’s the prompt for your background based on our discussion: "Create an indoor morning scene with a wooden table illuminated by warm sunlight from a window. On the table, place a ceramic coffee mug, a book opened to a middle page, a plate of fresh croissants, and a small green potted plant to add a touch of nature."
             AI: Does this sound good to you, or is there anything else you’d like to add or change?
             User: That sounds perfect!
