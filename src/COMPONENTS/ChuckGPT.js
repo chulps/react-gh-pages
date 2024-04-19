@@ -6,7 +6,6 @@ import TextareaAutosize from "react-textarea-autosize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./ChuckGPT.css";
-import ReactGA4 from "react-ga4";
 import ChuckGPTTraining from "./ChuckGPTTraining.js";
 
 const ChuckGPT = (props) => {
@@ -36,13 +35,19 @@ const ChuckGPT = (props) => {
       ...prevHistory,
       { content: message, role: "user", timestamp },
     ]);
-
+  
+    // Format history for the API call
+    const formattedHistory = history.map(item => ({
+      role: item.role === "ChuckGPT" ? "assistant" : "user",
+      content: item.content
+    }));
+  
     try {
       const response = await axios.post(
         "https://limitless-lake-38337.herokuapp.com/api/openai",
         {
           model: "gpt-4",
-          messages: [...ChuckGPTTraining, { role: "user", content: message }],
+          messages: [...ChuckGPTTraining, ...formattedHistory, { role: "user", content: message }],
           temperature: 0.7,
           max_tokens: 180,
           top_p: 1,
@@ -50,7 +55,7 @@ const ChuckGPT = (props) => {
           presence_penalty: 0,
         }
       );
-
+  
       setHistory((prevHistory) => [
         ...prevHistory,
         {
@@ -60,13 +65,7 @@ const ChuckGPT = (props) => {
         },
       ]);
       setTyping(false);
-
-      // Send GA4 event with message content and user location data
-      ReactGA4.event({
-        category: "ChuckGPT",
-        action: `Message: ${message}`,
-      });
-
+  
       if (typeof props.onNewMessage === "function") {
         props.onNewMessage();
       }

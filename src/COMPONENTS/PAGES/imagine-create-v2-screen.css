@@ -1,0 +1,16 @@
+
+
+#imagine-create-v2-screen {
+    display: grid;
+    grid-template-columns: 136px 1fr 333px;
+    gap: var(--unit1);
+    min-height: calc(100vh - 89px);
+    padding: var(--unit2) 0;
+}
+
+#imagine-create-v2-screen .card {
+    background: white;
+    box-shadow: 0 6px 12px var(--transBlueC-10);
+    padding: var(--unit2);
+    border-radius: var(--unit1);
+}

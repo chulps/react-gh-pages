@@ -112,3 +112,8 @@
     background: transparent;
     outline: none;
 }
+
+#chuck:has(#prompt-assistant1) #ChuckGPT,
+#chuck:has(#prompt-assistant1) #ChuckGPTButton {
+  display: none;
+}
