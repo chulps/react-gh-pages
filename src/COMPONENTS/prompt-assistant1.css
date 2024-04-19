@@ -236,3 +236,26 @@ textarea.chat-input:focus-visible {
     outline: 3px solid var(--primary);
     outline-offset: -2px;
 }
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  color: #333; /* Change color as needed */
+  cursor: pointer;
+} 
+
+.copy-button {
+  margin-left: 10px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}

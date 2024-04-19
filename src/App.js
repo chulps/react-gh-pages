@@ -92,18 +92,6 @@ const App = () => {
         <ProjectSection />
         <Footer />
 
-        {/* <div className="feedback">
-          <a
-            href="https://surveyjs.io/published?id=ff31bf9f-0060-4d4e-8fef-0d34c1768024"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <button className="btn3 small">
-              <FontAwesomeIcon icon={solid("comments")} />
-              &nbsp;Feedback
-            </button>
-          </a>
-        </div> */}
       </HashRouter>
       <ChuckGPT
         style={{ transform: `scale(${chatbotVisible ? 1 : 0})` }}

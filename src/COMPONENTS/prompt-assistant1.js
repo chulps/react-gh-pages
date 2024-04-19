@@ -31,7 +31,7 @@ const PromptAssistant1 = (props) => {
     {
       role: "system",
       content: `
-        You a custom gpt that's been trained to help users create prompts for an image generator that . 
+        You are a custom gpt that's been trained to help users create prompts for an image generator that . 
         You are a feature of a software aimed at creating product images for items sold via e-commerce. 
         Users upload images of their products. The software then uses another AI to remove the background of the uploaded image. 
         Then the user has to create a prompt instructing the background generator of what kind of scene to create for the final product image.
@@ -39,7 +39,7 @@ const PromptAssistant1 = (props) => {
         For this specific use case, where the goal is to assist users in creating detailed and effective prompts for background generation in product images, a Dynamic Prompting framework combined with Instruction Following would be ideal. 
         Dynamic Prompting allows the AI to adapt its questions based on user responses, thereby refining the user's input iteratively. Instruction Following ensures that the prompts are clear and direct, helping users understand exactly what information is needed.
         
-        Example Conversation Between a Human and a Custom GPT Trained for Prompt Creation
+        Example Conversation Between a Human and a Custom GPT Trained for Prompt Creation. Feel free to offer abstract solutions
             AI: Welcome to the background generator! To get started, could you please upload the image of your product?
             User: *Uploads an image of a handcrafted ceramic mug.*
             AI: Beautiful product! Let's create a perfect scene for it. What is the primary use of this mug? Is it for coffee, tea, or something else?
@@ -53,16 +53,12 @@ const PromptAssistant1 = (props) => {
             AI: Perfect! Here’s the prompt for your background based on our discussion: "Create an indoor morning scene with a wooden table illuminated by warm sunlight from a window. On the table, place a ceramic coffee mug, a book opened to a middle page, a plate of fresh croissants, and a small green potted plant to add a touch of nature."
             AI: Does this sound good to you, or is there anything else you’d like to add or change?
             User: That sounds perfect!
-            AI: Excellent! Let me know if i can help with anything else.
-
-            This approach not only guides the user through the process of crafting a detailed prompt but also educates them on how to think about scenes and elements that enhance the attractiveness and contextuality of their product images.
-`,
+            AI: Excellent! Let me know if i can help with anything else.`,
     },
     {
       role: "assistant",
       content:
         "I'm ImagineCreate's promp writing assistant. I'm here to help you create detailed and effective prompts for background generation in product images. Please let me know when you've uploaded an image and we'll get started!",
-
     },
   ];
 
@@ -73,19 +69,23 @@ const PromptAssistant1 = (props) => {
       ...prevHistory,
       { content: message, role: "user", timestamp },
     ]);
-  
+
     // Format history for the API call
-    const formattedHistory = history.map(item => ({
+    const formattedHistory = history.map((item) => ({
       role: item.role === "prompt-assistant1" ? "assistant" : "user",
-      content: item.content
+      content: item.content,
     }));
-  
+
     try {
       const response = await axios.post(
         "https://limitless-lake-38337.herokuapp.com/api/openai",
         {
           model: "gpt-4",
-          messages: [...PromptAssistant1Training, ...formattedHistory, { role: "user", content: message }],
+          messages: [
+            ...PromptAssistant1Training,
+            ...formattedHistory,
+            { role: "user", content: message },
+          ],
           temperature: 0.7,
           max_tokens: 300,
           top_p: 1,
@@ -93,7 +93,7 @@ const PromptAssistant1 = (props) => {
           presence_penalty: 0,
         }
       );
-  
+console.log(message)
       setHistory((prevHistory) => [
         ...prevHistory,
         {
@@ -103,7 +103,7 @@ const PromptAssistant1 = (props) => {
         },
       ]);
       setTyping(false);
-  
+
       if (typeof props.onNewMessage === "function") {
         props.onNewMessage();
       }
@@ -128,26 +128,37 @@ const PromptAssistant1 = (props) => {
   };
 
   return (
-    <div id="prompt-assistant1" className={props.className} >
-      <div id="prompt-assistant1-header">
-        <img src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
-        <div
-          className="mt0"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-        >
-          <h5>&lt;prompt-assistant /&gt;</h5>
-          <small>Chuck's AI Assistant</small>
+    <div id="prompt-assistant1" className={props.className}>
+      <div id="prompt-assistant1-header" className="flex-space-between">
+        <div className="flex">
+          <img src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
+          <div
+            className="mt0"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <h5>Prompt Assistant</h5>
+            <small>For ImagineCreate (By Chuck)</small>
+          </div>
         </div>
+        <button
+          className="close-button small btn3 text-danger"
+          onClick={props.onClose} // We'll pass this from the parent component
+          aria-label="Close chatbot"
+        >
+          <FontAwesomeIcon icon={solid("times")} />
+        </button>
       </div>
       <div className="history-container" ref={historyContainerRef}>
         <div className="message-container">
           <div className="message">
-            Hey, I'm prompt-assistant, Chuck's AI assistant. Ask me anything about
-            Chuck's background or availability.
+            I'm ImagineCreate's promp writing assistant. I'm here to help you
+            create detailed and effective prompts for background generation in
+            product images. Please let me know when you've uploaded an image and
+            we'll get started!
           </div>
           <small className="message-timestamp">
             <span role="img" aria-label="prompt-assistant1">
@@ -192,7 +203,7 @@ const PromptAssistant1 = (props) => {
               }}
             >
               &nbsp;
-              {message.role === "user" ? "😎 You" : "🤖 prompt-assistant1"}
+              {message.role === "user" ? "😎 You" : "🤖 Prompt Assistant"}
               &nbsp;at&nbsp;
               {message.timestamp.toLocaleTimeString([], {
                 hour: "2-digit",
