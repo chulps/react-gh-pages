@@ -11,6 +11,7 @@ const PromptAssistant2 = (props) => {
   const [scene, setScene] = useState("");
   const [sceneElements, setSceneElements] = useState("");
   const [additionalNotes, setAdditionalNotes] = useState("");
+  const [style, setStyle] = useState("");
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -20,15 +21,17 @@ const PromptAssistant2 = (props) => {
     productUse: "What is the primary use of your product?",
     scene: "Describe a scene where your product might be used.",
     sceneElements: "What are some elements in the scene?",
+    style: "What artistic style should your background be?",
     additionalNotes: "Any additional notes?",
   };
 
   const examples = {
-    description: "Example: A white ceramic coffee mug",
-    productUse: "Example: It's mainly used for coffee",
-    scene: "Example: A coffee shop",
+    description: "Ex: A white ceramic coffee mug",
+    productUse: "Ex: It's mainly used for coffee",
+    scene: "Ex: A coffee shop",
     sceneElements: "Example: A table, a coffee mug, and a cup",
-    additionalNotes: "Example: Morning time blurry people in the background",
+    style: "Ex: Abstract, photorealistic, Rembrandt, cartoon",
+    additionalNotes: "Ex: Morning time blurry people in the background",
   };
 
   const handleSubmit = async (event) => {
@@ -58,6 +61,8 @@ const PromptAssistant2 = (props) => {
             { role: "user", content: scene },
             { role: "assistant", content: questions.sceneElements },
             { role: "user", content: sceneElements },
+            { role: "assistant", content: questions.style },
+            { role: "user", content: style },
             { role: "assistant", content: questions.additionalNotes },
             { role: "user", content: additionalNotes },
             {
@@ -161,7 +166,7 @@ const PromptAssistant2 = (props) => {
               to generate a prompt.
             </p>
             <form
-              className="assistant-form flex-column mt2"
+              className="assistant-form flex-vertical mt2"
               style={{ gap: "var(--unit2)" }}
               onSubmit={handleSubmit}
             >
