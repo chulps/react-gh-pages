@@ -164,9 +164,9 @@ class ProjectSection extends Component {
             </div>
 
             <div>
-              <Link to="https://chulps.github.io/weather-dashboard/">
-                <h4 className="text-red0">AI Weather Dashboard</h4>
-              </Link>
+              <a href="https://chulps.github.io/weather-dashboard/">
+                <h4>🌤️ AI Weather Dashboard</h4>
+              </a>
               <div className="project-tags">
                 <small>Rest API</small>
                 <small>ChatGPT API</small>
