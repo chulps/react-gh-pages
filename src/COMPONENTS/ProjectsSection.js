@@ -169,10 +169,24 @@ class ProjectSection extends Component {
               </a>
               <div className="project-tags">
                 <small>Rest API</small>
+                <small>Google Places API</small>
+                <small>Google Translate API</small>
                 <small>ChatGPT API</small>
                 <small>UI Design</small>
                 <small>UX Design</small>
                 <small>Web Design</small>
+                <small>Frontend Development</small>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://chulps.github.io/chat-app/">
+                <h4>💬 T-Chat</h4>
+              </a>
+              <div className="project-tags">
+                <small>Typescript</small>
+                <small>Google Translate API</small>
+                <small>Product Design</small>
                 <small>Frontend Development</small>
               </div>
             </div>
