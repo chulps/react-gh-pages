@@ -26,7 +26,7 @@
   list-style: initial;
 }
 
-#experience div {
+.experience-item {
   margin-bottom: var(--unit3);
 }
 
@@ -36,4 +36,11 @@
 
 #download-button {
   z-index: 1;
+}
+
+.experience-logo {
+  aspect-ratio: 1/1;
+  width: calc(var(--unit3) + var(--unit2));
+  margin-right: var(--unit1);
+  object-fit: contain;
 }

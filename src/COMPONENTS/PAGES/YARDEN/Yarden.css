@@ -2,3 +2,10 @@
   border-radius: var(--unit2);
   box-shadow: 0 6px 12px var(--transBlueC-10);
 }
+
+.aiImage {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  padding: var(--unit1);
+  background: var(--white);
+}

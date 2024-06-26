@@ -20,11 +20,10 @@ class ProjectSection extends Component {
         <section className="projects-section pb3 pb4">
           <hr className="mb3" />
 
-          <h2>My work:</h2>
+          <h2>Places I've Worked</h2>
           <p className="mb3" style={{ maxWidth: "45ch" }}>
-            This is my portfolio showcasing some of my best work in the last few
-            years. Here you'll see a mix of branding, product design, and
-            frontend development.
+            These are the places I've worked since starting my career in tech in
+            2018.
           </p>
           <div className="one-column sm-two-columns lg-three-columns xl-four-columns gap2 animate-up-wrapper">
             <div>
@@ -162,32 +161,39 @@ class ProjectSection extends Component {
                 <small>Frontend Development</small>
               </div>
             </div>
-
-            <div>
-              <a href="https://chulps.github.io/weather-dashboard/">
-                <h4>🌤️ AI Weather Dashboard</h4>
-              </a>
-              <div className="project-tags">
-                <small>Rest API</small>
-                <small>Google Places API</small>
-                <small>Google Translate API</small>
-                <small>ChatGPT API</small>
-                <small>UI Design</small>
-                <small>UX Design</small>
-                <small>Web Design</small>
-                <small>Frontend Development</small>
+          </div>
+          <hr className="my3" />
+          <div>
+            <h2>Personal Projects</h2>
+            <p className="mb3">Things I out of curiosity or personal interest.</p>
+            <div className="one-column sm-two-columns lg-three-columns xl-four-columns gap2 animate-up-wrapper">
+              <div>
+                <a target="_blank" rel="noreferrer" href="/weather-dashboard/">
+                  <h4>🌤️ AI Weather Dashboard</h4>
+                </a>
+                <div className="project-tags">
+                  <small>Rest API</small>
+                  <small>Google Places API</small>
+                  <small>Google Translate API</small>
+                  <small>OpenAI Completions API</small>
+                  <small>UI Design</small>
+                  <small>UX Design</small>
+                  <small>Web Design</small>
+                  <small>Frontend Development</small>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <a href="https://chulps.github.io/chat-app/">
-                <h4>💬 T-Chat</h4>
-              </a>
-              <div className="project-tags">
-                <small>Typescript</small>
-                <small>Google Translate API</small>
-                <small>Product Design</small>
-                <small>Frontend Development</small>
+              <div>
+                <a target="_blank" rel="noreferrer" href="https://chulps.github.io/chat-app/">
+                  <h4>💬 T-Chat</h4>
+                </a>
+                <div className="project-tags">
+                  <small>Typescript</small>
+                  <small>Google Translate API</small>
+                  <small>OpenAI Whisper API</small>
+                  <small>Product Design</small>
+                  <small>Frontend Development</small>
+                </div>
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: var(--unit2);
+    border-radius: var(--unit1);
 }
 
 .xprize-projects .project img:hover {

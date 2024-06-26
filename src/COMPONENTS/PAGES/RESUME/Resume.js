@@ -6,6 +6,14 @@ import { designTools, developmentTools, productTools } from "../HOME/tools.js";
 import Download from "./Chuck_Howard_Resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
+import mindVaultLogo from "../../../IMG/mind-vault-logo.svg";
+import xPrizeLogo from "../../../IMG/xprizelogo.png"
+import yardenLogo from "../YARDEN/yarden_mark_bg_fitted.svg"
+import foundryLogo from "../FOUNDRY/FoundryLogo.svg"
+import CRILogo from "../../../IMG/cri_genetics_logo.svg"
+import upstateLogo from "../FOUNDRY/upstateLogo.svg"
+import clicktoolLogo from "./clicktool-mark.svg"
+import sullivanLogo from "./sullivan-branding-logo.svg"
 
 const tools = [...designTools, ...developmentTools, ...productTools];
 class Resume extends Component {
@@ -14,9 +22,189 @@ class Resume extends Component {
   }
 
   render() {
+    const skillsMap = new Map([
+      ["A/B Testing", true],
+      ["AI Prompt Engineering", true],
+      ["CSS/CSS3/", true],
+      ["Data Visualization", true],
+      ["Design Systems", true],
+      ["Design Thinking", true],
+      ["Frontend Development", true],
+      ["GitHub/Bitbucket", true],
+      ["Google Analytics", true],
+      ["Google Optimize", true],
+      ["Graphic Design", true],
+      ["HTML/HTML5", true],
+      ["JavaScript/Typescript", true],
+      ["Product Design", true],
+      ["Product Management", true],
+      ["Product Roadmapping", true],
+      ["Prototyping", true],
+      ["React/React Native/Angular/Svelte", true],
+      ["UI Design", true],
+      ["UI/UX Design", true],
+      ["User Research", true],
+      ["Usability Testing", true],
+      ["Usability / Heuristics", true],
+      ["UX Design", true],
+      ["Visual Design", true],
+      ["Web Accessibility", true],
+      ["Web Design", true],
+      ["Web Development", true],
+      ["Wireframing", true],
+    ]);
+
+    const toolsArray = tools.sort((a, b) => a.tool.localeCompare(b.tool));
+
+    const experienceData = [
+      {
+        company: "MindVault",
+        logo: mindVaultLogo,
+        location: "Dallas, TX",
+        role: "Product Designer/Frontend Developer",
+        type: "(Contract)",
+        duration: "(May 2023 – Sep 2023)",
+        responsibilities: [
+          "Lead the design of MindVault's MVP for a new product.",
+          "Own the design and development of the Marketing website.",
+          "Own the branding design and strategy of MindVault's products.",
+          "Write the company prospectus and other marketing materials.",
+        ],
+      },
+      {
+        company: "XPRIZE Foundation",
+        logo: xPrizeLogo,
+        location: "Los Angeles",
+        role: "UI/UX Engineer",
+        type: "(Contract)",
+        duration: "(January 2023 – May 2023)",
+        responsibilities: [
+          "Built a design system and documentation for XPRIZE's products.",
+          "Designed and developed new features for XPRIZE's website and products.",
+          "Work alongside senior developers and product managers to complete daily frontend development tasks.",
+        ],
+      },
+      {
+        company: "Yarden",
+        logo: yardenLogo,
+        location: "San Francisco (Remote)",
+        role: "Product Design Lead",
+        type: "(Full-time)",
+        duration: "(March 2021 – Present)",
+        responsibilities: [
+          "Lead all design tasks for Yarden's marketing, products, branding, and services.",
+          "Lead a small team of designers, developers, writers, and gardening experts to build a B2C/B2B product.",
+          "Own the design and strategy of Yarden's marketing website.",
+          "Perform daily frontend development tasks for Yarden's website, web app, and mobile app.",
+          "Weekly meetings with CEO and CTO to discuss product roadmap and design direction.",
+        ],
+      },
+      {
+        company: "Foundry Digital",
+        logo: foundryLogo,
+        location: "Rochester, NY (Remote)",
+        role: "UI Engineer",
+        type: "(Contract)",
+        duration: "(April 2022 – October 2022)",
+        responsibilities: [
+          "Perform daily frontend development tasks for several Foundry Digital websites and products.",
+          "Own the design and build of the Foundry Academy website",
+          "Design and develop Foundry's Staking portal",
+          "Organized a cross-company design group to share knowledge and facilitate communication between subsidiary companies.",
+        ],
+      },
+      {
+        company: "Upstate Interactive",
+        logo: upstateLogo,
+        location: "Syracuse, NY (Remote)",
+        role: "Senior Design Technologist",
+        type: "(Contract)",
+        duration: "(February 2022 – April 2022)",
+        responsibilities: [
+          "Collaborate with other team members servicing a broad range of blockchain and web3 clients.",
+          "Design and develop sites and products for clients.",
+          "Mentor junior designers and engineers about design and frontend development.",
+        ],
+      },
+      {
+        company: "CRI Genetics",
+        logo: CRILogo,
+        location: "El Segundo",
+        role: "(Promoted to...) Product Design Lead",
+        type: "(Full-time)",
+        duration: "(August 2021 – December 2021)",
+        responsibilities: [
+          "Lead a team of developers, copywriters, scientists, and marketing professionals in the design, development, discovery, and improvements of CRI Genetics digital product",
+          "Create, design, evangelize and maintain CRI Genetics design system, 'Nucleotide'.",
+          "Design and implement A/B testing for CRI Genetics customer portal.",
+          "Create high fidelity prototypes in Figma, React, and other frontend technologies.",
+          "Contribute to CRI Genetics' codebase and documentation.",
+        ],
+      },
+      {
+        company: "CRI Genetics",
+        logo: CRILogo,
+        location: "Los Angeles",
+        role: "Senior Front-end Developer",
+        type: "(Full-time)",
+        duration: "(April 2020 – August 2021)",
+        responsibilities: [
+          "Design and develop CRI Genetics web app",
+          "Daily frontend development tasks",
+          "Rebuild the dashboard for the CRI Genetics web app",
+        ],
+      },
+      {
+        company: "Clicktool",
+        logo: clicktoolLogo,
+        location: "Los Angeles",
+        role: "Creative Director",
+        type: "(Full-time)",
+        duration: "(August 2018 – April 2020)",
+        responsibilities: [
+          "Lead a team of designers, developers, and copywriters to build a B2B product.",
+          "Design and develop a website for a B2B product.",
+          "Design and develop a web app for a B2B product.",
+        ],
+      },
+      {
+        company: "Sullivan Branding",
+        logo: sullivanLogo, // TODO: get sullivan logo
+        location: "Memphis",
+        role: "Art Director/Designer",
+        type: "(Contract)",
+        duration: "(April 2015 – March 2017)",
+        responsibilities: [
+          "Daily design tasks including email design, website design, and social media design.",
+          "Collaborate with senior creative directors to develop and execute a design strategy.",
+        ],
+      },
+    ];
+
+    const educationData = [
+      {
+        type: "Formal Studies",
+        items: ["University of Memphis, Memphis - BFA Graphic Design"],
+      },
+      {
+        type: "Coding Bootcamp",
+        items: ["UCLA Extension's Full-Stack Web Development Bootcamp"],
+      },
+      {
+        type: "Self Studies",
+        items: [
+          "MAP Management Training, Map Consulting/Management Services (March 2021 – March 2021)",
+          "Fullstack Web Development Angela Yu",
+          "Angular",
+          "Modern React with Redux",
+        ],
+      },
+    ];
+
+    const hobbies = ["Travel", "Artificial Intelligence"];
+
     return (
       <div id="resume">
-
         <Helmet>
           <title>Chuck Howard's Resumé</title>
           <meta name="description" content="Chuck Howard's Resumé" />
@@ -28,7 +216,7 @@ class Resume extends Component {
               <h2>Charles M. Howard</h2>
               <p>Product Designer / Frontend Developer</p>
               <p style={{ maxWidth: "45ch" }}>
-                I’m an experienced Product Designer with a background in
+                I'm an experienced Product Designer with a background in
                 Frontend Development and Product Discovery, skilled in leading
                 products from discovery, through the design phase, to
                 deployment.
@@ -42,260 +230,81 @@ class Resume extends Component {
             <Links />
           </div>
           <hr className="my3" />
-          <label>Skills</label>
-          <h3>Methods & techniques</h3>
+          <label>Overview</label>
+          <h3>Technical Skills</h3>
           <ul id="skills">
-            <li>A/B Testing</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Indesign</li>
-            <li>Adobe Photoshop</li>
-            <li>C#/.NET/Azure</li>
-            <li>Chat GPT and other AI tools</li>
-            <li>Data Visualization</li>
-            <li>Design Systems</li>
-            <li>Design Thinking</li>
-            <li>Frontend Development</li>
-            <li>GitHub/Bitbucket</li>
-            <li>Google Analytics</li>
-            <li>Google Optimize</li>
-            <li>Graphic Design</li>
-            <li>HTML/HTML5</li>
-            <li>CSS/CSS3/</li>
-            <li>JavaScript/Typescript</li>
-            <li>Product Management</li>
-            <li>Product Roadmapping</li>
-            <li>Prototyping</li>
-            <li>React/React Native/Angular/Svelte</li>
-            <li>UI/UX Design</li>
-            <li>Usability / Heuristics</li>
-            <li>Web Design</li>
-            <li>Wireframing</li>
+            {Array.from(skillsMap.keys()).map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
           </ul>
           <hr className="my3" />
           <label>Tools</label>
           <h3>Tools & Technology</h3>
           <ul id="tools">
-            {tools
-              .sort((a, b) => a.tool.localeCompare(b.tool))
-              .map((tool) => (
-                <li key={tool.tool}>{tool.tool}</li>
-              ))}
+            {toolsArray.map((tool) => (
+              <li key={tool.tool}>{tool.tool}</li>
+            ))}
           </ul>
         </section>
 
+        <hr className="my3" />
         <section id="experience">
-          <hr className="mb3" />
           <label>Experience</label>
+          <h3 className="mb3">Places I've Worked</h3>
 
-          <div id="xprize">
-            <h4>UX Designer/Frontend Developer</h4>
-            <p>XPRIZE Foundation, Los Angeles</p>
-            <small>(January 2023 – Present)</small>
-            <ul>
-              <li>
-                Developed and executed a comprehensive UX/UI design overhaul for
-                the company website resulting in a 45% increase in user
-                engagement and a 30% decrease in bounce rate.
-              </li>
-              <li>
-                Implemented responsive designs using Angular, .Net, C#, and
-                Azure, resulting in 98% mobile compatibility across all company
-                applications.
-              </li>
-              <li>
-                Spearheaded the development and maintenance of XPDS (XPRIZE
-                Design System), which facilitated efficient design
-                implementation across all company products, resulting in a 20%
-                reduction in design implementation time.
-              </li>
-            </ul>
-          </div>
+          {experienceData.map((experience, index) => (
+            <div className="experience-item" key={index}>
+              <div className="flex">
+                <span>
+                  <img
+                    className="experience-logo"
+                    alt={experience.company}
+                    src={experience.logo}
+                  />
+                </span>
 
-          <div>
-            <h4>Product Design Lead (Co-Founder)</h4>
-            <p>Yarden, San Francisco (Remote)</p>
-            <small>(March 2021 – Present)</small>
-            <ul>
-              <li>
-                Leveraged user research to inform design decisions and create a
-                seamless mobile app experience, resulting in a successful launch
-                on the App Store with 5 stars.
-              </li>
-              <li>
-                Developed and implemented a cohesive brand strategy across all
-                marketing channels, resulting in increased brand recognition by
-                30% and driving growth opportunities.
-              </li>
-              <li>
-                Directed a comprehensive user research study that resulted in a
-                20% increase in customer satisfaction and a 15% decrease in user
-                churn rates.
-              </li>
-            </ul>
-          </div>
+                <div>
+                  <h4>
+                    {experience.company}, {experience.location}
+                  </h4>
+                  <p>{experience.role}</p>
+                  {experience.type && <i>{experience.type}</i>}
+                  <br />
+                  <small>{experience.duration}</small>
+                </div>
+              </div>
 
-          <div>
-            <h4>(Acquisition) UI Engineer</h4>
-            <p>Foundry Digital, Rochester, NY (Remote) </p>
-            <small>(April 2022 – October 2022)</small>
-
-            <ul>
-              <li>
-                Spearheaded the development and implementation of Foundry's
-                comprehensive design system "Metal", resulting in a 70%
-                reduction in design inconsistencies across all products and
-                services.
-              </li>
-              <li>
-                Collaborated with engineering teams to build, test, and iterate
-                on high-fidelity prototypes for Foundry's Staking Portal,
-                resulting in a 50% increase in user engagement within the first
-                month after launch.
-              </li>
-              <li>
-                Founded DCG Design Guild, a cross-company initiative to foster
-                collaboration and knowledge sharing among designers at Digital
-                Currency Group’s subsidiary companies. Led bi-weekly heuristic
-                studies to identify best practices and emerging trends in UX
-                design.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Senior Design Technologist</h4>
-            <p>Upstate Interactive, Syracuse, NY (Remote)</p>
-            <small>(February 2022 – April 2022)</small>
-            <ul>
-              <li>
-                Led the design and development of web application solutions for
-                20+ clients, resulting in a 95% satisfaction rate and $2.5M in
-                revenue.
-              </li>
-              <li>
-                Mentored a team of 6 developers on cutting-edge design
-                technology and techniques, resulting in a 35% increase in
-                productivity and a more cohesive team dynamic.
-              </li>
-              <li>
-                Built high-fidelity prototypes using React, Sass, and Typescript
-                to validate product concepts with stakeholders, reducing design
-                iterations by 50% and accelerating time-to-market.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>(Promoted) Product Design Lead</h4>
-            <p>CRI Genetics, El Segundo</p>
-            <small>(August 2021 – December 2021)</small>
-            <ul>
-              <li>
-                Researched and analyzed Genetics market trends and user
-                behavior, resulting in the successful launch of 3 new products
-                that drove a 20% increase in revenue.
-              </li>
-              <li>
-                Led the product design process from ideation to launch,
-                collaborating with a team of developers, marketers, and
-                copywriters, resulting in an average improvement of 10% in
-                various targeted metrics.
-              </li>
-              <li>
-                Planned and conducted A/B tests for new features, resulting in a
-                20% increase in user engagement and retention.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Senior Front-end Developer</h4>
-            <p>CRI Genetics, Los Angeles</p>
-            <small>(April 2020 – August 2021)</small>
-            <ul>
-              <li>Design and build UI</li>
-              <li>Create and maintain the design system "Nucleotide"</li>
-              <li>
-                Collaborate with team members to push products from concept to
-                launch
-              </li>
-              <li>Plan and set up A/B tests</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Creative Director</h4>
-            <p>Clicktool, Los Angeles</p>
-            <small>(August 2018 – April 2020)</small>
-            <ul>
-              <li>
-                Developed a marketing platform for affiliate marketers, leading
-                to the successful creation and launch of multiple products and
-                services from concept to completion.
-              </li>
-              <li>
-                Designed and implemented a user onboarding process and an
-                educational product, increasing platform adoption and user
-                satisfaction.
-              </li>
-              <li>
-                Created complex analytics features for monitoring marketing
-                campaigns, empowering users to run their own split tests and
-                optimize their strategies effectively.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Art Director/Designer</h4>
-            <p>Sullivan Branding, Memphis</p>
-            <small>(April 2015 – March 2017)</small>
-            <ul>
-              <li>
-                Create various media for brands including FedEx, Hilton Hotels,
-                Homewood Suites, and Simmons Bank
-              </li>
-              <li>
-                Collaborate with Creative Director, Account Managers, Designers,
-                Copywriters, Animators, and other creatives to execute concepts
-              </li>
-              <li>
-                Support Senior staff with their projects on an as-needed basis
-              </li>
-            </ul>
-          </div>
+              <ul>
+                {experience.responsibilities.map((responsibility, index) => (
+                  <li key={index}>{responsibility}.</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
         <section>
           <hr className="my2" />
           <div>
             <label>Education</label>
-            <h3>Formal Studies</h3>
-            <li>University of Memphis, Memphis - BFA Graphic Design</li>
-            <li>UCLA Extension's Full-Stack Web Development Bootcamp</li>
-            <hr className="my2" />
-
-            <label className="mt2">Courses</label>
-            <h3>Self Studies</h3>
-            <div className="mb2">
-              {" "}
-              <ul className="mb2">
-                <li>
-                  MAP Management Training, Map Consulting/Management Services
-                  (March 2021 – March 2021)
-                </li>
-                <li>Fullstack Web Development Angela Yu</li>
-                <li>Angular</li>
-                <li>Modern React with Redux</li>
-              </ul>
-            </div>
+            {educationData.map((education, index) => (
+              <div className="mb2" key={index}>
+                <h3>{education.type}</h3>
+                <ul>
+                  {education.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
             <hr className="my2" />
 
             <div className="mb2">
               <label>Hobbies</label>
               <h3>Fun Stuff</h3>
               <ul>
-                <li>Travel</li>
-                <li>Artificial Intelligence</li>
+                {hobbies.map((hobby, index) => (
+                  <li key={index}>{hobby}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -307,7 +316,7 @@ class Resume extends Component {
           <a id="download-button" href={Download} download>
             <button>
               <FontAwesomeIcon icon={solid("download")} />
-              &nbsp;Download
+              &nbsp; Download
             </button>
           </a>
         </section>
