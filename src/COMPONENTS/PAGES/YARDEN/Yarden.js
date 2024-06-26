@@ -20,9 +20,14 @@ import truckBack from "../../../IMG/yarden_truck_back.jpg";
 import truckFront from "../../../IMG/yarden_truck_front.jpg";
 import truckLeft from "../../../IMG/yarden_truck_left_side.jpg";
 import truckRight from "../../../IMG/yarden_truck_right_side.jpg";
+import customerDBPlants from "./CustomerDBPlants.png"
+import customerDBQuotes from "./CustomerDBQuotes.png"
+import customerDBOrders from "./CustomerDBOrders.png"
+import customerDBSettings from "./CustomerDBSettings.png"
+
+
 
 // ai images
-
 const aiImages = [
   {
     name: "assessment",
@@ -98,18 +103,15 @@ const aiImages = [
   },
   {
     name: "installation",
-    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/installation.png"
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/installation.png",
   },
   {
     name: "maintenance",
-    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/maintenance.png"
-
-  }
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/maintenance.png",
+  },
 ];
 
-
-
-
+// customer dashboard images
 
 class Yarden extends Component {
   componentDidMount() {
@@ -553,30 +555,28 @@ class Yarden extends Component {
           </div>
         </section>
 
-
         <section className="lg-two-columns gap3 lg-gap4 mt4">
-
           <div>
             <div style={{ position: "sticky", top: "var(--unit4)" }}>
               <label>Challenge #2.1:</label>
               <h2>Redesign the website again!</h2>
               <p className="pt1 pb2">
-                In 2023 we decided that our product is in a good place and we want
-                to focus more on our marketing. After trying different advertising
-                platforms driving traffic to our site, we had to be honest with
-                ourselves about a few things...
+                In 2023 we decided that our product is in a good place and we
+                want to focus more on our marketing. After trying different
+                advertising platforms driving traffic to our site, we had to be
+                honest with ourselves about a few things...
                 <a href="www.yardengarden.com">Visit the NEW Yarden website</a>.
               </p>
-  
+
               <div className="two-columns gap2">
                 <div>
                   <h5>Site not converting</h5>
                   <small>
-                    The site just wasn't converting no matter how much traffic we
-                    drove to it.
+                    The site just wasn't converting no matter how much traffic
+                    we drove to it.
                   </small>
                 </div>
-  
+
                 <div>
                   <h5>Site is not useful...</h5>
                   <small>
@@ -584,15 +584,15 @@ class Yarden extends Component {
                     helpful at all. Lots of users were simply lost.
                   </small>
                 </div>
-  
+
                 <div>
                   <h5>Site is boring</h5>
                   <small>
-                    Our site was not keeping our users engaged. We needed to make
-                    it more fun and interactive.
+                    Our site was not keeping our users engaged. We needed to
+                    make it more fun and interactive.
                   </small>
                 </div>
-  
+
                 <div>
                   <h5>Not enough info</h5>
                   <small>
@@ -600,7 +600,7 @@ class Yarden extends Component {
                     not giving our users enough information to make a decision.
                   </small>
                 </div>
-  
+
                 <div>
                   <h5>How about some AI?</h5>
                   <small>
@@ -608,7 +608,7 @@ class Yarden extends Component {
                     to help answer user's questions.
                   </small>
                 </div>
-  
+
                 <div>
                   <h5>No images of the product.</h5>
                   <small>
@@ -648,14 +648,14 @@ class Yarden extends Component {
           <div className="gap2 two-columns">
             {aiImages.map((image, index) => (
               <div>
-              <label>{image.name}</label>
-              <img
-                key={index}
-                className="whole shadowDown aiImage"
-                src={image.url}
-                alt="website screenshot"
-                style={{ borderRadius: "var(--unit1)" }}
-              />
+                <label>{image.name}</label>
+                <img
+                  key={index}
+                  className="whole shadowDown aiImage"
+                  src={image.url}
+                  alt="website screenshot"
+                  style={{ borderRadius: "var(--unit1)" }}
+                />
               </div>
             ))}
           </div>
@@ -664,44 +664,74 @@ class Yarden extends Component {
               <label>Challenge #2.1.1:</label>
               <h2>Consistent Branding With AI Generated Images</h2>
               <p className="pt1 pb2">
-                Product photography presents a unique challenge for our brand. Some customers are not comfortable with the idea of us using photographs of their property for marketing purposes. Also, every garden is different, making it a challenge to keep a consistent look and feel when viewing images of our product. This makes it difficult for our potential customers to imagine themselves with a garden, but not just any garden... a Yarden garden.
+                Product photography presents a unique challenge for our brand.
+                Some customers are not comfortable with the idea of us using
+                photographs of their property for marketing purposes. Also,
+                every garden is different, making it a challenge to keep a
+                consistent look and feel when viewing images of our product.
+                This makes it difficult for our potential customers to imagine
+                themselves with a garden, but not just any garden... a Yarden
+                garden.
                 <br />
                 <br />
-                With careful prompting and a little photoshop magic, we were able to create a consistent look and feel for our product images that accurately represented what our potential customers could expect when they make a purchase.
+                With careful prompting and a little Photoshop magic, we were
+                able to create a consistent look and feel for our product images
+                that accurately represented what our potential customers could
+                expect when they make a purchase.
               </p>
-  
+
               <div className="two-columns gap2">
                 <div>
-                  <h5>A/B Testing</h5>
+                  <h5>White Space</h5>
                   <small>
-                    In marketing A/B testing is crucial. This is a skill I picked
-                    up while working at CRI Genetics. I use Google Optimize to
-                    split traffic, and Google Analytics to collect and analyze
-                    data.
+                    White space is important for our brand. Our customers are
+                    used to seeing e-commerce brands show their products in such
+                    a way. Since the idea of gardening this way is quite new, we
+                    need to close that gap and allow the user to see the garden
+                    as a product they can buy online and allow them to use their
+                    own imagination to complete the story of the images that
+                    they see.
                   </small>
                 </div>
-  
+
                 <div>
-                  <h5>User Analytics</h5>
+                  <h5>Depictions of Gardeners</h5>
                   <small>
-                    We use our internal data from Strype, Google Analytics, and
-                    Hotjar.
+                    Any time a Yarden employee is depicted in our brand, they
+                    should be pictured wearing the purple Yarden t-shirt. This
+                    will help with our storytelling and make the brand more
+                    personal. Since part of our service requires our gardeners
+                    to visit our customer's homes, we need to make sure that our
+                    gardeners are easily identifiable from the moment our
+                    gardener sets foot on the property.
                   </small>
                 </div>
-  
+
                 <div>
-                  <h5>Design System</h5>
+                  <h5>Depictions of Gardens</h5>
                   <small>
-                    In software development, design systems make prototyping and
-                    front-end development go faster by using design tokens.
+                    Part of Yarden's promise to our customers is that they are
+                    guaranteed to grow more food than they can eat. The problem
+                    we wish to create for our customers is that they are
+                    overwhelmed by the success of their garden, and forced to
+                    give some of the food away to their neighbors and friends
+                    while spreading the story of our company. Therefor, gardens
+                    must be depicted as if they are overflowing with food while
+                    also representing the actual dimensions and materials that
+                    are used in real life.
                   </small>
                 </div>
-  
+
                 <div>
-                  <h5>Component Library</h5>
+                  <h5>Depictions of Harvests</h5>
                   <small>
-                    Maintain React Component Libraries for the website, web app,
-                    and React Native for the mobile app..
+                    Following the same logic as depictions of the gardens,
+                    harvest boxes must be depicted as boxes of rich, vibrant,
+                    colorful cornucopias of overwhelming success. This is really
+                    the thing that we're selling! We want our customers to see
+                    that we are serious about growing food and that we are not
+                    just another landscaping company that is hear to mow lawns
+                    and blow dead leaves away.
                   </small>
                 </div>
               </div>
@@ -709,10 +739,70 @@ class Yarden extends Component {
           </div>
         </section>
 
+        {/* the apps section */}
+        <section className="lg-two-columns gap3 my4">
+          <div>
+            <label>Challenge #infinity:</label>
+            <h2>The Apps</h2>
+            <p className="py1">
+              Yarden relies heavily on contracted workers to build and maintain
+              our gardens. This means that we have to build something kind of
+              like "Uber" for Gardenening, which has a customer-facing app, and
+              a business-facing app. The customer facing app will be used
+              to manage their interactions with the company and its
+              representatives, while the gardeners will use the business-facing app to manage their
+              work, get paid, and interactions with the customer, among other
+              things.
+            </p>
+          </div>
+
+          <div className="flex p3">
+              <div>
+                <img
+                  width={"100%"}
+                  style={{
+                    filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
+                  }}
+                  src={aiImages[0].url}
+                  alt="change date screen"
+                />
+              </div>
+            </div>
+        </section>
+
+        <section className="lg-two-columns gap4 my4">
+          
+          <div>
+            <label>Challenge #infinity.1.1:</label>
+            <h3>The Customer Facing Web-app</h3>
+            <p>While we encourage our users to download our mobile app... some of them are simply resistant to the idea of downloading yet ANOTHER app on their phone. Also, our team is small and we don't have the resources to manage an iPhone app, AND an Android app, so we resolved to simply have a web app to fill in that gap. We are currently rebuilding our old web app so that it has all the same features as the iPhone app.</p>
+          </div>
+
+          <div className="gap2">
+            <img className="app-img" src={customerDBSettings} alt="customer DB settings" />
+            <img className="app-img" src={customerDBPlants} alt="customer DB plants" />
+            <img className="app-img" src={customerDBQuotes} alt="customer DB quotes" />
+            <img className="app-img" src={customerDBOrders} alt="customer DB orders" />
+          </div>
+
+        </section>
+
+        {/* <section className="lg-two-columns my4">
+          <div>
+            <label>Challenge #infinity.1.2:</label>
+            <h3>The Business Facing Web-app</h3>
+            <p>Description</p>
+          </div>
+
+          <div>
+            images
+          </div>
+        </section> */}
+
         {/* mobile app section */}
         <section className="lg-two-columns my4">
           <div>
-            <label>Challenge #3:</label>
+            <label>Challenge #infinity.2.0:</label>
             <h2>Launch the mobile app</h2>
             <p className="py1">
               It took us about a 6 months to build and launch the Yarden Mobile
@@ -765,7 +855,7 @@ class Yarden extends Component {
         {/* garden map section */}
         <section>
           <div>
-            <label>Challenge #4</label>
+            <label>Challenge #infinity.2.1:</label>
             <h3>The "Garden Map"</h3>
           </div>
 

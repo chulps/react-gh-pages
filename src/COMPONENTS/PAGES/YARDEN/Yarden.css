@@ -9,3 +9,7 @@
   padding: var(--unit1);
   background: var(--white);
 }
+
+.app-img {
+  width: 100%;
+}

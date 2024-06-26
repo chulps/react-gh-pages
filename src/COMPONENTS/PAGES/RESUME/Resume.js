@@ -197,6 +197,7 @@ class Resume extends Component {
           "Fullstack Web Development Angela Yu",
           "Angular",
           "Modern React with Redux",
+          // TODO: Add more courses and books
         ],
       },
     ];
