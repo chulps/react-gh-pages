@@ -20,8 +20,6 @@ import ProjectSection from "./COMPONENTS/ProjectsSection.js";
 import ChuckGPT from "./COMPONENTS/ChuckGPT.js";
 import ReactGA from "react-ga4";
 import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
-import ImagineCreateV1Screen from "./COMPONENTS/PAGES/ImagineCreateV1Screen.js";
-import ImagineCreateV2Screen from "./COMPONENTS/PAGES/ImagineCreateV2Screen.js";
 const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -78,14 +76,6 @@ const App = () => {
             <Route path="/projects/covid/" element={<Covid />} />
             <Route path="/resume/" element={<Resume />} />
             <Route path="/design-process" element={<DesignProcess />} />
-            <Route
-              path="/imaginecreate-v1"
-              element={<ImagineCreateV1Screen />}
-            />
-            <Route
-              path="/imaginecreate-v2"
-              element={<ImagineCreateV2Screen />}
-            />
           </Routes>
         </main>
 

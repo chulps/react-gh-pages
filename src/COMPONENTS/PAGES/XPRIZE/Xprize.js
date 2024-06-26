@@ -78,7 +78,7 @@ class Xprize extends Component {
               <a href="https://pop.xprize.org/prizes">
                 <img src={Pop} alt="placeholder" />
               </a>
-              <h5>POP</h5>
+              <h5>"POP" (Prize Operations Portal)</h5>
               <p>
                 This is the portal for contestants to manage their teams with
                 the organization. Here I worked on a lot of the internal UI.

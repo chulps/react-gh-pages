@@ -12,16 +12,104 @@ import YardenVerticalLockup from "./YardenVerticalLockup";
 import YardenHorizontalLockup from "./YardenHorizontalLockup";
 import "./Yarden.css";
 import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
+import yardenWebsiteRedesign2 from "./yarden_website_fullscreen.png";
+import yardenProductsPage from "./yarden_products_page.jpg";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
 import { Helmet } from "react-helmet";
-import redesign2 from "./redesign2.png";
-import chatbot from "./chatbot.png";
+import truckBack from "../../../IMG/yarden_truck_back.jpg";
+import truckFront from "../../../IMG/yarden_truck_front.jpg";
+import truckLeft from "../../../IMG/yarden_truck_left_side.jpg";
+import truckRight from "../../../IMG/yarden_truck_right_side.jpg";
 
-// import YardenHorizontalWhite from "./YardenHorizontalWhite";
-// import yardenTruck from "./yarden_truck.png";
-// import yardenShirt from "./yarden_shirt.png";
-// import yardenYardSign from "./Yarden_Yard_Sign.jpeg";
-// import chuckAndIsaac from "./chuckandisaac.jpg";
+// ai images
+
+const aiImages = [
+  {
+    name: "assessment",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/assessment.png",
+  },
+  {
+    name: "productAndServicesHero",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/product_and_services_hero.png",
+  },
+  {
+    name: "babyPhoto",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/baby_photo.png",
+  },
+  {
+    name: "shield",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/shield.png",
+  },
+  {
+    name: "organic",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/organic.png",
+  },
+  {
+    name: "garden",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/pricing-garden.png",
+  },
+  {
+    name: "aijason",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/homepage_images/aijason.png",
+  },
+  {
+    name: "careAndMaintenance",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/cleaning.png",
+  },
+  {
+    name: "customGardenBed",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/custom_garden_bed.png",
+  },
+  {
+    name: "hose",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/hose.png",
+  },
+  {
+    name: "largeGardenBed",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/4x8garden_bed.png",
+  },
+  {
+    name: "lumber",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/lumber.png",
+  },
+  {
+    name: "mediumGardenBed",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/4x4garden_bed.png",
+  },
+  {
+    name: "productAndServicesHero",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/product_and_services_hero.png",
+  },
+  {
+    name: "smallGardenBed",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/2x4garden_bed.png",
+  },
+  {
+    name: "soil",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/soil.png",
+  },
+  {
+    name: "harvest",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/harvest.png",
+  },
+  {
+    name: "gardener",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/careers_page_images/careers_gardener.png",
+  },
+  {
+    name: "installation",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/installation.png"
+  },
+  {
+    name: "maintenance",
+    url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/maintenance.png"
+
+  }
+];
+
+
+
+
 
 class Yarden extends Component {
   componentDidMount() {
@@ -358,6 +446,54 @@ class Yarden extends Component {
           </div>
         </section>
 
+        {/* fleet section */}
+        <section>
+          <div className="py4 lg-two-columns gap4">
+            <div>
+              <div style={{ position: "sticky", top: "var(--unit4)" }}>
+                <label>Fleet</label>
+                <h3>Branded Trucks</h3>
+                <p className="my1">
+                  A big part of Yarden's marketing relies on physical signage.
+                  One of the most visible assets that we have is our fleet of
+                  trucks. Each truck is outfitted with cut vinyl stickers and qr
+                  codes with tracking capabilities. When a qr code on the truck
+                  is scanned we can see an approximate location and other data
+                  that we use to inform our targeting for our marketing
+                  campaigns.
+                </p>
+              </div>
+            </div>
+
+            <div className="color-cells-container gap2">
+              <img
+                src={truckFront}
+                alt="truck front"
+                className="whole shadowDown"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+              <img
+                src={truckBack}
+                alt="truck back"
+                className="whole shadowDown"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+              <img
+                src={truckLeft}
+                alt="truck left"
+                className="whole shadowDown"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+              <img
+                src={truckRight}
+                alt="truck right"
+                className="whole shadowDown"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+            </div>
+          </div>
+        </section>
+
         {/* website section */}
         <section className="lg-two-columns gap3 lg-gap4">
           <div>
@@ -415,82 +551,161 @@ class Yarden extends Component {
               </div>
             </div>
           </div>
+        </section>
+
+
+        <section className="lg-two-columns gap3 lg-gap4 mt4">
+
           <div>
-            <label>Challenge #2.1:</label>
-            <h2>Redesign the website again!</h2>
-            <p className="pt1 pb2">
-              In 2023 we decided that our product is in a good place and we want
-              to focus more on our marketing. After trying different advertising
-              platforms driving traffic to our site, we had to be honest with
-              ourselves about a few things...
-              <a href="www.yardengarden.com">Visit the NEW Yarden website</a>.
-            </p>
-
-            <div className="two-columns gap2">
-              <div>
-                <h5>Site not converting</h5>
-                <small>
-                  The site just wasn't converting no matter how much traffic we
-                  drove to it.
-                </small>
-              </div>
-
-              <div>
-                <h5>Site is not useful...</h5>
-                <small>
-                  We studied our users and found that our site design wasn't
-                  helpful at all. Lots of users were simply lost.
-                </small>
-              </div>
-
-              <div>
-                <h5>Site is boring</h5>
-                <small>
-                  Our site was not keeping our users engaged. We needed to make
-                  it more fun and interactive.
-                </small>
-              </div>
-
-              <div>
-                <h5>Not enough info</h5>
-                <small>
-                  When we looked at our competitors, we realized that we were
-                  not giving our users enough information to make a decision.
-                </small>
-              </div>
-
-              <div>
-                <h5>How about some AI?</h5>
-                <small>
-                  Make use of the the OpenAI API to act as a virtual assistant
-                  to help answer user's questions.
-                </small>
-              </div>
-
-              <div>
-                <h5>No images of the product.</h5>
-                <small>
-                  Use the AI text-to-image tool, Midjourney, to generate high
-                  quality images of our garden beds.
-                </small>
+            <div style={{ position: "sticky", top: "var(--unit4)" }}>
+              <label>Challenge #2.1:</label>
+              <h2>Redesign the website again!</h2>
+              <p className="pt1 pb2">
+                In 2023 we decided that our product is in a good place and we want
+                to focus more on our marketing. After trying different advertising
+                platforms driving traffic to our site, we had to be honest with
+                ourselves about a few things...
+                <a href="www.yardengarden.com">Visit the NEW Yarden website</a>.
+              </p>
+  
+              <div className="two-columns gap2">
+                <div>
+                  <h5>Site not converting</h5>
+                  <small>
+                    The site just wasn't converting no matter how much traffic we
+                    drove to it.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>Site is not useful...</h5>
+                  <small>
+                    We studied our users and found that our site design wasn't
+                    helpful at all. Lots of users were simply lost.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>Site is boring</h5>
+                  <small>
+                    Our site was not keeping our users engaged. We needed to make
+                    it more fun and interactive.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>Not enough info</h5>
+                  <small>
+                    When we looked at our competitors, we realized that we were
+                    not giving our users enough information to make a decision.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>How about some AI?</h5>
+                  <small>
+                    Make use of the the OpenAI API to act as a virtual assistant
+                    to help answer user's questions.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>No images of the product.</h5>
+                  <small>
+                    Use the AI text-to-image tool, Midjourney, to generate high
+                    quality images of our garden beds.
+                  </small>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="gap3">
-            <img
-              className="whole shadowDown"
-              src={redesign2}
-              alt="website screenshot"
-              style={{ borderRadius: "var(--unit1)" }}
-            />
+            <div>
+              <label>Homepage</label>
+              <img
+                className="whole shadowDown"
+                src={yardenWebsiteRedesign2}
+                alt="website screenshot"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+            </div>
 
-            <img
-              className="whole shadowDown"
-              src={chatbot}
-              alt="website screenshot"
-              style={{ borderRadius: "var(--unit1)", maxWidth: "calc(var(--unit4) + var(--unit5))", margin: '0 auto' }}
-            />
+            <div>
+              <label>Products & Services</label>
+              <img
+                className="whole shadowDown"
+                src={yardenProductsPage}
+                alt="website screenshot"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* AI images section */}
+        <section className="lg-two-columns gap3 lg-gap4 mt4">
+          <div className="gap2 two-columns">
+            {aiImages.map((image, index) => (
+              <div>
+              <label>{image.name}</label>
+              <img
+                key={index}
+                className="whole shadowDown aiImage"
+                src={image.url}
+                alt="website screenshot"
+                style={{ borderRadius: "var(--unit1)" }}
+              />
+              </div>
+            ))}
+          </div>
+          <div>
+            <div style={{ position: "sticky", top: "var(--unit3)" }}>
+              <label>Challenge #2.1.1:</label>
+              <h2>Consistent Branding With AI Generated Images</h2>
+              <p className="pt1 pb2">
+                Product photography presents a unique challenge for our brand. Some customers are not comfortable with the idea of us using photographs of their property for marketing purposes. Also, every garden is different, making it a challenge to keep a consistent look and feel when viewing images of our product. This makes it difficult for our potential customers to imagine themselves with a garden, but not just any garden... a Yarden garden.
+                <br />
+                <br />
+                With careful prompting and a little photoshop magic, we were able to create a consistent look and feel for our product images that accurately represented what our potential customers could expect when they make a purchase.
+              </p>
+  
+              <div className="two-columns gap2">
+                <div>
+                  <h5>A/B Testing</h5>
+                  <small>
+                    In marketing A/B testing is crucial. This is a skill I picked
+                    up while working at CRI Genetics. I use Google Optimize to
+                    split traffic, and Google Analytics to collect and analyze
+                    data.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>User Analytics</h5>
+                  <small>
+                    We use our internal data from Strype, Google Analytics, and
+                    Hotjar.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>Design System</h5>
+                  <small>
+                    In software development, design systems make prototyping and
+                    front-end development go faster by using design tokens.
+                  </small>
+                </div>
+  
+                <div>
+                  <h5>Component Library</h5>
+                  <small>
+                    Maintain React Component Libraries for the website, web app,
+                    and React Native for the mobile app..
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -18,7 +18,10 @@ export const developmentTools = [
     { tool: "Sass" },
     { tool: "Sourcetree" },
     { tool: "SVG" },
-    { tool: "Vue" },
+    { tool: "Vue" },    
+    { tool: "Webpack" },
+    { tool: "Wordpress" },
+    { tool: "Webhooks" },
   ];
 
   export const productTools = [
@@ -41,14 +44,13 @@ export const developmentTools = [
   ];
 
   export const designTools = [
-    { tool: "Photoshop" },
-    { tool: "Illustrator" },
-    { tool: "Indesign" },
-    { tool: "XD" },
-    { tool: "After Effects" },
+    { tool: "Adobe Photoshop" },
+    { tool: "Adobe Illustrator" },
+    { tool: "Adobe Indesign" },
+    { tool: "Adobe XD" },
+    { tool: "Adobe After Effects" },
     { tool: "Figma" },
     { tool: "Balsamiq" },
-    { tool: "Miro" },
     { tool: "Midjourney" },
     { tool: "Uizard" },
     { tool: "Invision" },
@@ -59,7 +61,4 @@ export const developmentTools = [
     { tool: "Zeplin" },
     { tool: "Atomic Design" },
     { tool: "Material Design" },
-    { tool: "Bootstrap" },
-    
-
   ];
