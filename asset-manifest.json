@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.02d40f88.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.bf756aa5.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.bf756aa5.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.d3534215.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.d3534215.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.c30f8a2e.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.c30f8a2e.js.map",
     "static/js/2.05e3e671.chunk.js": "/react-gh-pages/static/js/2.05e3e671.chunk.js",
@@ -24,6 +24,12 @@
     "static/media/RotateLandingPages.c2c1a385.svg": "/react-gh-pages/static/media/RotateLandingPages.c2c1a385.svg",
     "static/media/App.css": "/react-gh-pages/static/media/Rustea.9adc4358.otf",
     "static/media/behance-01.e5ca904c.svg": "/react-gh-pages/static/media/behance-01.e5ca904c.svg",
+    "static/media/biz-dash-applications.aff83703.png": "/react-gh-pages/static/media/biz-dash-applications.aff83703.png",
+    "static/media/biz-dash-automation.f5cfc08f.png": "/react-gh-pages/static/media/biz-dash-automation.f5cfc08f.png",
+    "static/media/biz-dash-materials.6aab05e6.png": "/react-gh-pages/static/media/biz-dash-materials.6aab05e6.png",
+    "static/media/biz-dash-orders.2c26219d.png": "/react-gh-pages/static/media/biz-dash-orders.2c26219d.png",
+    "static/media/biz-dash-qr-codes.0cb59bfa.png": "/react-gh-pages/static/media/biz-dash-qr-codes.0cb59bfa.png",
+    "static/media/biz-dash-templates.5b54a88d.png": "/react-gh-pages/static/media/biz-dash-templates.5b54a88d.png",
     "static/media/calendly.73150c86.svg": "/react-gh-pages/static/media/calendly.73150c86.svg",
     "static/media/change_date.a84fe829.png": "/react-gh-pages/static/media/change_date.a84fe829.png",
     "static/media/chuck_blue.d55df030.png": "/react-gh-pages/static/media/chuck_blue.d55df030.png",
@@ -70,6 +76,6 @@
     "static/js/runtime-main.c30f8a2e.js",
     "static/js/2.05e3e671.chunk.js",
     "static/css/main.02d40f88.chunk.css",
-    "static/js/main.bf756aa5.chunk.js"
+    "static/js/main.d3534215.chunk.js"
   ]
 }
