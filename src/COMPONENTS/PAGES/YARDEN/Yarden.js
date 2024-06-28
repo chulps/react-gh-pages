@@ -20,12 +20,25 @@ import truckBack from "../../../IMG/yarden_truck_back.jpg";
 import truckFront from "../../../IMG/yarden_truck_front.jpg";
 import truckLeft from "../../../IMG/yarden_truck_left_side.jpg";
 import truckRight from "../../../IMG/yarden_truck_right_side.jpg";
-import customerDBPlants from "./CustomerDBPlants.png"
-import customerDBQuotes from "./CustomerDBQuotes.png"
-import customerDBOrders from "./CustomerDBOrders.png"
-import customerDBSettings from "./CustomerDBSettings.png"
+import customerDBPlants from "./CustomerDBPlants.png";
+import customerDBQuotes from "./CustomerDBQuotes.png";
+import customerDBOrders from "./CustomerDBOrders.png";
+import customerDBSettings from "./CustomerDBSettings.png";
+import applications from "./biz-dash-applications.png";
+import automation from "./biz-dash-automation.png";
+import materials from "./biz-dash-materials.png";
+import orders from "./biz-dash-orders.png";
+import qrCodes from "./biz-dash-qr-codes.png";
+import templates from "./biz-dash-templates.png";
 
-
+const bizDashImages = [
+  applications,
+  automation,
+  materials,
+  orders,
+  qrCodes,
+  templates,
+];
 
 // ai images
 const aiImages = [
@@ -110,8 +123,6 @@ const aiImages = [
     url: "https://yarden-garden.s3.us-west-1.amazonaws.com/products_%26_services_page_photos/maintenance.png",
   },
 ];
-
-// customer dashboard images
 
 class Yarden extends Component {
   componentDidMount() {
@@ -261,6 +272,7 @@ class Yarden extends Component {
               <label className="ghost md-block">&nbsp;</label>
               <h3 className="mb2 ghost md-block">&nbsp;</h3>
               <img
+                loading="lazy"
                 width="100%"
                 src={theInvite}
                 className="shadowDown"
@@ -278,7 +290,12 @@ class Yarden extends Component {
             <div className="md-two-columns gap3 lg-gap4">
               <div className="flext-center flex-vertical">
                 <div className="flex-center flex-vertical bg-white p3">
-                  <img src={oldLogo} alt="old yarden logo" width="50%" />
+                  <img
+                    loading="lazy"
+                    src={oldLogo}
+                    alt="old yarden logo"
+                    width="50%"
+                  />
                 </div>
                 <small className="flex-center">The original Yarden logo.</small>
               </div>
@@ -469,24 +486,28 @@ class Yarden extends Component {
 
             <div className="color-cells-container gap2">
               <img
+                loading="lazy"
                 src={truckFront}
                 alt="truck front"
                 className="whole shadowDown"
                 style={{ borderRadius: "var(--unit1)" }}
               />
               <img
+                loading="lazy"
                 src={truckBack}
                 alt="truck back"
                 className="whole shadowDown"
                 style={{ borderRadius: "var(--unit1)" }}
               />
               <img
+                loading="lazy"
                 src={truckLeft}
                 alt="truck left"
                 className="whole shadowDown"
                 style={{ borderRadius: "var(--unit1)" }}
               />
               <img
+                loading="lazy"
                 src={truckRight}
                 alt="truck right"
                 className="whole shadowDown"
@@ -500,6 +521,7 @@ class Yarden extends Component {
         <section className="lg-two-columns gap3 lg-gap4">
           <div>
             <img
+              loading="lazy"
               className="whole shadowDown"
               src={yardenWebsiteScreenshot}
               alt="website screenshot"
@@ -624,6 +646,7 @@ class Yarden extends Component {
             <div>
               <label>Homepage</label>
               <img
+                loading="lazy"
                 className="whole shadowDown"
                 src={yardenWebsiteRedesign2}
                 alt="website screenshot"
@@ -634,6 +657,7 @@ class Yarden extends Component {
             <div>
               <label>Products & Services</label>
               <img
+                loading="lazy"
                 className="whole shadowDown"
                 src={yardenProductsPage}
                 alt="website screenshot"
@@ -650,6 +674,7 @@ class Yarden extends Component {
               <div>
                 <label>{image.name}</label>
                 <img
+                  loading="lazy"
                   key={index}
                   className="whole shadowDown aiImage"
                   src={image.url}
@@ -680,7 +705,7 @@ class Yarden extends Component {
                 expect when they make a purchase.
               </p>
 
-              <div className="two-columns gap2">
+              <div className="md-two-columns gap2">
                 <div>
                   <h5>White Space</h5>
                   <small>
@@ -748,56 +773,121 @@ class Yarden extends Component {
               Yarden relies heavily on contracted workers to build and maintain
               our gardens. This means that we have to build something kind of
               like "Uber" for Gardenening, which has a customer-facing app, and
-              a business-facing app. The customer facing app will be used
-              to manage their interactions with the company and its
-              representatives, while the gardeners will use the business-facing app to manage their
-              work, get paid, and interactions with the customer, among other
-              things.
+              a business-facing app. The customer facing app will be used to
+              manage their interactions with the company and its
+              representatives, while the gardeners will use the business-facing
+              app to manage their work, get paid, and interactions with the
+              customer, among other things.
             </p>
+
+            <div className="md-two-columns gap2">
+              <div>
+                <h5>The Customer Facing App</h5>
+                <small>
+                  Our customers need a way to manage their accounts and interact with our business, so we made an app for web and iPhone that helps the customer handle any interactions with us. They can choose their crops, ask questions, schedule maintenance, manage their subscriptions, and order add-ons through the app.
+                </small>
+              </div>
+
+              <div>
+                <h5>The Business Facing App</h5>
+                <small>
+                  Our gardeners need a way to track their work and get paid, so we made an app for web and iPhone that helps the gardener handle any interactions with the customer and with administrative tasks.
+                </small>
+              </div>
+            </div>
           </div>
 
           <div className="flex p3">
-              <div>
-                <img
-                  width={"100%"}
-                  style={{
-                    filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
-                  }}
-                  src={aiImages[0].url}
-                  alt="change date screen"
-                />
-              </div>
+            <div>
+              <img
+                loading="lazy"
+                width={"100%"}
+                style={{
+                  filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
+                }}
+                src={aiImages[0].url}
+                alt="change date screen"
+              />
             </div>
+          </div>
         </section>
 
         <section className="lg-two-columns gap4 my4">
-          
           <div>
-            <label>Challenge #infinity.1.1:</label>
-            <h3>The Customer Facing Web-app</h3>
-            <p>While we encourage our users to download our mobile app... some of them are simply resistant to the idea of downloading yet ANOTHER app on their phone. Also, our team is small and we don't have the resources to manage an iPhone app, AND an Android app, so we resolved to simply have a web app to fill in that gap. We are currently rebuilding our old web app so that it has all the same features as the iPhone app.</p>
+            <div style={{ position: "sticky", top: "var(--unit4)" }}>
+              <label>Challenge #infinity.1.1:</label>
+              <h3>The Customer Facing Web-app</h3>
+              <p>
+                While we encourage our users to download our mobile app... some
+                of them are simply resistant to the idea of downloading yet
+                ANOTHER app on their phone. Also, our team is small and we don't
+                have the resources to manage an iPhone app, AND an Android app,
+                so we resolved to simply have a web app to fill in that gap. We
+                are currently rebuilding our old web app so that it has all the
+                same features as the iPhone app.
+              </p>
+            </div>
           </div>
 
           <div className="gap2">
-            <img className="app-img" src={customerDBSettings} alt="customer DB settings" />
-            <img className="app-img" src={customerDBPlants} alt="customer DB plants" />
-            <img className="app-img" src={customerDBQuotes} alt="customer DB quotes" />
-            <img className="app-img" src={customerDBOrders} alt="customer DB orders" />
+            <img
+              loading="lazy"
+              className="app-img"
+              src={customerDBSettings}
+              alt="customer DB settings"
+            />
+            <img
+              loading="lazy"
+              className="app-img"
+              src={customerDBPlants}
+              alt="customer DB plants"
+            />
+            <img
+              loading="lazy"
+              className="app-img"
+              src={customerDBQuotes}
+              alt="customer DB quotes"
+            />
+            <img
+              loading="lazy"
+              className="app-img"
+              src={customerDBOrders}
+              alt="customer DB orders"
+            />
           </div>
-
         </section>
 
-        {/* <section className="lg-two-columns my4">
-          <div>
-            <label>Challenge #infinity.1.2:</label>
-            <h3>The Business Facing Web-app</h3>
-            <p>Description</p>
+        <section className="lg-two-columns gap4 my4">
+          <div className="gap2">
+            {bizDashImages.map((img, index) => (
+              <img
+                loading="lazy"
+                key={index}
+                className="app-img"
+                src={bizDashImages[index]}
+                alt="business dashboard"
+              />
+            ))}
           </div>
-
           <div>
-            images
+            <div style={{ position: "sticky", top: "var(--unit4)" }}>
+              <label>Challenge #infinity.1.2:</label>
+              <h3>The Business Facing Web-app</h3>
+              <small>
+                [DISCLAIMER*: Some parts of this app can't be shared online
+                because it contains personal data from our users]
+              </small>
+              <p>
+                The purpose of this side of the app is to manage our contract
+                workers. Through this the gardeners are able to manage their
+                orders and keep track of interactions between them and the
+                customer, harvest data, and many other aspects of their work. On
+                the administrative side we can also track customer issues and
+                generally handle all customer service internally.
+              </p>
+            </div>
           </div>
-        </section> */}
+        </section>
 
         {/* mobile app section */}
         <section className="lg-two-columns my4">
@@ -814,6 +904,7 @@ class Yarden extends Component {
             <div className="flex p3">
               <div>
                 <img
+                  loading="lazy"
                   width={"100%"}
                   style={{
                     filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
@@ -825,6 +916,7 @@ class Yarden extends Component {
               <div>
                 {" "}
                 <img
+                  loading="lazy"
                   width={"100%"}
                   style={{
                     filter: "drop-shadow(0 6px 12px var(--transBlueC-25))",
@@ -906,7 +998,12 @@ class Yarden extends Component {
               </div>
             </div>
             <div className="flex-center flex-vertical">
-              <img src={GardenMap} alt="Garden Map" width="60%" />
+              <img
+                loading="lazy"
+                src={GardenMap}
+                alt="Garden Map"
+                width="60%"
+              />
               <small>This is the gardener's view...</small>
             </div>
           </div>
