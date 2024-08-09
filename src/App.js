@@ -6,6 +6,7 @@ import Yarden from "./COMPONENTS/PAGES/YARDEN/Yarden.js";
 import Xprize from "./COMPONENTS/PAGES/XPRIZE/Xprize.js";
 import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
 import MindVault from "./COMPONENTS/PAGES/MINDVAULT/MindVault.js";
+import TChat from "./COMPONENTS/PAGES/TCHAT/TChat.js";
 import Footer from "./COMPONENTS/FOOTER/Footer.js";
 import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
 import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
@@ -71,6 +72,7 @@ const App = () => {
             <Route path="/projects/crigenetics/" element={<CRIGenetics />} />
             <Route path="/projects/foundry/" element={<Foundry />} />
             <Route path="/projects/nucleotide/" element={<Nucleotide />} />
+            <Route path="/projects/tchat/" element={<TChat />} />
             <Route path="/projects/yarden/" element={<Yarden />} />
             <Route path="/projects/clicktool/" element={<Clicktool />} />
             <Route path="/projects/covid/" element={<Covid />} />
