@@ -184,12 +184,13 @@ class ProjectSection extends Component {
               </div>
 
               <div>
-                <a target="_blank" rel="noreferrer" href="https://chulps.github.io/chat-app/">
+                <Link target="_blank" rel="noreferrer" to="/projects/tchat/">
                   <h4>💬 T-Chat</h4>
-                </a>
+                </Link>
                 <div className="project-tags">
-                  <small>Typescript</small>
-                  <small>Google Translate API</small>
+                <small>Typescript</small>
+                <small>Case Study</small>
+                <small>Google Translate API</small>
                   <small>OpenAI Whisper API</small>
                   <small>Product Design</small>
                   <small>Frontend Development</small>
