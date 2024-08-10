@@ -29,7 +29,7 @@
   max-height: var(--unit7);
   border-radius: 1.5rem;
   position: relative;
-  max-height: var(--unit6)
+  max-height: var(--unit6);
 }
 
 .iphone-frame::before {
@@ -67,4 +67,17 @@
   display: flex !important;
   gap: var(--unit0);
   align-items: center;
+}
+
+.journey-map-img {
+  width: 100%;
+  box-shadow: 0 6px 12px var(--transBlueC-25);
+}
+
+.mvp-img {
+  max-width: 50%;
+}
+
+.prototype-frame {
+  box-shadow: 0 6px 12px var(--transBlueC-25);
 }
