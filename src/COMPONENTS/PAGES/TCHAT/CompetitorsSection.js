@@ -13,7 +13,7 @@ const features = [
   "No Device Sharing",
   "OS Agnostic",
   "Supports Multiple Languages",
-  "Supports Chat",
+  "Chat",
 ];
 
 // Define competitor analysis data
