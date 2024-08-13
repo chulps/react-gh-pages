@@ -26,7 +26,6 @@
 
 .figma-frame {
   width: 100%;
-  max-height: var(--unit7);
   border-radius: 1.5rem;
   position: relative;
   max-height: var(--unit6);

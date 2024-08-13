@@ -2,7 +2,7 @@ import React from 'react'
 
 const MVPFeatures = () => {
   return (
-    <section className="mt2 gap3">
+    <section className="mt3 gap3">
     <div>
       <label>Core Features</label>
       <h3>
@@ -16,7 +16,7 @@ const MVPFeatures = () => {
       </p>
     </div>
     <div>
-      <ol className="md-two-columns lg-three-columns gap3">
+      <ul className="md-two-columns lg-three-columns gap3">
         <li>
           <small>
             <h5>Create Chatrooms:</h5>
@@ -62,7 +62,7 @@ const MVPFeatures = () => {
             understand the context at a glance.
           </small>
         </li>
-      </ol>
+      </ul>
     </div>
   </section>
   )

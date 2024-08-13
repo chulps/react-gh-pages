@@ -7,17 +7,18 @@ import styled from "styled-components";
 import "./t-chat.css";
 
 // components
-import CompetitorsSection from "./CompetitorsSection";
-import ResponsibilitiesSection from "./ResponsibilitiesSection";
-import UserFeedbackSection from "./UserFeedbackSection";
-import KeyTakeaways from "./KeyTakeaways";
-import JourneyMap from "./JourneyMap";
-import MVPSection from "./MVPSection";
-import ProjectOverviewSection from "./ProjectOverviewSection";
-import MVPFeaturesSection from "./MVPFeaturesSection";
-import TechnologyUsed from "./TechnologyUsed";
+import AllScreens from "./AllScreens";
 import BuildingOnTheMVPSection from "./BuildingOnTheMVPSection";
-
+import CompetitorsSection from "./CompetitorsSection";
+import JourneyMap from "./JourneyMap";
+import KeyTakeaways from "./KeyTakeaways";
+import MVPFeaturesSection from "./MVPFeaturesSection";
+import MVPSection from "./MVPSection";
+import NextFeatures from "./NextFeatures";
+import ProjectOverviewSection from "./ProjectOverviewSection";
+import ResponsibilitiesSection from "./ResponsibilitiesSection";
+import TechnologyUsed from "./TechnologyUsed";
+import UserFeedbackSection from "./UserFeedbackSection";
 // Create a component for the competitor analysis table
 
 const TChat = () => {
@@ -71,7 +72,6 @@ const TChat = () => {
 
       <MVPFeaturesSection />
 
-      <TechnologyUsed />
 
       <BuildingOnTheMVPSection />
 
@@ -169,114 +169,11 @@ const TChat = () => {
         </div>
       </section>
 
-      <section className="mt4">
-        <label>Feature Requests</label>
-        <h3 className="mb2">What Users Want to See Next</h3>
-        <ul className="md-two-columns lg-three-columns xl-four-columns gap2">
-          <li>
-            <h5>Saving Conversations</h5>
-            <small>
-              Users want the ability to save and revisit past conversations,
-              ensuring they can retain important discussions for future
-              reference.
-            </small>
-          </li>
-          <li>
-            <h5>In-App Notifications</h5>
-            <small>
-              Notifications for new messages, mentions, and activity within
-              chatrooms are crucial to keep users engaged and informed.
-            </small>
-          </li>
-          <li>
-            <h5>Video Chat with Subtitles</h5>
-            <small>
-              Adding subtitles to video chats would enhance accessibility and
-              ensure that language barriers are minimized even in video
-              communication.
-            </small>
-          </li>
-          <li>
-            <h5>Play YouTube Videos or Music in Chatrooms</h5>
-            <small>
-              Users are asking for the ability to play YouTube videos or music
-              in the background, making chatrooms more interactive and engaging.
-            </small>
-          </li>
-          <li>
-            <h5>Adding Friends/Contacts</h5>
-            <small>
-              The option to add and maintain a list of friends or contacts
-              within the app is a highly requested feature for easier
-              communication.
-            </small>
-          </li>
-          <li>
-            <h5>Adjustable Font Size</h5>
-            <small>
-              Users want the ability to customize the font size to suit their
-              preferences and improve readability, especially for extended
-              conversations.
-            </small>
-          </li>
-          <li>
-            <h5>Toggle Original, Untranslated Message On/Off</h5>
-            <small>
-              The ability to toggle the visibility of the original, untranslated
-              message would provide users with better context and understanding.
-            </small>
-          </li>
-          <li>
-            <h5>Light/Dark Mode</h5>
-            <small>
-              Users have requested both light and dark mode options to suit
-              different lighting conditions and personal preferences.
-            </small>
-          </li>
-          <li>
-            <h5>Join a Chatroom with Chatroom ID</h5>
-            <small>
-              An easy way to join chatrooms by simply entering a chatroom ID
-              would streamline the process and make it more user-friendly.
-            </small>
-          </li>
-          <li>
-            <h5>Voice Transcription</h5>
-            <small>
-              Automatically transcribe spoken words into text, making it easier
-              for users to follow along in different languages.
-            </small>
-          </li>
-          <li>
-            <h5>Rich Metadata When Sharing Links</h5>
-            <small>
-              Enhance the link-sharing experience with rich metadata, providing
-              users with a preview of the shared content.
-            </small>
-          </li>
-          <li>
-            <h5>Reply or React to Messages</h5>
-            <small>
-              The ability to directly reply or react to specific messages within
-              a chat would add depth and interaction to conversations.
-            </small>
-          </li>
-          <li>
-            <h5>End-to-End Encryption</h5>
-            <small>
-              Users are concerned about privacy and have requested end-to-end
-              encryption to ensure that their conversations remain secure.
-            </small>
-          </li>
-          <li>
-            <h5>More Safety Features</h5>
-            <small>
-              Additional safety features, such as moderation tools and reporting
-              mechanisms, are essential for maintaining a safe environment.
-            </small>
-          </li>
-        </ul>
-      </section>
+      <NextFeatures />
+
+      <AllScreens />
+
+      <TechnologyUsed />
 
       <section className="mt4">
         <label>Challenges and Solutions</label>
@@ -328,6 +225,7 @@ const TChat = () => {
           </li>
         </ul>
       </section>
+
 
       <div className="bg-blue4 py4 mt4">
         <section style={{ maxWidth: "var(--unit7)" }}>
