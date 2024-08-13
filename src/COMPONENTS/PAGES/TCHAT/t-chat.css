@@ -1,11 +1,11 @@
 .iphone-frame {
   width: fit-content;
   height: fit-content;
-  background-color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #666;
+  max-width: 190px;
   font-size: 1.5rem;
   position: relative;
   overflow: visible;
@@ -18,6 +18,7 @@
 
 .iphone-frame:has(.figma-frame) {
   background-color: transparent;
+  
 }
 
 /* .survey-chart {
