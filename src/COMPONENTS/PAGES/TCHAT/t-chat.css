@@ -29,6 +29,7 @@
   border-radius: 1.5rem;
   position: relative;
   max-height: var(--unit6);
+  object-fit: contain;
 }
 
 .iphone-frame::before {
