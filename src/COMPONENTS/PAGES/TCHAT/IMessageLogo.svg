@@ -1,14 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="66.145836mm" height="66.145836mm" viewBox="0 0 66.145836 66.145836">
   <defs>
-    <linearGradient id="linearGradient1">
-      <stop style="stop-color:#0cbd2a;stop-opacity:1" offset="0"/>
-      <stop style="stop-color:#5bf675;stop-opacity:1" offset="1"/>
+    <linearGradient id="linearGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" stop-color="#5bf675"/>
+      <stop offset="1" stop-color="#0cbd2a"/>
     </linearGradient>
-    <linearGradient xlink:href="#linearGradient1" id="linearGradient2" x1="-25.272568" y1="207.52057" x2="-25.272568" y2="152.9982" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.98209275,0,0,0.98209275,-1.0651782,3.7961838)"/>
   </defs>
   <g transform="translate(59.483067,-145.8456)">
     <g>
-      <rect ry="14.567832" rx="14.567832" y="145.8456" x="-59.483067" height="66.145836" width="66.145836" style="fill:url(#linearGradient2);"/>
+      <rect ry="14.567832" rx="14.567832" y="145.8456" x="-59.483067" height="66.145836" width="66.145836" style="fill:url(#linearGradient1);"/>
       <path d="m -26.410149,157.29606 a 24.278298,20.222157 0 0 0 -24.278105,20.22202 24.278298,20.222157 0 0 0 11.79463,17.31574 27.365264,20.222157 0 0 1 -4.245218,5.94228 23.85735,20.222157 0 0 0 9.86038,-3.87367 24.278298,20.222157 0 0 0 6.868313,0.83768 24.278298,20.222157 0 0 0 24.2781059,-20.22203 24.278298,20.222157 0 0 0 -24.2781059,-20.22202 z" style="fill:#ffffff;"/>
     </g>
   </g>
