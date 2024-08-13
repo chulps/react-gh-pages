@@ -1,7 +1,6 @@
 // libs
 import React from "react";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
 
 // style
 import "./t-chat.css";
@@ -72,9 +71,7 @@ const TChat = () => {
 
       <MVPFeaturesSection />
 
-
       <BuildingOnTheMVPSection />
-
 
       <section className="mt4">
         <label>Taking the MVP Into the Wild</label>
@@ -226,15 +223,15 @@ const TChat = () => {
         </ul>
       </section>
 
-
       <div className="bg-blue4 py4 mt4">
         <section style={{ maxWidth: "var(--unit7)" }}>
           <h1>Final Conclusion</h1>
           <p>
             The T-Chat project showcases my ability to lead a design effort from
-            concept to implementation. It highlights my skills in user research,
-            UI/UX design, and technical execution, aligning well with the goal
-            of enhancing communication through technology.
+            concept to deployment. It highlights my skills in user research,
+            UI/UX design, product management, and fullstack web development,
+            aligning well with the goal of enhancing communication through
+            technology.
           </p>
 
           <div className="flex-center pt3">

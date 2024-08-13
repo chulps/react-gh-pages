@@ -4,7 +4,7 @@ import GoogleTranslateLogo from "./GoogleTranslateLogo.svg";
 import IMessageLogo from "./IMessageLogo.svg";
 import ZaloLogo from "./ZaloLogo.svg";
 import VoiceTraLogo from "./VoiceTraLogo.png";
-import TChatLogo from "../../../IMG/CHULPS_LOGO_ANIMATION_instagram_grey.gif"
+import TChatLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif"
 
 const features = [
   "Auto-Translate",
@@ -84,6 +84,7 @@ const competitors = [
     osAgnostic: true,
     multiLang: true,
     chat: true,
+    style: { filter: "hue-rotate(150deg)" },
   },
 ];
 
@@ -110,6 +111,7 @@ const CompetitorsSection = () => {
                       className="competitor-logo"
                       src={competitor.logo ? competitor.logo : ""}
                       alt="Competitor logo"
+                      style={competitor.style ? competitor.style : {}}
                     />
                     <p>{competitor.name}</p>
                   </td>
