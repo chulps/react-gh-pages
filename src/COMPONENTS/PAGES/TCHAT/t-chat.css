@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #666;
   max-width: 190px;
   font-size: 1.5rem;
   position: relative;
@@ -17,13 +16,8 @@
 }
 
 .iphone-frame:has(.figma-frame) {
-  background-color: transparent;
-  
+  background-color: transparent; 
 }
-
-/* .survey-chart {
-
-} */
 
 .figma-frame {
   width: 100%;
@@ -62,6 +56,7 @@
 .competitor-logo {
   aspect-ratio: 1/1;
   width: var(--unit3);
+  object-fit: contain;
 }
 
 .first-column-content {

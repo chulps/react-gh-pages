@@ -162,12 +162,14 @@ const AllScreens = () => {
     <AllScreensSection>
       <label>All Screens</label>
       <h2 style={{ maxWidth: "var(--unit6)" }}>Go with the flow</h2>
+      <p>Here are all the screens and some of their variations.</p>
       <Screens>
         {images.map((image, index) => (
           <Screen>
             <label>{image.title}</label>
             <div className="iphone-frame mt1 mb2" key={index}>
-              <img
+              <img 
+                loading="lazy"
                 className="figma-frame"
                 src={image.src}
                 alt={`Screen ${image.title}`}

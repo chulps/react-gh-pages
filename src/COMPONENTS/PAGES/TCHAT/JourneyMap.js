@@ -5,7 +5,7 @@ const JourneyMap = () => {
   return (
     <section className="my4 md-two-columns gap3">
     <div>
-      <img className="journey-map-img" src={JourneyMapImg} alt="" />
+      <img className="journey-map-img" src={JourneyMapImg} alt=""  loading="lazy"/>
     </div>
     <div>
       <h3>High-level Mapping and User Journey Exercises</h3>

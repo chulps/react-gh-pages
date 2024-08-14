@@ -40,15 +40,15 @@ const TChat = () => {
       {/* problem statement */}
       <section style={{ maxWidth: "var(--unit7)" }}>
         <label>Problem Statement</label>
-        <h2 style={{ maxWidth: "var(--unit6)" }}>
-          Breaking Down Language Barriers in Real-Time
+        <h2>
+          People need to understand eachother.
         </h2>
         <p>
           In a world that’s more connected than ever, language barriers still
           make communication challenging. Learning a new language takes time,
           and current solutions like Google Translate, Zalo, and iMessage offer
           translation, but they often involve clunky steps—like copying and
-          pasting text, navigating through menus, or, in the case of iMessage,
+          pasting text, diving through menus, or, in the case of iMessage,
           requiring everyone to have an iPhone. These methods can make real-time
           conversations difficult and awkward. T-Chat solves this by providing a
           browser-based chat app with real-time translation, letting users from
@@ -225,7 +225,7 @@ const TChat = () => {
 
       <div className="bg-blue4 py4 mt4">
         <section style={{ maxWidth: "var(--unit7)" }}>
-          <h1>Final Conclusion</h1>
+          <h2>Final Conclusion</h2>
           <p>
             The T-Chat project showcases my ability to lead a design effort from
             concept to deployment. It highlights my skills in user research,

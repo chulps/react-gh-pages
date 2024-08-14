@@ -5,84 +5,119 @@ import IMessageLogo from "./IMessageLogo.svg";
 import ZaloLogo from "./ZaloLogo.svg";
 import VoiceTraLogo from "./VoiceTraLogo.png";
 import TChatLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif"
+import HelloTalkLogo from "./HelloTalkLogo.png"; 
 
 const features = [
+  "Free",
+  "No Download",
   "Auto-Translate",
-  "No Signup Required",
+  "Optional Signup",
   "Browser-Based",
   "No Device Sharing",
   "OS Agnostic",
-  "Supports Multiple Languages",
+  "100+ Languages",
+  "Voice-to-Text",
   "Chat",
 ];
-
-// Define competitor analysis data
 
 const competitors = [
   {
     name: "Google Translate",
     logo: GoogleTranslateLogo,
+    free: true,
+    noDownload: true,
     autoTranslate: true,
     noSignup: false,
     browserBased: true,
     noDeviceShare: false,
     osAgnostic: true,
-    multiLang: true,
+    hundredLang: true,
+    voiceToText: true,
     chat: false,
   },
   {
-    name: "Zalo",
-    logo: ZaloLogo,
+    name: "HelloTalk",
+    logo: HelloTalkLogo,
+    free: false,
+    noDownload: false,
     autoTranslate: false,
     noSignup: false,
     browserBased: false,
     noDeviceShare: true,
     osAgnostic: true,
-    multiLang: true,
+    hundredLang: true,
+    voiceToText: true,
+    chat: true,
+    style: { objectFit: 'cover', objectPosition: 'left' },
+  },
+  {
+    name: "Zalo",
+    logo: ZaloLogo,
+    free: true,
+    noDownload: false,
+    autoTranslate: true,
+    noSignup: false,
+    browserBased: false,
+    noDeviceShare: true,
+    osAgnostic: true,
+    hundredLang: false,
+    voiceToText: true,
     chat: true,
   },
   {
     name: "DeepL",
     logo: DeepLLogo,
+    free: true,
+    noDownload: false,
     autoTranslate: false,
     noSignup: false,
     browserBased: true,
     noDeviceShare: false,
     osAgnostic: true,
-    multiLang: true,
+    hundredLang: false,
+    voiceToText: true,
     chat: false,
   },
   {
     name: "iMessage",
     logo: IMessageLogo,
+    free: true,
+    noDownload: true,
     autoTranslate: true,
     noSignup: false,
     browserBased: false,
     noDeviceShare: true,
     osAgnostic: false,
-    multiLang: true,
+    hundredLang: false,
+    voiceToText: true,
     chat: true,
   },
   {
     name: "VoiceTra",
     logo: VoiceTraLogo,
+    free: true,
+    noDownload: false,
     autoTranslate: true,
     noSignup: true,
     browserBased: false,
     noDeviceShare: false,
     osAgnostic: true,
-    multiLang: true,
+    hundredLang: true,
+    voiceToText: true,
     chat: false,
   },
   {
     name: "T-Chat",
     logo: TChatLogo,
+    free: true,
+    noDownload: true,
     autoTranslate: true,
     noSignup: true,
     browserBased: true,
     noDeviceShare: true,
     osAgnostic: true,
-    multiLang: true,
+    hundredLang: true,
+    voiceToText: true,
     chat: true,
     style: { filter: "hue-rotate(150deg)" },
   },
@@ -91,15 +126,11 @@ const competitors = [
 const CompetitorsSection = () => {
   return (
     <section className="mt4">
+
       <label>Research and Planning</label>
-      <h2 style={{ maxWidth: "var(--unit6)" }}>
-        Understanding the Challenges and Opportunities
-      </h2>
-      <hr className="mt2 mb3" />
 
-      <label>Competitor Analysis</label>
-
-      <h3 className="mb1">Competitor and User Research Overview</h3>
+      <h3>Competitor and User Research Overview</h3>
+      <p className="mb1">The first question everyone asks is always this, "How is this better than Google Translate?". Google Translate is a great product! It's really good at what it was designed to do, which is to quickly translate a brief interaction with someone but it's missing some things that other apps do where translation is a key feature.</p>
       <div className="competitor-analysis">
         <div className="table-wrapper">
           <table>
@@ -112,15 +143,19 @@ const CompetitorsSection = () => {
                       src={competitor.logo ? competitor.logo : ""}
                       alt="Competitor logo"
                       style={competitor.style ? competitor.style : {}}
+                       loading="lazy"
                     />
-                    <p>{competitor.name}</p>
+                    <small>{competitor.name}</small>
                   </td>
+                  <td>{competitor.free ? "✔️" : "❌"}</td>
+                  <td>{competitor.noDownload ? "✔️" : "❌"}</td>
                   <td>{competitor.autoTranslate ? "✔️" : "❌"}</td>
                   <td>{competitor.noSignup ? "✔️" : "❌"}</td>
                   <td>{competitor.browserBased ? "✔️" : "❌"}</td>
                   <td>{competitor.noDeviceShare ? "✔️" : "❌"}</td>
                   <td>{competitor.osAgnostic ? "✔️" : "❌"}</td>
-                  <td>{competitor.multiLang ? "✔️" : "❌"}</td>
+                  <td>{competitor.hundredLang ? "✔️" : "❌"}</td>
+                  <td>{competitor.voiceToText ? "✔️" : "❌"}</td>
                   <td>{competitor.chat ? "✔️" : "❌"}</td>
                 </tr>
               ))}

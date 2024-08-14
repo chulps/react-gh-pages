@@ -7,7 +7,7 @@ const ResponsibilitiesSection = () => {
         <div className="flex-center">
           <div className="half md-third lg-whole xl-half">
             <div className="iphone-frame">
-              <img className="figma-frame" src={ChatroomsTab} alt="T-Chat" />
+              <img className="figma-frame" src={ChatroomsTab} alt="T-Chat" loading="lazy"/>
             </div>
           </div>
         </div>
