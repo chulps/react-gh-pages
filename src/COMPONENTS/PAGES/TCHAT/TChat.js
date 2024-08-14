@@ -1,6 +1,8 @@
 // libs
 import React from "react";
 import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 
 // style
 import "./t-chat.css";
@@ -18,7 +20,6 @@ import ProjectOverviewSection from "./ProjectOverviewSection";
 import ResponsibilitiesSection from "./ResponsibilitiesSection";
 import TechnologyUsed from "./TechnologyUsed";
 import UserFeedbackSection from "./UserFeedbackSection";
-// Create a component for the competitor analysis table
 
 const TChat = () => {
   return (
@@ -99,11 +100,12 @@ const TChat = () => {
           </p>
 
           <p>
-            Positive feedback is good but... negative feeback has real value.
+            <i>Positive feedback is validating... negative feeback tells what to do next.</i>
           </p>
         </div>
         <div className="sm-two-columns lg-one-column xl-two-columns">
           <div className="bg-green4 p2">
+            <h1 className="mb3 mt2 flex-center"><FontAwesomeIcon icon={faThumbsUp} /></h1>
             <h4 className="mb1">Positive Feedback</h4>
             <ul className="gap2">
               <li>
@@ -136,6 +138,7 @@ const TChat = () => {
           </div>
 
           <div className="bg-red4 p2">
+            <h1 className="flex-center mb3 mt2"><FontAwesomeIcon icon={faThumbsDown} /></h1>
             <h4 className="mb1">Negative Feedback</h4>
             <ul className="gap2">
               <li>

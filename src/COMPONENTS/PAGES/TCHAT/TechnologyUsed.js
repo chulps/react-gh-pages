@@ -75,7 +75,7 @@ const TechnologyUsed = () => {
     <section className="mt4">
       <label>Building the MVP: Technology Stack</label>
       <h2>How T-Chat Works Under the Hood</h2>
-<div className="md-two-columns gap2">
+<div className="md-two-columns gap3">
         {technologyData.map((tech, index) => (
           <div key={index} className="mt2">
             <TechLogos>

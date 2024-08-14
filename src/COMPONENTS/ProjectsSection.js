@@ -184,7 +184,7 @@ class ProjectSection extends Component {
               </div>
 
               <div>
-                <Link target="_blank" rel="noreferrer" to="/projects/tchat/">
+                <Link to="/projects/tchat/">
                   <h4>💬 T-Chat</h4>
                 </Link>
                 <div className="project-tags">
