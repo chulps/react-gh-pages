@@ -64,9 +64,9 @@ const survey1Questions = [
   ];
 const UserFeedbackSection = () => {
   return (
-    <section className="mt3">
+    <section className="mt4">
     <div>
-      <h3>Survey and User Feedback</h3>
+      <h3>Initial survey</h3>
       <p className="mb2">
         I ventured out into the wild with an early prototype of the app and
         interviewed 16 people in Sapporo, Japan with different backgrounds,

@@ -1,29 +1,48 @@
 // libs
-import React from "react";
+import React, { useRef } from "react";
 import { Helmet } from "react-helmet";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+import ProjectOverviewSection from "./ProjectOverviewSection";
+import ResponsibilitiesSection from "./ResponsibilitiesSection";
+import CompetitorsSection from "./CompetitorsSection";
+import UserFeedbackSection from "./UserFeedbackSection";
+import KeyTakeaways from "./KeyTakeaways";
+import JourneyMap from "./JourneyMap";
+import MVPSection from "./MVPSection";
+import MVPFeaturesSection from "./MVPFeaturesSection";
+import BuildingOnTheMVPSection from "./BuildingOnTheMVPSection";
+import NextFeatures from "./NextFeatures";
+import AllScreens from "./AllScreens";
+import TechnologyUsed from "./TechnologyUsed";
 
 // style
 import "./t-chat.css";
 
-// components
-import AllScreens from "./AllScreens";
-import BuildingOnTheMVPSection from "./BuildingOnTheMVPSection";
-import CompetitorsSection from "./CompetitorsSection";
-import JourneyMap from "./JourneyMap";
-import KeyTakeaways from "./KeyTakeaways";
-import MVPFeaturesSection from "./MVPFeaturesSection";
-import MVPSection from "./MVPSection";
-import NextFeatures from "./NextFeatures";
-import ProjectOverviewSection from "./ProjectOverviewSection";
-import ResponsibilitiesSection from "./ResponsibilitiesSection";
-import TechnologyUsed from "./TechnologyUsed";
-import UserFeedbackSection from "./UserFeedbackSection";
-
 const TChat = () => {
+  // Create a ref for the element you want to scroll to
+  const caseStudyRef = useRef(null);
+
+  // Function to handle the scroll
+  const handleScroll = (e) => {
+    e.preventDefault();
+  
+    if (caseStudyRef.current) {
+      // Convert 8rem to pixels based on the root font size
+      const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      const offset = 6 * rootFontSize; // 8rem in pixels
+  
+      // Calculate the position of the target section
+      const elementPosition = caseStudyRef.current.getBoundingClientRect().top + window.pageYOffset;
+  
+      // Scroll to the target section, adjusting for 8rem
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div id="case-study">
+    <div>
       <Helmet>
         <title>T-Chat Case Study</title>
       </Helmet>
@@ -33,146 +52,43 @@ const TChat = () => {
         <h1>T-Chat</h1>
       </section>
 
-      {/* project overview */}
-      <ProjectOverviewSection />
+      {/* Pass the scroll function to the ProjectOverviewSection */}
+      <ProjectOverviewSection handleScroll={handleScroll} />
 
-      <ResponsibilitiesSection />
+      {/* Pass the ref to the ResponsibilitiesSection */}
+      <ResponsibilitiesSection ref={caseStudyRef} />
 
       {/* problem statement */}
-      <section style={{ maxWidth: "var(--unit7)" }}>
-        <label>Problem Statement</label>
-        <h2>
-          People need to understand eachother.
-        </h2>
-        <p>
-          In a world that’s more connected than ever, language barriers still
-          make communication challenging. Learning a new language takes time,
-          and current solutions like Google Translate, Zalo, and iMessage offer
-          translation, but they often involve clunky steps—like copying and
-          pasting text, diving through menus, or, in the case of iMessage,
-          requiring everyone to have an iPhone. These methods can make real-time
-          conversations difficult and awkward. T-Chat solves this by providing a
-          browser-based chat app with real-time translation, letting users from
-          different language backgrounds communicate easily. There’s no need for
-          extra downloads or special devices, and signups are optional, making
-          conversations flow smoothly and helping people connect and understand
-          each other better.
-        </p>
-      </section>
+      <div className="bg-blue4 py4">
+        <section style={{ maxWidth: "var(--unit7)" }}>
+          <label>Problem Statement</label>
+          <h2>People need to understand each other.</h2>
+          <p>
+            In a world that’s more connected than ever, language barriers still
+            make communication challenging. Learning a new language takes time,
+            and current solutions like Google Translate, Zalo, and iMessage
+            offer translation, but they often involve clunky steps—like copying
+            and pasting text, diving through menus, or, in the case of iMessage,
+            requiring everyone to have an iPhone. These methods can make
+            real-time conversations difficult and awkward. T-Chat solves this
+            by providing a browser-based chat app with real-time translation,
+            letting users from different language backgrounds communicate
+            easily. There’s no need for extra downloads or special devices, and
+            signups are optional, making conversations flow smoothly and
+            helping people connect and understand each other better.
+          </p>
+        </section>
+      </div>
 
       <CompetitorsSection />
-
       <UserFeedbackSection />
-
       <KeyTakeaways />
-
       <JourneyMap />
-
       <MVPSection />
-
       <MVPFeaturesSection />
-
       <BuildingOnTheMVPSection />
-
-      <section className="mt4">
-        <label>Taking the MVP Into the Wild</label>
-        <h2>Real-World Testing and User Feedback</h2>
-        <p>
-          After completing the MVP of T-Chat, I knew that the real test would
-          come from putting it into the hands of actual users. To gain genuine
-          insights, I decided to release the MVP into the wild, conducting user
-          research without any initial prompting. My goal was to observe how
-          users interacted with the app organically, understand their
-          experiences, and identify any pain points or areas for improvement.
-        </p>
-      </section>
-
-      <section className="mt3 lg-two-columns">
-        <div className="sm-pt2 sm-pb3 sm-px3 flex-center-x flex-vertical">
-          <label>User Feedback</label>
-          <h3>What the Users Had to Say</h3>
-          <p>
-            Through this unprompted testing, I was able to gather invaluable
-            feedback from a diverse group of users. Their experiences provided
-            me with a clearer understanding of how the app performed in
-            real-world scenarios and where I could make enhancements to better
-            meet user needs.
-          </p>
-
-          <p>
-            <i>Positive feedback is validating... negative feeback tells what to do next.</i>
-          </p>
-        </div>
-        <div className="sm-two-columns lg-one-column xl-two-columns">
-          <div className="bg-green4 p2">
-            <h1 className="mb3 mt2 flex-center"><FontAwesomeIcon icon={faThumbsUp} /></h1>
-            <h4 className="mb1">Positive Feedback</h4>
-            <ul className="gap2">
-              <li>
-                <small>
-                  <h5>Real-time translation is accurate and fast</h5>
-                  Users appreciated the speed and accuracy of the translation
-                  feature, which was critical in ensuring smooth and meaningful
-                  conversations.
-                </small>
-              </li>
-              <li>
-                <small>
-                  <h5>
-                    Easy to join conversations without needing downloads or
-                    signups
-                  </h5>
-                  The simplicity and accessibility of joining chatrooms without
-                  the need for downloads or lengthy signups was highly valued.
-                </small>
-              </li>
-              <li>
-                <small>
-                  <h5>Browser-based approach is highly convenient</h5>
-                  The browser-based nature of T-Chat made it easy for users to
-                  access the app from anywhere without the need for additional
-                  software, enhancing its usability.
-                </small>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-red4 p2">
-            <h1 className="flex-center mb3 mt2"><FontAwesomeIcon icon={faThumbsDown} /></h1>
-            <h4 className="mb1">Negative Feedback</h4>
-            <ul className="gap2">
-              <li>
-                <small>
-                  <h5>Font size is too small</h5>
-                  Some users found the default font size to be too small,
-                  leading to discomfort during extended use.
-                </small>
-              </li>
-              <li>
-                <small>
-                  <h5>Cannot see the original untranslated message</h5>
-                  Users expressed a desire to see the original, untranslated
-                  messages, as it would help them better understand the context
-                  and nuances.
-                </small>
-              </li>
-              <li>
-                <small>
-                  <h5>Can't save messages</h5>
-                  The MVP runs completely on the server with no ability to save
-                  your conversation. So I need to fill out the backend, connect
-                  a database, and build out some authentication.
-                </small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <NextFeatures />
-
       <AllScreens />
-
       <TechnologyUsed />
 
       <section className="mt4">
@@ -183,8 +99,8 @@ const TChat = () => {
           time creating a product from start to finish. In this project, I've
           worn many hats—acting as the CEO, CTO, and COO—taking on every
           challenge that comes with developing, designing, and managing a
-          full-stack application. This experience has pushed me to grow not just
-          as a developer, but as a leader and strategist, balancing the
+          full-stack application. This experience has pushed me to grow not
+          just as a developer, but as a leader and strategist, balancing the
           technical aspects with the business side of bringing a product to
           market. All of this has been done in my free time, driven by a passion
           for solving communication challenges, and with a long-term vision of
@@ -221,6 +137,13 @@ const TChat = () => {
               Ensured optimal performance on Chromium-based browsers, addressing
               compatibility issues to provide a seamless experience for all
               users.
+            </p>
+          </li>
+          <li>
+            <h5>Finally starting a business</h5>
+            <p>
+              I'm attempting to form a company around this app. A business plan
+              is in the works.
             </p>
           </li>
         </ul>

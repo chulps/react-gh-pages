@@ -20,7 +20,7 @@ const KeyTakeaways = () => {
       <div className="mt2">
         <label>Key takeaways</label>
 
-        <ol className="md-two-columns lg-three-columns gap3">
+        <ul className="md-two-columns lg-three-columns gap3">
           <li>
             <small>
               <h5>High Demand for Privacy in Communication:</h5>
@@ -106,7 +106,7 @@ const KeyTakeaways = () => {
               navigation is crucial for user satisfaction.
             </small>
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
   );

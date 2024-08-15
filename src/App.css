@@ -117,3 +117,7 @@
 #chuck:has(#prompt-assistant1) #ChuckGPTButton {
   display: none;
 }
+
+.nucleotide a:has(button):hover {
+    text-decoration: none;
+}

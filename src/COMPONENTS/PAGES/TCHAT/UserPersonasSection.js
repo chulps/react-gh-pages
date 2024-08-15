@@ -122,7 +122,7 @@ const userPersonas = [
 
 const UserPersonasSection = () => {
   return (
-    <div className="mt3">
+    <div className="mt4">
       <label>User Personas</label>
       <h3>Who needs this?</h3>
       <ul className="md-two-columns xl-four-columns mt1 mb2">
