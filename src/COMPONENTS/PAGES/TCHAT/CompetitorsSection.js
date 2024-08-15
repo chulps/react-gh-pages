@@ -4,8 +4,8 @@ import GoogleTranslateLogo from "./GoogleTranslateLogo.svg";
 import IMessageLogo from "./IMessageLogo.svg";
 import ZaloLogo from "./ZaloLogo.svg";
 import VoiceTraLogo from "./VoiceTraLogo.png";
-import TChatLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif"
-import HelloTalkLogo from "./HelloTalkLogo.png"; 
+import TChatLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
+import HelloTalkLogo from "./HelloTalkLogo.png";
 
 const features = [
   "Free",
@@ -48,14 +48,14 @@ const competitors = [
     hundredLang: true,
     voiceToText: true,
     chat: true,
-    style: { objectFit: 'cover', objectPosition: 'left' },
+    style: { objectFit: "cover", objectPosition: "left" },
   },
   {
     name: "Zalo",
     logo: ZaloLogo,
     free: true,
     noDownload: false,
-    autoTranslate: true,
+    autoTranslate: false,
     noSignup: false,
     browserBased: false,
     noDeviceShare: true,
@@ -126,11 +126,16 @@ const competitors = [
 const CompetitorsSection = () => {
   return (
     <section className="mt4">
-
       <label>Research and Planning</label>
 
       <h3>Competitor and User Research Overview</h3>
-      <p className="mb1">The first question everyone asks is always this, "How is this better than Google Translate?". Google Translate is a great product! It's really good at what it was designed to do, which is to quickly translate a brief interaction with someone but it's missing some things that other apps do where translation is a key feature.</p>
+      <p className="mb1">
+        The first question everyone asks is always this, "How is this better
+        than Google Translate?". Google Translate is a great product! It's
+        really good at what it was designed to do, which is to quickly translate
+        a brief interaction with someone but it's missing some things that other
+        apps do where translation is a key feature.
+      </p>
       <div className="competitor-analysis">
         <div className="table-wrapper">
           <table>
@@ -143,20 +148,20 @@ const CompetitorsSection = () => {
                       src={competitor.logo ? competitor.logo : ""}
                       alt="Competitor logo"
                       style={competitor.style ? competitor.style : {}}
-                       loading="lazy"
+                      loading="lazy"
                     />
                     <small>{competitor.name}</small>
                   </td>
-                  <td>{competitor.free ? "✔️" : "❌"}</td>
-                  <td>{competitor.noDownload ? "✔️" : "❌"}</td>
-                  <td>{competitor.autoTranslate ? "✔️" : "❌"}</td>
-                  <td>{competitor.noSignup ? "✔️" : "❌"}</td>
-                  <td>{competitor.browserBased ? "✔️" : "❌"}</td>
-                  <td>{competitor.noDeviceShare ? "✔️" : "❌"}</td>
-                  <td>{competitor.osAgnostic ? "✔️" : "❌"}</td>
-                  <td>{competitor.hundredLang ? "✔️" : "❌"}</td>
-                  <td>{competitor.voiceToText ? "✔️" : "❌"}</td>
-                  <td>{competitor.chat ? "✔️" : "❌"}</td>
+                  <td>{competitor.free ? "✅" : "❌"}</td>
+                  <td>{competitor.noDownload ? "✅" : "❌"}</td>
+                  <td>{competitor.autoTranslate ? "✅" : "❌"}</td>
+                  <td>{competitor.noSignup ? "✅" : "❌"}</td>
+                  <td>{competitor.browserBased ? "✅" : "❌"}</td>
+                  <td>{competitor.noDeviceShare ? "✅" : "❌"}</td>
+                  <td>{competitor.osAgnostic ? "✅" : "❌"}</td>
+                  <td>{competitor.hundredLang ? "✅" : "❌"}</td>
+                  <td>{competitor.voiceToText ? "✅" : "❌"}</td>
+                  <td>{competitor.chat ? "✅" : "❌"}</td>
                 </tr>
               ))}
             </tbody>
@@ -172,17 +177,17 @@ const CompetitorsSection = () => {
         </div>
         <p className="mt1">
           Competitor research was a key part of creating T-Chat. I looked at
-          popular tools like Google Translate, Zalo, DeepL, iMessage, and
-          VoiceTra to see what they do well and where they fall short. Google
-          Translate and DeepL offer good translations, but they require users to
-          copy and paste text, which interrupts the conversation. Zalo makes you
-          dig through menus to translate messages, and iMessage only works if
-          everyone has an iPhone. VoiceTra is great for two-person chats on one
-          device but doesn’t support group chats or multiple devices. By
-          studying these competitors, I found gaps and opportunities to make
-          something better. This research helped shape T-Chat, making sure it
-          solves the problems these other tools have and offers an easy,
-          real-time way for people to talk across languages.
+          popular products like Google Translate, HelloTalk, Zalo, DeepL, iMessage,
+          and VoiceTra to see what they do well and where they fall short. Pure
+          translators like Google Translate, VoiceTra and DeepL offer good
+          translations, but they require users share a single device which is ok
+          for short interactions but it's not conducive for a long conversation. They are not chat apps.
+          Zalo and iMessage makes you dig through menus to translate messages,
+          and iMessage only works if everyone has an iPhone. HelloTalk
+          translates a message with a single tap, but it's not free. VoiceTra is
+          great for two-person chats on one device but doesn’t support group
+          chats or multiple devices. None of the apps allow for multiple
+          languages to be used in a group chat.
         </p>
       </div>
     </section>

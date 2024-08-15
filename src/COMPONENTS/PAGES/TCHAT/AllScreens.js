@@ -162,7 +162,7 @@ const AllScreens = () => {
     <AllScreensSection>
       <label>All Screens</label>
       <h2 style={{ maxWidth: "var(--unit6)" }}>Go with the flow</h2>
-      <p>Here are all the screens and some of their variations.</p>
+      <p className="mb3">Here are all the screens and some of their variations to give an overview of the design of the app and what it can do.</p>
       <Screens>
         {images.map((image, index) => (
           <Screen>

@@ -15,17 +15,17 @@ import Heroku from './TECHLOGOS/Heroku.png'
 import Github from './TECHLOGOS/Github.svg'
 
 const TechLogo = styled.img `
-  aspect-ratio: 1/1;
-  width: var(--unit4);
+  aspect-ratio: 16/9;
+  height: var(--unit3);
   object-fit: contain;
 `
 
 const TechLogos = styled.div`
   display: flex;
-  gap: var(--unit2);
+  gap: var(--unit2) var(--unit1);
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: var(--unit1);
+  justify-content: space-evenly;
+  margin-bottom: var(--unit2);
 `
 
 const technologyData = [
@@ -84,7 +84,6 @@ const TechnologyUsed = () => {
                   key={idx}
                   src={logo}
                   alt={`${tech.label} Logo ${idx + 1}`}
-                  style={{ maxWidth: "80px", margin: "0 10px" }} // Adjust the size and spacing of the logos here
                 />
               ))}
             </TechLogos>

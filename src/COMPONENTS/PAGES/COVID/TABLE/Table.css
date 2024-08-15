@@ -1,5 +1,5 @@
 .table-wrapper {
-  box-shadow: inset 0 0 12px var(--transBlueC-25);
+  /* box-shadow: inset 0 0 12px var(--transBlueC-25); */
   overflow-x: auto;
   width: 100%;
   border: 1px solid var(--transBlueC-10);
@@ -13,8 +13,7 @@
 }
 
 .nucleotide table thead {
-  z-index: 1;
-  background: var(--siteBackground);
+  background: white;
   position: sticky;
   top: 0;
   box-shadow: 0 6px 12px var(--transBlueC-10);
@@ -42,6 +41,8 @@
   left: 0;
   z-index: 1;
   text-align: left;
+  background: white;
+  border-left: none;
 }
 
 .nucleotide table tbody td:first-of-type:after,
@@ -67,17 +68,13 @@
 }
 
 .nucleotide table tbody tr:nth-child(odd) td:first-of-type {
-  background: #ecf6fb;
+  background: white;
   box-shadow: 6px 0 12px var(--transBlueC-10);
 }
 
 .nucleotide table tbody tr:nth-child(even) td:first-of-type {
-  background: #f6fbfd;
+  background: white;
   box-shadow: 6px 0 12px var(--transBlueC-10);
-}
-
-.nucleotide table thead th:first-of-type {
-  background: var(--siteBackground);
 }
 
 .nucleotide table thead th {
@@ -112,15 +109,6 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-}
-
-/* When the radio button is checked, add a blue background */
-.nucleotide label.radio-container input:checked ~ .checkmark {
-  /* background-color: var(--green0);
-      height: 16px;
-      width: 16px;
-      top: 4.5px;
-      left: 5px; */
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
