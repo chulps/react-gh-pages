@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.d7cc9a22.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.b49e5575.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.b49e5575.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.62d3df1e.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.62d3df1e.js.map",
-    "static/js/2.25c2baed.chunk.js": "/react-gh-pages/static/js/2.25c2baed.chunk.js",
-    "static/js/2.25c2baed.chunk.js.map": "/react-gh-pages/static/js/2.25c2baed.chunk.js.map",
-    "static/js/3.1fc6d34d.chunk.js": "/react-gh-pages/static/js/3.1fc6d34d.chunk.js",
-    "static/js/3.1fc6d34d.chunk.js.map": "/react-gh-pages/static/js/3.1fc6d34d.chunk.js.map",
+    "main.css": "/react-gh-pages/static/css/main.fe0433d3.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.3ba0411f.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.3ba0411f.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.c30f8a2e.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.c30f8a2e.js.map",
+    "static/js/2.47eb6c9d.chunk.js": "/react-gh-pages/static/js/2.47eb6c9d.chunk.js",
+    "static/js/2.47eb6c9d.chunk.js.map": "/react-gh-pages/static/js/2.47eb6c9d.chunk.js.map",
+    "static/js/3.82ac7faf.chunk.js": "/react-gh-pages/static/js/3.82ac7faf.chunk.js",
+    "static/js/3.82ac7faf.chunk.js.map": "/react-gh-pages/static/js/3.82ac7faf.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.d7cc9a22.chunk.css.map": "/react-gh-pages/static/css/main.d7cc9a22.chunk.css.map",
-    "static/js/2.25c2baed.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.25c2baed.chunk.js.LICENSE.txt",
+    "static/css/main.fe0433d3.chunk.css.map": "/react-gh-pages/static/css/main.fe0433d3.chunk.css.map",
+    "static/js/2.47eb6c9d.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.47eb6c9d.chunk.js.LICENSE.txt",
     "static/media/Axios.5ecfa25c.svg": "/react-gh-pages/static/media/Axios.5ecfa25c.svg",
     "static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif": "/react-gh-pages/static/media/CHULPS_LOGO_ANIMATION_nucleotide.2d14287b.gif",
     "static/media/Chatroom.45554629.png": "/react-gh-pages/static/media/Chatroom.45554629.png",
@@ -66,7 +66,6 @@
     "static/media/biz-dash-orders.2c26219d.png": "/react-gh-pages/static/media/biz-dash-orders.2c26219d.png",
     "static/media/biz-dash-qr-codes.0cb59bfa.png": "/react-gh-pages/static/media/biz-dash-qr-codes.0cb59bfa.png",
     "static/media/biz-dash-templates.5b54a88d.png": "/react-gh-pages/static/media/biz-dash-templates.5b54a88d.png",
-    "static/media/calendly.73150c86.svg": "/react-gh-pages/static/media/calendly.73150c86.svg",
     "static/media/change_date.a84fe829.png": "/react-gh-pages/static/media/change_date.a84fe829.png",
     "static/media/chuck_blue.d55df030.png": "/react-gh-pages/static/media/chuck_blue.d55df030.png",
     "static/media/clicktool-mark.e8e26015.svg": "/react-gh-pages/static/media/clicktool-mark.e8e26015.svg",
@@ -109,9 +108,9 @@
     "static/media/yarden_website_screenshot.99110d68.png": "/react-gh-pages/static/media/yarden_website_screenshot.99110d68.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.62d3df1e.js",
-    "static/js/2.25c2baed.chunk.js",
-    "static/css/main.d7cc9a22.chunk.css",
-    "static/js/main.b49e5575.chunk.js"
+    "static/js/runtime-main.c30f8a2e.js",
+    "static/js/2.47eb6c9d.chunk.js",
+    "static/css/main.fe0433d3.chunk.css",
+    "static/js/main.3ba0411f.chunk.js"
   ]
 }
