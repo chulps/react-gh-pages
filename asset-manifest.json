@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.e862c14a.css",
-    "main.js": "/react-gh-pages/static/js/main.7d8432d4.js",
+    "main.js": "/react-gh-pages/static/js/main.8b22856c.js",
     "static/css/473.628de628.chunk.css": "/react-gh-pages/static/css/473.628de628.chunk.css",
     "static/js/473.2ca07e1a.chunk.js": "/react-gh-pages/static/js/473.2ca07e1a.chunk.js",
     "static/css/833.14992e45.chunk.css": "/react-gh-pages/static/css/833.14992e45.chunk.css",
@@ -19,7 +19,7 @@
     "static/css/399.bf2ce43d.chunk.css": "/react-gh-pages/static/css/399.bf2ce43d.chunk.css",
     "static/js/399.66995147.chunk.js": "/react-gh-pages/static/js/399.66995147.chunk.js",
     "static/css/336.2b713990.chunk.css": "/react-gh-pages/static/css/336.2b713990.chunk.css",
-    "static/js/336.6086c760.chunk.js": "/react-gh-pages/static/js/336.6086c760.chunk.js",
+    "static/js/336.a06cdf1f.chunk.js": "/react-gh-pages/static/js/336.a06cdf1f.chunk.js",
     "static/js/643.25ad9b04.chunk.js": "/react-gh-pages/static/js/643.25ad9b04.chunk.js",
     "static/js/959.02531276.chunk.js": "/react-gh-pages/static/js/959.02531276.chunk.js",
     "static/js/553.11001122.chunk.js": "/react-gh-pages/static/js/553.11001122.chunk.js",
@@ -64,8 +64,8 @@
     "static/media/old_yarden_logo.webp": "/react-gh-pages/static/media/old_yarden_logo.bfdb20365f41ec227cf3.webp",
     "static/media/magnifying_glass_animation.svg": "/react-gh-pages/static/media/magnifying_glass_animation.592c17994532bbffa0310e616ce9750f.svg",
     "static/media/cri_genetics_logo.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed0216ce8611dff1d3738f27ae.svg",
+    "static/media/Chuck_Howard_Resume.pdf": "/react-gh-pages/static/media/Chuck_Howard_Resume.d5dcd94c28aff557e6f2.pdf",
     "static/media/RotateLandingPages.svg": "/react-gh-pages/static/media/RotateLandingPages.c2c1a38509722488fdabda0b1571a99e.svg",
-    "static/media/Chuck_Howard_Resume.pdf": "/react-gh-pages/static/media/Chuck_Howard_Resume.3d88cfc685ddcdb75397.pdf",
     "static/media/yarden_mark_bg_fitted.svg": "/react-gh-pages/static/media/yarden_mark_bg_fitted.457b6e2d63075878fe78334057944602.svg",
     "static/media/xprizelogo.webp": "/react-gh-pages/static/media/xprizelogo.cbec3face2c33eb473fb.webp",
     "static/media/FoundryLogo.svg": "/react-gh-pages/static/media/FoundryLogo.6d94e11081564112096305a143fcacbf.svg",
@@ -84,6 +84,6 @@
   },
   "entrypoints": [
     "static/css/main.e862c14a.css",
-    "static/js/main.7d8432d4.js"
+    "static/js/main.8b22856c.js"
   ]
 }
