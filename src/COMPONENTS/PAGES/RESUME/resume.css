@@ -44,3 +44,15 @@
   margin-right: var(--unit1);
   object-fit: contain;
 }
+
+.experience-logo-tunabear {
+  width: calc(var(--unit3) + var(--unit2));
+  height: calc(var(--unit3) + var(--unit2));
+  margin-right: var(--unit1);
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #173852;
+  color: #dff8ff;
+  font: 600 22px/1 Archivo, Arial, sans-serif;
+}

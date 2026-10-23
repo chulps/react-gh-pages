@@ -184,8 +184,8 @@ class ProjectSection extends Component {
               </div>
 
               <div>
-                <Link to="/projects/tchat/">
-                  <h4>💬 T-Chat</h4>
+                <Link to="/projects/comett/">
+                  <h4>💬 Comett</h4>
                 </Link>
                 <div className="project-tags">
                 <small>Typescript</small>

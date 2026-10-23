@@ -25,6 +25,7 @@ class Resume extends Component {
     const skillsMap = new Map([
       ["A/B Testing", true],
       ["AI Prompt Engineering", true],
+      ["Business Development", true],
       ["CSS/CSS3/", true],
       ["Data Visualization", true],
       ["Design Systems", true],
@@ -57,6 +58,16 @@ class Resume extends Component {
     const toolsArray = tools.sort((a, b) => a.tool.localeCompare(b.tool));
 
     const experienceData = [
+      {
+        company: "Tunabear",
+        logo: null,
+        location: "",
+        role: "Business Developer",
+        duration: "(September 7, 2026 – Present)",
+        responsibilities: [
+          "Working with Tunabear on the next version of the multilingual chat idea behind T-Chat.",
+        ],
+      },
       {
         company: "MindVault",
         logo: mindVaultLogo,
@@ -215,12 +226,11 @@ class Resume extends Component {
           <div className="mb2 flex-space-between">
             <div>
               <h1>Charles M. Howard</h1>
-              <p>Product Designer / Frontend Developer</p>
+              <p>Business Developer / Product Designer / Frontend Developer</p>
               <p style={{ maxWidth: "45ch" }}>
-                I'm an experienced Product Designer with a background in
-                Frontend Development and Product Discovery, skilled in leading
-                products from discovery, through the design phase, to
-                deployment.
+                I'm currently a Business Developer at Tunabear, building on my
+                experience in Product Design, Frontend Development and Product
+                Discovery.
               </p>
             </div>
           </div>
@@ -257,17 +267,15 @@ class Resume extends Component {
             <div className="experience-item" key={index}>
               <div className="flex">
                 <span>
-                  <img loading="lazy"
+                  {experience.logo ? <img loading="lazy"
                     className="experience-logo"
                     alt={experience.company}
                     src={experience.logo}
-                  />
+                  /> : <span className="experience-logo-tunabear" aria-hidden="true">T</span>}
                 </span>
 
                 <div>
-                  <h4>
-                    {experience.company}, {experience.location}
-                  </h4>
+                  <h4>{experience.company}{experience.location ? `, ${experience.location}` : ""}</h4>
                   <p>{experience.role}</p>
                   {experience.type && <i>{experience.type}</i>}
                   <br />
