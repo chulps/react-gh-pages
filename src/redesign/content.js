@@ -4,7 +4,7 @@ export const site = {
   name: 'Chuck Howard',
   email: 'charles.howard.jp@google.com',
   url: 'https://chulps.github.io/react-gh-pages/',
-  description: 'Website improvements, PHP troubleshooting, SEO and custom business software in Sapporo. Chuck Howard connects product design with hands-on development.',
+  description: 'Website improvements, PHP troubleshooting, SEO, AI integration and custom business software in Sapporo. Chuck Howard connects product design with hands-on development.',
 };
 export const email = (subject) => `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;
 export const image = (name) => `${process.env.PUBLIC_URL}/images/${name}`;

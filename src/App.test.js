@@ -8,6 +8,10 @@ test('unknown paths show a recovery page',()=>{window.location.hash='#/missing-p
 
 test('outreach links preselect the requested service',()=>{window.location.hash='#/?service=seo';render(<App/>);expect(screen.getByRole('button',{name:/SEO & visitor information/})).toHaveAttribute('aria-pressed','true');expect(screen.getByRole('link',{name:/Email me about this/})).toHaveAttribute('href',expect.stringContaining('SEO%20and%20website%20visibility'));});
 
+test('AI integration can be selected from outreach links and starts a matching email',()=>{window.location.hash='#/?service=ai';render(<App/>);expect(screen.getByRole('button',{name:/AI integration & automation/})).toHaveAttribute('aria-pressed','true');expect(screen.getByRole('heading',{name:'Put AI to work on a real task'})).toBeInTheDocument();expect(screen.getByRole('link',{name:/Email me about this/})).toHaveAttribute('href',expect.stringContaining('AI%20integration%20for%20my%20business'));});
+
+test('AI integration is available in Japanese',()=>{window.location.hash='#/?lang=ja&service=ai';render(<App/>);expect(screen.getByRole('button',{name:'AI連携・業務自動化'})).toHaveAttribute('aria-pressed','true');expect(screen.getByRole('heading',{name:'AIを日々の業務に活かしたい'})).toBeInTheDocument();});
+
 test('Japanese can be selected, updates page language, and can be switched back',()=>{window.location.hash='#/?lang=ja';render(<App/>);expect(document.documentElement).toHaveAttribute('lang','ja');expect(screen.getByRole('heading',{level:1})).toHaveTextContent('Webサイトを改善');expect(screen.getByRole('button',{name:'日本語'})).toHaveAttribute('aria-pressed','true');fireEvent.click(screen.getByRole('button',{name:'EN'}));expect(document.documentElement).toHaveAttribute('lang','en');expect(screen.getByRole('heading',{level:1})).toHaveTextContent('Better websites.');});
 
 test('browser Japanese preference selects Japanese when no saved choice exists',()=>{Object.defineProperty(window.navigator,'language',{configurable:true,value:'ja-JP'});window.location.hash='#/';render(<App/>);expect(document.documentElement).toHaveAttribute('lang','ja');expect(screen.getByRole('heading',{level:1})).toHaveTextContent('Webサイトを改善');});
