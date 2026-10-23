@@ -62,7 +62,7 @@ const resume = `
         },
         {
             "title": "UI/UX Engineer",
-            "company": "MindVault",
+            "company": "M9000",
             "location": "Los Angeles (Remote)",
             "timeline": "May 2023 – September 2023",
             "employmentType": "contract",

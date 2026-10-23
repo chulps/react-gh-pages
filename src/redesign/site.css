@@ -123,27 +123,40 @@ body{background:var(--ground)}.portfolio .masthead{padding:22px 0}.portfolio .mo
 .portfolio .work-cover-comett>small{position:relative;z-index:1;margin-top:14px;color:#bdd0da;font:10px/1.5 monospace;letter-spacing:.1em}
 .portfolio .work-cover-comett>i{position:absolute;z-index:1;right:18%;top:31%;color:#ef6451;font-size:28px;font-style:normal}
 .portfolio .work-card:hover .work-cover-comett{translate:0 -3px;transition:translate .4s var(--ease)}
-.portfolio .project-art{position:relative;isolation:isolate;width:100%;height:100%;min-height:220px;overflow:hidden;padding:22px;border-radius:3px;display:flex;align-items:flex-end;background:#132033;color:#f5f7fa}
-.portfolio .project-art:before{content:'';position:absolute;z-index:-1;inset:0;opacity:.65;background-image:linear-gradient(90deg,#ffffff08 1px,transparent 1px),linear-gradient(#ffffff08 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(135deg,#000,transparent 78%)}
-.portfolio .project-art-heading{position:absolute;z-index:3;left:24px;top:20px;display:flex;flex-direction:column;gap:4px}
-.portfolio .project-art-heading>span{font:10px/1.3 monospace;letter-spacing:.13em}
-.portfolio .project-art-heading>small{font-size:11px;color:currentColor;opacity:.72}
-.portfolio .project-art-product{position:absolute;z-index:1;right:7%;bottom:0;width:68%;height:70%;padding:7px 7px 0;border:1px solid #ffffff50;border-bottom:0;border-radius:8px 8px 0 0;background:#f6f8f9;box-shadow:0 12px 30px #0004;overflow:hidden;transition:translate .45s var(--ease),rotate .45s var(--ease)}
-.portfolio .project-art-chrome{height:15px;display:flex;align-items:center;gap:3px;padding:0 3px 5px;color:#152034;font:7px/1 monospace}
-.portfolio .project-art-chrome i{width:4px;height:4px;background:#e8796c;border-radius:50%}.portfolio .project-art-chrome i:nth-child(2){background:#e7bd60}.portfolio .project-art-chrome i:nth-child(3){background:#72b986}.portfolio .project-art-chrome span{margin:auto;font-size:7px}.portfolio .project-art-chrome small{font-size:8px}
-.portfolio .project-art-product img{width:100%;height:calc(100% - 15px);object-fit:cover;object-position:top center}
-.portfolio .project-art-mark{position:absolute;z-index:0;left:21px;bottom:-27px;font-size:clamp(96px,17vw,190px);line-height:1;font-weight:700;letter-spacing:-.1em;opacity:.17;pointer-events:none}
-.portfolio .project-art-mindvault{background:radial-gradient(ellipse at 85% 18%,#fff4be 0,transparent 34%),linear-gradient(135deg,#d5e1ec,#9aadc3);color:#18263a}
-.portfolio .project-art-mindvault .project-art-heading>span{color:#314a67}.portfolio .project-art-mindvault .project-art-product{rotate:-3deg}.portfolio .work-card:hover .project-art-mindvault .project-art-product{rotate:0deg;translate:0 -4px}
-.portfolio .project-art-yarden{background:radial-gradient(ellipse at 20% 115%,#a5c792 0,transparent 45%),linear-gradient(135deg,#e1ead6,#9fb897);color:#1d3327}
-.portfolio .project-art-yarden:after{content:'';position:absolute;z-index:0;left:12%;top:39%;width:96px;height:50px;border:1px solid #24463255;border-radius:100% 0 100% 0;rotate:-35deg;box-shadow:13px 17px 0 -1px #24463200,13px 17px 0 0 #24463245}
-.portfolio .project-art-yarden .project-art-product{width:70%;height:67%;rotate:2deg}.portfolio .work-card:hover .project-art-yarden .project-art-product{rotate:0deg;translate:0 -4px}
-.portfolio .project-art-fxxkup{background:#310b11;color:#fff5f0;align-items:flex-end}
-.portfolio .project-art-fxxkup:after{content:'';position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,#160408d9 0%,#310b116b 49%,#10070a10 100%)}
-.portfolio .project-art-fxxkup .project-art-heading{top:22px}.portfolio .project-art-fxxkup .project-art-heading>span{color:#ff6570}.portfolio .project-art-photo{position:absolute;z-index:-1;inset:0 0 0 31%;overflow:hidden}.portfolio .project-art-photo img{width:100%;height:100%;object-fit:cover;object-position:center 45%;opacity:.84}.portfolio .project-art-photo strong{position:absolute;left:8%;bottom:12%;color:#fff4ed;font-size:clamp(30px,5vw,58px);line-height:.78;letter-spacing:-.08em;text-shadow:0 0 12px #fb334d,0 0 32px #e11932}.portfolio .project-art-photo span{position:absolute;right:12px;bottom:10px;color:#ffe2df;font:8px/1 monospace;letter-spacing:.17em}
-.portfolio .project-art-barticket{background:radial-gradient(ellipse at 80% 24%,#385276 0,transparent 42%),#101a28;color:#f3f7fb}
-.portfolio .project-art-barticket .project-art-product{width:71%;height:72%;rotate:-2deg}.portfolio .work-card:hover .project-art-barticket .project-art-product{rotate:0deg;translate:0 -4px}
+.portfolio .project-art{position:relative;isolation:isolate;width:100%;height:100%;min-height:220px;overflow:hidden;padding:22px;border-radius:3px;background:#132033;color:#f5f7fa;display:flex;align-items:center;justify-content:center;transition:translate .4s var(--ease)}
+.portfolio .project-art:before{content:'';position:absolute;z-index:-1;inset:0;opacity:.38;background-image:linear-gradient(90deg,#ffffff0c 1px,transparent 1px),linear-gradient(#ffffff0c 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(135deg,#000,transparent 78%)}
+.portfolio .art-kicker{position:absolute;top:20px;left:23px;font:9px/1.3 monospace;letter-spacing:.14em;opacity:.78}
+.portfolio .project-art-mindvault{background:radial-gradient(ellipse at 76% 42%,#6372ff9c 0,transparent 36%),linear-gradient(115deg,#101226 0%,#1b2058 52%,#3238a5 100%);color:#f4f5ff}
+.portfolio .project-art-mindvault:before{opacity:.2;background-image:linear-gradient(90deg,#fff2 1px,transparent 1px),linear-gradient(#fff2 1px,transparent 1px);background-size:18px 18px;mask-image:linear-gradient(90deg,transparent,#000)}
+.portfolio .m9000-brand-lockup{position:absolute;z-index:2;left:8%;top:47%;display:flex;align-items:center;gap:10px;translate:0 -50%}
+.portfolio .project-art .project-brand-logo{display:block;flex:none;width:clamp(36px,5vw,56px);height:clamp(36px,5vw,56px);max-width:64px;object-fit:contain}
+.portfolio .m9000-wordmark{position:relative;z-index:2;font-size:clamp(37px,5.8vw,66px);font-weight:650;letter-spacing:-.075em;color:#f4f5ff}
+.portfolio .m9000-tagline{position:absolute;left:8%;bottom:19px;max-width:calc(100% - 50px);font:8px/1.5 monospace;letter-spacing:.1em;color:#c5c9ff}
+.portfolio .m9000-platform-stack{position:absolute;top:50%;right:8%;width:42%;height:65%;display:flex;flex-direction:column;justify-content:center;gap:5px;perspective:500px;transform:translateY(-48%) rotate(-8deg) skewY(-5deg)}
+.portfolio .m9000-platform-stack i{display:flex;align-items:center;justify-content:flex-end;min-height:29%;padding:8px 12px;border:1px solid #b4bbff88;border-radius:5px;background:linear-gradient(135deg,#8f9aff70,#333da955);box-shadow:0 9px 18px #080b2f88,inset 0 1px #fff5;color:#f4f5ff;font:7px/1 monospace;letter-spacing:.06em;font-style:normal}
+.portfolio .m9000-platform-stack i:nth-child(2){margin-left:9%;margin-right:-9%;background:linear-gradient(135deg,#6874f888,#2f368a99)}
+.portfolio .m9000-platform-stack i:nth-child(3){margin-left:18%;margin-right:-18%;background:linear-gradient(135deg,#4c57cfaa,#242862)}
+.portfolio .m9000-signal{position:absolute;top:27%;right:23%;width:8px;height:8px;border-radius:50%;background:#d6d9ff;box-shadow:0 0 16px #9aa6ff}
+.portfolio .project-art-yarden{align-items:center;justify-content:center;padding:28px;background:linear-gradient(145deg,#fff 0%,#f7fbf7 57%,#eef8ef 100%);color:#121a16}
+.portfolio .yarden-wordmark{position:relative;z-index:2;display:flex;align-items:center;gap:9px;font-family:Arial,sans-serif;font-size:clamp(36px,5vw,60px);font-weight:750;letter-spacing:-.075em}
+.portfolio .project-art-yarden .yarden-wordmark .project-brand-logo{width:clamp(42px,5.4vw,64px);height:clamp(42px,5.4vw,64px)}
+.portfolio .yarden-wordmark>span{align-self:flex-start;margin-top:5px;font:9px/1 monospace;letter-spacing:0}
+.portfolio .yarden-tagline{position:absolute;left:28px;bottom:18px;font:8px/1 monospace;letter-spacing:.12em;color:#40604a}
+.portfolio .yarden-leaf{position:absolute;z-index:1;width:24%;height:60%;border-radius:50% 50% 4% 50%;background:linear-gradient(145deg,#28c876,#079e57);opacity:.11;rotate:36deg}
+.portfolio .leaf-one{right:8%;top:15%;}.portfolio .leaf-two{right:22%;top:28%;scale:.7;background:#8dcc41}.portfolio .leaf-three{right:4%;top:45%;scale:.52;background:#f0b838}
+.portfolio .yarden-cta{position:absolute;right:20px;bottom:16px;padding:8px 11px;border-radius:999px;background:#08b967;color:#fff;font:700 8px/1 Arial,sans-serif;letter-spacing:.02em}
+.portfolio .yarden-cta b{margin-left:8px}
+.portfolio .project-art-fxxkup{background:radial-gradient(ellipse at 82% 54%,#a42332 0,transparent 39%),linear-gradient(135deg,#16090d,#310d15 65%,#10090d);color:#fff4ed;align-items:flex-end;justify-content:flex-start;padding:25px}
+.portfolio .fxxkup-frame{position:absolute;inset:16% 9% 16% 34%;border:1px solid #ff44565a;box-shadow:inset 0 0 36px #f62c4220,0 0 36px #f62c4220;transform:skewY(-8deg)}
+.portfolio .project-art-fxxkup .fxxkup-brand-logo{position:relative;z-index:2;width:min(45%,180px);height:auto;max-width:none;filter:drop-shadow(0 0 8px #ff304f9c) drop-shadow(0 0 25px #f0223b85)}
+.portfolio .fxxkup-tagline{position:absolute;left:25px;bottom:17px;max-width:calc(100% - 75px);font:8px/1 monospace;letter-spacing:.14em;color:#ffc9cd}
+.portfolio .project-art-barticket{background:radial-gradient(ellipse at 75% 30%,#244c5b 0,transparent 42%),linear-gradient(145deg,#0e1720,#142b34);color:#f1f8f7}
+.portfolio .barticket-wordmark{position:relative;z-index:2;font-size:clamp(34px,5.5vw,64px);font-weight:650;letter-spacing:-.085em}
+.portfolio .barticket-tagline{position:absolute;left:25px;bottom:20px;font:8px/1 monospace;letter-spacing:.12em;color:#a2c9c9}
+.portfolio .ticket-shape{position:absolute;right:15%;top:19%;width:22%;height:49%;display:flex;flex-direction:column;justify-content:space-evenly;padding:8px 10px;border:1px solid #b5e0dd61;border-radius:4px;background:#dff3ed0d;rotate:8deg;box-shadow:0 10px 30px #0003}
+.portfolio .ticket-shape:before,.portfolio .ticket-shape:after{position:absolute;left:-5px;right:-5px;height:8px;content:'';background:#12252d;border:1px solid #b5e0dd61;border-radius:50%}
+.portfolio .ticket-shape:before{top:-5px;border-bottom:0}.portfolio .ticket-shape:after{bottom:-5px;border-top:0}
+.portfolio .ticket-shape i{display:block;height:1px;background:#b5e0dd58}.portfolio .ticket-shape b{position:absolute;right:10px;bottom:11px;color:#8fced0;font:700 15px/1 monospace;letter-spacing:-.12em}
 .portfolio .workbench .project-art{height:235px;min-height:235px;border-radius:0 0 7px 7px;padding:18px}
-.portfolio .workbench .project-art-heading{left:20px;top:15px}.portfolio .workbench .project-art-product{right:6%;width:65%;height:72%}
-.portfolio .screen-link .project-art-mark{font-size:120px}.portfolio .work-card:hover .project-art{transition:translate .4s var(--ease)}
-@media(max-width:700px){.portfolio .project-art{min-height:210px;padding:16px}.portfolio .project-art-heading{left:17px;top:15px}.portfolio .project-art-product{right:4%;width:72%;height:66%}.portfolio .project-art-mark{font-size:118px;left:14px}.portfolio .project-art-fxxkup .project-art-photo{left:22%}.portfolio .project-art-photo strong{font-size:36px}.portfolio .workbench .project-art{height:200px;min-height:200px}}
+.portfolio .workbench .art-kicker{left:19px;top:16px}.portfolio .work-card:hover .project-art{translate:0 -3px}
+@media(max-width:700px){.portfolio .project-art{min-height:210px;padding:16px}.portfolio .art-kicker{left:17px;top:15px}.portfolio .yarden-wordmark{margin-bottom:22px}.portfolio .workbench .project-art{height:200px;min-height:200px}}

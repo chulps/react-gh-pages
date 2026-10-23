@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import website from "./mindvault_website.webp";
 import webapp from "./webapp.webp";
 
-class MindVault extends React.Component {
+class M9000 extends React.Component {
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }
@@ -12,14 +12,14 @@ class MindVault extends React.Component {
     return (
       <div id="mindvault">
         <Helmet>
-          <title>Mindvault</title>
+          <title>M9000</title>
         </Helmet>
         <section className="py3 h100">
           <label>Job:</label>
-          <h1>Mindvault</h1>
+          <h1>M9000</h1>
           <div className="lg-two-columns gap3">
             <p style={{ maxWidth: "50ch" }}>
-              MindVault is a startup that's building a robust notes app for
+              M9000 is a startup that's building a robust notes app for
               visual thinkers who need to collaborate with eachother and be able
               to easily share ideas and even convert different types of notes
               into various formats. For example, a user can easily convert a
@@ -76,10 +76,10 @@ class MindVault extends React.Component {
               </svg>
             </div>
             <div>
-              <h2>Projects at Mindvault</h2>
+              <h2>Projects at M9000</h2>
               <p style={{ maxWidth: "50ch" }} className="mb2">
-                At MindVault I worked as a Product Designer and UI/UX Engineer.
-                My main responsibilities were the website, and the MindVault web
+                At M9000 I worked as a Product Designer and UI/UX Engineer.
+                My main responsibilities were the website, and the M9000 web
                 app. Other responsibilities included branding, drafting the
                 company prospectus, design system, and an internal app known as
                 "The Mapper".
@@ -87,7 +87,7 @@ class MindVault extends React.Component {
             </div>
           </div>
 
-          <div className="Mindvault-projects md-two-columns lg-three-columns gap3 mt3">
+          <div className="M9000-projects md-two-columns lg-three-columns gap3 mt3">
             <div className="project">
               <div className="flex-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 379 271">
@@ -241,14 +241,14 @@ class MindVault extends React.Component {
               </div>
               <h3>The Brand</h3>
               <p>
-                At first glance, the MindVault logo may seem simple, but its
+                At first glance, the M9000 logo may seem simple, but its
                 meaning runs deep. The bold blue square encapsulates the
                 reliability and trustworthiness of the platform, ensuring users
                 that their notes and ideas are safely stored. The white "m"
                 symbol, a fusion of the traditional letter 'm' and a key,
-                represents the core essence of MindVault: a gateway to unlocking
+                represents the core essence of M9000: a gateway to unlocking
                 one's thoughts and creativity. Together, the components of the logo
-                embody the mission of MindVault — to serve as a sanctuary for
+                embody the mission of M9000 — to serve as a sanctuary for
                 ideas, waiting to be unlocked and explored.
               </p>
             </div>
@@ -271,11 +271,11 @@ class MindVault extends React.Component {
                 <img loading="lazy" src={webapp} width="100%" alt="website" />
               </div>
 
-              <h3>MindVault Web App</h3>
+              <h3>M9000 Web App</h3>
               <p>
                 One of the main features of this app is the dynamic 'Checklist',
                 where tasks like "Chips" can be ticked off and "Milk"
-                effortlessly removed. Overall, MindVault blends simplicity with
+                effortlessly removed. Overall, M9000 blends simplicity with
                 efficiency for seamless note-taking.
               </p>
             </div>
@@ -286,4 +286,4 @@ class MindVault extends React.Component {
   }
 }
 
-export default MindVault;
+export default M9000;
