@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.eec34a01.css",
-    "main.js": "/react-gh-pages/static/js/main.4668ec15.js",
+    "main.js": "/react-gh-pages/static/js/main.39dda368.js",
     "static/css/473.628de628.chunk.css": "/react-gh-pages/static/css/473.628de628.chunk.css",
     "static/js/473.bca49707.chunk.js": "/react-gh-pages/static/js/473.bca49707.chunk.js",
     "static/css/833.14992e45.chunk.css": "/react-gh-pages/static/css/833.14992e45.chunk.css",
@@ -69,9 +69,9 @@
     "static/media/yarden_mark_bg_fitted.svg": "/react-gh-pages/static/media/yarden_mark_bg_fitted.457b6e2d63075878fe78334057944602.svg",
     "static/media/xprizelogo.webp": "/react-gh-pages/static/media/xprizelogo.cbec3face2c33eb473fb.webp",
     "static/media/FoundryLogo.svg": "/react-gh-pages/static/media/FoundryLogo.6d94e11081564112096305a143fcacbf.svg",
+    "index.html": "/react-gh-pages/index.html",
     "static/media/clicktool-mark.svg": "/react-gh-pages/static/media/clicktool-mark.e8e26015adbe7ba1cffb8e91876b65c6.svg",
     "static/media/github-01.svg": "/react-gh-pages/static/media/github-01.3e459e0f7bdad112ab03608bdda9713f.svg",
-    "index.html": "/react-gh-pages/index.html",
     "static/media/codepen-01.svg": "/react-gh-pages/static/media/codepen-01.b6c821c747d6aac5980bf4a45cbabaae.svg",
     "static/media/sullivan-branding-logo.svg": "/react-gh-pages/static/media/sullivan-branding-logo.82045a2b0109ec74030b517742b5c080.svg",
     "static/media/calendly.svg": "/react-gh-pages/static/media/calendly.73150c8667b036eb4d7f9dd294bc5f47.svg",
@@ -84,6 +84,6 @@
   },
   "entrypoints": [
     "static/css/main.eec34a01.css",
-    "static/js/main.4668ec15.js"
+    "static/js/main.39dda368.js"
   ]
 }
