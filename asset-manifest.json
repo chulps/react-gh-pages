@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.d69cde1d.css",
-    "main.js": "/react-gh-pages/static/js/main.22768541.js",
+    "main.css": "/react-gh-pages/static/css/main.06470947.css",
+    "main.js": "/react-gh-pages/static/js/main.95056799.js",
     "static/css/473.628de628.chunk.css": "/react-gh-pages/static/css/473.628de628.chunk.css",
     "static/js/473.2ca07e1a.chunk.js": "/react-gh-pages/static/js/473.2ca07e1a.chunk.js",
     "static/css/833.14992e45.chunk.css": "/react-gh-pages/static/css/833.14992e45.chunk.css",
@@ -76,6 +76,7 @@
     "static/media/HomeLangOpen.webp": "/react-gh-pages/static/media/HomeLangOpen.aec499e9904a09f4ab17.webp",
     "static/media/laptop.webp": "/react-gh-pages/static/media/laptop.63440ef3929182da3cc8.webp",
     "static/media/Chatrooms.webp": "/react-gh-pages/static/media/Chatrooms.0e31ad19b16bcc44ad49.webp",
+    "static/media/cross-campus-bg.webp": "/react-gh-pages/static/media/cross-campus-bg.48eb11d607abb9cfa7e1.webp",
     "static/media/EditSettings.webp": "/react-gh-pages/static/media/EditSettings.691532ba2db9e929ba79.webp",
     "static/media/change_date.webp": "/react-gh-pages/static/media/change_date.3b282973c8a5e6457e55.webp",
     "static/media/Login.webp": "/react-gh-pages/static/media/Login.063eafdf991e87543f04.webp",
@@ -124,7 +125,7 @@
     "static/media/ReactLogo.svg": "/react-gh-pages/static/media/ReactLogo.638b460cfd7b8709a2ba536e4fc72861.svg"
   },
   "entrypoints": [
-    "static/css/main.d69cde1d.css",
-    "static/js/main.22768541.js"
+    "static/css/main.06470947.css",
+    "static/js/main.95056799.js"
   ]
 }
