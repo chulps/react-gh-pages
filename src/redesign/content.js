@@ -16,7 +16,12 @@ export const projects = [
   {slug:'fxxkup', title:'Rock Bar FxxK Up', type:'Website · Sapporo hospitality', summary:'A multilingual first stop for a night in Susukino.', detail:'A customer website that brings together the bar’s atmosphere, menu, access and visitor information.', image:'case-study/neon-sign-1108.webp', alt:'The real red FxxK Up neon sign inside the Susukino bar', color:'red'},
   {slug:'barticket', title:'BarTicket', type:'Internal operations app', summary:'Daily bar operations, recorded and ready to explore.', detail:'An internal tool for recording tickets, orders, payments and shifts, then drilling into business analytics.', image:'case-study/barticket-analytics.webp', alt:'Actual BarTicket monthly analytics screen showing sales by night', color:'blue'},
 ];
+// The workbench and top of the work page feature a focused set of projects.
+// XPRIZE remains in the portfolio archive so it is easy to find without leading the page.
+export const featuredProjects = ['mindvault','yarden','comett','fxxkup','barticket']
+  .map((slug) => projects.find((project) => project.slug === slug));
 export const archive = [
+  ['xprize','XPRIZE','UI engineering · Prize Operations Portal · Design system'],
   ['crigenetics','CRI Genetics','Product design lead · Frontend development'],
   ['nucleotide','Nucleotide','Design system · Documentation'],
   ['foundry','Foundry','UI engineering · Data-rich products'],
