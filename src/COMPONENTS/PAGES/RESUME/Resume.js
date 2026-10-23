@@ -65,7 +65,7 @@ class Resume extends Component {
         role: "Business Developer",
         duration: "(September 7, 2026 – Present)",
         responsibilities: [
-          "Working with Tunabear on the next version of the multilingual chat idea behind T-Chat.",
+          "Working with Tunabear on the next version of a multilingual communication product.",
         ],
       },
       {
@@ -213,7 +213,6 @@ class Resume extends Component {
       },
     ];
 
-    const hobbies = ["Travel", "Artificial Intelligence"];
 
     return (
       <div id="resume">
@@ -305,17 +304,6 @@ class Resume extends Component {
                 </ul>
               </div>
             ))}
-            <hr className="my2" />
-
-            <div className="mb2">
-              <label>Hobbies</label>
-              <h3>Fun Stuff</h3>
-              <ul>
-                {hobbies.map((hobby, index) => (
-                  <li key={index}>{hobby}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         </section>
         <section
