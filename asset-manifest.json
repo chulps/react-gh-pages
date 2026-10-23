@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.e862c14a.css",
-    "main.js": "/react-gh-pages/static/js/main.8b22856c.js",
+    "main.css": "/react-gh-pages/static/css/main.1e4cc454.css",
+    "main.js": "/react-gh-pages/static/js/main.116e9ace.js",
     "static/css/473.628de628.chunk.css": "/react-gh-pages/static/css/473.628de628.chunk.css",
     "static/js/473.2ca07e1a.chunk.js": "/react-gh-pages/static/js/473.2ca07e1a.chunk.js",
     "static/css/833.14992e45.chunk.css": "/react-gh-pages/static/css/833.14992e45.chunk.css",
@@ -83,7 +83,7 @@
     "static/media/mind-vault-logo.svg": "/react-gh-pages/static/media/mind-vault-logo.694b835d98483a2f4d096c5de1166e63.svg"
   },
   "entrypoints": [
-    "static/css/main.e862c14a.css",
-    "static/js/main.8b22856c.js"
+    "static/css/main.1e4cc454.css",
+    "static/js/main.116e9ace.js"
   ]
 }
