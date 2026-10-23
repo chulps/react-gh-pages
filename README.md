@@ -2,11 +2,13 @@
 
 React 18 + Create React App 5 + HashRouter, deployed to the existing GitHub Pages site. The homepage now prioritizes local business inquiries from outreach. Original project narratives, screens and route URLs are retained.
 
+English and Japanese are supported. A first visit follows `navigator.language`; the header switch lets visitors choose either language and remembers that choice. Direct links can set `?lang=ja` before the hash or `lang=ja` in the hash. The main business pages, navigation, project listings, FAQs, and case-study summaries are translated. The original long-form case-study narratives and résumé remain in English.
+
 ## Run and verify
 
 Use Node 20. `npm ci --legacy-peer-deps`, then `npm start` for development.
 
-- `npm test -- --watchAll=false --runInBand`: service selection, outreach contact path and missing-page recovery.
+- `npm test -- --watchAll=false --runInBand`: service selection, outreach contact path, missing-page recovery, Japanese language choice and browser-language detection.
 - `npm run build`: production build plus server-rendered homepage content for initial HTML and no-JavaScript readers.
 - `python3 scripts/preview.py`: local production preview at `http://127.0.0.1:4400/react-gh-pages/`. The `/qa` page checks real 1440/1280/768/390/320px iframe viewports and runs axe against each preserved route. QA scripts and axe are never included in deployment.
 - `npm run deploy`: rebuild and publish the verified build to `gh-pages`. Check the resulting GitHub Pages deployment before reporting it live.
