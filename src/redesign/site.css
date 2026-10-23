@@ -46,3 +46,85 @@ body{background:var(--ground)}.portfolio .masthead{padding:22px 0}.portfolio .mo
 .portfolio .brand-mark{color:#9be8ff}
 .portfolio .brand-mark>img{filter:grayscale(1) brightness(0) saturate(100%) invert(49%) sepia(65%) saturate(1539%) hue-rotate(324deg) brightness(100%) contrast(99%)}
 @media(prefers-reduced-motion:reduce){.portfolio .portrait img.portrait-backdrop{transform:none}}
+/* Sapporo case study: current FxxK Up site + BarTicket operations and analytics. */
+.portfolio .local-project.local-case{display:block;position:relative;overflow:hidden;margin-top:15px;background:#101b2a;border:1px solid #3e586f;border-radius:3px;color:#edf4fa}
+.portfolio .local-case-intro{padding:clamp(30px,5vw,68px) clamp(24px,5vw,68px) 36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.82fr);column-gap:7vw;align-items:end}
+.portfolio .local-case-intro .section-label{grid-column:1/-1;margin-bottom:24px}
+.portfolio .local-case-intro h2{grid-column:1;grid-row:2/4;margin:0;max-width:13ch;font-size:clamp(38px,5.3vw,72px);line-height:1.02;letter-spacing:-.055em;font-weight:500}
+.portfolio .local-case-intro>p{grid-column:2;grid-row:2;max-width:45ch;margin:0;color:#c4d2e0;font-size:15px;line-height:1.65}
+.portfolio .local-place{display:block;margin-top:18px;color:#89bdd0;font:11px/1.5 monospace;letter-spacing:.04em;text-transform:uppercase}
+.portfolio .local-case-links{grid-column:2;grid-row:3;display:flex;gap:12px 24px;flex-wrap:wrap;margin-top:22px}
+.portfolio .local-case-links .text-link{font-size:13px;color:#9be8ff}
+.portfolio .local-product-visuals{padding:0 clamp(24px,5vw,68px) 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:stretch}
+.portfolio .product-visual{min-width:0;margin:0;background:#0a1220;border:1px solid #334c63;border-radius:3px;overflow:hidden;box-shadow:0 14px 32px #0003}
+.portfolio .website-visual{grid-row:span 2;display:flex;flex-direction:column}
+.portfolio .visual-browser{height:31px;padding:0 12px;display:flex;align-items:center;gap:6px;background:#172638;border-bottom:1px solid #30465d;color:#b5c6d7;font:9px/1 monospace;letter-spacing:.03em}
+.portfolio .visual-browser>span{height:6px;width:6px;border-radius:50%;background:#718499}
+.portfolio .visual-browser small{margin-left:8px;font:inherit;color:#aabed0}
+.portfolio .visual-browser b{margin-left:auto;color:#9be8ff;font-size:8px;font-weight:400;letter-spacing:.1em}
+.portfolio .website-screen{position:relative;flex:1;min-height:360px;background:#121310;color:#f3f2eb;overflow:hidden}
+.portfolio .website-nav{height:48px;padding:11px 15px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff30;font:8px/1.35 monospace;letter-spacing:.035em}
+.portfolio .website-nav strong{font-size:10px;line-height:1.1}
+.portfolio .website-nav span{color:#cacac4}
+.portfolio .website-nav i{font-style:normal;color:#dbff5d}
+.portfolio .website-hero-copy{padding:35px 24px 29px;position:relative;z-index:1;max-width:400px}
+.portfolio .website-kicker{display:block;margin-bottom:18px;color:#d7ff55;font:8px/1 monospace;letter-spacing:.2em}
+.portfolio .website-hero-copy>strong{display:block;font-size:clamp(29px,4vw,52px);line-height:.82;letter-spacing:-.065em;font-weight:900}
+.portfolio .website-hero-copy>strong em{display:block;color:#dcff5d;font-style:normal}
+.portfolio .website-hero-copy>strong em span{font-size:.43em;vertical-align:top}
+.portfolio .website-hero-copy>b{display:block;margin-top:24px;font-size:clamp(15px,2vw,23px);line-height:1.04;letter-spacing:-.025em}
+.portfolio .website-hero-copy>p{max-width:33ch;margin:12px 0 17px;color:#b8b8b2;font-size:10px;line-height:1.45}
+.portfolio .website-cta{display:flex;justify-content:space-between;align-items:center;width:172px;padding:10px 11px;background:#dcff5d;color:#15170f;font:8px/1 monospace;letter-spacing:.06em}
+.portfolio .website-cta .arrow{font-size:12px}
+.portfolio .website-photo-strip{position:absolute;inset:auto 0 0;height:37px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ffffff36;background:linear-gradient(90deg,#831b16,#251817 48%,#100f0e);font:7px/1 monospace;letter-spacing:.12em;color:#f5e6d5}
+.portfolio .visual-caption{margin:0;padding:10px 12px;color:#91a8bc;font:9px/1.35 monospace;letter-spacing:.035em}
+.portfolio .barticket-screen{padding:13px 14px 8px;background:#1d1e22;color:#f2f3f5;min-height:258px;font-family:Arial,sans-serif}
+.portfolio .barticket-nav{height:28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #45464b;font-size:9px;color:#c4c5c9}
+.portfolio .barticket-nav strong{font:700 10px/1 Arial,sans-serif;color:#fff}
+.portfolio .barticket-nav i{font:8px/1 monospace;color:#aeb2b8}
+.portfolio .barticket-heading{display:flex;justify-content:space-between;align-items:center;padding:15px 0 10px;gap:10px}
+.portfolio .barticket-heading h3{margin:0;font:700 18px/1.1 Arial,sans-serif;letter-spacing:-.03em}
+.portfolio .barticket-heading span{padding:6px 8px;border:1px solid #55575e;border-radius:2px;color:#a6a8ad;font:8px/1 Arial,sans-serif}
+.portfolio .drink-columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.portfolio .drink-columns>div>b{display:block;padding:5px 0 8px;border-bottom:1px solid #3b3c41;font:700 12px/1.1 Arial,sans-serif}
+.portfolio .drink-columns>div>small{display:block;margin:9px 0 0;color:#92969c;font:7px/1 monospace;letter-spacing:.15em}
+.portfolio .drink-columns p{display:flex;justify-content:space-between;gap:8px;margin:0;padding:8px 0;border-bottom:1px dotted #48494c;color:#e3e4e7;font:9px/1.15 Arial,sans-serif}
+.portfolio .drink-columns p>span{min-width:0}
+.portfolio .drink-columns p small{display:block;margin-top:3px;color:#a4a6ab;font:7px/1.2 Arial,sans-serif}
+.portfolio .drink-columns p strong{flex:none;color:#fff;font:700 9px/1 Arial,sans-serif}
+.portfolio .analytics-screen{padding:15px;background:#121d2c;color:#dfebf6;min-height:258px}
+.portfolio .analytics-top,.portfolio .analytics-title{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.portfolio .analytics-top{padding-bottom:11px;border-bottom:1px solid #304358;color:#91a8bc;font:8px/1 monospace;letter-spacing:.06em}
+.portfolio .analytics-top strong{color:#d9e8f2}.portfolio .analytics-top strong span{color:#7f9db2;font-weight:400}
+.portfolio .analytics-top>span{font-size:7px;color:#a7bac9}
+.portfolio .analytics-top b{color:#9be8ff;font-weight:400}
+.portfolio .analytics-title{padding:12px 0 10px}
+.portfolio .analytics-title small{color:#9be8ff;font:7px/1 monospace;letter-spacing:.12em}
+.portfolio .analytics-title h3{margin:5px 0 0;font-size:13px;line-height:1.15;letter-spacing:-.02em}
+.portfolio .analytics-title>span{padding:5px 7px;border:1px solid #395169;color:#b3c4d2;font:7px/1 monospace}
+.portfolio .analytics-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.portfolio .analytics-metrics>div{padding:8px 7px;background:#192a3c;border:1px solid #2c4358}
+.portfolio .analytics-metrics small,.portfolio .analytics-metrics b,.portfolio .analytics-metrics span{display:block}
+.portfolio .analytics-metrics small{color:#9aafc1;font:6px/1 monospace;letter-spacing:.05em}
+.portfolio .analytics-metrics b{margin-top:6px;color:#f1f6fa;font:600 15px/1 Arial,sans-serif}
+.portfolio .analytics-metrics span{margin-top:4px;color:#8da2b5;font:6px/1 Arial,sans-serif}
+.portfolio .analytics-chart{margin-top:9px;padding:8px 9px 6px;background:#0d1724;border:1px solid #293c50}
+.portfolio .analytics-chart>div:first-child{display:flex;justify-content:space-between;gap:4px;color:#d7e3ec;font:7px/1 monospace}
+.portfolio .analytics-chart>div:first-child span{color:#9bb0c2;font-size:6px}
+.portfolio .analytics-chart svg{display:block;width:100%;height:57px;margin-top:4px;overflow:visible}
+.portfolio .analytics-chart svg path:first-child{fill:none;stroke:#2c3e51;stroke-width:1}
+.portfolio .analytics-chart svg .chart-line{fill:none;stroke-width:2}
+.portfolio .analytics-chart svg .chart-cash{stroke:#92d9bc}
+.portfolio .analytics-chart svg .chart-card{stroke:#9ab9ff}
+.portfolio .analytics-chart svg circle{fill:#92d9bc;stroke:#0d1724;stroke-width:2}
+.portfolio .chart-axis{display:flex;justify-content:space-between;color:#8399ad;font:5px/1 monospace;letter-spacing:.03em}
+.portfolio .analytics-foot{display:flex;justify-content:space-between;gap:5px;padding-top:8px;color:#aebfcd;font:6px/1 monospace}
+.portfolio .local-case-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #3e586f;background:#0d1726}
+.portfolio .local-case-details article{padding:24px clamp(18px,3vw,40px) 27px}
+.portfolio .local-case-details article+article{border-left:1px solid #304358}
+.portfolio .local-case-details article>span:first-child{color:#9be8ff;font:9px/1.4 monospace;letter-spacing:.04em}
+.portfolio .local-case-details h3{margin:12px 0 8px;font-size:19px;line-height:1.2;letter-spacing:-.035em}
+.portfolio .local-case-details p{margin:0;color:#b7c7d6;font-size:12px;line-height:1.6}
+.portfolio .local-case-details .case-proof{display:block;margin-top:15px;color:#87a1b5;font:8px/1.4 monospace;letter-spacing:.04em;text-transform:uppercase}
+@media(max-width:800px){.portfolio .local-case-intro{grid-template-columns:1fr;row-gap:20px}.portfolio .local-case-intro h2{grid-column:1;grid-row:auto;max-width:18ch;font-size:clamp(38px,8vw,58px)}.portfolio .local-case-intro>p,.portfolio .local-case-links{grid-column:1;grid-row:auto}.portfolio .local-case-links{margin-top:-5px}.portfolio .local-product-visuals{grid-template-columns:1fr 1fr}.portfolio .website-visual{grid-row:auto;grid-column:1/-1}.portfolio .website-screen{min-height:300px}.portfolio .local-case-details{grid-template-columns:1fr}.portfolio .local-case-details article+article{border-left:0;border-top:1px solid #304358}}
+@media(max-width:520px){.portfolio .local-case-intro{padding:28px 20px 26px}.portfolio .local-case-intro .section-label{margin-bottom:0}.portfolio .local-case-intro h2{font-size:40px}.portfolio .local-case-intro>p{font-size:14px}.portfolio .local-case-links{gap:12px 18px}.portfolio .local-product-visuals{grid-template-columns:1fr;padding:0 14px 25px;gap:12px}.portfolio .website-screen{min-height:310px}.portfolio .website-hero-copy{padding:32px 20px 26px}.portfolio .website-hero-copy>strong{font-size:42px}.portfolio .website-hero-copy>b{font-size:21px}.portfolio .barticket-screen,.portfolio .analytics-screen{min-height:0}.portfolio .local-case-details article{padding:21px 20px}.portfolio .local-case-details h3{font-size:20px}.portfolio .local-case-details p{font-size:13px}}
