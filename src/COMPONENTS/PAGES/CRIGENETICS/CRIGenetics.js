@@ -6,7 +6,7 @@ import MeowbertCS from "./Meowbert_CS";
 
 class CRIGenetics extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -61,7 +61,7 @@ class CRIGenetics extends Component {
         <section className="lg-two-columns gap3 lg-gap4 mb3">
           {/* responsibilities image */}
           <div className="p3 flex-center">
-            <img
+            <img loading="lazy"
               src={CRIGeneticsLogo}
               alt="cri genetics logo"
               className="whole"
@@ -85,7 +85,7 @@ class CRIGenetics extends Component {
               <div>
                 <h5>Design System</h5>
                 <small>
-                  <a href="/#/nucleotide" className="h6">
+                  <a href="#/projects/nucleotide/" className="h6">
                     Nucleotide
                   </a>
                   , A robust, token based library used to create a branded CSS
@@ -140,7 +140,7 @@ class CRIGenetics extends Component {
             <div>
               <p>
                 In the first quarter of 2020 COVID was getting spicy. I was
-                working at <a href="/clicktool">Clicktool</a> and the company
+                working at <a href="#/projects/clicktool/">Clicktool</a> and the company
                 pivoted from building a subscription based marketing analytics
                 product to building a Shopify ecommerce site and designing goods
                 that I couldn't bring myself to agree with... so I quit.
@@ -153,7 +153,7 @@ class CRIGenetics extends Component {
             </div>
 
             <div className="flex-center flex-vertical">
-              <img
+              <img loading="lazy"
                 src="https://media.tenor.com/1E3lN6HOrZcAAAAd/button-press-the-button.gif"
                 width="100%"
                 height="auto"

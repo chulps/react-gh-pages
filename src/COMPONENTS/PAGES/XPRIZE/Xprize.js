@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import "./Xprize.css";
-import Pop from "./pop.png";
-import Xpds from "./xpds.png";
-import Website from "./xprize-website.png";
+import Pop from "./pop.webp";
+import Xpds from "./xpds.webp";
+import Website from "./xprize-website.webp";
 
 class Xprize extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -65,7 +65,7 @@ class Xprize extends Component {
           <div className="xprize-projects md-two-columns lg-three-columns">
             <div className="project">
               <a href="https://www.xprize.org">
-                <img src={Website} alt="placeholder" />
+                <img loading="lazy" src={Website} alt="XPRIZE marketing website" />
               </a>
               <h5>Company Website</h5>
               <p>
@@ -76,7 +76,7 @@ class Xprize extends Component {
 
             <div className="project">
               <a href="https://pop.xprize.org/prizes">
-                <img src={Pop} alt="placeholder" />
+                <img loading="lazy" src={Pop} alt="Prize Operations Portal interface" />
               </a>
               <h5>"POP" (Prize Operations Portal)</h5>
               <p>
@@ -87,7 +87,7 @@ class Xprize extends Component {
 
             <div className="project">
               <a href="https://codepen.io/chulps/live/RwebZWG/b19e1351404dedf5307c7580c3112fa0">
-                <img src={Xpds} alt="placeholder" />
+                <img loading="lazy" src={Xpds} alt="XPRIZE design system components" />
               </a>
               <h5>XPDS (XPRIZE Design System)</h5>
               <p>

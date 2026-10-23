@@ -7,7 +7,7 @@ import Download from "./Chuck_Howard_Resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import mindVaultLogo from "../../../IMG/mind-vault-logo.svg";
-import xPrizeLogo from "../../../IMG/xprizelogo.png"
+import xPrizeLogo from "../../../IMG/xprizelogo.webp"
 import yardenLogo from "../YARDEN/yarden_mark_bg_fitted.svg"
 import foundryLogo from "../FOUNDRY/FoundryLogo.svg"
 import CRILogo from "../../../IMG/cri_genetics_logo.svg"
@@ -18,7 +18,7 @@ import sullivanLogo from "./sullivan-branding-logo.svg"
 const tools = [...designTools, ...developmentTools, ...productTools];
 class Resume extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -214,7 +214,7 @@ class Resume extends Component {
           <label>Resumé</label>
           <div className="mb2 flex-space-between">
             <div>
-              <h2>Charles M. Howard</h2>
+              <h1>Charles M. Howard</h1>
               <p>Product Designer / Frontend Developer</p>
               <p style={{ maxWidth: "45ch" }}>
                 I'm an experienced Product Designer with a background in
@@ -257,7 +257,7 @@ class Resume extends Component {
             <div className="experience-item" key={index}>
               <div className="flex">
                 <span>
-                  <img
+                  <img loading="lazy"
                     className="experience-logo"
                     alt={experience.company}
                     src={experience.logo}

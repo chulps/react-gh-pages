@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import SocialIcons from "../../SocialIcons";
-import Chuck from "../../../IMG/USERS/chuck_blue.png";
+import Chuck from "../../../IMG/USERS/chuck_blue.webp";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
-import CCBG from "./cross-campus-bg.jpg";
+import CCBG from "./cross-campus-bg.webp";
 import { Helmet } from "react-helmet";
 import "../../../../src/animate-in.scss"
 import About from "./About";
@@ -41,7 +41,7 @@ const Home = () => {
       >
         <section className="content-col flex md-two-columns">
           <div className="absolute md-relative md-order1 whole h100 flex-vertical relative bg-white">
-            <img
+            <img loading="lazy"
               className="whole md-half"
               style={{
                 objectFit: "cover",
@@ -61,7 +61,7 @@ const Home = () => {
               width="100%"
               height="auto"
             />
-            <img
+            <img loading="lazy"
               className="chuck-img"
               src={Chuck}
               alt="chuck"

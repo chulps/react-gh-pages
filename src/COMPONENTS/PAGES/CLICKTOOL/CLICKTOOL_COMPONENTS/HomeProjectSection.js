@@ -1,7 +1,7 @@
 // HomeProjectSection.js
 import React from "react";
 import "./homeprojectsection.css";
-import Laptop from "./laptop.png";
+import Laptop from "./laptop.webp";
 import Clicktool from "./clicktool_dashboard.mp4";
 import ClicktoolCity from "./SVG/ClicktoolCity";
 
@@ -17,7 +17,7 @@ class HomeProjectsSection extends React.Component {
           </div>
         </div>
         <div className="laptop-project-container flex-center whole md-two-thirds relative">
-          <img className="whole absolute" src={Laptop} alt="Laptop Demo"/>
+          <img loading="lazy" className="whole absolute" src={Laptop} alt="Laptop Demo"/>
           <div className="relative laptop-project-video-container">
             <video
               className="laptop-project-video"

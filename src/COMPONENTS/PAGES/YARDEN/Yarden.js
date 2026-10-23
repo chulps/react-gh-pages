@@ -3,33 +3,33 @@ import YardenLogo from "../../../IMG/YardenLogo";
 import YardenMark from "../YARDEN/YardenMark";
 import YardenLogoGeometry from "./YardenLogoGeometry";
 import YardenLogoType from "./YardenLogotype";
-import plantSelectionScreen from "./plant_selection.png";
-import changeDateScreen from "./change_date.png";
-import GardenMap from "./gardenmap.png";
-import oldLogo from "./old_yarden_logo.jpg";
-import theInvite from "./theinvite.jpeg";
+import plantSelectionScreen from "./plant_selection.webp";
+import changeDateScreen from "./change_date.webp";
+import GardenMap from "./gardenmap.webp";
+import oldLogo from "./old_yarden_logo.webp";
+import theInvite from "./theinvite.webp";
 import YardenVerticalLockup from "./YardenVerticalLockup";
 import YardenHorizontalLockup from "./YardenHorizontalLockup";
 import "./Yarden.css";
-import yardenWebsiteScreenshot from "./yarden_website_screenshot.png";
-import yardenWebsiteRedesign2 from "./yarden_website_fullscreen.png";
-import yardenProductsPage from "./yarden_products_page.jpg";
+import yardenWebsiteScreenshot from "./yarden_website_screenshot.webp";
+import yardenWebsiteRedesign2 from "./yarden_website_fullscreen.webp";
+import yardenProductsPage from "./yarden_products_page.webp";
 import YardenAppStoreQRCode from "./YardenAppStoreQRCode";
 import { Helmet } from "react-helmet";
-import truckBack from "../../../IMG/yarden_truck_back.jpg";
-import truckFront from "../../../IMG/yarden_truck_front.jpg";
-import truckLeft from "../../../IMG/yarden_truck_left_side.jpg";
-import truckRight from "../../../IMG/yarden_truck_right_side.jpg";
-import customerDBPlants from "./CustomerDBPlants.png";
-import customerDBQuotes from "./CustomerDBQuotes.png";
-import customerDBOrders from "./CustomerDBOrders.png";
-import customerDBSettings from "./CustomerDBSettings.png";
-import applications from "./biz-dash-applications.png";
-import automation from "./biz-dash-automation.png";
-import materials from "./biz-dash-materials.png";
-import orders from "./biz-dash-orders.png";
-import qrCodes from "./biz-dash-qr-codes.png";
-import templates from "./biz-dash-templates.png";
+import truckBack from "../../../IMG/yarden_truck_back.webp";
+import truckFront from "../../../IMG/yarden_truck_front.webp";
+import truckLeft from "../../../IMG/yarden_truck_left_side.webp";
+import truckRight from "../../../IMG/yarden_truck_right_side.webp";
+import customerDBPlants from "./CustomerDBPlants.webp";
+import customerDBQuotes from "./CustomerDBQuotes.webp";
+import customerDBOrders from "./CustomerDBOrders.webp";
+import customerDBSettings from "./CustomerDBSettings.webp";
+import applications from "./biz-dash-applications.webp";
+import automation from "./biz-dash-automation.webp";
+import materials from "./biz-dash-materials.webp";
+import orders from "./biz-dash-orders.webp";
+import qrCodes from "./biz-dash-qr-codes.webp";
+import templates from "./biz-dash-templates.webp";
 
 const bizDashImages = [
   applications,
@@ -126,7 +126,7 @@ const aiImages = [
 
 class Yarden extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {

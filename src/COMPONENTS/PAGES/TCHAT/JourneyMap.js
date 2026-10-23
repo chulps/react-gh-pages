@@ -1,5 +1,5 @@
 import React from 'react'
-import JourneyMapImg from "./JourneyMap.png";
+import JourneyMapImg from "./JourneyMap.webp";
 
 const JourneyMap = () => {
   return (

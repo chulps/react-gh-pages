@@ -16,7 +16,7 @@ import ClicktoolSVGSection from "./CLICKTOOL_COMPONENTS/ClicktoolSVGSection";
 
 class Clicktool extends React.Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {

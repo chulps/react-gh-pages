@@ -3,26 +3,26 @@ import React from "react";
 import styled from "styled-components";
 
 // images
-import ChatroomAuthenticated from "./PROTOTYPEIMG/ChatroomAuthenticated.png";
-import ChatroomAuthenticatedMenuOpen from "./PROTOTYPEIMG/ChatroomAuthenticatedMenuOpen.png";
-import ChatroomNotAuthenticated from "./PROTOTYPEIMG/ChatroomNotAuthenticated.png";
-import ChatroomNotAuthenticatedQR from "./PROTOTYPEIMG/ChatroomNotAuthenticatedQR.png";
-import ChatroomJoin from "./PROTOTYPEIMG/ChatroomJoin.png";
-import Chatrooms from "./PROTOTYPEIMG/Chatrooms.png";
-import Contacts from "./PROTOTYPEIMG/Contacts.png";
-import DashboardNavOpen from "./PROTOTYPEIMG/DashboardNavOpen.png";
-import EditProfile from "./PROTOTYPEIMG/EditProfile.png";
-import EditSettings from "./PROTOTYPEIMG/EditSettings.png";
-import Home from "./PROTOTYPEIMG/Home.png";
-import HomeLangOpen from "./PROTOTYPEIMG/HomeLangOpen.png";
-import HomeLightTheme from "./PROTOTYPEIMG/HomeLightTheme.png";
-import HomeNavOpen from "./PROTOTYPEIMG/HomeNavOpen.png";
-import Login from "./PROTOTYPEIMG/Login.png";
-import MyProfile from "./PROTOTYPEIMG/MyProfile.png";
-import Register from "./PROTOTYPEIMG/Register.png";
-import Search from "./PROTOTYPEIMG/Search.png";
-import Settings from "./PROTOTYPEIMG/Settings.png";
-import UserProfile from "./PROTOTYPEIMG/UserProfile.png";
+import ChatroomAuthenticated from "./PROTOTYPEIMG/ChatroomAuthenticated.webp";
+import ChatroomAuthenticatedMenuOpen from "./PROTOTYPEIMG/ChatroomAuthenticatedMenuOpen.webp";
+import ChatroomNotAuthenticated from "./PROTOTYPEIMG/ChatroomNotAuthenticated.webp";
+import ChatroomNotAuthenticatedQR from "./PROTOTYPEIMG/ChatroomNotAuthenticatedQR.webp";
+import ChatroomJoin from "./PROTOTYPEIMG/ChatroomJoin.webp";
+import Chatrooms from "./PROTOTYPEIMG/Chatrooms.webp";
+import Contacts from "./PROTOTYPEIMG/Contacts.webp";
+import DashboardNavOpen from "./PROTOTYPEIMG/DashboardNavOpen.webp";
+import EditProfile from "./PROTOTYPEIMG/EditProfile.webp";
+import EditSettings from "./PROTOTYPEIMG/EditSettings.webp";
+import Home from "./PROTOTYPEIMG/Home.webp";
+import HomeLangOpen from "./PROTOTYPEIMG/HomeLangOpen.webp";
+import HomeLightTheme from "./PROTOTYPEIMG/HomeLightTheme.webp";
+import HomeNavOpen from "./PROTOTYPEIMG/HomeNavOpen.webp";
+import Login from "./PROTOTYPEIMG/Login.webp";
+import MyProfile from "./PROTOTYPEIMG/MyProfile.webp";
+import Register from "./PROTOTYPEIMG/Register.webp";
+import Search from "./PROTOTYPEIMG/Search.webp";
+import Settings from "./PROTOTYPEIMG/Settings.webp";
+import UserProfile from "./PROTOTYPEIMG/UserProfile.webp";
 
 const Screen = styled.div`
   display: flex;

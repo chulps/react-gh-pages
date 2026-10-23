@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
+beforeEach(()=>{ window.location.hash='#/';window.scrollTo=jest.fn();window.matchMedia=jest.fn().mockImplementation(()=>({matches:true,addListener:jest.fn(),removeListener:jest.fn(),addEventListener:jest.fn(),removeEventListener:jest.fn()})); });
+test('outreach visitors can identify the services, local evidence and contact path',()=>{render(<App/>);expect(screen.getByRole('heading',{level:1})).toHaveTextContent('Better websites.');expect(screen.getByRole('button',{name:/PHP & website problems/})).toBeInTheDocument();expect(screen.getByText('Rock Bar FxxK Up')).toBeInTheDocument();expect(screen.getByRole('link',{name:/Tell me what needs fixing/})).toHaveAttribute('href',expect.stringContaining('mailto:charles.howard.jp@google.com'));});
+test('selecting PHP help updates the answer and matching email subject',()=>{render(<App/>);fireEvent.click(screen.getByRole('button',{name:/PHP & website problems/}));expect(screen.getByRole('heading',{name:'Something on my site is broken'})).toBeInTheDocument();expect(screen.getByRole('link',{name:/Email me about this/})).toHaveAttribute('href',expect.stringContaining('PHP%20or%20website%20problem'));});
+test('unknown paths show a recovery page',()=>{window.location.hash='#/missing-page';render(<App/>);expect(screen.getByRole('heading',{level:1})).toHaveTextContent('back to the work');expect(screen.getByRole('link',{name:/Back to home/})).toBeInTheDocument();});
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('outreach links preselect the requested service',()=>{window.location.hash='#/?service=seo';render(<App/>);expect(screen.getByRole('button',{name:/SEO & visitor information/})).toHaveAttribute('aria-pressed','true');expect(screen.getByRole('link',{name:/Email me about this/})).toHaveAttribute('href',expect.stringContaining('SEO%20and%20website%20visibility'));});

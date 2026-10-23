@@ -4,7 +4,7 @@ import Geometry from "./SVG/ClicktoolLogoGeometry.js";
 
 class ClicktoolTopSection extends React.Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -14,7 +14,7 @@ class ClicktoolTopSection extends React.Component {
         <div className="gap3">
           <div className="gap3 lg-two-columns">
             <div>
-              <h2>Clicktool</h2>
+              <h1>Clicktool</h1>
               <p>
                 Clicktool is a marketing analytics app designed for digital
                 marketers. Using our app, users can track clicks, phone calls,

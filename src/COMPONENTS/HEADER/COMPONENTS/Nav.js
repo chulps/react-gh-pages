@@ -13,7 +13,7 @@ class NavContent extends React.Component {
       <ul className="flex-center flex-vertical sm-flex-horizontal desktop-nav-links">
 
         <li className="sm-ghost">
-          <img
+          <img loading="lazy"
             height="100px"
             src={NavLogo}
             alt="C-logo"
@@ -80,7 +80,7 @@ class Nav extends React.Component {
               }}
             >
               <RotatingText fill="var(--transBlueC-75)" />
-              <img
+              <img loading="lazy"
                 className="header-logo"
                 src={NavLogo}
                 alt="C-logo"

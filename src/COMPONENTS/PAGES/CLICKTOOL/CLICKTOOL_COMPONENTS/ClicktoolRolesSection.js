@@ -1,10 +1,10 @@
 // ClicktoolTopSection.js
 import React from "react";
-import Hat from "./myHat.png";
+import Hat from "./myHat.webp";
 
 class ClicktoolRolesSection extends React.Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -12,7 +12,7 @@ class ClicktoolRolesSection extends React.Component {
       <section className="roles pt4">
         <div className="one-column lg-two-columns gap2 lg-gap3">
           <div className="pl3 pr3 pb3 flex-center flex-vertical">
-            <img className="whole" src={Hat} alt="hat" />
+            <img loading="lazy" className="whole" src={Hat} alt="hat" />
             <small className="text-center">this is really my hat</small>
           </div>
 

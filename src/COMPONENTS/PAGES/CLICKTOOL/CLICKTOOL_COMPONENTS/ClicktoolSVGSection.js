@@ -8,7 +8,7 @@ import RotateLanders from "../CLICKTOOL_COMPONENTS/SVG/RotateLandingPages.svg";
 
 class ClicktoolSVGSection extends React.Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -48,15 +48,15 @@ class ClicktoolSVGSection extends React.Component {
             <label className="mt2">ab_testing.svg</label>
           </div>
           <div className="p1 md-p3 flex-center flex-vertical">
-            <img src={MagnifyingGlass} alt="" />
+            <img loading="lazy" src={MagnifyingGlass} alt="" />
             <label className="mt2">magnifying_glass.svg</label>
           </div>
           <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
-            <img src={OnePlace} alt="" />
+            <img loading="lazy" src={OnePlace} alt="" />
             <label className="mt2">one-place.svg</label>
           </div>
           <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
-            <img src={RotateLanders} alt="" />
+            <img loading="lazy" src={RotateLanders} alt="" />
             <label className="mt2">variants.svg</label>
           </div>
         </div>

@@ -1,131 +1,31 @@
-import Header from "./COMPONENTS/HEADER/Header.js";
-import Home from "./COMPONENTS/PAGES/HOME/Home.js";
-import Nucleotide from "./COMPONENTS/PAGES/NUCLEOTIDE/Nucleotide.js";
-import CRIGenetics from "./COMPONENTS/PAGES/CRIGENETICS/CRIGenetics.js";
-import Yarden from "./COMPONENTS/PAGES/YARDEN/Yarden.js";
-import Xprize from "./COMPONENTS/PAGES/XPRIZE/Xprize.js";
-import Clicktool from "./COMPONENTS/PAGES/CLICKTOOL/Clicktool.js";
-import MindVault from "./COMPONENTS/PAGES/MINDVAULT/MindVault.js";
-import TChat from "./COMPONENTS/PAGES/TCHAT/TChat.js";
-import Footer from "./COMPONENTS/FOOTER/Footer.js";
-import Covid from "./COMPONENTS/PAGES/COVID/Covid.js";
-import Foundry from "./COMPONENTS/PAGES/FOUNDRY/Foundry.js";
-import Resume from "./COMPONENTS/PAGES/RESUME/Resume.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import "./App.css";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import ProjectSection from "./COMPONENTS/ProjectsSection.js";
-import ChuckGPT from "./COMPONENTS/ChuckGPT.js";
-import ReactGA from "react-ga4";
-import DesignProcess from "./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess.js";
-const TRACKING_ID = "G-WV7JW98XHS"; // ga4 tracking ID
-ReactGA.initialize(TRACKING_ID);
+import React, { lazy, Suspense } from 'react';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { Header, Footer, PageMotion, Home, WorkPage, Services, Contact, NotFound, Meta, ContactBand, Arrow } from './redesign/Site';
+import { email, projects } from './redesign/content';
 
-const App = () => {
-  const [chatbotVisible, setChatbotVisible] = useState(false);
-  const [unreadMessagesCount, setUnreadMessagesCount] = useState(1);
-
-  const incrementUnreadMessagesCount = () => {
-    setUnreadMessagesCount((prevCount) => prevCount + 1);
-  };
-
-  const toggleChatbot = () => {
-    setChatbotVisible(!chatbotVisible);
-    setUnreadMessagesCount(0);
-  };
-
-  //creating IP state
-  const [ip, setIP] = useState("");
-
-  //creating function to load ip address from the API
-  const getData = async () => {
-    const res = await axios.get("https://geolocation-db.com/json/");
-    setIP(res.data.IPv4);
-  };
-
-  useEffect(() => {
-    //passing getData method to the lifecycle method
-    getData();
-  }, []);
-
-  ReactGA.event({
-    category: "visitor_ip",
-    action: `${ip}`,
-  });
-
-  return (
-    <div id="chuck" className="App nucleotide">
-      <HashRouter forceRefresh={true}>
-        <Header />
-
-        {/* site content renders here */}
-        <main
-          style={{ background: "var(--siteBackground)", position: "relative" }}
-        >
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/projects/mindvault/" element={<MindVault />} />
-            <Route path="/projects/xprize/" element={<Xprize />} />
-            <Route path="/projects/crigenetics/" element={<CRIGenetics />} />
-            <Route path="/projects/foundry/" element={<Foundry />} />
-            <Route path="/projects/nucleotide/" element={<Nucleotide />} />
-            <Route path="/projects/tchat/" element={<TChat />} />
-            <Route path="/projects/yarden/" element={<Yarden />} />
-            <Route path="/projects/clicktool/" element={<Clicktool />} />
-            <Route path="/projects/covid/" element={<Covid />} />
-            <Route path="/resume/" element={<Resume />} />
-            <Route path="/design-process" element={<DesignProcess />} />
-          </Routes>
-        </main>
-
-        <ProjectSection />
-        <Footer />
-
-      </HashRouter>
-      <ChuckGPT
-        style={{ transform: `scale(${chatbotVisible ? 1 : 0})` }}
-        onNewMessage={incrementUnreadMessagesCount}
-      />
-      <button
-        id="ChuckGPTButton"
-        className={`${
-          chatbotVisible
-            ? "chatbot-open-toggle btn3 small red py1"
-            : "chatbot-toggle cta p1 br3"
-        } flex-vertical flex-center`}
-        onClick={toggleChatbot}
-      >
-        {chatbotVisible ? (
-          <FontAwesomeIcon className="h4 p-none" icon={solid("xmark")} />
-        ) : (
-          <FontAwesomeIcon
-            className="h4 p-none"
-            style={{ marginBottom: "0.25em" }}
-            icon={solid("robot")}
-          />
-        )}
-        <small
-          className={`unread-badge ${
-            chatbotVisible || unreadMessagesCount === 0 ? "hidden" : ""
-          }`}
-        >
-          {unreadMessagesCount}
-        </small>
-        {chatbotVisible ? (
-          ""
-        ) : (
-          <small style={{ lineHeight: 1 }}>
-            <small style={{ lineHeight: 1, fontFamily: "var(--data-font)" }}>
-              ChuckGPT
-            </small>
-          </small>
-        )}
-      </button>
-    </div>
-  );
-};
-
-export default App;
+const MindVault=lazy(()=>import('./COMPONENTS/PAGES/MINDVAULT/MindVault'));
+const Xprize=lazy(()=>import('./COMPONENTS/PAGES/XPRIZE/Xprize'));
+const Yarden=lazy(()=>import('./COMPONENTS/PAGES/YARDEN/Yarden'));
+const Foundry=lazy(()=>import('./COMPONENTS/PAGES/FOUNDRY/Foundry'));
+const CRIGenetics=lazy(()=>import('./COMPONENTS/PAGES/CRIGENETICS/CRIGenetics'));
+const Nucleotide=lazy(()=>import('./COMPONENTS/PAGES/NUCLEOTIDE/Nucleotide'));
+const Clicktool=lazy(()=>import('./COMPONENTS/PAGES/CLICKTOOL/Clicktool'));
+const TChat=lazy(()=>import('./COMPONENTS/PAGES/TCHAT/TChat'));
+const Covid=lazy(()=>import('./COMPONENTS/PAGES/COVID/Covid'));
+const Resume=lazy(()=>import('./COMPONENTS/PAGES/RESUME/Resume'));
+const DesignProcess=lazy(()=>import('./COMPONENTS/PAGES/DESIGN-PROCESS/DesignProcess'));
+function Case({title,description,children,resume=false}){return <><div className="case-frame"><div className="case-topbar"><Link to="/projects/">← All work</Link><span>{resume?'For product teams':'Product design + engineering'}</span></div><p className="case-description">{description}</p>{resume&&<div className="resume-note">For senior Product Designer and UX Engineer conversations. This résumé preserves the original career record; dates and the PDF reflect the published portfolio, including historical “present” entries. <a href={email('Current résumé and experience')}>Email for my current résumé.</a></div>}<div className="nucleotide legacy-case"><Suspense fallback={<p className="case-loader" role="status">Opening {title}…</p>}>{children}</Suspense></div><Meta title={title} description={description}/><div className="case-end"><Link className="text-link" to="/projects/">More projects <Arrow/></Link><Link className="button" to="/contact/">Discuss a project <Arrow/></Link></div></div><ContactBand/></>}
+const cases=[
+ ['/projects/mindvault/','MindVault',MindVault,projects[0].detail],
+ ['/projects/xprize/','XPRIZE',Xprize,projects[1].detail],
+ ['/projects/yarden/','Yarden',Yarden,projects[2].detail],
+ ['/projects/tchat/','T-Chat',TChat,projects[3].detail],
+ ['/projects/foundry/','Foundry',Foundry,'UI engineering across Foundry’s websites, mining products, staking portal and design systems.'],
+ ['/projects/crigenetics/','CRI Genetics',CRIGenetics,'Product design leadership, frontend development and experimentation for a customer-facing genetics product.'],
+ ['/projects/nucleotide/','Nucleotide',Nucleotide,'A token-based design system, CSS framework and component library for CRI Genetics.'],
+ ['/projects/clicktool/','Clicktool',Clicktool,'Creative direction, brand, product design and frontend development for a B2B marketing analytics product.'],
+ ['/projects/covid/','COVID dashboard',Covid,'An archived independent data-visualization project. Data availability depends on the original third-party APIs.'],
+ ['/design-process','Design process',DesignProcess,'How Chuck Howard approaches product discovery, design and implementation.'],
+];
+export function Portfolio(){return <div className="portfolio"><a className="skip-link" href="#main-content" onClick={e=>{e.preventDefault();document.getElementById('main-content').focus();}}>Skip to content</a><Header/><main id="main-content" tabIndex="-1"><PageMotion><Routes><Route path="/" element={<Home/>}/><Route path="/projects/" element={<WorkPage/>}/><Route path="/services/" element={<Services/>}/><Route path="/contact/" element={<Contact/>}/><Route path="/resume/" element={<Case resume title="Experience & résumé" description="Chuck Howard’s product design and UX engineering experience, selected roles and résumé for recruiters and product teams."><Resume/></Case>}/>{cases.map(([path,title,Component,description])=><Route key={path} path={path} element={<Case title={title} description={description}><Component/></Case>}/>)}<Route path="*" element={<NotFound/>}/></Routes></PageMotion></main><Footer/></div>}
+export default function App(){return <HashRouter><Portfolio/></HashRouter>}

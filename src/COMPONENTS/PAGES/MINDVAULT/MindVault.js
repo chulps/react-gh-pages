@@ -1,12 +1,12 @@
 import React from "react";
 import "./MindVault.css";
 import { Helmet } from "react-helmet";
-import website from "./mindvault_website.png";
-import webapp from "./webapp.png";
+import website from "./mindvault_website.webp";
+import webapp from "./webapp.webp";
 
 class MindVault extends React.Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
   render() {
     return (
@@ -255,7 +255,7 @@ class MindVault extends React.Component {
 
             <div className="project">
               <div className="flex-center">
-                <img src={website} width="100%" alt="website" />
+                <img loading="lazy" src={website} width="100%" alt="website" />
               </div>
               <h3>Company Website</h3>
               <p>
@@ -268,7 +268,7 @@ class MindVault extends React.Component {
 
             <div className="project">
               <div className="flex-center">
-                <img src={webapp} width="100%" alt="website" />
+                <img loading="lazy" src={webapp} width="100%" alt="website" />
               </div>
 
               <h3>MindVault Web App</h3>

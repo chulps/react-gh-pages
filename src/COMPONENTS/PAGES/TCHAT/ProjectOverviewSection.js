@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Chatroom from "./Chatroom.png";
+import Chatroom from "./Chatroom.webp";
 
 const CTAContainer = styled.div`
   display: flex;

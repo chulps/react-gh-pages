@@ -50,7 +50,7 @@ class SocialIcons extends Component {
       >
         {socialLinks.map((link, key) => (
           <a key={key} target="_blank" rel="noopener noreferrer" href={link.href}>
-            <img src={link.imgSrc} alt={link.alt} />
+            <img loading="lazy" src={link.imgSrc} alt={link.alt} />
             <small>{link.text}</small>
           </a>
         ))}
