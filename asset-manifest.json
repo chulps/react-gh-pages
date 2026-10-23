@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.1e4cc454.css",
-    "main.js": "/react-gh-pages/static/js/main.116e9ace.js",
+    "main.css": "/react-gh-pages/static/css/main.e5835ca8.css",
+    "main.js": "/react-gh-pages/static/js/main.e9858683.js",
     "static/css/473.628de628.chunk.css": "/react-gh-pages/static/css/473.628de628.chunk.css",
-    "static/js/473.2ca07e1a.chunk.js": "/react-gh-pages/static/js/473.2ca07e1a.chunk.js",
+    "static/js/473.bca49707.chunk.js": "/react-gh-pages/static/js/473.bca49707.chunk.js",
     "static/css/833.14992e45.chunk.css": "/react-gh-pages/static/css/833.14992e45.chunk.css",
     "static/js/833.257a8d32.chunk.js": "/react-gh-pages/static/js/833.257a8d32.chunk.js",
     "static/css/823.69882225.chunk.css": "/react-gh-pages/static/css/823.69882225.chunk.css",
@@ -18,8 +18,8 @@
     "static/js/81.17d2b581.chunk.js": "/react-gh-pages/static/js/81.17d2b581.chunk.js",
     "static/css/399.bf2ce43d.chunk.css": "/react-gh-pages/static/css/399.bf2ce43d.chunk.css",
     "static/js/399.66995147.chunk.js": "/react-gh-pages/static/js/399.66995147.chunk.js",
-    "static/css/336.2b713990.chunk.css": "/react-gh-pages/static/css/336.2b713990.chunk.css",
-    "static/js/336.a06cdf1f.chunk.js": "/react-gh-pages/static/js/336.a06cdf1f.chunk.js",
+    "static/css/386.2b713990.chunk.css": "/react-gh-pages/static/css/386.2b713990.chunk.css",
+    "static/js/386.3f54c527.chunk.js": "/react-gh-pages/static/js/386.3f54c527.chunk.js",
     "static/js/643.25ad9b04.chunk.js": "/react-gh-pages/static/js/643.25ad9b04.chunk.js",
     "static/js/959.02531276.chunk.js": "/react-gh-pages/static/js/959.02531276.chunk.js",
     "static/js/553.11001122.chunk.js": "/react-gh-pages/static/js/553.11001122.chunk.js",
@@ -64,6 +64,7 @@
     "static/media/old_yarden_logo.webp": "/react-gh-pages/static/media/old_yarden_logo.bfdb20365f41ec227cf3.webp",
     "static/media/magnifying_glass_animation.svg": "/react-gh-pages/static/media/magnifying_glass_animation.592c17994532bbffa0310e616ce9750f.svg",
     "static/media/cri_genetics_logo.svg": "/react-gh-pages/static/media/cri_genetics_logo.b719b6ed0216ce8611dff1d3738f27ae.svg",
+    "static/media/fxxkup-logo.svg": "/react-gh-pages/static/media/fxxkup-logo.d122f855025eecf04d59ed3120b8f351.svg",
     "static/media/Chuck_Howard_Resume.pdf": "/react-gh-pages/static/media/Chuck_Howard_Resume.d5dcd94c28aff557e6f2.pdf",
     "static/media/RotateLandingPages.svg": "/react-gh-pages/static/media/RotateLandingPages.c2c1a38509722488fdabda0b1571a99e.svg",
     "static/media/yarden_mark_bg_fitted.svg": "/react-gh-pages/static/media/yarden_mark_bg_fitted.457b6e2d63075878fe78334057944602.svg",
@@ -83,7 +84,7 @@
     "static/media/mind-vault-logo.svg": "/react-gh-pages/static/media/mind-vault-logo.694b835d98483a2f4d096c5de1166e63.svg"
   },
   "entrypoints": [
-    "static/css/main.1e4cc454.css",
-    "static/js/main.116e9ace.js"
+    "static/css/main.e5835ca8.css",
+    "static/js/main.e9858683.js"
   ]
 }
