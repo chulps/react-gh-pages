@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkreact_gh_pages||=[]).push([[500],{9500(e,s,c){c(9950);const a=c.p+"static/media/cri_genetics_logo.b719b6ed0216ce8611dff1d3738f27ae.svg";c.d(s,["A",0,a])}}]);
