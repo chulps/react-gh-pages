@@ -63,11 +63,14 @@ body{background:var(--ground)}.portfolio .masthead{padding:22px 0}.portfolio .mo
 .portfolio .visual-browser small{margin-left:8px;font:inherit;color:#aabed0}
 .portfolio .visual-browser b{margin-left:auto;color:#9be8ff;font-size:8px;font-weight:400;letter-spacing:.1em}
 .portfolio .website-screen{position:relative;flex:1;min-height:360px;background:#121310;color:#f3f2eb;overflow:hidden}
+.portfolio .website-live-photo{position:absolute;z-index:0;top:48px;right:0;width:59%;height:calc(100% - 85px);object-fit:cover;object-position:center 44%;opacity:.88}
+.portfolio .website-screen:after{content:"";position:absolute;z-index:0;inset:48px 0 37px;pointer-events:none;background:linear-gradient(90deg,#121310 0%,rgba(18,19,16,.96) 32%,rgba(18,19,16,.42) 69%,rgba(18,19,16,.08) 100%)}
 .portfolio .website-nav{height:48px;padding:11px 15px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff30;font:8px/1.35 monospace;letter-spacing:.035em}
+.portfolio .website-nav{position:relative;z-index:2}
 .portfolio .website-nav strong{font-size:10px;line-height:1.1}
 .portfolio .website-nav span{color:#cacac4}
 .portfolio .website-nav i{font-style:normal;color:#dbff5d}
-.portfolio .website-hero-copy{padding:35px 24px 29px;position:relative;z-index:1;max-width:400px}
+.portfolio .website-hero-copy{padding:35px 24px 29px;position:relative;z-index:2;max-width:400px}
 .portfolio .website-kicker{display:block;margin-bottom:18px;color:#d7ff55;font:8px/1 monospace;letter-spacing:.2em}
 .portfolio .website-hero-copy>strong{display:block;font-size:clamp(29px,4vw,52px);line-height:.82;letter-spacing:-.065em;font-weight:900}
 .portfolio .website-hero-copy>strong em{display:block;color:#dcff5d;font-style:normal}
@@ -76,7 +79,7 @@ body{background:var(--ground)}.portfolio .masthead{padding:22px 0}.portfolio .mo
 .portfolio .website-hero-copy>p{max-width:33ch;margin:12px 0 17px;color:#b8b8b2;font-size:10px;line-height:1.45}
 .portfolio .website-cta{display:flex;justify-content:space-between;align-items:center;width:172px;padding:10px 11px;background:#dcff5d;color:#15170f;font:8px/1 monospace;letter-spacing:.06em}
 .portfolio .website-cta .arrow{font-size:12px}
-.portfolio .website-photo-strip{position:absolute;inset:auto 0 0;height:37px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ffffff36;background:linear-gradient(90deg,#831b16,#251817 48%,#100f0e);font:7px/1 monospace;letter-spacing:.12em;color:#f5e6d5}
+.portfolio .website-photo-strip{position:absolute;z-index:2;inset:auto 0 0;height:37px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ffffff36;background:linear-gradient(90deg,#831b16,#251817 48%,#100f0e);font:7px/1 monospace;letter-spacing:.12em;color:#f5e6d5}
 .portfolio .visual-caption{margin:0;padding:10px 12px;color:#91a8bc;font:9px/1.35 monospace;letter-spacing:.035em}
 .portfolio .barticket-screen{padding:13px 14px 8px;background:#1d1e22;color:#f2f3f5;min-height:258px;font-family:Arial,sans-serif}
 .portfolio .barticket-nav{height:28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #45464b;font-size:9px;color:#c4c5c9}
