@@ -8,8 +8,8 @@ export function LanguageProvider({ children }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [lang, setLangState] = useState(() => {
-    const query = new URLSearchParams(window.location.search).get('lang') ||
-      new URLSearchParams(window.location.hash.split('?')[1] || '').get('lang');
+    const query = new URLSearchParams(window.location.hash.split('?')[1] || '').get('lang') ||
+      new URLSearchParams(window.location.search).get('lang');
     if (query === 'ja' || query === 'en') return query;
     try {
       const saved = window.localStorage.getItem('chulps-language');
