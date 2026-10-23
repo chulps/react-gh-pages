@@ -1,7 +1,7 @@
 # Redesign verification
 
 - `CI=true npm run build`: passed, without build warnings. Homepage content is prerendered into the initial HTML.
-- `CI=true npm test -- --watchAll=false --runInBand`: six passing tests covering service discovery, selected-service email subjects, targeted outreach links, missing-page recovery, manual language switching and Japanese browser-language detection.
+- `CI=true npm test -- --watchAll=false --runInBand`: seven passing tests covering service discovery, selected-service email subjects, targeted outreach links, missing-page recovery, manual language switching, Japanese browser-language detection and language-query precedence after switching.
 - `node scripts/check-build.cjs`: passed. Checks initial content, a single H1/description/canonical, valid structured data, contact destination, all referenced local deployment assets, robots, sitemap and physical 404.
 - Browser production QA: 14 routes at 1440px and 390px, followed by the revised build at 320px. No document overflow, broken loaded images, or WCAG A/AA axe violations in those runs. Each route has one H1. Decorative SVG paths in Clicktool extend inside a clipped graphic; they do not create document overflow.
 - Manual browser checks: phone navigation, selected PHP service, matching email destination, first-screen service links, keyboard skip-link focus, and representative service/contact/project/résumé/404 screenshots. Corrected legacy case-study contrast and heading issues found in the initial pass.
