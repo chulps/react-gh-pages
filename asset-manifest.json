@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.b8941cfa.css",
-    "main.js": "/react-gh-pages/static/js/main.f9c6412a.js",
+    "main.js": "/react-gh-pages/static/js/main.b06d6663.js",
     "static/css/473.628de628.chunk.css": "/react-gh-pages/static/css/473.628de628.chunk.css",
     "static/js/473.bca49707.chunk.js": "/react-gh-pages/static/js/473.bca49707.chunk.js",
     "static/css/833.14992e45.chunk.css": "/react-gh-pages/static/css/833.14992e45.chunk.css",
@@ -67,8 +67,8 @@
     "static/media/Chuck_Howard_Resume.pdf": "/react-gh-pages/static/media/Chuck_Howard_Resume.d5dcd94c28aff557e6f2.pdf",
     "static/media/RotateLandingPages.svg": "/react-gh-pages/static/media/RotateLandingPages.c2c1a38509722488fdabda0b1571a99e.svg",
     "static/media/yarden_mark_bg_fitted.svg": "/react-gh-pages/static/media/yarden_mark_bg_fitted.457b6e2d63075878fe78334057944602.svg",
-    "static/media/xprizelogo.webp": "/react-gh-pages/static/media/xprizelogo.cbec3face2c33eb473fb.webp",
     "index.html": "/react-gh-pages/index.html",
+    "static/media/xprizelogo.webp": "/react-gh-pages/static/media/xprizelogo.cbec3face2c33eb473fb.webp",
     "static/media/FoundryLogo.svg": "/react-gh-pages/static/media/FoundryLogo.6d94e11081564112096305a143fcacbf.svg",
     "static/media/clicktool-mark.svg": "/react-gh-pages/static/media/clicktool-mark.e8e26015adbe7ba1cffb8e91876b65c6.svg",
     "static/media/github-01.svg": "/react-gh-pages/static/media/github-01.3e459e0f7bdad112ab03608bdda9713f.svg",
@@ -84,6 +84,6 @@
   },
   "entrypoints": [
     "static/css/main.b8941cfa.css",
-    "static/js/main.f9c6412a.js"
+    "static/js/main.b06d6663.js"
   ]
 }
