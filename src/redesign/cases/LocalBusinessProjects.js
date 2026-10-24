@@ -13,7 +13,7 @@ export function FxxKupProject() {
     <header className="local-study-hero">
       <div className="local-study-copy">
         <span className="section-label">{ja ? '札幌 · 店舗Webサイト' : 'Sapporo · Hospitality website'}</span>
-        <h2>{ja ? <>すすきのの夜を、<br/>行く前から伝える。</> : <>A night in Susukino,<br/>clear before you go.</>}</h2>
+        <h1>{ja ? <>すすきのの夜を、<br/>行く前から伝える。</> : <>A night in Susukino,<br/>clear before you go.</>}</h1>
         <p>{ja
           ? 'Rock Bar FxxK Upのサイトを、初めて訪れる人にも使いやすい案内場所に。雰囲気、メニュー、料金、行き方をまとめ、日本語・英語など5言語で届けます。'
           : 'A welcoming first stop for Rock Bar FxxK Up. The site brings the atmosphere, menu, cover charge and directions together, with visitor information in five languages.'}</p>
@@ -44,7 +44,7 @@ export function BarTicketProject() {
     <header className="local-study-hero barticket-study-hero">
       <div className="local-study-copy">
         <span className="section-label">{ja ? '札幌 · 店舗向け内部アプリ' : 'Sapporo · Internal operations app'}</span>
-        <h2>{ja ? <>その日の営業を記録し、<br/>数字を深く見る。</> : <>Record the shift.<br/>Explore the detail.</>}</h2>
+        <h1>{ja ? <>その日の営業を記録し、<br/>数字を深く見る。</> : <>Record the shift.<br/>Explore the detail.</>}</h1>
         <p>{ja
           ? 'BarTicketはRock Bar FxxK Upの毎日の業務を記録し、店舗の状況を分析する内部アプリです。スタッフが営業内容を入力し、管理者は日・月・年ごとに数字を確認できます。'
           : 'BarTicket records daily work at Rock Bar FxxK Up and turns it into useful operating insight. Staff log each shift; managers can review patterns by day, month or year.'}</p>

@@ -48,16 +48,16 @@ class ClicktoolSVGSection extends React.Component {
             <label className="mt2">ab_testing.svg</label>
           </div>
           <div className="p1 md-p3 flex-center flex-vertical">
-            <img loading="lazy" src={MagnifyingGlass} alt="" />
-            <label className="mt2">magnifying_glass.svg</label>
+            <img loading="lazy" src={MagnifyingGlass} alt="Animated magnifying glass illustrating how to inspect a landing page variant." />
+            <span className="mt2">magnifying_glass.svg</span>
           </div>
           <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
-            <img loading="lazy" src={OnePlace} alt="" />
-            <label className="mt2">one-place.svg</label>
+            <img loading="lazy" src={OnePlace} alt="Illustration of marketing assets and landing page variants gathered in one workspace." />
+            <span className="mt2">one-place.svg</span>
           </div>
           <div className="flex-space-between p1 md-p3 flex-center flex-vertical">
-            <img loading="lazy" src={RotateLanders} alt="" />
-            <label className="mt2">variants.svg</label>
+            <img loading="lazy" src={RotateLanders} alt="Illustration of rotating between landing page variants for comparison." />
+            <span className="mt2">variants.svg</span>
           </div>
         </div>
       </section>
