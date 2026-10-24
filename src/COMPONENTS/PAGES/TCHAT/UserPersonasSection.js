@@ -132,9 +132,9 @@ const UserPersonasSection = () => {
             style={{ background: `${persona.color}` }}
             key={index}
           >
-            <h1 className="p2 pb3 flex-center">
+            <div className="persona-icon p2 pb3 flex-center" aria-hidden="true">
               <FontAwesomeIcon icon={persona.icon} />
-            </h1>
+            </div>
             <h4>{persona.name}:</h4>
             <p>"{persona.description}"</p>
             <hr className="mt2 mb2"/>
@@ -163,7 +163,7 @@ const UserPersonasSection = () => {
                 <h5 className="mb0">Personality:</h5>
                 <Traits>
                   {persona.details.personality.map((trait, idx) => (
-                    <Trait style={{backgroundColor: persona.chartColorMobile, color: "white"}} key={idx}>{trait}</Trait>
+                    <Trait style={{backgroundColor: "#ffffff", color: "#172228"}} key={idx}>{trait}</Trait>
                   ))}
                 </Traits>
               </li>

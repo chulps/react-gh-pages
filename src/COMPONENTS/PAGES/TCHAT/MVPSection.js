@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./Home.png";
-import ChatroomNotAuthenticated from "./ChatroomNotAuthenticated.png";
+import Home from "./Home.webp";
+import ChatroomNotAuthenticated from "./ChatroomNotAuthenticated.webp";
 
 const MVPSection = () => {
   return (

@@ -4,16 +4,18 @@ const RotatingText = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="3rem"
+      width="100%"
+      height="100%"
+      aria-hidden="true"
+      focusable="false"
+      className="brand-orbit"
       style={{
         position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
+        inset: 0,
       }}
       viewBox="0 0 100 100"
     >
-      <g fill={props.fill}>
+      <g fill={props.fill || "currentColor"}>
         <animateTransform
           attributeName="transform"
           type="rotate"

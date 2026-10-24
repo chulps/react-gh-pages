@@ -10,8 +10,8 @@ import OpenAI from './TECHLOGOS/OpenAI.svg'
 import GoogleCloud from './TECHLOGOS/GoogleCloud.svg'
 import FontAwesome from './TECHLOGOS/FontAwesome.svg'
 import Axios from './TECHLOGOS/Axios.svg'
-import NPM from './TECHLOGOS/NPM.png'
-import Heroku from './TECHLOGOS/Heroku.png'
+import NPM from './TECHLOGOS/NPM.webp'
+import Heroku from './TECHLOGOS/Heroku.webp'
 import Github from './TECHLOGOS/Github.svg'
 
 const TechLogo = styled.img `

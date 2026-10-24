@@ -3,16 +3,16 @@ import FoundryLogoBlack from "./FoundryLogoBlack";
 import UpstateLogo from "./UILogo";
 import { Helmet } from "react-helmet";
 import "./Foundry.css";
-import FoundryStaking from "./IMG/foundrystaking.png";
-import FoundryPool from "./IMG/foundrypool.png";
-import FoundryX from "./IMG/foundryx.png";
-import FoundryDigital from "./IMG/foundrydigital.png";
-import FoundryAcademy from "./IMG/foundryacademy.png";
-import DesignGang from "./IMG/designgang.png";
+import FoundryStaking from "./IMG/foundrystaking.webp";
+import FoundryPool from "./IMG/foundrypool.webp";
+import FoundryX from "./IMG/foundryx.webp";
+import FoundryDigital from "./IMG/foundrydigital.webp";
+import FoundryAcademy from "./IMG/foundryacademy.webp";
+import DesignGang from "./IMG/designgang.webp";
 
 class Foundry extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
@@ -242,7 +242,7 @@ class Foundry extends Component {
             {projects.map((project) => (
               <div className="project-link">
                 <a href={project.href}>
-                  <img
+                  <img loading="lazy"
                     className="mb0"
                     src={project.src}
                     alt={project.title}

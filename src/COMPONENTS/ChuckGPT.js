@@ -92,7 +92,7 @@ const ChuckGPT = (props) => {
   return (
     <div id="ChuckGPT" className={props.className} style={props.style}>
       <div id="ChuckGPT-header">
-        <img src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
+        <img loading="lazy" src={Logo} style={{ height: "var(--unit3)" }} alt="logo" />
         <div
           className="mt0"
           style={{

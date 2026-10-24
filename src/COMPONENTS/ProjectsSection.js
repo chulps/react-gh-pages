@@ -5,7 +5,7 @@ import YardenLogo from "./PAGES/YARDEN/YardenHorizontalLockup";
 import CRILogo from "../IMG/cri_genetics_logo.svg";
 import NucleotideLogo from "../IMG/nucleotide.svg";
 import FoundryLogo from "./PAGES/FOUNDRY/FoundryLogo";
-import XPRIZELogo from "../IMG/xprizelogo.png";
+import XPRIZELogo from "../IMG/xprizelogo.webp";
 import "./ProjectsSection.css";
 import "../animate-in.scss";
 
@@ -56,7 +56,7 @@ class ProjectSection extends Component {
             </div>
             <div>
               <Link to="/projects/xprize/">
-                <img
+                <img loading="lazy"
                   width="100%"
                   height="auto"
                   src={XPRIZELogo}
@@ -101,7 +101,7 @@ class ProjectSection extends Component {
 
             <div>
               <Link to="/projects/crigenetics/">
-                <img width="100%" src={CRILogo} alt="cri-logo" />
+                <img loading="lazy" width="100%" src={CRILogo} alt="cri-logo" />
               </Link>
               <div className="project-tags">
                 <small>UI Design</small>
@@ -117,7 +117,7 @@ class ProjectSection extends Component {
             <div>
               <Link to="/projects/nucleotide/">
                 <div className="flex-center flex-vertical xs-flex-horizontal">
-                  <img
+                  <img loading="lazy"
                     height={50}
                     className="mr1"
                     src={NucleotideLogo}
@@ -184,8 +184,8 @@ class ProjectSection extends Component {
               </div>
 
               <div>
-                <Link to="/projects/tchat/">
-                  <h4>💬 T-Chat</h4>
+                <Link to="/projects/comett/">
+                  <h4>💬 Comett</h4>
                 </Link>
                 <div className="project-tags">
                 <small>Typescript</small>

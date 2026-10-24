@@ -454,7 +454,7 @@ const About = () => {
             className="absolute"
             style={{ transform: "translate(0 , 20%)" }}
           >
-            <img
+            <img loading="lazy"
               src={Logo}
               className="diagram-c-logo"
               height={80}

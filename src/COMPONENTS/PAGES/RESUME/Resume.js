@@ -7,7 +7,7 @@ import Download from "./Chuck_Howard_Resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import mindVaultLogo from "../../../IMG/mind-vault-logo.svg";
-import xPrizeLogo from "../../../IMG/xprizelogo.png"
+import xPrizeLogo from "../../../IMG/xprizelogo.webp"
 import yardenLogo from "../YARDEN/yarden_mark_bg_fitted.svg"
 import foundryLogo from "../FOUNDRY/FoundryLogo.svg"
 import CRILogo from "../../../IMG/cri_genetics_logo.svg"
@@ -18,13 +18,14 @@ import sullivanLogo from "./sullivan-branding-logo.svg"
 const tools = [...designTools, ...developmentTools, ...productTools];
 class Resume extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {
     const skillsMap = new Map([
       ["A/B Testing", true],
       ["AI Prompt Engineering", true],
+      ["Business Development", true],
       ["CSS/CSS3/", true],
       ["Data Visualization", true],
       ["Design Systems", true],
@@ -58,16 +59,26 @@ class Resume extends Component {
 
     const experienceData = [
       {
-        company: "MindVault",
+        company: "Tunabear",
+        logo: null,
+        location: "",
+        role: "Business Developer",
+        duration: "(September 7, 2026 – Present)",
+        responsibilities: [
+          "Working with Tunabear on the next version of a multilingual communication product.",
+        ],
+      },
+      {
+        company: "M9000",
         logo: mindVaultLogo,
         location: "Dallas, TX",
         role: "Product Designer/Frontend Developer",
         type: "(Contract)",
         duration: "(May 2023 – Sep 2023)",
         responsibilities: [
-          "Lead the design of MindVault's MVP for a new product.",
+          "Lead the design of M9000's MVP for a new product.",
           "Own the design and development of the Marketing website.",
-          "Own the branding design and strategy of MindVault's products.",
+          "Own the branding design and strategy of M9000's products.",
           "Write the company prospectus and other marketing materials.",
         ],
       },
@@ -202,7 +213,6 @@ class Resume extends Component {
       },
     ];
 
-    const hobbies = ["Travel", "Artificial Intelligence"];
 
     return (
       <div id="resume">
@@ -214,13 +224,12 @@ class Resume extends Component {
           <label>Resumé</label>
           <div className="mb2 flex-space-between">
             <div>
-              <h2>Charles M. Howard</h2>
-              <p>Product Designer / Frontend Developer</p>
+              <h1>Charles M. Howard</h1>
+              <p>Business Developer / Product Designer / Frontend Developer</p>
               <p style={{ maxWidth: "45ch" }}>
-                I'm an experienced Product Designer with a background in
-                Frontend Development and Product Discovery, skilled in leading
-                products from discovery, through the design phase, to
-                deployment.
+                I'm currently a Business Developer at Tunabear, building on my
+                experience in Product Design, Frontend Development and Product
+                Discovery.
               </p>
             </div>
           </div>
@@ -257,17 +266,15 @@ class Resume extends Component {
             <div className="experience-item" key={index}>
               <div className="flex">
                 <span>
-                  <img
+                  {experience.logo ? <img loading="lazy"
                     className="experience-logo"
                     alt={experience.company}
                     src={experience.logo}
-                  />
+                  /> : <span className="experience-logo-tunabear" aria-hidden="true">T</span>}
                 </span>
 
                 <div>
-                  <h4>
-                    {experience.company}, {experience.location}
-                  </h4>
+                  <h4>{experience.company}{experience.location ? `, ${experience.location}` : ""}</h4>
                   <p>{experience.role}</p>
                   {experience.type && <i>{experience.type}</i>}
                   <br />
@@ -297,17 +304,6 @@ class Resume extends Component {
                 </ul>
               </div>
             ))}
-            <hr className="my2" />
-
-            <div className="mb2">
-              <label>Hobbies</label>
-              <h3>Fun Stuff</h3>
-              <ul>
-                {hobbies.map((hobby, index) => (
-                  <li key={index}>{hobby}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         </section>
         <section

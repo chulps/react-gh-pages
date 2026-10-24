@@ -4,7 +4,7 @@ import Process from './DesignProcessSvg'
 
 class DesignProcess extends Component {
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   render() {

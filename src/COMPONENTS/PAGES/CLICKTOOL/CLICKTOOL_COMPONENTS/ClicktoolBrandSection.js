@@ -1,6 +1,6 @@
 // ClicktoolTopSection.js
 import React from "react";
-import Sketchy from "./DESIGN_BIBLE.png";
+import Sketchy from "./DESIGN_BIBLE.webp";
 
 class ClicktoolBrandSection extends React.Component {
   render() {
@@ -10,12 +10,12 @@ class ClicktoolBrandSection extends React.Component {
           <div>
             <h4>Establishing the Brand:</h4>
 
-            <p>
+            <div className="brand-description">
               This was my first task when I started working here. There were a
               few limitations given by the CEO...
               <ul>
                 <li>• Flat illustration style</li>
-                <br />
+
                 <li>
                   • Use&nbsp;
                   <div
@@ -29,11 +29,11 @@ class ClicktoolBrandSection extends React.Component {
                   ></div>
                   &nbsp; #2cb8d2 &nbsp; as the primary brand color
                 </li>
-                <br />
+
                 <li>• Animate everything!</li>
-                <br />
+
                 <li>• Squared buttons only!</li>
-                <br />
+
                 <li>
                   • Lots of{" "}
                   <div
@@ -48,10 +48,10 @@ class ClicktoolBrandSection extends React.Component {
                   &nbsp;lines.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex-center flex-vertical">
-            <img className="whole" src={Sketchy} alt="" />
+            <img loading="lazy" className="whole" src={Sketchy} alt="" />
             <small>this is where everything starts</small>
           </div>
         </div>

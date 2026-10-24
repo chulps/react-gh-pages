@@ -3,9 +3,9 @@ import DeepLLogo from "./DeepLLogo.svg";
 import GoogleTranslateLogo from "./GoogleTranslateLogo.svg";
 import IMessageLogo from "./IMessageLogo.svg";
 import ZaloLogo from "./ZaloLogo.svg";
-import VoiceTraLogo from "./VoiceTraLogo.png";
+import VoiceTraLogo from "./VoiceTraLogo.webp";
 import TChatLogo from "../../../LOGO/CHULPS_LOGO_ANIMATION_nucleotide.gif";
-import HelloTalkLogo from "./HelloTalkLogo.png";
+import HelloTalkLogo from "./HelloTalkLogo.webp";
 
 const features = [
   "Free",

@@ -6,7 +6,7 @@ import {Helmet} from "react-helmet";
 class Nucleotide extends Component {
 
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
   
   render() {
@@ -36,7 +36,7 @@ class Nucleotide extends Component {
               className="flex-center flex-vertical"
               style={{ gap: "var(--unit2)" }}
             >
-              <img height="50px" src={NucleotideLogo} alt="Nucleotide Logo"/>
+              <img loading="lazy" height="50px" src={NucleotideLogo} alt="Nucleotide Logo"/>
               <div>
                 <h4>🛠 I'm still working on this page...</h4>
               </div>
