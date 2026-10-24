@@ -1,10 +1,11 @@
 import React, { lazy, Suspense } from 'react';
-import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { Header, Footer, PageMotion, Home, WorkPage, Services, Contact, NotFound, Meta, ContactBand, Arrow } from './redesign/Site';
 import { email, projects } from './redesign/content';
 import { LanguageProvider } from './redesign/i18n';
 import { useLanguage } from './redesign/i18n';
 import { FxxKupProject, BarTicketProject } from './redesign/cases/LocalBusinessProjects';
+import Analytics from './redesign/Analytics';
 
 const MindVault=lazy(()=>import('./COMPONENTS/PAGES/MINDVAULT/MindVault'));
 const Xprize=lazy(()=>import('./COMPONENTS/PAGES/XPRIZE/Xprize'));
@@ -32,5 +33,7 @@ const cases=[
  ['/projects/covid/','COVID dashboard',Covid,'An archived independent data-visualization project. Data availability depends on the original third-party APIs.','個人制作のデータビジュアライゼーション。データの利用可否は外部APIの状態に依存します。'],
  ['/design-process','Design process',DesignProcess,'How Chuck Howard approaches product discovery, design and implementation.','プロダクトの課題発見からデザイン、実装までの進め方。'],
 ];
-export function Portfolio(){const {lang}=useLanguage();const ja=lang==='ja';return <div className="portfolio" lang={lang}><a className="skip-link" href="#main-content" onClick={e=>{e.preventDefault();document.getElementById('main-content').focus();}}>{ja?'本文へ移動':'Skip to content'}</a><Header/><main id="main-content" tabIndex="-1"><PageMotion><Routes><Route path="/" element={<Home/>}/><Route path="/projects/" element={<WorkPage/>}/><Route path="/services/" element={<Services/>}/><Route path="/contact/" element={<Contact/>}/><Route path="/resume/" element={<Case resume title={ja?'経歴・職務経歴書':'Experience & résumé'} description="Chuck Howard is a Business Developer at Tunabear, with prior product design, UX and frontend engineering experience." descriptionJa="2026年9月よりTunabearでBusiness Developerとして勤務。プロダクトデザイン、UX、フロントエンド開発の経験。"><Resume/></Case>}/>{cases.map(([path,title,Component,description,descriptionJa])=><Route key={path} path={path} element={<Case title={title} description={description} descriptionJa={descriptionJa}><Component/></Case>}/>)}<Route path="*" element={<NotFound/>}/></Routes></PageMotion></main><Footer/></div>}
-export default function App(){return <HashRouter><LanguageProvider><Portfolio/></LanguageProvider></HashRouter>}
+export const indexableRoutes=['/','/services/','/projects/','/contact/','/resume/',...cases.filter(([path])=>path!=='/projects/covid/').map(([path])=>path.endsWith('/')?path:`${path}/`)];
+export function Portfolio(){const {lang}=useLanguage();const ja=lang==='ja';return <div className="portfolio" lang={lang}><Analytics/><Header/><main id="main-content" tabIndex="-1"><PageMotion><Routes><Route path="/" element={<Home/>}/><Route path="/projects/" element={<WorkPage/>}/><Route path="/services/" element={<Services/>}/><Route path="/contact/" element={<Contact/>}/><Route path="/resume/" element={<Case resume title={ja?'経歴・職務経歴書':'Experience & résumé'} description="Chuck Howard is a Business Developer at Tunabear with experience in product design, UX, product discovery and frontend engineering." descriptionJa="2026年9月よりTunabearでBusiness Developerとして勤務。プロダクトデザイン、UX、プロダクト発見、フロントエンド開発の経験。"><Resume/></Case>}/>{cases.map(([path,title,Component,description,descriptionJa])=><Route key={path} path={path} element={<Case title={title} description={description} descriptionJa={descriptionJa}><Component/></Case>}/>)}<Route path="*" element={<NotFound/>}/></Routes></PageMotion></main><Footer/></div>}
+function LegacyHashRedirect(){const navigate=useNavigate();React.useEffect(()=>{const value=window.location.hash.slice(1);if(!value.startsWith('/'))return;const split=value.indexOf('?');const pathname=split<0?value:value.slice(0,split);const search=split<0?window.location.search:value.slice(split);navigate({pathname,search},{replace:true});},[navigate]);return null;}
+export default function App(){const publicPath=new URL(process.env.PUBLIC_URL||'/',window.location.origin).pathname.replace(/\/$/,'');const japanesePath=window.location.pathname===`${publicPath}/ja`||window.location.pathname.startsWith(`${publicPath}/ja/`);const basename=process.env.NODE_ENV==='test'?'':`${publicPath}${japanesePath?'/ja':''}`;return <BrowserRouter basename={basename||undefined}><LegacyHashRedirect/><LanguageProvider><Portfolio/></LanguageProvider></BrowserRouter>}

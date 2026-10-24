@@ -1,10 +1,10 @@
-// Facts come from the existing portfolio and case studies, plus the current live Sapporo content.
+// Facts come from the existing portfolio and case studies, plus the current Hokkaido-wide service area.
 // No invented clients, outcomes, testimonials, availability promises, or performance metrics.
 export const site = {
   name: 'Chuck Howard',
-  email: 'charles.howard.jp@google.com',
+  email: 'charles.howard.jp@gmail.com',
   url: 'https://chulps.github.io/react-gh-pages/',
-  description: 'Website improvements, PHP troubleshooting, SEO, AI integration and custom business software in Sapporo. Chuck Howard connects product design with hands-on development.',
+  description: 'Website improvements, PHP troubleshooting, SEO, AI integration and custom business software for businesses across Hokkaido, Japan. Based in Sapporo, Chuck Howard connects product design with hands-on development.',
 };
 export const email = (subject) => `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;
 export const image = (name) => `${process.env.PUBLIC_URL}/images/${name}`;

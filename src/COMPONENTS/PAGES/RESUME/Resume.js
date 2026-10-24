@@ -218,10 +218,10 @@ class Resume extends Component {
       <div id="resume">
         <Helmet>
           <title>Chuck Howard's Resumé</title>
-          <meta name="description" content="Chuck Howard's Resumé" />
+          <meta name="description" content="Chuck Howard is a Business Developer at Tunabear with experience in product design, UX, product discovery and frontend engineering." />
         </Helmet>
         <section className="py1">
-          <label>Resumé</label>
+          <span className="resume-eyebrow">Resumé</span>
           <div className="mb2 flex-space-between">
             <div>
               <h1>Charles M. Howard</h1>
@@ -236,20 +236,20 @@ class Resume extends Component {
 
           <div>
             {" "}
-            <label className="mb2">Links</label>
+            <span className="resume-eyebrow mb2">Links</span>
             <Links />
           </div>
           <hr className="my3" />
-          <label>Overview</label>
-          <h3>Technical Skills</h3>
+          <span className="resume-eyebrow">Overview</span>
+          <h2>Technical Skills</h2>
           <ul id="skills">
             {Array.from(skillsMap.keys()).map((skill) => (
               <li key={skill}>{skill}</li>
             ))}
           </ul>
           <hr className="my3" />
-          <label>Tools</label>
-          <h3>Tools & Technology</h3>
+          <span className="resume-eyebrow">Tools</span>
+          <h2>Tools & Technology</h2>
           <ul id="tools">
             {toolsArray.map((tool) => (
               <li key={tool.tool}>{tool.tool}</li>
@@ -259,8 +259,8 @@ class Resume extends Component {
 
         <hr className="my3" />
         <section id="experience">
-          <label>Experience</label>
-          <h3 className="mb3">Places I've Worked</h3>
+          <span className="resume-eyebrow">Experience</span>
+          <h2 className="mb3">Places I've Worked</h2>
 
           {experienceData.map((experience, index) => (
             <div className="experience-item" key={index}>
@@ -274,7 +274,7 @@ class Resume extends Component {
                 </span>
 
                 <div>
-                  <h4>{experience.company}{experience.location ? `, ${experience.location}` : ""}</h4>
+                  <h3>{experience.company}{experience.location ? `, ${experience.location}` : ""}</h3>
                   <p>{experience.role}</p>
                   {experience.type && <i>{experience.type}</i>}
                   <br />
@@ -293,7 +293,7 @@ class Resume extends Component {
         <section>
           <hr className="my2" />
           <div>
-            <label>Education</label>
+            <h2>Education</h2>
             {educationData.map((education, index) => (
               <div className="mb2" key={index}>
                 <h3>{education.type}</h3>
@@ -310,11 +310,9 @@ class Resume extends Component {
           className="mt1 mx-auto flex-end relative md-absolute"
           style={{ top: 0, left: "50%", transform: "translate(-50%)" }}
         >
-          <a id="download-button" href={Download} download>
-            <button>
-              <FontAwesomeIcon icon={solid("download")} />
-              &nbsp; Download
-            </button>
+          <a id="download-button" className="button" href={Download} download>
+            <FontAwesomeIcon icon={solid("download")} aria-hidden="true" />
+            <span>Download résumé</span>
           </a>
         </section>
       </div>

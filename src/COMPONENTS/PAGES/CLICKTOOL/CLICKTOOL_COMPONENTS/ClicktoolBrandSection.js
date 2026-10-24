@@ -51,7 +51,7 @@ class ClicktoolBrandSection extends React.Component {
             </div>
           </div>
           <div className="flex-center flex-vertical">
-            <img loading="lazy" className="whole" src={Sketchy} alt="" />
+            <img loading="lazy" className="whole" src={Sketchy} alt="An early Clicktool brand and product planning sketch." />
             <small>this is where everything starts</small>
           </div>
         </div>

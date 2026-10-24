@@ -1,7 +1,7 @@
 .portfolio .local-study{--study-bg:#0d1726;--study-edge:#3e586f;--study-text:#edf4fa;--study-muted:#bdcbd9;color:var(--study-text);background:var(--study-bg);border:1px solid var(--study-edge);border-radius:3px;overflow:hidden}
 .portfolio .local-study-hero{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,68px);align-items:center;padding:clamp(22px,4vw,56px)}
 .portfolio .local-study-copy .section-label{display:block;margin-bottom:20px;color:#9be8ff}
-.portfolio .local-study-copy h2{max-width:15ch;margin:0 0 20px;font-size:clamp(34px,5vw,62px);line-height:1.02;letter-spacing:-.05em;font-weight:500}
+.portfolio .local-study-copy h1{max-width:15ch;margin:0 0 20px;font-size:clamp(34px,5vw,62px);line-height:1.02;letter-spacing:-.05em;font-weight:500}
 .portfolio .local-study-copy p{max-width:54ch;margin:0 0 24px;color:var(--study-muted);font-size:15px;line-height:1.7}
 .portfolio .local-study-copy .button{min-height:46px}
 .portfolio .local-study-photo,.portfolio .local-study-screenshot{min-width:0;margin:0;background:#111922;border:1px solid #344b60;overflow:hidden}
@@ -21,6 +21,6 @@
 .portfolio .local-study-next a{color:#9be8ff;font-size:13px;font-weight:600;text-decoration:none}
 .portfolio .local-study-next a:hover{text-decoration:underline}
 .portfolio .barticket-study-hero{grid-template-columns:minmax(0,.66fr) minmax(0,1.34fr)}
-.portfolio:lang(ja) .local-study-copy h2{line-height:1.3;letter-spacing:0}
+.portfolio:lang(ja) .local-study-copy h1{line-height:1.3;letter-spacing:0}
 .portfolio:lang(ja) .local-study-points h3{line-height:1.45;letter-spacing:0}
-@media(max-width:780px){.portfolio .local-study-hero,.portfolio .barticket-study-hero{grid-template-columns:1fr;gap:24px;padding:24px}.portfolio .local-study-copy h2{max-width:18ch}.portfolio .local-study-photo img{height:clamp(230px,62vw,390px)}.portfolio .local-study-points{grid-template-columns:1fr}.portfolio .local-study-points article+article{border-left:0;border-top:1px solid #304358}.portfolio .local-study-next{align-items:flex-start;flex-direction:column;gap:9px}}
+@media(max-width:780px){.portfolio .local-study-hero,.portfolio .barticket-study-hero{grid-template-columns:1fr;gap:24px;padding:24px}.portfolio .local-study-copy h1{max-width:18ch}.portfolio .local-study-photo img{height:clamp(230px,62vw,390px)}.portfolio .local-study-points{grid-template-columns:1fr}.portfolio .local-study-points article+article{border-left:0;border-top:1px solid #304358}.portfolio .local-study-next{align-items:flex-start;flex-direction:column;gap:9px}}

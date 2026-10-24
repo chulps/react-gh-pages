@@ -12,20 +12,19 @@ class DesignProcess extends Component {
       <div id="design-process" className="pb3">
         <Helmet>
           <title>
-            Foundry - Bitcoin Mining, Staking and Digital Currency Solutions
+            Design Process | Chuck Howard
           </title>
           <meta
             name="description"
-            content="Foundry Digital is a Bitcoin Mining and Staking Company, subsidiary of the Digital Currency Group (DCG). Learn about Chuck's projects while working there."
+            content="A practical approach to product discovery, design systems, interface design and frontend implementation."
           />
         </Helmet>
         {/* top section */}
         <section className="mt3">
-          <label>Design Process</label>
+          <span className="case-eyebrow">Design Process</span>
           <h1>Design Thinking</h1>
         </section>
         <section className="mb3" id="process">
-          <p className="mb3">Something</p>
           <Process />
         </section>
       </div>

@@ -4,12 +4,16 @@ const DesignProcessSvg = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     id="Layer_1"
+    role="img"
+    aria-labelledby="design-process-title design-process-description"
     style={{
       enableBackground: "new 0 0 1000 500",
     }}
     viewBox="0 0 1000 500"
     {...props}
   >
+    <title id="design-process-title">Product design process</title>
+    <desc id="design-process-description">A diagram showing discovery and definition flowing into ideation and implementation. It includes research, interviews, user analytics, competitor analysis, feature mapping, user stories, workshops, wireframes, testing, prototyping and validation.</desc>
     <style>
       {
         '.st0,.st1{fill:none;stroke:#334a56;stroke-miterlimit:10}.st1{stroke-dasharray:1,4}.st2{font-family:"Pragmatica-Bold";color:currentColor}.st3{font-size:12px}.st4{font-family:"Pragmatica-Book"}.st5,.st6,.st7{stroke-miterlimit:10}.st5{stroke:var(--transBlueC-75)}.st6,.st7{stroke-dasharray:1,4}.st6{fill:var(--transBlueC-75);stroke:#000}.st7{fill:none;stroke:var(--transBlueC-75)}.st8{fill:#fff}'
