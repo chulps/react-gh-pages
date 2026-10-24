@@ -95,6 +95,8 @@ const Home = () => {
             <div id="hero-social-icons">
               <label>Links:</label>
               <SocialIcons />
+              <p lang="en" className="mt2">Based in Sapporo? Elsewhere in Hokkaido? Tell me where you’re located and what you need, and I’ll confirm how we can work together.</p>
+              <p lang="ja">札幌市内はもちろん、北海道内のほかの地域からのご相談も歓迎しています。所在地とご相談内容をお知らせいただければ、対応可能な方法をご案内します。</p>
             </div>
           </div>
         </section>
