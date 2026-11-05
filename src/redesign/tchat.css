@@ -36,7 +36,7 @@
 .comett-step{position:relative;min-height:150px;padding:23px 24px 22px 0;display:flex;gap:17px;align-items:flex-start;border-right:1px solid #cbd2d9}
 .comett-step+.comett-step{padding-left:24px}
 .comett-step:last-child{border:0}
-.comett-step-number{flex:none;padding-top:4px;color:#bb543f;font:11px/1.2 monospace}
+.comett-step-number{flex:none;padding-top:4px;color:#b34f3b;font:11px/1.2 monospace}
 .comett-step h3{font-size:20px;line-height:1.25;font-weight:550;letter-spacing:-.035em;margin:0 0 8px}
 .comett-step p{max-width:28ch;color:#5f6c78;font-size:13px;line-height:1.55;margin:0}
 .comett-step-arrow{position:absolute;right:18px;top:23px;color:#71818c;font-size:20px}
@@ -45,7 +45,7 @@
 .comett-feature-intro>p{max-width:35ch;color:#5f6c78;font-size:14px;line-height:1.7}
 .comett-feature-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #cbd2d9;border-left:1px solid #cbd2d9}
 .comett-feature{position:relative;min-height:194px;padding:22px 24px 20px;border-right:1px solid #cbd2d9;border-bottom:1px solid #cbd2d9}
-.comett-feature-number{color:#bb543f;font:11px/1.2 monospace}
+.comett-feature-number{color:#b34f3b;font:11px/1.2 monospace}
 .comett-feature-signal{position:absolute;top:17px;right:22px;color:#74909d;font:20px/1 monospace}
 .comett-feature h3{margin:18px 0 9px;font-size:18px;line-height:1.3;letter-spacing:-.035em;font-weight:550}
 .comett-feature p{max-width:43ch;color:#5f6c78;font-size:13px;line-height:1.65;margin:0}

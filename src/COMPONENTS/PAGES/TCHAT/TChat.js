@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from "../../../redesign/i18n";
 import "../../../redesign/tchat.css";
+import ComettDesignSystemSection from "./ComettDesignSystemSection";
 
 const copy = {
   en: {
@@ -149,6 +150,8 @@ const Comett = () => {
           <span className="comett-role-note">{text.roleNote}</span>
         </div>
       </section>
+
+      <ComettDesignSystemSection />
 
       <footer className="comett-cta">
         <h2>{text.ctaTitle}</h2>
