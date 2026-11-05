@@ -82,11 +82,11 @@
 .comett-mini-orbit::before,.comett-mini-orbit::after { position: absolute; content: ""; border: 1px solid #8ed0d180; border-radius: 50%; }
 .comett-mini-orbit::before { inset: 13px; }
 .comett-mini-orbit::after { inset: 25px; border-style: dashed; animation: comett-mini-orbit 25s linear infinite; }
-.comett-mini-orbit b { color: #101925; font-size: 24px; font-weight: 500; letter-spacing: -.1em; }
+.comett-mini-mark { position: relative; z-index: 1; display: block; width: 28px; height: 28px; object-fit: contain; }
 .comett-mini-orbit > span { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #ef6451; box-shadow: 0 0 9px #ef645177; animation: comett-mini-orbit 9s linear infinite; }
-.comett-mini-orbit > span:nth-child(1) { top: 3px; left: 36px; }
-.comett-mini-orbit > span:nth-child(2) { right: 4px; bottom: 18px; background: #8ed0d1; animation-duration: 12s; }
-.comett-mini-orbit > span:nth-child(3) { left: 12px; bottom: 9px; background: #c7a2f2; animation-duration: 15s; }
+.comett-mini-orbit > span:nth-child(1) { top: 3px; left: 36px; transform-origin: 3px 36px; }
+.comett-mini-orbit > span:nth-child(2) { right: 4px; bottom: 18px; background: #8ed0d1; animation-duration: 12s; transform-origin: -29px -15px; }
+.comett-mini-orbit > span:nth-child(3) { left: 12px; bottom: 9px; background: #c7a2f2; animation-duration: 15s; transform-origin: 27px -24px; }
 .comett-motion-label { color: #b34f3b; font-size: 9px; }
 .comett-motion-row h4 { margin: 4px 0 5px; font-size: 13px; line-height: 1.3; }
 .comett-motion-row p { margin: 0; color: #536573; font-size: 10px; line-height: 1.5; }
@@ -114,8 +114,9 @@
   .comett-design-footer { align-items: flex-start; flex-direction: column; }
   .comett-motion-row { grid-template-columns: 68px 1fr; gap: 10px; }
   .comett-mini-orbit { width: 64px; height: 64px; }
-  .comett-mini-orbit > span:nth-child(1) { left: 29px; }
-  .comett-mini-orbit b { font-size: 21px; }
+  .comett-mini-orbit > span:nth-child(1) { left: 29px; transform-origin: 3px 29px; }
+  .comett-mini-orbit > span:nth-child(2) { transform-origin: -22px -8px; }
+  .comett-mini-orbit > span:nth-child(3) { transform-origin: 20px -17px; }
 }
 @media (max-width: 350px) {
   .comett-color-list { grid-template-columns: 1fr; }

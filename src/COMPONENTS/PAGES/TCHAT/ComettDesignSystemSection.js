@@ -154,7 +154,7 @@ const DesignSystemSection = () => {
           </div>
           <div className="comett-theme-captions"><p>{text.dark}</p><p>{text.light}</p></div>
           <div className="comett-motion-row">
-            <div className="comett-mini-orbit" aria-hidden="true"><span/><span/><span/><b>C</b></div>
+            <div className="comett-mini-orbit" aria-hidden="true"><span/><span/><span/><img className="comett-mini-mark" src={`${process.env.PUBLIC_URL || ""}/images/comett-mark-coral.svg`} alt="" aria-hidden="true" /></div>
             <div><span className="comett-motion-label">{text.motionLabel}</span><h4>{text.motionTitle}</h4><p>{text.motionBody}</p></div>
           </div>
         </article>
